@@ -113,15 +113,35 @@ Actualice el sistema operativo en el conector para asegurarse de que se ha aplic
 
 .Pasos
 . Acceda al shell de la CLI en el host del conector.
-. Ejecute los siguientes comandos con privilegios elevados:
+. Identificar si existe el siguiente directorio en el host:
++
+/opt/application/netapp/service-manager-2
+
++
+Los conectores creados después de finales de 2022 deben incluir este directorio.
+
+. Según si ese directorio existe o no, ejecute comandos para actualizar el sistema operativo:
++
+** Si existe el directorio, ejecute los siguientes comandos con privilegios elevados:
 +
 [source, cli]
 ----
 sudo -s
 service netapp-service-manager stop
-yum -y update –-security
+yum -y update --security
 service netapp-service-manager start
 ----
+** Si el directorio _no_ existe, ejecute los siguientes comandos con privilegios elevados:
++
+[source, cli]
+----
+sudo -s
+service service-manager stop
+yum -y update --security
+service service-manager start
+----
+
+
 
 
 

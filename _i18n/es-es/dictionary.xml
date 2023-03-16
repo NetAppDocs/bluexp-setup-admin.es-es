@@ -208,7 +208,6 @@
   <block id="bb036d72177ab633d83cf7c11f211546" category="section-title">Aplicar actualizaciones de seguridad</block>
   <block id="fce63be6a5df1b8f029ff105a6d48616" category="paragraph">Actualice el sistema operativo en el conector para asegurarse de que se ha aplicado la revisión con las actualizaciones de seguridad más recientes.</block>
   <block id="1208149fe3ebe603e8d12495099b22e4" category="list-text">Acceda al shell de la CLI en el host del conector.</block>
-  <block id="065ff36e9f63c035ca95dbe0bff46bfe" category="list-text">Ejecute los siguientes comandos con privilegios elevados:</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">Cambiar la dirección IP de un conector</block>
   <block id="a0dc112a414c5a75d4f2454974efc323" category="paragraph">Si es necesario para su empresa, puede cambiar la dirección IP interna y la dirección IP pública de la instancia de conector que asigna automáticamente su proveedor de cloud.</block>
   <block id="bfe6d8b96fb30d923a8089019f265d6b" category="list-text">Siga las instrucciones del proveedor de cloud para cambiar la dirección IP local o la dirección IP pública (o ambas) de la instancia de Connector.</block>
@@ -2976,4 +2975,10 @@
   <block id="8dffc8a152aadc1b397171c4248bd97b" category="section-title">Cómo afecta la disponibilidad del conector a Cloud Volumes ONTAP</block>
   <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">Un conector es un componente clave en el estado y funcionamiento de Cloud Volumes ONTAP. Si el conector está apagado, los sistemas PAYGO de Cloud Volumes ONTAP y los sistemas BYOL basados en capacidad se apagan después de perder la comunicación con un conector durante más de 14 días. Esto sucede porque el conector actualiza las licencias del sistema cada día.</block>
   <block id="e7da4bd68a22b069bcff5c88157199b4" category="paragraph">En la mayoría de los casos, un administrador de cuentas de BlueXP necesitará poner en marcha un _Connector_ en su red local o en la nube. Connector permite que BlueXP gestione recursos y procesos dentro de su entorno de cloud público. <block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>.</block>
+  <block id="7889e734551361eda836c7c7bb098d0f" category="list-text">Identificar si existe el siguiente directorio en el host:</block>
+  <block id="8a5f2dc93753049d63d32fca4e868454" category="paragraph">/opt/application/netapp/service-manager-2</block>
+  <block id="1d356cb442bdf9a28522842dc7a5fc3f" category="paragraph">Los conectores creados después de finales de 2022 deben incluir este directorio.</block>
+  <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">Según si ese directorio existe o no, ejecute comandos para actualizar el sistema operativo:</block>
+  <block id="d18a6912830b95dcae293a053dd50838" category="list-text">Si existe el directorio, ejecute los siguientes comandos con privilegios elevados:</block>
+  <block id="7239793e251456f2e73133f34ccc957d" category="list-text">Si el directorio _no_ existe, ejecute los siguientes comandos con privilegios elevados:</block>
 </blocks>
