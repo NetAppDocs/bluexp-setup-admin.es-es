@@ -27,7 +27,7 @@ Puede iniciar sesión en BlueXP con una de las siguientes opciones:
 * Un inicio de sesión en el cloud de NetApp con su dirección de correo electrónico y una contraseña
 * Una conexión federada
 +
-Puede utilizar el inicio de sesión único para iniciar sesión con credenciales del directorio corporativo (identidad federada). Para obtener más información, visite la https://cloud.netapp.com/help-center["Centro de ayuda de BlueXP"^] y, a continuación, haga clic en *opciones de inicio de sesión*.
+Puede utilizar el inicio de sesión único para iniciar sesión con credenciales del directorio corporativo (identidad federada). link:concept-federation.html["Aprenda a usar la federación de identidades con BlueXP"].
 
 
 

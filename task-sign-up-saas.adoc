@@ -28,7 +28,7 @@ Puede suscribirse a BlueXP mediante una de las siguientes opciones:
 * Inicio de sesión en el cloud de NetApp especificando su dirección de correo electrónico y una contraseña
 
 
-Ambas opciones admiten una conexión federada, que habilita el inicio de sesión único mediante credenciales del directorio corporativo (identidad federada). Después de registrarse, puede configurar una conexión federada desde https://cloud.netapp.com/help-center["Centro de ayuda de BlueXP"^] Seleccionando *Opciones de inicio de sesión de Cloud Central*.
+Ambas opciones admiten una conexión federada, que habilita el inicio de sesión único mediante credenciales del directorio corporativo (identidad federada). Puede configurar una conexión de federación después de registrarse. link:concept-federation.html["Aprenda a usar la federación de identidades con BlueXP"].
 
 .Pasos
 . Abra un explorador web y vaya al https://console.bluexp.netapp.com["Consola BlueXP"^]
