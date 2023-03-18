@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-federation.html 
 keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
-summary: la federación de identidades habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Debe comprender cómo BlueXP admite la federación de identidades antes de configurar una conexión con su proveedor de identidades. 
+summary: la federación de identidades habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Para empezar, aprenda cómo funciona Identity federation con BlueXP y, a continuación, revise una descripción general del proceso de configuración. 
 ---
 = Uso de la federación de identidades con BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: la federación de identidades habilita el inicio de sesión único con 
 
 
 [role="lead"]
-la federación de identidades habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Debe comprender cómo BlueXP admite la federación de identidades antes de configurar una conexión con su proveedor de identidades.
+_Identity federation_ habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Para empezar, aprenda cómo funciona Identity federation con BlueXP y, a continuación, revise una descripción general del proceso de configuración.
 
 
 
@@ -68,7 +68,7 @@ En un nivel superior, la configuración de una conexión federada entre BlueXP y
 | Paso | Completado por | Descripción 
 
 
-| 1 | Administrador DE ANUNCIOS  a| 
+| 1 | Administrador de Active Directory (AD)  a| 
 Configure el proveedor de identidades de SAML de acuerdo con las directrices de la documentación de auth0.
 
 Vea instrucciones para el proveedor de identidades SAML:
@@ -221,7 +221,7 @@ Después de crear la conexión mediante esta información, la página Federation
 |===
 
 
-== Actualizar una conexión federada
+== Actualización de una conexión federada
 
 Una vez que el administrador de BlueXP activa una conexión, el administrador puede actualizar la conexión en cualquier momento desde la https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^]
 

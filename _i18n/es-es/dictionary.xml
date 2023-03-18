@@ -2978,7 +2978,6 @@
   <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">Según si ese directorio existe o no, ejecute comandos para actualizar el sistema operativo:</block>
   <block id="d18a6912830b95dcae293a053dd50838" category="list-text">Si existe el directorio, ejecute los siguientes comandos con privilegios elevados:</block>
   <block id="7239793e251456f2e73133f34ccc957d" category="list-text">Si el directorio _no_ existe, ejecute los siguientes comandos con privilegios elevados:</block>
-  <block id="91d6fce5ad295f4c49b5ab17ad293e4c" category="summary">la federación de identidades habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Debe comprender cómo BlueXP admite la federación de identidades antes de configurar una conexión con su proveedor de identidades.</block>
   <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">Uso de la federación de identidades con BlueXP</block>
   <block id="694b3afac14ef0d070817c7ae79c1199" category="section-title">Cómo funciona la federación de identidades</block>
   <block id="e4f3bdd29d08f22be201dfa18bf12273" category="paragraph">La configuración de la federación de identidades crea una conexión de confianza entre el proveedor de servicios de autenticación (auth0) de BlueXP y su propio proveedor de gestión de identidades.</block>
@@ -3058,7 +3057,6 @@
   <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
   <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">La URL del servidor PingFederate</block>
   <block id="512527e34bba36a42c42f1febf1b5404" category="cell">Complete la configuración en el servidor PingFederate utilizando los parámetros que se muestran en la página Federation Setup después de finalizar el paso 2.</block>
-  <block id="5b8ff6609e9eeeaa9e1acfdab0eabf9f" category="section-title">Actualizar una conexión federada</block>
   <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">Una vez que el administrador de BlueXP activa una conexión, el administrador puede actualizar la conexión en cualquier momento desde la<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
   <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">Por ejemplo, es posible que deba actualizar la conexión cargando un nuevo certificado.</block>
   <block id="dbc6f5b69f3e88c308c302b2a186606c" category="paragraph">El administrador de BlueXP que creó la conexión es el único usuario autorizado que puede actualizar la conexión. Si desea añadir administradores adicionales, puede ponerse en contacto con nosotros a través del chat en el producto.</block>
@@ -3066,4 +3064,8 @@
   <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">Puede utilizar el inicio de sesión único para iniciar sesión con credenciales del directorio corporativo (identidad federada). <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>.</block>
   <block id="66721b55faa00316d484082879eed67d" category="paragraph">Ambas opciones admiten una conexión federada, que habilita el inicio de sesión único mediante credenciales del directorio corporativo (identidad federada). Puede configurar una conexión de federación después de registrarse. <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>.</block>
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">federación de identidades</block>
+  <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">la federación de identidades habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Para empezar, aprenda cómo funciona Identity federation con BlueXP y, a continuación, revise una descripción general del proceso de configuración.</block>
+  <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">_Identity federation_ habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Para empezar, aprenda cómo funciona Identity federation con BlueXP y, a continuación, revise una descripción general del proceso de configuración.</block>
+  <block id="6c3d838359f74f39c9ee994a4c202763" category="cell">Administrador de Active Directory (AD)</block>
+  <block id="38354362734b03037ea9de3dd0ec048c" category="section-title">Actualización de una conexión federada</block>
 </blocks>
