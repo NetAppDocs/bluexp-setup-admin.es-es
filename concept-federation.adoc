@@ -69,7 +69,7 @@ En un nivel superior, la configuración de una conexión federada entre BlueXP y
 
 
 | 1 | Administrador de Active Directory (AD)  a| 
-Configure el proveedor de identidades de SAML de acuerdo con las directrices de la documentación de auth0.
+Configure su proveedor de identidades SAML para habilitar la federación de identidades con BlueXP.
 
 Vea instrucciones para el proveedor de identidades SAML:
 
@@ -85,7 +85,7 @@ Vea instrucciones para el proveedor de identidades SAML:
 Si su proveedor de identidades no aparece en la lista anterior, https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["siga estas instrucciones genéricas"^]
 
 
-TIP: Do _not_ complete los pasos que describen cómo crear una conexión con auth0. Creará esa conexión en el siguiente paso.
+TIP: Do _not_ complete los pasos que describen cómo crear una conexión en auth0. Creará esa conexión en el siguiente paso.
 
 
 
@@ -120,12 +120,12 @@ En un nivel elevado, la configuración de una conexión federada entre BlueXP y 
 
 
 | 1 | Administrador DE ANUNCIOS  a| 
-Cree una nueva aplicación en Azure Active Directory junto con un secreto de cliente.
+Configure Azure Active Directory para habilitar la federación de identidades con BlueXP.
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Vea las instrucciones para registrar la aplicación en Azure AD"^]
 
 
-TIP: Do _not_ complete los pasos que describen cómo crear una conexión con auth0. Creará esa conexión en el siguiente paso.
+TIP: Do _not_ complete los pasos que describen cómo crear una conexión en auth0. Creará esa conexión en el siguiente paso.
 
 
 
@@ -192,12 +192,12 @@ En un nivel alto, la configuración de una conexión federada entre BlueXP y un 
 
 
 | 1 | Administrador DE ANUNCIOS  a| 
-Configure su servidor PingFederate de acuerdo con las directrices de la documentación auth0.
+Configure su servidor PingFederate para habilitar la federación de identidades con BlueXP.
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["Vea las instrucciones para crear una conexión"^]
 
 
-TIP: Do _not_ complete los pasos que describen cómo crear una conexión con auth0. Creará esa conexión en el siguiente paso.
+TIP: Do _not_ complete los pasos que describen cómo crear una conexión en auth0. Creará esa conexión en el siguiente paso.
 
 
 
@@ -227,4 +227,4 @@ Una vez que el administrador de BlueXP activa una conexión, el administrador pu
 
 Por ejemplo, es posible que deba actualizar la conexión cargando un nuevo certificado.
 
-El administrador de BlueXP que creó la conexión es el único usuario autorizado que puede actualizar la conexión. Si desea añadir administradores adicionales, puede ponerse en contacto con nosotros a través del chat en el producto.
+El administrador de BlueXP que creó la conexión es el único usuario autorizado que puede actualizar la conexión. Si desea añadir más administradores, póngase en contacto con el servicio de soporte de NetApp.
