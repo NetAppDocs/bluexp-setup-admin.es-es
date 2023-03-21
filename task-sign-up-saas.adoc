@@ -52,7 +52,7 @@ Tenga en cuenta que sólo se permiten caracteres ingleses en el formulario de re
 . Cuando se le solicite, revise el Contrato de licencia para el usuario final y acepte los términos.
 . En la página *bienvenida*, escriba un nombre para su cuenta.
 +
-Si su empresa ya tiene una cuenta y desea unirse a ella, debe omitir este paso y pedir al propietario que lo asocie a la cuenta. Una vez que el propietario le agregue, puede iniciar sesión y tendrá acceso a la cuenta. link:task-managing-netapp-accounts.html#adding-users["Aprenda a agregar miembros a una cuenta existente"].
+Si su negocio ya tiene una cuenta y desea unirse a ella, entonces usted debe cerrar fuera de BlueXP y pedir al propietario que lo asocie a la cuenta. Una vez que el propietario le agregue, puede iniciar sesión y tendrá acceso a la cuenta. link:task-managing-netapp-accounts.html#adding-users["Aprenda a agregar miembros a una cuenta existente"].
 
 +
 Una cuenta es el elemento de nivel superior de la plataforma de identidades de NetApp. Permite añadir y gestionar usuarios, roles, permisos y entornos de trabajo.

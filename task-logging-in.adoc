@@ -16,7 +16,7 @@ summary: Después de registrarse en BlueXP, puede iniciar sesión desde su naveg
 [role="lead"]
 Después de registrarse en BlueXP, puede iniciar sesión desde su navegador web a través de la interfaz de usuario basada en SaaS.
 
-link:task-sign-up-saas.html["Aprenda cómo registrarse en BlueXP y crear una organización"].
+link:task-sign-up-saas.html["Aprenda a registrarse en BlueXP y crear una cuenta"].
 
 Si accede a BlueXP desde una región gubernamental o un sitio que no tiene acceso saliente a Internet, deberá iniciar sesión en la interfaz de usuario de BlueXP que se ejecuta localmente en el conector. link:task-managing-connectors.html#access-the-local-ui["Aprenda a acceder a la interfaz de usuario local en el conector"].
 

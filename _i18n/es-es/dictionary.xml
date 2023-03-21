@@ -1409,8 +1409,6 @@
   <block id="16c6fa81afb88d058842087a5734f874" category="list-text">Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Eliminar credenciales*.</block>
   <block id="2d362fb636ab4e2644720f00f02ddbfb" category="summary">Después de registrarse en BlueXP, puede iniciar sesión desde su navegador web a través de la interfaz de usuario basada en SaaS.</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="doc">Inicie sesión en BlueXP</block>
-  <block id="f2209a6bc960d5dd3350ca4b5b662c18" category="inline-link-macro">Aprenda cómo registrarse en BlueXP y crear una organización</block>
-  <block id="2a319fe0bd9ba8ece64b79d59a233b15" category="paragraph"><block ref="8c767825ada5127971c09f228e56d843" category="inline-link-macro-rx"></block>.</block>
   <block id="8fa7e084836ae35d976f6f572a47e804" category="paragraph">Si accede a BlueXP desde una región gubernamental o un sitio que no tiene acceso saliente a Internet, deberá iniciar sesión en la interfaz de usuario de BlueXP que se ejecuta localmente en el conector. <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>.</block>
   <block id="0994880ff67f7251649b7fab82f0a166" category="paragraph-title">Opciones de inicio de sesión</block>
   <block id="d168984ba5f06fd829697588a7bfa38c" category="paragraph">Puede iniciar sesión en BlueXP con una de las siguientes opciones:</block>
@@ -2774,7 +2772,6 @@
   <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">Cuando se le solicite, revise el Contrato de licencia para el usuario final y acepte los términos.</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">En la página *bienvenida*, escriba un nombre para su cuenta.</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">Aprenda a agregar miembros a una cuenta existente</block>
-  <block id="f0416cc7adfb705444d5a66527cb9ce5" category="paragraph">Si su empresa ya tiene una cuenta y desea unirse a ella, debe omitir este paso y pedir al propietario que lo asocie a la cuenta. Una vez que el propietario le agregue, puede iniciar sesión y tendrá acceso a la cuenta. <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>.</block>
   <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">Una cuenta es el elemento de nivel superior de la plataforma de identidades de NetApp. Permite añadir y gestionar usuarios, roles, permisos y entornos de trabajo.</block>
   <block id="a860f226d10bcd54ab238e5189d94747" category="inline-image-macro">Captura de pantalla de la página de bienvenida que aparece cuando inicia sesión con una cuenta nueva que no pertenece a una cuenta.</block>
   <block id="e079acaa326ddf3b1cb6ee167cce08f4" category="paragraph"><block ref="e079acaa326ddf3b1cb6ee167cce08f4" category="inline-image-macro-rx" type="image"></block></block>
@@ -3068,4 +3065,7 @@
   <block id="9149dec1c87108fda2f607ad7f9d0f7c" category="paragraph">Configure Azure Active Directory para habilitar la federación de identidades con BlueXP.</block>
   <block id="60f43fc6dd2ef1336922bb7836f8fd10" category="paragraph">Configure su servidor PingFederate para habilitar la federación de identidades con BlueXP.</block>
   <block id="61bc7bf1f88516437cb71c2afcff94f5" category="paragraph">El administrador de BlueXP que creó la conexión es el único usuario autorizado que puede actualizar la conexión. Si desea añadir más administradores, póngase en contacto con el servicio de soporte de NetApp.</block>
+  <block id="dbd1aae17ba4f4ca876aea9deb478855" category="inline-link-macro">Aprenda a registrarse en BlueXP y crear una cuenta</block>
+  <block id="f4d0e4f5ec6f078434dc63eacdebe638" category="paragraph"><block ref="94d2906599f74921f2fab3568b028f51" category="inline-link-macro-rx"></block>.</block>
+  <block id="816dc8c932a8afbdb9361ede8774b3d0" category="paragraph">Si su negocio ya tiene una cuenta y desea unirse a ella, entonces usted debe cerrar fuera de BlueXP y pedir al propietario que lo asocie a la cuenta. Una vez que el propietario le agregue, puede iniciar sesión y tendrá acceso a la cuenta. <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>.</block>
 </blocks>
