@@ -67,6 +67,8 @@ Con cualquiera de las dos opciones, primero debe empezar creando una política d
 
 Esta directiva sólo contiene los permisos necesarios para iniciar la instancia de Connector en AWS desde BlueXP. No utilice esta política para otras situaciones.
 
+Si es necesario, puede restringir la política de IAM mediante el IAM `Condition` elemento. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentación de AWS: Elemento de condición"^]
+
 Cuando BlueXP crea el conector, aplica un nuevo conjunto de permisos a la instancia de Connector que permite al conector administrar los recursos de su entorno de nube pública.
 
 .Pasos

@@ -321,9 +321,6 @@ El conector realiza las siguientes solicitudes de API cuando utiliza Cloud Data 
 | Microsoft.Storage/storageAccounts/Write | Sí | No 
 
 
-| Microsoft.Storage/storageAccounts/DELETE | No | Sí 
-
-
 | Microsoft.Storage/storageAccounts/blobServices/contenedores/lectura | Sí | Sí 
 
 
@@ -764,6 +761,14 @@ El conector realiza las siguientes solicitudes de API para detectar y gestionar 
 == Registro de cambios
 
 A medida que se añadan y eliminen permisos, los anotaremos en las secciones siguientes.
+
+
+
+=== 23 de marzo de 2023
+
+El permiso "Microsoft.Storage/storageAccounts/delete" ya no es necesario en Cloud Data Sense.
+
+Este permiso sigue siendo necesario para Cloud Volumes ONTAP.
 
 
 
