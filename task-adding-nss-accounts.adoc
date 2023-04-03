@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: 'Proporcione las credenciales para que sus cuentas del sitio de soporte de NetApp (NSS) se registren para admitir, habilitar flujos de trabajo clave para Cloud Volumes ONTAP, etc.' 
+summary: 'Proporcione las credenciales para que sus cuentas del sitio de soporte de NetApp (NSS) se registren para admitir, habilitar flujos de trabajo clave para Cloud Volumes ONTAP, etc. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP.' 
 ---
-= Gestione cuentas del sitio de soporte de NetApp en BlueXP
+= Administrar las credenciales de NSS asociadas con una cuenta de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,25 +14,14 @@ summary: 'Proporcione las credenciales para que sus cuentas del sitio de soporte
 
 
 [role="lead"]
-Proporcione las credenciales para que sus cuentas del sitio de soporte de NetApp (NSS) se registren para admitir, habilitar flujos de trabajo clave para Cloud Volumes ONTAP, etc.
+Proporcione las credenciales para que sus cuentas del sitio de soporte de NetApp (NSS) se registren para admitir, habilitar flujos de trabajo clave para Cloud Volumes ONTAP, etc. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP.
+
+
+NOTE: BlueXP también admite la asociación de una cuenta NSS por usuario de BlueXP. link:task-manage-user-credentials.html["Aprenda a gestionar las credenciales en el nivel de usuario"].
 
 
 
 == Descripción general
-
-BlueXP admite la asociación de una cuenta NSS a cada usuario de BlueXP y la asociación de una o más cuentas de NSS a su cuenta de BlueXP.
-
-
-
-=== Credenciales de NSS por usuario de BlueXP
-
-Se requieren sus credenciales de NSS individuales para acceder a su cuenta de Digital Advisor y gestionar los casos de soporte a través de BlueXP. Estas credenciales sólo son visibles para la persona que inicia sesión en BlueXP. Las credenciales se pueden eliminar y actualizar según sea necesario.
-
-<<Manage NSS credentials per BlueXP user,Aprenda a administrar credenciales de NSS por usuario de BlueXP>>.
-
-
-
-=== Credenciales de NSS para su cuenta de BlueXP
 
 Se requiere la asociación de las credenciales del sitio de soporte de NetApp con el ID de cuenta de BlueXP específico para habilitar las siguientes tareas en BlueXP:
 
@@ -51,52 +40,9 @@ Se requiere que proporcione su cuenta de NSS para activar el soporte de su siste
 
 Estas credenciales están asociadas a su ID de cuenta de BlueXP específico. Los usuarios que pertenecen a la cuenta BlueXP pueden acceder a estas credenciales desde *Soporte > Gestión NSS*.
 
-<<Administre las credenciales de NSS para su cuenta de BlueXP,Aprenda a administrar credenciales de NSS para su cuenta de BlueXP>>.
 
 
-
-== Administre las credenciales de NSS para su inicio de sesión de BlueXP
-
-Las credenciales de NSS asociadas con el inicio de sesión de BlueXP permiten acceder a Digital Advisor y capacidades de gestión de casos.
-
-* Al acceder a Digital Advisor en BlueXP, se le pedirá que inicie sesión en Digital Advisor introduciendo sus credenciales de NSS. Después de introducir sus credenciales de NSS, verá esta cuenta de NSS que aparece en la parte superior de la página NSS Management. A continuación, puede gestionar esas credenciales según sea necesario.
-* Al acceder a *Soporte > Administración de casos*, se le pedirá que introduzca sus credenciales de NSS, si aún no lo ha hecho. En esta página se muestran los casos de soporte asociados con su cuenta de NSS y con su empresa.
-
-
-Tenga en cuenta lo siguiente acerca de esta cuenta de NSS:
-
-* La cuenta se gestiona en el nivel de usuario, lo que significa que otros usuarios que inician sesión no la pueden ver.
-* La cuenta no se puede utilizar con ninguna otra función de BlueXP: No con la creación de Cloud Volumes ONTAP, la licencia ni la creación de casos de soporte.
-* Sólo puede haber una cuenta NSS asociada con Digital Advisor y gestión de casos, por usuario.
-
-
-.Pasos
-. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Ayuda y seleccione *Soporte*.
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["Una captura de pantalla del menú Ayuda en el que Soporte es la primera opción de la lista"]
-
-. Haga clic en *NSS Management*.
-. En *sus credenciales de NSS*, haga clic en *Acción* y elija cualquiera de las siguientes opciones:
-+
-** *Usuario de NSS asociado*: Añadir credenciales para una cuenta del sitio de soporte de NetApp.
-** *Actualizar las credenciales existentes*: Actualizar las credenciales de su cuenta del sitio de soporte de NetApp.
-** *Eliminar*: Elimina la cuenta asociada a tu cuenta de usuario de BlueXP.
-
-
-
-
-.Resultado
-BlueXP actualiza sus credenciales de NSS. Los cambios se reflejarán al acceder a Digital Advisor o a la página Administración de casos.
-
-
-
-== Administre las credenciales de NSS para su cuenta de BlueXP
-
-Gestione las credenciales de NSS asociadas con su cuenta de BlueXP para que pueda registrarse en la asistencia técnica, crear casos de soporte y habilitar flujos de trabajo clave para Cloud Volumes ONTAP.
-
-
-
-=== Añada una cuenta de NSS
+== Añada una cuenta de NSS
 
 La consola de soporte le permite añadir y gestionar sus cuentas de la página de soporte de NetApp para utilizarlas con BlueXP a nivel de cuenta de BlueXP.
 
@@ -153,7 +99,7 @@ Los usuarios ahora pueden seleccionar la cuenta al crear nuevos sistemas de Clou
 
 
 
-=== Actualice una cuenta de NSS para el nuevo método de autenticación
+== Actualice una cuenta de NSS para el nuevo método de autenticación
 
 A partir de noviembre de 2021, NetApp ahora utiliza Microsoft Azure Active Directory como proveedor de identidades para servicios de autenticación específicos para soporte y licencias. Como resultado de esta actualización, BlueXP le solicitará que actualice las credenciales de cualquier cuenta existente que haya agregado previamente.
 
@@ -179,7 +125,7 @@ Una vez completado el proceso, la cuenta que ha actualizado debería aparecer ah
 
 
 
-=== Actualice las credenciales de NSS
+== Actualice las credenciales de NSS
 
 Deberá actualizar las credenciales de sus cuentas de NSS en BlueXP cuando se produzca una de las siguientes situaciones:
 
@@ -203,7 +149,7 @@ NetApp utiliza Microsoft Azure Active Directory como proveedor de identidades pa
 
 
 
-=== Adjunte un entorno de trabajo a una cuenta de NSS diferente
+== Adjunte un entorno de trabajo a una cuenta de NSS diferente
 
 Si su organización tiene varias cuentas del sitio de soporte de NetApp, puede cambiar qué cuenta está asociada a un sistema Cloud Volumes ONTAP.
 
@@ -227,7 +173,7 @@ image:screenshot-nss-change-account.png["Una captura de pantalla que muestra el 
 
 
 
-=== Muestra la dirección de correo electrónico de una cuenta de NSS
+== Muestra la dirección de correo electrónico de una cuenta de NSS
 
 Ahora que las cuentas del sitio de soporte de NetApp usan Microsoft Azure Active Directory para los servicios de autenticación, el nombre de usuario de NSS que aparece en BlueXP suele ser un identificador generado por Azure AD. Como resultado, es posible que no conozca inmediatamente la dirección de correo electrónico asociada a esa cuenta. Pero BlueXP tiene la opción de mostrarle la dirección de correo electrónico asociada.
 
@@ -248,7 +194,7 @@ BlueXP muestra el nombre de usuario del sitio de soporte de NetApp y la direcci�
 
 
 
-=== Quite una cuenta de NSS
+== Quite una cuenta de NSS
 
 Elimine cualquiera de las cuentas de NSS que ya no desee utilizar con BlueXP.
 

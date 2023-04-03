@@ -132,7 +132,7 @@ Si acaba de crear estas credenciales en su proveedor de cloud, es posible que tr
 +
 image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
-. Haga clic en *Agregar credenciales* y siga los pasos del asistente.
+. En la página *credenciales de cuenta*, haga clic en *Agregar credenciales* y siga los pasos del asistente.
 +
 .. *Ubicación de credenciales*: Seleccione *Servicios Web de Amazon > conector*.
 .. *Definir credenciales*: Proporcione el ARN (nombre de recurso de Amazon) de una función de IAM de confianza, o introduzca una clave de acceso de AWS y una clave secreta.
@@ -199,7 +199,7 @@ Si acaba de crear la función IAM, puede tardar unos minutos en estar disponible
 +
 image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
-. Haga clic en *Agregar credenciales* y siga los pasos del asistente.
+. En la página *credenciales de cuenta*, haga clic en *Agregar credenciales* y siga los pasos del asistente.
 +
 .. *Ubicación de credenciales*: Seleccione *Servicios Web de Amazon > BlueXP*.
 .. *Definir credenciales*: Proporcionar el ARN (nombre de recurso de Amazon) de la función IAM.
@@ -228,7 +228,7 @@ Debe crear un conector para poder cambiar la configuración de BlueXP. link:conc
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
-. Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
+. En la página *credenciales de cuenta*, haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
 +
 image:screenshot_associate_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
 
@@ -274,7 +274,7 @@ TIP: No se pueden editar las credenciales de un perfil de instancia asociado a u
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
-. Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Editar credenciales*.
+. En la página *credenciales de cuenta*, haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Editar credenciales*.
 . Realice los cambios necesarios y, a continuación, haga clic en *aplicar*.
 
 
@@ -289,6 +289,6 @@ TIP: No se pueden eliminar las credenciales de un perfil de instancia asociado a
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
-. Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Eliminar credenciales*.
+. En la página *credenciales de cuenta*, haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Eliminar credenciales*.
 . Haga clic en *Eliminar* para confirmar.
 

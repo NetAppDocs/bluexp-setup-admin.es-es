@@ -637,16 +637,11 @@
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">*ejemplo*</block>
   <block id="2529cf627b3e8b4f850e5b8e7998dea3" category="inline-image-macro">Una captura de pantalla que muestra el ID de sistema para BlueXP que aparece en el panel de soporte técnico.</block>
   <block id="dd452be96917f1c62ed3d40b11c4ebf2" category="paragraph"><block ref="dd452be96917f1c62ed3d40b11c4ebf2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="333c244077c4c3df40d39cbb97f94995" category="paragraph">Proporcione las credenciales para que sus cuentas del sitio de soporte de NetApp (NSS) se registren para admitir, habilitar flujos de trabajo clave para Cloud Volumes ONTAP, etc.</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">Es necesario proporcionar su cuenta NSS para que BlueXP pueda cargar su clave de licencia y activar la suscripción para el plazo que adquirió. Esto incluye actualizaciones automáticas para renovaciones de términos.</block>
   <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">Se requiere que proporcione su cuenta de NSS para activar el soporte de su sistema y obtener acceso a los recursos de soporte técnico de NetApp.</block>
-  <block id="b34d01d56d89281c69c44eaef7460a79" category="paragraph">Al acceder a Digital Advisor en BlueXP, se le pedirá que inicie sesión en Digital Advisor introduciendo sus credenciales de NSS. Después de introducir sus credenciales de NSS, verá esta cuenta de NSS que aparece en la parte superior de la página NSS Management. A continuación, puede gestionar esas credenciales según sea necesario.</block>
-  <block id="60f184ee8b252ec5284ca4bfc102c193" category="paragraph">Tenga en cuenta lo siguiente acerca de esta cuenta de NSS:</block>
   <block id="37cb0cdf24a1597d838bc5f1699b9e5a" category="list-text">La cuenta se gestiona en el nivel de usuario, lo que significa que otros usuarios que inician sesión no la pueden ver.</block>
   <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4afa9a0da7cac7698a1cff8ff0c528e0" category="list-text">Haga clic en *NSS Management*.</block>
-  <block id="3793cae33028a6b75ab0ca8130ca6a9d" category="list-text">En *sus credenciales de NSS*, haga clic en *Acción* y elija cualquiera de las siguientes opciones:</block>
-  <block id="fe11914cdc8e174bef64d941a9b88b00" category="list-text">*Actualizar las credenciales existentes*: Actualizar las credenciales de su cuenta del sitio de soporte de NetApp.</block>
   <block id="aeaeee19a7c393222e407a525cf01991" category="section-title">Añada una cuenta de NSS</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Si tiene una cuenta de nivel de cliente, puede añadir una o varias cuentas de NSS.</block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">Haga clic en *Administración de NSS &gt; Agregar cuenta de NSS*.</block>
@@ -825,7 +820,6 @@
   <block id="86a2197cbddea56be1e7cc24be3d4916" category="paragraph"><block ref="86a2197cbddea56be1e7cc24be3d4916" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4815e02c8d3314e19dd0c9f88070f95e" category="paragraph">Por ejemplo, si desea ver sólo las notificaciones "error" y "Advertencia" para las operaciones de BlueXP, seleccione esas entradas y sólo verá esos tipos de notificaciones.</block>
   <block id="876f7ec75e02cbdaa9d75999ea673e23" category="paragraph">Puede enviar tipos específicos de notificaciones por correo electrónico para que se le informe de la actividad importante del sistema incluso cuando no haya iniciado sesión en BlueXP. Los correos electrónicos pueden enviarse a usuarios que formen parte de su cuenta de NetApp o a cualquier otro destinatario que deba conocer ciertos tipos de actividad del sistema.</block>
-  <block id="2328f91c347cdd3538e6eec847331d2d" category="list-text">En este momento, se envían notificaciones por correo electrónico para las siguientes características y servicios de BlueXP: Conectores, Cloud Sync, Cloud Backup y Protección contra ransomware. En futuras versiones se añadirán servicios adicionales.</block>
   <block id="5fd245f2aeee830efb92d081af6a0e22" category="list-text">No se admite el envío de notificaciones por correo electrónico cuando el conector está instalado en un sitio sin acceso a Internet.</block>
   <block id="95542c2d2bb8f536e459ea1a4e6e77b7" category="paragraph">De forma predeterminada, los administradores de cuentas de BlueXP recibirán correos electrónicos para todas las notificaciones "críticas" y "recomendaciones". Todos los demás usuarios y destinatarios están configurados, de forma predeterminada, para no recibir ningún correo electrónico de notificación.</block>
   <block id="f6cf378d25bc2bcaeedbdbd322fec41b" category="paragraph">Debe ser un administrador de cuentas para personalizar los ajustes de notificaciones.</block>
@@ -863,7 +857,6 @@
   <block id="72a31d53edf5989e236535eb541ee755" category="paragraph">Al implementar un conector en Google Cloud, BlueXP crea un conjunto predeterminado de credenciales asociadas a la instancia de Connector VM. Estas son las credenciales que BlueXP utiliza para implementar Cloud Volumes ONTAP.</block>
   <block id="fd5876417edb63f12f7c19c175309431" category="paragraph">En cualquier momento, puede cambiar la suscripción de Marketplace asociada a estas credenciales. La suscripción le permite crear un sistema de pago por uso Cloud Volumes ONTAP y usar otros servicios cloud de NetApp.</block>
   <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.</block>
-  <block id="fe001b474268cb9300af19ba4c12edd8" category="list-text">Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">Captura de pantalla del menú de acción para un conjunto de credenciales existentes.</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="978deed4db0f89cc0f25e6998d8c5ede" category="list-text">Para asociar las credenciales a una suscripción existente, seleccione un proyecto de Google Cloud y una suscripción en la lista desplegable y, a continuación, haga clic en *asociado*.</block>
@@ -1370,7 +1363,6 @@
   <block id="15bb02041f104dbc655746382fa7ea1c" category="paragraph">Si acaba de crear estas credenciales en su proveedor de cloud, es posible que transcurran unos minutos hasta que estén disponibles para su uso. Espere unos minutos antes de agregar las credenciales a BlueXP.</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">Vea cómo</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">Debe crear un conector para poder cambiar la configuración de BlueXP. <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>.</block>
-  <block id="11832df968cbb4cdb8e45984c11a77d0" category="list-text">Haga clic en *Agregar credenciales* y siga los pasos del asistente.</block>
   <block id="58cf09b42fff9dfb526ddbf232538ae2" category="list-text">*Ubicación de credenciales*: Seleccione *Microsoft Azure &gt; conector*.</block>
   <block id="5d1285233566f1379ef88c010de06abc" category="list-text">*Definir credenciales*: Introduzca información acerca del principal de servicio de Azure Active Directory que otorga los permisos necesarios:</block>
   <block id="cff52132feed6733ab9577cfdb9d7bcc" category="list-text">ID de aplicación (cliente): Consulte <block ref="56cad3532f54e3c99fa324f70e4a55ab" category="inline-xref-macro-rx"></block>.</block>
@@ -1401,11 +1393,9 @@
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">En el siguiente vídeo se muestran los pasos para suscribirse desde Azure Marketplace:</block>
   <block id="f237b70f3f3799f90d3acf9d0c78e108" category="section-title">Editar credenciales</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">Edite sus credenciales de Azure en BlueXP modificando los detalles acerca de sus credenciales de servicio de Azure. Por ejemplo, es posible que necesite actualizar el secreto de cliente si se creó un nuevo secreto para la aplicación principal de servicios.</block>
-  <block id="be92f90840924f8fb669257f558527d1" category="list-text">Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Editar credenciales*.</block>
   <block id="34159dbbf51f083cde5521a26697cbfa" category="list-text">Realice los cambios necesarios y, a continuación, haga clic en *aplicar*.</block>
   <block id="030914a6fb8d93761dc666e5e31bd6bd" category="section-title">Eliminación de credenciales</block>
   <block id="a16b0bbea9ed6a7a22d41efc21ec1cef" category="paragraph">Si ya no necesita un conjunto de credenciales, puede eliminarlas de BlueXP. Sólo puede eliminar credenciales que no estén asociadas a un entorno de trabajo.</block>
-  <block id="16c6fa81afb88d058842087a5734f874" category="list-text">Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Eliminar credenciales*.</block>
   <block id="2d362fb636ab4e2644720f00f02ddbfb" category="summary">Después de registrarse en BlueXP, puede iniciar sesión desde su navegador web a través de la interfaz de usuario basada en SaaS.</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="doc">Inicie sesión en BlueXP</block>
   <block id="8fa7e084836ae35d976f6f572a47e804" category="paragraph">Si accede a BlueXP desde una región gubernamental o un sitio que no tiene acceso saliente a Internet, deberá iniciar sesión en la interfaz de usuario de BlueXP que se ejecuta localmente en el conector. <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>.</block>
@@ -2802,11 +2792,7 @@
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">Almacenamiento en cloud detectado</block>
   <block id="bce447551b8153911559a7a705721ffe" category="sidebar">Consulte sus cuentas de Azure Blob</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">Consulte sus cubos de Google Cloud Storage</block>
-  <block id="2c4eed705dd3e0adf6e7194858d8dff7" category="sidebar">Credenciales de AWS</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">Administrar credenciales y suscripciones</block>
-  <block id="71cf9cd60037f691ceec3200a6f0acf1" category="sidebar">Credenciales de Azure</block>
-  <block id="0b3519eda2c4dfc6d4beaa747492c09a" category="sidebar">Credenciales de Google Cloud</block>
-  <block id="41a3f8399b4901b2c572d51d83f4b79a" category="sidebar">Cuentas del sitio de soporte de NetApp</block>
   <block id="a92dc2a225f00bb9e0d676f2e4ae484e" category="sidebar">Descubrimiento mediante Mis oportunidades</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Referencia</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">Resumen de permisos</block>
@@ -2847,13 +2833,6 @@
   <block id="559e00158f66ad338da1ff42475d15d4" category="paragraph">En un entorno local:</block>
   <block id="ddc27aae141cdde9ebf1781f29405e62" category="inline-link">Ponga en marcha Cloud Volumes ONTAP</block>
   <block id="d4e942d34e603f30d4aa65123ee69ac5" category="paragraph">En un entorno de cloud, puede hacerlo<block ref="00153078c5cb58fb46fb6b9817a49af6" category="inline-link-rx"></block></block>
-  <block id="3c64f2e1d3b86927fc25494420d8e69e" category="doc">Gestione cuentas del sitio de soporte de NetApp en BlueXP</block>
-  <block id="8b12e6f38f8b47f363480ac1d3b8327f" category="paragraph">BlueXP admite la asociación de una cuenta NSS a cada usuario de BlueXP y la asociación de una o más cuentas de NSS a su cuenta de BlueXP.</block>
-  <block id="e6cee5a5293cdefddf2eea3f6f8e63a0" category="section-title">Credenciales de NSS por usuario de BlueXP</block>
-  <block id="9f16a5e3343035191419f8ff9c2e5969" category="paragraph">Se requieren sus credenciales de NSS individuales para acceder a su cuenta de Digital Advisor y gestionar los casos de soporte a través de BlueXP. Estas credenciales sólo son visibles para la persona que inicia sesión en BlueXP. Las credenciales se pueden eliminar y actualizar según sea necesario.</block>
-  <block id="d0c8c4e397d970dc8543d75be500735a" category="inline-xref">Aprenda a administrar credenciales de NSS por usuario de BlueXP</block>
-  <block id="67d6e3f20ef7fa11673f57da719e30a4" category="paragraph"><block ref="7ba791bb5a4402182b386f894b67a43b" category="inline-xref-macro-rx"></block>.</block>
-  <block id="86b693fcb28e522569eb6bcbe22e1048" category="section-title">Credenciales de NSS para su cuenta de BlueXP</block>
   <block id="4a2f661974665defd7d188133a1ab48b" category="paragraph">Se requiere la asociación de las credenciales del sitio de soporte de NetApp con el ID de cuenta de BlueXP específico para habilitar las siguientes tareas en BlueXP:</block>
   <block id="15c2fed71e5ff16c335e2d40bc485e1e" category="list-text">Registro para recibir soporte</block>
   <block id="1ca6b2b8383e207951356457a77708e7" category="list-text">Creación de casos de soporte</block>
@@ -2861,18 +2840,9 @@
   <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">Registro de sistemas Cloud Volumes ONTAP de pago por uso</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Actualizar el software Cloud Volumes ONTAP a la versión más reciente</block>
   <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">Estas credenciales están asociadas a su ID de cuenta de BlueXP específico. Los usuarios que pertenecen a la cuenta BlueXP pueden acceder a estas credenciales desde *Soporte &gt; Gestión NSS*.</block>
-  <block id="0080504e9313f9b154660cf9d3a82d90" category="inline-xref">Aprenda a administrar credenciales de NSS para su cuenta de BlueXP</block>
-  <block id="c8ab27a714bbad7b5a28e63b8123aae5" category="paragraph"><block ref="04ed260555c7204bedee595d1a22139b" category="inline-xref-macro-rx"></block>.</block>
-  <block id="d9307c659c4370870dcc89d984d908e2" category="section-title">Administre las credenciales de NSS para su inicio de sesión de BlueXP</block>
   <block id="5a201f4198ac7b46778a727f32bd6203" category="paragraph">Las credenciales de NSS asociadas con el inicio de sesión de BlueXP permiten acceder a Digital Advisor y capacidades de gestión de casos.</block>
-  <block id="79dce1fafa49d0b2bbe06423f13f9d58" category="list-text">Al acceder a *Soporte &gt; Administración de casos*, se le pedirá que introduzca sus credenciales de NSS, si aún no lo ha hecho. En esta página se muestran los casos de soporte asociados con su cuenta de NSS y con su empresa.</block>
   <block id="d4b8ea0f438d980b900fa0c72d88710f" category="list-text">La cuenta no se puede utilizar con ninguna otra función de BlueXP: No con la creación de Cloud Volumes ONTAP, la licencia ni la creación de casos de soporte.</block>
   <block id="37ab7585b9575599c51022bd3b09813a" category="list-text">Sólo puede haber una cuenta NSS asociada con Digital Advisor y gestión de casos, por usuario.</block>
-  <block id="78eefce62993605d332b1408d42256d7" category="list-text">*Usuario de NSS asociado*: Añadir credenciales para una cuenta del sitio de soporte de NetApp.</block>
-  <block id="bb003c773133044d9d8666f477a36cfe" category="list-text">*Eliminar*: Elimina la cuenta asociada a tu cuenta de usuario de BlueXP.</block>
-  <block id="65fb057ff5fa0f79f9e974fbbf20b1b4" category="paragraph">BlueXP actualiza sus credenciales de NSS. Los cambios se reflejarán al acceder a Digital Advisor o a la página Administración de casos.</block>
-  <block id="ce3a367043c4a6897ab7ccbfa40ad329" category="section-title">Administre las credenciales de NSS para su cuenta de BlueXP</block>
-  <block id="2a99a7f02260cc6c2b4aa3815cee53ec" category="paragraph">Gestione las credenciales de NSS asociadas con su cuenta de BlueXP para que pueda registrarse en la asistencia técnica, crear casos de soporte y habilitar flujos de trabajo clave para Cloud Volumes ONTAP.</block>
   <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">La consola de soporte le permite añadir y gestionar sus cuentas de la página de soporte de NetApp para utilizarlas con BlueXP a nivel de cuenta de BlueXP.</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">La cuenta NSS debe ser una cuenta de nivel de cliente (no una cuenta de invitado o temporal). Puede tener varias cuentas de NSS en el nivel del cliente.</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">Sólo puede haber una cuenta NSS si esa cuenta es una cuenta de nivel de partner. Si intenta agregar cuentas de NSS de nivel de cliente y existe una cuenta de nivel de partner, obtendrá el siguiente mensaje de error:</block>
@@ -2909,7 +2879,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Icono con tres puntos que aparece en la última columna de la tabla</block>
   <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">Gestione un caso existente haciendo clic en <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> y seleccione una de las opciones disponibles:</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Ver caso*: Ver todos los detalles sobre un caso específico.</block>
-  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*Actualizar notas de caso*: Proporcione detalles adicionales sobre su problema.</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*Cerrar caso*: Proporcione detalles sobre por qué cierra el caso y haga clic en *Cerrar caso*.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Captura de pantalla que muestra las acciones que puede realizar después de seleccionar el menú de la última columna de la tabla.</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
@@ -3074,4 +3043,58 @@
   <block id="43908e244f944d05ab87a4987453f7bc" category="paragraph">El permiso "Microsoft.Storage/storageAccounts/delete" ya no es necesario en Cloud Data Sense.</block>
   <block id="47e8280c2cd82cf2f49537bfd5661b15" category="paragraph">Este permiso sigue siendo necesario para Cloud Volumes ONTAP.</block>
   <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">Si es necesario, puede restringir la política de IAM mediante el IAM<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> elemento.<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
+  <block id="81fa6885ef2dca44d4868d3d8ea203c9" category="summary">Según las acciones que haya adoptado en BlueXP, quizás tenga credenciales de ONTAP y de NSS del sitio de soporte de NetApp al inicio de sesión de usuario de BlueXP. Puede ver y administrar esas credenciales en BlueXP después de haberlas asociado. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.</block>
+  <block id="e3884a4ce043ad31217e0098c7c0537f" category="doc">Administre las credenciales asociadas con su inicio de sesión de BlueXP</block>
+  <block id="5a66a53c80f94aa60f854872b432d82d" category="paragraph">En función de las acciones que haya adoptado en BlueXP, quizás tenga credenciales de ONTAP asociadas y credenciales del sitio de soporte de NetApp (NSS) con su inicio de sesión de usuario de BlueXP. Puede ver y administrar esas credenciales en BlueXP después de haberlas asociado. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.</block>
+  <block id="823a6e1d7fe661be55dd3af05f972b11" category="section-title">Credenciales de ONTAP</block>
+  <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">Cuando detecta directamente un clúster de ONTAP en las instalaciones sin usar un conector, se le solicita que introduzca las credenciales de ONTAP para el clúster. Estas credenciales se gestionan en el nivel de usuario, lo que significa que otros usuarios que inician sesión no las pueden ver.</block>
+  <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">Credenciales de NSS</block>
+  <block id="fb81cc600c8251372b08f0797c3abdd7" category="list-text">Al acceder a Digital Advisor en BlueXP, se le pedirá que inicie sesión en Digital Advisor introduciendo sus credenciales de NSS.</block>
+  <block id="64470ba450382b851139073aed09c635" category="list-text">Al acceder a *Soporte &gt; Administración de casos*, se le pedirá que introduzca sus credenciales de NSS, si aún no lo ha hecho. En esta página, puede gestionar los casos de soporte asociados con su cuenta de NSS y con su empresa.</block>
+  <block id="276e2bd44117ba4b3317de4a352235b2" category="paragraph">Tenga en cuenta lo siguiente acerca de la cuenta de NSS:</block>
+  <block id="af8b5ac7f9c7fe53fa31652162a91c6e" category="paragraph">Las credenciales de la página de soporte de NetApp también están asociadas con la cuenta de BlueXP que forma parte de. Las credenciales de nivel de cuenta de NSS le permiten registrarse en un modelo de soporte, poner en marcha Cloud Volumes ONTAP al llevar su propia licencia (BYOL), etc.</block>
+  <block id="db0f1f3e531a1a1c690b42c9a6daae35" category="inline-link-macro">Obtenga más información sobre el uso de credenciales de NSS con su cuenta de BlueXP</block>
+  <block id="dacf2f246c2efb276c3709c141985f7c" category="paragraph"><block ref="4734e8f3bab5a9c00aebb286a2f16deb" category="inline-link-macro-rx"></block>.</block>
+  <block id="cc96a4cc30e50577aa6671b076af72e1" category="section-title">Gestione las credenciales de usuario</block>
+  <block id="fa6e9e9d0c238d856c9d80111986b0b1" category="paragraph">Para gestionar las credenciales de usuario, actualice el nombre de usuario y la contraseña o elimine las credenciales.</block>
+  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">Haga clic en *credenciales de usuario*.</block>
+  <block id="9afc8b6b41174c0836030fc8ac89ce5a" category="list-text">Si aún no tiene ninguna cuenta de usuario, puede seleccionar *Añadir credenciales de NSS* para añadir su cuenta del sitio de soporte de NetApp.</block>
+  <block id="f89f00feaba2fad2b55607ff15acc121" category="list-text">Gestione las credenciales existentes eligiendo las siguientes opciones:</block>
+  <block id="73877140c9191100114cf829d4df1aa5" category="list-text">*Actualizar credenciales*: Actualizar el nombre de usuario y la contraseña de la cuenta.</block>
+  <block id="fc15340823a1f5df29ca8938cb5aca15" category="list-text">*Eliminar credenciales*: Elimina la cuenta asociada a tu cuenta de usuario de BlueXP.</block>
+  <block id="9d7731be7d930a1152dbf528e9a20972" category="inline-image-macro">Captura de pantalla que muestra las credenciales de NSS y ONTAP y la capacidad de seleccionar Actualizar credenciales y Eliminar credenciales en el menú de acciones</block>
+  <block id="a4ecb2be579cb0376c3938220c6db5bf" category="paragraph"><block ref="a4ecb2be579cb0376c3938220c6db5bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="64286300f4b2d20b21751b700c210a03" category="paragraph">BlueXP actualiza tus credenciales. Los cambios se reflejarán cuando acceda al clúster de ONTAP, al asesor digital o a la página Gestión de casos.</block>
+  <block id="5d93a8788cf1a23c80bc3e6304d9b87f" category="summary">Proporcione las credenciales para que sus cuentas del sitio de soporte de NetApp (NSS) se registren para admitir, habilitar flujos de trabajo clave para Cloud Volumes ONTAP, etc. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP.</block>
+  <block id="8c79ce7ab82c8c7e3fb9c6e8a73f8960" category="doc">Administrar las credenciales de NSS asociadas con una cuenta de BlueXP</block>
+  <block id="3d41446101a1daf0639146f4555b623b" category="inline-link-macro">Aprenda a gestionar las credenciales en el nivel de usuario</block>
+  <block id="45b496845c319f5bc16fa44745aea5f0" category="admonition">BlueXP también admite la asociación de una cuenta NSS por usuario de BlueXP. <block ref="92ab4e1c25ae34810f6c6d2ede81f4ab" category="inline-link-macro-rx"></block>.</block>
+  <block id="d6e5647a322b53644cabe536bfdb7f29" category="list-text">En la página *credenciales de cuenta*, haga clic en *Agregar credenciales* y siga los pasos del asistente.</block>
+  <block id="20724e8d26839906dc872ed7a379a173" category="list-text">En la página *credenciales de cuenta*, haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.</block>
+  <block id="3d214e0293b46f81700e2b6fbbd385ef" category="list-text">En la página *credenciales de cuenta*, haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Editar credenciales*.</block>
+  <block id="8ce4a1ee477e89ddf51474c4388f851b" category="list-text">En la página *credenciales de cuenta*, haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Eliminar credenciales*.</block>
+  <block id="05c6578f55ba6f40e6bb7dd1d07e0243" category="list-text">En este momento, se envían notificaciones por correo electrónico para las siguientes características y servicios de BlueXP: Conectores, Cloud Sync, Cloud Backup, Digital Wallet y Protección contra ransomware. En futuras versiones se añadirán servicios adicionales.</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 de abril de 2023</block>
+  <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">Conector 3.9.28</block>
+  <block id="a08572617e25a61e8569807ac103ab07" category="list-text">Las notificaciones por correo electrónico ya son compatibles con Digital Wallet.</block>
+  <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">Si configura los ajustes de notificación, puede recibir notificaciones por correo electrónico cuando sus licencias de BYOL estén a punto de expirar (una notificación de "advertencia") o si ya han caducado (una notificación de "error").</block>
+  <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Aprenda a configurar notificaciones por correo electrónico</block>
+  <block id="e16804d7658f4d3132a1170b8cec7c7e" category="paragraph"><block ref="9ce9eb475c326d02a5c224ef8589bc0a" category="inline-link-rx"></block>.</block>
+  <block id="1ba259cc1a092c9c30c1a18ccc612c75" category="list-text">El conector ahora es compatible con la región de Google Cloud en Turín.</block>
+  <block id="e9c35e9b853bc286e0f3b1a7ee2e338a" category="list-text">Ahora puede detectar VMware vCenter Server en BlueXP.</block>
+  <block id="a5b1ab8743c3279fbcf5a93dcd6de23d" category="paragraph">Después de detectar una instancia de VMware vCenter Server que se ejecuta en AWS o en las instalaciones, puede abrir el entorno de trabajo para ver detalles sobre los almacenes de datos y las máquinas virtuales que están asociadas con el servidor.</block>
+  <block id="10cc8c1f48423a72bf1e617861999cae" category="paragraph">El único requisito es un conector que tiene una conexión a VMware vCenter Server que ejecuta la versión 7.0 o posterior.</block>
+  <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">Para empezar, seleccione *Agregar entorno de trabajo*, seleccione *Amazon Web Services* o *On-local* y, a continuación, seleccione *VMware vCenter Server*. Introduzca el nombre de dominio o la dirección IP del servidor y, a continuación, introduzca el nombre de usuario y la contraseña del usuario administrador.</block>
+  <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">Ahora puede gestionar las credenciales de usuario asociadas con su inicio de sesión de BlueXP: Credenciales de ONTAP y credenciales del sitio de soporte de NetApp (NSS).</block>
+  <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">Al ir a *Configuración &gt; credenciales*, puede ver las credenciales, actualizar las credenciales y eliminarlas. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.</block>
+  <block id="b74c77e09b66a8f63b22e9ec3917cbbc" category="inline-link-macro">Aprenda a administrar las credenciales de usuario</block>
+  <block id="43cddfbd5a5e952fa3a0613068b01922" category="paragraph"><block ref="f57f6e52027d92bbfed90d112fcd8715" category="inline-link-macro-rx"></block>.</block>
+  <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">Ahora puede cargar archivos adjuntos al crear un caso de soporte o al actualizar las notas del caso para un caso de soporte existente.</block>
+  <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">Descubra cómo crear y gestionar casos de soporte</block>
+  <block id="6d69140f9b878e098eb9bfcd623c9dbd" category="paragraph"><block ref="7f3b2cbcf14ed0f5a85962e6b9e3eba8" category="inline-link-rx"></block>.</block>
+  <block id="e19c064fcb68059e563bb5bfdd31cac1" category="list-text"><block ref="e19c064fcb68059e563bb5bfdd31cac1" category="inline-link-rx"></block></block>
+  <block id="9e8ad418161e776fb398db9af34585c3" category="list-text"><block ref="9e8ad418161e776fb398db9af34585c3" category="inline-link-rx"></block></block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Accesorio (opcional)*: Cargue hasta cinco archivos adjuntos, uno a la vez.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las siguientes extensiones de archivo: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx y csv.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Actualizar notas de caso*: Proporcione detalles adicionales sobre su problema o seleccione *cargar archivos* para adjuntar hasta un máximo de cinco archivos.</block>
 </blocks>

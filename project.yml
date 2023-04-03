@@ -83,6 +83,30 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: Configuración predeterminada
         url: "/reference-connector-default-config.html"
+    - title: Credenciales
+      entries:
+      - title: Gestione las credenciales de AWS
+        entries:
+        - title: Descripción general
+          url: "/concept-accounts-aws.html"
+        - title: Administrar credenciales y suscripciones
+          url: "/task-adding-aws-accounts.html"
+      - title: Gestione las credenciales de Azure
+        entries:
+        - title: Descripción general
+          url: "/concept-accounts-azure.html"
+        - title: Administrar credenciales y suscripciones
+          url: "/task-adding-azure-accounts.html"
+      - title: Gestione las credenciales de Google Cloud
+        entries:
+        - title: Descripción general
+          url: "/concept-accounts-gcp.html"
+        - title: Administrar credenciales y suscripciones
+          url: "/task-adding-gcp-accounts.html"
+      - title: Administrar las credenciales de NSS asociadas con una cuenta de BlueXP
+        url: "/task-adding-nss-accounts.html"
+      - title: Administre las credenciales asociadas con su inicio de sesión de BlueXP
+        url: "/task-manage-user-credentials.html"
     - title: Suscripciones
       url: "/task-manage-subscriptions.html"
     - title: Almacenamiento en cloud detectado
@@ -93,26 +117,6 @@ sidebar:
         url: "/task-viewing-azure-blob.html"
       - title: Consulte sus cubos de Google Cloud Storage
         url: "/task-viewing-gcp-storage.html"
-    - title: Credenciales de AWS
-      entries:
-      - title: Descripción general
-        url: "/concept-accounts-aws.html"
-      - title: Administrar credenciales y suscripciones
-        url: "/task-adding-aws-accounts.html"
-    - title: Credenciales de Azure
-      entries:
-      - title: Descripción general
-        url: "/concept-accounts-azure.html"
-      - title: Administrar credenciales y suscripciones
-        url: "/task-adding-azure-accounts.html"
-    - title: Credenciales de Google Cloud
-      entries:
-      - title: Descripción general
-        url: "/concept-accounts-gcp.html"
-      - title: Administrar credenciales y suscripciones
-        url: "/task-adding-gcp-accounts.html"
-    - title: Cuentas del sitio de soporte de NetApp
-      url: "/task-adding-nss-accounts.html"
     - title: Descubrimiento mediante Mis oportunidades
       url: "/concept-my-opportunities.html"
   - title: Referencia
