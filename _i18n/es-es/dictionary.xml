@@ -3087,8 +3087,6 @@
   <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">Para empezar, seleccione *Agregar entorno de trabajo*, seleccione *Amazon Web Services* o *On-local* y, a continuación, seleccione *VMware vCenter Server*. Introduzca el nombre de dominio o la dirección IP del servidor y, a continuación, introduzca el nombre de usuario y la contraseña del usuario administrador.</block>
   <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">Ahora puede gestionar las credenciales de usuario asociadas con su inicio de sesión de BlueXP: Credenciales de ONTAP y credenciales del sitio de soporte de NetApp (NSS).</block>
   <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">Al ir a *Configuración &gt; credenciales*, puede ver las credenciales, actualizar las credenciales y eliminarlas. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.</block>
-  <block id="b74c77e09b66a8f63b22e9ec3917cbbc" category="inline-link-macro">Aprenda a administrar las credenciales de usuario</block>
-  <block id="43cddfbd5a5e952fa3a0613068b01922" category="paragraph"><block ref="f57f6e52027d92bbfed90d112fcd8715" category="inline-link-macro-rx"></block>.</block>
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">Ahora puede cargar archivos adjuntos al crear un caso de soporte o al actualizar las notas del caso para un caso de soporte existente.</block>
   <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">Descubra cómo crear y gestionar casos de soporte</block>
   <block id="6d69140f9b878e098eb9bfcd623c9dbd" category="paragraph"><block ref="7f3b2cbcf14ed0f5a85962e6b9e3eba8" category="inline-link-rx"></block>.</block>
@@ -3097,4 +3095,6 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Accesorio (opcional)*: Cargue hasta cinco archivos adjuntos, uno a la vez.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las siguientes extensiones de archivo: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx y csv.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Actualizar notas de caso*: Proporcione detalles adicionales sobre su problema o seleccione *cargar archivos* para adjuntar hasta un máximo de cinco archivos.</block>
+  <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link-macro">Aprenda a gestionar las credenciales de usuario</block>
+  <block id="551a80734187b23f5368b6a5609f3de3" category="paragraph"><block ref="cf16e3f2aabf285f3de8d29b23130725" category="inline-link-macro-rx"></block>.</block>
 </blocks>

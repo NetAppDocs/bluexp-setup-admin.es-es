@@ -50,7 +50,7 @@ Para empezar, seleccione *Agregar entorno de trabajo*, seleccione *Amazon Web Se
 Al ir a *Configuración > credenciales*, puede ver las credenciales, actualizar las credenciales y eliminarlas. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.
 
 +
-link:task-manage-user-credentials.html["Aprenda a administrar las credenciales de usuario"].
+link:task-manage-user-credentials.html["Aprenda a gestionar las credenciales de usuario"].
 
 * Ahora puede cargar archivos adjuntos al crear un caso de soporte o al actualizar las notas del caso para un caso de soporte existente.
 +
