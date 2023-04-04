@@ -1,0 +1,168 @@
+---
+sidebar: sidebar 
+permalink: task-subscribe-standard-mode.html 
+keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
+summary: Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora o a través de un contrato anual. 
+---
+= Suscribirse a BlueXP (modo estándar)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora (PAYGO) o a través de un contrato anual.
+
+[role="tabbed-block"]
+====
+.AWS
+--
+.Pasos
+. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
+. Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
++
+image:screenshot_associate_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
+
+. Para asociar las credenciales a una suscripción existente, seleccione la suscripción en la lista desplegable y haga clic en *asociado*.
+. Para asociar las credenciales con una nueva suscripción, haga clic en *Agregar suscripción > continuar* y siga los pasos del AWS Marketplace:
++
+.. Haga clic en *Ver opciones de compra*.
+.. Haga clic en *Suscribirse*.
+.. Haga clic en *Configurar su cuenta*.
++
+Se le redirigirá al sitio web de BlueXP.
+
+.. Desde la página *asignación de suscripción*:
++
+*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
+*** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
++
+BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+
++
+Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
+*** Haga clic en *Guardar*.
++
+En el siguiente vídeo se muestran los pasos para suscribirse desde AWS Marketplace:
+
++
+video::video_subscribing_aws.mp4[width=848,height=480]
+
+
+
+
+
+
+--
+.Azure
+--
+.Pasos
+. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
+. Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
++
+image:screenshot_azure_add_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
+
+. Para asociar las credenciales a una suscripción existente, seleccione la suscripción en la lista desplegable y haga clic en *asociado*.
+. Para asociar las credenciales con una nueva suscripción, haga clic en *Agregar suscripción > continuar* y siga los pasos de Azure Marketplace:
++
+.. Si se le solicita, inicie sesión en su cuenta de Azure.
+.. Haga clic en *Suscribirse*.
+.. Rellene el formulario y haga clic en *Suscribirse*.
+.. Una vez completado el proceso de suscripción, haga clic en *Configurar cuenta ahora*.
++
+Se le redirigirá al sitio web de BlueXP.
+
+.. Desde la página *asignación de suscripción*:
++
+*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
+*** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
++
+BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+
++
+Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
+*** Haga clic en *Guardar*.
++
+En el siguiente vídeo se muestran los pasos para suscribirse desde Azure Marketplace:
+
++
+video::video_subscribing_azure.mp4[width=848,height=480]
+
+
+
+
+
+
+--
+.Google Cloud
+--
+.Pasos
+. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
+. Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
++
+image:screenshot_gcp_add_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
+
+. Para asociar las credenciales a una suscripción existente, seleccione un proyecto de Google Cloud y una suscripción en la lista desplegable y, a continuación, haga clic en *asociado*.
++
+image:screenshot_gcp_associate.gif["Captura de pantalla de un proyecto y suscripción de Google Cloud seleccionados para las credenciales de Google Cloud."]
+
+. Si aún no tiene una suscripción, haga clic en *Agregar suscripción > continuar* y siga los pasos de Google Cloud Marketplace.
++
+
+NOTE: Antes de completar los siguientes pasos, asegúrese de que tiene privilegios de administrador de facturación en su cuenta de Google Cloud así como un inicio de sesión de BlueXP.
+
++
+.. Cuando se le haya redirigido a. https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página de BlueXP de NetApp en Google Cloud Marketplace"^], asegúrese de seleccionar el proyecto correcto en el menú de navegación superior.
++
+image:screenshot_gcp_cvo_marketplace.png["Captura de pantalla de la página Cloud Volumes ONTAP Marketplace en Google Cloud."]
+
+.. Haga clic en *Suscribirse*.
+.. Seleccione la cuenta de facturación adecuada y acepte los términos y condiciones.
+.. Haga clic en *Suscribirse*.
++
+Este paso envía la solicitud de transferencia a NetApp.
+
+.. En el cuadro de diálogo emergente, haga clic en *Registrar con NetApp, Inc.*
++
+Este paso debe completarse para vincular la suscripción a Google Cloud a su cuenta de BlueXP. El proceso de vinculación de una suscripción no está completo hasta que se le redirigirá de esta página y, a continuación, inicie sesión en BlueXP.
+
++
+image:screenshot_gcp_marketplace_register.png["Captura de pantalla de una ventana emergente de registro."]
+
+.. Siga los pasos de la página *asignación de suscripción*:
++
+
+NOTE: Si alguien de su organización ya se ha suscrito a la suscripción de NetApp BlueXP desde su cuenta de facturación, se le redirigirá a https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["La página Cloud Volumes ONTAP en el sitio Web de BlueXP"^] en su lugar. Si esto no se realiza de forma inesperada, póngase en contacto con el equipo de ventas de NetApp. Google sólo activa una suscripción por cuenta de facturación de Google.
+
++
+*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
+*** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
++
+BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+
++
+Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
+*** Haga clic en *Guardar*.
++
+En el siguiente vídeo se muestran los pasos para suscribirse desde Google Cloud Marketplace:
+
++
+video::video-subscribing-google-cloud.mp4[width=848,height=480]
+
+
+.. Una vez completado este proceso, vuelva a la página credenciales de BlueXP y seleccione esta nueva suscripción.
++
+image:screenshot_gcp_associate.gif["Captura de pantalla de la página de asignación de suscripción."]
+
+
+
+
+
+--
+====

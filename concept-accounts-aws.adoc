@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-aws.html 
-keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, json 
-summary: BlueXP le permite elegir las credenciales de AWS que deben utilizarse al implementar Cloud Volumes ONTAP. Puede implementar todos sus sistemas Cloud Volumes ONTAP con las credenciales iniciales de AWS o bien añadir credenciales adicionales. 
+keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
+summary: Debe comprender cómo BlueXP usa las credenciales y los permisos de AWS para poder gestionar las credenciales de una o más cuentas de AWS. 
 ---
 = Credenciales y permisos de AWS
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: BlueXP le permite elegir las credenciales de AWS que deben utilizarse a
 
 
 [role="lead"]
-BlueXP le permite elegir las credenciales de AWS que deben utilizarse al implementar Cloud Volumes ONTAP. Puede implementar todos sus sistemas Cloud Volumes ONTAP con las credenciales iniciales de AWS o bien añadir credenciales adicionales.
+Debe comprender cómo BlueXP usa las credenciales y los permisos de AWS para poder gestionar las credenciales de una o más cuentas de AWS.
 
 
 
 == Credenciales iniciales de AWS
 
-Al implantar un conector de BlueXP, debe proporcionar el ARN de una función de IAM o claves de acceso para un usuario de IAM. El método de autenticación que utilice debe tener los permisos necesarios para implementar la instancia de Connector en AWS. Los permisos necesarios se enumeran en la link:task-creating-connectors-aws.html["La política de implementación de conectores para AWS"].
+Al implantar un conector de BlueXP, debe proporcionar el ARN de una función de IAM o claves de acceso para un usuario de IAM. El método de autenticación que utilice debe tener los permisos necesarios para implementar la instancia de Connector en AWS. Los permisos necesarios se enumeran en la link:task-set-up-permissions-aws.html["La política de implementación de conectores para AWS"].
 
 Cuando BlueXP inicia la instancia de Connector en AWS, crea una función IAM y un perfil de instancia para la instancia. También adjunta una directiva que proporciona al conector permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revise cómo BlueXP utiliza los permisos"].
 
@@ -30,25 +30,35 @@ BlueXP selecciona estas credenciales de AWS de forma predeterminada al crear un 
 
 image:screenshot_accounts_select_aws.gif["Captura de pantalla que muestra la opción Cambiar cuenta en la página Detalles  Credentials."]
 
+Puede implementar todos sus sistemas Cloud Volumes ONTAP con las credenciales iniciales de AWS o bien añadir credenciales adicionales.
+
 
 
 == Credenciales adicionales de AWS
 
-Existen dos formas de añadir credenciales adicionales de AWS.
+Existen dos formas de añadir credenciales de AWS adicionales:
+
+* Puede agregar credenciales de AWS a un conector existente
+* Puede añadir credenciales de AWS directamente a BlueXP
+
+
+Revise las secciones siguientes para obtener más información.
 
 
 
 === Agregar credenciales de AWS a un conector existente
 
-Si desea ejecutar Cloud Volumes ONTAP en diferentes cuentas de AWS, puede hacerlo también link:task-adding-aws-accounts.html["Proporcione las claves AWS para un usuario de IAM o el ARN de un rol en una cuenta de confianza"]. En la siguiente imagen se muestran dos cuentas adicionales, una que proporciona permisos a través de una función IAM en una cuenta de confianza y otra a través de las claves AWS de un usuario de IAM:
+Si desea iniciar Cloud Volumes ONTAP en diferentes cuentas de AWS, puede proporcionar claves de AWS para un usuario IAM o el ARN de un rol en una cuenta de confianza. En la siguiente imagen se muestran dos cuentas adicionales, una que proporciona permisos a través de una función IAM en una cuenta de confianza y otra a través de las claves AWS de un usuario de IAM:
 
 image:diagram_permissions_multiple_aws.png["Imagen conceptual que muestra dos cuentas adicionales. Cada uno tiene una política de IAM, una está conectada al usuario del IAM y la otra se conecta a un rol de IAM"]
 
-Entonces lo haría link:task-adding-aws-accounts.html#adding-aws-accounts-to-cloud-manager["Agregue las credenciales de cuenta a BlueXP"] Especificando el nombre de recurso de Amazon (ARN) del rol de IAM o las claves de AWS del usuario de IAM.
+A continuación, se agregarían las credenciales de cuenta a BlueXP especificando el nombre de recurso de Amazon (ARN) del rol IAM o las claves de AWS del usuario de IAM.
 
 Después de añadir otro conjunto de credenciales, puede cambiar a ellas al crear un nuevo entorno de trabajo:
 
 image:screenshot_accounts_switch_aws.png["Captura de pantalla que muestra cómo seleccionar entre cuentas de proveedores de cloud tras hacer clic en Switch Account en la página Details  Credentials."]
+
+link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Aprenda a añadir credenciales de AWS a un conector existente."]
 
 
 
@@ -56,15 +66,31 @@ image:screenshot_accounts_switch_aws.png["Captura de pantalla que muestra cómo 
 
 Agregar nuevas credenciales de AWS a BlueXP proporciona los permisos necesarios para crear y gestionar un entorno de trabajo FSX para ONTAP o crear un conector.
 
+* link:https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["Aprenda a añadir credenciales de AWS a BlueXP para Amazon FSX para ONTAP"^]
+* link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Aprenda a añadir credenciales de AWS a BlueXP para crear un conector"]
+
+
 
 
 == ¿Qué pasa con las puestas en marcha de Marketplace y las puestas en marcha en las instalaciones?
 
-En las secciones anteriores se describe el método de implementación recomendado para el conector, que es de BlueXP. También puede implementar un conector en AWS desde el link:task-launching-aws-mktp.html["Mercado AWS"] y usted puede link:task-installing-linux.html["Instale el conector en las instalaciones"].
+En las secciones anteriores se describe el método de implementación recomendado para el conector, que es de BlueXP. También puede poner en marcha un conector en AWS desde AWS Marketplace y puede instalar manualmente el software del conector en su propio host Linux.
 
 Si utiliza el Marketplace, los permisos se proporcionan de la misma manera. Solo tiene que crear y configurar manualmente el rol IAM y, a continuación, proporcionar permisos para cualquier cuenta adicional.
 
-Para las implementaciones locales, no puede configurar una función de IAM para el sistema BlueXP, pero puede proporcionar permisos como lo haría para cuentas de AWS adicionales.
+En las implementaciones locales, no se puede configurar la función de IAM para el sistema BlueXP, pero se pueden proporcionar permisos con las claves de acceso de AWS.
+
+Para aprender a configurar los permisos, consulte las siguientes páginas:
+
+* Modo estándar
++
+** link:task-set-up-permissions-aws.html["Configure los permisos de AWS"]
+** link:task-set-up-permissions-on-prem.html["Configure permisos en el cloud para puestas en marcha en las instalaciones"]
+
+
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Configure los permisos de cloud para el modo restringido"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configure permisos de cloud para el modo privado"]
+
 
 
 

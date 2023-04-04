@@ -34,7 +34,7 @@ Solo verá las suscripciones asociadas a la cuenta que está viendo actualmente.
 +
 image:screenshot-subscriptions-expand.png["Una captura de pantalla de la ficha Suscripciones en la cartera digital, donde puede seleccionar la flecha al final de una fila para ampliarla."]
 
-** Haga clic en image:icon-column-selector.png["el icono de más al final del encabezado de la tabla"] para elegir las columnas que aparecen en la tabla.
+** Seleccione image:icon-column-selector.png["el icono de más al final del encabezado de la tabla"] para elegir las columnas que aparecen en la tabla.
 +
 Tenga en cuenta que las columnas término y renovación automática no aparecen de forma predeterminada. La columna renovación automática muestra información de renovación únicamente para los contratos de Azure.
 
@@ -70,9 +70,9 @@ Por ejemplo, digamos que tiene dos cuentas y cada una se factura mediante suscri
 .Pasos
 . En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . Seleccione *Suscripciones*.
-. Haga clic en el menú de acciones de la fila correspondiente a la suscripción que desea administrar.
+. Seleccione el menú de acciones de la fila correspondiente a la suscripción que desea administrar.
 +
 image:screenshot-subscription-menu.png["Una captura de pantalla del menú de acciones para una suscripción."]
 
-. Elija cambiar el nombre de la suscripción o gestionar las cuentas de NetApp asociadas a la suscripción.
+. Elija cambiar el nombre de la suscripción o administrar las cuentas de BlueXP asociadas a la suscripción.
 

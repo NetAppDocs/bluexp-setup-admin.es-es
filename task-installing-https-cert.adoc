@@ -4,7 +4,7 @@ permalink: task-installing-https-cert.html
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
 summary: De forma predeterminada, BlueXP utiliza un certificado autofirmado para el acceso HTTPS a la consola Web. Puede instalar un certificado firmado por una CA, que proporciona una mejor protección de seguridad que un certificado autofirmado. 
 ---
-= Gestión de un certificado HTTPS para un acceso seguro
+= Instale un certificado HTTPS para obtener acceso seguro
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -24,12 +24,12 @@ Debe crear un conector para poder cambiar la configuración de BlueXP. link:conc
 
 
 
-== Instalar un certificado HTTPS
+== Instale un certificado HTTPS
 
 Instale un certificado firmado por una CA para obtener acceso seguro.
 
 .Pasos
-. En la parte superior derecha de la consola BlueXP, haga clic en el icono Configuración y seleccione *Configuración HTTPS*.
+. En la parte superior derecha de la consola BlueXP, seleccione el icono Configuración y seleccione *Configuración HTTPS*.
 +
 image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
@@ -41,7 +41,7 @@ image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Con
 
 
 | Genere una CSR  a| 
-.. Introduzca el nombre de host o DNS del host del conector (su nombre común) y, a continuación, haga clic en *generar CSR*.
+.. Introduzca el nombre de host o DNS del host del conector (su nombre común) y, a continuación, seleccione *generar CSR*.
 +
 BlueXP muestra una solicitud de firma de certificado.
 
@@ -49,14 +49,14 @@ BlueXP muestra una solicitud de firma de certificado.
 +
 El certificado debe utilizar el formato X.509 codificado con Privacy Enhanced Mail (PEM) base-64.
 
-.. Cargue el archivo de certificado y, a continuación, haga clic en *instalar*.
+.. Cargue el archivo de certificado y, a continuación, seleccione *instalar*.
 
 
 
 
 | Instale su propio certificado firmado por CA  a| 
 .. Seleccione *instalar certificado firmado por CA*.
-.. Cargue el archivo de certificado y la clave privada y, a continuación, haga clic en *instalar*.
+.. Cargue el archivo de certificado y la clave privada y, a continuación, seleccione *instalar*.
 +
 El certificado debe utilizar el formato X.509 codificado con Privacy Enhanced Mail (PEM) base-64.
 
@@ -72,16 +72,16 @@ image:screenshot_https_cert.gif["Captura de pantalla: Muestra la página Configu
 
 
 
-== Renovación del certificado HTTPS de BlueXP
+== Renueve el certificado HTTPS de BlueXP
 
 Debe renovar el certificado HTTPS de BlueXP antes de que caduque para garantizar un acceso seguro a la consola BlueXP. Si no renueva el certificado antes de que caduque, aparece una advertencia cuando los usuarios acceden a la consola Web mediante HTTPS.
 
 .Pasos
-. En la parte superior derecha de la consola BlueXP, haga clic en el icono Configuración y seleccione *Configuración HTTPS*.
+. En la parte superior derecha de la consola BlueXP, seleccione el icono Configuración y seleccione *Configuración HTTPS*.
 +
 Se muestra información sobre el certificado BlueXP, incluida la fecha de caducidad.
 
-. Haga clic en *Cambiar certificado* y siga los pasos para generar una CSR o instalar su propio certificado firmado por CA.
+. Seleccione *Cambiar certificado* y siga los pasos para generar una CSR o instalar su propio certificado firmado por CA.
 
 
 .Resultado

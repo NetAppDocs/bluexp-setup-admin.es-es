@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: Después de registrarse en BlueXP, puede iniciar sesión desde su navegador web a través de la interfaz de usuario basada en SaaS. 
+summary: Después de registrarse en BlueXP, puede iniciar sesión desde su navegador Web a través de la consola basada en Web. 
 ---
-= Inicie sesión en BlueXP
+= Iniciar sesión en BlueXP (modo estándar)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,10 @@ summary: Después de registrarse en BlueXP, puede iniciar sesión desde su naveg
 
 
 [role="lead"]
-Después de registrarse en BlueXP, puede iniciar sesión desde su navegador web a través de la interfaz de usuario basada en SaaS.
-
-link:task-sign-up-saas.html["Aprenda a registrarse en BlueXP y crear una cuenta"].
-
-Si accede a BlueXP desde una región gubernamental o un sitio que no tiene acceso saliente a Internet, deberá iniciar sesión en la interfaz de usuario de BlueXP que se ejecuta localmente en el conector. link:task-managing-connectors.html#access-the-local-ui["Aprenda a acceder a la interfaz de usuario local en el conector"].
+Después de registrarse en BlueXP, puede iniciar sesión desde la consola basada en Web.
 
 .Opciones de inicio de sesión
-Puede iniciar sesión en BlueXP con una de las siguientes opciones:
+Puede iniciar sesión en la consola basada en Web de BlueXP mediante una de las siguientes opciones:
 
 * Sus credenciales existentes del sitio de soporte de NetApp (NSS)
 * Un inicio de sesión en el cloud de NetApp con su dirección de correo electrónico y una contraseña

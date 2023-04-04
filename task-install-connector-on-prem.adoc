@@ -1,0 +1,139 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-on-prem.html 
+keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
+summary: Instale el conector en las instalaciones y, a continuación, inicie sesión y configúrelo para que funcione con su cuenta de BlueXP. 
+---
+= Instale y configure el conector en las instalaciones
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Instale el conector en las instalaciones y, a continuación, inicie sesión y configúrelo para que funcione con su cuenta de BlueXP.
+
+
+
+== Instale el conector
+
+Descargue e instale el software Connector en un host Linux existente de forma local.
+
+.Lo que necesitará
+* Privilegios de root para instalar el conector.
+* Detalles sobre un servidor proxy, si se necesita un proxy para el acceso a Internet desde el conector.
++
+Tiene la opción de configurar un servidor proxy después de la instalación, pero para hacerlo es necesario reiniciar el conector.
+
+* Un certificado firmado por CA, si el servidor proxy utiliza HTTPS o si el proxy es un proxy de interceptación.
+
+
+.Acerca de esta tarea
+* La instalación instala las herramientas de línea de comandos de AWS (awscli) para habilitar los procedimientos de recuperación del soporte de NetApp.
++
+Si recibe un mensaje que ha fallado al instalar el awscli, puede ignorar el mensaje de forma segura. El conector puede funcionar correctamente sin las herramientas.
+
+* El instalador disponible en el sitio de soporte de NetApp puede ser una versión anterior. Después de la instalación, el conector se actualiza automáticamente si hay una nueva versión disponible.
+
+
+.Pasos
+. Compruebe que docker está activado y en ejecución.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. Si las variables del sistema _http_proxy_ o _https_proxy_ están establecidas en el host, elimínelas:
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+Si no elimina estas variables del sistema, la instalación fallará.
+
+. Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
++
+Debe descargar el instalador "en línea" del conector que se utiliza en su red o en la nube. Hay disponible un instalador "sin conexión" independiente para el conector, pero sólo es compatible con implementaciones en modo privado.
+
+. Asigne permisos para ejecutar el script.
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+Donde <version> es la versión del conector que ha descargado.
+
+. Ejecute el script de instalación.
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+Los parámetros --proxy y --cacert son opcionales. Si tiene un servidor proxy, deberá introducir los parámetros como se muestra. El instalador no le solicita que proporcione información sobre un proxy.
+
++
+A continuación encontrará un ejemplo del comando utilizando los dos parámetros opcionales:
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxy configura el conector para que utilice un servidor proxy HTTP o HTTPS con uno de los siguientes formatos:
+
++
+** \http://address:port
+** \http://username:password@address:port
+** \https://address:port
+** \https://username:password@address:port
+
+
++
+--cacert especifica un certificado firmado por CA que se utilizará para el acceso HTTPS entre el conector y el servidor proxy. Este parámetro sólo es obligatorio si se especifica un servidor proxy HTTPS o si el proxy es un proxy de interceptación.
+
+
+
+.Resultado
+El conector ya está instalado. Al final de la instalación, el servicio Connector (occm) se reinicia dos veces si ha especificado un servidor proxy.
+
+
+
+== Configure el conector
+
+Regístrese o inicie sesión y, a continuación, configure el conector para que funcione con su cuenta.
+
+.Pasos
+. Abra un explorador web e introduzca la siguiente URL:
++
+https://_ipaddress_[]
+
++
+_ipaddress_ puede ser localhost, una dirección IP privada o una dirección IP pública, dependiendo de la configuración del host. Por ejemplo, si el conector está en la nube pública sin una dirección IP pública, debe introducir una dirección IP privada desde un host que tenga una conexión con el host del conector.
+
+. Regístrese o inicie sesión.
+. Después de iniciar sesión, configure BlueXP:
++
+.. Especifique la cuenta BlueXP que desea asociar al conector.
+.. Escriba un nombre para el sistema.
+.. En *¿se está ejecutando en un entorno seguro?* mantener el modo restringido desactivado.
++
+Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. (Además, el modo restringido no es compatible cuando el conector está instalado en las instalaciones.)
+
+.. Haga clic en *Vamos a iniciar*.
+
+
+
+
+.Resultado
+BlueXP está ahora configurado con el conector que acaba de instalar.
+
+.El futuro
+link:task-provide-permissions-on-prem.html["Proporcione a BlueXP los permisos que haya configurado anteriormente"].

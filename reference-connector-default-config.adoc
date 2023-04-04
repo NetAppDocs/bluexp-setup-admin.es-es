@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-connector-default-config.html 
-keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux 
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log 
 summary: Es posible que desee obtener más información sobre el conector antes de implementarlo o si necesita solucionar cualquier problema. 
 ---
 = Configuración predeterminada del conector
@@ -115,7 +115,7 @@ El conector utiliza los siguientes puertos en el host Linux:
 
 == Configuración predeterminada sin acceso a Internet
 
-La siguiente configuración se aplica si instaló manualmente el conector en un host Linux local que no tiene acceso a Internet. link:task-install-connector-onprem-no-internet.html["Obtenga más información sobre esta opción de instalación"].
+La siguiente configuración se aplica si instaló manualmente el conector en un host Linux local que no tiene acceso a Internet. link:task-quick-start-private-mode.html["Obtenga más información sobre esta opción de instalación"].
 
 * La carpeta de instalación del conector se encuentra en la siguiente ubicación:
 +

@@ -4,7 +4,7 @@ permalink: task-viewing-gcp-storage.html
 keywords: google cloud storage buckets, google cloud storage, google cloud storage working environment 
 summary: Después de instalar un conector en Google Cloud, BlueXP puede descubrir automáticamente información sobre los cubos de Google Cloud que residen en la cuenta de Google donde está instalado el conector. Se añade un entorno de trabajo de Google Cloud Storage al lienzo para que puedas ver esta información. 
 ---
-= Visualización de sus buckets de Google Cloud Storage
+= Consulte sus cubos de Google Cloud Storage
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -19,7 +19,7 @@ Después de instalar un conector en Google Cloud, BlueXP puede descubrir automá
 Puede ver detalles sobre sus buckets de Google Cloud Storage, donde se incluyen la ubicación, el estado de acceso, la clase de almacenamiento, la capacidad total y utilizada, entre otros. Estos bloques se pueden usar como destinos para las operaciones Cloud Backup, Cloud Tiering o Cloud Sync.
 
 .Pasos
-. link:task-creating-connectors-gcp.html["Instale un conector"] En la cuenta de Google, donde desea ver sus bloques de Google Cloud Storage.
+. Instale un conector en la cuenta de Google en la que desea ver sus cubos de Google Cloud Storage.
 . En el menú de navegación, selecciona *almacenamiento > Canvas*.
 +
 Verá automáticamente un entorno de trabajo de Google Cloud Storage poco después.
@@ -27,15 +27,15 @@ Verá automáticamente un entorno de trabajo de Google Cloud Storage poco despu�
 +
 image:screenshot-gcp-cloud-storage-we.png["Una captura de pantalla de un entorno de trabajo de Google Cloud Storage."]
 
-. Haga clic en el entorno de trabajo y seleccione una acción en el panel derecho.
+. Seleccione el entorno de trabajo y seleccione una acción en el panel derecho.
 +
 image:screenshot-gcp-cloud-storage-actions.png["Captura de pantalla que muestra el panel acciones después de seleccionar un entorno de trabajo de Google Cloud Storage. El panel muestra el número total de cubos y una acción para utilizar el servicio Sync."]
 
-. Haga clic en *Sincronizar datos* para sincronizar los datos con o desde los cubos de Google Cloud Storage.
+. Seleccione *Sincronizar datos* para sincronizar datos con o desde cubos de Google Cloud Storage.
 +
-Para obtener información detallada, consulte https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["La descripción del servicio Cloud Sync"^].
+Para obtener información detallada, consulte https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["La descripción del servicio Cloud Sync"^]
 
-. Haga clic en *Entrar en entorno de trabajo* para ver los detalles de los cubos de su cuenta de Google.
+. Seleccione *Entrar en entorno de trabajo* para ver los detalles de los cubos de su cuenta de Google.
 +
 image:screenshot-gcp-cloud-storage-details.png["Una captura de pantalla que muestra los detalles de un entorno de trabajo de Google Cloud Storage: El número total de bloques, la capacidad y ubicaciones y, a continuación, una tabla que muestra los detalles sobre cada bloque."]
 

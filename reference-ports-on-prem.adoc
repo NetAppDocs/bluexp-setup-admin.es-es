@@ -16,7 +16,7 @@ summary: El conector utiliza los siguientes puertos de entrada cuando se instala
 [role="lead"]
 El conector utiliza los siguientes puertos _inbound_ cuando se instalan manualmente en un host Linux local.
 
-Estas reglas de entrada se aplican a ambos modelos de implementación para el conector en las instalaciones: Instalado con acceso a Internet o sin acceso a Internet.
+Estas reglas de entrada se aplican a todos los modelos de implementación de BlueXP.
 
 [cols="10,10,80"]
 |===

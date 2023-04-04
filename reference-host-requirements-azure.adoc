@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: reference-host-requirements-azure.html 
+keywords: cpu requirements, ram requirements, azure requirements, azure host requirements, connector host requirements, azure vm size, vm size 
+summary: El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc. Si piensa instalar manualmente el conector, debe asegurarse de que su host cumpla con estos requisitos. 
+---
+= Consulte los requisitos del host de Connector para las instalaciones de Azure
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc. Si piensa instalar manualmente el conector, debe asegurarse de que su host cumpla con estos requisitos.
+
+Al poner en marcha el conector desde BlueXP o desde Azure Marketplace, la imagen incluye el sistema operativo y los componentes de software necesarios.
+
+Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
+Sistemas operativos compatibles::
++
+--
+* CentOS 7.6, 7.7, 7.8 y 7.9
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8, 7.9, 8.6 y 8.7
++
+El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
+
++
+El conector es compatible con las versiones en inglés de estos sistemas operativos.
+
+
+
+--
+Hipervisor:: Se requiere un hipervisor de configuración básica o alojado certificado para ejecutar CentOS o Red Hat Enterprise Linux. https://access.redhat.com/certified-hypervisors["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
+CPU:: 4 núcleos o 4 vCPU
+RAM:: 14 GB
+Tamaño de la máquina virtual de Azure:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos DS3 v2.
+Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
+Espacio en disco en /var:: Debe haber 20 GIB de espacio disponibles
+Motor Docker:: Se requiere Docker Engine versión 19.3.1 o posterior en el host antes de instalar el conector. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
+

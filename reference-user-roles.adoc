@@ -53,7 +53,7 @@ El rol Compliance Viewer es para acceso de sólo lectura a Cloud Data Sense.
 | Crear conectores | Sí | No | No | No 
 
 
-| Gestione cuentas de NetApp | Sí | No | No | No 
+| Administrar cuentas de BlueXP | Sí | No | No | No 
 
 
 | Gestionar credenciales | Sí | No | No | No 
@@ -69,11 +69,8 @@ El rol Compliance Viewer es para acceso de sólo lectura a Cloud Data Sense.
 
 
 | Instale un certificado HTTPS | Sí | No | No | No 
-
-
-| Utilice el servicio SnapCenter | Sí | Sí | No | Sí 
 |===
 .Enlaces relacionados
-* link:task-setting-up-netapp-accounts.html["Configuración de espacios de trabajo y usuarios en la cuenta de NetApp"]
-* link:task-managing-netapp-accounts.html["Gestión de espacios de trabajo y usuarios en la cuenta de NetApp"]
+* link:task-setting-up-netapp-accounts.html["Configuración de áreas de trabajo y usuarios en la cuenta de BlueXP"]
+* link:task-managing-netapp-accounts.html["Gestión de áreas de trabajo y usuarios en la cuenta de BlueXP"]
 

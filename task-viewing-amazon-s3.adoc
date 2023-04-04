@@ -4,7 +4,7 @@ permalink: task-viewing-amazon-s3.html
 keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
 summary: Después de instalar un conector en AWS, BlueXP puede descubrir automáticamente información sobre los cubos de Amazon S3 que residen en la cuenta de AWS donde está instalado el conector. Se añade un entorno de trabajo de Amazon S3 al lienzo para poder ver esta información. 
 ---
-= Gestión de bloques de Amazon S3
+= Gestione sus bloques de Amazon S3
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,4 +20,4 @@ image:screenshot-amazon-s3-we.png["Captura de pantalla de un entorno de trabajo 
 
 Puede ver detalles sobre sus bloques de S3, incluida la región, la política de acceso, la cuenta, la capacidad total y utilizada, etc. Estos bloques se pueden usar como destinos para las operaciones Cloud Backup, Cloud Tiering o Cloud Sync. Además, puede usar Cloud Data Sense para analizar estos bloques.
 
-Una función recién añadida ahora permite crear y editar bloques S3. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Vaya aquí para ver cómo puede ver, crear y gestionar sus buckets de S3 con BlueXP."]
+Una función recién añadida ahora permite crear y editar bloques S3. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Vaya aquí para ver cómo puede ver, crear y gestionar sus buckets de S3 con BlueXP"^]

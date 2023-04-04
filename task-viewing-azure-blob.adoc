@@ -4,7 +4,7 @@ permalink: task-viewing-azure-blob.html
 keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment 
 summary: Después de instalar un conector en Azure, BlueXP puede descubrir automáticamente información sobre las cuentas de almacenamiento de Azure que residen en las suscripciones de Azure donde está instalado el conector. Se añade un entorno de trabajo de Azure Blob al lienzo para que pueda ver esta información. 
 ---
-= Ver sus cuentas de Azure Blob
+= Consulte sus cuentas de Azure Blob
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -19,7 +19,7 @@ Después de instalar un conector en Azure, BlueXP puede descubrir automáticamen
 Puede ver detalles acerca de sus cuentas de almacenamiento de Azure, incluidas la ubicación, el grupo de recursos, la capacidad total y utilizada, entre otros. Estas cuentas se pueden usar como destinos para las operaciones Cloud Backup, Cloud Tiering o Cloud Sync.
 
 .Pasos
-. link:task-creating-connectors-azure.html["Instale un conector"] En la cuenta de Azure donde desea ver las cuentas de almacenamiento de Azure.
+. Instale un conector en la cuenta de Azure donde desee ver las cuentas de almacenamiento de Azure.
 . En el menú de navegación, selecciona *almacenamiento > Canvas*.
 +
 Debería ver automáticamente un entorno de trabajo de Azure Blob un poco después.
@@ -27,15 +27,15 @@ Debería ver automáticamente un entorno de trabajo de Azure Blob un poco despu�
 +
 image:screenshot-azure-blob-we.png["Una captura de pantalla de un entorno de trabajo de Azure Blob."]
 
-. Haga clic en el entorno de trabajo y seleccione una acción en el panel derecho.
+. Seleccione el entorno de trabajo y seleccione una acción en el panel derecho.
 +
 image:screenshot-azure-actions.png["Una captura de pantalla que muestra el panel acciones después de seleccionar un entorno de trabajo de Azure Blob. El panel muestra el número total de cuentas de almacenamiento y una acción para utilizar el servicio Sync."]
 
-. Haga clic en *Sincronizar datos* para sincronizar los datos con o desde el almacenamiento de Azure Blob.
+. Seleccione *Sincronizar datos* para sincronizar datos con o desde el almacenamiento de Azure Blob.
 +
-Para obtener información detallada, consulte https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["La descripción del servicio Cloud Sync"^].
+Para obtener información detallada, consulte https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["La descripción del servicio Cloud Sync"^]
 
-. Haga clic en *Entrar en entorno de trabajo* para ver detalles sobre las cuentas de almacenamiento de Azure en sus Blobs de Azure.
+. Seleccione *Entrar en entorno de trabajo* para ver detalles sobre las cuentas de almacenamiento de Azure en sus Blobs de Azure.
 +
 image:screenshot-azure-blob-details.png["Una captura de pantalla que muestra los detalles de un entorno de trabajo de Azure Blob: El número total de cuentas de almacenamiento, el número total de ubicaciones, grupos de recursos, la capacidad total y utilizada, etc."]
 

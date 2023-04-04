@@ -1,0 +1,439 @@
+---
+sidebar: sidebar 
+permalink: task-prepare-private-mode.html 
+keywords: private mode requirements, requirements, install options, private mode networking, dark site, private mode permissions, permissions for private mode, networking for private mode 
+summary: Debe comprender qué necesita para poner en marcha BlueXP en modo privado para que pueda preparar su entorno. 
+---
+= Preparación para la implementación en modo privado
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Usted debe entender qué es necesario para comenzar con BlueXP en modo privado para que usted pueda preparar su entorno.
+
+
+NOTE: Si desea utilizar BlueXP en https://aws.amazon.com/federal/us-intelligence-community/["Entorno de servicios de cloud comercial (C2S) de AWS"^] A continuación, debe seguir instrucciones independientes que describen cómo preparar, instalar el conector e iniciar Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Descubra cómo comenzar a utilizar Cloud Volumes ONTAP en el entorno AWS C2S"^]
+
+
+
+== Entender cómo funciona el modo privado
+
+Antes de empezar, debe comprender cómo funciona BlueXP en modo privado.
+
+Por ejemplo, debe entender que necesita utilizar la interfaz basada en explorador que está disponible localmente desde el conector BlueXP que necesita instalar. No puede acceder a BlueXP desde la consola basada en Web que se proporciona a través de la capa SaaS.
+
+Además, no todos los servicios de BlueXP están disponibles.
+
+link:concept-modes.html["Aprenda cómo funciona el modo privado"].
+
+
+
+== Revise las opciones de instalación
+
+En modo privado, puede instalar el conector en las instalaciones o en la nube mediante la instalación manual del conector en su propio host Linux.
+
+Si desea crear un sistema de Cloud Volumes ONTAP en Google Cloud, el conector debe estar en ejecución en Google Cloud y no puede ejecutarse en las instalaciones.
+
+
+
+== Revisar los requisitos del host
+
+El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
+
+Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
+Sistemas operativos compatibles::
++
+--
+* CentOS 7.6, 7.7, 7.8 y 7.9
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8, 7.9, 8.6 y 8.7
++
+El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
+
++
+El conector es compatible con las versiones en inglés de estos sistemas operativos.
+
+
+
+--
+Hipervisor:: Se requiere un hipervisor de configuración básica o alojado certificado para ejecutar CentOS o Red Hat Enterprise Linux. https://access.redhat.com/certified-hypervisors["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
+CPU:: 4 núcleos o 4 vCPU
+RAM:: 14 GB
+Tipo de instancia de AWS EC2:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos t3.xlarge.
+Tamaño de la máquina virtual de Azure:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos DS3 v2.
+Tipo de máquina de Google Cloud:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos n2-standard-4.
++
+--
+El conector es compatible con Google Cloud en una instancia de máquina virtual con un sistema operativo compatible https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Características de VM blindadas"^]
+
+--
+Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
+Espacio en disco en /var:: Debe haber 20 GIB de espacio disponibles
+Motor Docker:: Se requiere Docker Engine versión 19.3.1 o posterior en el host antes de instalar el conector. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
+
+
+
+
+== Prepare la conexión a redes para el conector
+
+Configure su red de modo que Connector pueda gestionar recursos y procesos en su entorno de cloud público. Además de tener una red virtual y una subred para el conector, deberá asegurarse de que se cumplen los siguientes requisitos.
+
+
+
+=== Conexiones a redes de destino
+
+El conector debe tener una conexión de red a la ubicación en la que desea gestionar el almacenamiento. Por ejemplo, el VPC o vnet donde planea poner en marcha Cloud Volumes ONTAP, o el centro de datos donde residen los clústeres de ONTAP en las instalaciones.
+
+
+
+=== Extremos para operaciones del día a día
+
+El conector se pone en contacto con los siguientes extremos para poner en marcha y gestionar Cloud Volumes ONTAP en su entorno de cloud público.
+
+[cols="2*"]
+|===
+| Puntos finales | Específico 
+
+
+ a| 
+Servicios de AWS (amazonaws.com):
+
+* Formación CloudFormation
+* Cloud computing elástico (EC2)
+* Gestión de acceso e identidad (IAM)
+* Servicio de gestión de claves (KMS)
+* Servicio de token de seguridad (STS)
+* Simple Storage Service (S3)
+
+| Para gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles"^] 
+
+
+| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Para gestionar recursos en regiones públicas de Azure. 
+
+
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | Para administrar recursos en la región de Azure IL6. 
+
+
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | Para gestionar recursos en regiones de Azure China. 
+
+
+| \https://www.googleapis.com/compute/v1/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | Para gestionar recursos en Google Cloud. 
+|===
+
+
+=== Servidor proxy
+
+Si su organización requiere la implementación de un servidor proxy para el tráfico saliente de Internet, obtenga la siguiente información acerca del proxy HTTP o HTTPS:
+
+* Dirección IP
+* Credenciales
+* Certificado HTTPS
+
+
+Con el modo privado, la única vez que BlueXP envía tráfico saliente es al proveedor de cloud para crear un sistema Cloud Volumes ONTAP.
+
+
+
+=== La dirección IP pública en Azure
+
+Si desea utilizar una dirección IP pública con Connector VM en Azure, la dirección IP debe utilizar una SKU básica para garantizar que BlueXP utilice esta dirección IP pública.
+
+image:screenshot-azure-sku.png["Captura de pantalla de la nueva dirección IP de creación en Azure que permite elegir Basic en el campo SKU."]
+
+Si en su lugar utiliza una dirección IP de SKU estándar, BlueXP utiliza la dirección _private_ IP del conector, en lugar de la dirección IP pública. Si el equipo que está utilizando para acceder a la consola BlueXP no tiene acceso a esa dirección IP privada, las acciones de la consola BlueXP fallarán.
+
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentación para Azure: SKU de IP pública"^]
+
+
+
+=== Puertos
+
+No hay tráfico entrante en el conector, a menos que lo inicie.
+
+HTTP (80) y HTTPS (443) proporcionan acceso a la consola BlueXP. SSH (22) solo es necesario si necesita conectarse al host para solucionar problemas. Mientras tanto, se requieren conexiones de entrada a través del puerto 3128 si implementa sistemas Cloud Volumes ONTAP en una subred donde no hay una conexión de Internet de salida disponible.
+
+
+
+== Prepare los permisos de cloud
+
+Si está considerando crear sistemas Cloud Volumes ONTAP, BlueXP requiere permisos de su proveedor de cloud. Debe configurar permisos en su proveedor de cloud y, a continuación, asociar dichos permisos a la instancia de conector después de instalarla.
+
+Para ver los pasos requeridos, seleccione la opción de autenticación que desee usar para su proveedor de cloud.
+
+Si va a instalar el conector en las instalaciones, debe proporcionar permisos con claves de acceso de AWS o un director de servicio de Azure. No se admiten las demás opciones.
+
+[role="tabbed-block"]
+====
+.Rol IAM de AWS
+--
+Utilice un rol de IAM para proporcionar al conector permisos. Deberá asociar manualmente el rol a la instancia de EC2 del conector.
+
+.Pasos
+. Inicie sesión en la consola de AWS y desplácese al servicio IAM.
+. Cree una política:
++
+.. Haga clic en *Directivas > Crear directiva*.
+.. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].
+.. Finalice los pasos restantes para crear la directiva.
+
+
+. Cree un rol IAM:
++
+.. Haga clic en *roles > Crear rol*.
+.. Seleccione *Servicio AWS > EC2*.
+.. Agregue permisos asociando la directiva que acaba de crear.
+.. Finalice los pasos restantes para crear la función.
+
+
+
+
+.Resultado
+Ahora tiene un rol de IAM para la instancia de Connector EC2.
+
+--
+.Clave de acceso de AWS
+--
+Configurar permisos y una clave de acceso para un usuario de IAM. Deberá proporcionar a BlueXP la clave de acceso de AWS después de instalar el conector y configurar BlueXP.
+
+.Pasos
+. En la consola IAM, cree una normativa:
++
+.. Haga clic en *Directivas > Crear directiva*.
+.. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].
+.. Finalice los pasos restantes para crear la directiva.
++
+Dependiendo de los servicios de BlueXP que tenga previsto utilizar, puede que necesite crear una segunda política.
+
++
+Para las regiones estándar, los permisos se distribuyen en dos directivas. Son necesarias dos políticas debido a un límite máximo de tamaño de carácter para las políticas gestionadas en AWS. link:reference-permissions-aws.html["Obtenga más información sobre las políticas de IAM para el conector"].
+
+
+
+. Adjunte las políticas a un usuario de IAM.
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentación de AWS: Crear roles de IAM"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentación de AWS: Adición y eliminación de políticas de IAM"^]
+
+
+. Asegúrese de que el usuario tiene claves de acceso que puede agregar a BlueXP después de instalar el conector.
+
+
+.Resultado
+La cuenta ahora tiene los permisos necesarios.
+
+--
+.Rol de Azure
+--
+Cree un rol personalizado de Azure con los permisos necesarios. Asignará este rol al conector VM.
+
+.Pasos
+. Habilite una identidad administrada asignada por el sistema en la máquina virtual donde tenga pensado instalar el conector de modo que pueda proporcionar los permisos de Azure necesarios a través de una función personalizada.
++
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Documentación de Microsoft Azure: Configure las identidades gestionadas para los recursos de Azure en una máquina virtual mediante el portal de Azure"^]
+
+. Copie el contenido de link:reference-permissions-azure.html["Permisos de función personalizada para el conector"] Y guárdelos en un archivo JSON.
+. Modifique el archivo JSON agregando ID de suscripción de Azure al ámbito asignable.
++
+Debe añadir el ID para cada suscripción de Azure desde la cual los usuarios crearán sistemas Cloud Volumes ONTAP.
+
++
+*ejemplo*
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+. Use el archivo JSON para crear una función personalizada en Azure.
++
+En los pasos siguientes se describe cómo crear la función mediante Bash en Azure Cloud Shell.
+
++
+.. Comenzar https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
+.. Cargue el archivo JSON.
++
+image:screenshot_azure_shell_upload.png["Una captura de pantalla de Azure Cloud Shell donde puede elegir la opción para cargar un archivo."]
+
+.. Use la interfaz de línea de comandos de Azure para crear el rol personalizado:
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
+
+
+
+
+.Resultado
+Ahora debe tener una función personalizada denominada operador BlueXP que puede asignar a la máquina virtual Connector.
+
+--
+.Servicio principal de Azure
+--
+Crear y configurar un servicio principal en Azure Active Directory y obtener las credenciales de Azure que BlueXP necesita. Necesitará proporcionar estas credenciales a BlueXP después de instalar el conector y configurar BlueXP.
+
+.Cree una aplicación de Azure Active Directory para el control de acceso basado en roles
+. Asegúrese de tener permisos en Azure para crear una aplicación de Active Directory y para asignar la aplicación a un rol.
++
+Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentación de Microsoft Azure: Permisos necesarios"^].
+
+. Desde el portal de Azure, abra el servicio *Azure Active Directory*.
++
+image:screenshot_azure_ad.gif["Muestra el servicio de Active Directory en Microsoft Azure."]
+
+. En el menú, haga clic en *App registrs*.
+. Haga clic en *Nuevo registro*.
+. Especificar detalles acerca de la aplicación:
++
+** *Nombre*: Introduzca un nombre para la aplicación.
+** *Tipo de cuenta*: Seleccione un tipo de cuenta (cualquiera funcionará con BlueXP).
+** *Redirigir URI*: Puede dejar este campo en blanco.
+
+
+. Haga clic en *Registrar*.
++
+Ha creado la aplicación AD y el director de servicio.
+
+
+
+.Asigne la función personalizada a la aplicación
+. En el portal de Azure, abra el servicio *Suscripciones*.
+. Seleccione la suscripción.
+. Haga clic en *Control de acceso (IAM) > Agregar > Agregar asignación de funciones*.
+. En la ficha *rol*, seleccione el rol *operador BlueXP* y haga clic en *Siguiente*.
+. En la ficha *Miembros*, realice los siguientes pasos:
++
+.. Mantener seleccionado *Usuario, grupo o principal de servicio*.
+.. Haga clic en *Seleccionar miembros*.
++
+image:screenshot-azure-service-principal-role.png["Captura de pantalla del portal de Azure que muestra la ficha Miembros al agregar una función a una aplicación."]
+
+.. Busque el nombre de la aplicación.
++
+Veamos un ejemplo:
+
++
+image:screenshot_azure_service_principal_role.png["Una captura de pantalla del portal de Azure que muestra el formulario de asignación de funciones Add en el portal de Azure."]
+
+.. Seleccione la aplicación y haga clic en *Seleccionar*.
+.. Haga clic en *Siguiente*.
+
+
+. Haga clic en *revisar + asignar*.
++
+El principal de servicio ahora tiene los permisos de Azure necesarios para implementar el conector.
+
++
+Si desea implementar Cloud Volumes ONTAP desde varias suscripciones a Azure, debe enlazar el principal del servicio con cada una de ellas. BlueXP le permite seleccionar la suscripción que desea utilizar al implementar Cloud Volumes ONTAP.
+
+
+
+.Añada permisos de API de administración de servicios de Windows Azure
+. En el servicio *Azure Active Directory*, haga clic en *App registrs* y seleccione la aplicación.
+. Haga clic en *permisos de API > Agregar un permiso*.
+. En *API de Microsoft*, seleccione *Administración de servicios Azure*.
++
+image:screenshot_azure_service_mgmt_apis.gif["Una captura de pantalla del portal de Azure que muestra los permisos de la API de Azure Service Management."]
+
+. Haga clic en *Access Azure Service Management como usuarios de la organización* y, a continuación, haga clic en *Agregar permisos*.
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Una captura de pantalla del portal de Azure que muestra la adición de las API de gestión de servicios de Azure."]
+
+
+
+.Obtenga el ID de aplicación y el ID de directorio de la aplicación
+. En el servicio *Azure Active Directory*, haga clic en *App registrs* y seleccione la aplicación.
+. Copie el *ID de aplicación (cliente)* y el *ID de directorio (inquilino)*.
++
+image:screenshot_azure_app_ids.gif["Captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (inquilino) de una aplicación en Azure Active Directory."]
+
++
+Al agregar la cuenta de Azure a BlueXP, debe proporcionar el ID de la aplicación (cliente) y el ID de directorio (inquilino) para la aplicación. BlueXP utiliza los identificadores para iniciar sesión mediante programación.
+
+
+
+.Cree un secreto de cliente
+. Abra el servicio *Azure Active Directory*.
+. Haga clic en *App registres* y seleccione su aplicación.
+. Haga clic en *certificados y secretos > Nuevo secreto de cliente*.
+. Proporcione una descripción del secreto y una duración.
+. Haga clic en *Agregar*.
+. Copie el valor del secreto de cliente.
++
+image:screenshot_azure_client_secret.gif["Una captura de pantalla del portal de Azure que muestra un secreto de cliente para el director de servicio de Azure AD."]
+
++
+Ahora tiene un secreto de cliente que BlueXP puede utilizarlo para autenticar con Azure AD.
+
+
+
+.Resultado
+Su principal de servicio ahora está configurado y debe haber copiado el ID de aplicación (cliente), el ID de directorio (arrendatario) y el valor del secreto de cliente. Necesita introducir esta información en BlueXP cuando agrega una cuenta de Azure.
+
+--
+.Cuenta de servicio de Google Cloud
+--
+Cree una función y aplíquela a una cuenta de servicio que utilizará para la instancia de Connector VM.
+
+.Pasos
+. Cree un rol personalizado en Google Cloud:
++
+.. Cree un archivo YAML que incluya los permisos definidos en link:reference-permissions-gcp.html["Política de conectores para Google Cloud"].
+.. Desde Google Cloud, active Cloud Shell.
+.. Cargue el archivo YAML que incluye los permisos necesarios para el conector.
+.. Cree un rol personalizado mediante `gcloud iam roles create` comando.
++
+En el ejemplo siguiente se crea una función denominada "conector" en el nivel de proyecto:
+
++
+[source, gcloud]
+----
+gcloud iam roles create connector --project=myproject --file=connector.yaml
+----
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]
+
+
+
+. Cree una cuenta de servicio en Google Cloud:
++
+.. En el servicio IAM & Admin, haga clic en *Cuentas de servicio > Crear cuenta de servicio*.
+.. Introduzca los detalles de la cuenta de servicio y haga clic en *Crear y continuar*.
+.. Seleccione la función que acaba de crear.
+.. Finalice los pasos restantes para crear la función.
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documentos de Google Cloud: Crear una cuenta de servicio"^]
+
+
+
+
+
+.Resultado
+Ahora tiene una cuenta de servicio que puede asignar a la instancia de Connector VM.
+
+--
+====
+
+
+== Habilite las API de Google Cloud
+
+Se necesitan varias API para poner en marcha Cloud Volumes ONTAP en Google Cloud.
+
+.Paso
+. https://cloud.google.com/apis/docs/getting-started#enabling_apis["Habilite las siguientes API de Google Cloud en su proyecto"^]
++
+** API de Cloud Deployment Manager V2
+** API de registro en la nube
+** API de Cloud Resource Manager
+** API del motor de computación
+** API de gestión de acceso e identidad (IAM)
+
+
+

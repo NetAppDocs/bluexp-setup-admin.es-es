@@ -22,7 +22,12 @@ BlueXP requiere permisos para realizar acciones en Google Cloud. Estos permisos 
 
 La función personalizada que se muestra a continuación proporciona los permisos que un conector necesita para administrar recursos y procesos dentro de su red de Google Cloud.
 
-Tendrá que aplicar esta función personalizada a una cuenta de servicio que se conecta a la máquina virtual del conector. link:task-creating-connectors-gcp.html["Vea las instrucciones paso a paso"].
+Tendrá que aplicar esta función personalizada a una cuenta de servicio que se conecta a la máquina virtual del conector.
+
+* link:task-set-up-permissions-google.html["Configure los permisos para el modo estándar"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Configure los permisos para el modo restringido"]
+* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["Configurar permisos para el modo privado"]
+
 
 También debe asegurarse de que el rol esté actualizado a medida que se añadan nuevos permisos en versiones posteriores.
 

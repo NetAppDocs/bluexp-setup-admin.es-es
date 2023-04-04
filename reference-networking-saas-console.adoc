@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: reference-networking-saas-console.html 
+keywords: networking, urls, endpoints, web browser, console 
+summary: A medida que utiliza la consola basada en Web BlueXP que se proporciona a través de la capa SaaS, se pone en contacto con varios extremos para completar las tareas de gestión de datos. La máquina que ejecuta el explorador Web debe tener conexiones con estos extremos. 
+---
+= Prepare la red para que los usuarios puedan acceder a la consola BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+A medida que utiliza la consola basada en Web BlueXP que se proporciona a través de la capa SaaS, se pone en contacto con varios extremos para completar las tareas de gestión de datos. La máquina que ejecuta el explorador Web debe tener conexiones con estos extremos.
+
+[cols="2*"]
+|===
+| Puntos finales | Específico 
+
+
+| \https://console.bluexp.netapp.com | Su navegador web se pone en contacto con esta URL cuando utiliza la consola basada en web. 
+
+
+ a| 
+Servicios de AWS (amazonaws.com):
+
+* Formación CloudFormation
+* Cloud computing elástico (EC2)
+* Servicio de gestión de claves (KMS)
+* Servicio de token de seguridad (STS)
+* Simple Storage Service (S3)
+
+| Necesario para implementar un conector desde BlueXP en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."^] 
+
+
+| \https://management.azure.com \https://login.microsoftonline.com | Necesario para implementar un conector desde BlueXP en la mayoría de las regiones de Azure. 
+
+
+| \https://management.microsoftazure.de \https://login.microsoftonline.de | Necesario para implementar un conector desde BlueXP en las regiones de Alemania de Azure. 
+
+
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.com | Necesario para desplegar un conector desde BlueXP en las regiones de la Gov de los EE. UU. De Azure. 
+
+
+| \https://www.googleapis.com | Necesario para desplegar un conector de BlueXP en Google Cloud. 
+
+
+| \https://signin.b2c.netapp.com | Se requiere actualizar las credenciales del sitio de soporte de NetApp (NSS) o añadir nuevas credenciales de NSS a BlueXP. 
+
+
+| \https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | El explorador Web se conecta a estos extremos para una autenticación de usuario centralizada a través de BlueXP. 
+
+
+| \https://widget.intercom.io | Si busca un chat integrado en los productos que le permita hablar con expertos en cloud de NetApp. 
+|===
+.Enlaces relacionados
+* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Puntos finales con los que el conector se pone en contacto en AWS"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Puntos finales con los que el conector se contacta en Azure"]
+* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Puntos finales con los que se contacta el conector en Google Cloud"]
+* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["Puntos finales contactados durante la instalación manual del conector"]
+

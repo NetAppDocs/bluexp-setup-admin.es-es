@@ -14,7 +14,7 @@ summary: Añada y gestione credenciales de AWS para que BlueXP tenga los permiso
 
 
 [role="lead"]
-Añada y gestione credenciales de AWS para que BlueXP tenga los permisos que necesita para implementar y gestionar recursos cloud en sus cuentas de AWS. Si administra varias suscripciones de AWS, puede asignar cada una de ellas a diferentes credenciales de AWS desde la página Credentials.
+Añada y gestione credenciales de AWS para que BlueXP tenga los permisos que necesita para implementar y gestionar recursos cloud en sus cuentas de AWS. Si administra varias suscripciones a AWS Marketplace, puede asignar cada una de ellas a diferentes credenciales de AWS desde la página Credentials.
 
 
 
@@ -24,7 +24,7 @@ Puede añadir credenciales de AWS a un conector existente o directamente a BlueX
 
 * Agregue credenciales de AWS adicionales a un conector existente
 +
-Añadir credenciales de AWS a un conector existente proporciona los permisos necesarios para gestionar recursos y procesos dentro de su entorno de cloud público. <<Agregar credenciales a un conector,Aprenda a añadir credenciales de AWS a un conector>>.
+Añadir credenciales de AWS a un conector existente proporciona los permisos necesarios para gestionar recursos y procesos dentro de su entorno de cloud público. <<Add credentials to a Connector,Aprenda a añadir credenciales de AWS a un conector>>.
 
 * Añada las credenciales de AWS a BlueXP para crear un conector
 +
@@ -48,9 +48,11 @@ Si proporciona a BlueXP claves de acceso de AWS, debe rotar las claves actualiz�
 
 
 
-== Agregar credenciales a un conector
+== Agregar credenciales adicionales a un conector
 
-Añada las credenciales de AWS a un conector para que tenga los permisos necesarios para gestionar los recursos y procesos en su entorno de cloud público. Puede proporcionar el ARN de un rol IAM en otra cuenta o proporcionar claves de acceso de AWS.
+Añada credenciales de AWS adicionales a un conector para que tenga los permisos necesarios para gestionar recursos y procesos en su entorno de cloud público. Puede proporcionar el ARN de un rol IAM en otra cuenta o proporcionar claves de acceso de AWS.
+
+Si acaba de empezar a utilizar BlueXP, link:concept-accounts-aws.html["Descubra cómo BlueXP usa credenciales y permisos de AWS"].
 
 
 
@@ -77,7 +79,7 @@ Si el conector está instalado en las instalaciones, no puede utilizar este mét
 
 .Pasos
 . Vaya a la consola IAM de la cuenta de destino en la que desea proporcionar permisos al conector.
-. En Access Management, haga clic en *roles > Crear función* y siga los pasos para crear la función.
+. En Access Management, seleccione *roles > Crear función* y siga los pasos para crear la función.
 +
 No olvide hacer lo siguiente:
 
@@ -128,11 +130,11 @@ Si acaba de crear estas credenciales en su proveedor de cloud, es posible que tr
 
 .Pasos
 . Asegúrese de que el conector correcto está seleccionado actualmente en BlueXP.
-. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
+. En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
 +
 image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
-. En la página *credenciales de cuenta*, haga clic en *Agregar credenciales* y siga los pasos del asistente.
+. En la página *credenciales de cuenta*, seleccione *Agregar credenciales* y siga los pasos del asistente.
 +
 .. *Ubicación de credenciales*: Seleccione *Servicios Web de Amazon > conector*.
 .. *Definir credenciales*: Proporcione el ARN (nombre de recurso de Amazon) de una función de IAM de confianza, o introduzca una clave de acceso de AWS y una clave secreta.
@@ -140,7 +142,7 @@ image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Con
 +
 Para pagar por Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o con un contrato anual, las credenciales de AWS deben estar asociadas con una suscripción a Cloud Volumes ONTAP desde AWS Marketplace.
 
-.. *Revisión*: Confirme los detalles acerca de las nuevas credenciales y haga clic en *Agregar*.
+.. *Revisión*: Confirme los detalles sobre las nuevas credenciales y seleccione *Agregar*.
 
 
 
@@ -148,7 +150,7 @@ Para pagar por Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o con un contra
 .Resultado
 Ahora puede cambiar a un conjunto de credenciales diferente de la página Details y Credentials al crear un nuevo entorno de trabajo:
 
-image:screenshot_accounts_switch_aws.png["Captura de pantalla que muestra cómo seleccionar entre cuentas de proveedores de cloud tras hacer clic en Switch Account en la página Details  Credentials."]
+image:screenshot_accounts_switch_aws.png["Captura de pantalla que muestra cómo seleccionar una cuenta de proveedor de cloud tras seleccionar Switch Account en la página Details  Credentials."]
 
 
 
@@ -160,11 +162,11 @@ Agregue las credenciales de AWS a BlueXP proporcionando el ARN de una función I
 
 === Configure el rol IAM
 
-Configure una función de IAM que permita al SaaS BlueXP asumir la función.
+Configure una función de IAM que permita a la capa SaaS BlueXP asumir la función.
 
 .Pasos
 . Vaya a la consola IAM de la cuenta de destino.
-. En Access Management, haga clic en *roles > Crear función* y siga los pasos para crear la función.
+. En Access Management, seleccione *roles > Crear función* y siga los pasos para crear la función.
 +
 No olvide hacer lo siguiente:
 
@@ -174,7 +176,7 @@ No olvide hacer lo siguiente:
 ** Cree una directiva que incluya los permisos necesarios para crear un conector.
 +
 *** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Consulte los permisos necesarios para FSX para ONTAP"^]
-*** link:task-creating-connectors-aws.html#create-an-iam-policy["Ver la directiva de despliegue del conector"]
+*** link:task-set-up-permissions-aws.html["Ver la directiva de despliegue del conector"]
 
 
 
@@ -195,15 +197,15 @@ Después de proporcionar la función IAM con los permisos necesarios, agregue el
 Si acaba de crear la función IAM, puede tardar unos minutos en estar disponible. Espere unos minutos antes de agregar las credenciales a BlueXP.
 
 .Pasos
-. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
+. En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
 +
 image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
-. En la página *credenciales de cuenta*, haga clic en *Agregar credenciales* y siga los pasos del asistente.
+. En la página *credenciales de cuenta*, seleccione *Agregar credenciales* y siga los pasos del asistente.
 +
 .. *Ubicación de credenciales*: Seleccione *Servicios Web de Amazon > BlueXP*.
 .. *Definir credenciales*: Proporcionar el ARN (nombre de recurso de Amazon) de la función IAM.
-.. *Revisión*: Confirme los detalles acerca de las nuevas credenciales y haga clic en *Agregar*.
+.. *Revisión*: Confirme los detalles sobre las nuevas credenciales y seleccione *Agregar*.
 
 
 
@@ -213,9 +215,15 @@ Ahora puede utilizar las credenciales al crear un conector nuevo.
 
 
 
+== Añada credenciales a BlueXP para Amazon FSX para ONTAP
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Documentación de BlueXP para Amazon FSX para ONTAP"^]
+
+
+
 == Asocie una suscripción a AWS
 
-Después de añadir sus credenciales de AWS a BlueXP, puede asociar una suscripción a AWS Marketplace con estas credenciales. La suscripción le permite pagar por Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o utilizar un contrato anual, y utilizar otros servicios cloud de NetApp.
+Después de añadir sus credenciales de AWS a BlueXP, puede asociar una suscripción a AWS Marketplace con estas credenciales. La suscripción le permite pagar por Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o mediante un contrato anual, y utilizar otros servicios de BlueXP.
 
 Hay dos escenarios en los que puede asociar una suscripción a AWS Marketplace después de haber añadido las credenciales a BlueXP:
 
@@ -227,23 +235,23 @@ Hay dos escenarios en los que puede asociar una suscripción a AWS Marketplace d
 Debe crear un conector para poder cambiar la configuración de BlueXP. link:concept-connectors.html#how-to-create-a-connector["Aprenda a crear un conector"].
 
 .Pasos
-. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
-. En la página *credenciales de cuenta*, haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
+. En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
+. En la página *credenciales de cuenta*, seleccione el menú de acción para un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
 +
 image:screenshot_associate_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
 
-. Para asociar las credenciales a una suscripción existente, seleccione la suscripción en la lista desplegable y haga clic en *asociado*.
-. Para asociar las credenciales con una nueva suscripción, haga clic en *Agregar suscripción > continuar* y siga los pasos del AWS Marketplace:
+. Para asociar las credenciales a una suscripción existente, seleccione la suscripción en la lista desplegable y seleccione *asociado*.
+. Para asociar las credenciales a una nueva suscripción, seleccione *Agregar suscripción > continuar* y siga los pasos del AWS Marketplace:
 +
-.. Haga clic en *Ver opciones de compra*.
-.. Haga clic en *Suscribirse*.
-.. Haga clic en *Configurar su cuenta*.
+.. Seleccione *Ver opciones de compra*.
+.. Seleccione *Suscribirse*.
+.. Seleccione *Configurar su cuenta*.
 +
 Se le redirigirá al sitio web de BlueXP.
 
 .. Desde la página *asignación de suscripción*:
 +
-*** Seleccione las cuentas de NetApp a las que desea asociar esta suscripción.
+*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
 *** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
 +
 BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
@@ -251,7 +259,7 @@ BlueXP reemplaza la suscripción existente para todas las credenciales de la cue
 +
 Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
-*** Haga clic en *Guardar*.
+*** Seleccione *Guardar*.
 +
 En el siguiente vídeo se muestran los pasos para suscribirse desde Google Cloud Marketplace:
 
@@ -273,14 +281,14 @@ Edite sus credenciales de AWS en BlueXP cambiando el tipo de cuenta (las claves 
 TIP: No se pueden editar las credenciales de un perfil de instancia asociado a una instancia de conector.
 
 .Pasos
-. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
-. En la página *credenciales de cuenta*, haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Editar credenciales*.
-. Realice los cambios necesarios y, a continuación, haga clic en *aplicar*.
+. En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
+. En la página *credenciales de cuenta*, seleccione el menú de acción para un conjunto de credenciales y, a continuación, seleccione *Editar credenciales*.
+. Realice los cambios necesarios y, a continuación, seleccione *aplicar*.
 
 
 
 
-== Eliminación de credenciales
+== Eliminar credenciales
 
 Si ya no necesita un conjunto de credenciales, puede eliminarlas de BlueXP. Sólo puede eliminar credenciales que no estén asociadas a un entorno de trabajo.
 
@@ -288,7 +296,7 @@ Si ya no necesita un conjunto de credenciales, puede eliminarlas de BlueXP. Sól
 TIP: No se pueden eliminar las credenciales de un perfil de instancia asociado a una instancia de conector.
 
 .Pasos
-. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
-. En la página *credenciales de cuenta*, haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Eliminar credenciales*.
-. Haga clic en *Eliminar* para confirmar.
+. En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
+. En la página *credenciales de cuenta*, seleccione el menú de acción para un conjunto de credenciales y, a continuación, seleccione *Eliminar credenciales*.
+. Seleccione *Eliminar* para confirmar.
 

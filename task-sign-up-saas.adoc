@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-sign-up-saas.html 
-keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account 
-summary: Cuando comience con BlueXP, su primer paso es registrarse. Se le dará la opción de crear una cuenta, pero puede omitir ese paso si está siendo invitado a una cuenta existente. 
+keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
+summary: Cuando comience a utilizar BlueXP, su primer paso consiste en registrarse con sus credenciales actuales del sitio de soporte de NetApp o mediante la creación de un inicio de sesión en cloud de NetApp. 
 ---
 = Regístrese en BlueXP
 :hardbreaks:
@@ -14,14 +14,9 @@ summary: Cuando comience con BlueXP, su primer paso es registrarse. Se le dará 
 
 
 [role="lead"]
-Cuando comience con BlueXP, su primer paso es registrarse. Se le dará la opción de crear una cuenta, pero puede omitir ese paso si está siendo invitado a una cuenta existente.
-
-.Una nota sobre las regiones gubernamentales
-Si necesita acceder a BlueXP desde una región gubernamental o un sitio que no tenga acceso saliente a Internet, debe crear un conector e iniciar sesión en la interfaz de usuario de BlueXP que se ejecuta localmente en el conector. link:task-managing-connectors.html#access-the-local-ui["Aprenda a acceder a la interfaz de usuario local en el conector"].
+BlueXP es accesible desde una consola basada en Web. Cuando comience a utilizar BlueXP, su primer paso consiste en registrarse con sus credenciales actuales del sitio de soporte de NetApp o mediante la creación de un inicio de sesión en cloud de NetApp.
 
 .Opciones de registro
-BlueXP es accesible desde su navegador web a través de una interfaz de usuario basada en SaaS.
-
 Puede suscribirse a BlueXP mediante una de las siguientes opciones:
 
 * Sus credenciales existentes del sitio de soporte de NetApp (NSS)

@@ -44,7 +44,7 @@ Para mejorar la seguridad, tiene la opción de link:task-installing-https-cert.h
 
 === Página en blanco al cargar la interfaz de usuario local
 
-Si carga la interfaz de usuario local para un conector, es posible que la interfaz de usuario no se muestre a veces y solo se obtiene una página en blanco.
+Si carga la consola basada en web que se ejecuta en un conector, es posible que la interfaz no se muestre a veces y sólo se obtiene una página en blanco.
 
 Este problema está relacionado con un problema del almacenamiento en caché. La solución alternativa es usar una sesión de navegador web privada o de incógnito.
 
@@ -59,19 +59,3 @@ El conector no es compatible con una máquina virtual compartida con otras aplic
 === agentes y extensiones de terceros
 
 No se admiten agentes de terceros ni extensiones de VM en el conector VM.
-
-
-
-== Limitaciones de SaaS
-
-
-
-=== La plataforma SaaS está deshabilitada para las regiones gubernamentales
-
-Si implementa un conector en una región de AWS GovCloud, una región de Azure Gov o una región de Azure DoD, el acceso a BlueXP solo está disponible a través de la dirección IP de host de un conector. El acceso a la plataforma SaaS está desactivado para toda la cuenta.
-
-Esto significa que solo los usuarios con privilegios que pueden acceder al VPC/vnet interno del usuario final pueden usar la interfaz de usuario o la API de BlueXP.
-
-Tenga en cuenta que los únicos servicios que se admiten en estas regiones son Cloud Volumes ONTAP, Cloud Backup, Cloud Data Sense y Replication. No se ofrece soporte a otros servicios de NetApp en regiones gubernamentales.
-
-link:task-managing-connectors.html#access-the-local-ui["Aprenda a acceder a la interfaz de usuario local en el conector"].

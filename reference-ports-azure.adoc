@@ -34,10 +34,10 @@ El grupo de seguridad de Azure para Connector requiere reglas tanto entrantes co
 | HTTPS | 443 | Proporciona acceso HTTPS desde exploradores web de cliente a la interfaz de usuario local y conexiones desde la instancia de Cloud Data Sense 
 
 
-| TCP | 3128 | Proporciona a Cloud Volumes ONTAP acceso a Internet para enviar mensajes de AutoSupport al soporte de NetApp. Debe abrir manualmente este puerto después de la implementación. <<Proxy server for AutoSupport messages,Obtenga más información sobre el servidor proxy del conector>>. 
+| TCP | 3128 | Proporciona a Cloud Volumes ONTAP acceso a Internet para enviar mensajes de AutoSupport al soporte de NetApp. Debe abrir manualmente este puerto después de la implementación. 
 
 
-| TCP | 9060, 9061 | Ofrece la capacidad de habilitar y utilizar Cloud Data Sense y Cloud Backup en puestas en marcha de cloud gubernamentales. Estos puertos también son necesarios para Cloud Backup si deshabilita la interfaz SaaS en su cuenta de BlueXP. 
+| TCP | 9060, 9061 | Ofrece la capacidad de habilitar y utilizar Cloud Data Sense y Cloud Backup en regiones gubernamentales. 
 |===
 
 

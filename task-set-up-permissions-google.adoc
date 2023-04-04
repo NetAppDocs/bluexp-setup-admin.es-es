@@ -1,0 +1,246 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-permissions-google.html 
+keywords: set up permissions, set up gcp permissions, set up google cloud permissions, google permissions, gcp permissions, service account, create service account, gcp service account, google service account 
+summary: Configure permisos de Google Cloud para que pueda utilizar BlueXP para gestionar su infraestructura de datos y almacenamiento en Google Cloud. 
+---
+= Configure los permisos de Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Configure permisos de Google Cloud para que pueda utilizar BlueXP para gestionar su infraestructura de datos y almacenamiento en Google Cloud.
+
+Debe configurar permisos de Google Cloud del siguiente modo:
+
+* Si tiene pensado crear el conector desde BlueXP o utilizando gcloud, deberá configurar permisos para el usuario de Google Cloud que implementará Connector VM.
+* Configure los permisos para el conector creando una función y otorgando la función a una cuenta de servicio.
++
+Asociará esta cuenta de servicio con el conector VM para que BlueXP tenga los permisos necesarios.
+
+
+
+Según la configuración existente, es posible que deba realizar también los siguientes pasos:
+
+* Configure permisos en todos los proyectos
+* Configurar permisos para un VPC compartido
+
+
+
+
+== Configure los permisos para crear el conector desde BlueXP o gcloud
+
+Antes de poder implementar un conector desde BlueXP o utilizando gcloud, debe asegurarse de que su cuenta de Google Cloud tiene los permisos correctos.
+
+.Pasos
+. Cree un rol personalizado en Google Cloud:
++
+.. Cree un archivo YAML que incluya los siguientes permisos:
++
+[source, yaml]
+----
+title: Connector deployment policy
+description: Permissions for the user who deploys the Connector from BlueXP
+stage: GA
+includedPermissions:
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- iam.serviceAccounts.list
+----
+.. Desde Google Cloud, active Cloud Shell.
+.. Cargue el archivo YAML que incluya los permisos necesarios.
+.. Cree un rol personalizado mediante `gcloud iam roles create` comando.
++
+En el ejemplo siguiente se crea un rol denominado "connectorDeployment" en el nivel de proyecto:
+
++
+Los roles de gcloud iam crean connectorDeployment --project=myproject --file=Connector-deployment.yaml
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]
+
+
+
+. Asigne esta función personalizada al usuario que implementará Connector desde BlueXP o mediante gcloud.
++
+https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud docs: Conceda un único rol"^]
+
+
+
+.Resultado
+Ahora el usuario de Google Cloud tiene los permisos necesarios para crear el conector.
+
+
+
+== Configure los permisos para el conector
+
+Se necesita una cuenta de servicio para proporcionar al conector los permisos que BlueXP necesita para administrar recursos en Google Cloud. Debe asociar esta cuenta de servicio a la máquina virtual del conector.
+
+.Pasos
+. Cree un rol personalizado en Google Cloud:
++
+.. Cree un archivo YAML que incluya el contenido de link:reference-permissions-gcp.html["Permisos de cuenta de servicio para el conector"].
+.. Desde Google Cloud, active Cloud Shell.
+.. Cargue el archivo YAML que incluya los permisos necesarios.
+.. Cree un rol personalizado mediante `gcloud iam roles create` comando.
++
+En el ejemplo siguiente se crea una función denominada "conector" en el nivel de proyecto:
+
++
+los roles de iam de gcloud crean conector --project=myproject --file=connector.yaml
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]
+
+
+
+. Cree una cuenta de servicio en Google Cloud:
++
+.. En el servicio IAM & Admin, haga clic en *Cuentas de servicio > Crear cuenta de servicio*.
+.. Introduzca los detalles de la cuenta de servicio y haga clic en *Crear y continuar*.
+.. Seleccione la función que acaba de crear.
+.. Finalice los pasos restantes para crear la función.
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documentos de Google Cloud: Crear una cuenta de servicio"^]
+
+
+
+
+
+.Resultado
+Se ha configurado la cuenta de servicio del conector VM.
+
+
+
+== Configure permisos en todos los proyectos
+
+Si planea implementar sistemas Cloud Volumes ONTAP en proyectos diferentes a los del proyecto en el que reside el conector, tendrá que proporcionar a la cuenta de servicio del conector acceso a dichos proyectos.
+
+Por ejemplo, supongamos que el conector está en el proyecto 1 y que desea crear sistemas Cloud Volumes ONTAP en el proyecto 2. Tendrá que otorgar acceso a la cuenta de servicio en el proyecto 2.
+
+.Pasos
+. En la consola de Google Cloud, vaya al servicio IAM y seleccione el proyecto en el que desea crear sistemas Cloud Volumes ONTAP.
+. En la página *IAM*, seleccione *conceder acceso* y proporcione la información necesaria.
++
+** Introduzca el correo electrónico de la cuenta de servicio del conector.
+** Seleccione el rol personalizado del conector.
+** Haga clic en *Guardar*.
+
+
+
+
+Para obtener información detallada, consulte https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documentación de Google Cloud"^]
+
+
+
+== Configure los permisos VPC compartidos
+
+Si utiliza un VPC compartido para implementar recursos en un proyecto de servicio, tendrá que preparar los permisos.
+
+Esta tabla es de referencia y el entorno debe reflejar la tabla de permisos cuando se haya completado la configuración de IAM.
+
+[cols="10,10,10,20,20,30"]
+|===
+| Identidad | Creador | Alojadas en | Permisos de proyecto de servicio | Permisos del proyecto host | Específico 
+
+
+| Cuenta de Google para desplegar el conector | Personalizado | Proyecto de servicio  a| 
+link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Política de despliegue de conectores"]
+ a| 
+compute.networkUser
+| Despliegue del conector en el proyecto de servicio 
+
+
+| Cuenta de servicio del conector | Personalizado | Proyecto de servicio  a| 
+link:reference-permissions-gcp.html["Política de cuenta de servicio de conector"]
+ a| 
+* compute.networkUser
+* deploymentmanager.editor
+
+| Implementación y mantenimiento de Cloud Volumes ONTAP y servicios en el proyecto de servicio 
+
+
+| Cuenta de servicio de Cloud Volumes ONTAP | Personalizado | Proyecto de servicio  a| 
+* storage.admin
+* miembro: Cuenta de servicio de BlueXP como serviceAccount.user
+
+| N.A. | (Opcional) para la organización en niveles de datos y Cloud Backup 
+
+
+| Agente de servicio de API de Google | Google Cloud | Proyecto de servicio  a| 
+(Predeterminado) Editor
+ a| 
+compute.networkUser
+| Interactúa con las API de Google Cloud en nombre de la implementación. Permite a BlueXP utilizar la red compartida. 
+
+
+| Cuenta de servicio predeterminada de Google Compute Engine | Google Cloud | Proyecto de servicio  a| 
+(Predeterminado) Editor
+ a| 
+compute.networkUser
+| Pone en marcha instancias de Google Cloud e infraestructura de computación en nombre de la puesta en marcha. Permite a BlueXP utilizar la red compartida. 
+|===
+Notas:
+
+. deploymentmanager.editor sólo es necesario en el proyecto host si no pasa reglas de firewall a la implementación y decide dejar que BlueXP las cree por usted. BlueXP creará una implementación en el proyecto host que contiene la regla de firewall VPC0 si no se especifica ninguna regla.
+. Firewall.create y firewall.delete sólo son necesarios si no está pasando reglas de firewall a la implementación y está eligiendo permitir que BlueXP las cree para usted. Estos permisos residen en el archivo .yaml de cuenta de BlueXP. Si va a implementar un par de alta disponibilidad mediante un VPC compartido, estos permisos se utilizarán para crear las reglas de firewall para VPC1, 2 y 3. Para todas las demás implementaciones, estos permisos también se utilizarán para crear reglas para VPC0.
+. Para la organización en niveles de los datos, la cuenta del servicio de organización en niveles debe tener el rol serviceAccount.user en la cuenta de servicio, no solo en el nivel del proyecto. Actualmente, si asigna serviceAccount.user en el nivel de proyecto, los permisos no se muestran cuando consulta la cuenta de servicio con getIAMPolicy.
+

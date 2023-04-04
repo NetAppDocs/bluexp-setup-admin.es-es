@@ -1,0 +1,405 @@
+---
+sidebar: sidebar 
+permalink: concept-modes.html 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region 
+summary: BlueXP ofrece múltiples modos de implementación que le permiten utilizar BlueXP de forma que se adapte a sus necesidades empresariales y de seguridad. El modo estándar aprovecha la capa SaaS BlueXP para ofrecer todas las funciones, mientras que el modo restringido y el modo privado están disponibles para las organizaciones que tienen restricciones de conectividad. 
+---
+= Modos de implementación de BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP ofrece varios _modos de implementación_ que le permiten utilizar BlueXP de forma que se adapte a sus necesidades empresariales y de seguridad. _Standard Mode_ aprovecha la capa SaaS de BlueXP para proporcionar todas las funciones, mientras que _restricted mode_ y _private mode_ están disponibles para organizaciones que tienen restricciones de conectividad.
+
+Mientras BlueXP inhibe el flujo del tráfico, la comunicación y los datos cuando usa modo restringido o modo privado, es responsabilidad suya asegurarse de que su entorno (en las instalaciones y en el cloud) cumpla con las normativas requeridas.
+
+
+
+== Descripción general
+
+BlueXP ofrece los siguientes modos de implementación para su cuenta. Cada modo difiere en términos de requisitos de conectividad saliente, ubicación de implementación, proceso de instalación, método de autenticación, servicios de datos y almacenamiento disponibles y métodos de carga.
+
+Modo estándar:: BlueXP es accesible a los usuarios como servicio en nube desde la consola basada en Web. Dependiendo de los servicios de BlueXP que tenga previsto utilizar, un administrador de BlueXP crea uno o más conectores para gestionar los datos dentro de su entorno de cloud híbrido.
++
+--
+Este modo utiliza la transmisión de datos cifrados a través de Internet pública.
+
+--
+Modo restringido:: Un conector BlueXP se instala en la nube (en una región gubernamental, una región soberana en nube o una región comercial) y tiene conectividad externa limitada a la capa SaaS BlueXP. Los usuarios acceden a BlueXP localmente desde la consola basada en Web que está disponible desde el conector, no desde la capa SaaS.
++
+--
+Este modo suele ser utilizado por los gobiernos estatales y locales y las empresas reguladas.
+
+<<Modo restringido,Obtenga más información acerca de la conectividad saliente a la capa SaaS>>.
+
+--
+Modo privado:: Un conector BlueXP se instala en las instalaciones o en la nube (en una región segura, una región de nube soberana o una región comercial) y tiene conectividad _no_ con la capa SaaS BlueXP. Los usuarios acceden a BlueXP localmente desde la consola basada en Web que está disponible desde el conector, no desde la capa SaaS.
++
+--
+Una región segura incluye https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S Y SC2S"^] y.. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
+
+--
+
+
+La tabla siguiente ofrece una comparación de estos modos.
+
+[cols="16h,28,28,28"]
+|===
+|  | Modo estándar | Modo restringido | Modo privado 
+
+
+| ¿Es necesaria una conexión a la capa SaaS de BlueXP? | Sí | Sólo saliente | No 
+
+
+| ¿Es necesaria una conexión con su proveedor de cloud? | Sí | Sí, dentro de la región | Sí, dentro de la región (si se utiliza Cloud Volumes ONTAP) 
+
+
+| Instalación del conector | Desde BlueXP, Cloud Marketplace o instalación manual | Cloud Marketplace o instalación manual | Instalación manual 
+
+
+| Actualizaciones de conectores | Actualizaciones automáticas del software NetApp Connector | Actualizaciones automáticas del software NetApp Connector | Se requiere actualización manual 
+
+
+| Acceso de interfaz de usuario | De la capa SaaS BlueXP | Localmente desde el conector VM | Localmente desde el conector VM 
+
+
+| Extremo de API | La capa SaaS BlueXP | La capa SaaS BlueXP | El conector 
+
+
+| Autenticación | A través de SaaS mediante auth0, inicio de sesión de NSS o federación de identidades | A través de SaaS mediante auth0 o federación de identidades | Autenticación de usuario local 
+
+
+| Almacenamiento y servicios de datos | Todos son compatibles | Muchos son compatibles | Se admiten varios 
+
+
+| Opciones de licencia | Suscripciones de mercado y BYOL | Suscripciones de mercado y BYOL | BYOL 
+|===
+Lea las siguientes secciones para obtener más información sobre estos modos, como qué funciones y servicios de BlueXP son compatibles.
+
+
+
+== Modo estándar
+
+La siguiente imagen es un ejemplo de una implementación de modo estándar.
+
+image:diagram-standard-mode.png["Una imagen conceptual que muestra la Internet pública donde están disponibles la consola basada en web, la capa SaaS y la autenticación auth0, una red virtual en el cloud donde un conector ejecuta y gestiona Cloud Volumes ONTAP y un clúster AFF en un centro de datos en las instalaciones."]
+
+BlueXP funciona de la siguiente manera en modo estándar:
+
+Comunicación saliente:: Se requiere conectividad desde la capa SaaS conector a BlueXP, a los recursos disponibles públicamente de su proveedor de cloud y a otros componentes esenciales para las operaciones diarias.
++
+--
+* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Puntos finales con los que el conector se pone en contacto en AWS"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Puntos finales con los que el conector se contacta en Azure"]
+* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Puntos finales con los que se contacta el conector en Google Cloud"]
+
+
+--
+Ubicación compatible para el conector:: En el modo estándar, el conector es compatible con el cloud o con las instalaciones.
+Instalación del conector:: Es posible instalar el conector en un asistente de configuración de BlueXP, desde AWS o Azure Marketplace, o mediante un instalador para instalar manualmente el conector en su propio host Linux en su centro de datos o en la nube.
+Actualizaciones de conectores:: Las actualizaciones automatizadas del software Connector están disponibles en BlueXP con actualizaciones mensuales.
+Acceso a la interfaz de usuario:: Puede accederse a la interfaz de usuario desde la consola basada en web que se proporciona mediante la capa SaaS.
+Extremo de API:: Las llamadas API se realizan al siguiente punto final: \https://cloudmanager.cloud.netapp.com
+Autenticación:: La autenticación se proporciona a través del servicio cloud de BlueXP mediante auth0 o a través de inicios de sesión del sitio de soporte de NetApp (NSS). la federación de identidades está disponible.
+Servicios compatibles con BlueXP:: Todos los servicios de BlueXP están disponibles para los usuarios.
+Opciones de licencias compatibles:: Las suscripciones a Marketplace y BYOL son compatibles con el modo estándar; sin embargo, las opciones de licencia admitidas dependen del servicio BlueXP que esté utilizando. Consulte la documentación de cada servicio para obtener más información sobre las opciones de licencia disponibles.
+Cómo comenzar con el modo estándar:: Vaya a la https://console.bluexp.netapp.com["Consola BlueXP basada en Web"^] y regístrese.
++
+--
+link:task-quick-start-standard-mode.html["Aprenda cómo empezar a utilizar el modo estándar"].
+
+--
+
+
+
+
+== Modo restringido
+
+La siguiente imagen es un ejemplo de implementación de modo restringido.
+
+image:diagram-restricted-mode.png["Una imagen conceptual que muestra la Internet pública donde están disponibles la capa SaaS y la autenticación auth0, una red virtual en el cloud donde se ejecuta un conector y proporciona acceso a la consola basada en web y gestiona Cloud Volumes ONTAP y un clúster de AFF en un centro de datos local."]
+
+BlueXP funciona de la siguiente manera en modo restringido:
+
+Comunicación saliente:: Se requiere conectividad saliente desde el conector hasta la capa SaaS BlueXP para utilizar servicios de datos BlueXP, para habilitar actualizaciones de software automáticas del conector, para utilizar autenticación basada en auth0 y para enviar metadatos con fines de carga (nombre de VM de almacenamiento, capacidad asignada y UUID de volumen, tipo e IOPS).
++
+--
+La capa SaaS BlueXP no inicia la comunicación al conector. Toda la comunicación la inicia el conector, que puede extraer o insertar datos de o a la capa SaaS según sea necesario.
+
+También es necesario establecer una conexión con recursos de proveedor de cloud desde la región.
+
+--
+Ubicación compatible para el conector:: En el modo restringido, el conector es compatible con la nube: En una región gubernamental, soberana o comercial.
+Instalación del conector:: Es posible instalar el conector en AWS o Azure Marketplace o una instalación manual en su propio host Linux.
+Actualizaciones de conectores:: Las actualizaciones automatizadas del software Connector están disponibles en BlueXP con actualizaciones mensuales.
+Acceso a la interfaz de usuario:: Puede accederse a la interfaz de usuario desde el conector que ha implementado en su región de cloud.
+Extremo de API:: Las llamadas API se realizan al siguiente punto final: \https://cloudmanager.cloud.netapp.com
+Autenticación:: La autenticación se proporciona a través del servicio en la nube de BlueXP con auth0. la federación de identidades también está disponible.
+Servicios compatibles con BlueXP:: BlueXP admite los siguientes servicios de almacenamiento y datos con modo restringido:
++
+--
+[cols="2*"]
+|===
+| Servicios compatibles | Notas 
+
+
+| Amazon FSX para ONTAP | Soporte completo 
+
+
+| Azure NetApp Files | Soporte completo 
+
+
+| Backup en el cloud | Se admite en regiones gubernamentales y regiones comerciales con modo restringido. No se admite en regiones soberanas con modo restringido. Las siguientes funciones no son compatibles: Aplicaciones, máquinas virtuales y Kubernetes. 
+
+
+| Cloud Data SENSE  a| 
+Compatible en regiones gubernamentales con modo restringido. No se admite en regiones comerciales o en regiones soberanas con modo restringido.
+
+Se aplican las siguientes limitaciones:
+
+* Las cuentas de OneDrive, cuentas de SharePoint y cuentas de Google Drive no se pueden analizar.
+* La funcionalidad de etiqueta de Microsoft Azure Information Protection (AIP) no se puede integrar.
+
+
+
+
+| Cloud Volumes ONTAP | Soporte completo 
+
+
+| Cartera digital | Puede utilizar la cartera digital con las opciones de licencia compatibles que se enumeran a continuación para el modo restringido. 
+
+
+| Clústeres de ONTAP en las instalaciones | Se admiten tanto la detección con un conector como la detección sin un conector (detección directa). Cuando detecta un clúster en las instalaciones con un conector, la vista avanzada (System Manager) no es compatible. 
+
+
+| Replicación | Compatible en regiones gubernamentales con modo restringido. No se admite en regiones comerciales o en regiones soberanas con modo restringido. 
+|===
+--
+Opciones de licencias compatibles:: Las siguientes opciones de licencia son compatibles con el modo restringido:
++
+--
+* Suscripciones al mercado (contratos por horas y anuales)
++
+Tenga en cuenta lo siguiente:
+
++
+** Para Cloud Volumes ONTAP, solo es compatible con las licencias basadas en capacidad.
+** En Azure, los contratos anuales no son compatibles con las regiones gubernamentales.
+
+
+* BYOL
++
+Para Cloud Volumes ONTAP, tanto las licencias basadas en capacidad como las basadas en nodos son compatibles con BYOL.
+
+
+
+--
+Cómo comenzar con el modo restringido:: Debe habilitar el modo restringido al crear su cuenta de BlueXP.
++
+--
+Si aún no tiene una cuenta, se le pedirá que cree su cuenta y habilite el modo restringido cuando inicie sesión en BlueXP por primera vez desde un conector que instaló manualmente o que creó desde el mercado de su proveedor de la nube.
+
+Si ya tiene una cuenta y desea crear otra, debe utilizar la API de soporte.
+
+Tenga en cuenta que no puede cambiar la configuración de modo restringido después de que BlueXP cree la cuenta. No se puede activar el modo restringido más adelante y no se puede desactivar más adelante. Se debe establecer en el momento de crear la cuenta.
+
+* link:task-quick-start-restricted-mode.html["Aprenda a empezar a utilizar el modo restringido"].
+* link:task-create-account.html["Aprenda a crear una cuenta de BlueXP adicional"].
+
+
+--
+
+
+
+
+== Modo privado
+
+En modo privado, puede instalar un conector en las instalaciones o en el cloud y, a continuación, utilizar BlueXP para gestionar los datos en su cloud híbrido. No hay conectividad con la capa SaaS BlueXP.
+
+En la siguiente imagen, se muestra un ejemplo de puesta en marcha en modo privado en la que se instala el conector en el cloud y se gestiona tanto Cloud Volumes ONTAP como un clúster ONTAP en las instalaciones.
+
+image:diagram-private-mode-cloud.png["Una imagen conceptual que muestra una red virtual en la nube donde un conector se ejecuta y proporciona acceso a la consola basada en web y gestiona Cloud Volumes ONTAP y un clúster de AFF en un centro de datos en las instalaciones."]
+
+Mientras tanto, la segunda imagen muestra un ejemplo de implementación de modo privado en la que el conector está instalado en las instalaciones, administra un clúster ONTAP en las instalaciones y proporciona acceso a servicios de datos BlueXP compatibles.
+
+image:diagram-private-mode-onprem.png["Una imagen conceptual que muestra un centro de datos en las instalaciones en el que se ejecuta un conector y que proporciona acceso a la consola basada en web, a los servicios de datos de BlueXP y gestiona un clúster de AFF en un centro de datos en las instalaciones."]
+
+BlueXP funciona de la siguiente manera en modo privado:
+
+Comunicación saliente:: No se requiere conectividad saliente. Todos los paquetes, dependencias y componentes esenciales se empaquetan con el conector y se sirven desde la máquina local. La conectividad con los recursos disponibles públicamente de su proveedor de cloud es obligatoria únicamente si se pone en marcha Cloud Volumes ONTAP.
+Ubicación compatible para el conector:: En modo privado, el conector es compatible con el cloud o el entorno local.
+Instalación del conector:: Las instalaciones manuales del conector son compatibles con su propio host Linux, tanto en el cloud como en las instalaciones.
+Actualizaciones de conectores:: Debe actualizar el software del conector manualmente. El software del conector se publica en el sitio de soporte de NetApp a intervalos no definidos.
+Acceso a la interfaz de usuario:: Puede accederse a la interfaz de usuario desde el conector que ha implementado en su región de cloud o en sus instalaciones.
+Extremo de API:: Se realizan llamadas API a la máquina virtual Connector.
+Autenticación:: La autenticación se proporciona mediante la gestión y el acceso de usuarios locales. La autenticación no se proporciona a través del servicio en la nube de BlueXP.
+Servicios de BlueXP compatibles en las implementaciones de cloud:: BlueXP admite los siguientes servicios de almacenamiento y datos con modo privado cuando el conector está instalado en la nube:
++
+--
+[cols="2*"]
+|===
+| Servicios compatibles | Notas 
+
+
+| Backup en el cloud | Compatible con regiones comerciales de AWS y Azure. No es compatible con Google Cloud ni en https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] o. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+
+
+| Cloud Volumes ONTAP | Como no hay acceso a Internet, las siguientes funciones no están disponibles: Actualizaciones de software automatizadas, AutoSupport e información de costes de AWS. 
+
+
+| Cartera digital | Puede utilizar la cartera digital con las opciones de licencia compatibles que se indican a continuación para el modo privado. 
+
+
+| Clústeres de ONTAP en las instalaciones | Requiere conectividad desde el cloud (donde está instalado el conector) al entorno local. No se admite la detección sin conector (detección directa). 
+|===
+--
+Servicios de BlueXP compatibles en implementaciones locales:: BlueXP admite los siguientes servicios de almacenamiento y datos con modo privado cuando el conector está instalado en sus instalaciones:
++
+--
+[cols="2*"]
+|===
+| Servicios compatibles | Notas 
+
+
+| Backup en el cloud | Solo se admiten los backups y restauraciones de volúmenes ONTAP en las instalaciones en sistemas StorageGRID.https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Descubra cómo realizar backups de datos de ONTAP en las instalaciones en StorageGRID"^] 
+
+
+| Cloud Data SENSE  a| 
+* Las únicas fuentes de datos admitidas son las que se pueden detectar localmente.
++
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["Ver las fuentes que puede descubrir localmente"^]
+
+* Las funciones que requieren acceso saliente a Internet no son compatibles.
++
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["Vea las limitaciones de la función"^]
+
+
+
+
+
+| Cartera digital | Puede utilizar la cartera digital con las opciones de licencia compatibles que se indican a continuación para el modo privado. 
+
+
+| Clústeres de ONTAP en las instalaciones | No se admite la detección sin conector (detección directa). 
+
+
+| Replicación | Soporte completo 
+|===
+--
+Opciones de licencias compatibles:: Solo BYOL es compatible con el modo privado.
++
+--
+Para BYOL de Cloud Volumes ONTAP, solo las licencias basadas en nodos son compatibles. No se admite la gestión de licencias basadas en capacidad. Debido a que no hay una conexión a Internet saliente disponible, deberá cargar manualmente el archivo de licencia de Cloud Volumes ONTAP en la cartera digital.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Aprenda a añadir licencias al cartera digital"^]
+
+--
+Cómo comenzar con el modo privado:: Para acceder al modo privado, descargue el instalador "sin conexión" del sitio de soporte de NetApp.
++
+--
+link:task-quick-start-private-mode.html["Aprenda cómo empezar a utilizar el modo privado"].
+
+--
+
+
+
+
+== Comparación de servicios y características
+
+La tabla siguiente puede ayudarle a identificar rápidamente qué servicios y funciones de BlueXP son compatibles con el modo restringido y el modo privado.
+
+Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. Para obtener más información sobre cómo se admiten estos servicios con el modo restringido y el modo privado, consulte las secciones anteriores.
+
+[cols="33h,33,33"]
+|===
+| Servicio o característica BlueXP | Modo restringido | Modo privado 
+
+
+| Amazon FSX para ONTAP | Sí | No 
+
+
+| Amazon S3 | No | No 
+
+
+| AppTemplate | No | No 
+
+
+| Azure Blob | No | No 
+
+
+| Azure NetApp Files | Sí | No 
+
+
+| Backup en el cloud | Sí | Sí 
+
+
+| Cloud Data SENSE | Sí | Sí 
+
+
+| Cloud Sync | No | No 
+
+
+| Organización en niveles del cloud | No | No 
+
+
+| Cloud Volumes ONTAP | Sí | Sí 
+
+
+| Cloud Volumes Service para Google Cloud | No | No 
+
+
+| Informática | No | No 
+
+
+| Asesor digital | No | No 
+
+
+| Cartera digital | Sí | Sí 
+
+
+| E-Series | No | No 
+
+
+| Eficiencia económica | No | No 
+
+
+| Caché de archivos global | No | No 
+
+
+| Google Cloud Storage | No | No 
+
+
+| Clústeres de Kubernetes | No | No 
+
+
+| Clústeres de ONTAP en las instalaciones | Sí | Sí 
+
+
+| Resiliencia operativa | No | No 
+
+
+| Protección contra ransomware | No | No 
+
+
+| Replicación | Sí | Sí 
+
+
+| StorageGRID | No | No 
+
+
+| Credenciales | Sí | Sí 
+
+
+| Cuentas de NSS | Sí | No 
+
+
+| Notificaciones | Sí | No 
+
+
+| Línea de tiempo | Sí | Sí 
+|===

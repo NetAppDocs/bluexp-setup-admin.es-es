@@ -226,6 +226,7 @@ Servicios de AWS (amazonaws.com):
 
 * Formación CloudFormation
 * Cloud computing elástico (EC2)
+* Gestión de acceso e identidad (IAM)
 * Servicio de gestión de claves (KMS)
 * Servicio de token de seguridad (STS)
 * Simple Storage Service (S3)

@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-restricted-mode.html 
+keywords: quick start, restricted mode quick start 
+summary: Empiece a utilizar BlueXP en modo restringido en unos pocos pasos. 
+---
+= Inicio rápido para BlueXP en modo restringido
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Empiece a utilizar BlueXP en modo restringido en unos pocos pasos.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Prepárese para la puesta en marcha
+[role="quick-margin-list"]
+. Prepare un host de Linux dedicado que cumpla los requisitos de CPU, RAM, espacio en disco, Docker Engine y mucho más.
+. Configure redes que proporcionen acceso a las redes de destino, acceso saliente a Internet para instalaciones manuales e Internet saliente para el acceso diario.
+. Configure los permisos en el proveedor de cloud para que pueda asociar dichos permisos a la instancia de Connector después de implementarla.
+
+
+[role="quick-margin-para"]
+link:task-prepare-restricted-mode.html["Descubra cómo prepararse para la puesta en marcha"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Despliegue el conector
+[role="quick-margin-list"]
+. Instale el conector desde el mercado de su proveedor de cloud o instalando manualmente el software en su propio host Linux.
+. Configure BlueXP abriendo un navegador Web e introduciendo la dirección IP del host Linux.
+. Proporcione a BlueXP los permisos que configuró anteriormente.
+
+
+[role="quick-margin-para"]
+link:task-install-restricted-mode.html["Aprenda a desplegar el conector"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Suscríbase a BlueXP
+[role="quick-margin-para"]
+Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora (PAYGO) o a través de un contrato anual.
+
+[role="quick-margin-para"]
+link:task-subscribe-restricted-mode.html["Aprenda a suscribirse a BlueXP"].
