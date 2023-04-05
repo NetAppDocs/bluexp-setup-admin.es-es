@@ -31,7 +31,7 @@ BlueXP _modos de implementación_ le permiten utilizar BlueXP de forma que se aj
 * Modo privado
 
 
-link:concept-modes.html["Obtenga más información sobre estos modos de implementación"].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["Obtenga más información sobre estos modos de implementación"].
 
 
 NOTE: La introducción del modo restringido sustituye a la opción de activar o desactivar la plataforma SaaS. Puede habilitar el modo restringido en el momento de crear una cuenta. No se puede habilitar ni deshabilitar más adelante.
