@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-connector-google.html 
 keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector 
-summary: Cree el conector directamente desde la consola basada en Web BlueXP, mediante gcloud o instalando el software en su propio host Linux. 
+summary: Cree un conector directamente desde la consola basada en Web BlueXP, utilizando gcloud o instalando el software en su propio host Linux. 
 ---
-= Cree el conector en Google Cloud
+= Cree un conector en Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Cree el conector directamente desde la consola basada en Web BlueXP, me
 
 
 [role="lead"]
-Cree el conector directamente desde la consola basada en Web BlueXP, mediante gcloud o instalando el software en su propio host Linux.
+Cree un conector directamente desde la consola basada en Web BlueXP, utilizando gcloud o instalando el software en su propio host Linux.
 
 [role="tabbed-block"]
 ====
