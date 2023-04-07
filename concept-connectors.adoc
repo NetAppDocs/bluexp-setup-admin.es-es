@@ -65,12 +65,16 @@ Al utilizar BlueXP en modo estándar, se necesita un conector para las siguiente
 * Organización en niveles del cloud
 * Cloud Volumes ONTAP
 * Sistemas E-Series
+* Eficiencia económica ^1^
 * Caché de archivos global
 * Descubrimiento de Google Cloud Storage
 * Clústeres de Kubernetes
 * Integración de clústeres de ONTAP en las instalaciones con servicios de datos de BlueXP
+* Resistencia operativa ^1^
 * StorageGRID
 
+
+^1^ Mientras puede acceder a estos servicios sin un conector, se requiere un conector para iniciar acciones desde los servicios.
 
 
 
