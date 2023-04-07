@@ -158,7 +158,7 @@ system configuration backup settings modify -destination ""
 
 == Editar los URI de un conector
 
-Agregar y quitar los URI de un conector.
+Agregue y elimine el identificador uniforme de recursos (URI) de un conector.
 
 .Pasos
 . Seleccione la lista desplegable *conector* del encabezado BlueXP.

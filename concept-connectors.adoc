@@ -130,7 +130,7 @@ Un administrador de cuentas de BlueXP puede crear un conector directamente desde
 
 == Permisos
 
-Se necesitan permisos específicos para crear el conector directamente desde BlueXP y se necesita otro conjunto de permisos para la propia instancia del conector. Si crea el conector en AWS o Azure directamente desde BlueXP, BlueXP crea el conector con los permisos que necesita. No hay nada más que usted necesita hacer.
+Se necesitan permisos específicos para crear el conector directamente desde BlueXP y se necesita otro conjunto de permisos para la propia instancia del conector. Si crea el conector en AWS o Azure directamente desde BlueXP, BlueXP crea el conector con los permisos que necesita.
 
 Para aprender a configurar los permisos, consulte las siguientes páginas:
 
@@ -161,7 +161,7 @@ Normalmente actualizamos el software del conector cada mes para introducir nueva
 
 El conector actualiza automáticamente su software a la última versión, siempre que tenga acceso saliente a Internet para obtener la actualización de software. Si utiliza BlueXP en modo privado, deberá actualizar manualmente el conector.
 
-link:task-managing-connectors.html["Aprenda a actualizar manualmente el software del conector"]
+link:task-managing-connectors.html["Aprenda a actualizar manualmente el software del conector"].
 
 
 
