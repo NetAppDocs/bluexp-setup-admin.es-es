@@ -29,7 +29,7 @@ Si pone en marcha el conector desde Azure Marketplace o si instala manualmente e
 * link:task-set-up-permissions-azure.html["Configurar permisos para la instalación de Connector en Azure (modo estándar)"]
 * link:task-set-up-permissions-on-prem.html["Configurar permisos para la instalación del conector en las instalaciones (modo estándar)"]
 * link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Configure los permisos para el modo restringido"]
-* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["Configurar permisos para el modo privado"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 
 También debe asegurarse de que el rol esté actualizado a medida que se añadan nuevos permisos en versiones posteriores.

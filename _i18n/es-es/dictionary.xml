@@ -2702,7 +2702,6 @@
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">Aprenda a añadir credenciales de AWS a un conector existente.</block>
   <block id="51c8ce8bb23533cdcf692a4e99f34896" category="paragraph"><block ref="51c8ce8bb23533cdcf692a4e99f34896" category="inline-link-macro-rx"></block></block>
   <block id="a3d00aa90b48860260586c7be1bec2e8" category="inline-link-macro">Aprenda a añadir credenciales de AWS a BlueXP para Amazon FSX para ONTAP</block>
-  <block id="ffd3bdebca0018358cdaaa5dc117c198" category="list-text"><block ref="ffd3bdebca0018358cdaaa5dc117c198" category="inline-link-macro-rx"></block></block>
   <block id="3e9d4cd6e63ede4decfd24e1cd55b4f5" category="inline-link-macro">Aprenda a añadir credenciales de AWS a BlueXP para crear un conector</block>
   <block id="d53482083698aad0c56365a4b9848a94" category="list-text"><block ref="d53482083698aad0c56365a4b9848a94" category="inline-link-macro-rx"></block></block>
   <block id="3551bffff472d33de9e274227109232f" category="paragraph">En las secciones anteriores se describe el método de implementación recomendado para el conector, que es de BlueXP. También puede poner en marcha un conector en AWS desde AWS Marketplace y puede instalar manualmente el software del conector en su propio host Linux.</block>
@@ -3063,7 +3062,6 @@
   <block id="cb3ffce0d4b8f43b3d9f183b558cca41" category="inline-link-macro">Configure los permisos para el modo restringido</block>
   <block id="df4564942ae0e0bd6f202d613e944ba1" category="list-text"><block ref="df4564942ae0e0bd6f202d613e944ba1" category="inline-link-macro-rx"></block></block>
   <block id="fad45f664f0478b74c9485a0b1f6d781" category="inline-link">Configurar permisos para el modo privado</block>
-  <block id="d73ec6441206aebb4242a98961271e64" category="list-text"><block ref="d73ec6441206aebb4242a98961271e64" category="inline-link-rx"></block></block>
   <block id="815957003313e5f9581718376c2c472f" category="paragraph">En las siguientes secciones se describe cómo se utilizan los permisos para cada servicio BlueXP. Esta información puede ser útil si sus políticas corporativas dictan que los permisos sólo se proporcionan según sea necesario.</block>
   <block id="b3a595111956cd206b5fcd5e77bee895" category="summary">Cuando se registra en BlueXP, se le pide que cree una cuenta para su organización. Esta cuenta puede ser todo lo que necesite, pero si su negocio requiere varias cuentas, tendrá que crear cuentas adicionales con la API de tenancy.</block>
   <block id="6c45b1e5876b4865e0208a9ade3da041" category="doc">Cree otra cuenta de BlueXP</block>
@@ -3602,4 +3600,6 @@
   <block id="c6793bcdb1eae6a26c6e9cb42e6b2f31" category="paragraph"><block ref="079398d71b1e343d69f7a6ed5f005eb2" category="inline-link-macro-rx"></block>.</block>
   <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">Agregue y elimine el identificador uniforme de recursos (URI) de un conector.</block>
   <block id="f53835e0f369158c476f99fda577e700" category="sidebar">Documentos de configuración y administración</block>
+  <block id="22e332a6ecd5f345a3f720b11f7cf805" category="list-text"><block ref="22e332a6ecd5f345a3f720b11f7cf805" category="inline-link-macro-rx"></block></block>
+  <block id="d56f297cb566b98a6b65a6dea3038531" category="list-text"><block ref="d56f297cb566b98a6b65a6dea3038531" category="inline-link-macro-rx"></block></block>
 </blocks>
