@@ -18,6 +18,18 @@ _Identity federation_ habilita el inicio de sesión único con BlueXP para que l
 
 
 
+== federación de identidades con credenciales de NSS
+
+Si utiliza sus credenciales del sitio de soporte de NetApp (NSS) para iniciar sesión en BlueXP, no debe seguir las instrucciones de esta página para configurar la federación de identidades. Debe hacer lo siguiente en su lugar:
+
+* Descargue y complete el https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["Formulario de solicitud de federación de NetApp"^]
+* Envíe el formulario a la dirección de correo electrónico especificada en el formulario
+
+
+El equipo de gestión de acceso e identidad de NetApp revisará su solicitud.
+
+
+
 == Cómo funciona la federación de identidades
 
 La configuración de la federación de identidades crea una conexión de confianza entre el proveedor de servicios de autenticación (auth0) de BlueXP y su propio proveedor de gestión de identidades.
@@ -56,6 +68,8 @@ BlueXP admite únicamente SSO iniciado por el proveedor de servicios (iniciado p
 == Descripción general del proceso de configuración
 
 Antes de configurar una conexión entre BlueXP y su proveedor de gestión de identidades, debe comprender los pasos que debe seguir para que pueda prepararse en consecuencia.
+
+Estos pasos son específicos para los usuarios que inician sesión en BlueXP mediante un inicio de sesión en la nube de NetApp. Si utilizas tus credenciales de NSS para iniciar sesión en BlueXP, <<federación de identidades con credenciales de NSS,Aprenda a configurar la federación de identidades con las credenciales de NSS>>.
 
 
 

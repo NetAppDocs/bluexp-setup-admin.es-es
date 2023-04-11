@@ -3605,4 +3605,12 @@
   <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">Eficiencia económica ^1^</block>
   <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">Resistencia operativa ^1^</block>
   <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^ Mientras puede acceder a estos servicios sin un conector, se requiere un conector para iniciar acciones desde los servicios.</block>
+  <block id="f570b8386694ba0d5563a8784f3135e5" category="section-title">federación de identidades con credenciales de NSS</block>
+  <block id="e906028a6376600a0f505777b7c3af9f" category="paragraph">Si utiliza sus credenciales del sitio de soporte de NetApp (NSS) para iniciar sesión en BlueXP, no debe seguir las instrucciones de esta página para configurar la federación de identidades. Debe hacer lo siguiente en su lugar:</block>
+  <block id="0a3bde973847d35b12a69e1debea9ca9" category="inline-link">Formulario de solicitud de federación de NetApp</block>
+  <block id="8c992ea897689b69e58371da6a8ae5e6" category="list-text">Descargue y complete el<block ref="82f36446881e14fa28b945cd41d2b383" category="inline-link-rx"></block></block>
+  <block id="78080f8885ea72672a94d1643801d9cb" category="list-text">Envíe el formulario a la dirección de correo electrónico especificada en el formulario</block>
+  <block id="2ffd4295ac6fb250f496a1c2b7840422" category="paragraph">El equipo de gestión de acceso e identidad de NetApp revisará su solicitud.</block>
+  <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">Aprenda a configurar la federación de identidades con las credenciales de NSS</block>
+  <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">Estos pasos son específicos para los usuarios que inician sesión en BlueXP mediante un inicio de sesión en la nube de NetApp. Si utilizas tus credenciales de NSS para iniciar sesión en BlueXP, <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>.</block>
 </blocks>
