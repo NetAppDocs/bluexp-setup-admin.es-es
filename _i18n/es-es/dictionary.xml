@@ -951,33 +951,7 @@
   <block id="ee0f653772b33fb034bc7001a0c5e7a3" category="paragraph">Como se ha descrito anteriormente, BlueXP permite proporcionar credenciales de AWS de varias maneras: Una función IAM asociada a la instancia de Connector, asumiendo una función IAM en una cuenta de confianza o proporcionando claves de acceso de AWS.</block>
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">Con las dos primeras opciones, BlueXP utiliza el Servicio de token de seguridad de AWS para obtener credenciales temporales que giran constantemente. Este proceso es la mejor práctica, es automático y seguro.</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">Si proporciona a BlueXP claves de acceso de AWS, debe rotar las claves actualizándolas en BlueXP a intervalos regulares. Este es un proceso completamente manual.</block>
-  <block id="4d17b7f0d1f8c0ae69c0ec8d32fea349" category="summary">Al suscribirse a BlueXP desde el mercado de un proveedor de la nube, se le redirigirá al sitio web de BlueXP donde necesita guardar su suscripción y asociarla a cuentas específicas. Una vez que se haya suscrito, cada suscripción estará disponible para administrar desde Digital Wallet.</block>
-  <block id="b01b1be092b95233172f870dc729234b" category="doc">Gestionar suscripciones y contratos de PAYGO</block>
-  <block id="e858f445394700e621aa67dd8e3fe958" category="section-title">Ver sus suscripciones</block>
-  <block id="9c1b3fb5f48f73ce89025933ec931382" category="paragraph">La cartera digital proporciona detalles sobre cada suscripción a PAYGO y el contrato anual asociado con su cuenta BlueXP y con Astra (Astra utiliza el servicio de carga de BlueXP).</block>
-  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">En el menú de navegación de BlueXP, seleccione *Gobierno &gt; cartera digital*.</block>
-  <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">Seleccione *Suscripciones*.</block>
-  <block id="1422eb9c77ef6c74d6abe35beedc5d64" category="paragraph">Solo verá las suscripciones asociadas a la cuenta que está viendo actualmente.</block>
-  <block id="572e470335e0a6d55da05c732a01aed3" category="list-text">Cuando vea la información sobre sus suscripciones, puede interactuar con los detalles de la tabla de la siguiente manera:</block>
-  <block id="6a1de13d318f22872902849cd26467b4" category="list-text">Expanda una fila para ver más detalles.</block>
-  <block id="d61aec883b403c61da2d8d8e19d78473" category="inline-image-macro">Una captura de pantalla de la ficha Suscripciones en la cartera digital, donde puede seleccionar la flecha al final de una fila para ampliarla.</block>
-  <block id="3a9d2caf2b3b63f1b3ab7d00e469b158" category="paragraph"><block ref="3a9d2caf2b3b63f1b3ab7d00e469b158" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="56594b7222b35921f9fe676eadf6bbdf" category="inline-image-macro">el icono de más al final del encabezado de la tabla</block>
-  <block id="c090ce3dc0b8ea780bfa95c666328c67" category="paragraph">Tenga en cuenta que las columnas término y renovación automática no aparecen de forma predeterminada. La columna renovación automática muestra información de renovación únicamente para los contratos de Azure.</block>
-  <block id="48772efe35cdbabca3c0abdab7360b57" category="paragraph">Tenga en cuenta lo siguiente acerca de lo que puede ver en la tabla:</block>
-  <block id="4d34f1097f6c8b9cee28bca8b78bbee9" category="list-text">Fecha de inicio</block>
-  <block id="d1686d74b72c58f44c6fceaf3011df0b" category="list-text">La fecha de inicio es cuando ha asociado correctamente la suscripción a su cuenta y se ha iniciado la carga.</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="list-text">N.A.</block>
-  <block id="716e98867696fbbeed00e3dcd1f76758" category="list-text">Si observa N/A en la tabla, la información no está disponible en la API del proveedor de cloud en este momento.</block>
-  <block id="cd494d76449d5dfe0c0adfb2f3447761" category="list-text">Contratos</block>
-  <block id="8090b542b799e2f0268fddd048d44eda" category="list-text">Si expande los detalles de un contrato, el monedero digital muestra lo que está disponible para su plan actual: Las opciones de contrato y las unidades (capacidad o número de nodos).</block>
-  <block id="7f96d1365390f4c6a7c1befe0b068769" category="list-text">El monedero digital identificará la fecha de finalización y si el contrato se renovará pronto, finalizará pronto o si ya ha finalizado.</block>
-  <block id="d1d7830f95588ae511ee592eab47c2b0" category="list-text">Si tiene un contrato de AWS y ha cambiado alguna de las opciones del contrato tras la fecha de inicio, asegúrese de validar las opciones de contrato desde AWS.</block>
-  <block id="6942b724002d90bb0f705f478cdd6bf3" category="section-title">Gestione sus suscripciones</block>
-  <block id="ac3dad7b0d90a8896f44e77f84726619" category="paragraph">Puede gestionar sus suscripciones desde Digital Wallet cambiando el nombre de una suscripción y eligiendo las cuentas asociadas a la suscripción.</block>
-  <block id="eb6dd0692058cd4edb3fb82f48db1f57" category="paragraph">Por ejemplo, digamos que tiene dos cuentas y cada una se factura mediante suscripciones independientes. Puede desasociar una suscripción de una de las cuentas para que los usuarios de esa cuenta no elijan accidentalmente la suscripción incorrecta al crear un entorno de trabajo de Cloud Volume ONTAP.</block>
-  <block id="1dea06c0cd8c3b77e4597670a860c155" category="inline-image-macro">Una captura de pantalla del menú de acciones para una suscripción.</block>
-  <block id="23531331db8be0d13d9ce3c0685c0c8e" category="paragraph"><block ref="23531331db8be0d13d9ce3c0685c0c8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="67cbb61f9d12c71b3b67153567963530" category="paragraph">Hay dos formas de añadir credenciales y suscripciones de Azure adicionales en BlueXP.</block>
   <block id="6a180e1eb33567ab95efde548a466743" category="list-text">Asocie las suscripciones adicionales de Azure a la identidad gestionada de Azure.</block>
   <block id="d6e059f3de26b29b7be6b2949eae8f3d" category="list-text">Si desea implementar Cloud Volumes ONTAP con diferentes credenciales de Azure, conceda permisos de Azure con un servicio principal y añada sus credenciales a BlueXP.</block>
@@ -1231,7 +1205,6 @@
   <block id="61b99e46ccbb3b872a32fbf2f064b87b" category="cell">Para gestionar recursos en regiones gubernamentales de Azure.</block>
   <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">Para administrar recursos en la región de Azure IL6.</block>
   <block id="232055d452a21264f8d549e50d695b18" category="cell">Para gestionar recursos en regiones de Azure China.</block>
-  <block id="3933fdb8f34cb01278a72748377338a5" category="cell">\https://www.googleapis.com/compute/v1/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">Para gestionar recursos en Google Cloud.</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp.</block>
   <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">\https://*.api.bluexp.netapp.com</block>
@@ -2123,7 +2096,6 @@
   <block id="dd6f576fe34949ea5c3d4b196b2c626d" category="sidebar">Administrar conectores existentes</block>
   <block id="ca82fdd9a480fcc34a6b470f5ec8e908" category="sidebar">Configure los ajustes de proxy</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">Configuración predeterminada</block>
-  <block id="4ca2c509994c2776d0880357b4e8e5be" category="sidebar">Suscripciones</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">Almacenamiento en cloud detectado</block>
   <block id="bce447551b8153911559a7a705721ffe" category="sidebar">Consulte sus cuentas de Azure Blob</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">Consulte sus cubos de Google Cloud Storage</block>
@@ -3372,9 +3344,6 @@
   <block id="b7afeec70319496f1e3eb3a317ae30c3" category="doc">Configure las redes de Google Cloud</block>
   <block id="acb3a31b8e79039416f86dfe140a002a" category="section-title">VPC y subred</block>
   <block id="2ece2735ee78ce884898c747bead2708" category="paragraph">Al crear el conector, es necesario especificar el VPC y la subred donde debería residir el conector.</block>
-  <block id="33d90cc16eaedf37738a3faf06f00f36" category="list-text">Seleccione <block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block> para elegir las columnas que aparecen en la tabla.</block>
-  <block id="e97d1d1134e32a84fb4d6d796e3e56a9" category="list-text">Seleccione el menú de acciones de la fila correspondiente a la suscripción que desea administrar.</block>
-  <block id="1201c1bd99e40a424aee33ac62838b92" category="list-text">Elija cambiar el nombre de la suscripción o administrar las cuentas de BlueXP asociadas a la suscripción.</block>
   <block id="7badfd12f4665ef65fdb218a565f47d6" category="summary">Debe comprender qué necesita para poner en marcha BlueXP en modo privado para que pueda preparar su entorno.</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">Preparación para la implementación en modo privado</block>
   <block id="c597b49a830c4a4ce2fd66c374de3113" category="paragraph">Usted debe entender qué es necesario para comenzar con BlueXP en modo privado para que usted pueda preparar su entorno.</block>
@@ -3613,4 +3582,5 @@
   <block id="2ffd4295ac6fb250f496a1c2b7840422" category="paragraph">El equipo de gestión de acceso e identidad de NetApp revisará su solicitud.</block>
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">Aprenda a configurar la federación de identidades con las credenciales de NSS</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">Estos pasos son específicos para los usuarios que inician sesión en BlueXP mediante un inicio de sesión en la nube de NetApp. Si utilizas tus credenciales de NSS para iniciar sesión en BlueXP, <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>.</block>
+  <block id="47bf230a49ecee72c3b36a37f9758812" category="cell">\https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
 </blocks>

@@ -187,8 +187,6 @@ sidebar:
         url: "/task-adding-nss-accounts.html"
       - title: Administre las credenciales asociadas con su inicio de sesión de BlueXP
         url: "/task-manage-user-credentials.html"
-    - title: Suscripciones
-      url: "/task-manage-subscriptions.html"
     - title: Almacenamiento en cloud detectado
       entries:
       - title: Gestione sus bloques de Amazon S3
