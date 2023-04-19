@@ -1176,7 +1176,6 @@
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">Permita que los servicios de terceros de su cuenta tengan acceso a servicios de terceros disponibles en BlueXP. Los servicios de terceros son servicios de cloud similares a los que ofrece NetApp, pero son gestionados y respaldados por empresas terceros.</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">En la ficha *Descripción general*, active la opción *permitir servicios de terceros*.</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">Puntos finales</block>
-  <block id="03275fa7fd8487800900fe5ed21b50b4" category="cell">\https://console.bluexp.netapp.com</block>
   <block id="b3f4a5004c2a10094d2af8bd28589cbf" category="paragraph">Servicios de AWS (amazonaws.com):</block>
   <block id="58e3bfbabf904de43a6a22aca509b0d8" category="list-text">Formación CloudFormation</block>
   <block id="9d4942b614d2d8583bdf09c75ba94f3d" category="list-text">Cloud computing elástico (EC2)</block>
@@ -3017,9 +3016,6 @@
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">Eliminar credenciales</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">En la página *credenciales de cuenta*, seleccione el menú de acción para un conjunto de credenciales y, a continuación, seleccione *Eliminar credenciales*.</block>
   <block id="26b956db62dfb9e45d6132f9e41a9d73" category="summary">A medida que utiliza la consola basada en Web BlueXP que se proporciona a través de la capa SaaS, se pone en contacto con varios extremos para completar las tareas de gestión de datos. La máquina que ejecuta el explorador Web debe tener conexiones con estos extremos.</block>
-  <block id="b49cf226526bec08997a8b7c5adba39c" category="cell">Su navegador web se pone en contacto con esta URL cuando utiliza la consola basada en web.</block>
-  <block id="1ecee0edf351652fe1d2dfd06c45adab" category="inline-link-macro">Puntos finales contactados durante la instalación manual del conector</block>
-  <block id="28654ae42df3aaae083bad0a7d52a508" category="list-text"><block ref="28654ae42df3aaae083bad0a7d52a508" category="inline-link-macro-rx"></block></block>
   <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">Instale un certificado HTTPS para obtener acceso seguro</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">En la parte superior derecha de la consola BlueXP, seleccione el icono Configuración y seleccione *Configuración HTTPS*.</block>
   <block id="6af98f64f202dba04d4bee35778042a2" category="list-text">Introduzca el nombre de host o DNS del host del conector (su nombre común) y, a continuación, seleccione *generar CSR*.</block>
@@ -3588,4 +3584,16 @@
   <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2 está configurado como opcional</block>
   <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokens está configurado como opcional</block>
   <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">Estos ajustes no se deben cambiar a Necesario. El cambio de estos ajustes a necesarios afecta a la disponibilidad de conectores y Cloud Volumes ONTAP.</block>
+  <block id="ca514cc7f92949257244bf6c32d47ea3" category="cell">\https://console.bluexp.netapp.com \https://*.console.bluexp.netapp.com</block>
+  <block id="7926588c37032e15e3fdc15831f4bbb5" category="cell">Su navegador web se pone en contacto con estas URL cuando utiliza la consola basada en web de BlueXP.</block>
+  <block id="bfb1a8284652de834f7e5f10d70d1b28" category="inline-link-macro">Prepare las redes para el acceso del usuario a la consola de BlueXP (modo restringido)</block>
+  <block id="bbeb91503e087c169e5b9723b8e20883" category="list-text"><block ref="bbeb91503e087c169e5b9723b8e20883" category="inline-link-macro-rx"></block></block>
+  <block id="2860cec66f88d15f252631c132ac68ce" category="inline-link-macro">Puntos finales que el conector contacta en AWS (modo estándar)</block>
+  <block id="c5671cdad008988d217498ffee18763f" category="list-text"><block ref="c5671cdad008988d217498ffee18763f" category="inline-link-macro-rx"></block></block>
+  <block id="f30c2ab09bb92e952f9dc522c1d59a4b" category="inline-link-macro">Puntos finales con los que el conector contacta en Azure (modo estándar)</block>
+  <block id="befb6b1b01e0761a5d0ce6f028c4edd2" category="list-text"><block ref="befb6b1b01e0761a5d0ce6f028c4edd2" category="inline-link-macro-rx"></block></block>
+  <block id="51592248285ea432f62366d3bb873cd2" category="inline-link-macro">Puntos finales que el conector contacta en Google Cloud (modo estándar)</block>
+  <block id="6de9f5682041f68bedd20c6f93964068" category="list-text"><block ref="6de9f5682041f68bedd20c6f93964068" category="inline-link-macro-rx"></block></block>
+  <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">Puntos finales contactados durante la instalación manual del conector (modo estándar)</block>
+  <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
 </blocks>
