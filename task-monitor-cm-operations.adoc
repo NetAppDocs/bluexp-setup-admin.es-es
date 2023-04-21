@@ -98,7 +98,7 @@ Puede enviar tipos específicos de notificaciones por correo electrónico para q
 
 [NOTE]
 ====
-* En este momento, se envían notificaciones por correo electrónico para las siguientes características y servicios de BlueXP: Conectores, Cloud Sync, Cloud Backup, Digital Wallet y Protección contra ransomware. En futuras versiones se añadirán servicios adicionales.
+* En este momento, se envían notificaciones por correo electrónico que le indican las siguientes funciones y servicios de BlueXP: Conectores, copia y sincronización de BlueXP, backup y recuperación de BlueXP, cartera digital de BlueXP y protección contra el ransomware de BlueXP. En futuras versiones se añadirán servicios adicionales.
 * No se admite el envío de notificaciones por correo electrónico cuando el conector está instalado en un sitio sin acceso a Internet.
 
 

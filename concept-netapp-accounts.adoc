@@ -44,7 +44,7 @@ Al asociar un usuario, debe asignarles un rol:
 
 * _Account Admin_: Puede realizar cualquier acción en BlueXP.
 * _Workspace Admin_: Puede crear y administrar recursos en el área de trabajo asignada.
-* _Compliance Viewer_: Sólo puede ver la información de cumplimiento de Cloud Data Sense y generar informes para los sistemas a los que tienen permiso de acceso.
+* _Compliance Viewer_: Solo puede ver la información de cumplimiento para la clasificación de BlueXP y generar informes para espacios de trabajo a los que tengan permiso para acceder.
 
 
 link:reference-user-roles.html["Obtenga más información sobre estos roles"].
@@ -70,7 +70,7 @@ link:task-setting-up-netapp-accounts.html["Aprenda a agregar un área de trabajo
 
 Un conector ejecuta las acciones que BlueXP necesita realizar para gestionar su infraestructura de datos. El conector se ejecuta en una instancia de máquina virtual que se implementa en su proveedor de cloud o en un host en las instalaciones que haya configurado.
 
-Puede utilizar un conector con más de un servicio BlueXP. Por ejemplo, si utiliza un conector para gestionar Cloud Volumes ONTAP, puede utilizar el mismo conector con otro servicio como Cloud Tiering.
+Puede utilizar un conector con más de un servicio BlueXP. Por ejemplo, si estás usando un conector para gestionar Cloud Volumes ONTAP, puedes utilizar ese mismo conector con otro servicio como la organización en niveles de BlueXP.
 
 link:concept-connectors.html["Más información sobre conectores"].
 

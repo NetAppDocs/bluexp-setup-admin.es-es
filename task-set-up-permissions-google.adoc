@@ -222,7 +222,7 @@ link:reference-permissions-gcp.html["Política de cuenta de servicio de conector
 * storage.admin
 * miembro: Cuenta de servicio de BlueXP como serviceAccount.user
 
-| N.A. | (Opcional) para la organización en niveles de datos y Cloud Backup 
+| N.A. | (Opcional) para la organización de datos en niveles y el backup y recuperación de BlueXP 
 
 
 | Agente de servicio de API de Google | Google Cloud | Proyecto de servicio  a| 

@@ -47,19 +47,19 @@ Para las regiones estándar, los permisos se distribuyen en dos directivas. Son 
 
 La primera directiva proporciona permisos para los siguientes servicios:
 
-* Backup en el cloud
-* Cloud Data SENSE
-* Organización en niveles del cloud
+* Detección de bloques de Amazon S3
+* Backup y recuperación
+* Clasificación
 * Cloud Volumes ONTAP
 * FSX para ONTAP
-* Detección de bloques de S3
+* Organización en niveles
 
 
 La segunda directiva proporciona permisos para los siguientes servicios:
 
-* Etiquetado de AppTemplate
-* Caché de archivos global
+* Almacenamiento en caché en el edge
 * Kubernetes
+* Reparación
 
 
 [role="tabbed-block"]
@@ -703,25 +703,53 @@ En las siguientes secciones se describe cómo se utilizan los permisos para cada
 
 
 
-=== Etiquetas de AppTemplate
+=== Amazon FSX para ONTAP
 
-El conector realiza las siguientes solicitudes de API para administrar etiquetas en recursos de AWS cuando utiliza el servicio de etiquetado AppTemplate:
+El conector realiza las siguientes solicitudes de API para administrar Amazon FSx for ONTAP:
 
+* ec2:DescribInstances
+* ec2:DescribeInstanceStatus
+* ec2:DescribeInstanceAttribute
+* ec2:DescribeRouteTables
+* ec2:DescribeImages
 * ec2:CreateTags
-* ec2:DeleteTags
+* ec2:DescribeVolumes
+* ec2:DescribeSecurityGroups
+* ec2:DescribeNetworkinterfaces
+* ec2:DescribeSubnets
+* ec2:DescribeVpcs
+* ec2:DescribDhcpOptions
+* ec2:DescribSnapshots
+* ec2:DescribeKeyPairs
+* ec2:regiones describidas
 * ec2:etiquetas a describTags
-* Tag:getResources
-* Etiqueta:getTagKeys
-* Etiqueta:getTagValues
-* Tag:TagResources
-* Tag:UntagResources
+* ec2:DescribeIamInstanceProfileAssociations
+* ec2:DescribeReservedInstancesOfferings
+* ec2:DescribeVpcEndpoints
+* ec2:DescribeVpcs
+* ec2:DescribVolumesModificaciones
+* ec2:DescribePlacementGroups
+* Kms:Lista*
+* Kms:describir*
+* Kms:CreateGrant
+* Kms:ListAliases
+* fsx:describe*
+* fsx:List*
 
 
 
 
-=== Backup en el cloud
+=== Detección de bloques de Amazon S3
 
-El conector realiza las siguientes solicitudes API para implementar la instancia de restauración para Cloud Backup:
+El conector hace la siguiente solicitud de API para detectar bloques de Amazon S3:
+
+s3:GetEncryptionConfiguration
+
+
+
+=== Backup y recuperación
+
+El conector realiza las siguientes solicitudes de la API para poner en marcha la instancia de restauración para el backup y la recuperación de BlueXP:
 
 * ec2:StartuStarInstances
 * ec2:StopInstances
@@ -825,9 +853,9 @@ El conector realiza las siguientes solicitudes de API si utiliza una cuenta de A
 
 
 
-=== Cloud Data SENSE
+=== Clasificación
 
-El conector realiza las siguientes solicitudes de API para implementar la instancia de Cloud Data Sense:
+Connector realiza las siguientes solicitudes de la API para poner en marcha la instancia de clasificación de BlueXP:
 
 * ec2:DescribInstances
 * ec2:DescribeInstanceStatus
@@ -855,7 +883,7 @@ El conector realiza las siguientes solicitudes de API para implementar la instan
 * ec2:DescribeIamInstanceProfileAssociations
 
 
-El conector realiza las siguientes solicitudes de API para analizar bloques de S3 cuando utiliza Cloud Data Sense:
+El conector realiza las siguientes solicitudes de la API para analizar los bloques de S3 cuando utilizas la clasificación de BlueXP:
 
 * iam:AddRoleToInstanceProfile
 * ec2:AssociateIamInstanceProfile
@@ -875,31 +903,6 @@ El conector realiza las siguientes solicitudes de API para analizar bloques de S
 * sts:AssumeRole
 
 
-
-
-=== Organización en niveles del cloud
-
-El conector realiza las siguientes solicitudes de API para organizar los datos en niveles en Amazon S3 cuando se utiliza Cloud Tiering.
-
-[cols="3*"]
-|===
-| Acción | ¿Se utiliza para la configuración? | ¿Se utiliza para operaciones diarias? 
-
-
-| s3:CreateBucket | Sí | No 
-
-
-| s3:PutLipeycleConfiguration | Sí | No 
-
-
-| s3:GetLifecycleConfiguration | Sí | Sí 
-
-
-| ec2:regiones describidas | Sí | No 
-
-
-| ec2:DescribeVpcEndpoints | Sí | No 
-|===
 
 
 === Cloud Volumes ONTAP
@@ -1173,49 +1176,13 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 |===
 
 
-=== Caché de archivos global
+=== Almacenamiento en caché en el edge
 
-El conector realiza las siguientes solicitudes de API para implementar instancias de caché de archivos global durante la implementación:
+Connector realiza las siguientes solicitudes de API para poner en marcha las instancias de almacenamiento en caché perimetral de BlueXP durante la puesta en marcha:
 
 * Cloudformation:Describacks
 * Cloudwatch:GetMetricStatistics
 * Cloudformation:ListStacks
-
-
-
-
-=== FSX para ONTAP
-
-El conector realiza las siguientes solicitudes de API para administrar FSX para ONTAP:
-
-* ec2:DescribInstances
-* ec2:DescribeInstanceStatus
-* ec2:DescribeInstanceAttribute
-* ec2:DescribeRouteTables
-* ec2:DescribeImages
-* ec2:CreateTags
-* ec2:DescribeVolumes
-* ec2:DescribeSecurityGroups
-* ec2:DescribeNetworkinterfaces
-* ec2:DescribeSubnets
-* ec2:DescribeVpcs
-* ec2:DescribDhcpOptions
-* ec2:DescribSnapshots
-* ec2:DescribeKeyPairs
-* ec2:regiones describidas
-* ec2:etiquetas a describTags
-* ec2:DescribeIamInstanceProfileAssociations
-* ec2:DescribeReservedInstancesOfferings
-* ec2:DescribeVpcEndpoints
-* ec2:DescribeVpcs
-* ec2:DescribVolumesModificaciones
-* ec2:DescribePlacementGroups
-* Kms:Lista*
-* Kms:describir*
-* Kms:CreateGrant
-* Kms:ListAliases
-* fsx:describe*
-* fsx:List*
 
 
 
@@ -1232,11 +1199,19 @@ El conector realiza las siguientes solicitudes de API para detectar y gestionar 
 
 
 
-=== Detección de bloques de S3
+=== Reparación
 
-El conector hace la siguiente solicitud de API para detectar bloques de Amazon S3:
+El conector realiza las siguientes solicitudes de la API para gestionar etiquetas de los recursos de AWS cuando utiliza la corrección de BlueXP:
 
-s3:GetEncryptionConfiguration
+* ec2:CreateTags
+* ec2:DeleteTags
+* ec2:etiquetas a describTags
+* Tag:getResources
+* Etiqueta:getTagKeys
+* Etiqueta:getTagValues
+* Tag:TagResources
+* Tag:UntagResources
+
 
 
 
@@ -1248,6 +1223,6 @@ A medida que se añadan y eliminen permisos, los anotaremos en las secciones sig
 
 === 14 de febrero de 2023
 
-Ahora se necesita el siguiente permiso para la organización en niveles del cloud:
+Ahora se necesita el siguiente permiso para la organización en niveles de BlueXP:
 
 ec2:DescribeVpcEndpoints

@@ -53,7 +53,7 @@ image:screenshot-manage-account-settings.png["Captura de pantalla que muestra la
 +
 ** *Administración de cuentas*: Puede realizar cualquier acción en BlueXP.
 ** *Administración de área de trabajo*: Puede crear y administrar recursos en áreas de trabajo asignadas.
-** *Visor de cumplimiento*: Sólo puede ver la información de cumplimiento de Cloud Data Sense y generar informes para áreas de trabajo a las que tienen permiso de acceso.
+** *Visor de cumplimiento*: Solo puede ver la información de cumplimiento para la clasificación de BlueXP y generar informes para espacios de trabajo a los que tienen permiso para acceder.
 
 
 . Si ha seleccionado Administrador de área de trabajo o Visor de cumplimiento, seleccione uno o varios espacios de trabajo para asociarlos con ese usuario.

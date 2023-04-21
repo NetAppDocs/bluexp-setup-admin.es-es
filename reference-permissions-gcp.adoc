@@ -231,7 +231,7 @@ includedPermissions:
 | - compute.networks.updatePolicy | Para aplicar reglas de firewall en las PC y subredes para un par ha. 
 
 
-| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | Para habilitar Cloud Data Sense. 
+| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | Para habilitar la clasificación de BlueXP. 
 
 
 | - container.clusters.get - container.clusters.list | Para detectar los clústeres de Kubernetes que se ejecutan en Google Kubernetes Engine. 
@@ -243,7 +243,7 @@ includedPermissions:
 | - Monitoring.timeries.list - Storage.buckets.getIamPolicy | Para descubrir información sobre cubos de Google Cloud Storage. 
 
 
-| - CloudKMS.criptocryKeys.get - cloudKMS.criptocryKeys.getIamPolicy - cloudKMS.criptoKeyKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudKMS.Keyring.get - cloudKMS.Keyring.getIamPolicy - cloudKMS.Keyring.list - cloudkms.keyRings.setIamPolicy | Para seleccionar sus propias claves gestionadas por el cliente en el asistente de activación de Cloud Backup en lugar de usar las claves de cifrado predeterminadas gestionadas por Google. 
+| - CloudKMS.criptocryKeys.get - cloudKMS.criptocryKeys.getIamPolicy - cloudKMS.criptoKeyKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudKMS.Keyring.get - cloudKMS.Keyring.getIamPolicy - cloudKMS.Keyring.list - cloudkms.keyRings.setIamPolicy | Para seleccionar tus propias claves gestionadas por el cliente en el asistente de activación de backup y recuperación de BlueXP en lugar de usar las claves de cifrado gestionadas por Google predeterminadas. 
 |===
 
 
@@ -275,4 +275,4 @@ Se han agregado los siguientes permisos a la directiva:
 * cloudkms.keyRings.setIamPolicy
 
 
-Estos permisos son necesarios para Cloud Backup.
+Se requieren estos permisos para backup y recuperación de BlueXP.

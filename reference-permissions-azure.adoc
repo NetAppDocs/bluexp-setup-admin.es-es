@@ -179,20 +179,6 @@ En las siguientes secciones se describe cómo se utilizan los permisos para cada
 
 
 
-=== Etiquetas de AppTemplate
-
-El conector realiza las siguientes solicitudes de API para administrar etiquetas en recursos de Azure cuando utiliza el servicio de etiquetado AppTemplate:
-
-* Microsoft.Resources/resources/read
-* Microsoft.Resources/subscripciones/operationResults/read
-* Microsoft.Resources/subscriptions/ResourceGroups/read
-* Microsoft.Resources/subscripciones/resourcegroups/resources/read
-* Microsoft.Resources/etiquetas/leer
-* Microsoft.Resources/etiquetas/escritura
-
-
-
-
 === Azure NetApp Files
 
 El conector realiza las siguientes solicitudes de API para gestionar entornos de trabajo de Azure NetApp Files:
@@ -206,9 +192,9 @@ El conector realiza las siguientes solicitudes de API para gestionar entornos de
 
 
 
-=== Backup en el cloud
+=== Backup y recuperación
 
-El conector realiza las siguientes solicitudes de API para operaciones de backup y restauración:
+El conector realiza las siguientes solicitudes de API para la copia de seguridad y la recuperación de BlueXP:
 
 * Microsoft.Compute/virtualMachines/read
 * Microsoft.Compute/virtualMachines/start/action
@@ -261,9 +247,9 @@ El conector realiza las siguientes solicitudes de API cuando utiliza la funciona
 
 
 
-=== Cloud Data SENSE
+=== Clasificación
 
-El conector realiza las siguientes solicitudes de API cuando utiliza Cloud Data Sense.
+El conector realiza las siguientes solicitudes de la API cuando usas la clasificación de BlueXP.
 
 [cols="3*"]
 |===
@@ -404,26 +390,6 @@ El conector realiza las siguientes solicitudes de API cuando utiliza Cloud Data 
 
 | Microsoft.Resources/subscriptions/ResourceGroups/write | Sí | No 
 |===
-
-
-=== Organización en niveles del cloud
-
-El conector realiza las siguientes solicitudes de API al configurar Cloud Tiering.
-
-* Microsoft.Storage/storageAccounts/listkeys/action
-* Microsoft.Resources/subscriptions/ResourceGroups/read
-* Microsoft.Resources/suscripciones/ubicaciones/leer
-
-
-El conector realiza las siguientes solicitudes API para operaciones diarias.
-
-* Microsoft.Storage/storageAccounts/blobServices/contenedores/lectura
-* Microsoft.Storage/storageAccounts/blobServices/contenedores/escritura
-* Microsoft.Storage/storageAccounts/managementPolicies/Read
-* Microsoft.Storage/storageAccounts/managementPolicies/Write
-* Microsoft.Storage/storageAccounts/read
-
-
 
 
 === Cloud Volumes ONTAP
@@ -733,9 +699,9 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 |===
 
 
-=== Caché de archivos global
+=== Almacenamiento en caché en el edge
 
-El conector realiza las siguientes solicitudes API cuando utiliza la caché de archivos global:
+Connector realiza las siguientes solicitudes de API cuando utilizas el almacenamiento en caché perimetral de BlueXP:
 
 * Microsoft.Insights/Metrics/Read
 * Microsoft.Compute/virtualMachines/extensions/write
@@ -764,6 +730,40 @@ El conector realiza las siguientes solicitudes de API para detectar y gestionar 
 
 
 
+=== Reparación
+
+El conector realiza las siguientes solicitudes de la API para gestionar etiquetas de recursos de Azure cuando utiliza la corrección de BlueXP:
+
+* Microsoft.Resources/resources/read
+* Microsoft.Resources/subscripciones/operationResults/read
+* Microsoft.Resources/subscriptions/ResourceGroups/read
+* Microsoft.Resources/subscripciones/resourcegroups/resources/read
+* Microsoft.Resources/etiquetas/leer
+* Microsoft.Resources/etiquetas/escritura
+
+
+
+
+=== Organización en niveles
+
+El conector realiza las siguientes solicitudes de API al configurar la organización en niveles de BlueXP.
+
+* Microsoft.Storage/storageAccounts/listkeys/action
+* Microsoft.Resources/subscriptions/ResourceGroups/read
+* Microsoft.Resources/suscripciones/ubicaciones/leer
+
+
+El conector realiza las siguientes solicitudes API para operaciones diarias.
+
+* Microsoft.Storage/storageAccounts/blobServices/contenedores/lectura
+* Microsoft.Storage/storageAccounts/blobServices/contenedores/escritura
+* Microsoft.Storage/storageAccounts/managementPolicies/Read
+* Microsoft.Storage/storageAccounts/managementPolicies/Write
+* Microsoft.Storage/storageAccounts/read
+
+
+
+
 == Registro de cambios
 
 A medida que se añadan y eliminen permisos, los anotaremos en las secciones siguientes.
@@ -772,7 +772,7 @@ A medida que se añadan y eliminen permisos, los anotaremos en las secciones sig
 
 === 23 de marzo de 2023
 
-El permiso "Microsoft.Storage/storageAccounts/delete" ya no es necesario en Cloud Data Sense.
+El permiso «Microsoft.Storage/storageAccounts/delete» ya no es necesario para la clasificación de BlueXP.
 
 Este permiso sigue siendo necesario para Cloud Volumes ONTAP.
 
@@ -785,7 +785,7 @@ Se han agregado los siguientes permisos a la política de JSON:
 * Microsoft.Storage/storageAccounts/listAccountSas/action
 * Microsoft.Synapse/spots/privateEndpointConnectionsApproval/action
 +
-Estos permisos son necesarios para Cloud Backup.
+Se requieren estos permisos para backup y recuperación de BlueXP.
 
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action
 +
@@ -801,11 +801,11 @@ Se han agregado los siguientes permisos a la política de JSON:
 
 * Microsoft.Storage/storageAccounts/blobServices/contenedores/escritura
 +
-Este permiso es necesario para Cloud Backup y Cloud Tiering.
+Se necesita este permiso para backup y recuperación y para la organización en niveles de BlueXP.
 
 * Microsoft.Network/publicIPAddresses/delete
 +
-Estos permisos son necesarios para Cloud Backup.
+Se requiere este permiso para realizar backup y recuperación de BlueXP.
 
 
 

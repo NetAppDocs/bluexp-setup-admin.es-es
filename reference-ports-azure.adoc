@@ -31,13 +31,13 @@ El grupo de seguridad de Azure para Connector requiere reglas tanto entrantes co
 | HTTP | 80 | Proporciona acceso HTTP desde navegadores web de cliente al local interfaz de usuario 
 
 
-| HTTPS | 443 | Proporciona acceso HTTPS desde exploradores web de cliente a la interfaz de usuario local y conexiones desde la instancia de Cloud Data Sense 
+| HTTPS | 443 | Ofrece acceso HTTPS desde los navegadores web del cliente a la interfaz de usuario local y conexiones desde la instancia de clasificación de BlueXP 
 
 
 | TCP | 3128 | Proporciona a Cloud Volumes ONTAP acceso a Internet para enviar mensajes de AutoSupport al soporte de NetApp. Debe abrir manualmente este puerto después de la implementación. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["Obtenga información sobre cómo se utiliza el conector como proxy para los mensajes de AutoSupport"^] 
 
 
-| TCP | 9060, 9061 | Ofrece la capacidad de habilitar y utilizar Cloud Data Sense y Cloud Backup en regiones gubernamentales. 
+| TCP | 9060, 9061 | Proporciona la capacidad de habilitar y utilizar la clasificación de BlueXP y el backup y la recuperación de datos de BlueXP en regiones gubernamentales. 
 |===
 
 
@@ -75,10 +75,10 @@ NOTE: La dirección IP de origen es el host del conector.
 | Servicio | Protocolo | Puerto | Destino | Específico 
 
 
-| Llamadas API y AutoSupport | HTTPS | 443 | LIF de gestión de clústeres de ONTAP y Internet saliente | API llama a Azure y ONTAP, a Cloud Data Sense, a servicio de ransomware y a envío de mensajes de AutoSupport a NetApp 
+| Llamadas API y AutoSupport | HTTPS | 443 | LIF de gestión de clústeres de ONTAP y Internet saliente | Llamadas API a Google Cloud y ONTAP, realizar la clasificación de BlueXP, proteger contra el ransomware de BlueXP y enviar mensajes de AutoSupport a NetApp 
 
 
-| Llamadas API | TCP | 8080 | Sentido de los datos | Sondee la instancia de detección de datos durante la implementación 
+| Llamadas API | TCP | 8080 | Clasificación de BlueXP | Sondee la instancia de clasificación de BlueXP durante la puesta en marcha 
 
 
 | DNS | UDP | 53 | DNS | Utilizado para resolver DNS por BlueXP 

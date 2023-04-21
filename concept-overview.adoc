@@ -40,33 +40,33 @@ Reducida:: Descubra, ponga en marcha y gestione el almacenamiento, ya sea en AWS
 ** Sistemas StorageGRID
 
 
+* Orquestar y proteger https://bluexp.netapp.com/solutions/kubernetes["Datos persistentes de Kubernetes"^]
 
 
 --
 Movilidad:: Mueva los datos donde los necesite sincronizando, copiando, organizando en niveles y almacenando los datos en caché.
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["Cloud Sync"^]
-* https://bluexp.netapp.com/cloud-tiering["Organización en niveles del cloud"^]
-* https://bluexp.netapp.com/global-file-cache["Caché de archivos global"^]
+* https://bluexp.netapp.com/cloud-sync-service["Copiar y sincronizar"^]
+* https://bluexp.netapp.com/global-file-cache["Almacenamiento en caché en el edge"^]
+* https://bluexp.netapp.com/cloud-tiering["Organización en niveles"^]
 
 
 --
 Protección:: Use mecanismos de protección automatizados para proteger los datos contra la pérdida de datos, interrupciones del servicio no planificadas, ransomware y otras amenazas cibernéticas.
 +
 --
-* https://bluexp.netapp.com/cloud-backup["Backup en el cloud"^]
+* https://bluexp.netapp.com/cloud-backup["Backup y recuperación"^]
 * https://bluexp.netapp.com/replication["Replicación"^]
-* https://bluexp.netapp.com/ransomware-protection["Protección contra ransomware"^]
-* https://bluexp.netapp.com/k8s["Kubernetes"^]
 
 
 --
 Análisis y control:: Use herramientas para supervisar, asignar y optimizar su almacenamiento de datos y su infraestructura.
 +
 --
-* https://bluexp.netapp.com/netapp-cloud-data-sense["Cloud Data SENSE"^]
+* https://bluexp.netapp.com/netapp-cloud-data-sense["Clasificación"^]
 * https://bluexp.netapp.com/digital-advisor["Asesor digital"^]
+* https://bluexp.netapp.com/ransomware-protection["Protección contra ransomware"^]
 
 
 --
@@ -126,6 +126,6 @@ link:concept-modes.html["Obtenga más información sobre los modos de implementa
 
 == Certificación SOC 2 de tipo 2
 
-Una empresa independiente certificada de contables y un auditor de servicios examinaron BlueXP, Cloud Sync, Cloud Tiering, Cloud Data Sense y Cloud Backup (plataforma BlueXP) y afirmaron que han obtenido los informes de SOC 2 tipo 2 basados en los criterios aplicables de los servicios de confianza.
+Una firma de contabilidad pública independiente certificada y un auditor de servicios examinó BlueXP y afirmó que logró los informes SOC 2 de tipo 2 basados en los criterios aplicables de los servicios de confianza.
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["Consulte los informes de SOC 2 de NetApp"^]

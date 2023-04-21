@@ -44,7 +44,7 @@ NOTE: La introducción del modo restringido sustituye a la opción de activar o 
 
 === Conector 3.9.28
 
-* Las notificaciones por correo electrónico ya son compatibles con Digital Wallet.
+* Las notificaciones por correo electrónico ahora son compatibles con la cartera digital de BlueXP.
 +
 Si configura los ajustes de notificación, puede recibir notificaciones por correo electrónico cuando sus licencias de BYOL estén a punto de expirar (una notificación de "advertencia") o si ya han caducado (una notificación de "error").
 
@@ -104,12 +104,12 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Ver los requisitos del sistema para el conector"].
 
-* El conector ahora es compatible con cualquier entorno de nube que tenga un aislamiento completo de Internet. A continuación, puede usar la consola BlueXP que se ejecuta en el conector para implementar Cloud Volumes ONTAP en la misma ubicación y detectar clústeres de ONTAP en las instalaciones (si tiene una conexión desde su entorno de cloud a un entorno local). También se puede usar Cloud Backup para realizar backups de Cloud Volumes ONTAP Volumes en las regiones comerciales de AWS y Azure. Ningún otro servicio BlueXP es compatible con este tipo de despliegue, excepto con la cartera digital.
+* El conector ahora es compatible con cualquier entorno de nube que tenga un aislamiento completo de Internet. A continuación, puede usar la consola BlueXP que se ejecuta en el conector para implementar Cloud Volumes ONTAP en la misma ubicación y detectar clústeres de ONTAP en las instalaciones (si tiene una conexión desde su entorno de cloud a un entorno local). También puedes utilizar el backup y la recuperación de datos de BlueXP para realizar backups de volúmenes de Cloud Volumes ONTAP en las regiones comerciales de AWS y Azure. No hay otros servicios de BlueXP compatibles con este tipo de puesta en marcha, a excepción de la cartera digital de BlueXP.
 +
 La región del cloud puede ser una región en la que haya agencias estadounidenses seguras como AWS C2S/SC2S, Azure IL6 o cualquier región comercial.
 
 +
-Para empezar, instale manualmente el software conector, inicie sesión en la consola BlueXP que se ejecuta en el conector, agregue su licencia BYOL a la cartera digital y, a continuación, implemente Cloud Volumes ONTAP.
+Para empezar, instale manualmente el software Connector, inicie sesión en la consola BlueXP que se ejecuta en el conector, añada la licencia BYOL a la cartera digital de BlueXP y, después, implemente Cloud Volumes ONTAP.
 
 +
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Instale el conector en una ubicación sin acceso a Internet"^]
@@ -214,7 +214,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 
 === Conector 3.9.23
 
-* Sus suscripciones a PAYGO y los contratos anuales para BlueXP ya están disponibles para su visualización y gestión desde Digital Wallet.
+* Ya puedes ver y gestionar tus suscripciones PAYGO y los contratos anuales de BlueXP desde la cartera digital.
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["Obtenga información sobre cómo administrar sus suscripciones"^]
 

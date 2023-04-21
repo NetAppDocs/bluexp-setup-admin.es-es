@@ -18,6 +18,6 @@ Después de instalar un conector en AWS, BlueXP puede descubrir automáticamente
 
 image:screenshot-amazon-s3-we.png["Captura de pantalla de un entorno de trabajo Amazon S3."]
 
-Puede ver detalles sobre sus bloques de S3, incluida la región, la política de acceso, la cuenta, la capacidad total y utilizada, etc. Estos bloques se pueden usar como destinos para las operaciones Cloud Backup, Cloud Tiering o Cloud Sync. Además, puede usar Cloud Data Sense para analizar estos bloques.
+Puede ver detalles sobre sus bloques de S3, incluida la región, la política de acceso, la cuenta, la capacidad total y utilizada, etc. Estos buckets se pueden usar como destinos para el backup y recuperación de datos de BlueXP, la organización en niveles de BlueXP o las operaciones de copia y sincronización de BlueXP. Además, puede usar la clasificación de BlueXP para analizar estos bloques.
 
 Una función recién añadida ahora permite crear y editar bloques S3. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Vaya aquí para ver cómo puede ver, crear y gestionar sus buckets de S3 con BlueXP"^]

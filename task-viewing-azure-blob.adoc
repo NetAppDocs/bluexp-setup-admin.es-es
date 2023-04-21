@@ -16,7 +16,7 @@ summary: Después de instalar un conector en Azure, BlueXP puede descubrir autom
 [role="lead"]
 Después de instalar un conector en Azure, BlueXP puede descubrir automáticamente información sobre las cuentas de almacenamiento de Azure que residen en las suscripciones de Azure donde está instalado el conector. Se añade un entorno de trabajo de Azure Blob al lienzo para que pueda ver esta información.
 
-Puede ver detalles acerca de sus cuentas de almacenamiento de Azure, incluidas la ubicación, el grupo de recursos, la capacidad total y utilizada, entre otros. Estas cuentas se pueden usar como destinos para las operaciones Cloud Backup, Cloud Tiering o Cloud Sync.
+Puede ver detalles acerca de sus cuentas de almacenamiento de Azure, incluidas la ubicación, el grupo de recursos, la capacidad total y utilizada, entre otros. Estas cuentas se pueden usar como destinos para el backup y recuperación de datos de BlueXP, la organización en niveles de BlueXP o las operaciones de copia y sincronización de BlueXP.
 
 .Pasos
 . Instale un conector en la cuenta de Azure donde desee ver las cuentas de almacenamiento de Azure.
@@ -33,7 +33,7 @@ image:screenshot-azure-actions.png["Una captura de pantalla que muestra el panel
 
 . Seleccione *Sincronizar datos* para sincronizar datos con o desde el almacenamiento de Azure Blob.
 +
-Para obtener información detallada, consulte https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["La descripción del servicio Cloud Sync"^]
+Para obtener información detallada, consulte https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["La información general sobre la copia y sincronización de BlueXP"^]
 
 . Seleccione *Entrar en entorno de trabajo* para ver detalles sobre las cuentas de almacenamiento de Azure en sus Blobs de Azure.
 +

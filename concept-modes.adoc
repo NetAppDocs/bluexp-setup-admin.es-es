@@ -154,10 +154,10 @@ Servicios compatibles con BlueXP:: BlueXP admite los siguientes servicios de alm
 | Azure NetApp Files | Soporte completo 
 
 
-| Backup en el cloud | Se admite en regiones gubernamentales y regiones comerciales con modo restringido. No se admite en regiones soberanas con modo restringido. Las siguientes funciones no son compatibles: Aplicaciones, máquinas virtuales y Kubernetes. 
+| Backup y recuperación | Se admite en regiones gubernamentales y regiones comerciales con modo restringido. No se admite en regiones soberanas con modo restringido. Las siguientes funciones no son compatibles: Aplicaciones, máquinas virtuales y Kubernetes. 
 
 
-| Cloud Data SENSE  a| 
+| Clasificación  a| 
 Compatible en regiones gubernamentales con modo restringido. No se admite en regiones comerciales o en regiones soberanas con modo restringido.
 
 Se aplican las siguientes limitaciones:
@@ -171,7 +171,7 @@ Se aplican las siguientes limitaciones:
 | Cloud Volumes ONTAP | Soporte completo 
 
 
-| Cartera digital | Puede utilizar la cartera digital con las opciones de licencia compatibles que se enumeran a continuación para el modo restringido. 
+| Cartera digital | Puede utilizar la cartera digital con las opciones de licencia admitidas que se indican a continuación para el modo restringido. 
 
 
 | Clústeres de ONTAP en las instalaciones | Se admiten tanto la detección con un conector como la detección sin un conector (detección directa). Cuando detecta un clúster en las instalaciones con un conector, la vista avanzada (System Manager) no es compatible. 
@@ -246,13 +246,13 @@ Servicios de BlueXP compatibles en las implementaciones de cloud:: BlueXP admite
 | Servicios compatibles | Notas 
 
 
-| Backup en el cloud | Compatible con regiones comerciales de AWS y Azure. No es compatible con Google Cloud ni en https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] o. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+| Backup y recuperación | Compatible con regiones comerciales de AWS y Azure. No es compatible con Google Cloud ni en https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] o. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | Como no hay acceso a Internet, las siguientes funciones no están disponibles: Actualizaciones de software automatizadas, AutoSupport e información de costes de AWS. 
 
 
-| Cartera digital | Puede utilizar la cartera digital con las opciones de licencia compatibles que se indican a continuación para el modo privado. 
+| Cartera digital | Puede utilizar la cartera digital con las opciones de licencia admitidas que se indican a continuación para el modo privado. 
 
 
 | Clústeres de ONTAP en las instalaciones | Requiere conectividad desde el cloud (donde está instalado el conector) al entorno local. No se admite la detección sin conector (detección directa). 
@@ -266,10 +266,10 @@ Servicios de BlueXP compatibles en implementaciones locales:: BlueXP admite los 
 | Servicios compatibles | Notas 
 
 
-| Backup en el cloud | Solo se admiten los backups y restauraciones de volúmenes ONTAP en las instalaciones en sistemas StorageGRID.https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Descubra cómo realizar backups de datos de ONTAP en las instalaciones en StorageGRID"^] 
+| Backup y recuperación | Solo se admiten los backups y restauraciones de volúmenes ONTAP en las instalaciones en sistemas StorageGRID.https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Descubra cómo realizar backups de datos de ONTAP en las instalaciones en StorageGRID"^] 
 
 
-| Cloud Data SENSE  a| 
+| Clasificación  a| 
 * Las únicas fuentes de datos admitidas son las que se pueden detectar localmente.
 +
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["Ver las fuentes que puede descubrir localmente"^]
@@ -282,7 +282,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 
 
 
-| Cartera digital | Puede utilizar la cartera digital con las opciones de licencia compatibles que se indican a continuación para el modo privado. 
+| Cartera digital | Puede utilizar la cartera digital con las opciones de licencia admitidas que se indican a continuación para el modo privado. 
 
 
 | Clústeres de ONTAP en las instalaciones | No se admite la detección sin conector (detección directa). 
@@ -294,9 +294,9 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 Opciones de licencias compatibles:: Solo BYOL es compatible con el modo privado.
 +
 --
-Para BYOL de Cloud Volumes ONTAP, solo las licencias basadas en nodos son compatibles. No se admite la gestión de licencias basadas en capacidad. Debido a que no hay una conexión a Internet saliente disponible, deberá cargar manualmente el archivo de licencia de Cloud Volumes ONTAP en la cartera digital.
+Para BYOL de Cloud Volumes ONTAP, solo las licencias basadas en nodos son compatibles. No se admite la gestión de licencias basadas en capacidad. Como no hay disponible una conexión a Internet de salida, deberá cargar manualmente el archivo de licencia de Cloud Volumes ONTAP en la cartera digital de BlueXP.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Aprenda a añadir licencias al cartera digital"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Descubre cómo añadir licencias a la cartera digital de BlueXP"^]
 
 --
 Cómo comenzar con el modo privado:: Para acceder al modo privado, descargue el instalador "sin conexión" del sitio de soporte de NetApp.
@@ -315,18 +315,15 @@ La tabla siguiente puede ayudarle a identificar rápidamente qué servicios y fu
 
 Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. Para obtener más información sobre cómo se admiten estos servicios con el modo restringido y el modo privado, consulte las secciones anteriores.
 
-[cols="33h,33,33"]
+[cols="19,27,27,27"]
 |===
-| Servicio o característica BlueXP | Modo restringido | Modo privado 
+| Área de producto | Servicio o característica BlueXP | Modo restringido | Modo privado 
 
 
-| Amazon FSX para ONTAP | Sí | No 
+.11+| *Entornos de trabajo* | Amazon FSX para ONTAP | Sí | No 
 
 
 | Amazon S3 | No | No 
-
-
-| AppTemplate | No | No 
 
 
 | Azure Blob | No | No 
@@ -335,40 +332,10 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | Azure NetApp Files | Sí | No 
 
 
-| Backup en el cloud | Sí | Sí 
-
-
-| Cloud Data SENSE | Sí | Sí 
-
-
-| Cloud Sync | No | No 
-
-
-| Organización en niveles del cloud | No | No 
-
-
 | Cloud Volumes ONTAP | Sí | Sí 
 
 
 | Cloud Volumes Service para Google Cloud | No | No 
-
-
-| Informática | No | No 
-
-
-| Asesor digital | No | No 
-
-
-| Cartera digital | Sí | Sí 
-
-
-| E-Series | No | No 
-
-
-| Eficiencia económica | No | No 
-
-
-| Caché de archivos global | No | No 
 
 
 | Google Cloud Storage | No | No 
@@ -380,19 +347,52 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | Clústeres de ONTAP en las instalaciones | Sí | Sí 
 
 
+| E-Series | No | No 
+
+
+| StorageGRID | No | No 
+
+
+.13+| *Servicios* | Backup y recuperación | Sí | Sí 
+
+
+| Clasificación | Sí | Sí 
+
+
+| Operaciones de cloud | No | No 
+
+
+| Copiar y sincronizar | No | No 
+
+
+| Asesor digital | No | No 
+
+
+| Cartera digital | Sí | Sí 
+
+
+| Eficiencia económica | No | No 
+
+
+| Almacenamiento en caché en el edge | No | No 
+
+
 | Resiliencia operativa | No | No 
 
 
 | Protección contra ransomware | No | No 
 
 
+| Reparación | No | No 
+
+
 | Replicación | Sí | Sí 
 
 
-| StorageGRID | No | No 
+| Organización en niveles | No | No 
 
 
-| Credenciales | Sí | Sí 
+.4+| * Características* | Credenciales | Sí | Sí 
 
 
 | Cuentas de NSS | Sí | No 

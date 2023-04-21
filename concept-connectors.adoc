@@ -26,21 +26,21 @@ Puede utilizar las siguientes funciones y servicios de BlueXP sin un conector:
 
 * Creación del entorno de trabajo de Amazon FSX para ONTAP de NetApp
 +
-Aunque no es necesario un conector para crear un entorno de trabajo, es necesario crear y gestionar volúmenes, replicar datos e integrar FSX para ONTAP con servicios BlueXP, como Data Sense y Cloud Sync.
+Aunque no es necesario que un conector cree un entorno de trabajo, es necesario crear y gestionar volúmenes, replicar datos e integrar FSx para ONTAP con servicios como la clasificación de BlueXP y la copia y sincronización de BlueXP.
 
 * Azure NetApp Files
 +
-Aunque no es necesario un conector para configurar y gestionar Azure NetApp Files, se requiere un conector si desea utilizar Cloud Data Sense para analizar datos de Azure NetApp Files.
+Aunque no es necesario un conector para configurar y gestionar Azure NetApp Files, se necesita un conector para usar la clasificación de BlueXP para analizar datos de Azure NetApp Files.
 
-* Cloud Sync
 * Cloud Volumes Service para Google Cloud
+* Copiar y sincronizar
 * Asesor digital
 * Cartera digital
 +
-En casi todos los casos, puede añadir una licencia al monedero digital sin conector.
+En casi todos los casos, puede agregar una licencia a la cartera digital sin un conector.
 
 +
-La única vez que se necesita un conector para agregar una licencia a la cartera digital es para licencias Cloud Volumes ONTAP _basadas en nodo_. En este caso, se requiere un conector porque los datos se toman de las licencias instaladas en los sistemas Cloud Volumes ONTAP.
+La única vez que se requiere un conector para agregar una licencia a la cartera digital es para licencias Cloud Volumes ONTAP _node-based_. En este caso, se requiere un conector porque los datos se toman de las licencias instaladas en los sistemas Cloud Volumes ONTAP.
 
 * Detección directa de clústeres de ONTAP en las instalaciones
 +
@@ -60,18 +60,18 @@ Al utilizar BlueXP en modo estándar, se necesita un conector para las siguiente
 * Funciones de gestión de Amazon FSX para ONTAP
 * Detección de Amazon S3
 * Descubrimiento de Azure Blob
-* Backup en el cloud
-* Cloud Data SENSE
-* Organización en niveles del cloud
+* Backup y recuperación
+* Clasificación
 * Cloud Volumes ONTAP
 * Sistemas E-Series
 * Eficiencia económica ^1^
-* Caché de archivos global
+* Almacenamiento en caché en el edge
 * Descubrimiento de Google Cloud Storage
 * Clústeres de Kubernetes
 * Integración de clústeres de ONTAP en las instalaciones con servicios de datos de BlueXP
 * Resistencia operativa ^1^
-* StorageGRID
+* Sistemas StorageGRID
+* Organización en niveles
 
 
 ^1^ Mientras puede acceder a estos servicios sin un conector, se requiere un conector para iniciar acciones desde los servicios.
@@ -195,7 +195,7 @@ En algunos casos, es posible que sólo necesite un conector, pero es posible que
 
 A continuación, se muestran algunos ejemplos:
 
-* Tiene un entorno multicloud (AWS y Azure) y prefiere tener un conector en AWS y otro en Azure. Cada una de ellas gestiona los sistemas Cloud Volumes ONTAP que se ejecutan en estos entornos.
+* Tiene un entorno multicloud (por ejemplo, AWS y Azure) y prefiere tener un conector en AWS y otro en Azure. Cada una de ellas gestiona los sistemas Cloud Volumes ONTAP que se ejecutan en estos entornos.
 * Un proveedor de servicios puede utilizar una cuenta de BlueXP para proporcionar servicios a sus clientes, mientras que usa otra cuenta para proporcionar recuperación ante desastres para una de sus unidades de negocio. Cada cuenta tendría conectores independientes.
 
 

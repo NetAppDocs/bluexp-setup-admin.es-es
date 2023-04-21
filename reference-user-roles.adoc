@@ -16,7 +16,7 @@ summary: Las funciones Administrador de cuentas, Administrador de área de traba
 [role="lead"]
 Las funciones Administrador de cuentas, Administrador de área de trabajo, Visor de cumplimiento y Administrador de SnapCenter proporcionan permisos específicos a los usuarios.
 
-El rol Compliance Viewer es para acceso de sólo lectura a Cloud Data Sense.
+El rol de Visor de cumplimiento de normativas es para acceso de clasificación de BlueXP de solo lectura.
 
 [cols="24,19,19,19,19"]
 |===
@@ -38,7 +38,7 @@ El rol Compliance Viewer es para acceso de sólo lectura a Cloud Data Sense.
 | Cambiar entre espacios de trabajo | Sí | Sí | Sí | No 
 
 
-| Ver resultados de análisis de detección de datos | Sí | Sí | Sí | No 
+| Consulta los resultados del análisis de clasificación de BlueXP | Sí | Sí | Sí | No 
 
 
 | Eliminar entornos de trabajo | Sí | No | No | No 
