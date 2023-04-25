@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: Descubre cómo BlueXP utiliza las credenciales y los permisos de Google Cloud para poder gestionar las credenciales de uno o más proyectos de Google Cloud. Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada a la VM de Connector. 
+summary: Descubre cómo BlueXP utiliza las credenciales y los permisos de Google Cloud para realizar acciones en tu nombre. Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud. Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada a la VM de Connector. 
 ---
 = Proyectos, permisos y cuentas de Google Cloud
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Descubre cómo BlueXP utiliza las credenciales y los permisos de Google
 
 
 [role="lead"]
-Descubre cómo BlueXP utiliza las credenciales y los permisos de Google Cloud para poder gestionar las credenciales de uno o más proyectos de Google Cloud. Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada a la VM de Connector.
+Descubre cómo BlueXP utiliza las credenciales y los permisos de Google Cloud para realizar acciones en tu nombre. Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud. Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada a la VM de Connector.
 
 
 
