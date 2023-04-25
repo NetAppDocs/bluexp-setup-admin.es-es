@@ -14,7 +14,7 @@ summary: Si desea utilizar servicios BlueXP en AWS o Azure con un conector en la
 
 
 [role="lead"]
-Si desea utilizar servicios BlueXP en AWS o Azure con un conector en las instalaciones, debe configurar los permisos en su proveedor de cloud para que pueda añadir las credenciales al conector después de instalarlo.
+Si quieres usar los servicios de BlueXP en AWS o Azure con un conector on-premises, necesitas configurar permisos en tu proveedor de nube para que puedas añadir las credenciales al conector después de instalarlo.
 
 
 TIP: ¿Por qué no Google Cloud? Cuando Connector está instalado en las instalaciones, no puede gestionar sus recursos en Google Cloud. El conector debe estar instalado en Google Cloud para administrar los recursos que residen en él.

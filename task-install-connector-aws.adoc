@@ -65,7 +65,10 @@ TIP: Si elige *asumir función*, puede crear el primer conjunto de credenciales 
 +
 Asegúrese de que tiene el par de llaves correcto para usar con el conector. Sin un par de teclas, no podrá acceder a la máquina virtual conector.
 
-** *Grupo de seguridad*: Elija si desea crear un nuevo grupo de seguridad o si desea seleccionar un grupo de seguridad existente que permita el acceso entrante HTTP, HTTPS y SSH.
+** *Grupo de seguridad*: Elija si desea crear un nuevo grupo de seguridad o si desea seleccionar un grupo de seguridad existente que permita las reglas entrantes y salientes requeridas.
++
+link:reference-ports-aws.html["Ver reglas de grupos de seguridad para AWS"].
+
 ** *Revisión*: Revise sus selecciones para verificar que su configuración es correcta.
 
 
@@ -84,11 +87,11 @@ Una vez completado el proceso, el conector está disponible para su uso en BlueX
 .Lo que necesitará
 * Un VPC y una subred que cumplan los requisitos de red.
 +
-link:task-set-up-networking-aws.html["Obtenga información sobre los requisitos de red"]
+link:task-set-up-networking-aws.html["Obtenga información sobre los requisitos de red"].
 
 * Función IAM con una directiva adjunta que incluye los permisos necesarios para el conector.
 +
-link:task-set-up-permissions-aws.html["Aprenda a configurar los permisos de AWS"]
+link:task-set-up-permissions-aws.html["Aprenda a configurar los permisos de AWS"].
 
 * Permisos para suscribirse y cancelar la suscripción a AWS Marketplace para su usuario de IAM.
 * Una pareja de claves para la instancia de EC2.
@@ -119,6 +122,12 @@ link:reference-host-requirements-aws.html["Revise los requisitos de la instancia
 *** Elija el VPC y la subred que desee.
 *** Especifique si la instancia debe tener una dirección IP pública.
 *** Especifique la configuración del firewall que habilite los métodos de conexión necesarios para la instancia del conector: SSH, HTTP y HTTPS.
++
+Se requieren algunas reglas más para configuraciones específicas.
+
++
+link:reference-ports-aws.html["Ver reglas de grupos de seguridad para AWS"].
+
 
 
 ** *Configurar almacenamiento*: Mantenga las opciones de almacenamiento predeterminadas.

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-azure.html 
 keywords: ports, security group, http, https, inbound, outbound 
-summary: El grupo de seguridad de Azure para Connector requiere reglas tanto entrantes como salientes. 
+summary: El grupo de seguridad de Azure para Connector requiere reglas tanto entrantes como salientes. BlueXP crea automáticamente este grupo de seguridad cuando creas un conector desde BlueXP. Debe configurar este grupo de seguridad para todas las demás opciones de instalación. 
 ---
 = Reglas de grupos de seguridad en Azure
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: El grupo de seguridad de Azure para Connector requiere reglas tanto ent
 
 
 [role="lead"]
-El grupo de seguridad de Azure para Connector requiere reglas tanto entrantes como salientes.
+El grupo de seguridad de Azure para Connector requiere reglas tanto entrantes como salientes. BlueXP crea automáticamente este grupo de seguridad cuando creas un conector desde BlueXP. Debe configurar este grupo de seguridad para todas las demás opciones de instalación.
 
 
 

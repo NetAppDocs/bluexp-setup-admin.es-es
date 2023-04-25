@@ -24,3 +24,6 @@ Si necesita ayuda, consulte la siguiente documentación:
 * https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["Analiza los datos de volúmenes de ONTAP on-premises con la clasificación de BlueXP"^]
 * https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Haz un backup de los datos de volúmenes de ONTAP en las instalaciones en StorageGRID mediante el backup y la recuperación de BlueXP"^]
 
+
+.Enlace relacionado
+link:concept-modes.html["Modos de implementación de BlueXP"]

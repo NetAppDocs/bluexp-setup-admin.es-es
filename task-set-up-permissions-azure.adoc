@@ -14,7 +14,7 @@ summary: Configure permisos de Azure para que pueda utilizar BlueXP para gestion
 
 
 [role="lead"]
-Configure permisos de Azure para que pueda utilizar BlueXP para gestionar sus datos e infraestructura de almacenamiento en Azure. La forma de configurar los permisos depende de la opción de instalación que vaya a utilizar.
+Configure los permisos en Azure para que pueda poner en marcha Connector con los permisos que necesita para gestionar su infraestructura de datos y almacenamiento. La forma de configurar los permisos depende de la opción de instalación que vaya a utilizar.
 
 Puede elegir entre las siguientes opciones de instalación:
 

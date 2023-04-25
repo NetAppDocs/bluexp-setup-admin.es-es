@@ -14,7 +14,7 @@ summary: Configure permisos de Google Cloud para que pueda utilizar BlueXP para 
 
 
 [role="lead"]
-Configure permisos de Google Cloud para que pueda utilizar BlueXP para gestionar su infraestructura de datos y almacenamiento en Google Cloud.
+Configure los permisos en Google Cloud para que pueda poner en marcha Connector con los permisos que necesita para gestionar su infraestructura de datos y almacenamiento.
 
 Debe configurar permisos de Google Cloud del siguiente modo:
 

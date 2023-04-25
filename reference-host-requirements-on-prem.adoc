@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-host-requirements-on-prem.html 
 keywords: cpu requirements, ram requirements, on prem requirements, on prem host requirements, connector host requirements 
-summary: El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc. 
+summary: El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc. Asegúrese de que el host cumple estos requisitos antes de instalar el conector. 
 ---
 = Consulte los requisitos del host de Connector para las instalaciones en el entorno local
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: El software del conector debe ejecutarse en un host que cumpla con requ
 
 
 [role="lead"]
-El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
+El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc. Asegúrese de que el host cumple estos requisitos antes de instalar el conector.
 
 Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
 Sistemas operativos compatibles::

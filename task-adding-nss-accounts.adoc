@@ -14,7 +14,7 @@ summary: 'Proporcione las credenciales para que sus cuentas del sitio de soporte
 
 
 [role="lead"]
-Proporcione las credenciales para que sus cuentas del sitio de soporte de NetApp (NSS) se registren para admitir, habilitar flujos de trabajo clave para Cloud Volumes ONTAP, etc. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP.
+Ofrece a BlueXP las credenciales para tus cuentas del sitio de soporte de NetApp (NSS) para que se registren para recibir soporte, habilite flujos de trabajo clave para Cloud Volumes ONTAP y mucho más. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP.
 
 
 NOTE: BlueXP también admite la asociación de una cuenta NSS por usuario de BlueXP. link:task-manage-user-credentials.html["Aprenda a gestionar las credenciales en el nivel de usuario"].

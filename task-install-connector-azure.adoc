@@ -76,7 +76,10 @@ link:task-set-up-permissions-azure.html["Aprenda cómo obtener estos valores par
 Tenga en cuenta que puede elegir las suscripciones asociadas a esta función. Cada suscripción que elija proporciona al conector permisos para implementar Cloud Volumes ONTAP en esas suscripciones.
 
 ** *Red*: Elija un vnet y una subred, si desea activar una dirección IP pública y, opcionalmente, especifique una configuración de proxy.
-** *Grupo de seguridad*: Elija si desea crear un nuevo grupo de seguridad o si desea seleccionar un grupo de seguridad existente que permita el acceso entrante HTTP, HTTPS y SSH.
+** *Grupo de seguridad*: Elija si desea crear un nuevo grupo de seguridad o si desea seleccionar un grupo de seguridad existente que permita las reglas entrantes y salientes requeridas.
++
+link:reference-ports-azure.html["Ver reglas de grupo de seguridad para Azure"].
+
 ** *Revisión*: Revise sus selecciones para verificar que su configuración es correcta.
 
 
@@ -108,9 +111,9 @@ Tenga en cuenta lo siguiente al configurar la máquina virtual:
 +
 link:reference-host-requirements-azure["Revise los requisitos de las máquinas virtuales"].
 
-** Para el grupo de seguridad de red, el conector requiere conexiones entrantes mediante SSH, HTTP y HTTPS.
+** Para el grupo de seguridad de red, el conector requiere conexiones entrantes mediante SSH, HTTP y HTTPS. Se requieren algunas reglas más para configuraciones específicas.
 +
-link:reference-ports-azure.html["Obtenga más información sobre las reglas de grupo de seguridad para el conector"].
+link:reference-ports-azure.html["Ver reglas de grupo de seguridad para Azure"].
 
 ** En *Gestión*, active *identidad administrada asignada por el sistema* para el conector VM seleccionando *On*.
 +

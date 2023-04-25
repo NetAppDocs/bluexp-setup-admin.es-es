@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-log-in-restricted-mode.html 
 keywords: logging in, log in, sign in, signing in, restricted mode, restricted mode log in, local log in, connector log in, log in connector 
-summary: Cuando utilice BlueXP en modo restringido, deberá iniciar sesión en la consola BlueXP desde la interfaz de usuario que se ejecuta localmente en el conector. 
+summary: Cuando utilizas BlueXP en modo restringido, tendrás que iniciar sesión en la consola de BlueXP desde la interfaz de usuario que se ejecuta localmente en Connector. 
 ---
 = Iniciar sesión en BlueXP (modo restringido)
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cuando utilice BlueXP en modo restringido, deberá iniciar sesión en l
 
 
 [role="lead"]
-Cuando utilice BlueXP en modo restringido, deberá iniciar sesión en la consola BlueXP desde la interfaz de usuario que se ejecuta localmente en el conector.
+Cuando utilizas BlueXP en modo restringido, tendrás que iniciar sesión en la consola de BlueXP desde la interfaz de usuario que se ejecuta localmente en Connector.
 
 .Opciones de inicio de sesión
 BlueXP permite iniciar sesión con una de las siguientes opciones cuando su cuenta está configurada en modo restringido:

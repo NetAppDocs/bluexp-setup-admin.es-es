@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-prepare-restricted-mode.html 
 keywords: restricted mode requirements, requirements, install options, restricted mode networking, dark site, restricted mode permissions, permissions for restricted mode, networking for restricted mode 
-summary: Debe comprender lo que necesita para empezar a usar BlueXP en modo restringido para que pueda preparar su entorno. 
+summary: Prepara tu entorno antes de poner en marcha BlueXP en modo restringido. Por ejemplo, debe revisar los requisitos del host, preparar redes, configurar permisos y mucho más. 
 ---
 = Preparación para la puesta en marcha en modo restringido
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Debe comprender lo que necesita para empezar a usar BlueXP en modo rest
 
 
 [role="lead"]
-Debe comprender lo que necesita para empezar a usar BlueXP en modo restringido para que pueda preparar su entorno.
+Prepara tu entorno antes de poner en marcha BlueXP en modo restringido. Por ejemplo, debe revisar los requisitos del host, preparar redes, configurar permisos y mucho más.
 
 
 

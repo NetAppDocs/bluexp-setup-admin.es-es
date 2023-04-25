@@ -17,3 +17,6 @@ summary: Ahora que ha iniciado sesión y configurado BlueXP en modo estándar, l
 Ahora que ha iniciado sesión y configurado BlueXP en modo estándar, los usuarios pueden crear y descubrir entornos de trabajo y utilizar servicios de datos BlueXP.
 
 Para obtener ayuda, vaya al https://docs.netapp.com/us-en/cloud-manager-family/["página principal de la documentación de BlueXP"^] Para ver los documentos de todos los servicios de BlueXP.
+
+.Enlace relacionado
+link:concept-modes.html["Modos de implementación de BlueXP"]

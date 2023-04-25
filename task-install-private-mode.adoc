@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-private-mode.html 
 keywords: install dark site, deploy dark site, install private mode, deploy private mode, install connector dark site, connector dark site, dark site, private mode, no internet 
-summary: Para configurar BlueXP en modo privado, debe instalar el conector, configurar BlueXP accediendo a la interfaz de usuario que se está ejecutando en el conector y, a continuación, proporcionar permisos en la nube. 
+summary: Pon en marcha el conector en modo privado para poder utilizar BlueXP sin conectividad saliente a la capa de BlueXP SaaS. Para comenzar, instala el Connector, configura BlueXP accediendo a la interfaz de usuario que se ejecuta en el Connector y, a continuación, proporciona los permisos de nube que hayas configurado previamente. 
 ---
 = Despliegue el conector en modo privado
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Para configurar BlueXP en modo privado, debe instalar el conector, conf
 
 
 [role="lead"]
-Para configurar BlueXP en modo privado, debe instalar el conector, configurar BlueXP accediendo a la interfaz de usuario que se está ejecutando en el conector y, a continuación, proporcionar permisos en la nube.
+Pon en marcha el conector en modo privado para poder utilizar BlueXP sin conectividad saliente a la capa de BlueXP SaaS. Para comenzar, instala el Connector, configura BlueXP accediendo a la interfaz de usuario que se ejecuta en el Connector y, a continuación, proporciona los permisos de nube que hayas configurado previamente.
 
 
 

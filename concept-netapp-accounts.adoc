@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
 keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
-summary: Una cuenta BlueXP proporciona multi-tenancy y le permite organizar usuarios y recursos en áreas de trabajo aisladas desde BlueXP. 
+summary: Una cuenta de BlueXP proporciona multi-tenancy a tu organización, lo que te permite organizar usuarios y recursos en espacios de trabajo aislados. Por ejemplo, un grupo de usuarios puede desplegar y administrar sistemas Cloud Volumes ONTAP en un espacio de trabajo que no es visible para otros usuarios. 
 ---
 = Obtenga más información sobre las cuentas de BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Una cuenta BlueXP proporciona multi-tenancy y le permite organizar usua
 
 
 [role="lead"]
-Una cuenta _BlueXP_ proporciona multi-tenancy y le permite organizar usuarios y recursos en áreas de trabajo aisladas desde BlueXP. Por ejemplo, varios usuarios pueden implementar y administrar sistemas Cloud Volumes ONTAP en entornos aislados denominados _espacios de trabajo_. Estos espacios de trabajo son invisibles para otros usuarios, a menos que se compartan.
+Una cuenta de _BlueXP_ ofrece multi-tenancy a tu organización, lo que te permite organizar usuarios y recursos en _workspaces_ aislados. Por ejemplo, un grupo de usuarios puede desplegar y administrar sistemas Cloud Volumes ONTAP en un espacio de trabajo que no es visible para otros usuarios.
 
 Cuando acceda por primera vez a BlueXP, se le pedirá que seleccione o cree una cuenta. Por ejemplo, verá la siguiente pantalla si aún no tiene una cuenta:
 

@@ -14,7 +14,7 @@ summary: Empiece a utilizar BlueXP en modo restringido en unos pocos pasos.
 
 
 [role="lead"]
-Empiece a utilizar BlueXP en modo restringido en unos pocos pasos.
+Empieza a usar BlueXP en modo restringido preparando tu entorno, poniendo en marcha Connector y suscribiéndote a BlueXP.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Prepárese para la puesta en marcha
 [role="quick-margin-list"]

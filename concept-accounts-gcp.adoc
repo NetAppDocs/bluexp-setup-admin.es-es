@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: Debe comprender cómo BlueXP utiliza las credenciales y los permisos de Google Cloud para poder gestionar las credenciales de uno o más proyectos de Google Cloud. 
+summary: Descubre cómo BlueXP utiliza las credenciales y los permisos de Google Cloud para poder gestionar las credenciales de uno o más proyectos de Google Cloud. Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada a la VM de Connector. 
 ---
 = Proyectos, permisos y cuentas de Google Cloud
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Debe comprender cómo BlueXP utiliza las credenciales y los permisos de
 
 
 [role="lead"]
-Debe comprender cómo BlueXP utiliza las credenciales y los permisos de Google Cloud para poder gestionar las credenciales de uno o más proyectos de Google Cloud.
+Descubre cómo BlueXP utiliza las credenciales y los permisos de Google Cloud para poder gestionar las credenciales de uno o más proyectos de Google Cloud. Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada a la VM de Connector.
 
 
 
@@ -25,7 +25,7 @@ Antes de poder usar BlueXP para administrar recursos en su proyecto de Google Cl
 Deben existir dos conjuntos de permisos antes de desplegar un conector directamente desde BlueXP:
 
 . Debe implementar un conector utilizando una cuenta de Google que tenga permisos para iniciar la instancia de Connector VM desde BlueXP.
-. Al desplegar el conector, se le pedirá que seleccione un https://cloud.google.com/iam/docs/service-accounts["cuenta de servicio"^] Para la instancia de máquina virtual. BlueXP obtiene permisos de la cuenta de servicio para crear y administrar sistemas Cloud Volumes ONTAP en su nombre. Los permisos se proporcionan asociando una función personalizada a la cuenta de servicio.
+. Al desplegar el conector, se le pedirá que seleccione un https://cloud.google.com/iam/docs/service-accounts["cuenta de servicio"^] Para la instancia de máquina virtual. BlueXP obtiene permisos de la cuenta de servicio para crear y gestionar sistemas Cloud Volumes ONTAP en tu nombre, y mucho más. Los permisos se proporcionan asociando una función personalizada a la cuenta de servicio.
 
 
 La siguiente imagen muestra los requisitos de permisos descritos en los números 1 y 2 anteriores:

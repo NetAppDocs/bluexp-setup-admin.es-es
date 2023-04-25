@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-log-in-private-mode.html 
 keywords: logging in, log in, sign in, signing in, private mode, private mode log in, local log in, connector log in, log in connector 
-summary: Cuando utilice BlueXP en modo privado, deberá iniciar sesión en la consola BlueXP desde la interfaz de usuario que se ejecuta localmente en el conector. 
+summary: Cuando utiliza BlueXP en modo privado, tendrá que iniciar sesión en la consola de BlueXP desde la interfaz de usuario que se ejecuta localmente en Connector. 
 ---
 = Iniciar sesión en BlueXP (modo privado)
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cuando utilice BlueXP en modo privado, deberá iniciar sesión en la co
 
 
 [role="lead"]
-Cuando utilice BlueXP en modo privado, deberá iniciar sesión en la consola BlueXP desde la interfaz de usuario que se ejecuta localmente en el conector.
+Cuando utiliza BlueXP en modo privado, tendrá que iniciar sesión en la consola de BlueXP desde la interfaz de usuario que se ejecuta localmente en Connector.
 
 .Opciones de inicio de sesión
 El modo privado admite la gestión de usuarios locales y el acceso. La autenticación no se proporciona a través del servicio en la nube de BlueXP.

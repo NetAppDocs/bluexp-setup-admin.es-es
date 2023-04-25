@@ -14,7 +14,7 @@ summary: Es posible que desee obtener más información sobre el conector antes 
 
 
 [role="lead"]
-Es posible que desee obtener más información sobre el conector antes de implementarlo o si necesita solucionar cualquier problema.
+Es posible que desee obtener más información sobre la configuración del conector antes de implementarlo o si necesita solucionar cualquier problema.
 
 
 

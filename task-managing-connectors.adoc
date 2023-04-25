@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-connectors.html 
 keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
-summary: Después de crear uno o más conectores, puede gestionarlos cambiando entre conectores, conectándose a la interfaz de usuario local que se ejecuta en un conector, entre otros. 
+summary: Después de crear un conector, es posible que deba gestionarlo de vez en cuando. Por ejemplo, puede que desee cambiar entre conectores si tiene más de uno. También es posible que debas actualizar manualmente el conector cuando usas BlueXP en modo privado. 
 ---
 = Administrar conectores existentes
 :hardbreaks:
@@ -14,7 +14,9 @@ summary: Después de crear uno o más conectores, puede gestionarlos cambiando e
 
 
 [role="lead"]
-Después de crear uno o más conectores, puede gestionarlos cambiando entre conectores, actualizando el software y mucho más.
+Después de crear un conector, es posible que deba gestionarlo de vez en cuando. Por ejemplo, puede que desee cambiar entre conectores si tiene más de uno. También es posible que debas actualizar manualmente el conector cuando usas BlueXP en modo privado.
+
+link:concept-connectors.html["Descubra cómo funcionan los conectores"].
 
 
 

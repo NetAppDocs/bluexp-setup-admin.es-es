@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-on-prem.html 
 keywords: networking, network, requirements, ports, on-prem, linux, http, https 
-summary: El conector utiliza los siguientes puertos de entrada cuando se instala manualmente en un host Linux local. 
+summary: El conector utiliza puertos de entrada cuando se instala manualmente en un host Linux local. Es posible que necesite consultar estos puertos para fines de planificación. 
 ---
 = Puertos para el conector en las instalaciones
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: El conector utiliza los siguientes puertos de entrada cuando se instala
 
 
 [role="lead"]
-El conector utiliza los siguientes puertos _inbound_ cuando se instalan manualmente en un host Linux local.
+El conector utiliza los puertos _inbound_ cuando se instala manualmente en un host Linux local. Es posible que necesite consultar estos puertos para fines de planificación.
 
 Estas reglas de entrada se aplican a todos los modelos de implementación de BlueXP.
 

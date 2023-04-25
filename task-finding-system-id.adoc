@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-finding-system-id.html 
 keywords: system id, id, BlueXP system id, connector system id 
-summary: Para ayudarle a comenzar, es posible que su representante de NetApp le solicite el ID de sistema para un conector. El ID se utiliza normalmente para licencias y solución de problemas. 
+summary: Para ayudarle a comenzar, su representante de NetApp puede pedirle el ID de sistema de su conector. El ID se utiliza normalmente para licencias y solución de problemas. 
 ---
 = Busque el ID del sistema de un conector
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Para ayudarle a comenzar, es posible que su representante de NetApp le 
 
 
 [role="lead"]
-Para ayudarle a comenzar, es posible que su representante de NetApp le solicite el ID de sistema para un conector. El ID se utiliza normalmente para licencias y solución de problemas.
+Para ayudarle a comenzar, su representante de NetApp puede pedirle el ID de sistema de su conector. El ID se utiliza normalmente para licencias y solución de problemas.
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Ayuda.

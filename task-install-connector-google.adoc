@@ -53,7 +53,10 @@ El formulario es propiedad de Google y está alojado en él. Sus credenciales no
 ** *Detalles*: Introduzca un nombre para la instancia de la máquina virtual, especifique etiquetas, seleccione un proyecto y, a continuación, seleccione la cuenta de servicio que tenga los permisos necesarios (consulte la sección anterior para obtener más información).
 ** *ubicación*: Especifique una región, zona, VPC y subred para la instancia.
 ** *Red*: Elija si desea activar una dirección IP pública y, opcionalmente, especifique una configuración de proxy.
-** *Directiva de firewall*: Elija si desea crear una nueva directiva de firewall o si desea seleccionar una directiva de firewall existente que permita el acceso entrante HTTP, HTTPS y SSH.
+** *Política de firewall*: Elija si desea crear una nueva política de firewall o si desea seleccionar una política de firewall existente que permita las reglas de entrada y salida requeridas.
++
+link:reference-ports-gcp.html["Reglas de firewall en Google Cloud"]
+
 ** *Revisión*: Revise sus selecciones para verificar que su configuración es correcta.
 
 
