@@ -30,6 +30,10 @@ Cree un conector directamente desde la consola basada en web de BlueXP, desde Az
 ** Certificado HTTPS
 
 
+* Una clave pública SSH, si desea utilizar ese método de autenticación para la máquina virtual Connector. La otra opción para el método de autenticación es usar una contraseña.
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Obtenga más información sobre cómo conectarse a una máquina virtual de Linux en Azure"^]
+
 * Si no quiere que BlueXP cree automáticamente una función de Azure para Connector, tendrá que crear la suya propia link:reference-permissions-azure.html["uso de la política en esta página"].
 +
 Estos permisos son para la propia instancia de Connector. Se trata de un conjunto de permisos diferente al que se configuró anteriormente para desplegar el conector.
@@ -70,7 +74,13 @@ link:task-set-up-permissions-azure.html["Aprenda cómo obtener estos valores par
 
 . Siga los pasos del asistente para crear el conector:
 +
-** *Autenticación de VM*: Elija una suscripción de Azure, una ubicación, un nuevo grupo de recursos o un grupo de recursos existente y, a continuación, elija un método de autenticación.
+** *Autenticación de VM*: Elija una suscripción de Azure, una ubicación, un nuevo grupo de recursos o un grupo de recursos existente y, a continuación, elija un método de autenticación para la máquina virtual Connector que está creando.
++
+El método de autenticación para la máquina virtual puede ser una contraseña o una clave pública SSH.
+
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Obtenga más información sobre cómo conectarse a una máquina virtual de Linux en Azure"^]
+
 ** *Detalles*: Escriba un nombre para la instancia, especifique etiquetas y elija si desea que BlueXP cree una nueva función que tenga los permisos necesarios o si desea seleccionar una función existente con la que se haya configurado link:reference-permissions-azure.html["los permisos necesarios"].
 +
 Tenga en cuenta que puede elegir las suscripciones asociadas a esta función. Cada suscripción que elija proporciona al conector permisos para implementar Cloud Volumes ONTAP en esas suscripciones.
