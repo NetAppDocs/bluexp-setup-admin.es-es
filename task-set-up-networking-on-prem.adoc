@@ -49,9 +49,9 @@ Es posible que el host intente actualizar paquetes de sistema operativo durante 
 
 
 
-=== Endpoints con los que se ha contactado para las operaciones del día a día
+=== Puntos finales contactados desde el conector
 
-El conector requiere acceso saliente a Internet para ponerse en contacto con los siguientes extremos con el fin de gestionar recursos y procesos dentro de su entorno de nube pública.
+El conector requiere acceso a Internet saliente para contactar con los siguientes puntos finales con el fin de administrar los recursos y procesos dentro de su entorno de nube pública para las operaciones diarias.
 
 [cols="2*"]
 |===

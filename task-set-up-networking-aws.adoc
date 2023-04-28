@@ -32,7 +32,15 @@ Un conector requiere una conexión de red a la ubicación en la que tiene previs
 
 == Acceso a Internet de salida
 
-La ubicación de red en la que implemente el conector debe tener una conexión a Internet saliente.
+La ubicación de red en la que implemente el conector debe tener una conexión a Internet saliente. También es necesario acceder a Internet saliente desde su navegador web cuando ponga en marcha Connector desde la consola de BlueXP.
+
+
+
+=== Extremos en los que se han contactado desde la consola de BlueXP
+
+A medida que utiliza la consola basada en Web BlueXP que se proporciona a través de la capa SaaS, se pone en contacto con varios extremos para completar las tareas de gestión de datos. Esto incluye los extremos que se ponen en contacto para poner en marcha el conector desde la consola de BlueXP.
+
+link:reference-networking-saas-console.html["Consulte la lista de extremos con los que se ha contactado desde la consola de BlueXP"].
 
 
 
@@ -53,9 +61,9 @@ Es posible que el host intente actualizar paquetes de sistema operativo durante 
 
 
 
-=== Endpoints con los que se ha contactado para las operaciones del día a día
+=== Puntos finales contactados desde el conector
 
-El conector requiere acceso saliente a Internet para ponerse en contacto con los siguientes extremos con el fin de gestionar recursos y procesos dentro de su entorno de nube pública.
+El conector requiere acceso a Internet saliente para contactar con los siguientes puntos finales con el fin de administrar los recursos y procesos dentro de su entorno de nube pública para las operaciones diarias.
 
 [cols="2*"]
 |===
@@ -96,9 +104,6 @@ NOTE: El conector se está comunicando actualmente con "cloudmanager.cloud.netap
 
 | \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | Para actualizar el conector y sus componentes de Docker. 
 |===
-.Enlace relacionado
-link:reference-networking-saas-console.html["Prepare la red para que los usuarios puedan acceder a la consola BlueXP"]
-
 
 
 == Servidor proxy
