@@ -47,7 +47,7 @@ Con cualquiera de las dos opciones, el primer paso es crear una política de IAM
 Si es necesario, puede restringir la política de IAM mediante el IAM `Condition` elemento. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentación de AWS: Elemento de condición"^]
 
 
-TIP: Cuando BlueXP crea el conector, aplica un nuevo conjunto de permisos a la instancia de Connector que habilita los recursos de Connector a AWS.
+TIP: Cuando BlueXP crea el conector, aplica un nuevo conjunto de permisos a la instancia de Connector que permite al conector gestionar recursos de AWS.
 
 .Pasos
 . Vaya a la consola IAM de AWS.

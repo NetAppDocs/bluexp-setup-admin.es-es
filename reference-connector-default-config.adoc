@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-connector-default-config.html 
-keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log 
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log, ubuntu 
 summary: Es posible que desee obtener más información sobre el conector antes de implementarlo o si necesita solucionar cualquier problema. 
 ---
 = Configuración predeterminada del conector
@@ -29,7 +29,7 @@ Los siguientes detalles de configuración se aplican si ha implementado el conec
 Si implementó el conector desde BlueXP o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
 
 * El tipo de instancia de EC2 es t3.xlarge.
-* El sistema operativo de la imagen es Red Hat Enterprise Linux 7.6 (HVM).
+* El sistema operativo de la imagen es Ubuntu 22,04.
 +
 El sistema operativo no incluye una GUI. Debe utilizar un terminal para acceder al sistema.
 
@@ -44,7 +44,7 @@ El sistema operativo no incluye una GUI. Debe utilizar un terminal para acceder 
 Si implementó el conector desde BlueXP o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
 
 * El tipo de máquina virtual es DS3 v2.
-* El sistema operativo de la imagen es CentOS 7.6.
+* El sistema operativo de la imagen es Ubuntu 22,04.
 +
 El sistema operativo no incluye una GUI. Debe utilizar un terminal para acceder al sistema.
 
@@ -55,10 +55,10 @@ El sistema operativo no incluye una GUI. Debe utilizar un terminal para acceder 
 
 === Detalles de Google Cloud
 
-Si implementó el conector desde BlueXP o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
+Si implementó el Connector de BlueXP, tenga en cuenta lo siguiente:
 
 * La instancia del equipo virtual es n2-standard-4.
-* El sistema operativo de la imagen es Red Hat Enterprise Linux 8.6.
+* El sistema operativo de la imagen es Ubuntu 22,04.
 +
 El sistema operativo no incluye una GUI. Debe utilizar un terminal para acceder al sistema.
 

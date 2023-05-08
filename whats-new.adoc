@@ -18,6 +18,36 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
+== 7 de mayo de 2023
+
+
+
+=== Conector 3.9.29
+
+* Ubuntu 22,04 es el nuevo sistema operativo para Connector cuando se pone en marcha un Connector desde BlueXP o desde el mercado de tu proveedor de nube.
++
+También tiene la opción de instalar manualmente el conector en su propio host Linux que ejecuta Ubuntu 22,04.
+
+* Red Hat Enterprise Linux 8,6 y 8,7 ya no son compatibles con las nuevas implementaciones de Connector.
++
+Estas versiones no son compatibles con nuevas implementaciones porque Red Hat ya no es compatible con Docker, que es necesario para Connector. Si tiene un conector existente ejecutándose en RHEL 8,6 o 8,7, NetApp seguirá admitiendo su configuración.
+
++
+Red Hat 7,6, 7,7, 7,8 y 7,9 siguen siendo compatibles con conectores nuevos y existentes.
+
+* El conector ahora es compatible en la región de Qatar en Google Cloud.
+* El conector también es compatible con la región central de Suecia en Microsoft Azure.
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Consulte la lista completa de las regiones admitidas"^]
+
+* Esta versión del conector incluye mejoras de Cloud Volumes ONTAP.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["Obtenga información acerca de las mejoras de Cloud Volumes ONTAP"^]
+
+
+
+
+
 == 4 de abril de 2023
 
 
@@ -55,16 +85,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 +
 https://cloud.netapp.com/cloud-volumes-global-regions["Consulte la lista completa de las regiones admitidas"^]
 
-* Ahora puede detectar VMware vCenter Server en BlueXP.
-+
-Después de detectar una instancia de VMware vCenter Server que se ejecuta en AWS o en las instalaciones, puede abrir el entorno de trabajo para ver detalles sobre los almacenes de datos y las máquinas virtuales que están asociadas con el servidor.
-
-+
-El único requisito es un conector que tiene una conexión a VMware vCenter Server que ejecuta la versión 7.0 o posterior.
-
-+
-Para empezar, seleccione *Agregar entorno de trabajo*, seleccione *Amazon Web Services* o *On-local* y, a continuación, seleccione *VMware vCenter Server*. Introduzca el nombre de dominio o la dirección IP del servidor y, a continuación, introduzca el nombre de usuario y la contraseña del usuario administrador.
-
 * Ahora puede gestionar las credenciales de usuario asociadas con su inicio de sesión de BlueXP: Credenciales de ONTAP y credenciales del sitio de soporte de NetApp (NSS).
 +
 Al ir a *Configuración > credenciales*, puede ver las credenciales, actualizar las credenciales y eliminarlas. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.
@@ -99,10 +119,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 * Puede ver y gestionar los casos de soporte activos y resueltos directamente desde BlueXP. Es posible gestionar los casos asociados con su cuenta de NSS y con su empresa.
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["Aprenda a gestionar sus casos de soporte"].
-
-* El conector ahora es compatible con un host que ejecuta Red Hat Enterprise Linux 8.7.
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Ver los requisitos del sistema para el conector"].
 
 * El conector ahora es compatible con cualquier entorno de nube que tenga un aislamiento completo de Internet. A continuación, puede usar la consola BlueXP que se ejecuta en el conector para implementar Cloud Volumes ONTAP en la misma ubicación y detectar clústeres de ONTAP en las instalaciones (si tiene una conexión desde su entorno de cloud a un entorno local). También puedes utilizar el backup y la recuperación de datos de BlueXP para realizar backups de volúmenes de Cloud Volumes ONTAP en las regiones comerciales de AWS y Azure. No hay otros servicios de BlueXP compatibles con este tipo de puesta en marcha, a excepción de la cartera digital de BlueXP.
 +
@@ -554,18 +570,6 @@ Hemos rediseñado la página de credenciales para facilitar su uso y lograr que 
 === Se ha agregado un nuevo servicio de notificación
 
 El servicio de notificación se ha introducido de modo que puede ver el estado de las operaciones de Cloud Manager que ha iniciado durante su sesión actual. Puede verificar si la operación se ha realizado correctamente o si ha fallado. link:task-monitor-cm-operations.html["Consulte cómo se supervisan las operaciones de la cuenta"].
-
-
-
-== 1 de agosto de 2021
-
-
-
-=== Compatibilidad con RHEL 7.9 con el conector
-
-El conector ahora es compatible con un host que ejecuta Red Hat Enterprise Linux 7.9.
-
-link:task-installing-linux.html["Ver los requisitos del sistema para el conector"].
 
 
 

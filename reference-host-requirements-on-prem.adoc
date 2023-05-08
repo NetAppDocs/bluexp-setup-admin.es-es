@@ -20,8 +20,9 @@ Host dedicado:: El conector no es compatible con un host compartido con otras ap
 Sistemas operativos compatibles::
 +
 --
+* Sistema operativo Ubuntu 22,04
 * CentOS 7.6, 7.7, 7.8 y 7.9
-* Red Hat Enterprise Linux 7.6, 7.7, 7.8, 7.9, 8.6 y 8.7
+* Red Hat Enterprise Linux 7,6, 7,7, 7,8 y 7,9
 +
 El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
 
@@ -31,7 +32,12 @@ El conector es compatible con las versiones en inglés de estos sistemas operati
 
 
 --
-Hipervisor:: Se requiere un hipervisor de configuración básica o alojado certificado para ejecutar CentOS o Red Hat Enterprise Linux. https://access.redhat.com/certified-hypervisors["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
+Hipervisor:: Se requiere un hipervisor con configuración básica o alojado certificado para ejecutar Ubuntu, CentOS o Red Hat Enterprise Linux.
++
+--
+https://access.redhat.com/certified-hypervisors["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
+
+--
 CPU:: 4 núcleos o 4 vCPU
 RAM:: 14 GB
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles

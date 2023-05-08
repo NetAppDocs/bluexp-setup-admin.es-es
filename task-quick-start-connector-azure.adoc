@@ -39,16 +39,16 @@ link:task-set-up-networking-azure.html["Obtenga más información sobre los requ
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Revisar los requisitos del host
 [role="quick-margin-para"]
-El software del conector debe ejecutarse en un host que cumpla con requisitos específicos. Si piensa instalar manualmente el software Connector en su propio host Linux, debe asegurarse de que su host cumpla con estos requisitos. Si está creando el conector desde BlueXP o desde Azure Marketplace, estos requisitos se cuidarán porque el software se pone en marcha desde una imagen.
+Si desea instalar manualmente el software Connector en su propio host Linux, debe asegurarse de que el host cumpla con requisitos específicos. Si está creando el conector desde BlueXP o desde Azure Marketplace, estos requisitos se cuidarán porque el software se pone en marcha desde una imagen.
 
 [role="quick-margin-para"]
 Estos son los requisitos clave:
 
 [role="quick-margin-list"]
-* Un host dedicado que ejecuta CentOS o Red Hat Enterprise Linux
+* Un host dedicado que ejecuta Ubuntu 22,04, CentOS 7,6 a 7,9, o RHEL 7,6 a 7,9
 * 4 CPU
 * 14 GB de RAM
-* Motor Docker
+* Docker Engine 19.3.1 o posterior
 
 
 [role="quick-margin-para"]

@@ -35,10 +35,10 @@ link:task-set-up-networking-on-prem.html["Obtenga más información sobre los re
 El software del conector debe ejecutarse en un host que cumpla con requisitos específicos. Estos son los requisitos clave:
 
 [role="quick-margin-list"]
-* Un host dedicado que ejecuta CentOS o Red Hat Enterprise Linux
+* Un host dedicado que ejecuta Ubuntu 22,04, CentOS 7,6 a 7,9, o RHEL 7,6 a 7,9
 * 4 CPU
 * 14 GB de RAM
-* Motor Docker
+* Docker Engine 19.3.1 o posterior
 
 
 [role="quick-margin-para"]
