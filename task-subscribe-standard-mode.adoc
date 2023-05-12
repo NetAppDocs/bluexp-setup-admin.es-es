@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-subscribe-standard-mode.html 
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
-summary: Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora o a través de un contrato anual. Si adquirió una licencia de NetApp, deberá suscribirse a la oferta de mercado. Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede la capacidad de su licencia o si el plazo de la licencia expira. 
+summary: 30f0924c2b9792580922ba2bb932268a 
 ---
 = Suscribirse a BlueXP (modo estándar)
 :hardbreaks:
@@ -14,18 +14,7 @@ summary: Suscríbase a BlueXP en el mercado de su proveedor de la nube para paga
 
 
 [role="lead"]
-Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora (PAYGO) o a través de un contrato anual. Si adquirió una licencia de NetApp (BYOL), también deberá suscribirse a la oferta de mercado. Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede la capacidad de su licencia o si el plazo de la licencia expira.
-
-Una suscripción al mercado permite cargar los siguientes servicios de BlueXP:
-
-* Backup y recuperación
-* Clasificación
-* Cloud Volumes ONTAP
-* Organización en niveles
-
-
-.Antes de empezar
-La suscripción a BlueXP implica asociar una suscripción al mercado con las credenciales de la nube asociadas con un conector. Si ha seguido el flujo de trabajo para empezar con el modo estándar, ya debe tener un conector. Para obtener más información, consulte la link:task-quick-start-standard-mode.html["Inicio rápido para BlueXP en modo estándar"].
+28737e110ddfecf7a0ee4cf74dc11735
 
 [role="tabbed-block"]
 ====
@@ -34,9 +23,6 @@ La suscripción a BlueXP implica asociar una suscripción al mercado con las cre
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
 . Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
-+
-Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una suscripción al mercado con credenciales asociadas a BlueXP.
-
 +
 image:screenshot_associate_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
 
@@ -77,9 +63,6 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
 . Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
-+
-Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una suscripción al mercado con credenciales asociadas a BlueXP.
-
 +
 image:screenshot_azure_add_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
 
@@ -183,10 +166,3 @@ image:screenshot_gcp_associate.gif["Captura de pantalla de la página de asignac
 
 --
 ====
-.Enlaces relacionados
-* https://["Gestione las licencias basadas en la capacidad de su propia licencia para Cloud Volumes ONTAP"^]
-* https://["Gestiona las licencias BYOL para los servicios de datos de BlueXP"^]
-* https://["Gestione las credenciales y suscripciones de AWS para BlueXP"]
-* https://["Gestione credenciales y suscripciones de Azure para BlueXP"]
-* https://["Administrar las credenciales y suscripciones de Google Cloud para BlueXP"]
-
