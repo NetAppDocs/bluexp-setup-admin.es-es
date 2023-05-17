@@ -98,7 +98,7 @@ link:task-set-up-permissions-aws.html["Aprenda a configurar los permisos de AWS"
 
 
 .Pasos
-. Vaya a la https://aws.amazon.com/marketplace/pp/B018REK8QG["Página de BlueXP en AWS Marketplace"^]
+. Vaya a la https://["Página de BlueXP en AWS Marketplace"^]
 . En la página Marketplace, haga clic en *continuar a Suscribirse* y luego haga clic en *continuar a Configuración*.
 +
 image:screenshot-subscribe-aws.png["Una captura de pantalla que muestra los botones continuar Suscribirse y continuar con Configuración en AWS Marketplace."]
@@ -143,7 +143,7 @@ AWS inicia el software con la configuración especificada. La instancia y el sof
 
 . Abra un explorador Web desde un host que tenga una conexión con la máquina virtual Connector e introduzca la siguiente URL:
 +
-https://_ipaddress_[]
+https://[]
 
 . Después de iniciar sesión, configure el conector:
 +
@@ -161,7 +161,7 @@ Debe mantener desactivado el modo restringido porque estos pasos describen cómo
 .Resultado
 El conector ya está instalado y configurado con su cuenta BlueXP.
 
-Abra un explorador web y vaya al https://console.bluexp.netapp.com["Consola BlueXP"^] Para empezar a utilizar el conector con BlueXP.
+Abra un explorador web y vaya al https://["Consola BlueXP"^] Para empezar a utilizar el conector con BlueXP.
 
 --
 .Instalación manual
@@ -200,7 +200,7 @@ unset https_proxy
 +
 Si no elimina estas variables del sistema, la instalación fallará.
 
-. Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
+. Descargue el software del conector de https://["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
 +
 Debe descargar el instalador "en línea" del conector que se utiliza en su red o en la nube. Hay disponible un instalador "sin conexión" independiente para el conector, pero sólo es compatible con implementaciones en modo privado.
 
@@ -249,7 +249,7 @@ Al final de la instalación, el servicio Connector (occm) se reinicia dos veces 
 
 . Abra un explorador Web desde un host que tenga una conexión con la máquina virtual Connector e introduzca la siguiente URL:
 +
-https://_ipaddress_[]
+https://[]
 
 . Después de iniciar sesión, configure el conector:
 +

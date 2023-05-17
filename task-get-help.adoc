@@ -18,11 +18,11 @@ NetApp ofrece soporte para BlueXP y sus servicios cloud de diversas maneras. Hay
 
 Estas opciones están disponibles de forma gratuita, las 24 horas del día, los 7 días de la semana:
 
-* https://kb.netapp.com/Cloud/BlueXP["Base de conocimientos"^]
+* https://["Base de conocimientos"^]
 +
 Busque en la base de conocimientos de BlueXP para encontrar artículos útiles para resolver problemas.
 
-* http://community.netapp.com/["Comunidades"^]
+* http://["Comunidades"^]
 +
 Únase a la comunidad de BlueXP para seguir los debates en curso o crear otros nuevos.
 
@@ -92,7 +92,7 @@ Es posible que se encuentre el siguiente mensaje de error al intentar crear un c
 Este error podría significar que la cuenta NSS y la compañía de registro con la que está asociada no es la misma compañía de registro para el número de serie de la cuenta de BlueXP (es decir, 960xxxx) o el número de serie del entorno de trabajo. Puede consultar su lista de cuentas NSS en la parte superior del formulario *Crear un caso* para encontrar la coincidencia correcta, o puede buscar ayuda mediante una de las siguientes opciones:
 
 * Usar el chat en el producto
-* Envíe un caso no técnico en https://mysupport.netapp.com/site/help[]
+* Envíe un caso no técnico en https://[]
 
 
 

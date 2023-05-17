@@ -91,10 +91,10 @@ Con esta opción se le solicita que vuelva a iniciar sesión. Tenga en cuenta qu
 .El futuro
 Los usuarios ahora pueden seleccionar la cuenta al crear nuevos sistemas de Cloud Volumes ONTAP, al registrar los sistemas de Cloud Volumes ONTAP existentes y al registrarse para obtener soporte.
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["Inicio de Cloud Volumes ONTAP en AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Inicio de Cloud Volumes ONTAP en Azure"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Lanzamiento de Cloud Volumes ONTAP en Google Cloud"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["Registro de sistemas de pago por uso"^]
+* https://["Inicio de Cloud Volumes ONTAP en AWS"^]
+* https://["Inicio de Cloud Volumes ONTAP en Azure"^]
+* https://["Lanzamiento de Cloud Volumes ONTAP en Google Cloud"^]
+* https://["Registro de sistemas de pago por uso"^]
 
 
 
@@ -104,7 +104,7 @@ Los usuarios ahora pueden seleccionar la cuenta al crear nuevos sistemas de Clou
 A partir de noviembre de 2021, NetApp ahora utiliza Microsoft Azure Active Directory como proveedor de identidades para servicios de autenticación específicos para soporte y licencias. Como resultado de esta actualización, BlueXP le solicitará que actualice las credenciales de cualquier cuenta existente que haya agregado previamente.
 
 .Pasos
-. Si aún no lo ha hecho, https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Cree una cuenta B2C de Microsoft Azure Active Directory que estará vinculada a su cuenta de BlueXP actual"^].
+. Si aún no lo ha hecho, https://["Cree una cuenta B2C de Microsoft Azure Active Directory que estará vinculada a su cuenta de BlueXP actual"^].
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Ayuda y seleccione *Soporte*.
 . Seleccione *NSS Management*.
 . Para la cuenta NSS que desea actualizar, seleccione *Actualizar cuenta*.

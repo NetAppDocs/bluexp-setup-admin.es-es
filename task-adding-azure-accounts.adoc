@@ -32,7 +32,7 @@ Hay dos formas de añadir credenciales y suscripciones de Azure adicionales en B
 
 == Asocie suscripciones adicionales de Azure a una identidad gestionada
 
-BlueXP le permite elegir las credenciales de Azure y la suscripción a Azure en la que desee poner en marcha Cloud Volumes ONTAP. No puede seleccionar una suscripción de Azure diferente para la gestionada perfil de identidad a menos que asocie el https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada"^] con estas suscripciones.
+BlueXP le permite elegir las credenciales de Azure y la suscripción a Azure en la que desee poner en marcha Cloud Volumes ONTAP. No puede seleccionar una suscripción de Azure diferente para la gestionada perfil de identidad a menos que asocie el https://["identidad administrada"^] con estas suscripciones.
 
 .Acerca de esta tarea
 Una identidad administrada es link:concept-accounts-azure.html["La cuenta inicial de Azure"] Al desplegar un conector desde BlueXP. Cuando implementó el conector, BlueXP creó la función de operador BlueXP y la asignó a la máquina virtual Connector.
@@ -102,7 +102,7 @@ image:diagram_azure_authentication.png["Imagen conceptual que muestra a BlueXP c
 Cree una aplicación de Azure Active Directory (AD) y una entidad de servicio que BlueXP pueda usar para el control de acceso basado en roles.
 
 .Antes de empezar
-Debe tener los permisos adecuados en Azure para crear una aplicación de Active Directory y asignar la aplicación a un rol. Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentación de Microsoft Azure: Permisos necesarios"^].
+Debe tener los permisos adecuados en Azure para crear una aplicación de Active Directory y asignar la aplicación a un rol. Para obtener más información, consulte https://["Documentación de Microsoft Azure: Permisos necesarios"^].
 
 .Pasos
 . Desde el portal de Azure, abra el servicio *Azure Active Directory*.
@@ -154,7 +154,7 @@ Debe añadir el ID para cada suscripción de Azure desde la cual los usuarios cr
 En los pasos siguientes se describe cómo crear la función mediante Bash en Azure Cloud Shell.
 
 +
-*** Comenzar https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
+*** Comenzar https://["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
 *** Cargue el archivo JSON.
 +
 image:screenshot_azure_shell_upload.png["Una captura de pantalla de Azure Cloud Shell donde puede elegir la opción para cargar un archivo."]
@@ -298,7 +298,7 @@ Para pagar por Cloud Volumes ONTAP a una tarifa por hora (PAYGO), estas credenci
 
 
 .Resultado
-Ahora puede cambiar a un conjunto diferente de credenciales La página Details y Credentials https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["al crear un nuevo entorno de trabajo"^]
+Ahora puede cambiar a un conjunto diferente de credenciales La página Details y Credentials https://["al crear un nuevo entorno de trabajo"^]
 
 image:screenshot_accounts_switch_azure.gif["Captura de pantalla que muestra la selección entre credenciales después de seleccionar Editar credenciales en la página Detalles  credenciales."]
 

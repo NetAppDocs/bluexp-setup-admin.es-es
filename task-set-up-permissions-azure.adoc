@@ -142,7 +142,7 @@ NOTE: Esta política solo contiene los permisos necesarios para iniciar Connecto
 En los pasos siguientes se describe cómo crear la función mediante Bash en Azure Cloud Shell.
 
 +
-.. Comenzar https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
+.. Comenzar https://["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
 .. Cargue el archivo JSON.
 +
 image:screenshot_azure_shell_upload.png["Una captura de pantalla de Azure Cloud Shell donde puede elegir la opción para cargar un archivo."]
@@ -203,7 +203,7 @@ Crear y configurar un servicio principal en Azure Active Directory y obtener las
 .Cree una aplicación de Azure Active Directory para el control de acceso basado en roles
 . Asegúrese de tener permisos en Azure para crear una aplicación de Active Directory y para asignar la aplicación a un rol.
 +
-Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentación de Microsoft Azure: Permisos necesarios"^].
+Para obtener más información, consulte https://["Documentación de Microsoft Azure: Permisos necesarios"^].
 
 . Desde el portal de Azure, abra el servicio *Azure Active Directory*.
 +
@@ -317,7 +317,7 @@ Si pone en marcha el conector desde Azure Marketplace o si instala manualmente e
 .Pasos
 . Si tiene pensado instalar manualmente el software en su propio host, habilite una identidad gestionada asignada por el sistema en la máquina virtual para poder ofrecer los permisos de Azure necesarios a través de un rol personalizado.
 +
-https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Documentación de Microsoft Azure: Configure las identidades gestionadas para los recursos de Azure en una máquina virtual mediante el portal de Azure"^]
+https://["Documentación de Microsoft Azure: Configure las identidades gestionadas para los recursos de Azure en una máquina virtual mediante el portal de Azure"^]
 
 . Copie el contenido de link:reference-permissions-azure.html["Permisos de función personalizada para el conector"] Y guárdelos en un archivo JSON.
 . Modifique el archivo JSON agregando ID de suscripción de Azure al ámbito asignable.
@@ -340,7 +340,7 @@ Debe añadir el ID para cada suscripción de Azure desde la cual los usuarios cr
 En los pasos siguientes se describe cómo crear la función mediante Bash en Azure Cloud Shell.
 
 +
-.. Comenzar https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
+.. Comenzar https://["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
 .. Cargue el archivo JSON.
 +
 image:screenshot_azure_shell_upload.png["Una captura de pantalla de Azure Cloud Shell donde puede elegir la opción para cargar un archivo."]
@@ -368,7 +368,7 @@ Crear y configurar un servicio principal en Azure Active Directory y obtener las
 .Cree una aplicación de Azure Active Directory para el control de acceso basado en roles
 . Asegúrese de tener permisos en Azure para crear una aplicación de Active Directory y para asignar la aplicación a un rol.
 +
-Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentación de Microsoft Azure: Permisos necesarios"^].
+Para obtener más información, consulte https://["Documentación de Microsoft Azure: Permisos necesarios"^].
 
 . Desde el portal de Azure, abra el servicio *Azure Active Directory*.
 +

@@ -138,7 +138,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 Si ya es cliente de NetApp con licencias y números de serie existentes pero _no_ cuenta de NSS, solo tiene que crear una cuenta de NSS.
 
 .Pasos
-. Complete el para crear una cuenta en la página de soporte de NetApp https://mysupport.netapp.com/site/user/registration["Formulario de registro de usuarios del sitio de soporte de NetApp"^]
+. Complete el para crear una cuenta en la página de soporte de NetApp https://["Formulario de registro de usuarios del sitio de soporte de NetApp"^]
 +
 .. Asegúrese de seleccionar el nivel de usuario adecuado, que normalmente es *Cliente/Usuario final de NetApp*.
 .. Asegúrese de copiar el número de serie de la cuenta BlueXP (960xxxx) utilizado anteriormente para el campo de número de serie. Esto agilizará el procesamiento de la cuenta.
@@ -161,7 +161,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["Una captura de pantalla del menú Ayuda en el que Soporte es la primera opción de la lista"]
 
-. Vaya a. https://register.netapp.com["Sitio de registro de soporte de NetApp"^] Y seleccione *no soy un cliente registrado de NetApp*.
+. Vaya a. https://["Sitio de registro de soporte de NetApp"^] Y seleccione *no soy un cliente registrado de NetApp*.
 . Rellene los campos obligatorios (aquellos con asteriscos rojos).
 . En el campo *línea de productos*, seleccione *Cloud Manager* y, a continuación, seleccione el proveedor de facturación correspondiente.
 . Copie el número de serie de su cuenta desde el paso 2 anterior, complete la comprobación de seguridad y confirme que ha leído la Política de privacidad de datos global de NetApp.
@@ -172,7 +172,7 @@ Se envía inmediatamente un correo electrónico al buzón de correo para finaliz
 +
 Confirmar envía su solicitud a NetApp y recomienda que cree una cuenta en la página de soporte de NetApp.
 
-. Complete el para crear una cuenta en la página de soporte de NetApp https://mysupport.netapp.com/site/user/registration["Formulario de registro de usuarios del sitio de soporte de NetApp"^]
+. Complete el para crear una cuenta en la página de soporte de NetApp https://["Formulario de registro de usuarios del sitio de soporte de NetApp"^]
 +
 .. Asegúrese de seleccionar el nivel de usuario adecuado, que normalmente es *Cliente/Usuario final de NetApp*.
 .. Asegúrese de copiar el número de serie de la cuenta (960xxxx) utilizado anteriormente para el campo de número de serie. Esto agilizará el procesamiento de la cuenta.

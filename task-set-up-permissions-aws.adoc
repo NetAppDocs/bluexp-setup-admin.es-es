@@ -44,7 +44,7 @@ BlueXP debe autenticarse con AWS para poder implementar la instancia de Connecto
 
 Con cualquiera de las dos opciones, el primer paso es crear una política de IAM. Esta directiva sólo contiene los permisos necesarios para iniciar la instancia de Connector en AWS desde BlueXP.
 
-Si es necesario, puede restringir la política de IAM mediante el IAM `Condition` elemento. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentación de AWS: Elemento de condición"^]
+Si es necesario, puede restringir la política de IAM mediante el IAM `Condition` elemento. https://["Documentación de AWS: Elemento de condición"^]
 
 
 TIP: Cuando BlueXP crea el conector, aplica un nuevo conjunto de permisos a la instancia de Connector que permite al conector gestionar recursos de AWS.
@@ -54,6 +54,9 @@ TIP: Cuando BlueXP crea el conector, aplica un nuevo conjunto de permisos a la i
 . Haga clic en *Directivas > Crear directiva*.
 . Haga clic en *JSON*.
 . Copie y pegue la siguiente política:
++
+A modo de recordatorio, esta política solo contiene los permisos necesarios para iniciar la instancia de Connector en AWS desde BlueXP. link:reference-permissions-aws.html["Permite ver los permisos necesarios para la instancia de conector"].
+
 +
 [source, json]
 ----
@@ -249,8 +252,8 @@ Para las regiones estándar, los permisos se distribuyen en dos directivas. Son 
 
 . Adjunte las políticas a un usuario de IAM.
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentación de AWS: Crear roles de IAM"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentación de AWS: Adición y eliminación de políticas de IAM"^]
+** https://["Documentación de AWS: Crear roles de IAM"^]
+** https://["Documentación de AWS: Adición y eliminación de políticas de IAM"^]
 
 
 . Asegúrese de que el usuario tiene una clave de acceso que puede agregar a BlueXP después de instalar el conector.

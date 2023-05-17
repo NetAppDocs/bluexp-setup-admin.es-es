@@ -22,7 +22,7 @@ El modo privado admite la gestión de usuarios locales y el acceso. La autentica
 .Pasos
 . Abra un explorador web e introduzca la siguiente URL:
 +
-https://_ipaddress_[]
+https://[]
 
 +
 _Ipaddress_ puede ser localhost, una dirección IP privada o una dirección IP pública, dependiendo de la configuración del host en el que instaló el conector. Por ejemplo, es posible que necesite introducir una dirección IP privada de un host que tenga una conexión con el host Connector.

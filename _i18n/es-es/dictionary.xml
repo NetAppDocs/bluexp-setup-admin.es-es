@@ -1976,11 +1976,9 @@
   <block id="176944a9db0702558233e827d21e2f80" category="section-title">5 de enero de 2023</block>
   <block id="0b4c13076b9b5e7ba5fa39333693ef77" category="paragraph">Se han agregado los siguientes permisos a la política de JSON:</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">Este permiso es necesario para la implementación de Cloud Volumes ONTAP.</block>
-  <block id="1d37387582eb7a955869d3991c1dab28" category="section-title">1 de diciembre de 2022</block>
   <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">Se han eliminado los siguientes permisos de la política JSON porque ya no son necesarios:</block>
   <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
   <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
-  <block id="3af64a9cb34f4b06a9e496f1f6a05879" category="list-text">Microsoft.Storage/storageAccounts/regeneratekey/acción</block>
   <block id="156c302d186fc36d9d944c5d74b971af" category="doc">Regístrese en BlueXP</block>
   <block id="213954d7bdaa5b2d9eab4ee897a935d3" category="paragraph-title">Opciones de registro</block>
   <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">Puede suscribirse a BlueXP mediante una de las siguientes opciones:</block>
@@ -3478,8 +3476,6 @@
   <block id="92b5575604daffe3be8d9be7e9eea83d" category="paragraph">El conector realiza las siguientes solicitudes de la API para gestionar etiquetas de recursos de Azure cuando utiliza la corrección de BlueXP:</block>
   <block id="826e9938777ea2a0280d06c76218f7c7" category="paragraph">El conector realiza las siguientes solicitudes de API al configurar la organización en niveles de BlueXP.</block>
   <block id="6bf8cf4546732effc9436b03e26fd3ab" category="paragraph">El permiso «Microsoft.Storage/storageAccounts/delete» ya no es necesario para la clasificación de BlueXP.</block>
-  <block id="56e09b1406b08f4b77233f0e7ec35a49" category="paragraph">Se necesita este permiso para backup y recuperación y para la organización en niveles de BlueXP.</block>
-  <block id="82492651a82d98ca83599fcd9c536c5d" category="paragraph">Se requiere este permiso para realizar backup y recuperación de BlueXP.</block>
   <block id="7cd82008ab5d353c3e33f87f49f92961" category="paragraph">Aunque no es necesario que un conector cree un entorno de trabajo, es necesario crear y gestionar volúmenes, replicar datos e integrar FSx para ONTAP con servicios como la clasificación de BlueXP y la copia y sincronización de BlueXP.</block>
   <block id="60404bf35ed1506b74cc9cfac99f0818" category="paragraph">Aunque no es necesario un conector para configurar y gestionar Azure NetApp Files, se necesita un conector para usar la clasificación de BlueXP para analizar datos de Azure NetApp Files.</block>
   <block id="dd37176246e6abf3e559086afcadce82" category="paragraph">En casi todos los casos, puede agregar una licencia a la cartera digital sin un conector.</block>
@@ -3535,8 +3531,6 @@
   <block id="9345f603d48306b04203c8a77bc1ec43" category="summary">Cuando creas una cuenta de BlueXP, solo incluye un solo usuario administrador y un espacio de trabajo. Puede administrar la cuenta para que se adapte a las necesidades de su organización agregando usuarios, creando cuentas de servicio con fines de automatización, agregando espacios de trabajo, etc.</block>
   <block id="c695b69dfd48e2e642e9cf48a8d3e483" category="inline-link-macro">Descubre cómo funcionan las cuentas de BlueXP</block>
   <block id="401598fa995f1173bd8b6d805a3761d0" category="paragraph"><block ref="5fbf8d815c8a85b58ff259c4d5123e15" category="inline-link-macro-rx"></block>.</block>
-  <block id="30f0924c2b9792580922ba2bb932268a" category="summary">Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora o a través de un contrato anual. Si adquirió una licencia de NetApp, también deberá suscribirse a la oferta de PAYGO. Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede la capacidad de su licencia o si el plazo de la licencia expira.</block>
-  <block id="28737e110ddfecf7a0ee4cf74dc11735" category="paragraph">Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora (PAYGO) o a través de un contrato anual. Si adquirió una licencia de NetApp (BYOL), también deberá suscribirse a la oferta de PAYGO. Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede la capacidad de su licencia o si el plazo de la licencia expira.</block>
   <block id="771e18f961335c5b2ae045b3fefc3e80" category="summary">El grupo de seguridad de AWS para Connector requiere reglas tanto entrantes como salientes. BlueXP crea automáticamente este grupo de seguridad cuando creas un conector desde BlueXP. Debe configurar este grupo de seguridad para todas las demás opciones de instalación.</block>
   <block id="5dba83ec70c57d2bf0180e542772a92f" category="summary">Después de registrarte en BlueXP, puedes iniciar sesión desde la consola web para empezar a gestionar tu infraestructura de datos y almacenamiento.</block>
   <block id="ee88a6eb4f7c0c45ebac21244e471cac" category="summary">Configure su red para que Connector pueda gestionar recursos y procesos en su entorno de cloud híbrido. Por ejemplo, debe asegurarse de que las conexiones estén disponibles para las redes de destino y de que el acceso a Internet de salida esté disponible.</block>
@@ -3622,4 +3616,22 @@
   <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">El sistema operativo de la imagen es Ubuntu 22,04.</block>
   <block id="ba5aa0edf5aca9e505ac70fc6e55851d" category="paragraph">Si implementó el Connector de BlueXP, tenga en cuenta lo siguiente:</block>
   <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">Cuando BlueXP crea el conector, aplica un nuevo conjunto de permisos a la instancia de Connector que permite al conector gestionar recursos de AWS.</block>
+  <block id="60a24477cd4bc1d96c88b21629d8cd7c" category="summary">Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora o a través de un contrato anual. Si adquirió una licencia de NetApp, deberá suscribirse a la oferta de mercado. Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede la capacidad de su licencia o si el plazo de la licencia expira.</block>
+  <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora (PAYGO) o a través de un contrato anual. Si adquirió una licencia de NetApp (BYOL), también deberá suscribirse a la oferta de mercado. Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede la capacidad de su licencia o si el plazo de la licencia expira.</block>
+  <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">Una suscripción al mercado permite cargar los siguientes servicios de BlueXP:</block>
+  <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">La suscripción a BlueXP implica asociar una suscripción al mercado con las credenciales de la nube asociadas con un conector. Si ha seguido el flujo de trabajo para empezar con el modo estándar, ya debe tener un conector. Para obtener más información, consulte la <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>.</block>
+  <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una suscripción al mercado con credenciales asociadas a BlueXP.</block>
+  <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">Gestione las licencias basadas en la capacidad de su propia licencia para Cloud Volumes ONTAP</block>
+  <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
+  <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">Gestiona las licencias BYOL para los servicios de datos de BlueXP</block>
+  <block id="49056b2966eae66ee0345bbf80d6b8d6" category="list-text"><block ref="49056b2966eae66ee0345bbf80d6b8d6" category="inline-link-rx"></block></block>
+  <block id="a4821774f3941403655492bb82c492ca" category="list-text"><block ref="a4821774f3941403655492bb82c492ca" category="inline-link-rx"></block></block>
+  <block id="75c14ab09fd89f95714034d50258a6cc" category="list-text"><block ref="75c14ab09fd89f95714034d50258a6cc" category="inline-link-rx"></block></block>
+  <block id="95c435337a307137f163f5eb04ac01ad" category="list-text"><block ref="95c435337a307137f163f5eb04ac01ad" category="inline-link-rx"></block></block>
+  <block id="ba66b75d479f2289bcf99d989de6e0b1" category="paragraph">Una suscripción al mercado permite cargar los siguientes servicios de BlueXP con modo restringido:</block>
+  <block id="d639d0a55c1a57a909ac7ffab5f941c6" category="paragraph">La suscripción a BlueXP implica asociar una suscripción al mercado con las credenciales de la nube asociadas con un conector. Si ha seguido el flujo de trabajo de inicio con modo restringido, ya debe tener un conector. Para obtener más información, consulte la <block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block>.</block>
+  <block id="c9d7cb56a51bc183eea92ab6ecce2997" category="section-title">12 de mayo de 2023</block>
+  <block id="c8e8c3b324197dbdad9e21df5a435a35" category="paragraph">Se agregaron los siguientes permisos a la política JSON porque son necesarios para la gestión de Cloud Volumes ONTAP:</block>
+  <block id="c7e8dc746d7263609202186d1ac75c65" category="inline-link-macro">Permite ver los permisos necesarios para la instancia de conector</block>
+  <block id="5a25157670ec0b889a34ec2b3905bc26" category="paragraph">A modo de recordatorio, esta política solo contiene los permisos necesarios para iniciar la instancia de Connector en AWS desde BlueXP. <block ref="e99a10e3be28ba86573878700d04f6c5" category="inline-link-macro-rx"></block>.</block>
 </blocks>

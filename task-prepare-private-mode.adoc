@@ -17,7 +17,7 @@ summary: Prepara tu entorno antes de poner en marcha BlueXP en modo privado. Por
 Prepara tu entorno antes de poner en marcha BlueXP en modo privado. Por ejemplo, debe revisar los requisitos del host, preparar redes, configurar permisos y mucho más.
 
 
-NOTE: Si desea utilizar BlueXP en https://aws.amazon.com/federal/us-intelligence-community/["Entorno de servicios de cloud comercial (C2S) de AWS"^] A continuación, debe seguir instrucciones independientes que describen cómo preparar, instalar el conector e iniciar Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Descubra cómo comenzar a utilizar Cloud Volumes ONTAP en el entorno AWS C2S"^]
+NOTE: Si desea utilizar BlueXP en https://["Entorno de servicios de cloud comercial (C2S) de AWS"^] A continuación, debe seguir instrucciones independientes que describen cómo preparar, instalar el conector e iniciar Cloud Volumes ONTAP. https://["Descubra cómo comenzar a utilizar Cloud Volumes ONTAP en el entorno AWS C2S"^]
 
 
 
@@ -64,7 +64,7 @@ El conector es compatible con las versiones en inglés de estos sistemas operati
 Hipervisor:: Se requiere un hipervisor con configuración básica o alojado certificado para ejecutar Ubuntu, CentOS o Red Hat Enterprise Linux.
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
+https://["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
 
 --
 CPU:: 4 núcleos o 4 vCPU
@@ -74,12 +74,12 @@ Tamaño de la máquina virtual de Azure:: Tipo de instancia que cumple los requi
 Tipo de máquina de Google Cloud:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos n2-standard-4.
 +
 --
-El conector es compatible con Google Cloud en una instancia de máquina virtual con un sistema operativo compatible https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Características de VM blindadas"^]
+El conector es compatible con Google Cloud en una instancia de máquina virtual con un sistema operativo compatible https://["Características de VM blindadas"^]
 
 --
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
 Espacio en disco en /var:: Debe haber 20 GIB de espacio disponibles
-Motor Docker:: Se requiere Docker Engine versión 19.3.1 o posterior en el host antes de instalar el conector. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
+Motor Docker:: Se requiere Docker Engine versión 19.3.1 o posterior en el host antes de instalar el conector. https://["Ver las instrucciones de instalación"^]
 
 
 
@@ -115,7 +115,7 @@ Servicios de AWS (amazonaws.com):
 * Servicio de token de seguridad (STS)
 * Simple Storage Service (S3)
 
-| Para gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles"^] 
+| Para gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://["Consulte la documentación de AWS para obtener más detalles"^] 
 
 
 | \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Para gestionar recursos en regiones públicas de Azure. 
@@ -152,7 +152,7 @@ image:screenshot-azure-sku.png["Captura de pantalla de la nueva dirección IP de
 
 Si en su lugar utiliza una dirección IP de SKU estándar, BlueXP utiliza la dirección _private_ IP del conector, en lugar de la dirección IP pública. Si el equipo que está utilizando para acceder a la consola BlueXP no tiene acceso a esa dirección IP privada, las acciones de la consola BlueXP fallarán.
 
-https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentación para Azure: SKU de IP pública"^]
+https://["Documentación para Azure: SKU de IP pública"^]
 
 
 
@@ -223,8 +223,8 @@ Para las regiones estándar, los permisos se distribuyen en dos directivas. Son 
 
 . Adjunte las políticas a un usuario de IAM.
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentación de AWS: Crear roles de IAM"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentación de AWS: Adición y eliminación de políticas de IAM"^]
+** https://["Documentación de AWS: Crear roles de IAM"^]
+** https://["Documentación de AWS: Adición y eliminación de políticas de IAM"^]
 
 
 . Asegúrese de que el usuario tiene claves de acceso que puede agregar a BlueXP después de instalar el conector.
@@ -241,7 +241,7 @@ Cree un rol personalizado de Azure con los permisos necesarios. Asignará este r
 .Pasos
 . Habilite una identidad administrada asignada por el sistema en la máquina virtual donde tenga pensado instalar el conector de modo que pueda proporcionar los permisos de Azure necesarios a través de una función personalizada.
 +
-https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Documentación de Microsoft Azure: Configure las identidades gestionadas para los recursos de Azure en una máquina virtual mediante el portal de Azure"^]
+https://["Documentación de Microsoft Azure: Configure las identidades gestionadas para los recursos de Azure en una máquina virtual mediante el portal de Azure"^]
 
 . Copie el contenido de link:reference-permissions-azure.html["Permisos de función personalizada para el conector"] Y guárdelos en un archivo JSON.
 . Modifique el archivo JSON agregando ID de suscripción de Azure al ámbito asignable.
@@ -264,7 +264,7 @@ Debe añadir el ID para cada suscripción de Azure desde la cual los usuarios cr
 En los pasos siguientes se describe cómo crear la función mediante Bash en Azure Cloud Shell.
 
 +
-.. Comenzar https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
+.. Comenzar https://["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
 .. Cargue el archivo JSON.
 +
 image:screenshot_azure_shell_upload.png["Una captura de pantalla de Azure Cloud Shell donde puede elegir la opción para cargar un archivo."]
@@ -290,7 +290,7 @@ Crear y configurar un servicio principal en Azure Active Directory y obtener las
 .Cree una aplicación de Azure Active Directory para el control de acceso basado en roles
 . Asegúrese de tener permisos en Azure para crear una aplicación de Active Directory y para asignar la aplicación a un rol.
 +
-Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentación de Microsoft Azure: Permisos necesarios"^].
+Para obtener más información, consulte https://["Documentación de Microsoft Azure: Permisos necesarios"^].
 
 . Desde el portal de Azure, abra el servicio *Azure Active Directory*.
 +
@@ -406,7 +406,7 @@ En el ejemplo siguiente se crea una función denominada "conector" en el nivel d
 gcloud iam roles create connector --project=myproject --file=connector.yaml
 ----
 +
-https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]
+https://["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]
 
 
 
@@ -417,7 +417,7 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 .. Seleccione la función que acaba de crear.
 .. Finalice los pasos restantes para crear la función.
 +
-https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documentos de Google Cloud: Crear una cuenta de servicio"^]
+https://["Documentos de Google Cloud: Crear una cuenta de servicio"^]
 
 
 
@@ -435,7 +435,7 @@ Ahora tiene una cuenta de servicio que puede asignar a la instancia de Connector
 Se necesitan varias API para poner en marcha Cloud Volumes ONTAP en Google Cloud.
 
 .Paso
-. https://cloud.google.com/apis/docs/getting-started#enabling_apis["Habilite las siguientes API de Google Cloud en su proyecto"^]
+. https://["Habilite las siguientes API de Google Cloud en su proyecto"^]
 +
 ** API de Cloud Deployment Manager V2
 ** API de registro en la nube

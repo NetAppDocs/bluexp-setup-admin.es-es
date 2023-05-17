@@ -61,7 +61,7 @@ link:task-set-up-permissions-on-prem.html["Siga las instrucciones paso a paso pa
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Instale el software del conector
 [role="quick-margin-para"]
-Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"] y ejecute el script de instalación.
+Descargue el software del conector de https://["Sitio de soporte de NetApp"] y ejecute el script de instalación.
 
 [role="quick-margin-para"]
 link:task-install-connector-on-prem.html["Siga las instrucciones paso a paso"].

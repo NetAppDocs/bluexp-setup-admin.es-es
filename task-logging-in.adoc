@@ -28,7 +28,7 @@ Puede utilizar el inicio de sesión único para iniciar sesión con credenciales
 
 
 .Pasos
-. Abra un explorador web y vaya al https://console.bluexp.netapp.com["Consola BlueXP"^]
+. Abra un explorador web y vaya al https://["Consola BlueXP"^]
 . En la página *Iniciar sesión*, introduzca la dirección de correo electrónico asociada a su inicio de sesión.
 . En función del método de autenticación asociado a su inicio de sesión, se le pedirá que introduzca sus credenciales:
 +

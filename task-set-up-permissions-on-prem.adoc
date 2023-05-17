@@ -43,8 +43,8 @@ Para las regiones estándar, los permisos se distribuyen en dos directivas. Son 
 
 . Adjunte las políticas a un usuario de IAM.
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentación de AWS: Crear roles de IAM"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentación de AWS: Adición y eliminación de políticas de IAM"^]
+** https://["Documentación de AWS: Crear roles de IAM"^]
+** https://["Documentación de AWS: Adición y eliminación de políticas de IAM"^]
 
 
 . Asegúrese de que el usuario tiene claves de acceso que puede agregar a BlueXP después de instalar el conector.
@@ -63,7 +63,7 @@ Cuando Connector se instala en las instalaciones, debe proporcionar permisos de 
 .Cree una aplicación de Azure Active Directory para el control de acceso basado en roles
 . Asegúrese de tener permisos en Azure para crear una aplicación de Active Directory y para asignar la aplicación a un rol.
 +
-Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentación de Microsoft Azure: Permisos necesarios"^].
+Para obtener más información, consulte https://["Documentación de Microsoft Azure: Permisos necesarios"^].
 
 . Desde el portal de Azure, abra el servicio *Azure Active Directory*.
 +
@@ -108,7 +108,7 @@ Debe añadir el ID para cada suscripción de Azure desde la cual los usuarios cr
 En los pasos siguientes se describe cómo crear la función mediante Bash en Azure Cloud Shell.
 
 +
-*** Comenzar https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
+*** Comenzar https://["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
 *** Cargue el archivo JSON.
 +
 image:screenshot_azure_shell_upload.png["Una captura de pantalla de Azure Cloud Shell donde puede elegir la opción para cargar un archivo."]

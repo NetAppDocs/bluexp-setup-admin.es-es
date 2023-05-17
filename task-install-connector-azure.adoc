@@ -32,7 +32,7 @@ Cree un conector directamente desde la consola basada en web de BlueXP, desde Az
 
 * Una clave pública SSH, si desea utilizar ese método de autenticación para la máquina virtual Connector. La otra opción para el método de autenticación es usar una contraseña.
 +
-https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Obtenga más información sobre cómo conectarse a una máquina virtual de Linux en Azure"^]
+https://["Obtenga más información sobre cómo conectarse a una máquina virtual de Linux en Azure"^]
 
 * Si no quiere que BlueXP cree automáticamente una función de Azure para Connector, tendrá que crear la suya propia link:reference-permissions-azure.html["uso de la política en esta página"].
 +
@@ -79,7 +79,7 @@ link:task-set-up-permissions-azure.html["Aprenda cómo obtener estos valores par
 El método de autenticación para la máquina virtual puede ser una contraseña o una clave pública SSH.
 
 +
-https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Obtenga más información sobre cómo conectarse a una máquina virtual de Linux en Azure"^]
+https://["Obtenga más información sobre cómo conectarse a una máquina virtual de Linux en Azure"^]
 
 ** *Detalles*: Escriba un nombre para la instancia, especifique etiquetas y elija si desea que BlueXP cree una nueva función que tenga los permisos necesarios o si desea seleccionar una función existente con la que se haya configurado link:reference-permissions-azure.html["los permisos necesarios"].
 +
@@ -108,7 +108,7 @@ Una vez completado el proceso, el conector está disponible para su uso en BlueX
 .Pasos
 . Vaya a la página NetApp Connector VM del Azure Marketplace.
 +
-https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Página de Azure Marketplace para regiones comerciales"^]
+https://["Página de Azure Marketplace para regiones comerciales"^]
 
 . Haga clic en *Get Now* y, a continuación, haga clic en *Continue*.
 . En el portal de Azure, haga clic en *Crear* y siga los pasos para configurar la máquina virtual.
@@ -127,7 +127,7 @@ link:reference-ports-azure.html["Ver reglas de grupo de seguridad para Azure"].
 
 ** En *Gestión*, active *identidad administrada asignada por el sistema* para el conector VM seleccionando *On*.
 +
-Esta configuración es importante porque una identidad administrada permite que la máquina virtual Connector se identifique a sí misma en Azure Active Directory sin proporcionar credenciales. Una vez que haya terminado, deberá asignar la función personalizada a la que creó https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Obtenga más información sobre las identidades gestionadas para recursos de Azure"^].
+Esta configuración es importante porque una identidad administrada permite que la máquina virtual Connector se identifique a sí misma en Azure Active Directory sin proporcionar credenciales. Una vez que haya terminado, deberá asignar la función personalizada a la que creó https://["Obtenga más información sobre las identidades gestionadas para recursos de Azure"^].
 
 
 
@@ -137,7 +137,7 @@ Azure implementa la máquina virtual con los ajustes especificados. El software 
 
 . Abra un explorador Web desde un host que tenga una conexión con la máquina virtual Connector e introduzca la siguiente URL:
 +
-https://_ipaddress_[]
+https://[]
 
 . Después de iniciar sesión, configure el conector:
 +
@@ -169,7 +169,7 @@ Tiene la opción de configurar un servidor proxy después de la instalación, pe
 * Un certificado firmado por CA, si el servidor proxy utiliza HTTPS o si el proxy es un proxy de interceptación.
 * Una identidad gestionada habilitada en la máquina virtual de Azure para poder proporcionar los permisos de Azure necesarios a través de un rol personalizado.
 +
-https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Documentación de Microsoft Azure: Configure las identidades gestionadas para los recursos de Azure en una máquina virtual mediante el portal de Azure"^]
+https://["Documentación de Microsoft Azure: Configure las identidades gestionadas para los recursos de Azure en una máquina virtual mediante el portal de Azure"^]
 
 
 
@@ -198,7 +198,7 @@ unset https_proxy
 +
 Si no elimina estas variables del sistema, la instalación fallará.
 
-. Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
+. Descargue el software del conector de https://["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
 +
 Debe descargar el instalador "en línea" del conector que se utiliza en su red o en la nube. Hay disponible un instalador "sin conexión" independiente para el conector, pero sólo es compatible con implementaciones en modo privado.
 
@@ -247,7 +247,7 @@ Al final de la instalación, el servicio Connector (occm) se reinicia dos veces 
 
 . Abra un explorador Web desde un host que tenga una conexión con la máquina virtual Connector e introduzca la siguiente URL:
 +
-https://_ipaddress_[]
+https://[]
 
 . Después de iniciar sesión, configure el conector:
 +

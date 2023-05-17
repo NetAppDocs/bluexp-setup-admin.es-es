@@ -33,7 +33,7 @@ Servicios de AWS (amazonaws.com):
 * Servicio de token de seguridad (STS)
 * Simple Storage Service (S3)
 
-| Necesario para implementar un conector desde BlueXP en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."^] 
+| Necesario para implementar un conector desde BlueXP en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://["Consulte la documentación de AWS para obtener más detalles."^] 
 
 
 | \https://management.azure.com \https://login.microsoftonline.com | Necesario para implementar un conector desde BlueXP en la mayoría de las regiones de Azure. 

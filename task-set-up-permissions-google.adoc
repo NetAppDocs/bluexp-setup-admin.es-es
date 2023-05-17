@@ -115,13 +115,13 @@ En el ejemplo siguiente se crea un rol denominado "connectorDeployment" en el ni
 Los roles de gcloud iam crean connectorDeployment --project=myproject --file=Connector-deployment.yaml
 
 +
-https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]
+https://["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]
 
 
 
 . Asigne esta función personalizada al usuario que implementará Connector desde BlueXP o mediante gcloud.
 +
-https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud docs: Conceda un único rol"^]
+https://["Google Cloud docs: Conceda un único rol"^]
 
 
 
@@ -148,7 +148,7 @@ En el ejemplo siguiente se crea una función denominada "conector" en el nivel d
 los roles de iam de gcloud crean conector --project=myproject --file=connector.yaml
 
 +
-https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]
+https://["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]
 
 
 
@@ -159,7 +159,7 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 .. Seleccione la función que acaba de crear.
 .. Finalice los pasos restantes para crear la función.
 +
-https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documentos de Google Cloud: Crear una cuenta de servicio"^]
+https://["Documentos de Google Cloud: Crear una cuenta de servicio"^]
 
 
 
@@ -187,7 +187,7 @@ Por ejemplo, supongamos que el conector está en el proyecto 1 y que desea crear
 
 
 
-Para obtener información detallada, consulte https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documentación de Google Cloud"^]
+Para obtener información detallada, consulte https://["Documentación de Google Cloud"^]
 
 
 

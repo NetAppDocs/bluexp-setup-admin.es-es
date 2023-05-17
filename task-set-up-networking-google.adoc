@@ -120,4 +120,4 @@ No hay tráfico entrante en el conector, a menos que lo inicie o si el conector 
 
 == Limitación de dirección IP
 
-Puede haber un conflicto con las direcciones IP en el rango 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Obtenga más información sobre esta limitación"].
+Puede haber un conflicto con las direcciones IP en el rango 172. https://["Obtenga más información sobre esta limitación"].

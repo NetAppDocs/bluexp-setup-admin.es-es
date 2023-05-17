@@ -25,54 +25,54 @@ La plataforma BlueXP proporciona cuatro pilares principales de la gestión de da
 Reducida:: Descubra, ponga en marcha y gestione el almacenamiento, ya sea en AWS, Azure, Google Cloud o en las instalaciones.
 +
 --
-* Configuración y uso https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] para lograr una gestión de datos eficiente con varios protocolos en todos los clouds.
+* Configuración y uso https://["Cloud Volumes ONTAP"^] para lograr una gestión de datos eficiente con varios protocolos en todos los clouds.
 * Configure y utilice los servicios cloud de almacenamiento de archivos:
 +
-** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
-** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX para ONTAP"^]
-** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service para Google Cloud"^]
+** https://["Azure NetApp Files"^]
+** https://["Amazon FSX para ONTAP"^]
+** https://["Cloud Volumes Service para Google Cloud"^]
 
 
-* Detectar y gestionar https://bluexp.netapp.com/netapp-on-premises["almacenamiento en las instalaciones"^]:
+* Detectar y gestionar https://["almacenamiento en las instalaciones"^]:
 +
 ** Sistemas E-Series
 ** Clústeres ONTAP
 ** Sistemas StorageGRID
 
 
-* Orquestar y proteger https://bluexp.netapp.com/solutions/kubernetes["Datos persistentes de Kubernetes"^]
+* Orquestar y proteger https://["Datos persistentes de Kubernetes"^]
 
 
 --
 Movilidad:: Mueva los datos donde los necesite sincronizando, copiando, organizando en niveles y almacenando los datos en caché.
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["Copiar y sincronizar"^]
-* https://bluexp.netapp.com/global-file-cache["Almacenamiento en caché en el edge"^]
-* https://bluexp.netapp.com/cloud-tiering["Organización en niveles"^]
+* https://["Copiar y sincronizar"^]
+* https://["Almacenamiento en caché en el edge"^]
+* https://["Organización en niveles"^]
 
 
 --
 Protección:: Use mecanismos de protección automatizados para proteger los datos contra la pérdida de datos, interrupciones del servicio no planificadas, ransomware y otras amenazas cibernéticas.
 +
 --
-* https://bluexp.netapp.com/cloud-backup["Backup y recuperación"^]
-* https://bluexp.netapp.com/replication["Replicación"^]
+* https://["Backup y recuperación"^]
+* https://["Replicación"^]
 
 
 --
 Análisis y control:: Use herramientas para supervisar, asignar y optimizar su almacenamiento de datos y su infraestructura.
 +
 --
-* https://bluexp.netapp.com/netapp-cloud-data-sense["Clasificación"^]
-* https://bluexp.netapp.com/digital-advisor["Asesor digital"^]
-* https://bluexp.netapp.com/ransomware-protection["Protección contra ransomware"^]
+* https://["Clasificación"^]
+* https://["Asesor digital"^]
+* https://["Protección contra ransomware"^]
 
 
 --
 
 
-https://bluexp.netapp.com/["Obtenga más información sobre cómo puede utilizar BlueXP para ayudar a su organización"^]
+https://["Obtenga más información sobre cómo puede utilizar BlueXP para ayudar a su organización"^]
 
 
 
@@ -84,7 +84,7 @@ BlueXP le permite gestionar el almacenamiento en cloud y utilizar servicios clou
 
 == Coste
 
-El precio de BlueXP depende de los servicios que usted planea utilizar. https://bluexp.netapp.com/pricing["Más información sobre los precios de BlueXP"^]
+El precio de BlueXP depende de los servicios que usted planea utilizar. https://["Más información sobre los precios de BlueXP"^]
 
 
 
@@ -96,7 +96,7 @@ BlueXP incluye una consola basada en web que se proporciona a través de la capa
 
 === Software como servicio
 
-BlueXP es accesible a través de un https://console.bluexp.netapp.com["consola basada en web"^] Y API. Esta experiencia SaaS le permite acceder automáticamente a las últimas funciones a medida que se publican y cambiar fácilmente entre sus cuentas y conectores de BlueXP.
+BlueXP es accesible a través de un https://["consola basada en web"^] Y API. Esta experiencia SaaS le permite acceder automáticamente a las últimas funciones a medida que se publican y cambiar fácilmente entre sus cuentas y conectores de BlueXP.
 
 
 
@@ -128,4 +128,4 @@ link:concept-modes.html["Obtenga más información sobre los modos de implementa
 
 Una firma de contabilidad pública independiente certificada y un auditor de servicios examinó BlueXP y afirmó que logró los informes SOC 2 de tipo 2 basados en los criterios aplicables de los servicios de confianza.
 
-https://www.netapp.com/company/trust-center/compliance/soc-2/["Consulte los informes de SOC 2 de NetApp"^]
+https://["Consulte los informes de SOC 2 de NetApp"^]

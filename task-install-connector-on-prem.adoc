@@ -56,7 +56,7 @@ unset https_proxy
 +
 Si no elimina estas variables del sistema, la instalación fallará.
 
-. Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
+. Descargue el software del conector de https://["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
 +
 Debe descargar el instalador "en línea" del conector que se utiliza en su red o en la nube. Hay disponible un instalador "sin conexión" independiente para el conector, pero sólo es compatible con implementaciones en modo privado.
 
@@ -113,7 +113,7 @@ Regístrese o inicie sesión y, a continuación, configure el conector para que 
 .Pasos
 . Abra un explorador web e introduzca la siguiente URL:
 +
-https://_ipaddress_[]
+https://[]
 
 +
 _ipaddress_ puede ser localhost, una dirección IP privada o una dirección IP pública, dependiendo de la configuración del host. Por ejemplo, si el conector está en la nube pública sin una dirección IP pública, debe introducir una dirección IP privada desde un host que tenga una conexión con el host del conector.

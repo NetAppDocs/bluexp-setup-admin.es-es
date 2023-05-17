@@ -86,7 +86,6 @@ También debe asegurarse de que el rol esté actualizado a medida que se añadan
                     "Microsoft.Storage/storageAccounts/delete",
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
-                    "Microsoft.Storage/storageAccounts/blobServices/containers/write",
                     "Microsoft.Storage/storageAccounts/listAccountSas/action",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
@@ -161,9 +160,10 @@ También debe asegurarse de que el rol esté actualizado a medida que se añadan
                     "Microsoft.Synapse/workspaces/firewallRules/read",
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
-                    "Microsoft.Network/publicIPAddresses/delete",
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
-                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
+                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+                    "Microsoft.Compute/images/write",
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -226,8 +226,6 @@ El conector realiza las siguientes solicitudes de API para la copia de seguridad
 * Microsoft.Network/networkInterfaces/delete
 * Microsoft.Network/networkSecurityGroups/delete
 * Microsoft.Resources/despliegues/DELETE
-* Microsoft.Network/publicIPAddresses/delete
-* Microsoft.Storage/storageAccounts/blobServices/contenedores/escritura
 * Microsoft.ManagedIdentity/userAssignedIdentities/ASSIGN/action
 
 
@@ -443,7 +441,10 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 | Microsoft.Resources/despliegues/DELETE | Sí | No | No 
 
 
-| Habilite la puesta en marcha desde un disco duro virtual | Microsoft.Compute/images/read | Sí | No | No 
+.2+| Habilite la puesta en marcha desde un disco duro virtual | Microsoft.Compute/images/read | Sí | No | No 
+
+
+| Microsoft.Compute/images/write | Sí | No | No 
 
 
 .4+| Cree y gestione interfaces de red en la subred de destino | Microsoft.Network/networkInterfaces/read | Sí | Sí | No 
@@ -590,7 +591,7 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 | Microsoft.MarketPlaceOrdenar/offertypes/editores/ofertas/planes/acuerdos/escribir | Sí | Sí | No 
 
 
-.8+| Gestione un equilibrador de carga para pares de ha | Microsoft.Network/loadBalancers/read | Sí | Sí | No 
+.9+| Gestione un equilibrador de carga para pares de ha | Microsoft.Network/loadBalancers/read | Sí | Sí | No 
 
 
 | Microsoft.Network/loadBalancers/write | Sí | No | No 
@@ -603,6 +604,9 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 
 
 | Microsoft.Network/loadBalancers/backendAddressPools/join/action | Sí | No | No 
+
+
+| Microsoft.Network/loadBalancers/frontendIPConfigurations/read | Sí | Sí | No 
 
 
 | Microsoft.Network/loadBalancers/loadBalancingRules/read | Sí | No | No 
@@ -756,7 +760,6 @@ El conector realiza las siguientes solicitudes de API al configurar la organizac
 El conector realiza las siguientes solicitudes API para operaciones diarias.
 
 * Microsoft.Storage/storageAccounts/blobServices/contenedores/lectura
-* Microsoft.Storage/storageAccounts/blobServices/contenedores/escritura
 * Microsoft.Storage/storageAccounts/managementPolicies/Read
 * Microsoft.Storage/storageAccounts/managementPolicies/Write
 * Microsoft.Storage/storageAccounts/read
@@ -767,6 +770,22 @@ El conector realiza las siguientes solicitudes API para operaciones diarias.
 == Registro de cambios
 
 A medida que se añadan y eliminen permisos, los anotaremos en las secciones siguientes.
+
+
+
+=== 12 de mayo de 2023
+
+Se agregaron los siguientes permisos a la política JSON porque son necesarios para la gestión de Cloud Volumes ONTAP:
+
+* Microsoft.Compute/images/write
+* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
+
+
+Se han eliminado los siguientes permisos de la política JSON porque ya no son necesarios:
+
+* Microsoft.Storage/storageAccounts/blobServices/contenedores/escritura
+* Microsoft.Network/publicIPAddresses/delete
+
 
 
 
@@ -791,27 +810,4 @@ Se requieren estos permisos para backup y recuperación de BlueXP.
 +
 Este permiso es necesario para la implementación de Cloud Volumes ONTAP.
 
-
-
-
-
-=== 1 de diciembre de 2022
-
-Se han agregado los siguientes permisos a la política de JSON:
-
-* Microsoft.Storage/storageAccounts/blobServices/contenedores/escritura
-+
-Se necesita este permiso para backup y recuperación y para la organización en niveles de BlueXP.
-
-* Microsoft.Network/publicIPAddresses/delete
-+
-Se requiere este permiso para realizar backup y recuperación de BlueXP.
-
-
-
-Se han eliminado los siguientes permisos de la política JSON porque ya no son necesarios:
-
-* Microsoft.Compute/images/write
-* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
-* Microsoft.Storage/storageAccounts/regeneratekey/acción
 

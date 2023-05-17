@@ -18,7 +18,7 @@ Empieza a usar BlueXP en el modo estándar registrándote en la consola de BlueX
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Regístrese y cree una cuenta
 [role="quick-margin-para"]
-Vaya a la https://console.bluexp.netapp.com["Consola BlueXP"^] y regístrese. Se le dará la opción de crear una cuenta, pero puede omitir ese paso si está siendo invitado a una cuenta existente.
+Vaya a la https://["Consola BlueXP"^] y regístrese. Se le dará la opción de crear una cuenta, pero puede omitir ese paso si está siendo invitado a una cuenta existente.
 
 [role="quick-margin-para"]
 En este momento, ha iniciado sesión y puede empezar a utilizar varios servicios de BlueXP como Digital Advisor, Amazon FSX para ONTAP, Azure NetApp Files y muchos más. link:concept-connectors.html["Aprenda lo que puede hacer sin un conector"].
