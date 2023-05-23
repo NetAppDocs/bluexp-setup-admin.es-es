@@ -32,4 +32,4 @@ Se deben habilitar varias API de Google Cloud antes de poder implementar Connect
 
 
 
-https://["Documentación de Google Cloud: Habilitar API"^]
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentación de Google Cloud: Habilitar API"^]

@@ -35,7 +35,7 @@ Conecte la función IAM que ha creado previamente a la instancia de Connector EC
 
 
 .Resultado
-BlueXP dispone ahora de los permisos que necesita para realizar acciones en AWS en su nombre. Vaya a la https://["Consola BlueXP"^] Para empezar a utilizar el conector con BlueXP.
+BlueXP dispone ahora de los permisos que necesita para realizar acciones en AWS en su nombre. Vaya a la https://console.bluexp.netapp.com["Consola BlueXP"^] Para empezar a utilizar el conector con BlueXP.
 
 --
 .Clave de acceso de AWS
@@ -59,7 +59,7 @@ image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Con
 
 
 .Resultado
-BlueXP dispone ahora de los permisos que necesita para realizar acciones en AWS en su nombre. Vaya a la https://["Consola BlueXP"^] Para empezar a utilizar el conector con BlueXP.
+BlueXP dispone ahora de los permisos que necesita para realizar acciones en AWS en su nombre. Vaya a la https://console.bluexp.netapp.com["Consola BlueXP"^] Para empezar a utilizar el conector con BlueXP.
 
 --
 ====

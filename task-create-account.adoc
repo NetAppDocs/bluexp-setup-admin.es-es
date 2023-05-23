@@ -31,7 +31,7 @@ Si desea habilitar el modo restringido, debe incluir lo siguiente en el cuerpo d
 
 NOTE: No se puede cambiar la configuración del modo restringido después de que BlueXP cree la cuenta. No se puede activar el modo restringido más adelante y no se puede desactivar más adelante. Se debe establecer en el momento de crear la cuenta.
 
-https://["Aprenda a usar esta llamada API"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/post-tenancy-account-.html["Aprenda a usar esta llamada API"^]
 
 .Enlaces relacionados
 * link:concept-netapp-accounts.html["Obtenga más información sobre las cuentas de BlueXP"]

@@ -54,7 +54,7 @@ Servicios de AWS (amazonaws.com):
 * Servicio de token de seguridad (STS)
 * Simple Storage Service (S3)
 
-| Para gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://["Consulte la documentación de AWS para obtener más detalles"^] 
+| Para gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles"^] 
 
 
 | \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Para gestionar recursos en regiones públicas de Azure. 
@@ -86,10 +86,10 @@ Si su organización requiere la implementación de un servidor proxy para todo e
 
 === Grupo de seguridad
 
-No hay tráfico entrante en el conector, a menos que lo inicie o si el conector se utiliza como proxy para los mensajes AutoSupport. HTTP y HTTPS proporcionan acceso al https://["Interfaz de usuario local"], que utilizará en raras circunstancias. SSH solo es necesario si necesita conectarse al host para la solución de problemas.
+No hay tráfico entrante en el conector, a menos que lo inicie o si el conector se utiliza como proxy para los mensajes AutoSupport. HTTP y HTTPS proporcionan acceso al https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#the-local-user-interface["Interfaz de usuario local"], que utilizará en raras circunstancias. SSH solo es necesario si necesita conectarse al host para la solución de problemas.
 
 
 
 === Limitación de dirección IP
 
-Puede haber un conflicto con las direcciones IP en el rango 172. https://["Obtenga más información sobre esta limitación"].
+Puede haber un conflicto con las direcciones IP en el rango 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Obtenga más información sobre esta limitación"].

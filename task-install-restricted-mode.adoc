@@ -40,7 +40,7 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Aprenda a conf
 
 
 .Pasos
-. Vaya a la https://["Página de BlueXP en AWS Marketplace"^]
+. Vaya a la https://aws.amazon.com/marketplace/pp/B018REK8QG["Página de BlueXP en AWS Marketplace"^]
 . En la página Marketplace, haga clic en *continuar a Suscribirse* y luego haga clic en *continuar a Configuración*.
 +
 image:screenshot-subscribe-aws.png["Una captura de pantalla que muestra los botones continuar Suscribirse y continuar con Configuración en AWS Marketplace."]
@@ -151,8 +151,8 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Aprenda a conf
 .Pasos
 . Vaya a la página NetApp Connector VM del Azure Marketplace.
 +
-** https://["Página de Azure Marketplace para regiones comerciales"^]
-** https://["Página de Azure Marketplace para regiones gubernamentales de Azure"^]
+** https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Página de Azure Marketplace para regiones comerciales"^]
+** https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol["Página de Azure Marketplace para regiones gubernamentales de Azure"^]
 
 
 . Haga clic en *Get Now* y, a continuación, haga clic en *Continue*.
@@ -171,7 +171,7 @@ image:screenshot-azure-sku.png["Captura de pantalla de la nueva dirección IP de
 Si en su lugar utiliza una dirección IP de SKU estándar, BlueXP utiliza la dirección _private_ IP del conector, en lugar de la dirección IP pública. Si el equipo que está utilizando para acceder a la consola BlueXP no tiene acceso a esa dirección IP privada, las acciones de la consola BlueXP fallarán.
 
 +
-https://["Documentación para Azure: SKU de IP pública"^]
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentación para Azure: SKU de IP pública"^]
 
 ** *Grupo de seguridad de red*: El conector requiere conexiones entrantes mediante SSH, HTTP y HTTPS.
 +
@@ -179,7 +179,7 @@ link:task-prepare-restricted-mode.html["Obtenga información sobre los requisito
 
 ** *Identidad*: En *Gestión*, seleccione *Activar identidad administrada asignada por el sistema*.
 +
-Esta configuración es importante porque una identidad administrada permite que la máquina virtual Connector se identifique a sí misma en Azure Active Directory sin proporcionar credenciales. https://["Obtenga más información sobre las identidades gestionadas para recursos de Azure"^].
+Esta configuración es importante porque una identidad administrada permite que la máquina virtual Connector se identifique a sí misma en Azure Active Directory sin proporcionar credenciales. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Obtenga más información sobre las identidades gestionadas para recursos de Azure"^].
 
 
 
@@ -229,7 +229,7 @@ unset https_proxy
 +
 Si no elimina estas variables del sistema, la instalación fallará.
 
-. Descargue el software del conector de https://["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
+. Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
 +
 Debe descargar el instalador "en línea" del conector que se utiliza en su red o en la nube. Hay disponible un instalador "sin conexión" independiente para el conector, pero sólo es compatible con implementaciones en modo privado.
 
@@ -294,7 +294,7 @@ NOTE: Si ya tiene una cuenta y desea crear otra, debe utilizar la API de soporte
 .Pasos
 . Abra un explorador Web desde un host que tenga una conexión con la instancia de Connector e introduzca la siguiente URL:
 +
-https://[]
+https://_ipaddress_[]
 
 . Regístrese o inicie sesión en BlueXP.
 . Después de iniciar sesión, configure BlueXP:
@@ -413,7 +413,7 @@ BlueXP ahora tiene los permisos que necesita para realizar acciones en Azure en 
 Proporcione a BlueXP las credenciales para la entidad de servicio de Azure que configuró anteriormente.
 
 .Pasos
-. Vaya a la https://["Consola BlueXP"^] e inicie sesión.
+. Vaya a la https://console.bluexp.netapp.com["Consola BlueXP"^] e inicie sesión.
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
 +
 image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
@@ -445,7 +445,7 @@ Asocie la cuenta de servicio a la máquina virtual del conector.
 .Pasos
 . Vaya al portal de Google Cloud y asigne la cuenta de servicio a la instancia de Connector VM.
 +
-https://["Documentación de Google Cloud: Cambiar la cuenta de servicio y los ámbitos de acceso para una instancia"^]
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentación de Google Cloud: Cambiar la cuenta de servicio y los ámbitos de acceso para una instancia"^]
 
 . Si desea implementar Cloud Volumes ONTAP en otros proyectos, conceda acceso agregando la cuenta de servicio con la función BlueXP a dicho proyecto. Deberá repetir este paso con cada proyecto.
 

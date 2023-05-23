@@ -80,7 +80,7 @@ Servicios de AWS (amazonaws.com):
 * Servicio de token de seguridad (STS)
 * Simple Storage Service (S3)
 
-| Para gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://["Consulte la documentación de AWS para obtener más detalles"^] 
+| Para gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles"^] 
 
 
 | \https://support.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp. 
@@ -130,4 +130,4 @@ No hay tráfico entrante en el conector, a menos que lo inicie o si el conector 
 
 == Limitación de dirección IP
 
-Puede haber un conflicto con las direcciones IP en el rango 172. https://["Obtenga más información sobre esta limitación"].
+Puede haber un conflicto con las direcciones IP en el rango 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Obtenga más información sobre esta limitación"].

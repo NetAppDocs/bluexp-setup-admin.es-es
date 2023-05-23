@@ -34,7 +34,7 @@ Las reglas de firewall de Google Cloud para el conector requieren reglas tanto e
 | HTTPS | 443 | Proporciona acceso HTTPS desde exploradores web de cliente al local interfaz de usuario 
 
 
-| TCP | 3128 | Proporciona a Cloud Volumes ONTAP acceso a Internet para enviar mensajes de AutoSupport al soporte de NetApp. Debe abrir manualmente este puerto después de la implementación. https://["Obtenga información sobre cómo se utiliza el conector como proxy para los mensajes de AutoSupport"^] 
+| TCP | 3128 | Proporciona a Cloud Volumes ONTAP acceso a Internet para enviar mensajes de AutoSupport al soporte de NetApp. Debe abrir manualmente este puerto después de la implementación. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["Obtenga información sobre cómo se utiliza el conector como proxy para los mensajes de AutoSupport"^] 
 |===
 
 

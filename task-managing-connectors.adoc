@@ -80,19 +80,19 @@ Si necesita conectarse a la VM de Linux en la que se ejecuta el conector, puede 
 AWS:: Al crear la instancia de Connector en AWS, proporcionó una clave de acceso y una clave secreta de AWS. Es posible usar este par de claves para SSH a la instancia.
 +
 --
-https://["AWS Docs: Conéctese a su instancia de Linux"^]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs: Conéctese a su instancia de Linux"^]
 
 --
 Azure:: Cuando creó el conector VM en Azure, eligió autenticarse con una contraseña o una clave pública SSH. Utilice el método de autenticación que ha elegido para conectarse a la máquina virtual.
 +
 --
-https://["Azure Docs: SSH en su máquina virtual"^]
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs: SSH en su máquina virtual"^]
 
 --
 Google Cloud:: No puede especificar un método de autenticación al crear un conector en Google Cloud. Sin embargo, puede conectarse a la instancia de VM de Linux mediante Google Cloud Console o Google Cloud CLI (gcloud).
 +
 --
-https://["Google Cloud Docs: Conexión a equipos virtuales Linux"^]
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs: Conexión a equipos virtuales Linux"^]
 
 --
 
@@ -109,7 +109,7 @@ El conector debe reiniciarse durante el proceso de actualización para que la co
 NOTE: En los hosts que tienen acceso a Internet, el conector actualiza automáticamente su software a la última versión, siempre que tenga acceso saliente a Internet para obtener la actualización de software.
 
 .Pasos
-. Descargue el software del conector de https://["Sitio de soporte de NetApp"^].
+. Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^].
 . Copie el instalador en el host Linux.
 . Asigne permisos para ejecutar el script.
 +
@@ -192,7 +192,7 @@ Tenga en cuenta que 32 es un valor de ejemplo. El valor que debe utilizar depend
 
 
 
-https://["Obtenga más información acerca de la llamada a la API /occm/config"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["Obtenga más información acerca de la llamada a la API /occm/config"^]
 
 
 

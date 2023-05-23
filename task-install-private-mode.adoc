@@ -22,7 +22,7 @@ Pon en marcha el conector en modo privado para poder utilizar BlueXP sin conecti
 
 Descargue el instalador del producto desde el sitio de soporte de NetApp y, a continuación, instale manualmente el conector en su propio host Linux.
 
-Si desea utilizar BlueXP en https://["Entorno de servicios de cloud comercial (C2S) de AWS"^] después, deberá seguir las instrucciones por separado para comenzar en ese entorno. https://["Descubra cómo comenzar a utilizar Cloud Volumes ONTAP en el entorno AWS C2S"^]
+Si desea utilizar BlueXP en https://aws.amazon.com/federal/us-intelligence-community/["Entorno de servicios de cloud comercial (C2S) de AWS"^] después, deberá seguir las instrucciones por separado para comenzar en ese entorno. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Descubra cómo comenzar a utilizar Cloud Volumes ONTAP en el entorno AWS C2S"^]
 
 .Privilegios requeridos
 Se requieren privilegios de usuario raíz para instalar el conector.
@@ -34,7 +34,7 @@ Se requieren privilegios de usuario raíz para instalar el conector.
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
-. Descargue el software del conector de https://["Sitio de soporte de NetApp"^]
+. Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^]
 +
 Asegúrese de descargar el instalador para redes restringidas sin acceso a Internet.
 
@@ -69,7 +69,7 @@ El software del conector está instalado. Ya puede configurar BlueXP.
 Cuando acceda a la consola BlueXP por primera vez, se le solicitará que configure BlueXP.
 
 .Pasos
-. Abra un explorador web e introduzca https://[] Donde _ipaddress_ es la dirección IP del host Linux en el que instaló el conector.
+. Abra un explorador web e introduzca https://_ipaddress_[] Donde _ipaddress_ es la dirección IP del host Linux en el que instaló el conector.
 +
 Debe ver la siguiente pantalla.
 
@@ -213,7 +213,7 @@ Asocie la cuenta de servicio a la máquina virtual del conector.
 .Pasos
 . Vaya al portal de Google Cloud y asigne la cuenta de servicio a la instancia de Connector VM.
 +
-https://["Documentación de Google Cloud: Cambiar la cuenta de servicio y los ámbitos de acceso para una instancia"^]
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentación de Google Cloud: Cambiar la cuenta de servicio y los ámbitos de acceso para una instancia"^]
 
 . Si desea implementar Cloud Volumes ONTAP en otros proyectos, conceda acceso agregando la cuenta de servicio con la función BlueXP a dicho proyecto. Deberá repetir este paso con cada proyecto.
 

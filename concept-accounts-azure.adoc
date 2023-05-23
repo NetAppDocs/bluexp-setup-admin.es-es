@@ -22,7 +22,7 @@ Descubre cómo BlueXP utiliza las credenciales y permisos de Azure para realizar
 
 Al implementar un conector desde BlueXP, necesita utilizar una cuenta de Azure o una entidad de servicio con permisos para implementar la máquina virtual Connector. Los permisos necesarios se enumeran en la link:task-set-up-permissions-azure.html["Política de implementación de conectores para Azure"].
 
-Cuando BlueXP pone en marcha la máquina virtual Connector en Azure, habilita una https://["identidad administrada asignada por el sistema"^] en una máquina virtual, crea un rol personalizado y lo asigna a la máquina virtual. La función proporciona a BlueXP los permisos necesarios para gestionar recursos y procesos dentro de esa suscripción a Azure. link:reference-permissions-azure.html["Revise cómo BlueXP utiliza los permisos"].
+Cuando BlueXP pone en marcha la máquina virtual Connector en Azure, habilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada asignada por el sistema"^] en una máquina virtual, crea un rol personalizado y lo asigna a la máquina virtual. La función proporciona a BlueXP los permisos necesarios para gestionar recursos y procesos dentro de esa suscripción a Azure. link:reference-permissions-azure.html["Revise cómo BlueXP utiliza los permisos"].
 
 image:diagram_permissions_initial_azure.png["Imagen conceptual que muestra la implementación de BlueXP de un conector en una cuenta y una suscripción de Azure. Se habilita una identidad administrada asignada por el sistema y se asigna una función personalizada a la máquina virtual conector."]
 

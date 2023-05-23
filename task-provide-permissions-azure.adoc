@@ -50,13 +50,13 @@ NOTE: BlueXP Operator es el nombre predeterminado que se proporciona en la direc
 BlueXP ahora tiene los permisos que necesita para realizar acciones en Azure en su nombre.
 
 .El futuro
-Vaya a la https://["Consola BlueXP"^] Para empezar a utilizar el conector con BlueXP.
+Vaya a la https://console.bluexp.netapp.com["Consola BlueXP"^] Para empezar a utilizar el conector con BlueXP.
 
 --
 .Director de servicios
 --
 .Pasos
-. Vaya a la https://["Consola BlueXP"^] e inicie sesión.
+. Vaya a la https://console.bluexp.netapp.com["Consola BlueXP"^] e inicie sesión.
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
 +
 image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]

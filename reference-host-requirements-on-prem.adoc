@@ -35,12 +35,12 @@ El conector es compatible con las versiones en inglés de estos sistemas operati
 Hipervisor:: Se requiere un hipervisor con configuración básica o alojado certificado para ejecutar Ubuntu, CentOS o Red Hat Enterprise Linux.
 +
 --
-https://["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
+https://access.redhat.com/certified-hypervisors["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
 
 --
 CPU:: 4 núcleos o 4 vCPU
 RAM:: 14 GB
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
 Espacio en disco en /var:: Debe haber 20 GIB de espacio disponibles
-Motor Docker:: Se requiere Docker Engine versión 19.3.1 o posterior en el host antes de instalar el conector. https://["Ver las instrucciones de instalación"^]
+Motor Docker:: Se requiere Docker Engine versión 19.3.1 o posterior en el host antes de instalar el conector. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
 

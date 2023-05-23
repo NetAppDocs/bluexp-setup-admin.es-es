@@ -26,9 +26,9 @@ Al crear el conector, debe especificar el vnet y la subred donde debería residi
 
 == Región de Azure
 
-El conector debe ponerse en marcha en la misma región de Azure que los sistemas Cloud Volumes ONTAP que gestione o en https://["Par de regiones de Azure"^] Para los sistemas Cloud Volumes ONTAP. Este requisito garantiza que se utilice una conexión de enlace privado de Azure entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas.
+El conector debe ponerse en marcha en la misma región de Azure que los sistemas Cloud Volumes ONTAP que gestione o en https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] Para los sistemas Cloud Volumes ONTAP. Este requisito garantiza que se utilice una conexión de enlace privado de Azure entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas.
 
-https://["Conozca cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Conozca cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure"^]
 
 
 
@@ -131,4 +131,4 @@ No hay tráfico entrante en el conector, a menos que lo inicie o si el conector 
 
 == Limitación de dirección IP
 
-Puede haber un conflicto con las direcciones IP en el rango 172. https://["Obtenga más información sobre esta limitación"].
+Puede haber un conflicto con las direcciones IP en el rango 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Obtenga más información sobre esta limitación"].
