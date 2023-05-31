@@ -22,7 +22,7 @@ Pon en marcha el conector en modo privado para poder utilizar BlueXP sin conecti
 
 Descargue el instalador del producto desde el sitio de soporte de NetApp y, a continuación, instale manualmente el conector en su propio host Linux.
 
-Si desea utilizar BlueXP en https://aws.amazon.com/federal/us-intelligence-community/["Entorno de servicios de cloud comercial (C2S) de AWS"^] después, deberá seguir las instrucciones por separado para comenzar en ese entorno. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Descubra cómo comenzar a utilizar Cloud Volumes ONTAP en el entorno AWS C2S"^]
+Si desea utilizar BlueXP en https://aws.amazon.com/federal/us-intelligence-community/["Entorno de servicios de cloud comercial (C2S) de AWS"^] después, deberá seguir las instrucciones por separado para comenzar en ese entorno. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Descubra cómo comenzar a utilizar Cloud Volumes ONTAP en el entorno AWS C2S"^]
 
 .Privilegios requeridos
 Se requieren privilegios de usuario raíz para instalar el conector.

@@ -186,7 +186,7 @@ image:screenshot_gcp_associate.gif["Captura de pantalla de la página de asignac
 .Enlaces relacionados
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Gestione las licencias basadas en la capacidad de su propia licencia para Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Gestiona las licencias BYOL para los servicios de datos de BlueXP"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Gestione las credenciales y suscripciones de AWS para BlueXP"]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["Gestione credenciales y suscripciones de Azure para BlueXP"]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Administrar las credenciales y suscripciones de Google Cloud para BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Gestione las credenciales y suscripciones de AWS para BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gestione credenciales y suscripciones de Azure para BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Administrar las credenciales y suscripciones de Google Cloud para BlueXP"]
 

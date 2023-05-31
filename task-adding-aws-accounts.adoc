@@ -32,7 +32,7 @@ La adición de nuevas credenciales de AWS a BlueXP proporciona a BlueXP los perm
 
 * Añada credenciales de AWS a BlueXP para FSX para ONTAP
 +
-La adición de nuevas credenciales de AWS a BlueXP proporciona a BlueXP los permisos necesarios para crear y gestionar FSX para ONTAP. https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Aprenda a configurar permisos para FSX para ONTAP"^]
+La adición de nuevas credenciales de AWS a BlueXP proporciona a BlueXP los permisos necesarios para crear y gestionar FSX para ONTAP. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Aprenda a configurar permisos para FSX para ONTAP"^]
 
 
 
@@ -175,7 +175,7 @@ No olvide hacer lo siguiente:
 ** Seleccione *otra cuenta de AWS* e introduzca el ID del SaaS BlueXP: 952013314444
 ** Cree una directiva que incluya los permisos necesarios para crear un conector.
 +
-*** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Consulte los permisos necesarios para FSX para ONTAP"^]
+*** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Consulte los permisos necesarios para FSX para ONTAP"^]
 *** link:task-set-up-permissions-aws.html["Ver la directiva de despliegue del conector"]
 
 
@@ -217,7 +217,7 @@ Ahora puede utilizar las credenciales al crear un conector nuevo.
 
 == Añada credenciales a BlueXP para Amazon FSX para ONTAP
 
-Para obtener más información, consulte https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Documentación de BlueXP para Amazon FSX para ONTAP"^]
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Documentación de BlueXP para Amazon FSX para ONTAP"^]
 
 
 

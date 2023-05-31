@@ -47,7 +47,7 @@ La única vez que se requiere un conector para agregar una licencia a la cartera
 Aunque no es necesario un conector para la detección directa de un clúster ONTAP en las instalaciones, se necesita un conector si desea aprovechar las características adicionales de BlueXP.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Obtenga más información acerca de las opciones de detección y gestión para clústeres de ONTAP en las instalaciones"^]
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Obtenga más información acerca de las opciones de detección y gestión para clústeres de ONTAP en las instalaciones"^]
 
 
 
@@ -101,7 +101,7 @@ Se admite un conector en las siguientes ubicaciones:
 * Amazon Web Services
 * Microsoft Azure
 +
-Un conector en Azure debe ponerse en marcha en la misma región de Azure que los sistemas de Cloud Volumes ONTAP que gestione o en https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] Para los sistemas Cloud Volumes ONTAP. Este requisito garantiza que se utilice una conexión de enlace privado de Azure entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Conozca cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure"^]
+Un conector en Azure debe ponerse en marcha en la misma región de Azure que los sistemas de Cloud Volumes ONTAP que gestione o en https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] Para los sistemas Cloud Volumes ONTAP. Este requisito garantiza que se utilice una conexión de enlace privado de Azure entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Conozca cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure"^]
 
 * Google Cloud
 +
@@ -218,11 +218,11 @@ Para configurar esta configuración:
 . link:task-managing-connectors.html["Cambie a otro conector"].
 . Detectar el entorno de trabajo existente.
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["Agregue sistemas Cloud Volumes ONTAP existentes a BlueXP"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Detectar clústeres de ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["Agregue sistemas Cloud Volumes ONTAP existentes a BlueXP"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Detectar clústeres de ONTAP"^]
 
 
-. Ajuste la https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html["Modo de gestión de la capacidad"^]
+. Ajuste la https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage-management.html["Modo de gestión de la capacidad"^]
 +
 Sólo el conector principal debe ajustarse en *modo automático*. Si cambia a otro conector para fines de DR, puede cambiar el modo de gestión de capacidad según sea necesario.
 

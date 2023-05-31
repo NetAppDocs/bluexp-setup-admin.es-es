@@ -192,7 +192,7 @@ Tenga en cuenta que 32 es un valor de ejemplo. El valor que debe utilizar depend
 
 
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["Obtenga más información acerca de la llamada a la API /occm/config"^]
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["Obtenga más información acerca de la llamada a la API /occm/config"^]
 
 
 

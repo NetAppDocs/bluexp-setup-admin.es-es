@@ -53,7 +53,7 @@ La consola de soporte le permite añadir y gestionar sus cuentas de la página d
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Ayuda y seleccione *Soporte*.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["Una captura de pantalla del menú Ayuda en el que Soporte es la primera opción de la lista"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["Una captura de pantalla del menú Ayuda en el que Soporte es la primera opción de la lista"]
 
 . Seleccione *Administración de NSS > Agregar cuenta de NSS*.
 . Cuando se le solicite, seleccione *continuar* para que se le redirija a una página de inicio de sesión de Microsoft.
@@ -78,9 +78,9 @@ Lo mismo sucede si tiene cuentas de NSS de nivel de cliente preexistentes e inte
 
 ** Después de iniciar sesión correctamente, NetApp almacenará el nombre de usuario de NSS.
 +
-Se trata de un ID generado por el sistema que se asigna a su correo electrónico. En la página *NSS Management*, puede mostrar su correo electrónico desde image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["Icono de tres puntos horizontales"] de windows
+Se trata de un ID generado por el sistema que se asigna a su correo electrónico. En la página *NSS Management*, puede mostrar su correo electrónico desde image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["Icono de tres puntos horizontales"] de windows
 
-** Si alguna vez necesita actualizar sus tokens de credenciales de inicio de sesión, también hay una opción *Actualizar credenciales* en la image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["Icono de tres puntos horizontales"] de windows
+** Si alguna vez necesita actualizar sus tokens de credenciales de inicio de sesión, también hay una opción *Actualizar credenciales* en la image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["Icono de tres puntos horizontales"] de windows
 +
 Con esta opción se le solicita que vuelva a iniciar sesión. Tenga en cuenta que el token de estas cuentas caduca después de 90 días. Se enviará una notificación para avisarle de ello.
 
@@ -91,10 +91,10 @@ Con esta opción se le solicita que vuelva a iniciar sesión. Tenga en cuenta qu
 .El futuro
 Los usuarios ahora pueden seleccionar la cuenta al crear nuevos sistemas de Cloud Volumes ONTAP, al registrar los sistemas de Cloud Volumes ONTAP existentes y al registrarse para obtener soporte.
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["Inicio de Cloud Volumes ONTAP en AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Inicio de Cloud Volumes ONTAP en Azure"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Lanzamiento de Cloud Volumes ONTAP en Google Cloud"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["Registro de sistemas de pago por uso"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["Inicio de Cloud Volumes ONTAP en AWS"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["Inicio de Cloud Volumes ONTAP en Azure"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Lanzamiento de Cloud Volumes ONTAP en Google Cloud"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-registering.html["Registro de sistemas de pago por uso"^]
 
 
 

@@ -24,7 +24,7 @@ link:concept-netapp-accounts.html["Descubre cómo funcionan las cuentas de BlueX
 
 Si desea administrar la configuración de su cuenta enviando solicitudes de API, deberá utilizar la API _Tenancy_. Esta API es diferente de la API de BlueXP, que se utiliza para crear y gestionar entornos de trabajo de Cloud Volumes ONTAP.
 
-https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["Vea los extremos de la API de tenancy"^]
+https://docs.netapp.com/us-en/bluexp-automation/tenancy/overview.html["Vea los extremos de la API de tenancy"^]
 
 
 
@@ -148,9 +148,9 @@ El secreto de cliente sólo es visible una vez y BlueXP no lo almacena en ningun
 
 === Obtener un token de portador para una cuenta de servicio
 
-Para realizar llamadas API al https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["API de tenancy"^], necesitará obtener un token del portador para una cuenta de servicio.
+Para realizar llamadas API al https://docs.netapp.com/us-en/bluexp-automation/tenancy/overview.html["API de tenancy"^], necesitará obtener un token del portador para una cuenta de servicio.
 
-https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_token.html["Aprenda a crear un token de cuenta de servicio"^]
+https://docs.netapp.com/us-en/bluexp-automation/platform/create_service_token.html["Aprenda a crear un token de cuenta de servicio"^]
 
 
 
