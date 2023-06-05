@@ -24,6 +24,12 @@ Estas limitaciones son específicas para la configuración y administración de 
 
 
 
+=== Configuración de proxy con usuarios de dominio
+
+BlueXP no admite usuarios de dominio al configurar un servidor proxy para el conector. Cuando se introduce un nombre de usuario para el servidor proxy, debe ser un usuario local.
+
+
+
 === No se debe cambiar la configuración de instancia de EC2 por defecto
 
 Al implementar Connector en AWS, los siguientes ajustes de instancia de EC2 se configuran de forma predeterminada:

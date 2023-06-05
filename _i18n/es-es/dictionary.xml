@@ -799,8 +799,6 @@
   <block id="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="paragraph"><block ref="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ebd7d1e81a9a2891e260eecaa709adbf" category="section-title">Proyecto para Cloud Volumes ONTAP</block>
   <block id="a4ccd00c9229d2a8510153f89f2a576a" category="paragraph">Cloud Volumes ONTAP puede residir en el mismo proyecto que el conector o en un proyecto diferente. Para implementar Cloud Volumes ONTAP en un proyecto diferente, primero debe agregar la cuenta de servicio del conector y la función a ese proyecto.</block>
-  <block id="c5eb6c02a9d49411a265d5ddf6527796" category="inline-link-macro">Aprenda a configurar una cuenta de servicio</block>
-  <block id="b2a3116602dffae5ec2500e053b897f2" category="list-text"><block ref="b2a3116602dffae5ec2500e053b897f2" category="inline-link-macro-rx"></block></block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o cuya interoperabilidad con esta no es óptima. Revise estas limitaciones detenidamente.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">Limitaciones conocidas</block>
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">Estas limitaciones son específicas para la configuración y administración de BlueXP: El conector, la plataforma SaaS, y más.</block>
@@ -1635,7 +1633,6 @@
   <block id="65362b4c54ef572e25b742c44ba41e3e" category="inline-link-macro">Crear y configurar un servicio principal en Azure Active Directorio</block>
   <block id="21df124adba9039de035d33b17717b15" category="inline-image-macro">"Una imagen conceptual que muestra la cuenta inicial de Azure, que recibe permisos a través de una función personalizada y una identidad administrada, y dos cuentas adicionales que reciben permisos a través de una función personalizada y una entidad de servicio."</block>
   <block id="0d613716f3793197f23817b5b3a36ec3" category="paragraph"><block ref="0d613716f3793197f23817b5b3a36ec3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="79f0e2a1f0b9a07786aae7969fdf941c" category="paragraph">Entonces lo haría <block ref="fdb068e0f25207f010bf6b52e6d7dd53" category="inline-link-macro-rx"></block> Proporcionando detalles acerca del director de servicio de AD.</block>
   <block id="920013a5de0f78687797397a6c0ee0d8" category="paragraph"><block ref="96ae547f4f3f25ad031b61cef1d8f2b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd62e3749858cdd06ba5e069b42df256" category="summary">Añada y gestione credenciales de AWS para que BlueXP tenga los permisos que necesita para implementar y gestionar recursos cloud en sus cuentas de AWS. Si administra varias suscripciones de AWS, puede asignar cada una de ellas a diferentes credenciales de AWS desde la página Credentials.</block>
   <block id="ad600f8720689154e64338aee6489d7f" category="doc">Gestione las credenciales y suscripciones de AWS para BlueXP</block>
@@ -2158,7 +2155,6 @@
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH (22) solo es necesario si necesita conectarse al host para solucionar problemas.</block>
   <block id="3944b94e332ebaaeeb1f75ea267f7687" category="paragraph">Al implementar un conector desde BlueXP, necesita utilizar una cuenta de Azure o una entidad de servicio con permisos para implementar la máquina virtual Connector. Los permisos necesarios se enumeran en la <block ref="215c62f8f7b8f0001687c60d93a1178c" category="inline-link-macro-rx"></block>.</block>
   <block id="61d31e18d80b565c39bc938c02808e6f" category="paragraph">Puede poner en marcha todos los sistemas de Cloud Volumes ONTAP con las credenciales iniciales de Azure o bien añadir credenciales adicionales.</block>
-  <block id="75904d63b29699480eda8c85929c78ee" category="paragraph">La identidad administrada asignada por el sistema asignada a la máquina virtual del conector está asociada a la suscripción en la que inició el conector. Si desea seleccionar una suscripción de Azure diferente, tendrá que hacerlo <block ref="fde23217a3c87d38cc57946a4ba7d7b4" category="inline-link-macro-rx"></block>.</block>
   <block id="008c03a90ac1fbf6c15706a19f919f3b" category="paragraph">Si desea utilizar diferentes credenciales de Azure con BlueXP, debe conceder los permisos necesarios mediante <block ref="551303c9f711674f6fbd417b1f488bc0" category="inline-link-macro-rx"></block> Para cada cuenta de Azure. La siguiente imagen muestra dos cuentas adicionales, cada una configurada con una función personalizada y principal de servicio que proporciona permisos:</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">Por ejemplo, es posible cambiar entre credenciales al crear un nuevo entorno de trabajo Cloud Volumes ONTAP:</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">En las secciones anteriores se describe el método de implementación recomendado para el conector, que es de BlueXP. También puede poner en marcha un conector en Azure desde Azure Marketplace y puede instalar el software del conector en su propio host Linux.</block>
@@ -2321,7 +2317,6 @@
   <block id="eec108a26c2c4c3392174c931352146b" category="cell">Despliegue de conectores desde BlueXP</block>
   <block id="2d3fc94cd0898448a15e6e05f4098b6f" category="inline-link-macro">Configure los permisos de AWS</block>
   <block id="5e32b9a1412a74f0635b487d41937c4a" category="cell"><block ref="5e32b9a1412a74f0635b487d41937c4a" category="inline-link-macro-rx"></block></block>
-  <block id="d7977db2bcddda7e6cbf6cfc23b6278b" category="cell">Cuando BlueXP inicia el conector, adjunta una directiva a la instancia que proporciona los permisos necesarios para administrar los recursos y procesos de su cuenta de AWS. Debe configurar la política usted mismo si inicia un conector desde la plataforma, si instala manualmente el conector o si lo hace <block ref="aec3821661a331ee5026b7ddbb2bcb98" category="inline-link-macro-rx"></block>. También debe asegurarse de que la directiva esté actualizada a medida que se añadan nuevos permisos en versiones posteriores.</block>
   <block id="8ff08eb12a4bed8d94e8682a89020c56" category="paragraph">Debe configurar la función personalizada usted mismo si inicia un conector desde la plataforma, si instala manualmente el conector o si lo hace <block ref="3a714b4b67994f94abb2f77ce85a395b" category="inline-link-macro-rx"></block>.</block>
   <block id="cf94f172dc39ef92ca49e3c869407357" category="cell"><block ref="cf94f172dc39ef92ca49e3c869407357" category="inline-link-macro-rx"></block></block>
   <block id="8e83b819241a1bf1d918adcc453afeab" category="cell"><block ref="8e83b819241a1bf1d918adcc453afeab" category="inline-link-macro-rx"></block></block>
@@ -2430,10 +2425,8 @@
   <block id="c0f31a85c681cbd2946d5195b382308e" category="paragraph">Si desea iniciar Cloud Volumes ONTAP en diferentes cuentas de AWS, puede proporcionar claves de AWS para un usuario IAM o el ARN de un rol en una cuenta de confianza. En la siguiente imagen se muestran dos cuentas adicionales, una que proporciona permisos a través de una función IAM en una cuenta de confianza y otra a través de las claves AWS de un usuario de IAM:</block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">A continuación, se agregarían las credenciales de cuenta a BlueXP especificando el nombre de recurso de Amazon (ARN) del rol IAM o las claves de AWS del usuario de IAM.</block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">Aprenda a añadir credenciales de AWS a un conector existente.</block>
-  <block id="51c8ce8bb23533cdcf692a4e99f34896" category="paragraph"><block ref="51c8ce8bb23533cdcf692a4e99f34896" category="inline-link-macro-rx"></block></block>
   <block id="a3d00aa90b48860260586c7be1bec2e8" category="inline-link-macro">Aprenda a añadir credenciales de AWS a BlueXP para Amazon FSX para ONTAP</block>
   <block id="3e9d4cd6e63ede4decfd24e1cd55b4f5" category="inline-link-macro">Aprenda a añadir credenciales de AWS a BlueXP para crear un conector</block>
-  <block id="d53482083698aad0c56365a4b9848a94" category="list-text"><block ref="d53482083698aad0c56365a4b9848a94" category="inline-link-macro-rx"></block></block>
   <block id="3551bffff472d33de9e274227109232f" category="paragraph">En las secciones anteriores se describe el método de implementación recomendado para el conector, que es de BlueXP. También puede poner en marcha un conector en AWS desde AWS Marketplace y puede instalar manualmente el software del conector en su propio host Linux.</block>
   <block id="c369edb322a8885a983610e18f932d0c" category="paragraph">En las implementaciones locales, no se puede configurar la función de IAM para el sistema BlueXP, pero se pueden proporcionar permisos con las claves de acceso de AWS.</block>
   <block id="b8c45dd3fc7b806721f81b6d91964231" category="summary">Después de empezar a utilizar BlueXP en modo privado, puede empezar a utilizar los servicios BlueXP compatibles con modo privado.</block>
@@ -2970,7 +2963,6 @@
   <block id="0a3420a284048b3146bfedfda39bc929" category="list-text">Seleccione *Principal del servicio de Active Directory* para introducir información acerca del principal del servicio de Azure Active Directory que otorga los permisos necesarios:</block>
   <block id="37653ce036b712cbc8dcc5b189d94b80" category="inline-link-macro">Aprenda cómo obtener estos valores para un director de servicio</block>
   <block id="283459c094a8c0f9ef857a405f711530" category="paragraph"><block ref="82e5cd1190c32cd925829227067e3312" category="inline-link-macro-rx"></block>.</block>
-  <block id="870a297127d1f7e2fafbc700250f7ba7" category="paragraph"><block ref="3596f994dc1277abac9bff5ff853fb6f" category="inline-link-macro-rx"></block>.</block>
   <block id="2ad12e29d6b612d0df73a715eb04038a" category="list-text">En *Gestión*, active *identidad administrada asignada por el sistema* para el conector VM seleccionando *On*.</block>
   <block id="827aaa681f80dbd83d41241979226f5a" category="paragraph">Esta configuración es importante porque una identidad administrada permite que la máquina virtual Connector se identifique a sí misma en Azure Active Directory sin proporcionar credenciales. Una vez que haya terminado, deberá asignar la función personalizada a la que creó<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>.</block>
   <block id="f6f67a41d5743f1fd41a2fb8b54fd85b" category="paragraph"><block ref="7e9e5669a04928e1ffa0a9abd020b87e" category="inline-link-macro-rx"></block>.</block>
@@ -3659,4 +3651,20 @@
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">La asociación de credenciales de NSS con su cuenta de BlueXP es diferente de la cuenta de NSS asociada con un inicio de sesión de usuario de BlueXP.</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">Estas credenciales de NSS están asociadas con tu ID de cuenta de BlueXP específico. Los usuarios que pertenecen a la cuenta BlueXP pueden acceder a estas credenciales desde *Soporte &gt; Gestión NSS*.</block>
   <block id="13348442cc6a27032d2b4aa28b75a5d3" category="cell">Búsqueda</block>
+  <block id="41f10588fd19d4ce9160a06b3b02b971" category="paragraph"><block ref="a42750006c41b7be8d7d74e88b9209f7" category="inline-link-macro-rx"></block>.</block>
+  <block id="8bee474fd085c11334ab13b9c1a78d9e" category="inline-link-macro">Aprenda a configurar la cuenta de servicio</block>
+  <block id="2846d36d7005f43bc3cc15749f932ff7" category="list-text"><block ref="2846d36d7005f43bc3cc15749f932ff7" category="inline-link-macro-rx"></block></block>
+  <block id="e9449a821e5687d61739e39e9c79898a" category="paragraph">La identidad administrada asignada por el sistema asignada a la máquina virtual del conector está asociada a la suscripción en la que inició el conector. Si desea seleccionar una suscripción de Azure diferente, tendrá que hacerlo <block ref="f01caac2e85764bbee287cdcbf568231" category="inline-link-macro-rx"></block>.</block>
+  <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">Entonces lo haría <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> Proporcionando detalles acerca del director de servicio de AD.</block>
+  <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
+  <block id="7a3f65e5f9d581964ce0fcd660ba7130" category="list-text"><block ref="7a3f65e5f9d581964ce0fcd660ba7130" category="inline-link-macro-rx"></block></block>
+  <block id="37c1762f10d4fe7f0bd3dd2820e543c3" category="section-title">Configuración de proxy con usuarios de dominio</block>
+  <block id="2ced7e677ffb2b0b579ea765f328f9d9" category="paragraph">BlueXP no admite usuarios de dominio al configurar un servidor proxy para el conector. Cuando se introduce un nombre de usuario para el servidor proxy, debe ser un usuario local.</block>
+  <block id="0964ada151a483bdbffce0cc395edecc" category="admonition">Tome nota de la fecha de vencimiento del certificado. Debe volver a la página de configuración de federación y actualizar el certificado _before_ que caduque. Esta es tu responsabilidad. BlueXP no realiza un seguimiento de la fecha de caducidad. Es mejor trabajar con su equipo de AD para recibir alertas a tiempo.</block>
+  <block id="5b70b2d98b345016c9e69390ea296277" category="admonition">Tome nota de la fecha de caducidad de la clave secreta. Debe volver a la página de configuración de federación y actualizar el certificado _before_ que caduque. Esta es tu responsabilidad. BlueXP no realiza un seguimiento de la fecha de caducidad. Es mejor trabajar con su equipo de AD para recibir alertas a tiempo.</block>
+  <block id="ec2a26203d1e704fea5fe65b3298f175" category="cell">Cuando BlueXP inicia el conector, adjunta una directiva a la instancia que proporciona los permisos necesarios para administrar los recursos y procesos de su cuenta de AWS.
+
+Debe configurar la política usted mismo si inicia un conector desde la plataforma, si instala manualmente el conector o si lo hace <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>.
+
+También debe asegurarse de que la directiva esté actualizada a medida que se añadan nuevos permisos en versiones posteriores.</block>
 </blocks>

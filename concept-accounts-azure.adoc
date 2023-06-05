@@ -36,7 +36,7 @@ Puede poner en marcha todos los sistemas de Cloud Volumes ONTAP con las credenci
 
 == Suscripciones adicionales de Azure para una identidad gestionada
 
-La identidad administrada asignada por el sistema asignada a la máquina virtual del conector está asociada a la suscripción en la que inició el conector. Si desea seleccionar una suscripción de Azure diferente, tendrá que hacerlo link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["asocie la identidad administrada a esas suscripciones"].
+La identidad administrada asignada por el sistema asignada a la máquina virtual del conector está asociada a la suscripción en la que inició el conector. Si desea seleccionar una suscripción de Azure diferente, tendrá que hacerlo link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["asocie la identidad administrada a esas suscripciones"].
 
 
 
@@ -46,7 +46,7 @@ Si desea utilizar diferentes credenciales de Azure con BlueXP, debe conceder los
 
 image:diagram_permissions_multiple_azure.png["Una imagen conceptual que muestra la cuenta inicial de Azure, que recibe permisos a través de una función personalizada y una identidad administrada, y dos cuentas adicionales que reciben permisos a través de una función personalizada y una entidad de servicio."]
 
-Entonces lo haría link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["Agregue las credenciales de cuenta a BlueXP"] Proporcionando detalles acerca del director de servicio de AD.
+Entonces lo haría link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Agregue las credenciales de cuenta a BlueXP"] Proporcionando detalles acerca del director de servicio de AD.
 
 Por ejemplo, es posible cambiar entre credenciales al crear un nuevo entorno de trabajo Cloud Volumes ONTAP:
 

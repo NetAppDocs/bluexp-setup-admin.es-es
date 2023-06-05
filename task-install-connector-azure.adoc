@@ -119,7 +119,7 @@ Tenga en cuenta lo siguiente al configurar la máquina virtual:
 ** El conector puede tener un rendimiento óptimo tanto con discos HDD como SSD.
 ** Elija un tamaño de máquina virtual que cumpla los requisitos de CPU y RAM. Recomendamos DS3 v2.
 +
-link:reference-host-requirements-azure["Revise los requisitos de las máquinas virtuales"].
+link:reference-host-requirements-azure.html["Revise los requisitos de las máquinas virtuales"].
 
 ** Para el grupo de seguridad de red, el conector requiere conexiones entrantes mediante SSH, HTTP y HTTPS. Se requieren algunas reglas más para configuraciones específicas.
 +
