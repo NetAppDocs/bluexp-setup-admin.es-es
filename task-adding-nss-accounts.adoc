@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: 'Proporcione las credenciales para que sus cuentas del sitio de soporte de NetApp (NSS) se registren para admitir, habilitar flujos de trabajo clave para Cloud Volumes ONTAP, etc. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP.' 
+summary: Asocie una cuenta del sitio de soporte de NetApp con su cuenta de BlueXP para habilitar los flujos de trabajo clave para Cloud Volumes ONTAP. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP. 
 ---
 = Administrar las credenciales de NSS asociadas con una cuenta de BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Proporcione las credenciales para que sus cuentas del sitio de soporte
 
 
 [role="lead"]
-Ofrece a BlueXP las credenciales para tus cuentas del sitio de soporte de NetApp (NSS) para que se registren para recibir soporte, habilite flujos de trabajo clave para Cloud Volumes ONTAP y mucho más. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP.
+Asocie una cuenta del sitio de soporte de NetApp con su cuenta de BlueXP para habilitar los flujos de trabajo clave para Cloud Volumes ONTAP. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP.
 
 
 NOTE: BlueXP también admite la asociación de una cuenta NSS por usuario de BlueXP. link:task-manage-user-credentials.html["Aprenda a gestionar las credenciales en el nivel de usuario"].
@@ -25,8 +25,6 @@ NOTE: BlueXP también admite la asociación de una cuenta NSS por usuario de Blu
 
 Se requiere la asociación de las credenciales del sitio de soporte de NetApp con el ID de cuenta de BlueXP específico para habilitar las siguientes tareas en BlueXP:
 
-* Registro para recibir soporte
-* Creación de casos de soporte
 * Puesta en marcha de Cloud Volumes ONTAP cuando usted traiga su propia licencia (BYOL)
 +
 Es necesario proporcionar su cuenta NSS para que BlueXP pueda cargar su clave de licencia y activar la suscripción para el plazo que adquirió. Esto incluye actualizaciones automáticas para renovaciones de términos.
@@ -89,7 +87,7 @@ Con esta opción se le solicita que vuelva a iniciar sesión. Tenga en cuenta qu
 
 
 .El futuro
-Los usuarios ahora pueden seleccionar la cuenta al crear nuevos sistemas de Cloud Volumes ONTAP, al registrar los sistemas de Cloud Volumes ONTAP existentes y al registrarse para obtener soporte.
+Ahora los usuarios pueden seleccionar la cuenta al crear sistemas de Cloud Volumes ONTAP nuevos y cuando registran sistemas Cloud Volumes ONTAP existentes.
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["Inicio de Cloud Volumes ONTAP en AWS"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["Inicio de Cloud Volumes ONTAP en Azure"^]

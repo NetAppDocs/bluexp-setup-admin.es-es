@@ -18,6 +18,58 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
+== 4 de junio de 2023
+
+
+
+=== Conector 3.9.30
+
+* Al abrir un caso de soporte de NetApp desde la consola de soporte, BlueXP ahora abre el caso con la cuenta del sitio de soporte de NetApp asociada con tu inicio de sesión en BlueXP. BlueXP ya usaba la cuenta del sitio de soporte de NetApp asociada con toda la cuenta de BlueXP.
++
+Como parte de este cambio, el registro de soporte para una cuenta de BlueXP se realiza a través de la cuenta del sitio de soporte de NetApp asociada con el inicio de sesión de un usuario en BlueXP. Anteriormente, el registro de soporte se realizaba a través de una cuenta NSS asociada a toda la cuenta de BlueXP. Como resultado, los demás usuarios de BlueXP no verán el mismo estado de registro de soporte si no han asociado una cuenta de sitio de soporte de NetApp con su inicio de sesión de BlueXP. Si has registrado anteriormente tu cuenta de BlueXP para soporte, el estado de registro sigue siendo válido. Solo necesita agregar una cuenta NSS a nivel de usuario para ver el estado.
+
++
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["Aprenda a crear un caso con el soporte de NetApp"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["Descubre cómo gestionar las credenciales asociadas con tu inicio de sesión de BlueXP"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html["Aprenda a registrarse para obtener soporte"]
+
+
+* Ahora puedes buscar la documentación en BlueXP. Los resultados de búsqueda ahora proporcionan enlaces a contenido en docs.netapp.com y kb.netapp.com, lo que podría ayudar a responder una pregunta que tenga.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["Una captura de pantalla de la búsqueda BlueXP que está disponible en la parte superior de la consola."]
+
+* El conector ahora es compatible con las siguientes regiones de AWS:
++
+** Hyderabad (ap-SUR-2)
+** Melbourne (ap-sureste-4)
+** España (eu-SUR-2)
+** EAU (ME-CENTRAL-1)
+** Zúrich (eu-CENTRAL-2)
+
+
+* El conector ahora es compatible con las siguientes regiones de Azure:
++
+** Brasil Sur
+** Francia Sur
+** Jio India Central
+** Jio India West
+** Polonia Central
+** Qatar Central
+
+
+* Ahora el conector es compatible con las siguientes regiones de Google Cloud:
++
+** Colón (EE. UU.-este 5)
+** Dallas (EE.UU.-sur-1)
+
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Consulte la lista completa de las regiones admitidas"^]
+
+
+
+
+
 == 7 de mayo de 2023
 
 

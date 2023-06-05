@@ -403,5 +403,5 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | Notificaciones | Sí | No 
 
 
-| Línea de tiempo | Sí | Sí 
+| Búsqueda | Sí | No 
 |===
