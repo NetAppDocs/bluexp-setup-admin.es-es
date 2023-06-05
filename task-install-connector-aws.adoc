@@ -238,6 +238,9 @@ A continuación encontrará un ejemplo del comando utilizando los dos parámetro
 ** \http://username:password@address:port
 ** \https://address:port
 ** \https://username:password@address:port
++
+El usuario debe ser un usuario local. Los usuarios de dominio no son compatibles.
+
 
 
 +

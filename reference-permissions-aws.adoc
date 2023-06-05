@@ -167,7 +167,8 @@ La segunda directiva proporciona permisos para los siguientes servicios:
                 "ce:GetCostAndUsage",
                 "ce:GetTags",
                 "fsx:Describe*",
-                "fsx:List*"
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
             ],
             "Resource": "*",
             "Effect": "Allow",
@@ -1133,7 +1134,7 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 | s3:ListBucket | No | Sí | No 
 
 
-.4+| Habilitar el cifrado de datos de Cloud Volumes ONTAP mediante el servicio de gestión de claves (KMS) de AWS | Kms:Lista* | Sí | Sí | No 
+.5+| Habilitar el cifrado de datos de Cloud Volumes ONTAP mediante el servicio de gestión de claves (KMS) de AWS | Kms:Lista* | Sí | Sí | No 
 
 
 | Kms:Recifrar* | Sí | No | No 
@@ -1143,6 +1144,9 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 
 
 | Kms:CreateGrant | Sí | Sí | No 
+
+
+| Kms:GenerateDataKeyWithoutPlaintext | Sí | Sí | No 
 
 
 .4+| Obtenga datos de coste de AWS para Cloud Volumes ONTAP | ce:GetReservationUtilización | No | Sí | No 
@@ -1218,6 +1222,14 @@ El conector realiza las siguientes solicitudes de la API para gestionar etiqueta
 == Registro de cambios
 
 A medida que se añadan y eliminen permisos, los anotaremos en las secciones siguientes.
+
+
+
+=== 6 de junio de 2023
+
+Ahora se necesita el siguiente permiso para Cloud Volumes ONTAP:
+
+Kms:GenerateDataKeyWithoutPlaintext
 
 
 
