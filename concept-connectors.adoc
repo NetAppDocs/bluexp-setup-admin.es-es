@@ -58,20 +58,22 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["O
 Al utilizar BlueXP en modo estándar, se necesita un conector para las siguientes funciones y servicios de BlueXP:
 
 * Funciones de gestión de Amazon FSX para ONTAP
-* Detección de Amazon S3
-* Descubrimiento de Azure Blob
+* Almacenamiento Amazon S3
+* Almacenamiento de Azure Blob
 * Backup y recuperación
 * Clasificación
 * Cloud Volumes ONTAP
 * Sistemas E-Series
 * Eficiencia económica ^1^
 * Almacenamiento en caché en el edge
-* Descubrimiento de Google Cloud Storage
+* Buckets de Google Cloud Storage
 * Clústeres de Kubernetes
+* Informes de migración
 * Integración de clústeres de ONTAP en las instalaciones con servicios de datos de BlueXP
 * Resistencia operativa ^1^
 * Sistemas StorageGRID
 * Organización en niveles
+* Almacenamiento en caché de volúmenes
 
 
 ^1^ Mientras puede acceder a estos servicios sin un conector, se requiere un conector para iniciar acciones desde los servicios.

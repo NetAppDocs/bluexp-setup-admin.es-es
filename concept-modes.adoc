@@ -379,6 +379,9 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | Almacenamiento en caché en el edge | No | No 
 
 
+| Informes de migración | No | No 
+
+
 | Resiliencia operativa | No | No 
 
 
@@ -391,17 +394,20 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | Replicación | Sí | Sí 
 
 
-| Organización en niveles | No | No 
+| Organización en niveles | No | No | Almacenamiento en caché de volúmenes 
 
 
-.4+| * Características* | Credenciales | Sí | Sí 
+| No | No .4+| * Características* | Credenciales 
 
 
-| Cuentas de NSS | Sí | No 
+| Sí | Sí | Cuentas de NSS 
 
 
-| Notificaciones | Sí | No 
+| Sí | No | Notificaciones 
 
 
-| Búsqueda | Sí | No 
+| Sí | No | Búsqueda 
+
+
+| Sí | No | Línea de tiempo | Sí 
 |===

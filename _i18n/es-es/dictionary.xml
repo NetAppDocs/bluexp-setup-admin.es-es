@@ -1429,9 +1429,6 @@
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="doc">Más información sobre conectores</block>
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">Cuando se necesita un conector</block>
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Funciones de gestión de Amazon FSX para ONTAP</block>
-  <block id="c3d36b4a46dce16b3ad60eecabc87582" category="list-text">Detección de Amazon S3</block>
-  <block id="bde43e83db72512f1aea47540264c8f0" category="list-text">Descubrimiento de Azure Blob</block>
-  <block id="6060e8f925263dfdc63a751c294072e0" category="list-text">Descubrimiento de Google Cloud Storage</block>
   <block id="9fc1f8c97e791c3c5fa11f21f2c02740" category="list-text">Integración de clústeres de ONTAP en las instalaciones con servicios de datos de BlueXP</block>
   <block id="392d70ca39f31f10bd637936769788df" category="list-text">StorageGRID</block>
   <block id="184e70c253a2ad370c338775e7482497" category="list-text">Detección directa de clústeres de ONTAP en las instalaciones</block>
@@ -3671,4 +3668,9 @@ También debe asegurarse de que la directiva esté actualizada a medida que se a
   <block id="8773d2d5904a6b33e1f92e729d81f86b" category="cell">Kms:GenerateDataKeyWithoutPlaintext</block>
   <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">6 de junio de 2023</block>
   <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Ahora se necesita el siguiente permiso para Cloud Volumes ONTAP:</block>
+  <block id="d79294e72dc3584cc12c98a7a931315d" category="list-text">Almacenamiento Amazon S3</block>
+  <block id="2b3e8f910d66604cd77f93b333670468" category="list-text">Almacenamiento de Azure Blob</block>
+  <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Buckets de Google Cloud Storage</block>
+  <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">Informes de migración</block>
+  <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Almacenamiento en caché de volúmenes</block>
 </blocks>
