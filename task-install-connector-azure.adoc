@@ -174,12 +174,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 
 
 .Acerca de esta tarea
-* La instalación instala las herramientas de línea de comandos de AWS (awscli) para habilitar los procedimientos de recuperación del soporte de NetApp.
-+
-Si recibe un mensaje que ha fallado al instalar el awscli, puede ignorar el mensaje de forma segura. El conector puede funcionar correctamente sin las herramientas.
-
-* El instalador disponible en el sitio de soporte de NetApp puede ser una versión anterior. Después de la instalación, el conector se actualiza automáticamente si hay una nueva versión disponible.
-
+El instalador disponible en el sitio de soporte de NetApp puede ser una versión anterior. Después de la instalación, el conector se actualiza automáticamente si hay una nueva versión disponible.
 
 .Pasos
 . Compruebe que docker está activado y en ejecución.
