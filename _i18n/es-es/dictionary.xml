@@ -165,13 +165,8 @@
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">Desde el host Linux, ejecute los siguientes comandos:</block>
   <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">Después de instalar un conector en Azure, BlueXP puede descubrir automáticamente información sobre las cuentas de almacenamiento de Azure que residen en las suscripciones de Azure donde está instalado el conector. Se añade un entorno de trabajo de Azure Blob al lienzo para que pueda ver esta información.</block>
   <block id="69e6c31f6140607f08425260f2faecb5" category="list-text">En el menú de navegación, selecciona *almacenamiento &gt; Canvas*.</block>
-  <block id="4fa9fc9591ffa247eeef55070b3327a0" category="paragraph">Debería ver automáticamente un entorno de trabajo de Azure Blob un poco después.</block>
   <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Una captura de pantalla de un entorno de trabajo de Azure Blob.</block>
   <block id="33b5e081bfc2a4ff553d44178d68dda0" category="paragraph"><block ref="33b5e081bfc2a4ff553d44178d68dda0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ddf1211c4efc09073771de2cfb4c8add" category="inline-image-macro">Una captura de pantalla que muestra el panel acciones después de seleccionar un entorno de trabajo de Azure Blob. El panel muestra el número total de cuentas de almacenamiento y una acción para utilizar el servicio Sync.</block>
-  <block id="ff6037c85b586250d2e3426572b132dc" category="paragraph"><block ref="ff6037c85b586250d2e3426572b132dc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="60c144c7df7b8788c579926f83c506f9" category="inline-image-macro">Una captura de pantalla que muestra los detalles de un entorno de trabajo de Azure Blob: El número total de cuentas de almacenamiento, el número total de ubicaciones, grupos de recursos, la capacidad total y utilizada, etc.</block>
-  <block id="b8fb2daac759c86243cf205eec39b222" category="paragraph"><block ref="b8fb2daac759c86243cf205eec39b222" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e4e5198cc4ce7f534d554683573c921" category="summary">Cuando BlueXP inicia la instancia de Connector en AWS, asocia una directiva a la instancia que proporciona al conector permisos para administrar recursos y procesos dentro de esa cuenta de AWS. El conector utiliza los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, El servicio de gestión de claves y mucho más.</block>
   <block id="a1dc2e55a815bd7f430fab36f4c28784" category="doc">Permisos de AWS para Connector</block>
   <block id="30782d3f448f611988824827b71e6b96" category="paragraph">Cuando BlueXP inicia la instancia de Connector en AWS, asocia una directiva a la instancia que proporciona al conector permisos para administrar recursos y procesos dentro de esa cuenta de AWS. El conector utiliza los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, El Servicio de gestión de claves (KMS), etc.</block>
@@ -1911,7 +1906,6 @@
   <block id="ca82fdd9a480fcc34a6b470f5ec8e908" category="sidebar">Configure los ajustes de proxy</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">Configuración predeterminada</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">Almacenamiento en cloud detectado</block>
-  <block id="bce447551b8153911559a7a705721ffe" category="sidebar">Consulte sus cuentas de Azure Blob</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">Consulte sus cubos de Google Cloud Storage</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">Administrar credenciales y suscripciones</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Referencia</block>
@@ -2345,10 +2339,7 @@
   <block id="e48cc2b8b425580d8ee1508fd8a29ab2" category="paragraph">El conector ya está instalado y está configurado con su cuenta BlueXP.</block>
   <block id="ba997697bddbedc57faeb5fdc16c15a6" category="inline-link-macro">Proporcione a BlueXP los permisos que haya configurado anteriormente</block>
   <block id="263bf141eee327cfdfe08fdc96fb32bc" category="paragraph"><block ref="53f6e9b699374851a8086ab8319c48f4" category="inline-link-macro-rx"></block>.</block>
-  <block id="dee8aad8e11608028ff3bcbb674cdcde" category="list-text">Instale un conector en la cuenta de Azure donde desee ver las cuentas de almacenamiento de Azure.</block>
   <block id="f0574ea9efbf61e3005311c1ed736537" category="list-text">Seleccione el entorno de trabajo y seleccione una acción en el panel derecho.</block>
-  <block id="1b4dd0d5e9a98e510340de3c3938e7c5" category="list-text">Seleccione *Sincronizar datos* para sincronizar datos con o desde el almacenamiento de Azure Blob.</block>
-  <block id="9e6c19e48717319b0b71ece6d5735a24" category="list-text">Seleccione *Entrar en entorno de trabajo* para ver detalles sobre las cuentas de almacenamiento de Azure en sus Blobs de Azure.</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">Configure las redes en las instalaciones</block>
   <block id="caf7fd71047bbc17e23e603d7a448234" category="paragraph">Por ejemplo, si desea ejecutar Cloud Volumes ONTAP en la nube, debe configurar una conexión VPN desde la red corporativa a la red virtual donde tiene previsto iniciar Cloud Volumes ONTAP.</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">Al instalar manualmente el conector en su propio host Linux, el instalador del conector requiere acceso a las siguientes direcciones URL durante el proceso de instalación:</block>
@@ -3671,4 +3662,10 @@ También debe asegurarse de que la directiva esté actualizada a medida que se a
   <block id="bff35f79163f07f1c3724cc46b19c1f3" category="paragraph">Tenga en cuenta lo siguiente sobre la cuenta de NSS asociada con su inicio de sesión de BlueXP:</block>
   <block id="7919f3886eb3f79725465a41663fb32e" category="list-text">Si intenta asociar una cuenta del sitio de soporte de NetApp a un entorno de trabajo de Cloud Volumes ONTAP, solo podrá elegir entre las cuentas de NSS que se hayan agregado a la cuenta de BlueXP de la que sea miembro.</block>
   <block id="a91658662405c5ec223c95cc1036afce" category="paragraph">Las credenciales en el nivel de cuenta de NSS son diferentes de la cuenta de NSS asociada con tu inicio de sesión en BlueXP. Las credenciales a nivel de cuenta de NSS le permiten implementar Cloud Volumes ONTAP cuando tiene su propia licencia (BYOL), registrar sistemas PAYGO y actualizar el software Cloud Volumes ONTAP.</block>
+  <block id="70c85793f0a33ef534a67f193287a992" category="doc">Gestione sus cuentas de Azure Blob</block>
+  <block id="bbea79834217efc10b46f4ce874042e0" category="inline-link">Ve aquí para ver, crear y gestionar tus cuentas de almacenamiento de Azure mediante BlueXP</block>
+  <block id="925b4bfac5efe2fd0e529d00b71f77ab" category="paragraph">Una función que se acaba de añadir ahora le permite crear y editar cuentas de almacenamiento de Azure.<block ref="3ed7f712e1a5045237f8df14106ff39a" category="inline-link-rx"></block>.</block>
+  <block id="26e3ab611e399c831d813cdff5745975" category="list-text">Ahora, Connector te permite añadir y gestionar cuentas de almacenamiento de Azure desde BlueXP.</block>
+  <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">Descubre cómo añadir nuevas cuentas de almacenamiento de Azure a tus suscripciones de Azure desde BlueXP</block>
+  <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>.</block>
 </blocks>
