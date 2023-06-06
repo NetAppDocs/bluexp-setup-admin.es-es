@@ -62,8 +62,6 @@
   <block id="4212008c2b937ee581ff9e530b8440f8" category="list-text">Privilegios de root para instalar el conector.</block>
   <block id="2d8d8f0bca25643e72f72642f3d69663" category="paragraph">Tiene la opción de configurar un servidor proxy después de la instalación, pero para hacerlo es necesario reiniciar el conector.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">Acerca de esta tarea</block>
-  <block id="3a0381e5879eb05d4447518a0fe21601" category="list-text">La instalación instala las herramientas de línea de comandos de AWS (awscli) para habilitar los procedimientos de recuperación del soporte de NetApp.</block>
-  <block id="c421e739c1e3aa36da0456d7f369e45f" category="paragraph">Si recibe un mensaje que ha fallado al instalar el awscli, puede ignorar el mensaje de forma segura. El conector puede funcionar correctamente sin las herramientas.</block>
   <block id="aad3dfdc62f79a4c10e86004046d9509" category="list-text">El instalador disponible en el sitio de soporte de NetApp puede ser una versión anterior. Después de la instalación, el conector se actualiza automáticamente si hay una nueva versión disponible.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Pasos</block>
   <block id="9764d03a6c521ac6bf9cc6db107b8351" category="list-text">Compruebe que docker está activado y en ejecución.</block>
@@ -1942,8 +1940,6 @@
   <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">Registro de sistemas Cloud Volumes ONTAP de pago por uso</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Actualizar el software Cloud Volumes ONTAP a la versión más reciente</block>
   <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">Estas credenciales están asociadas a su ID de cuenta de BlueXP específico. Los usuarios que pertenecen a la cuenta BlueXP pueden acceder a estas credenciales desde *Soporte &gt; Gestión NSS*.</block>
-  <block id="d4b8ea0f438d980b900fa0c72d88710f" category="list-text">La cuenta no se puede utilizar con ninguna otra función de BlueXP: No con la creación de Cloud Volumes ONTAP, la licencia ni la creación de casos de soporte.</block>
-  <block id="37ab7585b9575599c51022bd3b09813a" category="list-text">Sólo puede haber una cuenta NSS asociada con Digital Advisor y gestión de casos, por usuario.</block>
   <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">La consola de soporte le permite añadir y gestionar sus cuentas de la página de soporte de NetApp para utilizarlas con BlueXP a nivel de cuenta de BlueXP.</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">La cuenta NSS debe ser una cuenta de nivel de cliente (no una cuenta de invitado o temporal). Puede tener varias cuentas de NSS en el nivel del cliente.</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">Sólo puede haber una cuenta NSS si esa cuenta es una cuenta de nivel de partner. Si intenta agregar cuentas de NSS de nivel de cliente y existe una cuenta de nivel de partner, obtendrá el siguiente mensaje de error:</block>
@@ -3598,7 +3594,6 @@
   <block id="b5d4819a4e8d73d085630d52e025ce10" category="paragraph">Esta acción registra la cuenta de BlueXP para recibir soporte y activa la autorización de soporte. Solo un usuario en tu cuenta de BlueXP debe asociar una cuenta del sitio de soporte de NetApp con su inicio de sesión de BlueXP para registrarse en el servicio de soporte y activar la autorización de soporte. Una vez completado, la página *Recursos* muestra que su cuenta está registrada para soporte.</block>
   <block id="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="paragraph"><block ref="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="inline-link-rx"></block></block>
   <block id="1f41c927d23b7f472c07e8cefaaa4155" category="list-text">Al acceder a *Soporte &gt; Administración de casos*, se le pedirá que introduzca sus credenciales de NSS, si aún no lo ha hecho. Esta página permite crear y gestionar los casos de soporte asociados con su cuenta de NSS y su empresa.</block>
-  <block id="455362b49d80ddf5f9cd87d0f39e81ab" category="paragraph">Las credenciales de la página de soporte de NetApp también están asociadas con la cuenta de BlueXP que forma parte de. Las credenciales a nivel de cuenta de NSS le permiten poner en marcha Cloud Volumes ONTAP cuando tiene su propia licencia (BYOL), etc.</block>
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">Descubre cómo gestionar las credenciales asociadas con tu inicio de sesión de BlueXP</block>
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">Para utilizar la funcionalidad *Crear un caso*, primero debes asociar tus credenciales del sitio de soporte de NetApp con el inicio de sesión de BlueXP.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>.</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">Si abre un caso para un sistema ONTAP que tiene un número de serie, su cuenta de NSS deberá estar asociada con el número de serie de ese sistema.</block>
@@ -3673,4 +3668,7 @@ También debe asegurarse de que la directiva esté actualizada a medida que se a
   <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Buckets de Google Cloud Storage</block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">Informes de migración</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Almacenamiento en caché de volúmenes</block>
+  <block id="816a41c8cb7108ca970b7fdff9e2b798" category="list-text">La cuenta no se puede utilizar con licencias de Cloud Volumes ONTAP.</block>
+  <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">Solo puede haber una cuenta de NSS asociada con Digital Advisor y la gestión de casos de soporte, por usuario.</block>
+  <block id="2c0e4e5466a7db131a747ad4e195dc2c" category="paragraph">También puedes asociar credenciales del sitio de soporte de NetApp a la cuenta de BlueXP de la que eres miembro. Las credenciales a nivel de cuenta de NSS le permiten implementar Cloud Volumes ONTAP cuando tiene su propia licencia (BYOL), registrar sistemas PAYGO y actualizar el software Cloud Volumes ONTAP.</block>
 </blocks>
