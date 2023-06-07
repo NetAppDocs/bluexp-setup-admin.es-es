@@ -750,27 +750,6 @@ s3:GetEncryptionConfiguration
 
 === Backup y recuperación
 
-El conector realiza las siguientes solicitudes de la API para poner en marcha la instancia de restauración para el backup y la recuperación de BlueXP:
-
-* ec2:StartuStarInstances
-* ec2:StopInstances
-* ec2:DescribInstances
-* ec2:DescribeInstanceStatus
-* ec2:RunInstances
-* ec2:TerminateInstances
-* ec2:DescribeInstanceAttribute
-* ec2:DescribeImages
-* ec2:CreateTags
-* ec2:CreateVolume
-* ec2:CreateSecurityGroup
-* ec2:DescribeSubnets
-* ec2:DescribeVpcs
-* ec2:regiones describidas
-* Cloudformation:CreateStack
-* Cloudformation:DeleteStack
-* Cloudformation:Describacks
-
-
 El conector realiza las siguientes solicitudes API para gestionar backups en Amazon S3:
 
 * s3:GetBucketLocation
