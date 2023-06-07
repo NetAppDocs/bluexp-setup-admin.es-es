@@ -104,7 +104,8 @@ Ubicación compatible para el conector:: En el modo estándar, el conector es co
 Instalación del conector:: Es posible instalar el conector en un asistente de configuración de BlueXP, desde AWS o Azure Marketplace, o mediante un instalador para instalar manualmente el conector en su propio host Linux en su centro de datos o en la nube.
 Actualizaciones de conectores:: Las actualizaciones automatizadas del software Connector están disponibles en BlueXP con actualizaciones mensuales.
 Acceso a la interfaz de usuario:: Puede accederse a la interfaz de usuario desde la consola basada en web que se proporciona mediante la capa SaaS.
-Extremo de API:: Las llamadas API se realizan al siguiente punto final: \https://cloudmanager.cloud.netapp.com
+Extremo de API:: Las llamadas API se realizan en el siguiente punto final:
+\https://cloudmanager.cloud.netapp.com
 Autenticación:: La autenticación se proporciona a través del servicio cloud de BlueXP mediante auth0 o a través de inicios de sesión del sitio de soporte de NetApp (NSS). la federación de identidades está disponible.
 Servicios compatibles con BlueXP:: Todos los servicios de BlueXP están disponibles para los usuarios.
 Opciones de licencias compatibles:: Las suscripciones a Marketplace y BYOL son compatibles con el modo estándar; sin embargo, las opciones de licencia admitidas dependen del servicio BlueXP que esté utilizando. Consulte la documentación de cada servicio para obtener más información sobre las opciones de licencia disponibles.
@@ -138,7 +139,8 @@ Ubicación compatible para el conector:: En el modo restringido, el conector es 
 Instalación del conector:: Es posible instalar el conector en AWS o Azure Marketplace o una instalación manual en su propio host Linux.
 Actualizaciones de conectores:: Las actualizaciones automatizadas del software Connector están disponibles en BlueXP con actualizaciones mensuales.
 Acceso a la interfaz de usuario:: Puede accederse a la interfaz de usuario desde el conector que ha implementado en su región de cloud.
-Extremo de API:: Las llamadas API se realizan al siguiente punto final: \https://cloudmanager.cloud.netapp.com
+Extremo de API:: Las llamadas API se realizan en el siguiente punto final:
+\https://cloudmanager.cloud.netapp.com
 Autenticación:: La autenticación se proporciona a través del servicio en la nube de BlueXP con auth0. la federación de identidades también está disponible.
 Servicios compatibles con BlueXP:: BlueXP admite los siguientes servicios de almacenamiento y datos con modo restringido:
 +
@@ -154,7 +156,9 @@ Servicios compatibles con BlueXP:: BlueXP admite los siguientes servicios de alm
 | Azure NetApp Files | Soporte completo 
 
 
-| Backup y recuperación | Se admite en regiones gubernamentales y regiones comerciales con modo restringido. No se admite en regiones soberanas con modo restringido. Las siguientes funciones no son compatibles: Aplicaciones, máquinas virtuales y Kubernetes. 
+| Backup y recuperación | Se admite en regiones gubernamentales y regiones comerciales con modo restringido. No se admite en regiones soberanas con modo restringido.
+
+Las siguientes funciones no son compatibles: Aplicaciones, máquinas virtuales y Kubernetes. 
 
 
 | Clasificación  a| 
@@ -174,7 +178,9 @@ Se aplican las siguientes limitaciones:
 | Cartera digital | Puede utilizar la cartera digital con las opciones de licencia admitidas que se indican a continuación para el modo restringido. 
 
 
-| Clústeres de ONTAP en las instalaciones | Se admiten tanto la detección con un conector como la detección sin un conector (detección directa). Cuando detecta un clúster en las instalaciones con un conector, la vista avanzada (System Manager) no es compatible. 
+| Clústeres de ONTAP en las instalaciones | Se admiten tanto la detección con un conector como la detección sin un conector (detección directa).
+
+Cuando detecta un clúster en las instalaciones con un conector, la vista avanzada (System Manager) no es compatible. 
 
 
 | Replicación | Compatible en regiones gubernamentales con modo restringido. No se admite en regiones comerciales o en regiones soberanas con modo restringido. 
@@ -246,7 +252,9 @@ Servicios de BlueXP compatibles en las implementaciones de cloud:: BlueXP admite
 | Servicios compatibles | Notas 
 
 
-| Backup y recuperación | Compatible con regiones comerciales de AWS y Azure. No es compatible con Google Cloud ni en https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] o. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+| Backup y recuperación | Compatible con regiones comerciales de AWS y Azure.
+
+No es compatible con Google Cloud ni en https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] o. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | Como no hay acceso a Internet, las siguientes funciones no están disponibles: Actualizaciones de software automatizadas, AutoSupport e información de costes de AWS. 
@@ -255,7 +263,9 @@ Servicios de BlueXP compatibles en las implementaciones de cloud:: BlueXP admite
 | Cartera digital | Puede utilizar la cartera digital con las opciones de licencia admitidas que se indican a continuación para el modo privado. 
 
 
-| Clústeres de ONTAP en las instalaciones | Requiere conectividad desde el cloud (donde está instalado el conector) al entorno local. No se admite la detección sin conector (detección directa). 
+| Clústeres de ONTAP en las instalaciones | Requiere conectividad desde el cloud (donde está instalado el conector) al entorno local.
+
+No se admite la detección sin conector (detección directa). 
 |===
 --
 Servicios de BlueXP compatibles en implementaciones locales:: BlueXP admite los siguientes servicios de almacenamiento y datos con modo privado cuando el conector está instalado en sus instalaciones:

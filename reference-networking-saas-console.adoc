@@ -21,7 +21,8 @@ A medida que utiliza la consola basada en Web BlueXP que se proporciona a travé
 | Puntos finales | Específico 
 
 
-| \https://console.bluexp.netapp.com \https://*.console.bluexp.netapp.com | Su navegador web se pone en contacto con estas URL cuando utiliza la consola basada en web de BlueXP. 
+| \https://console.bluexp.netapp.com
+\https://*.console.bluexp.netapp.com | Su navegador web se pone en contacto con estas URL cuando utiliza la consola basada en web de BlueXP. 
 
 
  a| 
@@ -36,13 +37,19 @@ Servicios de AWS (amazonaws.com):
 | Necesario para implementar un conector desde BlueXP en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."^] 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com | Necesario para implementar un conector desde BlueXP en la mayoría de las regiones de Azure. 
+| \https://management.azure.com
+
+\https://login.microsoftonline.com | Necesario para implementar un conector desde BlueXP en la mayoría de las regiones de Azure. 
 
 
-| \https://management.microsoftazure.de \https://login.microsoftonline.de | Necesario para implementar un conector desde BlueXP en las regiones de Alemania de Azure. 
+| \https://management.microsoftazure.de
+
+\https://login.microsoftonline.de | Necesario para implementar un conector desde BlueXP en las regiones de Alemania de Azure. 
 
 
-| \https://management.usgovcloudapi.net \https://login.microsoftonline.com | Necesario para desplegar un conector desde BlueXP en las regiones de la Gov de los EE. UU. De Azure. 
+| \https://management.usgovcloudapi.net
+
+\https://login.microsoftonline.com | Necesario para desplegar un conector desde BlueXP en las regiones de la Gov de los EE. UU. De Azure. 
 
 
 | \https://www.googleapis.com | Necesario para desplegar un conector de BlueXP en Google Cloud. 
@@ -51,7 +58,11 @@ Servicios de AWS (amazonaws.com):
 | \https://signin.b2c.netapp.com | Se requiere actualizar las credenciales del sitio de soporte de NetApp (NSS) o añadir nuevas credenciales de NSS a BlueXP. 
 
 
-| \https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | El explorador Web se conecta a estos extremos para una autenticación de usuario centralizada a través de BlueXP. 
+| \https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com | El explorador Web se conecta a estos extremos para una autenticación de usuario centralizada a través de BlueXP. 
 
 
 | \https://widget.intercom.io | Si busca un chat integrado en los productos que le permita hablar con expertos en cloud de NetApp. 

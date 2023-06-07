@@ -79,7 +79,8 @@ La carpeta de instalación del conector se encuentra en la siguiente ubicación:
 
 Los archivos de registro se encuentran en las siguientes carpetas:
 
-* /opt/application/netapp/cloudmanager/log o.
+* /opt/application/netapp/cloudmanager/log
+o.
 * /opt/application/netapp/service-manager-2/logs (a partir de las nuevas instalaciones de 3.9.23)
 +
 Los registros de estas carpetas proporcionan detalles sobre las imágenes de conector y Docker.
@@ -108,7 +109,7 @@ Si el servicio MySQL está inactivo, entonces el servicio occm también está in
 El conector utiliza los siguientes puertos en el host Linux:
 
 * 80 para acceso HTTP
-* 443 para acceso HTTPS
+* 443 para el acceso HTTPS
 
 
 
@@ -135,7 +136,7 @@ Los servicios dependen del servicio docker Runtime que se esté ejecutando
 * El conector utiliza los siguientes puertos en el host Linux:
 +
 ** 80 para acceso HTTP
-** 443 para acceso HTTPS
+** 443 para el acceso HTTPS
 
 
 

@@ -28,7 +28,7 @@ image:diagram_permissions_initial_aws.png["Imagen conceptual que muestra la impl
 
 BlueXP selecciona estas credenciales de AWS de forma predeterminada al crear un entorno de trabajo nuevo para Cloud Volumes ONTAP:
 
-image:screenshot_accounts_select_aws.gif["Captura de pantalla que muestra la opción Cambiar cuenta en la página Detalles  Credentials."]
+image:screenshot_accounts_select_aws.gif["Captura de pantalla que muestra la opción Cambiar cuenta en la página Detalles  Credenciales."]
 
 Puede implementar todos sus sistemas Cloud Volumes ONTAP con las credenciales iniciales de AWS o bien añadir credenciales adicionales.
 
@@ -56,7 +56,7 @@ A continuación, se agregarían las credenciales de cuenta a BlueXP especificand
 
 Después de añadir otro conjunto de credenciales, puede cambiar a ellas al crear un nuevo entorno de trabajo:
 
-image:screenshot_accounts_switch_aws.png["Captura de pantalla que muestra cómo seleccionar entre cuentas de proveedores de cloud tras hacer clic en Switch Account en la página Details  Credentials."]
+image:screenshot_accounts_switch_aws.png["Una captura de pantalla que muestra la selección entre cuentas de proveedor de nube después de hacer clic en Cambiar cuenta en la página Detalles  Credenciales."]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Aprenda a añadir credenciales de AWS a un conector existente."]
 

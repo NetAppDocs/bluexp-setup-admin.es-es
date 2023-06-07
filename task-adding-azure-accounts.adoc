@@ -300,7 +300,7 @@ Para pagar por Cloud Volumes ONTAP a una tarifa por hora (PAYGO), estas credenci
 .Resultado
 Ahora puede cambiar a un conjunto diferente de credenciales La página Details y Credentials https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["al crear un nuevo entorno de trabajo"^]
 
-image:screenshot_accounts_switch_azure.gif["Captura de pantalla que muestra la selección entre credenciales después de seleccionar Editar credenciales en la página Detalles  credenciales."]
+image:screenshot_accounts_switch_azure.gif["Una captura de pantalla que muestra la selección entre credenciales después de seleccionar Editar Credenciales en la página Detalles  Credenciales."]
 
 
 

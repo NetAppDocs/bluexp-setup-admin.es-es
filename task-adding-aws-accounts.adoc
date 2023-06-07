@@ -150,7 +150,7 @@ Para pagar por Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o con un contra
 .Resultado
 Ahora puede cambiar a un conjunto de credenciales diferente de la página Details y Credentials al crear un nuevo entorno de trabajo:
 
-image:screenshot_accounts_switch_aws.png["Captura de pantalla que muestra cómo seleccionar una cuenta de proveedor de cloud tras seleccionar Switch Account en la página Details  Credentials."]
+image:screenshot_accounts_switch_aws.png["Una captura de pantalla que muestra la selección entre cuentas de proveedor de nube después de seleccionar Cambiar cuenta en la página Detalles  credenciales."]
 
 
 

@@ -28,7 +28,7 @@ image:diagram_permissions_initial_azure.png["Imagen conceptual que muestra la im
 
 BlueXP selecciona estas credenciales de Azure de forma predeterminada cuando crea un entorno de trabajo nuevo para Cloud Volumes ONTAP:
 
-image:screenshot_accounts_select_azure.gif["Captura de pantalla que muestra la opción Cambiar cuenta en la página Detalles  Credentials."]
+image:screenshot_accounts_select_azure.gif["Captura de pantalla que muestra la opción Cambiar cuenta en la página Detalles  Credenciales."]
 
 Puede poner en marcha todos los sistemas de Cloud Volumes ONTAP con las credenciales iniciales de Azure o bien añadir credenciales adicionales.
 
@@ -50,7 +50,7 @@ Entonces lo haría link:task-adding-azure-accounts.html#add-additional-azure-cre
 
 Por ejemplo, es posible cambiar entre credenciales al crear un nuevo entorno de trabajo Cloud Volumes ONTAP:
 
-image:screenshot_accounts_switch_azure.gif["Captura de pantalla que muestra cómo seleccionar entre cuentas de proveedores de cloud tras hacer clic en Switch Account en la página Details  Credentials."]
+image:screenshot_accounts_switch_azure.gif["Una captura de pantalla que muestra la selección entre cuentas de proveedor de nube después de hacer clic en Cambiar cuenta en la página Detalles  Credenciales."]
 
 
 

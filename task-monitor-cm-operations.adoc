@@ -143,9 +143,11 @@ image:screenshot-add-email-recipient.png["Captura de pantalla que muestra cómo 
 
 Puede eliminar notificaciones de la página si ya no necesita verlos. Puede descartar todas las notificaciones al mismo tiempo o descartar notificaciones individuales.
 
-Para descartar todas las notificaciones, en el Centro de notificaciones, seleccione image:button_3_vert_dots.png["un icono con tres puntos verticales"] Y selecciona *descartar todo*.image:screenshot_notification_menu.png["Captura de pantalla que muestra el menú Notificaciones para seleccionar los ajustes y descartar todas las opciones."]
+Para descartar todas las notificaciones, en el Centro de notificaciones, seleccione image:button_3_vert_dots.png["un icono con tres puntos verticales"] Y selecciona *descartar todo*.
+image:screenshot_notification_menu.png["Captura de pantalla que muestra el menú Notificaciones para seleccionar los ajustes y descartar todas las opciones."]
 
-Para descartar notificaciones individuales, coloque el cursor sobre la notificación y seleccione *descartar*.image:screenshot_notification_dismiss1.png["Una captura de pantalla que muestra cómo descartar una única notificación."]
+Para descartar notificaciones individuales, coloque el cursor sobre la notificación y seleccione *descartar*.
+image:screenshot_notification_dismiss1.png["Una captura de pantalla que muestra cómo descartar una única notificación."]
 
 
 

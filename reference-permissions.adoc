@@ -71,5 +71,7 @@ link:reference-permissions-azure.html["Permisos de Azure para Connector"]
 | Despliegue del conector | El usuario de Google Cloud que implementa un conector de BlueXP necesita permisos específicos para implementar el conector en Google Cloud. | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Configure los permisos para desplegar el conector"] 
 
 
-| Funcionamiento del conector | La cuenta de servicio de la instancia de Connector VM debe tener permisos específicos para las operaciones del día a día. Debe asociar la cuenta de servicio al conector cuando la despliegue desde BlueXP. También debe asegurarse de que la directiva esté actualizada a medida que se añadan nuevos permisos en versiones posteriores. | link:reference-permissions-gcp.html["Permisos de Google Cloud para Connector"] 
+| Funcionamiento del conector | La cuenta de servicio de la instancia de Connector VM debe tener permisos específicos para las operaciones del día a día. Debe asociar la cuenta de servicio al conector cuando la despliegue desde BlueXP.
+
+También debe asegurarse de que la directiva esté actualizada a medida que se añadan nuevos permisos en versiones posteriores. | link:reference-permissions-gcp.html["Permisos de Google Cloud para Connector"] 
 |===

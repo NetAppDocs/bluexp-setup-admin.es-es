@@ -80,7 +80,7 @@ El conector es compatible con Google Cloud en una instancia de máquina virtual 
 
 --
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
-Espacio en disco en /var:: Debe haber 20 GIB de espacio disponibles
+Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
 Motor Docker:: Se requiere Docker Engine versión 19.3.1 o posterior en el host antes de instalar el conector. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
 
 
@@ -137,16 +137,33 @@ Servicios de AWS (amazonaws.com):
 | Para gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles"^] 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Para gestionar recursos en regiones públicas de Azure. 
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net | Para gestionar recursos en regiones públicas de Azure. 
 
 
-| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | Para gestionar recursos en regiones gubernamentales de Azure. 
+| \https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net | Para gestionar recursos en regiones gubernamentales de Azure. 
 
 
-| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | Para gestionar recursos en regiones de Azure China. 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn | Para gestionar recursos en regiones de Azure China. 
 
 
-| \https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | Para gestionar recursos en Google Cloud. 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | Para gestionar recursos en Google Cloud. 
 
 
 | \https://support.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp. 
@@ -168,7 +185,9 @@ NOTE: El conector se está comunicando actualmente con "cloudmanager.cloud.netap
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | Para actualizar el conector y sus componentes de Docker. 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | Para actualizar el conector y sus componentes de Docker. 
 |===
 
 
@@ -217,7 +236,11 @@ En modo restringido, se puede acceder a la interfaz de usuario de BlueXP desde e
 | \https://signin.b2c.netapp.com | Se requiere actualizar las credenciales del sitio de soporte de NetApp (NSS) o añadir nuevas credenciales de NSS a BlueXP. 
 
 
-| \https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | El explorador Web se conecta a estos extremos para una autenticación de usuario centralizada a través de BlueXP. 
+| \https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com | El explorador Web se conecta a estos extremos para una autenticación de usuario centralizada a través de BlueXP. 
 
 
 | \https://widget.intercom.io | Si busca un chat integrado en los productos que le permita hablar con expertos en cloud de NetApp. 
