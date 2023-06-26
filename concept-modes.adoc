@@ -365,7 +365,7 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | StorageGRID | No | No 
 
 
-.15+| *Servicios* | Backup y recuperación | Sí | Sí 
+.16+| *Servicios* | Backup y recuperación | Sí | Sí 
 
 
 | Clasificación | Sí | Sí 
@@ -402,6 +402,9 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 
 
 | Replicación | Sí | Sí 
+
+
+| Sostenibilidad | No | No 
 
 
 | Organización en niveles | No | No 
