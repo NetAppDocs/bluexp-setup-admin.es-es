@@ -3792,4 +3792,23 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toda la documentación de BlueXP</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">Sostenibilidad</block>
+  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 de julio de 2023</block>
+  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">Conector 3.9.31</block>
+  <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">Ahora puede descubrir clústeres de ONTAP en las instalaciones desde la pestaña *Mi estado* (anteriormente *Mis oportunidades*)</block>
+  <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Aprenda a descubrir clústeres en la página Mi estado</block>
+  <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
+  <block id="6bdb2baa8fe05cff12c22f9f6f8e9e7f" category="list-text">Si utiliza el conector en una región de gobierno de Azure, debe asegurarse de que el conector puede ponerse en contacto con el siguiente punto final:</block>
+  <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\https://occmclientinfragov.azurecr.us</block>
+  <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">Este punto final es necesario para instalar manualmente el conector y para actualizar el conector y sus componentes Docker.</block>
+  <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">Como resultado de este cambio, un conector en una región de Azure Government ya no contacta con el siguiente punto final:</block>
+  <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Tenga en cuenta que este punto final sigue siendo necesario para todas las demás configuraciones de modo restringido y para el modo estándar.</block>
+  <block id="b7e5db85ee5e5c349f5841d09bf19cbe" category="paragraph">Este punto final no es necesario en las regiones gubernamentales de Azure.</block>
+  <block id="8e1098945acc0cdc1dade8505d9ce607" category="paragraph">Este extremo solo se requiere en las regiones gubernamentales de Azure.</block>
+  <block id="2ecb939d80f14a8df5cdeee557b8a6a2" category="cell">\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+Este punto final no es necesario en las regiones gubernamentales de Azure.
+
+\https://occmclientinfragov.azurecr.us
+Este extremo solo se requiere en las regiones gubernamentales de Azure.</block>
 </blocks>
