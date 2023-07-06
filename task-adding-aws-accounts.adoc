@@ -140,7 +140,7 @@ image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Con
 .. *Definir credenciales*: Proporcione el ARN (nombre de recurso de Amazon) de una función de IAM de confianza, o introduzca una clave de acceso de AWS y una clave secreta.
 .. *Suscripción al mercado*: Asocie una suscripción al mercado con estas credenciales suscribiendo ahora o seleccionando una suscripción existente.
 +
-Para pagar por Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o con un contrato anual, las credenciales de AWS deben estar asociadas con una suscripción a Cloud Volumes ONTAP desde AWS Marketplace.
+Para pagar por servicios de BlueXP a una tarifa por hora (PAYGO) o con un contrato anual, las credenciales de AWS deben estar asociadas a una suscripción de AWS Marketplace.
 
 .. *Revisión*: Confirme los detalles sobre las nuevas credenciales y seleccione *Agregar*.
 

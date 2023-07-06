@@ -41,7 +41,7 @@ NOTE: BlueXP Operator es el nombre predeterminado que se proporciona en la direc
 .. Haga clic en *Seleccionar*.
 .. Haga clic en *Siguiente*.
 .. Haga clic en *revisar + asignar*.
-.. Si desea implementar Cloud Volumes ONTAP desde suscripciones adicionales, cambie a esa suscripción y repita estos pasos.
+.. Si desea administrar recursos en suscripciones adicionales de Azure, cambie a esa suscripción y repita estos pasos.
 
 
 

@@ -26,7 +26,7 @@ Cuando BlueXP inicia la instancia de Connector en AWS, crea una función IAM y u
 
 image:diagram_permissions_initial_aws.png["Imagen conceptual que muestra la implementación de BlueXP Connector en una cuenta de AWS. Se asigna una política IAM a una función IAM, que se adjunta a la instancia de BlueXP."]
 
-BlueXP selecciona estas credenciales de AWS de forma predeterminada al crear un entorno de trabajo nuevo para Cloud Volumes ONTAP:
+Si creas un nuevo entorno de trabajo para Cloud Volumes ONTAP, BlueXP selecciona estas credenciales de AWS de forma predeterminada:
 
 image:screenshot_accounts_select_aws.gif["Captura de pantalla que muestra la opción Cambiar cuenta en la página Detalles  Credenciales."]
 

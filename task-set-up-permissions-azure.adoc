@@ -252,7 +252,7 @@ image:screenshot_azure_service_principal_role.png["Una captura de pantalla del p
 El principal de servicio ahora tiene los permisos de Azure necesarios para implementar el conector.
 
 +
-Si desea implementar Cloud Volumes ONTAP desde varias suscripciones a Azure, debe enlazar el principal del servicio con cada una de ellas. BlueXP le permite seleccionar la suscripción que desea utilizar al implementar Cloud Volumes ONTAP.
+Si desea administrar recursos en varias suscripciones de Azure, debe vincular el principal de servicio a cada una de esas suscripciones. Por ejemplo, BlueXP te permite seleccionar la suscripción que desees utilizar al implementar Cloud Volumes ONTAP.
 
 
 
@@ -322,7 +322,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 . Copie el contenido de link:reference-permissions-azure.html["Permisos de función personalizada para el conector"] Y guárdelos en un archivo JSON.
 . Modifique el archivo JSON agregando ID de suscripción de Azure al ámbito asignable.
 +
-Debe añadir el ID para cada suscripción de Azure desde la cual los usuarios crearán sistemas Cloud Volumes ONTAP.
+Debes añadir el ID de cada suscripción de Azure que quieras utilizar con BlueXP.
 
 +
 *ejemplo*
@@ -417,7 +417,7 @@ image:screenshot_azure_service_principal_role.png["Una captura de pantalla del p
 El principal de servicio ahora tiene los permisos de Azure necesarios para implementar el conector.
 
 +
-Si desea implementar Cloud Volumes ONTAP desde varias suscripciones a Azure, debe enlazar el principal del servicio con cada una de ellas. BlueXP le permite seleccionar la suscripción que desea utilizar al implementar Cloud Volumes ONTAP.
+Si desea administrar recursos en varias suscripciones de Azure, debe vincular el principal de servicio a cada una de esas suscripciones. Por ejemplo, BlueXP te permite seleccionar la suscripción que desees utilizar al implementar Cloud Volumes ONTAP.
 
 
 
