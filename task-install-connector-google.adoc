@@ -20,7 +20,9 @@ Cree un conector directamente desde la consola basada en Web BlueXP, utilizando 
 ====
 .BlueXP
 --
-.Lo que necesitará
+.Antes de empezar
+Debe tener lo siguiente:
+
 * Los permisos necesarios de Google Cloud para crear el conector y una cuenta de servicio para el conector VM.
 +
 link:task-set-up-permissions-google.html["Aprenda a configurar los permisos de Google Cloud"]
@@ -72,7 +74,9 @@ Una vez completado el proceso, el conector está disponible para su uso en BlueX
 --
 .gcloud
 --
-.Lo que necesitará
+.Antes de empezar
+Debe tener lo siguiente:
+
 * Los permisos necesarios de Google Cloud para crear el conector y una cuenta de servicio para el conector VM.
 +
 link:task-set-up-permissions-google.html["Aprenda a configurar los permisos de Google Cloud"]
@@ -174,7 +178,9 @@ Abra un explorador web y vaya al https://console.bluexp.netapp.com["Consola Blue
 --
 .Instalación manual
 --
-.Lo que necesitará
+.Antes de empezar
+Debe tener lo siguiente:
+
 * Privilegios de root para instalar el conector.
 * Detalles sobre un servidor proxy, si se necesita un proxy para el acceso a Internet desde el conector.
 +

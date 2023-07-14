@@ -14,7 +14,7 @@ summary: Suscríbase a BlueXP en el mercado de su proveedor de la nube para paga
 
 
 [role="lead"]
-Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora o a través de un contrato anual. Si adquirió una licencia de NetApp, deberá suscribirse a la oferta de mercado. Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede la capacidad de su licencia o si el plazo de la licencia expira.
+Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora (PAYGO) o a través de un contrato anual. Si adquirió una licencia de NetApp (BYOL), también deberá suscribirse a la oferta de mercado. Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede la capacidad de su licencia o si el plazo de la licencia expira.
 
 Una suscripción al mercado permite cargar los siguientes servicios de BlueXP con modo restringido:
 
@@ -73,9 +73,6 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 --
 .Azure
 --
-
-NOTE: En Azure, los contratos anuales no son compatibles con las regiones gubernamentales.
-
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
 . Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.

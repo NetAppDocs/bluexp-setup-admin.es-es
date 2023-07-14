@@ -1,26 +1,6 @@
----
-sidebar: sidebar 
-permalink: task-install-connector-on-prem.html 
-keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: Instale un conector en las instalaciones y, a continuación, inicie sesión y configúrelo para que funcione con su cuenta de BlueXP. 
----
-= Instalar y configurar un conector en las instalaciones
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
-
-[role="lead"]
-Instale un conector en las instalaciones y, a continuación, inicie sesión y configúrelo para que funcione con su cuenta de BlueXP.
-
-
-
-== Instale el conector
-
-Descargue e instale el software Connector en un host Linux existente de forma local.
 
 .Antes de empezar
 Debe tener lo siguiente:
@@ -101,31 +81,21 @@ El usuario debe ser un usuario local. Los usuarios de dominio no son compatibles
 
 
 
-.Resultado
-El conector ya está instalado. Al final de la instalación, el servicio Connector (occm) se reinicia dos veces si ha especificado un servidor proxy.
+. Espere a que finalice la instalación.
++
+Al final de la instalación, el servicio Connector (occm) se reinicia dos veces si ha especificado un servidor proxy.
 
-
-
-== Configure el conector
-
-Regístrese o inicie sesión y, a continuación, configure el conector para que funcione con su cuenta.
-
-.Pasos
-. Abra un explorador web e introduzca la siguiente URL:
+. Abra un explorador Web desde un host que tenga una conexión con la máquina virtual Connector e introduzca la siguiente URL:
 +
 https://_ipaddress_[]
 
-+
-_ipaddress_ puede ser localhost, una dirección IP privada o una dirección IP pública, dependiendo de la configuración del host. Por ejemplo, si el conector está en la nube pública sin una dirección IP pública, debe introducir una dirección IP privada desde un host que tenga una conexión con el host del conector.
-
-. Regístrese o inicie sesión.
-. Después de iniciar sesión, configure BlueXP:
+. Después de iniciar sesión, configure el conector:
 +
 .. Especifique la cuenta BlueXP que desea asociar al conector.
 .. Escriba un nombre para el sistema.
 .. En *¿se está ejecutando en un entorno seguro?* mantener el modo restringido desactivado.
 +
-Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. (Además, el modo restringido no es compatible cuando el conector está instalado en las instalaciones.)
+Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. Sólo debe activar el modo restringido si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de entorno de administración de BlueXP. Si ese es el caso, link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar con BlueXP en modo restringido"].
 
 .. Haga clic en *Vamos a iniciar*.
 
@@ -133,7 +103,4 @@ Debe mantener desactivado el modo restringido porque estos pasos describen cómo
 
 
 .Resultado
-BlueXP está ahora configurado con el conector que acaba de instalar.
-
-.El futuro
-link:task-provide-permissions-on-prem.html["Proporcione a BlueXP los permisos que haya configurado anteriormente"].
+El conector ya está instalado y está configurado con su cuenta BlueXP.

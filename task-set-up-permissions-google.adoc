@@ -145,7 +145,7 @@ Se necesita una cuenta de servicio para proporcionar al conector los permisos qu
 En el ejemplo siguiente se crea una función denominada "conector" en el nivel de proyecto:
 
 +
-los roles de iam de gcloud crean conector --project=myproject --file=connector.yaml
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]

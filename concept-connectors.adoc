@@ -28,6 +28,7 @@ Puede utilizar las siguientes funciones y servicios de BlueXP sin un conector:
 +
 Aunque no es necesario que un conector cree un entorno de trabajo, es necesario crear y gestionar volúmenes, replicar datos e integrar FSx para ONTAP con servicios como la clasificación de BlueXP y la copia y sincronización de BlueXP.
 
+* Catálogo de automatización
 * Azure NetApp Files
 +
 Aunque no es necesario un conector para configurar y gestionar Azure NetApp Files, se necesita un conector para usar la clasificación de BlueXP para analizar datos de Azure NetApp Files.
@@ -49,6 +50,7 @@ Aunque no es necesario un conector para la detección directa de un clúster ONT
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Obtenga más información acerca de las opciones de detección y gestión para clústeres de ONTAP en las instalaciones"^]
 
+* Sostenibilidad
 
 
 

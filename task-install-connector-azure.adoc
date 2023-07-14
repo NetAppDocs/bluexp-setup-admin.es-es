@@ -20,7 +20,9 @@ Cree un conector directamente desde la consola basada en web de BlueXP, desde Az
 ====
 .BlueXP
 --
-.Lo que necesitará
+.Antes de empezar
+Debe tener lo siguiente:
+
 * Una suscripción a Azure.
 * Una red virtual y una subred en su región de Azure preferida.
 * Detalles sobre un servidor proxy, si su empresa requiere un proxy para todo el tráfico saliente de Internet:
@@ -116,18 +118,15 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 Tenga en cuenta lo siguiente al configurar la máquina virtual:
 
 +
-** El conector puede tener un rendimiento óptimo tanto con discos HDD como SSD.
-** Elija un tamaño de máquina virtual que cumpla los requisitos de CPU y RAM. Recomendamos DS3 v2.
-+
-link:reference-host-requirements-azure.html["Revise los requisitos de las máquinas virtuales"].
-
-** Para el grupo de seguridad de red, el conector requiere conexiones entrantes mediante SSH, HTTP y HTTPS. Se requieren algunas reglas más para configuraciones específicas.
+** *VM size*: Elija un tamaño de VM que cumpla con los requisitos de CPU y RAM. Recomendamos DS3 v2.
+** *Discos*: El conector puede funcionar de forma óptima con discos HDD o SSD.
+** *Grupo de seguridad de red*: El conector requiere conexiones entrantes mediante SSH, HTTP y HTTPS.
 +
 link:reference-ports-azure.html["Ver reglas de grupo de seguridad para Azure"].
 
-** En *Gestión*, active *identidad administrada asignada por el sistema* para el conector VM seleccionando *On*.
+** *Identidad*: En *Gestión*, seleccione *Activar identidad administrada asignada por el sistema*.
 +
-Esta configuración es importante porque una identidad administrada permite que la máquina virtual Connector se identifique a sí misma en Azure Active Directory sin proporcionar credenciales. Una vez que haya terminado, deberá asignar la función personalizada a la que creó https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Obtenga más información sobre las identidades gestionadas para recursos de Azure"^].
+Esta configuración es importante porque una identidad administrada permite que la máquina virtual Connector se identifique a sí misma en Azure Active Directory sin proporcionar credenciales. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Obtenga más información sobre las identidades gestionadas para recursos de Azure"^].
 
 
 
@@ -160,7 +159,9 @@ link:task-provide-permissions-azure.html["Proporcione a BlueXP los permisos que 
 --
 .Instalación manual
 --
-.Lo que necesitará
+.Antes de empezar
+Debe tener lo siguiente:
+
 * Privilegios de root para instalar el conector.
 * Detalles sobre un servidor proxy, si se necesita un proxy para el acceso a Internet desde el conector.
 +

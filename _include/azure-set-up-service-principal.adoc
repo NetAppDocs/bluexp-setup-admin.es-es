@@ -1,67 +1,7 @@
----
-sidebar: sidebar 
-permalink: task-set-up-permissions-on-prem.html 
-keywords: set up permissions, cloud permissions, aws permissions, azure permissions, on prem permissions, connector permissions 
-summary: Si desea utilizar servicios BlueXP en AWS o Azure con un conector en las instalaciones, debe configurar los permisos en su proveedor de cloud para que pueda añadir las credenciales al conector después de instalarlo. 
----
-= Configure permisos en el cloud para puestas en marcha en las instalaciones
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
-[role="lead"]
-Si quieres usar los servicios de BlueXP en AWS o Azure con un conector on-premises, necesitas configurar permisos en tu proveedor de nube para que puedas añadir las credenciales al conector después de instalarlo.
-
-
-TIP: ¿Por qué no Google Cloud? Cuando Connector está instalado en las instalaciones, no puede gestionar sus recursos en Google Cloud. El conector debe estar instalado en Google Cloud para administrar los recursos que residen en él.
-
-[role="tabbed-block"]
-====
-.AWS
---
-Cuando el conector está instalado en las instalaciones, debe proporcionar permisos de BlueXP con AWS agregando claves de acceso para un usuario de IAM que tenga los permisos necesarios.
-
-Debe utilizar este método de autenticación si el conector está instalado en las instalaciones. No se puede utilizar la función IAM.
-
-.Pasos
-. Inicie sesión en la consola de AWS y desplácese al servicio IAM.
-. Cree una política:
-+
-.. Haga clic en *Directivas > Crear directiva*.
-.. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].
-.. Finalice los pasos restantes para crear la directiva.
-+
-Dependiendo de los servicios de BlueXP que tenga previsto utilizar, puede que necesite crear una segunda política.
-
-+
-Para las regiones estándar, los permisos se distribuyen en dos directivas. Son necesarias dos políticas debido a un límite máximo de tamaño de carácter para las políticas gestionadas en AWS. link:reference-permissions-aws.html["Obtenga más información sobre las políticas de IAM para el conector"].
-
-
-
-. Adjunte las políticas a un usuario de IAM.
-+
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentación de AWS: Crear roles de IAM"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentación de AWS: Adición y eliminación de políticas de IAM"^]
-
-
-. Asegúrese de que el usuario tiene una clave de acceso que puede agregar a BlueXP después de instalar el conector.
-
-
-.Resultado
-Ahora debe tener claves de acceso para un usuario de IAM que tenga los permisos necesarios. Después de instalar el conector, deberá asociar estas credenciales con el conector de BlueXP.
-
-link:task-provide-permissions-on-prem.html["Aprenda a proporcionar estos permisos a BlueXP"].
-
---
-.Azure
---
-Cuando Connector se instala en las instalaciones, debe proporcionar permisos de BlueXP con Azure al configurar un director de servicio en Active Directory de Azure y obtener las credenciales de Azure que BlueXP necesita.
-
-.Cree una aplicación de Azure Active Directory para el control de acceso basado en roles
 . Asegúrese de tener permisos en Azure para crear una aplicación de Active Directory y para asignar la aplicación a un rol.
 +
 Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentación de Microsoft Azure: Permisos necesarios"^]
@@ -85,7 +25,6 @@ Ha creado la aplicación AD y el director de servicio.
 
 
 
-.Asigne la aplicación a una función
 . Crear un rol personalizado:
 +
 .. Copie el contenido de link:reference-permissions-azure.html["Permisos de función personalizada para el conector"] Y guárdelos en un archivo JSON.
@@ -162,7 +101,6 @@ Si desea implementar Cloud Volumes ONTAP desde varias suscripciones a Azure, deb
 
 
 
-.Añada permisos de API de administración de servicios de Windows Azure
 . En el servicio *Azure Active Directory*, haga clic en *App registrs* y seleccione la aplicación.
 . Haga clic en *permisos de API > Agregar un permiso*.
 . En *API de Microsoft*, seleccione *Administración de servicios Azure*.
@@ -175,7 +113,6 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Una captura de pantalla del po
 
 
 
-.Obtenga el ID de aplicación y el ID de directorio de la aplicación
 . En el servicio *Azure Active Directory*, haga clic en *App registrs* y seleccione la aplicación.
 . Copie el *ID de aplicación (cliente)* y el *ID de directorio (inquilino)*.
 +
@@ -186,7 +123,6 @@ Al agregar la cuenta de Azure a BlueXP, debe proporcionar el ID de la aplicació
 
 
 
-.Cree un secreto de cliente
 . Abra el servicio *Azure Active Directory*.
 . Haga clic en *App registres* y seleccione su aplicación.
 . Haga clic en *certificados y secretos > Nuevo secreto de cliente*.
@@ -200,11 +136,3 @@ image:screenshot_azure_client_secret.gif["Una captura de pantalla del portal de 
 Ahora tiene un secreto de cliente que BlueXP puede utilizarlo para autenticar con Azure AD.
 
 
-
-.Resultado
-Su principal de servicio ahora está configurado y debe haber copiado el ID de aplicación (cliente), el ID de directorio (arrendatario) y el valor del secreto de cliente. Después de instalar el conector, deberá asociar estas credenciales con el conector de BlueXP.
-
-link:task-provide-permissions-on-prem.html["Aprenda a proporcionar estos permisos a BlueXP"].
-
---
-====

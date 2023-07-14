@@ -55,7 +55,7 @@ TIP: Cuando BlueXP crea el conector, aplica un nuevo conjunto de permisos a la i
 . Haga clic en *JSON*.
 . Copie y pegue la siguiente política:
 +
-A modo de recordatorio, esta política solo contiene los permisos necesarios para iniciar la instancia de Connector en AWS desde BlueXP. link:reference-permissions-aws.html["Permite ver los permisos necesarios para la instancia de conector"].
+A modo de recordatorio, esta política solo contiene los permisos necesarios para iniciar la instancia de Connector en AWS desde BlueXP. link:reference-permissions-aws.html["Permite ver los permisos necesarios para la propia instancia del conector"].
 
 +
 [source, json]
@@ -163,27 +163,25 @@ Ahora debe tener un rol de IAM que tenga los permisos necesarios o un usuario de
 
 == Configure permisos para el conector cuando ponga en marcha desde AWS Marketplace
 
-Crear políticas de IAM en AWS y adjuntarlas a un rol de IAM. Al crear el conector desde AWS Marketplace, se le pedirá que seleccione ese rol de IAM.
+Para preparar una implementación de Marketplace, cree políticas de IAM en AWS y adjuntarlas a una función de IAM. Al crear el conector desde AWS Marketplace, se le pedirá que seleccione ese rol de IAM.
 
 .Pasos
-. En la consola IAM, cree una normativa:
+. Inicie sesión en la consola de AWS y desplácese al servicio IAM.
+. Cree una política:
 +
 .. Haga clic en *Directivas > Crear directiva*.
-.. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Políticas de IAM para el conector"].
+.. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].
 .. Finalice los pasos restantes para crear la directiva.
 +
-Dependiendo de los servicios de BlueXP que tenga previsto utilizar, puede que necesite crear una segunda política.
-
-+
-Para las regiones estándar, los permisos se distribuyen en dos directivas. Son necesarias dos políticas debido a un límite máximo de tamaño de carácter para las políticas gestionadas en AWS.
+Dependiendo de los servicios de BlueXP que tenga previsto utilizar, puede que necesite crear una segunda política. Para las regiones estándar, los permisos se distribuyen en dos directivas. Son necesarias dos políticas debido a un límite máximo de tamaño de carácter para las políticas gestionadas en AWS. link:reference-permissions-aws.html["Obtenga más información sobre las políticas de IAM para el conector"].
 
 
 
-. En la consola del IAM, cree un rol IAM:
+. Cree un rol IAM:
 +
 .. Haga clic en *roles > Crear rol*.
 .. Seleccione *Servicio AWS > EC2*.
-.. Agregue permisos asociando las directivas creadas en el paso anterior.
+.. Agregue permisos asociando la directiva que acaba de crear.
 .. Finalice los pasos restantes para crear la función.
 
 
@@ -196,7 +194,7 @@ Ahora tiene el rol de IAM que se puede asociar a la instancia de EC2 durante la 
 
 == Configure los permisos que se asignarán después de la instalación manual
 
-Si instala manualmente el software Connector en su propio host Linux en AWS, puede proporcionar permisos de las siguientes formas:
+Si planea instalar manualmente el software Connector en su propio host Linux en AWS, puede proporcionar permisos de las siguientes maneras:
 
 * Opción 1: Crear políticas IAM y asociar las políticas a una función IAM que se puede asociar a la instancia de EC2.
 * Opción 2: Proporcione BlueXP con claves de acceso de AWS para un usuario de IAM que tenga los permisos necesarios.
@@ -207,24 +205,22 @@ Si instala manualmente el software Connector en su propio host Linux en AWS, pue
 .Rol IAM
 --
 .Pasos
-. En la consola IAM, cree una normativa:
+. Inicie sesión en la consola de AWS y desplácese al servicio IAM.
+. Cree una política:
 +
 .. Haga clic en *Directivas > Crear directiva*.
 .. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].
 .. Finalice los pasos restantes para crear la directiva.
 +
-Dependiendo de los servicios de BlueXP que tenga previsto utilizar, puede que necesite crear una segunda política.
-
-+
-Para las regiones estándar, los permisos se distribuyen en dos directivas. Son necesarias dos políticas debido a un límite máximo de tamaño de carácter para las políticas gestionadas en AWS. link:reference-permissions-aws.html["Obtenga más información sobre las políticas de IAM para el conector"].
+Dependiendo de los servicios de BlueXP que tenga previsto utilizar, puede que necesite crear una segunda política. Para las regiones estándar, los permisos se distribuyen en dos directivas. Son necesarias dos políticas debido a un límite máximo de tamaño de carácter para las políticas gestionadas en AWS. link:reference-permissions-aws.html["Obtenga más información sobre las políticas de IAM para el conector"].
 
 
 
-. En la consola del IAM, cree un rol IAM:
+. Cree un rol IAM:
 +
 .. Haga clic en *roles > Crear rol*.
 .. Seleccione *Servicio AWS > EC2*.
-.. Agregue permisos asociando las directivas creadas en el paso anterior.
+.. Agregue permisos asociando la directiva que acaba de crear.
 .. Finalice los pasos restantes para crear la función.
 
 
@@ -237,7 +233,8 @@ Ahora tiene la función IAM que puede asociar con la instancia de EC2 después d
 .Clave de acceso de AWS
 --
 .Pasos
-. En la consola IAM, cree una normativa:
+. Inicie sesión en la consola de AWS y desplácese al servicio IAM.
+. Cree una política:
 +
 .. Haga clic en *Directivas > Crear directiva*.
 .. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].

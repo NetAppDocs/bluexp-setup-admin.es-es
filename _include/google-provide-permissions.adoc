@@ -1,0 +1,16 @@
+= 
+:allow-uri-read: 
+
+
+Asocie la cuenta de servicio a la máquina virtual del conector.
+
+.Pasos
+. Vaya al portal de Google Cloud y asigne la cuenta de servicio a la instancia de Connector VM.
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentación de Google Cloud: Cambiar la cuenta de servicio y los ámbitos de acceso para una instancia"^]
+
+. Si quieres gestionar recursos en otros proyectos, otorga acceso agregando la cuenta de servicio con el rol BlueXP a ese proyecto. Deberá repetir este paso con cada proyecto.
+
+
+.Resultado
+BlueXP ahora tiene los permisos que necesita para realizar acciones en Google Cloud en su nombre.

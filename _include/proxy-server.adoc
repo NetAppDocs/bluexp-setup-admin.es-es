@@ -1,0 +1,12 @@
+= 
+:allow-uri-read: 
+
+
+Si su organización requiere la implementación de un servidor proxy para todo el tráfico saliente de Internet, obtenga la siguiente información acerca del proxy HTTP o HTTPS:
+
+* Dirección IP
+* Credenciales
+* Certificado HTTPS
+
+
+Deberá proporcionar esta información durante la instalación.

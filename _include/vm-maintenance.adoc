@@ -1,0 +1,9 @@
+= 
+:allow-uri-read: 
+
+
+El mantenimiento del sistema operativo en el host del conector es responsabilidad suya. Por ejemplo, debe aplicar actualizaciones de seguridad al sistema operativo en el host del conector siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo.
+
+Tenga en cuenta que no es necesario detener ningún servicio en el host del conector cuando se ejecuta una actualización del SO.
+
+Si necesita parar e iniciar el conector VM, debe hacerlo desde la consola de su proveedor de cloud o mediante los procedimientos estándar para la gestión en las instalaciones.

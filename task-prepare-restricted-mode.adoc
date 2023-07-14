@@ -100,7 +100,7 @@ El conector debe tener una conexión de red a la ubicación en la que desea gest
 
 === Acceso saliente a Internet para instalaciones manuales
 
-Si piensa instalar manualmente el conector en su propio host Linux, el instalador del conector requiere acceso a las siguientes direcciones URL durante el proceso de instalación:
+Al instalar manualmente el conector en su propio host Linux, el instalador del conector requiere acceso a las siguientes direcciones URL durante el proceso de instalación:
 
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
@@ -126,7 +126,7 @@ Es posible que el host intente actualizar paquetes de sistema operativo durante 
 
 La ubicación de red en la que implemente el conector debe tener una conexión a Internet saliente. El conector requiere acceso saliente a Internet para ponerse en contacto con los siguientes extremos con el fin de gestionar recursos y procesos dentro de su entorno de nube pública.
 
-[cols="2*"]
+[cols="2a,1a"]
 |===
 | Puntos finales | Específico 
 
@@ -141,28 +141,43 @@ Servicios de AWS (amazonaws.com):
 * Servicio de token de seguridad (STS)
 * Simple Storage Service (S3)
 
-| Para gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles"^] 
+ a| 
+Para gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles"^]
 
 
-| \https://management.azure.com
+
+ a| 
+\https://management.azure.com
 \https://login.microsoftonline.com
 \https://blob.core.windows.net
-\https://core.windows.net | Para gestionar recursos en regiones públicas de Azure. 
+\https://core.windows.net
+ a| 
+Para gestionar recursos en regiones públicas de Azure.
 
 
-| \https://management.usgovcloudapi.net
+
+ a| 
+\https://management.usgovcloudapi.net
 \https://login.microsoftonline.us
 \https://blob.core.usgovcloudapi.net
-\https://core.usgovcloudapi.net | Para gestionar recursos en regiones gubernamentales de Azure. 
+\https://core.usgovcloudapi.net
+ a| 
+Para gestionar recursos en regiones gubernamentales de Azure.
 
 
-| \https://management.chinacloudapi.cn
+
+ a| 
+\https://management.chinacloudapi.cn
 \https://login.chinacloudapi.cn
 \https://blob.core.chinacloudapi.cn
-\https://core.chinacloudapi.cn | Para gestionar recursos en regiones de Azure China. 
+\https://core.chinacloudapi.cn
+ a| 
+Para gestionar recursos en regiones de Azure China.
 
 
-| \https://www.googleapis.com/compute/v1/
+
+ a| 
+\https://www.googleapis.com/compute/v1/
 \https://compute.googleapis.com/compute/v1
 \https://cloudresourcemanager.googleapis.com/v1/projects
 \https://www.googleapis.com/compute/beta
@@ -170,10 +185,17 @@ Servicios de AWS (amazonaws.com):
 \https://www.googleapis.com/storage/v1
 \https://iam.googleapis.com/v1
 \https://cloudkms.googleapis.com/v1
-\https://www.googleapis.com/deploymentmanager/v2/projects | Para gestionar recursos en Google Cloud. 
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+Para gestionar recursos en Google Cloud.
 
 
-| \https://support.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp. 
+
+ a| 
+\https://support.netapp.com
+ a| 
+Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp.
+
 
 
  a| 
@@ -192,13 +214,17 @@ NOTE: El conector se está comunicando actualmente con "cloudmanager.cloud.netap
 
 
 
-| \https://*.blob.core.windows.net
+ a| 
+\https://*.blob.core.windows.net
 
 \https://cloudmanagerinfraprod.azurecr.io
 Este punto final no es necesario en las regiones gubernamentales de Azure.
 
 \https://occmclientinfragov.azurecr.us
-Este extremo solo se requiere en las regiones gubernamentales de Azure. | Para actualizar el conector y sus componentes de Docker. 
+Este extremo solo se requiere en las regiones gubernamentales de Azure.
+ a| 
+Para actualizar el conector y sus componentes de Docker.
+
 |===
 
 
@@ -210,6 +236,8 @@ Si su organización requiere la implementación de un servidor proxy para todo e
 * Credenciales
 * Certificado HTTPS
 
+
+Deberá proporcionar esta información durante la instalación.
 
 
 
@@ -227,11 +255,15 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 === Puertos
 
-No hay tráfico entrante en el conector, a menos que lo inicie.
+No hay tráfico entrante al conector, a menos que lo inicie o si el conector se utiliza como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP al soporte de NetApp.
 
-HTTP (80) y HTTPS (443) proporcionan acceso a la consola BlueXP. SSH (22) solo es necesario si necesita conectarse al host para solucionar problemas.
+* HTTP (80) y HTTPS (443) proporcionan acceso a la interfaz de usuario local, que utilizará en raras circunstancias.
+* SSH (22) solo es necesario si necesita conectarse al host para solucionar problemas.
+* Las conexiones de entrada a través del puerto 3128 son necesarias si implementa sistemas Cloud Volumes ONTAP en una subred en la que no hay una conexión de Internet de salida disponible.
++
+Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet de salida para enviar mensajes AutoSupport, BlueXP configura automáticamente esos sistemas Cloud Volumes ONTAP para que utilicen un servidor proxy incluido con el conector. El único requisito es asegurarse de que el grupo de seguridad del conector permite conexiones entrantes a través del puerto 3128. Tendrá que abrir este puerto después de desplegar el conector.
 
-Las conexiones de entrada a través del puerto 3128 son necesarias si implementa sistemas Cloud Volumes ONTAP en una subred en la que no hay una conexión de Internet de salida disponible. Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet de salida para enviar mensajes AutoSupport, BlueXP configura automáticamente esos sistemas Cloud Volumes ONTAP para que utilicen un servidor proxy incluido con el conector. El único requisito es asegurarse de que el grupo de seguridad del conector permite conexiones entrantes a través del puerto 3128. Tendrá que abrir este puerto después de desplegar el conector.
+
 
 
 
@@ -302,7 +334,8 @@ Ahora tiene un rol de IAM para la instancia de Connector EC2.
 Configurar permisos y una clave de acceso para un usuario de IAM. Deberá proporcionar a BlueXP la clave de acceso de AWS después de instalar el conector y configurar BlueXP.
 
 .Pasos
-. En la consola IAM, cree una normativa:
+. Inicie sesión en la consola de AWS y desplácese al servicio IAM.
+. Cree una política:
 +
 .. Haga clic en *Directivas > Crear directiva*.
 .. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].
@@ -321,7 +354,7 @@ Para las regiones estándar, los permisos se distribuyen en dos directivas. Son 
 ** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentación de AWS: Adición y eliminación de políticas de IAM"^]
 
 
-. Asegúrese de que el usuario tiene claves de acceso que puede agregar a BlueXP después de instalar el conector.
+. Asegúrese de que el usuario tiene una clave de acceso que puede agregar a BlueXP después de instalar el conector.
 
 
 .Resultado
@@ -333,14 +366,14 @@ La cuenta ahora tiene los permisos necesarios.
 Cree un rol personalizado de Azure con los permisos necesarios. Asignará este rol al conector VM.
 
 .Pasos
-. Si tiene pensado instalar manualmente el software en su propio host, habilite una identidad gestionada asignada por el sistema en para que pueda proporcionar los permisos de Azure necesarios a través de una función personalizada.
+. Si tiene pensado instalar manualmente el software en su propio host, habilite una identidad gestionada asignada por el sistema en la máquina virtual para poder ofrecer los permisos de Azure necesarios a través de un rol personalizado.
 +
 https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Documentación de Microsoft Azure: Configure las identidades gestionadas para los recursos de Azure en una máquina virtual mediante el portal de Azure"^]
 
 . Copie el contenido de link:reference-permissions-azure.html["Permisos de función personalizada para el conector"] Y guárdelos en un archivo JSON.
 . Modifique el archivo JSON agregando ID de suscripción de Azure al ámbito asignable.
 +
-Debe añadir el ID para cada suscripción de Azure desde la cual los usuarios crearán sistemas Cloud Volumes ONTAP.
+Debes añadir el ID de cada suscripción de Azure que quieras utilizar con BlueXP.
 
 +
 *ejemplo*
@@ -384,7 +417,7 @@ Crear y configurar un servicio principal en Azure Active Directory y obtener las
 .Cree una aplicación de Azure Active Directory para el control de acceso basado en roles
 . Asegúrese de tener permisos en Azure para crear una aplicación de Active Directory y para asignar la aplicación a un rol.
 +
-Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentación de Microsoft Azure: Permisos necesarios"^].
+Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentación de Microsoft Azure: Permisos necesarios"^]
 
 . Desde el portal de Azure, abra el servicio *Azure Active Directory*.
 +
@@ -405,35 +438,80 @@ Ha creado la aplicación AD y el director de servicio.
 
 
 
-.Asigne la función personalizada a la aplicación
-. En el portal de Azure, abra el servicio *Suscripciones*.
-. Seleccione la suscripción.
-. Haga clic en *Control de acceso (IAM) > Agregar > Agregar asignación de funciones*.
-. En la ficha *rol*, seleccione el rol *operador BlueXP* y haga clic en *Siguiente*.
-. En la ficha *Miembros*, realice los siguientes pasos:
+.Asigne la aplicación a una función
+. Crear un rol personalizado:
 +
-.. Mantener seleccionado *Usuario, grupo o principal de servicio*.
-.. Haga clic en *Seleccionar miembros*.
+.. Copie el contenido de link:reference-permissions-azure.html["Permisos de función personalizada para el conector"] Y guárdelos en un archivo JSON.
+.. Modifique el archivo JSON agregando ID de suscripción de Azure al ámbito asignable.
++
+Debe añadir el ID para cada suscripción de Azure desde la cual los usuarios crearán sistemas Cloud Volumes ONTAP.
+
++
+*ejemplo*
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. Use el archivo JSON para crear una función personalizada en Azure.
++
+En los pasos siguientes se describe cómo crear la función mediante Bash en Azure Cloud Shell.
+
++
+*** Comenzar https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Shell de cloud de Azure"^] Y seleccione el entorno Bash.
+*** Cargue el archivo JSON.
++
+image:screenshot_azure_shell_upload.png["Una captura de pantalla de Azure Cloud Shell donde puede elegir la opción para cargar un archivo."]
+
+*** Use la interfaz de línea de comandos de Azure para crear el rol personalizado:
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+Ahora debe tener una función personalizada denominada operador BlueXP que puede asignar a la máquina virtual Connector.
+
+
+
+
+
+. Asigne la aplicación al rol:
++
+.. En el portal de Azure, abra el servicio *Suscripciones*.
+.. Seleccione la suscripción.
+.. Haga clic en *Control de acceso (IAM) > Agregar > Agregar asignación de funciones*.
+.. En la ficha *rol*, seleccione el rol *operador BlueXP* y haga clic en *Siguiente*.
+.. En la ficha *Miembros*, realice los siguientes pasos:
++
+*** Mantener seleccionado *Usuario, grupo o principal de servicio*.
+*** Haga clic en *Seleccionar miembros*.
 +
 image:screenshot-azure-service-principal-role.png["Captura de pantalla del portal de Azure que muestra la ficha Miembros al agregar una función a una aplicación."]
 
-.. Busque el nombre de la aplicación.
+*** Busque el nombre de la aplicación.
 +
 Veamos un ejemplo:
 
 +
 image:screenshot_azure_service_principal_role.png["Una captura de pantalla del portal de Azure que muestra el formulario de asignación de funciones Add en el portal de Azure."]
 
-.. Seleccione la aplicación y haga clic en *Seleccionar*.
-.. Haga clic en *Siguiente*.
+*** Seleccione la aplicación y haga clic en *Seleccionar*.
+*** Haga clic en *Siguiente*.
 
 
-. Haga clic en *revisar + asignar*.
+.. Haga clic en *revisar + asignar*.
 +
 El principal de servicio ahora tiene los permisos de Azure necesarios para implementar el conector.
 
 +
 Si desea implementar Cloud Volumes ONTAP desde varias suscripciones a Azure, debe enlazar el principal del servicio con cada una de ellas. BlueXP le permite seleccionar la suscripción que desea utilizar al implementar Cloud Volumes ONTAP.
+
+
 
 
 

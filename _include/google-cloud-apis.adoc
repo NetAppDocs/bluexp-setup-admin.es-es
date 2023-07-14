@@ -1,0 +1,14 @@
+= 
+:allow-uri-read: 
+
+
+* API de Cloud Deployment Manager V2
+* API de registro en la nube
+* API de Cloud Resource Manager
+* API del motor de computación
+* API de gestión de acceso e identidad (IAM)
+* API del servicio de gestión de claves de cloud (KMS)
++
+(Solo es obligatorio si piensas utilizar el backup y la recuperación de datos de BlueXP con claves de cifrado gestionadas por el cliente (CMEK))
+
+

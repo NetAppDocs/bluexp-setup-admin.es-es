@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+Puede haber un conflicto con las direcciones IP en el rango 172. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["Obtenga más información sobre esta limitación"].

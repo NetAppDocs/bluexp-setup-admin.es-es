@@ -66,6 +66,8 @@ Análisis y control:: Use herramientas para supervisar, asignar y optimizar su a
 --
 * https://bluexp.netapp.com/netapp-cloud-data-sense["Clasificación"^]
 * https://bluexp.netapp.com/digital-advisor["Asesor digital"^]
+* https://bluexp.netapp.com/digital-advisor["Eficiencia económica"^]
+* https://bluexp.netapp.com/digital-advisor["Resiliencia operativa"^]
 * https://bluexp.netapp.com/ransomware-protection["Protección contra ransomware"^]
 
 
@@ -90,7 +92,7 @@ El precio de BlueXP depende de los servicios que usted planea utilizar. https://
 
 == Cómo funciona BlueXP
 
-BlueXP incluye una consola basada en web que se proporciona a través de la capa SaaS, cuentas que proporcionan multi-tenancy y conectores que gestionan Cloud Volumes ONTAP y otros servicios cloud.
+BlueXP incluye una consola basada en web que se proporciona a través de la capa de SaaS, cuentas que proporcionan multi-tenancy y conectores que gestionan los entornos de trabajo y habilitan los servicios en la nube de BlueXP.
 
 
 
@@ -110,7 +112,7 @@ link:concept-netapp-accounts.html["Más información acerca de las cuentas"].
 
 === Conectores
 
-No necesitas un conector para empezar con BlueXP, pero tendrás que crear un conector para desbloquear todas las funciones y servicios de BlueXP. Un conector permite la gestión de recursos y procesos en sus entornos locales y de cloud. Es necesario utilizar Cloud Volumes ONTAP y otros servicios de datos.
+No necesitas un conector para empezar con BlueXP, pero tendrás que crear un conector para desbloquear todas las funciones y servicios de BlueXP. Un conector permite la gestión de recursos y procesos en sus entornos locales y de cloud. Es necesario gestionar entornos de trabajo (por ejemplo, Cloud Volumes ONTAP y clústeres de ONTAP en las instalaciones) y usar muchos servicios de datos de BlueXP.
 
 link:concept-connectors.html["Más información sobre conectores"].
 

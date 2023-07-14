@@ -1,0 +1,87 @@
+= 
+:allow-uri-read: 
+
+
+| Servicios de AWS (amazonaws.com):
+
+* Formación CloudFormation
+* Cloud computing elástico (EC2)
+* Gestión de acceso e identidad (IAM)
+* Servicio de gestión de claves (KMS)
+* Servicio de token de seguridad (STS)
+* Simple Storage Service (S3)
+
+
+| Gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles"^]
+
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net
+
+| Para administrar recursos en regiones públicas de Azure.
+
+|
+\https://management.azure.microsoft.scloud
+\https://login.microsoftonline.microsoft.scloud
+\https://blob.core.microsoft.scloud
+\https://core.microsoft.scloud
+
+| Para administrar recursos en la región de Azure IL6.
+
+| \https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net
+
+| Para administrar recursos en regiones gubernamentales de Azure.
+
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn
+
+| Para administrar recursos en las regiones de Azure China.
+
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects
+
+| Para administrar recursos en Google Cloud.
+
+| \https://support.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte técnico de NetApp.
+
+| \https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+| Para proporcionar servicios y funciones de SaaS en BlueXP.
+
+
+NOTE: El conector se está comunicando actualmente con "cloudmanager.cloud.netapp.com" pero empezará a ponerse en contacto con "api.bluexp.netapp.com" en una próxima versión.
+
+| \https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+
+Para actualizar el conector y sus componentes Docker.
+
+| \https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+Este punto final no es necesario en las regiones gubernamentales de Azure.
+
+\https://occmclientinfragov.azurecr.us
+Este extremo solo se requiere en las regiones gubernamentales de Azure.
+
+Para actualizar el conector y sus componentes Docker.

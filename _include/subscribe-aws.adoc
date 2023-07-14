@@ -1,0 +1,43 @@
+= 
+:allow-uri-read: 
+
+
+.Pasos
+. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
+. Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
++
+Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una suscripción al mercado con credenciales asociadas a BlueXP.
+
++
+image:screenshot_associate_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
+
+. Para asociar las credenciales a una suscripción existente, seleccione la suscripción en la lista desplegable y haga clic en *asociado*.
+. Para asociar las credenciales con una nueva suscripción, haga clic en *Agregar suscripción > continuar* y siga los pasos del AWS Marketplace:
++
+.. Haga clic en *Ver opciones de compra*.
+.. Haga clic en *Suscribirse*.
+.. Haga clic en *Configurar su cuenta*.
++
+Se le redirigirá al sitio web de BlueXP.
+
+.. Desde la página *asignación de suscripción*:
++
+*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
+*** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
++
+BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+
++
+Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
+*** Haga clic en *Guardar*.
++
+En el siguiente vídeo se muestran los pasos para suscribirse desde AWS Marketplace:
+
++
+video::video_subscribing_aws.mp4[width=848,height=480]
+
+
+
+
+

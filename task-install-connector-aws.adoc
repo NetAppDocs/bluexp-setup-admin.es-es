@@ -20,7 +20,9 @@ Cree un conector directamente desde la consola basada en web de BlueXP, desde AW
 ====
 .BlueXP
 --
-.Lo que necesitará
+.Antes de empezar
+Debe tener lo siguiente:
+
 * Un método de autenticación de AWS: Un rol de IAM o claves de acceso para un usuario IAM con los permisos necesarios.
 +
 link:task-set-up-permissions-aws.html["Aprenda a configurar los permisos de AWS"]
@@ -84,7 +86,9 @@ Una vez completado el proceso, el conector está disponible para su uso en BlueX
 --
 .Mercado AWS
 --
-.Lo que necesitará
+.Antes de empezar
+Debe tener lo siguiente:
+
 * Un VPC y una subred que cumplan los requisitos de red.
 +
 link:task-set-up-networking-aws.html["Obtenga información sobre los requisitos de red"].
@@ -94,6 +98,10 @@ link:task-set-up-networking-aws.html["Obtenga información sobre los requisitos 
 link:task-set-up-permissions-aws.html["Aprenda a configurar los permisos de AWS"].
 
 * Permisos para suscribirse y cancelar la suscripción a AWS Marketplace para su usuario de IAM.
+* Comprensión de los requisitos de CPU y RAM para la instancia.
++
+link:reference-host-requirements-aws.html["Revisar requisitos de instancia"].
+
 * Una pareja de claves para la instancia de EC2.
 
 
@@ -112,10 +120,7 @@ Estos pasos describen cómo iniciar la instancia desde la consola EC2 porque la 
 +
 ** *Nombre y etiquetas*: Introduzca un nombre y etiquetas para la instancia.
 ** *Aplicación y OS Image*: Omitir esta sección. El conector AMI ya está seleccionado.
-** *Tipo de instancia*: En función de la disponibilidad de la región, elija uno de los tipos de instancia admitidos (se recomienda t3.xlarge).
-+
-link:reference-host-requirements-aws.html["Revise los requisitos de la instancia"].
-
+** *Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (se recomienda T3.xlarge).
 ** *Par de claves (login)*: Seleccione el par de claves que desea utilizar para conectarse de forma segura a la instancia.
 ** *Ajustes de red*: Edite los ajustes de red según sea necesario:
 +
@@ -132,9 +137,6 @@ link:reference-ports-aws.html["Ver reglas de grupos de seguridad para AWS"].
 
 ** *Configurar almacenamiento*: Mantenga las opciones de almacenamiento predeterminadas.
 ** *Detalles avanzados*: En *perfil de instancia de IAM*, elija la función de IAM que incluye los permisos necesarios para el conector.
-+
-link:task-set-up-permissions-aws.html["Aprenda a configurar los permisos de AWS"].
-
 ** *Resumen*: Revise el resumen y haga clic en *Iniciar instancia*.
 
 
@@ -166,7 +168,9 @@ Abra un explorador web y vaya al https://console.bluexp.netapp.com["Consola Blue
 --
 .Instalación manual
 --
-.Lo que necesitará
+.Antes de empezar
+Debe tener lo siguiente:
+
 * Privilegios de root para instalar el conector.
 * Detalles sobre un servidor proxy, si se necesita un proxy para el acceso a Internet desde el conector.
 +

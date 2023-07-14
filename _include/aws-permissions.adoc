@@ -1,0 +1,32 @@
+= 
+:allow-uri-read: 
+
+
+. Inicie sesión en la consola de AWS y desplácese al servicio IAM.
+. Cree una política:
++
+.. Haga clic en *Directivas > Crear directiva*.
+.. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].
+.. Finalice los pasos restantes para crear la directiva.
+
+
+
+
+. Cree un rol IAM:
++
+.. Haga clic en *roles > Crear rol*.
+.. Seleccione *Servicio AWS > EC2*.
+.. Agregue permisos asociando la directiva que acaba de crear.
+.. Finalice los pasos restantes para crear la función.
+
+
+
+
+. Adjunte las políticas a un usuario de IAM.
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentación de AWS: Crear roles de IAM"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentación de AWS: Adición y eliminación de políticas de IAM"^]
+
+
+. Asegúrese de que el usuario tiene una clave de acceso que puede agregar a BlueXP después de instalar el conector.
+
