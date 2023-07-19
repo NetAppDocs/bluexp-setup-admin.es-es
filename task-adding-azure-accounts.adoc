@@ -137,6 +137,9 @@ Debe enlazar el principal del servicio a una o más suscripciones de Azure y asi
 .Pasos
 . Crear un rol personalizado:
 +
+Tenga en cuenta que puede crear un rol personalizado de Azure mediante el portal de Azure, Azure PowerShell, Azure CLI o la API DE REST. Los siguientes pasos muestran cómo crear el rol con la CLI de Azure. Si prefiere utilizar un método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentación de Azure"^]
+
++
 .. Copie el contenido de link:reference-permissions-azure.html["Permisos de función personalizada para el conector"] Y guárdelos en un archivo JSON.
 .. Modifique el archivo JSON agregando ID de suscripción de Azure al ámbito asignable.
 +

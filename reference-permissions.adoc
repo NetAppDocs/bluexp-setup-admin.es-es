@@ -36,6 +36,18 @@ También debe asegurarse de que la directiva esté actualizada a medida que se a
 
 
 | Funcionamiento de Cloud Volumes ONTAP | Se debe conectar un rol de IAM a cada nodo Cloud Volumes ONTAP en AWS. Lo mismo sucede con el mediador de alta disponibilidad. La opción predeterminada es dejar que BlueXP cree las funciones IAM para usted, pero puede utilizar las suyas propias. | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["Aprenda a configurar las funciones del IAM usted mismo"^] 
+
+
+| Realice un backup de los clústeres de ONTAP en las instalaciones en Amazon S3 | Al activar backups en tus volúmenes de ONTAP, el backup y recuperación de BlueXP te solicita que introduzcas una clave de acceso y un secreto para un usuario de IAM que tenga permisos específicos. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["Configure los permisos S3 para backups"^] 
+
+
+| Realice un backup de los clústeres de ONTAP en las instalaciones en StorageGRID | Cuando preparas StorageGRID como destino de backup para los clústeres de ONTAP, el backup y la recuperación de BlueXP le solicita que introduzca una clave de acceso y un secreto para un usuario de IAM que tiene permisos específicos. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Preparar StorageGRID como destino de backup"^] 
+
+
+| Organiza clústeres de ONTAP locales en niveles en AWS | Al habilitar la organización en niveles de BlueXP en AWS, el asistente le solicita que introduzca una clave de acceso y una clave secreta. Estas credenciales se pasan al clúster de ONTAP para que ONTAP pueda organizar los datos en niveles en el bloque de S3. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["Configura permisos S3 para la organización en niveles"^] 
+
+
+| Organiza clústeres de ONTAP on-premises en StorageGRID | Cuando configuras la organización en niveles de BlueXP en StorageGRID, tienes que proporcionar la organización en niveles de BlueXP con una clave de acceso S3 y una clave secreta. La organización en niveles de BlueXP utiliza las claves para acceder a tus buckets. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Prepare la organización en niveles en StorageGRID"^] 
 |===
 
 
@@ -74,4 +86,20 @@ link:reference-permissions-azure.html["Permisos de Azure para Connector"]
 | Funcionamiento del conector | La cuenta de servicio de la instancia de Connector VM debe tener permisos específicos para las operaciones del día a día. Debe asociar la cuenta de servicio al conector cuando la despliegue desde BlueXP.
 
 También debe asegurarse de que la directiva esté actualizada a medida que se añadan nuevos permisos en versiones posteriores. | link:reference-permissions-gcp.html["Permisos de Google Cloud para Connector"] 
+
+
+| Realice backups de Cloud Volumes ONTAP en Google Cloud  a| 
+Al utilizar el backup y la recuperación de datos de BlueXP para realizar backups de Cloud Volumes ONTAP, debe añadir permisos al conector en las siguientes situaciones:
+
+* Desea utilizar la función de búsqueda y restauración
+* Desea utilizar claves de cifrado gestionadas por el cliente (CMEK)
+
+ a| 
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#verify-or-add-permissions-to-the-connector["Permisos para la función de  Restaurar"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek["Permisos para CMEKs"^]
+
+
+
+
+| Realice un backup de los clústeres de ONTAP en las instalaciones en Google Cloud | Al utilizar el backup y la recuperación de datos de BlueXP para realizar backups de clústeres de ONTAP on-premises, tienes que añadir permisos al conector para poder utilizar la funcionalidad de búsqueda y restauración. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Permisos para la función de  Restaurar"^] 
 |===

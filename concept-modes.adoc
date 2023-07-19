@@ -237,7 +237,7 @@ image:diagram-private-mode-onprem.png["Una imagen conceptual que muestra un cent
 
 BlueXP funciona de la siguiente manera en modo privado:
 
-Comunicación saliente:: No se requiere conectividad saliente. Todos los paquetes, dependencias y componentes esenciales se empaquetan con el conector y se sirven desde la máquina local. La conectividad con los recursos disponibles públicamente de su proveedor de cloud es obligatoria únicamente si se pone en marcha Cloud Volumes ONTAP.
+Comunicación saliente:: No se requiere conectividad saliente en la capa de BlueXP SaaS. Todos los paquetes, dependencias y componentes esenciales se empaquetan con el conector y se sirven desde la máquina local. La conectividad con los recursos disponibles públicamente de su proveedor de cloud es obligatoria únicamente si se pone en marcha Cloud Volumes ONTAP.
 Ubicación compatible para el conector:: En modo privado, el conector es compatible con el cloud o el entorno local.
 Instalación del conector:: Las instalaciones manuales del conector son compatibles con su propio host Linux, tanto en el cloud como en las instalaciones.
 Actualizaciones de conectores:: Debe actualizar el software del conector manualmente. El software del conector se publica en el sitio de soporte de NetApp a intervalos no definidos.
