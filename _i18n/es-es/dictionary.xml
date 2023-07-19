@@ -2906,9 +2906,7 @@ Tenga en cuenta que la página se actualiza entre probar la conexión y habilita
   <block id="be01cd1242a81da984b776c6a5aacb83" category="section-title">Permitir servicios de terceros</block>
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">Permita que los servicios de terceros de su cuenta tengan acceso a servicios de terceros disponibles en BlueXP. Los servicios de terceros son servicios de cloud similares a los que ofrece NetApp, pero son gestionados y respaldados por empresas terceros.</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">En la ficha *Descripción general*, active la opción *permitir servicios de terceros*.</block>
-  <block id="84dddaa8f7ae88c549f969e61659e03a" category="summary">Para poder utilizar las funciones y servicios de BlueXP, deberá proporcionar permisos para que BlueXP pueda realizar operaciones en su entorno de nube. Utilice los vínculos de esta página para acceder rápidamente a los permisos necesarios en BlueXP.</block>
   <block id="f664478fbdfbd15104b014e41c35e88c" category="doc">Resumen de permisos para BlueXP</block>
-  <block id="b26840ebf08ae862c7d257c1229a3091" category="paragraph">Para poder utilizar las funciones y servicios de BlueXP, deberá proporcionar permisos para que BlueXP pueda realizar operaciones en su entorno de nube. Utilice los vínculos de esta página para acceder rápidamente a los permisos que necesita en función de su objetivo.</block>
   <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="section-title">Permisos de AWS</block>
   <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="cell">Enlace</block>
   <block id="eec108a26c2c4c3392174c931352146b" category="cell">Despliegue de conectores desde BlueXP</block>
@@ -3780,7 +3778,6 @@ Este extremo solo se requiere en las regiones gubernamentales de Azure.</block>
   <block id="649c5239d0163afb3411e36c5e857809" category="cell">Cuando preparas StorageGRID como destino de backup para los clústeres de ONTAP, el backup y la recuperación de BlueXP le solicita que introduzca una clave de acceso y un secreto para un usuario de IAM que tiene permisos específicos.</block>
   <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">Preparar StorageGRID como destino de backup</block>
   <block id="62d09ae20af8b1a53c08a95792d3bdb1" category="cell"><block ref="62d09ae20af8b1a53c08a95792d3bdb1" category="inline-link-rx"></block></block>
-  <block id="746562efc5b1b0667c7d322c1bda9554" category="cell">Organiza clústeres de ONTAP locales en niveles en AWS</block>
   <block id="e6b202bba8f7c7c067b2137e58a41397" category="cell">Al habilitar la organización en niveles de BlueXP en AWS, el asistente le solicita que introduzca una clave de acceso y una clave secreta. Estas credenciales se pasan al clúster de ONTAP para que ONTAP pueda organizar los datos en niveles en el bloque de S3.</block>
   <block id="827bb82562627531a1105788bd9826e6" category="inline-link">Configura permisos S3 para la organización en niveles</block>
   <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
@@ -3815,4 +3812,7 @@ Este extremo solo se requiere en las regiones gubernamentales de Azure.</block>
   <block id="d1c50736002ef3676d1c143a04d4cc59" category="list-text">athena:StartQueryExecution</block>
   <block id="e7a0ee2f9390b4213bbeb8838f2d3896" category="list-text">No se requiere conectividad saliente en la capa de BlueXP SaaS. Todos los paquetes, dependencias y componentes esenciales se empaquetan con el conector y se sirven desde la máquina local. La conectividad con los recursos disponibles públicamente de su proveedor de cloud es obligatoria únicamente si se pone en marcha Cloud Volumes ONTAP.</block>
   <block id="75dbd7f878d584e6e9f033b3806519ac" category="sidebar">Prepare la red</block>
+  <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">Para utilizar las funciones y los servicios de BlueXP, deberás proporcionar permisos para que BlueXP pueda realizar operaciones en tu entorno de cloud. Utilice los vínculos de esta página para acceder rápidamente a los permisos que necesita en función de su objetivo.</block>
+  <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">Organiza clústeres de ONTAP locales en niveles en Amazon S3</block>
+  <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">Permisos de StorageGRID</block>
 </blocks>
