@@ -67,8 +67,7 @@
 
 | Para proporcionar servicios y funciones de SaaS en BlueXP.
 
-
-NOTE: El conector se está comunicando actualmente con "cloudmanager.cloud.netapp.com" pero empezará a ponerse en contacto con "api.bluexp.netapp.com" en una próxima versión.
+Tenga en cuenta que el conector se está poniendo en contacto con «cloudmanager.cloud.netapp.com"», pero comenzará a ponerse en contacto con «api.bluexp.netapp.com" en una próxima versión.
 
 | \https://*.blob.core.windows.net
 
