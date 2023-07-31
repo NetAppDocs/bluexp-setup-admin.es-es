@@ -7,7 +7,7 @@
 . Seleccione *instancias*.
 . Seleccione la instancia de conector.
 . Seleccione *acciones > Seguridad > Modificar función IAM*.
-. Seleccione la función IAM y haga clic en *Actualizar función IAM*.
+. Seleccione el rol de IAM y seleccione *Actualizar rol de IAM*.
 
 
 .Resultado

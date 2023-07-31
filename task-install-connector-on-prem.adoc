@@ -127,7 +127,7 @@ _ipaddress_ puede ser localhost, una dirección IP privada o una dirección IP p
 +
 Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. (Además, el modo restringido no es compatible cuando el conector está instalado en las instalaciones.)
 
-.. Haga clic en *Vamos a iniciar*.
+.. Selecciona *Comenzar*.
 
 
 

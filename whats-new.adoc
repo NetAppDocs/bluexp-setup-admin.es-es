@@ -18,6 +18,32 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
+== 30 de julio
+
+
+
+=== Conector 3.9.32
+
+* Ahora puedes usar la API del servicio de auditoría de BlueXP para exportar registros de auditoría.
++
+El servicio de auditoría registra información sobre las operaciones realizadas por los servicios de BlueXP. Esto incluye las direcciones IP de origen, los espacios de trabajo, los conectores utilizados y otros datos de telemetría. Puede utilizar estos datos para determinar qué acciones se realizaron, quién las realizó y cuándo ocurrieron.
+
++
+https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["Obtenga más información sobre el uso de la API del servicio de auditoría"^]
+
++
+Tenga en cuenta que también se puede acceder a este enlace desde la interfaz de usuario de BlueXP en la página Timeline.
+
+* Esta versión del conector también incluye mejoras de Cloud Volumes ONTAP y mejoras del clúster de ONTAP en las instalaciones.
++
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["Obtenga información acerca de las mejoras de Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["Obtenga información acerca de las mejoras del clúster en las instalaciones de ONTAP"^]
+
+
+
+
+
+
 == 2 de julio de 2023
 
 
@@ -238,7 +264,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-
 
 === Conector 3.9.26
 
-* En la página *Iniciar sesión*, ahora se le pedirá que introduzca la dirección de correo electrónico asociada a su inicio de sesión. Después de hacer clic en *Siguiente*, BlueXP le solicita que realice la autenticación mediante el método de autenticación asociado a su inicio de sesión:
+* En la página *Iniciar sesión*, ahora se le pedirá que introduzca la dirección de correo electrónico asociada a su inicio de sesión. Después de seleccionar *Siguiente*, BlueXP te pide que te autentiques mediante el método de autenticación asociado con tu inicio de sesión:
 +
 ** La contraseña de sus credenciales de cloud de NetApp
 ** Sus credenciales de identidad federadas

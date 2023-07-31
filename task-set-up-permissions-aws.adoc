@@ -51,8 +51,8 @@ TIP: Cuando BlueXP crea el conector, aplica un nuevo conjunto de permisos a la i
 
 .Pasos
 . Vaya a la consola IAM de AWS.
-. Haga clic en *Directivas > Crear directiva*.
-. Haga clic en *JSON*.
+. Selecciona *Políticas > Crear política*.
+. Selecciona *JSON*.
 . Copie y pegue la siguiente política:
 +
 A modo de recordatorio, esta política solo contiene los permisos necesarios para iniciar la instancia de Connector en AWS desde BlueXP. link:reference-permissions-aws.html["Permite ver los permisos necesarios para la propia instancia del conector"].
@@ -128,15 +128,15 @@ A modo de recordatorio, esta política solo contiene los permisos necesarios par
     ]
 }
 ----
-. Haga clic en *Siguiente* y agregue etiquetas, si es necesario.
-. Haga clic en *Siguiente* e introduzca un nombre y una descripción.
-. Haga clic en *Crear directiva*.
+. Seleccione *Siguiente* y agregue etiquetas, si es necesario.
+. Selecciona *Siguiente* e introduce un nombre y una descripción.
+. Seleccione *Crear política*.
 . Adjunte la política a una función de IAM que BlueXP puede asumir o a un usuario de IAM para que pueda proporcionar claves de acceso a BlueXP:
 +
 ** (Opción 1) Configurar una función de IAM que BlueXP puede asumir:
 +
 ... Vaya a la consola AWS IAM de la cuenta de destino.
-... En Access Management, haga clic en *roles > Crear función* y siga los pasos para crear la función.
+... En Access Management, seleccione *roles > Crear función* y siga los pasos para crear la función.
 ... En *Tipo de entidad de confianza*, seleccione *cuenta de AWS*.
 ... Seleccione *otra cuenta de AWS* e introduzca el ID de la cuenta de BlueXP SaaS: 952013314444
 ... Seleccione la directiva que ha creado en la sección anterior.
@@ -145,10 +145,10 @@ A modo de recordatorio, esta política solo contiene los permisos necesarios par
 
 ** (Opción 2) Configurar permisos para un usuario de IAM para que pueda proporcionar claves de acceso a BlueXP:
 +
-... En la consola AWS IAM, haga clic en *usuarios* y, a continuación, seleccione el nombre de usuario.
-... Haga clic en *Agregar permisos > Adjuntar directivas existentes directamente*.
+... Desde la consola de AWS IAM, seleccione *Usuarios* y, a continuación, seleccione el nombre de usuario.
+... Selecciona *Añadir permisos > Adjuntar políticas existentes directamente*.
 ... Seleccione la política que ha creado.
-... Haga clic en *Siguiente* y, a continuación, en *Agregar permisos*.
+... Seleccione *Siguiente* y luego seleccione *Agregar permisos*.
 ... Asegúrese de disponer de la clave de acceso y la clave secreta para el usuario del IAM.
 
 
@@ -169,7 +169,7 @@ Para preparar una implementación de Marketplace, cree políticas de IAM en AWS 
 . Inicie sesión en la consola de AWS y desplácese al servicio IAM.
 . Cree una política:
 +
-.. Haga clic en *Directivas > Crear directiva*.
+.. Selecciona *Políticas > Crear política*.
 .. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].
 .. Finalice los pasos restantes para crear la directiva.
 +
@@ -179,7 +179,7 @@ Dependiendo de los servicios de BlueXP que tenga previsto utilizar, puede que ne
 
 . Cree un rol IAM:
 +
-.. Haga clic en *roles > Crear rol*.
+.. Selecciona *Roles > Crear rol*.
 .. Seleccione *Servicio AWS > EC2*.
 .. Agregue permisos asociando la directiva que acaba de crear.
 .. Finalice los pasos restantes para crear la función.
@@ -208,7 +208,7 @@ Si planea instalar manualmente el software Connector en su propio host Linux en 
 . Inicie sesión en la consola de AWS y desplácese al servicio IAM.
 . Cree una política:
 +
-.. Haga clic en *Directivas > Crear directiva*.
+.. Selecciona *Políticas > Crear política*.
 .. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].
 .. Finalice los pasos restantes para crear la directiva.
 +
@@ -218,7 +218,7 @@ Dependiendo de los servicios de BlueXP que tenga previsto utilizar, puede que ne
 
 . Cree un rol IAM:
 +
-.. Haga clic en *roles > Crear rol*.
+.. Selecciona *Roles > Crear rol*.
 .. Seleccione *Servicio AWS > EC2*.
 .. Agregue permisos asociando la directiva que acaba de crear.
 .. Finalice los pasos restantes para crear la función.
@@ -236,7 +236,7 @@ Ahora tiene la función IAM que puede asociar con la instancia de EC2 después d
 . Inicie sesión en la consola de AWS y desplácese al servicio IAM.
 . Cree una política:
 +
-.. Haga clic en *Directivas > Crear directiva*.
+.. Selecciona *Políticas > Crear política*.
 .. Seleccione *JSON* y copie y pegue el contenido del link:reference-permissions-aws.html["Política de IAM para el conector"].
 .. Finalice los pasos restantes para crear la directiva.
 +

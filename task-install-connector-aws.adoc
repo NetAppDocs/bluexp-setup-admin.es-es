@@ -36,15 +36,15 @@ link:task-set-up-networking-aws.html["Obtenga información sobre los requisitos 
 
 
 .Pasos
-. Haga clic en el menú desplegable *conector* y seleccione *Agregar conector*.
+. Seleccione la lista desplegable *Connector* y seleccione *Add Connector*.
 +
 image:screenshot_connector_add.gif["Captura de pantalla que muestra el icono conector en el encabezado y la acción Agregar conector ."]
 
-. Elija *Amazon Web Services* como su proveedor de cloud y haga clic en *continuar*.
+. Elija *Amazon Web Services* como su proveedor de nube y seleccione *Continuar*.
 . En la página *despliegue de un conector*, revise los detalles sobre lo que necesitará. Dispone de dos opciones:
 +
-.. Haga clic en *continuar* para preparar la implementación utilizando la guía del producto. Cada paso de la guía del producto incluye la información que se incluye en esta página de la documentación.
-.. Haga clic en *Ir a implementación* si ya ha preparado siguiendo los pasos de esta página.
+.. Seleccione *Continuar* para prepararse para la implementación mediante la guía del producto. Cada paso de la guía del producto incluye la información que se incluye en esta página de la documentación.
+.. Selecciona *Saltar a la implementación* si ya lo preparaste siguiendo los pasos de esta página.
 
 
 . Siga los pasos del asistente para crear el conector:
@@ -74,7 +74,7 @@ link:reference-ports-aws.html["Ver reglas de grupos de seguridad para AWS"].
 ** *Revisión*: Revise sus selecciones para verificar que su configuración es correcta.
 
 
-. Haga clic en *Agregar*.
+. Seleccione *Agregar*.
 +
 La instancia debe estar lista en unos 7 minutos. Debe permanecer en la página hasta que el proceso se complete.
 
@@ -107,12 +107,12 @@ link:reference-host-requirements-aws.html["Revisar requisitos de instancia"].
 
 .Pasos
 . Vaya a la https://aws.amazon.com/marketplace/pp/B018REK8QG["Página de BlueXP en AWS Marketplace"^]
-. En la página Marketplace, haga clic en *continuar a Suscribirse* y luego haga clic en *continuar a Configuración*.
+. En la página de Marketplace, selecciona *Continuar con la suscripción* y luego selecciona *Continuar con la configuración*.
 +
 image:screenshot-subscribe-aws.png["Una captura de pantalla que muestra los botones continuar Suscribirse y continuar con Configuración en AWS Marketplace."]
 
-. Cambie cualquiera de las opciones predeterminadas y haga clic en *continuar a Iniciar*.
-. En *elegir acción*, seleccione *Iniciar a través de EC2* y, a continuación, haga clic en *Iniciar*.
+. Cambie cualquiera de las opciones predeterminadas y seleccione *Continuar para iniciar*.
+. En *Elegir acción*, selecciona *Iniciar a través de EC2* y luego selecciona *Iniciar*.
 +
 Estos pasos describen cómo iniciar la instancia desde la consola EC2 porque la consola permite asociar una función IAM a la instancia del conector. Esto no es posible usando la acción *Iniciar desde el sitio web*.
 
@@ -137,7 +137,7 @@ link:reference-ports-aws.html["Ver reglas de grupos de seguridad para AWS"].
 
 ** *Configurar almacenamiento*: Mantenga las opciones de almacenamiento predeterminadas.
 ** *Detalles avanzados*: En *perfil de instancia de IAM*, elija la función de IAM que incluye los permisos necesarios para el conector.
-** *Resumen*: Revise el resumen y haga clic en *Iniciar instancia*.
+** *Resumen*: Revisa el resumen y selecciona *Iniciar Instancia*.
 
 
 +
@@ -155,7 +155,7 @@ https://_ipaddress_[]
 +
 Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. Sólo debe activar el modo restringido si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de entorno de administración de BlueXP. Si ese es el caso, link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar con BlueXP en modo restringido"].
 
-.. Haga clic en *Vamos a iniciar*.
+.. Selecciona *Comenzar*.
 
 
 
@@ -261,7 +261,7 @@ https://_ipaddress_[]
 +
 Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. Sólo debe activar el modo restringido si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de entorno de administración de BlueXP. Si ese es el caso, link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar con BlueXP en modo restringido"].
 
-.. Haga clic en *Vamos a iniciar*.
+.. Selecciona *Comenzar*.
 
 
 

@@ -4,12 +4,12 @@
 
 .Pasos
 . Vaya a la https://aws.amazon.com/marketplace/pp/B018REK8QG["Página de BlueXP en AWS Marketplace"^]
-. En la página Marketplace, haga clic en *continuar a Suscribirse* y luego haga clic en *continuar a Configuración*.
+. En la página de Marketplace, selecciona *Continuar con la suscripción* y luego selecciona *Continuar con la configuración*.
 +
 image:screenshot-subscribe-aws.png["Una captura de pantalla que muestra los botones continuar Suscribirse y continuar con Configuración en AWS Marketplace."]
 
-. Cambie cualquiera de las opciones predeterminadas y haga clic en *continuar a Iniciar*.
-. En *elegir acción*, seleccione *Iniciar a través de EC2* y, a continuación, haga clic en *Iniciar*.
+. Cambie cualquiera de las opciones predeterminadas y seleccione *Continuar para iniciar*.
+. En *Elegir acción*, selecciona *Iniciar a través de EC2* y luego selecciona *Iniciar*.
 +
 Estos pasos describen cómo iniciar la instancia desde la consola EC2 porque la consola permite asociar una función IAM a la instancia del conector. Esto no es posible usando la acción *Iniciar desde el sitio web*.
 
@@ -34,7 +34,7 @@ link:reference-ports-aws.html["Ver reglas de grupos de seguridad para AWS"].
 
 ** *Configurar almacenamiento*: Mantenga las opciones de almacenamiento predeterminadas.
 ** *Detalles avanzados*: En *perfil de instancia de IAM*, elija la función de IAM que incluye los permisos necesarios para el conector.
-** *Resumen*: Revise el resumen y haga clic en *Iniciar instancia*.
+** *Resumen*: Revisa el resumen y selecciona *Iniciar Instancia*.
 
 
 

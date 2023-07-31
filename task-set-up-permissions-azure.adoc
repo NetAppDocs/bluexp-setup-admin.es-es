@@ -176,18 +176,18 @@ Asigne la función personalizada al usuario que implementará Connector desde Bl
 
 .Pasos
 . En el portal de Azure, abra el servicio *Suscripciones* y seleccione la suscripción del usuario.
-. Haga clic en *Control de acceso (IAM)*.
-. Haga clic en *Agregar* > *Agregar asignación de rol* y, a continuación, agregue los permisos:
+. Seleccionar *Control de acceso (IAM)*.
+. Seleccione *Agregar* > *Agregar asignación de rol* y, a continuación, agregue los permisos:
 +
-.. Seleccione el rol *Azure SetupAsService* y haga clic en *Siguiente*.
+.. Seleccione el rol *Azure SetupAsService* y seleccione *Siguiente*.
 +
 
 NOTE: Azure SetupAsService es el nombre predeterminado proporcionado en la política de implementación de Connector para Azure. Si seleccionó otro nombre para el rol, seleccione ese nombre.
 
 .. Mantener seleccionado *Usuario, grupo o principal de servicio*.
-.. Haga clic en *Seleccionar miembros*, elija su cuenta de usuario y haga clic en *Seleccionar*.
-.. Haga clic en *Siguiente*.
-.. Haga clic en *revisar + asignar*.
+.. Selecciona *Seleccionar miembros*, elige tu cuenta de usuario y selecciona *Seleccionar*.
+.. Seleccione *Siguiente*.
+.. Seleccione *revisar + asignar*.
 
 
 
@@ -211,8 +211,8 @@ Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/
 +
 image:screenshot_azure_ad.gif["Muestra el servicio de Active Directory en Microsoft Azure."]
 
-. En el menú, haga clic en *App registrs*.
-. Haga clic en *Nuevo registro*.
+. En el menú, seleccione *App registrs*.
+. Seleccione *Nuevo registro*.
 . Especificar detalles acerca de la aplicación:
 +
 ** *Nombre*: Introduzca un nombre para la aplicación.
@@ -220,7 +220,7 @@ image:screenshot_azure_ad.gif["Muestra el servicio de Active Directory en Micros
 ** *Redirigir URI*: Puede dejar este campo en blanco.
 
 
-. Haga clic en *Registrar*.
+. Seleccione *Registrar*.
 +
 Ha creado la aplicación AD y el director de servicio.
 
@@ -229,12 +229,12 @@ Ha creado la aplicación AD y el director de servicio.
 .Asigne la función personalizada a la aplicación
 . En el portal de Azure, abra el servicio *Suscripciones*.
 . Seleccione la suscripción.
-. Haga clic en *Control de acceso (IAM) > Agregar > Agregar asignación de funciones*.
-. En la ficha *rol*, seleccione el rol *operador BlueXP* y haga clic en *Siguiente*.
+. Seleccione *Control de acceso (IAM) > Agregar > Agregar asignación de funciones*.
+. En la ficha *rol*, seleccione el rol *operador de BlueXP* y seleccione *Siguiente*.
 . En la ficha *Miembros*, realice los siguientes pasos:
 +
 .. Mantener seleccionado *Usuario, grupo o principal de servicio*.
-.. Haga clic en *Seleccionar miembros*.
+.. Seleccione *Seleccionar miembros*.
 +
 image:screenshot-azure-service-principal-role.png["Captura de pantalla del portal de Azure que muestra la ficha Miembros al agregar una función a una aplicación."]
 
@@ -245,11 +245,11 @@ Veamos un ejemplo:
 +
 image:screenshot_azure_service_principal_role.png["Una captura de pantalla del portal de Azure que muestra el formulario de asignación de funciones Add en el portal de Azure."]
 
-.. Seleccione la aplicación y haga clic en *Seleccionar*.
-.. Haga clic en *Siguiente*.
+.. Seleccione la aplicación y seleccione *Seleccionar*.
+.. Seleccione *Siguiente*.
 
 
-. Haga clic en *revisar + asignar*.
+. Seleccione *revisar + asignar*.
 +
 El principal de servicio ahora tiene los permisos de Azure necesarios para implementar el conector.
 
@@ -259,20 +259,20 @@ Si desea administrar recursos en varias suscripciones de Azure, debe vincular el
 
 
 .Añada permisos de API de administración de servicios de Windows Azure
-. En el servicio *Azure Active Directory*, haga clic en *App registrs* y seleccione la aplicación.
-. Haga clic en *permisos de API > Agregar un permiso*.
+. En el servicio *Azure Active Directory*, seleccione *App registrs* y seleccione la aplicación.
+. Seleccione *permisos de API > Agregar un permiso*.
 . En *API de Microsoft*, seleccione *Administración de servicios Azure*.
 +
 image:screenshot_azure_service_mgmt_apis.gif["Una captura de pantalla del portal de Azure que muestra los permisos de la API de Azure Service Management."]
 
-. Haga clic en *Access Azure Service Management como usuarios de la organización* y, a continuación, haga clic en *Agregar permisos*.
+. Seleccione *Access Azure Service Management como usuarios de organización* y, a continuación, seleccione *Agregar permisos*.
 +
 image:screenshot_azure_service_mgmt_apis_add.gif["Una captura de pantalla del portal de Azure que muestra la adición de las API de gestión de servicios de Azure."]
 
 
 
 .Obtenga el ID de aplicación y el ID de directorio de la aplicación
-. En el servicio *Azure Active Directory*, haga clic en *App registrs* y seleccione la aplicación.
+. En el servicio *Azure Active Directory*, seleccione *App registrs* y seleccione la aplicación.
 . Copie el *ID de aplicación (cliente)* y el *ID de directorio (inquilino)*.
 +
 image:screenshot_azure_app_ids.gif["Captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (inquilino) de una aplicación en Azure Active Directory."]
@@ -284,10 +284,10 @@ Al agregar la cuenta de Azure a BlueXP, debe proporcionar el ID de la aplicació
 
 .Cree un secreto de cliente
 . Abra el servicio *Azure Active Directory*.
-. Haga clic en *App registres* y seleccione su aplicación.
-. Haga clic en *certificados y secretos > Nuevo secreto de cliente*.
+. Seleccione *App registres* y seleccione su aplicación.
+. Seleccione *certificados y secretos > Nuevo secreto de cliente*.
 . Proporcione una descripción del secreto y una duración.
-. Haga clic en *Agregar*.
+. Seleccione *Agregar*.
 . Copie el valor del secreto de cliente.
 +
 image:screenshot_azure_client_secret.gif["Una captura de pantalla del portal de Azure que muestra un secreto de cliente para el director de servicio de Azure AD."]
@@ -378,8 +378,8 @@ Para obtener más información, consulte https://docs.microsoft.com/en-us/azure/
 +
 image:screenshot_azure_ad.gif["Muestra el servicio de Active Directory en Microsoft Azure."]
 
-. En el menú, haga clic en *App registrs*.
-. Haga clic en *Nuevo registro*.
+. En el menú, seleccione *App registrs*.
+. Seleccione *Nuevo registro*.
 . Especificar detalles acerca de la aplicación:
 +
 ** *Nombre*: Introduzca un nombre para la aplicación.
@@ -387,7 +387,7 @@ image:screenshot_azure_ad.gif["Muestra el servicio de Active Directory en Micros
 ** *Redirigir URI*: Puede dejar este campo en blanco.
 
 
-. Haga clic en *Registrar*.
+. Seleccione *Registrar*.
 +
 Ha creado la aplicación AD y el director de servicio.
 
@@ -442,12 +442,12 @@ Ahora debe tener una función personalizada denominada operador BlueXP que puede
 +
 .. En el portal de Azure, abra el servicio *Suscripciones*.
 .. Seleccione la suscripción.
-.. Haga clic en *Control de acceso (IAM) > Agregar > Agregar asignación de funciones*.
-.. En la ficha *rol*, seleccione el rol *operador BlueXP* y haga clic en *Siguiente*.
+.. Seleccione *Control de acceso (IAM) > Agregar > Agregar asignación de funciones*.
+.. En la ficha *rol*, seleccione el rol *operador de BlueXP* y seleccione *Siguiente*.
 .. En la ficha *Miembros*, realice los siguientes pasos:
 +
 *** Mantener seleccionado *Usuario, grupo o principal de servicio*.
-*** Haga clic en *Seleccionar miembros*.
+*** Seleccione *Seleccionar miembros*.
 +
 image:screenshot-azure-service-principal-role.png["Captura de pantalla del portal de Azure que muestra la ficha Miembros al agregar una función a una aplicación."]
 
@@ -458,11 +458,11 @@ Veamos un ejemplo:
 +
 image:screenshot_azure_service_principal_role.png["Una captura de pantalla del portal de Azure que muestra el formulario de asignación de funciones Add en el portal de Azure."]
 
-*** Seleccione la aplicación y haga clic en *Seleccionar*.
-*** Haga clic en *Siguiente*.
+*** Seleccione la aplicación y seleccione *Seleccionar*.
+*** Seleccione *Siguiente*.
 
 
-.. Haga clic en *revisar + asignar*.
+.. Seleccione *revisar + asignar*.
 +
 El principal de servicio ahora tiene los permisos de Azure necesarios para implementar el conector.
 
@@ -474,20 +474,20 @@ Si desea implementar Cloud Volumes ONTAP desde varias suscripciones a Azure, deb
 
 
 .Añada permisos de API de administración de servicios de Windows Azure
-. En el servicio *Azure Active Directory*, haga clic en *App registrs* y seleccione la aplicación.
-. Haga clic en *permisos de API > Agregar un permiso*.
+. En el servicio *Azure Active Directory*, seleccione *App registrs* y seleccione la aplicación.
+. Seleccione *permisos de API > Agregar un permiso*.
 . En *API de Microsoft*, seleccione *Administración de servicios Azure*.
 +
 image:screenshot_azure_service_mgmt_apis.gif["Una captura de pantalla del portal de Azure que muestra los permisos de la API de Azure Service Management."]
 
-. Haga clic en *Access Azure Service Management como usuarios de la organización* y, a continuación, haga clic en *Agregar permisos*.
+. Seleccione *Access Azure Service Management como usuarios de organización* y, a continuación, seleccione *Agregar permisos*.
 +
 image:screenshot_azure_service_mgmt_apis_add.gif["Una captura de pantalla del portal de Azure que muestra la adición de las API de gestión de servicios de Azure."]
 
 
 
 .Obtenga el ID de aplicación y el ID de directorio de la aplicación
-. En el servicio *Azure Active Directory*, haga clic en *App registrs* y seleccione la aplicación.
+. En el servicio *Azure Active Directory*, seleccione *App registrs* y seleccione la aplicación.
 . Copie el *ID de aplicación (cliente)* y el *ID de directorio (inquilino)*.
 +
 image:screenshot_azure_app_ids.gif["Captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (inquilino) de una aplicación en Azure Active Directory."]
@@ -499,10 +499,10 @@ Al agregar la cuenta de Azure a BlueXP, debe proporcionar el ID de la aplicació
 
 .Cree un secreto de cliente
 . Abra el servicio *Azure Active Directory*.
-. Haga clic en *App registres* y seleccione su aplicación.
-. Haga clic en *certificados y secretos > Nuevo secreto de cliente*.
+. Seleccione *App registres* y seleccione su aplicación.
+. Seleccione *certificados y secretos > Nuevo secreto de cliente*.
 . Proporcione una descripción del secreto y una duración.
-. Haga clic en *Agregar*.
+. Seleccione *Agregar*.
 . Copie el valor del secreto de cliente.
 +
 image:screenshot_azure_client_secret.gif["Una captura de pantalla del portal de Azure que muestra un secreto de cliente para el director de servicio de Azure AD."]

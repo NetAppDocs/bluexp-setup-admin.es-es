@@ -50,7 +50,7 @@ Entonces lo haría link:task-adding-azure-accounts.html#add-additional-azure-cre
 
 Por ejemplo, es posible cambiar entre credenciales al crear un nuevo entorno de trabajo Cloud Volumes ONTAP:
 
-image:screenshot_accounts_switch_azure.gif["Una captura de pantalla que muestra la selección entre cuentas de proveedor de nube después de hacer clic en Cambiar cuenta en la página Detalles  Credenciales."]
+image:screenshot_accounts_switch_azure.gif["Una captura de pantalla que muestra la selección entre cuentas de proveedor de nube después de seleccionar Cambiar cuenta en la página Detalles  credenciales."]
 
 
 

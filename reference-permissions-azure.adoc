@@ -181,7 +181,7 @@ En las siguientes secciones se describe cómo se utilizan los permisos para cada
 
 === Azure NetApp Files
 
-El conector realiza las siguientes solicitudes de API para gestionar entornos de trabajo de Azure NetApp Files:
+El conector realiza las siguientes solicitudes de API cuando usas la clasificación de BlueXP para analizar datos de Azure NetApp Files:
 
 * Microsoft.NetApp/netAppAccounts/read
 * Microsoft.NetApp/netAppAccounts/capacityPools/read

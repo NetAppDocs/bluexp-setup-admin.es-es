@@ -154,8 +154,8 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 
 . Cree una cuenta de servicio en Google Cloud:
 +
-.. En el servicio IAM & Admin, haga clic en *Cuentas de servicio > Crear cuenta de servicio*.
-.. Introduzca los detalles de la cuenta de servicio y haga clic en *Crear y continuar*.
+.. En el servicio IAM y Admin, selecciona *Cuentas de servicio > Crear cuenta de servicio*.
+.. Ingrese los detalles de la cuenta de servicio y seleccione *Crear y continuar*.
 .. Seleccione la función que acaba de crear.
 .. Finalice los pasos restantes para crear la función.
 +
@@ -182,7 +182,7 @@ Por ejemplo, supongamos que el conector está en el proyecto 1 y que desea crear
 +
 ** Introduzca el correo electrónico de la cuenta de servicio del conector.
 ** Seleccione el rol personalizado del conector.
-** Haga clic en *Guardar*.
+** Seleccione *Guardar*.
 
 
 

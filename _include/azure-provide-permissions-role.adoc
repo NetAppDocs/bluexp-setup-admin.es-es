@@ -6,8 +6,8 @@ Vaya al portal de Azure y asigne el rol personalizado de Azure a la máquina vir
 
 .Pasos
 . En el Portal de Azure, abra el servicio *Suscripciones* y seleccione su suscripción.
-. Haga clic en *Control de acceso (IAM)* > *Agregar* > *Agregar asignación de funciones*.
-. En la ficha *rol*, seleccione el rol *operador BlueXP* y haga clic en *Siguiente*.
+. Selecciona *Control de acceso (IAM)* > *Añadir* > *Añadir asignación de rol*.
+. En la ficha *rol*, seleccione el rol *operador de BlueXP* y seleccione *Siguiente*.
 +
 
 NOTE: BlueXP Operator es el nombre predeterminado que se proporciona en la directiva de BlueXP. Si seleccionó otro nombre para el rol, seleccione ese nombre.
@@ -15,10 +15,10 @@ NOTE: BlueXP Operator es el nombre predeterminado que se proporciona en la direc
 . En la ficha *Miembros*, realice los siguientes pasos:
 +
 .. Asignar acceso a una *identidad administrada*.
-.. Haga clic en *Seleccionar miembros*, seleccione la suscripción en la que se creó la máquina virtual Connector, elija *máquina virtual* y, a continuación, seleccione la máquina virtual Connector.
-.. Haga clic en *Seleccionar*.
-.. Haga clic en *Siguiente*.
-.. Haga clic en *revisar + asignar*.
+.. Seleccione *Seleccionar miembros*, seleccione la suscripción en la que se creó la máquina virtual Connector, elija *Virtual machine* y, a continuación, seleccione la máquina virtual Connector.
+.. Selecciona *Seleccionar*.
+.. Seleccione *Siguiente*.
+.. Seleccione *revisar + asignar*.
 .. Si desea administrar recursos en suscripciones adicionales de Azure, cambie a esa suscripción y repita estos pasos.
 
 

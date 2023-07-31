@@ -35,15 +35,15 @@ link:task-set-up-networking-google.html["Obtenga información sobre los requisit
 
 
 .Pasos
-. Haga clic en el menú desplegable *conector* y seleccione *Agregar conector*.
+. Seleccione la lista desplegable *Connector* y seleccione *Add Connector*.
 +
 image:screenshot_connector_add.gif["Captura de pantalla que muestra el icono conector en el encabezado y la acción Agregar conector ."]
 
 . Elija *Google Cloud Platform* como su proveedor de cloud.
 . En la página *despliegue de un conector*, revise los detalles sobre lo que necesitará. Dispone de dos opciones:
 +
-.. Haga clic en *continuar* para preparar la implementación utilizando la guía del producto. Cada paso de la guía del producto incluye la información que se incluye en esta página de la documentación.
-.. Haga clic en *Ir a implementación* si ya ha preparado siguiendo los pasos de esta página.
+.. Seleccione *Continuar* para prepararse para la implementación mediante la guía del producto. Cada paso de la guía del producto incluye la información que se incluye en esta página de la documentación.
+.. Selecciona *Saltar a la implementación* si ya lo preparaste siguiendo los pasos de esta página.
 
 
 . Siga los pasos del asistente para crear el conector:
@@ -62,7 +62,7 @@ link:reference-ports-gcp.html["Reglas de firewall en Google Cloud"]
 ** *Revisión*: Revise sus selecciones para verificar que su configuración es correcta.
 
 
-. Haga clic en *Agregar*.
+. Seleccione *Agregar*.
 +
 La instancia debe estar lista en unos 7 minutos. Debe permanecer en la página hasta que el proceso se complete.
 
@@ -271,7 +271,7 @@ https://_ipaddress_[]
 +
 Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. Sólo debe activar el modo restringido si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de entorno de administración de BlueXP. Si ese es el caso, link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar con BlueXP en modo restringido"].
 
-.. Haga clic en *Vamos a iniciar*.
+.. Selecciona *Comenzar*.
 
 
 

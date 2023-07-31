@@ -93,6 +93,9 @@ El usuario ya no puede acceder a los recursos de esta cuenta de BlueXP.
 
 Puede asociar y desasociar administradores de área de trabajo con áreas de trabajo en cualquier momento. La asociación del usuario les permite crear y ver los entornos de trabajo en ese espacio de trabajo.
 
+
+NOTE: También debes asociar el conector a los espacios de trabajo para que los administradores de espacios de trabajo puedan acceder a esos espacios de trabajo desde BlueXP. link:task-managing-netapp-accounts.html#manage-a-connectors-workspaces["Aprenda a administrar los espacios de trabajo de Connector"].
+
 .Pasos
 . En la parte superior de BlueXP, seleccione la lista desplegable *cuenta* y seleccione *gestionar cuenta*.
 +
@@ -171,7 +174,7 @@ image:screenshot_service_account_actions.gif["Captura de pantalla que muestra el
 
 === Vuelva a crear las claves
 
-Al volver a crear la clave se eliminará la clave existente para esta cuenta de servicio y, a continuación, se creará una clave nueva. No podrá utilizar la clave anterior.
+Al volver a crear la clave se eliminará la clave existente para esta cuenta de servicio y, a continuación, se creará una clave nueva. No podrá utilizar la tecla anterior.
 
 .Pasos
 . En la ficha Miembros, seleccione el menú de acciones de la fila correspondiente a la cuenta de servicio.
@@ -217,6 +220,9 @@ Gestione sus espacios de trabajo creando, cambiando el nombre y borrándolos. Te
 ** Seleccione *Cambiar nombre* para cambiar el nombre del espacio de trabajo.
 ** Seleccione *Eliminar* para eliminar el espacio de trabajo.
 
+
++
+Si ha creado un nuevo espacio de trabajo, también debe agregar Connector a ese espacio de trabajo. Si no agrega Connector, los administradores de Workspace no podrán acceder a ninguno de los recursos del espacio de trabajo. Consulte la siguiente sección para obtener más detalles.
 
 
 

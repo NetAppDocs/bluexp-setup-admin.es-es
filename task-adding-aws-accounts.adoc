@@ -235,20 +235,20 @@ Hay dos escenarios en los que puede asociar una suscripción a AWS Marketplace d
 Debe crear un conector para poder cambiar la configuración de BlueXP. link:concept-connectors.html#how-to-create-a-connector["Aprenda a crear un conector"].
 
 .Pasos
-. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *credenciales*.
-. Haga clic en el menú de acción para obtener un conjunto de credenciales y, a continuación, seleccione *Suscripción asociada*.
+. En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
+. Seleccione el menú de acción para un conjunto de credenciales y luego seleccione *Suscripción asociada*.
 +
 Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una suscripción al mercado con credenciales asociadas a BlueXP.
 
 +
 image:screenshot_associate_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
 
-. Para asociar las credenciales a una suscripción existente, seleccione la suscripción en la lista desplegable y haga clic en *asociado*.
-. Para asociar las credenciales con una nueva suscripción, haga clic en *Agregar suscripción > continuar* y siga los pasos del AWS Marketplace:
+. Para asociar las credenciales a una suscripción existente, seleccione la suscripción en la lista desplegable y seleccione *asociado*.
+. Para asociar las credenciales a una nueva suscripción, seleccione *Agregar suscripción > continuar* y siga los pasos del AWS Marketplace:
 +
-.. Haga clic en *Ver opciones de compra*.
-.. Haga clic en *Suscribirse*.
-.. Haga clic en *Configurar su cuenta*.
+.. Seleccione *Ver opciones de compra*.
+.. Seleccione *Suscribirse*.
+.. Seleccione *Configurar su cuenta*.
 +
 Se le redirigirá al sitio web de BlueXP.
 
@@ -262,7 +262,7 @@ BlueXP reemplaza la suscripción existente para todas las credenciales de la cue
 +
 Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
-*** Haga clic en *Guardar*.
+*** Seleccione *Guardar*.
 +
 En el siguiente vídeo se muestran los pasos para suscribirse desde AWS Marketplace:
 

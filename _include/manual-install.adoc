@@ -97,7 +97,7 @@ https://_ipaddress_[]
 +
 Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. Sólo debe activar el modo restringido si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de entorno de administración de BlueXP. Si ese es el caso, link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar con BlueXP en modo restringido"].
 
-.. Haga clic en *Vamos a iniciar*.
+.. Selecciona *Comenzar*.
 
 
 

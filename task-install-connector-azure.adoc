@@ -43,7 +43,7 @@ Estos permisos son para la propia instancia de Connector. Se trata de un conjunt
 
 
 .Pasos
-. Si está creando su primer entorno de trabajo, haga clic en *Agregar entorno de trabajo* y siga las indicaciones. De lo contrario, haga clic en el menú desplegable *conector* y seleccione *Agregar conector*.
+. Si estás creando tu primer entorno de trabajo, selecciona *Añadir entorno de trabajo* y sigue las indicaciones. De lo contrario, seleccione la lista desplegable *Connector* y seleccione *Add Connector*.
 +
 image:screenshot_connector_add.gif["Captura de pantalla que muestra el icono conector en el encabezado y la acción Agregar conector ."]
 
@@ -95,7 +95,7 @@ link:reference-ports-azure.html["Ver reglas de grupo de seguridad para Azure"].
 ** *Revisión*: Revise sus selecciones para verificar que su configuración es correcta.
 
 
-. Haga clic en *Agregar*.
+. Seleccione *Agregar*.
 +
 La máquina virtual debe estar lista en unos 7 minutos. Debe permanecer en la página hasta que el proceso se complete.
 
@@ -112,8 +112,8 @@ Una vez completado el proceso, el conector está disponible para su uso en BlueX
 +
 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Página de Azure Marketplace para regiones comerciales"^]
 
-. Haga clic en *Get Now* y, a continuación, haga clic en *Continue*.
-. En el portal de Azure, haga clic en *Crear* y siga los pasos para configurar la máquina virtual.
+. Selecciona *Obtenlo ahora* y luego selecciona *Continuar*.
+. Desde el portal de Azure, seleccione *Crear* y siga los pasos para configurar la máquina virtual.
 +
 Tenga en cuenta lo siguiente al configurar la máquina virtual:
 
@@ -130,7 +130,7 @@ Esta configuración es importante porque una identidad administrada permite que 
 
 
 
-. En la página *revisar + crear*, revise las selecciones y haga clic en *Crear* para iniciar la implementación.
+. En la página *Review + create*, revise sus selecciones y seleccione *Create* para iniciar la implementación.
 +
 Azure implementa la máquina virtual con los ajustes especificados. El software de la máquina virtual y el conector debe estar funcionando en aproximadamente cinco minutos.
 
@@ -146,7 +146,7 @@ https://_ipaddress_[]
 +
 Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. Sólo debe activar el modo restringido si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de entorno de administración de BlueXP. Si ese es el caso, link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar con BlueXP en modo restringido"].
 
-.. Haga clic en *Vamos a iniciar*.
+.. Selecciona *Comenzar*.
 
 
 
@@ -256,7 +256,7 @@ https://_ipaddress_[]
 +
 Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. Sólo debe activar el modo restringido si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de entorno de administración de BlueXP. Si ese es el caso, link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar con BlueXP en modo restringido"].
 
-.. Haga clic en *Vamos a iniciar*.
+.. Selecciona *Comenzar*.
 
 
 
