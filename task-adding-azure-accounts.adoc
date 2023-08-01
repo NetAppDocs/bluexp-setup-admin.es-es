@@ -364,11 +364,10 @@ Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo
 
 *** Seleccione *Guardar*.
 +
-El siguiente vídeo muestra cómo asociar las credenciales a una nueva suscripción.
+En el siguiente vídeo se muestran los pasos para suscribirse desde Azure Marketplace:
 
 +
-.Suscríbete a BlueXP desde Azure Marketplace
-video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+video::video_subscribing_azure.mp4[width=848,height=480]
 
 
 

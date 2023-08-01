@@ -3876,8 +3876,7 @@ Este extremo solo se requiere en las regiones gubernamentales de Azure.</block>
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">Veamos un ejemplo.</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">Una captura de pantalla de la página de credenciales de la cuenta de BlueXP que muestra las credenciales de AWS que incluye un campo de suscripción que identifica el nombre de la suscripción asociado a las credenciales.</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a19fbbab905f444316acc463c35da764" category="paragraph">El siguiente vídeo muestra cómo asociar las credenciales a una nueva suscripción.</block>
-  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Suscríbete a BlueXP desde Azure Marketplace</block>
-  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Suscríbete a BlueXP desde Google Cloud Marketplace</block>
-  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Suscríbete a BlueXP desde AWS Marketplace</block>
+  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">En el siguiente vídeo se muestran los pasos para suscribirse desde Azure Marketplace:</block>
+  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">En el siguiente vídeo se muestran los pasos para suscribirse desde Google Cloud Marketplace:</block>
+  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">En el siguiente vídeo se muestran los pasos para suscribirse desde AWS Marketplace:</block>
 </blocks>
