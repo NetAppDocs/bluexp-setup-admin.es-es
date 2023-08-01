@@ -1429,7 +1429,6 @@
   <block id="23d838dbd51becc56367e6d9358b446e" category="paragraph">BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.</block>
   <block id="b4676b03cb1388f474b207b449af0dc2" category="paragraph">Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">Seleccione *Guardar*.</block>
-  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">En el siguiente vídeo se muestran los pasos para suscribirse desde Google Cloud Marketplace:</block>
   <block id="5894b1931d65e9796cc25db1bb6fd566" category="list-text">Una vez completado este proceso, vuelva a la página credenciales de BlueXP y seleccione esta nueva suscripción.</block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">Captura de pantalla de la página de asignación de suscripción.</block>
   <block id="60d2ed6f6e1774535b6e69274800381d" category="paragraph"><block ref="60d2ed6f6e1774535b6e69274800381d" category="inline-image-macro-rx" type="image"></block></block>
@@ -3011,7 +3010,6 @@ También debe asegurarse de que la directiva esté actualizada a medida que se a
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Si se le solicita, inicie sesión en su cuenta de Azure.</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">Se le redirigirá al sitio web de BlueXP.</block>
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">Desde la página *asignación de suscripción*:</block>
-  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">En el siguiente vídeo se muestran los pasos para suscribirse desde Azure Marketplace:</block>
   <block id="c98f8dfd7e317cb87d057d9e065d71d4" category="section-title">Editar credenciales</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">Edite sus credenciales de Azure en BlueXP modificando los detalles acerca de sus credenciales de servicio de Azure. Por ejemplo, es posible que necesite actualizar el secreto de cliente si se creó un nuevo secreto para la aplicación principal de servicios.</block>
   <block id="c042156941649b9112145dc552484165" category="list-text">En la página *credenciales de cuenta*, seleccione el menú de acción para un conjunto de credenciales y, a continuación, seleccione *Editar credenciales*.</block>
@@ -3466,7 +3464,6 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">Una suscripción al mercado permite cargar los siguientes servicios de BlueXP:</block>
   <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">La suscripción a BlueXP implica asociar una suscripción al mercado con las credenciales de la nube asociadas con un conector. Si ha seguido el flujo de trabajo para empezar con el modo estándar, ya debe tener un conector. Para obtener más información, consulte la <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>.</block>
   <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una suscripción al mercado con credenciales asociadas a BlueXP.</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">En el siguiente vídeo se muestran los pasos para suscribirse desde AWS Marketplace:</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">Gestione las licencias basadas en la capacidad de su propia licencia para Cloud Volumes ONTAP</block>
   <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
   <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">Gestiona las licencias BYOL para los servicios de datos de BlueXP</block>
@@ -3879,4 +3876,8 @@ Este extremo solo se requiere en las regiones gubernamentales de Azure.</block>
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">Veamos un ejemplo.</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">Una captura de pantalla de la página de credenciales de la cuenta de BlueXP que muestra las credenciales de AWS que incluye un campo de suscripción que identifica el nombre de la suscripción asociado a las credenciales.</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a19fbbab905f444316acc463c35da764" category="paragraph">El siguiente vídeo muestra cómo asociar las credenciales a una nueva suscripción.</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Suscríbete a BlueXP desde Azure Marketplace</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Suscríbete a BlueXP desde Google Cloud Marketplace</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Suscríbete a BlueXP desde AWS Marketplace</block>
 </blocks>
