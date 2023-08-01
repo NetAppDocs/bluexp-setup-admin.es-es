@@ -276,6 +276,80 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 
 
 
+== Asocie una suscripción existente a su cuenta
+
+Cuando te suscribes a BlueXP desde AWS Marketplace, el último paso del proceso es asociar la suscripción a tus cuentas de BlueXP desde el sitio web de BlueXP. Si no has completado este paso, no podrás usar la suscripción con tu cuenta de BlueXP.
+
+Sigue los pasos que aparecen a continuación si te suscribiste a BlueXP desde AWS Marketplace, pero te has perdido el paso para asociar la suscripción a tu cuenta.
+
+.Pasos
+. Ve a la cartera digital de BlueXP para confirmar que no has asociado tu suscripción a tu cuenta de BlueXP.
++
+.. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
+.. Seleccione *Suscripciones*.
+.. Comprueba que no aparezca tu suscripción a BlueXP.
++
+Solo verá las suscripciones asociadas a la cuenta que está viendo actualmente. Si no ve su suscripción, continúe con los siguientes pasos.
+
+
+
+. Inicie sesión en la consola de AWS y vaya a * Suscripciones de AWS Marketplace *.
+. Encuentra la suscripción a NetApp BlueXP.
++
+image:screenshot-aws-marketplace-bluexp-subscription.png["Una captura de pantalla del AWS Marketplace en la que se muestra una suscripción a BlueXP de NetApp."]
+
+. Seleccione *Set up product*.
++
+La página de oferta de suscripción debe cargarse en una nueva pestaña o ventana del navegador.
+
+. Seleccione *Configurar su cuenta*.
++
+image:screenshot-aws-marketplace-set-up-account.png["Una captura de pantalla de AWS Marketplace en la que se muestre una suscripción a NetApp BlueXP y la opción de configurar tu cuenta que aparece en la parte superior derecha de la página."]
+
++
+La página *Suscripción* en netapp.com debe cargarse en una nueva pestaña o ventana del navegador.
+
++
+Ten en cuenta que es posible que se te pida iniciar sesión en BlueXP primero.
+
+. Desde la página *asignación de suscripción*:
++
+** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
+** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
++
+BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+
++
+Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
++
+image:screenshot-subscription-assignment.png["Una captura de pantalla de la página Asignación de suscripciones que te permite elegir las cuentas exactas de BlueXP para asociarlas a esta suscripción."]
+
+
+
+. Ve a la cartera digital de BlueXP para confirmar que la suscripción está asociada a tu cuenta de BlueXP.
++
+.. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
+.. Seleccione *Suscripciones*.
+.. Comprueba que aparezca tu suscripción a BlueXP.
+
+
+. Confirme que la suscripción está asociada a sus credenciales de AWS.
++
+.. En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
+.. En la página *Account credentials*, verifique que la suscripción esté asociada con sus credenciales de AWS.
++
+Veamos un ejemplo.
+
++
+image:screenshot-credentials-with-subscription.png["Una captura de pantalla de la página de credenciales de la cuenta de BlueXP que muestra las credenciales de AWS que incluye un campo de suscripción que identifica el nombre de la suscripción asociado a las credenciales."]
+
+
+
+
+
+
+
 == Editar credenciales
 
 Edite sus credenciales de AWS en BlueXP cambiando el tipo de cuenta (las claves de AWS o asumen la función), editando el nombre o actualizando las credenciales (las claves o el rol ARN).
