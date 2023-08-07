@@ -162,10 +162,6 @@ La segunda directiva proporciona permisos para los siguientes servicios:
                 "kms:ReEncrypt*",
                 "kms:Describe*",
                 "kms:CreateGrant",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "fsx:Describe*",
                 "fsx:List*",
                 "kms:GenerateDataKeyWithoutPlaintext"
@@ -493,10 +489,6 @@ La segunda directiva proporciona permisos para los siguientes servicios:
                 "ec2:DescribeIamInstanceProfileAssociations",
                 "ec2:DisassociateIamInstanceProfile",
                 "ec2:DescribeInstanceAttribute",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "ec2:CreatePlacementGroup",
                 "ec2:DeletePlacementGroup"
             ],
@@ -1126,18 +1118,6 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 
 
 | Kms:GenerateDataKeyWithoutPlaintext | Sí | Sí | No 
-
-
-.4+| Obtenga datos de coste de AWS para Cloud Volumes ONTAP | ce:GetReservationUtilización | No | Sí | No 
-
-
-| ce:GetDimensionValues | No | Sí | No 
-
-
-| ce:GetCostAndUsage | No | Sí | No 
-
-
-| ce:getTags | No | Sí | No 
 
 
 .2+| Cree y gestione un grupo de colocación extendido de AWS para dos nodos de alta disponibilidad y el mediador en una única zona de disponibilidad de AWS | ec2:CreatePlacementGroup | Sí | No | No 
