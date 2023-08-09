@@ -24,7 +24,7 @@ Puede añadir credenciales de AWS a un conector existente o directamente a BlueX
 
 * Agregue credenciales de AWS adicionales a un conector existente
 +
-Añadir credenciales de AWS a un conector existente proporciona los permisos necesarios para gestionar recursos y procesos dentro de su entorno de cloud público. <<Add credentials to a Connector,Aprenda a añadir credenciales de AWS a un conector>>.
+Añadir credenciales de AWS a un conector existente proporciona los permisos necesarios para gestionar recursos y procesos dentro de su entorno de cloud público. <<Agregar credenciales adicionales a un conector,Aprenda a añadir credenciales de AWS a un conector>>.
 
 * Añada las credenciales de AWS a BlueXP para crear un conector
 +

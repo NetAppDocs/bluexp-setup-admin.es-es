@@ -141,7 +141,7 @@ image:screenshot-change-notifications.png["Captura de pantalla que muestra cómo
 
 === Añada otros destinatarios de correo electrónico
 
-Los usuarios que aparecen en la ficha _Account Users_ se rellenan automáticamente desde los usuarios de su cuenta de BlueXP (desde la link:task-managing-netapp-accounts.html#creating-and-managing-users["Gestionar cuenta"]). Puede agregar direcciones de correo electrónico en la ficha _Additional Recipients_ para otras personas o grupos que no tienen acceso a BlueXP, pero que necesitan recibir notificaciones sobre ciertos tipos de alertas y notificaciones.
+Los usuarios que aparecen en la ficha _Account Users_ se rellenan automáticamente desde los usuarios de su cuenta de BlueXP (desde la link:task-managing-netapp-accounts.html#create-and-manage-users["Gestionar cuenta"]). Puede agregar direcciones de correo electrónico en la ficha _Additional Recipients_ para otras personas o grupos que no tienen acceso a BlueXP, pero que necesitan recibir notificaciones sobre ciertos tipos de alertas y notificaciones.
 
 .Pasos
 . En la página Configuración de alertas y notificaciones, seleccione *Agregar nuevos destinatarios*.

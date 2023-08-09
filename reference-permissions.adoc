@@ -58,7 +58,7 @@ También debe asegurarse de que la directiva esté actualizada a medida que se a
 | Funcionamiento del conector  a| 
 Cuando BlueXP implementa Connector VM en Azure, crea una función personalizada que proporciona los permisos necesarios para gestionar los recursos y procesos dentro de esa suscripción a Azure.
 
-Debe configurar la función personalizada usted mismo si inicia un conector desde la plataforma, si instala manualmente el conector o si lo hace link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager["Agregue más credenciales de Azure a un conector"].
+Debe configurar la función personalizada usted mismo si inicia un conector desde la plataforma, si instala manualmente el conector o si lo hace link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Agregue más credenciales de Azure a un conector"].
 
 También debe asegurarse de que la directiva esté actualizada a medida que se añadan nuevos permisos en versiones posteriores.
  a| 

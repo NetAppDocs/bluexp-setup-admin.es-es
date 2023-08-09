@@ -234,7 +234,7 @@ Debe asociar el conector con áreas de trabajo para que los administradores de �
 
 Si sólo tiene Administradores de cuentas, no es necesario asociar el conector a áreas de trabajo. Los administradores de cuentas tienen la posibilidad de acceder a todas las áreas de trabajo de BlueXP de forma predeterminada.
 
-link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["Obtenga más información sobre usuarios, áreas de trabajo y conectores"].
+link:concept-netapp-accounts.html["Obtenga más información sobre usuarios, áreas de trabajo y conectores"].
 
 .Pasos
 . En la parte superior de BlueXP, seleccione la lista desplegable *cuenta* y seleccione *gestionar cuenta*.

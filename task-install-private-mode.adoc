@@ -95,7 +95,7 @@ Esta cuenta de usuario se ejecuta localmente en el sistema. No hay conexión con
 .Resultado
 El conector ahora está instalado y configurado.
 
-Cuando haya nuevas versiones del software del conector disponibles, estas se publicarán en el sitio de soporte de NetApp. link:task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Aprenda a actualizar el conector"].
+Cuando haya nuevas versiones del software del conector disponibles, estas se publicarán en el sitio de soporte de NetApp. link:task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Aprenda a actualizar el conector"].
 
 .El futuro
 Proporcione a BlueXP los permisos que configuró anteriormente.
