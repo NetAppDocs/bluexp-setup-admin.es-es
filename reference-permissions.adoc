@@ -109,7 +109,7 @@ BlueXP requiere permisos de Azure para Connector y para servicios individuales.
 
 
 
-=== Conector
+=== Conectores
 
 [cols="20,60,20"]
 |===
@@ -148,7 +148,7 @@ BlueXP requiere permisos de Google Cloud para Connector y para servicios individ
 
 
 
-=== Conector
+=== Conectores
 
 [cols="20,60,20"]
 |===
