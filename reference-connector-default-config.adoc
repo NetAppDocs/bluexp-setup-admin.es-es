@@ -33,7 +33,7 @@ Si implementó el conector desde BlueXP o desde el mercado del proveedor de la n
 +
 El sistema operativo no incluye una GUI. Debe utilizar un terminal para acceder al sistema.
 
-* El nombre de usuario de la instancia de EC2 Linux es ec2-user.
+* El nombre de usuario para la instancia de Linux EC2 es ubuntu (para los conectores creados antes de mayo de 2023, el nombre de usuario era EC2-user).
 * El disco del sistema predeterminado es un disco gp2 de 100 GIB.
 
 
