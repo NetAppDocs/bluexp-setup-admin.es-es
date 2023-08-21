@@ -65,6 +65,7 @@ Al utilizar BlueXP en modo estándar, se necesita un conector para las siguiente
 * Backup y recuperación
 * Clasificación
 * Cloud Volumes ONTAP
+* Recuperación tras siniestros
 * Sistemas E-Series
 * Eficiencia económica ^1^
 * Almacenamiento en caché en el edge

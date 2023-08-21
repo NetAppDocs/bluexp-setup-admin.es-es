@@ -383,6 +383,9 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | Cartera digital | Sí | Sí 
 
 
+| Recuperación tras siniestros | No | No 
+
+
 | Eficiencia económica | No | No 
 
 
@@ -410,10 +413,10 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | Organización en niveles | No | No 
 
 
-| Almacenamiento en caché de volúmenes | No | No 
+| Almacenamiento en caché de volúmenes | No | No .5+| * Características* 
 
 
-.5+| * Características* | Credenciales | Sí | Sí 
+| Credenciales | Sí | Sí 
 
 
 | Cuentas de NSS | Sí | No 
@@ -423,7 +426,4 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 
 
 | Búsqueda | Sí | No 
-
-
-| Línea de tiempo | Sí | Sí 
 |===
