@@ -365,7 +365,7 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | StorageGRID | No | No 
 
 
-.16+| *Servicios* | Backup y recuperación | Sí | Sí 
+.17+| *Servicios* | Backup y recuperación | Sí | Sí 
 
 
 | Clasificación | Sí | Sí 
@@ -413,10 +413,10 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | Organización en niveles | No | No 
 
 
-| Almacenamiento en caché de volúmenes | No | No .5+| * Características* 
+| Almacenamiento en caché de volúmenes | No | No 
 
 
-| Credenciales | Sí | Sí 
+.5+| * Características* | Credenciales | Sí | Sí 
 
 
 | Cuentas de NSS | Sí | No 
@@ -426,4 +426,7 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 
 
 | Búsqueda | Sí | No 
+
+
+| Línea de tiempo | Sí | Sí 
 |===
