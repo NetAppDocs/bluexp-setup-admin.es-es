@@ -74,7 +74,8 @@ Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo
 En el siguiente vídeo se muestran los pasos para suscribirse desde Google Cloud Marketplace:
 
 +
-video::video-subscribing-google-cloud.mp4[width=848,height=480]
+.Suscríbete a BlueXP desde Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 .. Una vez completado este proceso, vuelva a la página credenciales de BlueXP y seleccione esta nueva suscripción.
