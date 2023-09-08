@@ -141,18 +141,20 @@ Un administrador de cuentas de BlueXP puede crear un conector directamente desde
 
 Se necesitan permisos específicos para crear el conector directamente desde BlueXP y se necesita otro conjunto de permisos para la propia instancia del conector. Si crea el conector en AWS o Azure directamente desde BlueXP, BlueXP crea el conector con los permisos que necesita.
 
-Para aprender a configurar los permisos, consulte las siguientes páginas:
+Cuando se utiliza BlueXP en el modo estándar, la forma de proporcionar permisos depende de cómo tengas previsto crear el Connector.
+
+Para obtener más información sobre cómo configurar permisos, consulte lo siguiente:
 
 * Modo estándar
 +
-** link:task-set-up-permissions-aws.html["Configure los permisos de AWS"]
-** link:task-set-up-permissions-azure.html["Configure los permisos de Azure"]
-** link:task-set-up-permissions-google.html["Configure los permisos de Google Cloud"]
-** link:task-set-up-permissions-on-prem.html["Configure permisos en el cloud para puestas en marcha en las instalaciones"]
+** link:concept-install-options-aws.html["Opciones de instalación de conectores en AWS"]
+** link:concept-install-options-azure.html["Opciones de instalación del conector en Azure"]
+** link:concept-install-options-google.html["Opciones de instalación del conector en Google Cloud"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Configure permisos en el cloud para puestas en marcha en las instalaciones"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Configure los permisos de cloud para el modo restringido"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configure permisos de cloud para el modo privado"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 
 Para ver los permisos exactos que necesita el conector, consulte las páginas siguientes:

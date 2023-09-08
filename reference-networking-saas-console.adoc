@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-networking-saas-console.html 
 keywords: networking, urls, endpoints, web browser, console, network, set up networking 
-summary: Cuando empieces a usar BlueXP, asegúrate de que tus redes permitan el acceso a extremos específicos desde la consola BlueXP. Dependiendo de cómo tengas pensado utilizar BlueXP, es posible que también necesites configurar la conexión a redes para un conector y para servicios específicos de BlueXP. 
+summary: Al usar la consola basada en web de BlueXP que se proporciona a través de la capa SaaS, se pone en contacto con varios extremos cuando completa unas pocas tareas administrativas. Los equipos que accedan a la consola de BlueXP deben tener conexiones a estos extremos. 
 ---
-= Prepare la red
+= Prepare las redes para usar la consola de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,9 @@ summary: Cuando empieces a usar BlueXP, asegúrate de que tus redes permitan el 
 
 
 [role="lead"]
-Cuando empieces a usar BlueXP, asegúrate de que tus redes permitan el acceso a extremos específicos desde la consola BlueXP. Dependiendo de cómo tengas pensado utilizar BlueXP, es posible que también necesites configurar la conexión a redes para un conector y para servicios específicos de BlueXP.
+Al usar la consola basada en web de BlueXP que se proporciona a través de la capa SaaS, se pone en contacto con varios extremos cuando completa unas pocas tareas administrativas. Los equipos que accedan a la consola de BlueXP deben tener conexiones a estos extremos.
 
-
-
-== Prepare la red para que los usuarios puedan acceder a la consola BlueXP
-
-A medida que utiliza la consola basada en Web BlueXP que se proporciona a través de la capa SaaS, se pone en contacto con varios extremos para completar las tareas de gestión de datos. La máquina que ejecuta el explorador Web debe tener conexiones con estos extremos.
+Estos extremos se ponen en contacto desde el equipo de un usuario al completar acciones específicas desde la consola de BlueXP. También debes consultar los requisitos de red para el conector y para servicios de BlueXP específicos. Para obtener más información, consulte los enlaces relacionados al final de esta página.
 
 [cols="2*"]
 |===
@@ -75,22 +71,20 @@ Servicios de AWS (amazonaws.com):
 |===
 Más allá de estos puntos finales, también debe asegurarse de que Connector tiene acceso a Internet saliente para contactar puntos finales específicos para las operaciones diarias. Puede encontrar la lista de estos puntos finales siguiendo los enlaces de la siguiente sección.
 
+.Enlaces relacionados
+* Prepare la conexión a redes para el conector
++
+** link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["Configure las redes de AWS"]
+** link:task-install-connector-azure-bluexp.html#step-1-set-up-networking["Configure las redes de Azure"]
+** link:task-install-connector-google-bluexp-gcloud.html#step-1-set-up-networking["Configure las redes de Google Cloud"]
+** link:task-install-connector-on-prem.html#step-2-set-up-networking["Configure las redes en las instalaciones"]
 
 
-== Prepare la conexión en red para un conector
+* Prepare las redes para los servicios de BlueXP
++
+Consulta la documentación para cada servicio de BlueXP.
 
-La forma en que prepare su red para un conector depende de dónde planea instalar el conector, que puede estar en la nube o en sus instalaciones. Para obtener información detallada sobre los requisitos de red del conector, consulte las páginas siguientes:
-
-* link:task-set-up-networking-aws.html["Configure las redes de AWS"]
-* link:task-set-up-networking-azure.html["Configure las redes de Azure"]
-* link:task-set-up-networking-google.html["Configure las redes de Google Cloud"]
-* link:task-set-up-networking-on-prem.html["Configure las redes en las instalaciones"]
-
-
-
-
-== Prepare las redes para los servicios de BlueXP
-
-Para empezar a usar BlueXP, debes asegurarte de haber cumplido los requisitos de red de los servicios de BlueXP que planeas utilizar. Para obtener más información, consulte la documentación de cada servicio.
-
++
 https://docs.netapp.com/us-en/bluexp-family/["Documentación de BlueXP"^]
+
+

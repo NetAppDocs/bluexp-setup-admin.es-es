@@ -31,7 +31,7 @@ BlueXP requiere permisos de AWS para el Connector y para servicios individuales.
 | Objetivo | Descripción | Enlace 
 
 
-| Pon en marcha el conector de BlueXP | El usuario que crea un conector a partir de BlueXP necesita permisos específicos para implementar la instancia en AWS. | link:task-set-up-permissions-aws.html["Configure los permisos de AWS"] 
+| Pon en marcha el conector de BlueXP | El usuario que crea un conector a partir de BlueXP necesita permisos específicos para implementar la instancia en AWS. | link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["Configure los permisos de AWS"] 
 
 
 | Proporcione permisos para el conector | Cuando BlueXP inicia el conector, adjunta una directiva a la instancia que proporciona los permisos necesarios para administrar los recursos y procesos de su cuenta de AWS.
@@ -116,7 +116,7 @@ BlueXP requiere permisos de Azure para Connector y para servicios individuales.
 | Objetivo | Descripción | Enlace 
 
 
-| Pon en marcha el conector de BlueXP | Al implementar un conector desde BlueXP, necesita utilizar una cuenta de Azure o una entidad de servicio con permisos para implementar Connector VM en Azure. | link:task-set-up-permissions-azure.html["Configure los permisos de Azure"] 
+| Pon en marcha el conector de BlueXP | Al implementar un conector desde BlueXP, necesita utilizar una cuenta de Azure o una entidad de servicio con permisos para implementar Connector VM en Azure. | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Configure los permisos de Azure"] 
 
 
 | Proporcione permisos para el conector  a| 
@@ -155,12 +155,12 @@ BlueXP requiere permisos de Google Cloud para Connector y para servicios individ
 | Objetivo | Descripción | Enlace 
 
 
-| Pon en marcha el conector de BlueXP | El usuario de Google Cloud que implementa un conector de BlueXP necesita permisos específicos para implementar el conector en Google Cloud. | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Configure los permisos para desplegar el conector"] 
+| Pon en marcha el conector de BlueXP | El usuario de Google Cloud que implementa un conector de BlueXP necesita permisos específicos para implementar el conector en Google Cloud. | link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Configure los permisos para crear el conector"] 
 
 
 | Proporcione permisos para el conector | La cuenta de servicio de la instancia de Connector VM debe tener permisos específicos para las operaciones del día a día. Debe asociar la cuenta de servicio al conector durante el despliegue.
 
-También debe asegurarse de que la directiva esté actualizada a medida que se añadan nuevos permisos en versiones posteriores. | link:reference-permissions-gcp.html["Permisos de Google Cloud para Connector"] 
+También debe asegurarse de que la directiva esté actualizada a medida que se añadan nuevos permisos en versiones posteriores. | link:task-install-connector-google-bluexp-gcloud.html#step-3-set-up-permissions-for-the-connector["Configure los permisos para el conector"] 
 |===
 
 

@@ -20,7 +20,7 @@ Descubre cómo BlueXP utiliza las credenciales y permisos de AWS para realizar a
 
 == Credenciales iniciales de AWS
 
-Al implantar un conector de BlueXP, debe proporcionar el ARN de una función de IAM o claves de acceso para un usuario de IAM. El método de autenticación que utilice debe tener los permisos necesarios para implementar la instancia de Connector en AWS. Los permisos necesarios se enumeran en la link:task-set-up-permissions-aws.html["La política de implementación de conectores para AWS"].
+Al implantar un conector de BlueXP, debe proporcionar el ARN de una función de IAM o claves de acceso para un usuario de IAM. El método de autenticación que utilice debe tener los permisos necesarios para implementar la instancia de Connector en AWS. Los permisos necesarios se enumeran en la link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["La política de implementación de conectores para AWS"].
 
 Cuando BlueXP inicia la instancia de Connector en AWS, crea una función IAM y un perfil de instancia para la instancia. También adjunta una directiva que proporciona al conector permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revise cómo BlueXP utiliza los permisos"].
 
@@ -84,12 +84,12 @@ Para aprender a configurar los permisos, consulte las siguientes páginas:
 
 * Modo estándar
 +
-** link:task-set-up-permissions-aws.html["Configure los permisos de AWS"]
-** link:task-set-up-permissions-on-prem.html["Configure permisos en el cloud para puestas en marcha en las instalaciones"]
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Configure los permisos para una puesta en marcha de AWS Marketplace"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Configure los permisos para implementaciones en las instalaciones"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Configure los permisos de cloud para el modo restringido"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configure permisos de cloud para el modo privado"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 
 

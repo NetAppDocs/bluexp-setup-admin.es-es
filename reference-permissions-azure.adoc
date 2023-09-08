@@ -26,10 +26,12 @@ Al crear un conector directamente desde BlueXP, BlueXP aplica automáticamente e
 
 Si pone en marcha el conector desde Azure Marketplace o si instala manualmente el conector en un host Linux, deberá configurar el rol personalizado usted mismo.
 
-* link:task-set-up-permissions-azure.html["Configurar permisos para la instalación de Connector en Azure (modo estándar)"]
-* link:task-set-up-permissions-on-prem.html["Configurar permisos para la instalación del conector en las instalaciones (modo estándar)"]
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Configure los permisos para el modo restringido"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configurar permisos para el modo privado"]
+Para ver instrucciones paso a paso para utilizar estas directivas, consulte las páginas siguientes:
+
+* link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configure los permisos para una puesta en marcha de Azure Marketplace"]
+* link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Configure los permisos para implementaciones en las instalaciones"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 
 También debe asegurarse de que el rol esté actualizado a medida que se añadan nuevos permisos en versiones posteriores.

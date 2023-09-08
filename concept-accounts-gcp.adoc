@@ -34,9 +34,9 @@ image:diagram_permissions_gcp.png["Imagen conceptual en la que se muestran los r
 
 Para aprender a configurar los permisos, consulte las siguientes páginas:
 
-* link:task-set-up-permissions-google.html["Configure los permisos de Google Cloud para el modo estándar"]
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Configure los permisos de cloud para el modo restringido"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configure permisos de cloud para el modo privado"]
+* link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Configure los permisos de Google Cloud para el modo estándar"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 
 
@@ -45,6 +45,6 @@ Para aprender a configurar los permisos, consulte las siguientes páginas:
 
 Cloud Volumes ONTAP puede residir en el mismo proyecto que el conector o en un proyecto diferente. Para implementar Cloud Volumes ONTAP en un proyecto diferente, primero debe agregar la cuenta de servicio del conector y la función a ese proyecto.
 
-* link:task-set-up-permissions-google.html["Aprenda a configurar la cuenta de servicio"]
+* link:task-install-connector-google-bluexp-gcloud.html#step-3-set-up-permissions-for-the-connector["Aprenda a configurar la cuenta de servicio"]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Descubra cómo implementar Cloud Volumes ONTAP en Google Cloud y seleccione un proyecto"^]
 

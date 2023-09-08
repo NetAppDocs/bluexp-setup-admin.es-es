@@ -2,6 +2,9 @@
 :allow-uri-read: 
 
 
+Puntos finales contactados desde el conector:: El conector requiere acceso a Internet saliente para contactar con los siguientes puntos finales con el fin de administrar los recursos y procesos dentro de su entorno de nube pública para las operaciones diarias.
+
+
 | Servicios de AWS (amazonaws.com):
 
 * Formación CloudFormation
@@ -12,7 +15,7 @@
 * Simple Storage Service (S3)
 
 
-| Gestionar recursos en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles"^]
+| Gestionar recursos en AWS. El punto final exacto depende de la región de AWS que esté utilizando. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles"^]
 
 | \https://management.azure.com
 \https://login.microsoftonline.com

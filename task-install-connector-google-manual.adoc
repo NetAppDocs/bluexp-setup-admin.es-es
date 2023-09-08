@@ -1,0 +1,436 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-google-manual.html 
+keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector 
+summary: Para instalar manualmente el conector en su propio host Linux, debe revisar los requisitos del host, configurar la red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud, instalar el conector y, a continuación, proporcionar los permisos que preparó. 
+---
+= Instale manualmente el conector en Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Para instalar manualmente el conector en su propio host Linux, debe revisar los requisitos del host, configurar la red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud, instalar el conector y, a continuación, proporcionar los permisos que preparó.
+
+.Antes de empezar
+Usted debe revisar link:reference-limitations.html["Limitaciones del conector"].
+
+
+
+== Paso 1: Revise los requisitos del host
+
+El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
+
+Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
+Sistemas operativos compatibles::
++
+--
+* Sistema operativo Ubuntu 22,04
+* CentOS 7.6, 7.7, 7.8 y 7.9
+* Red Hat Enterprise Linux 7,6, 7,7, 7,8 y 7,9
++
+El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
+
++
+El conector es compatible con las versiones en inglés de estos sistemas operativos.
+
+
+
+--
+Hipervisor:: Se requiere un hipervisor con configuración básica o alojado certificado para ejecutar Ubuntu, CentOS o Red Hat Enterprise Linux.
++
+--
+https://access.redhat.com/certified-hypervisors["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
+
+--
+CPU:: 4 núcleos o 4 vCPU
+RAM:: 14 GB
+Tipo de máquina de Google Cloud:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos n2-standard-4.
++
+--
+El conector es compatible con Google Cloud en una instancia de máquina virtual con un sistema operativo compatible https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Características de VM blindadas"^]
+
+--
+Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
+Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
+Motor Docker:: Se requiere Docker Engine versión 19.3.1 o posterior en el host antes de instalar el conector. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
+
+
+
+
+== Paso 2: Configurar redes
+
+Configure su red para que Connector pueda gestionar recursos y procesos en su entorno de cloud híbrido. Por ejemplo, debe asegurarse de que las conexiones estén disponibles para las redes de destino y de que el acceso a Internet de salida esté disponible.
+
+Conexiones a redes de destino:: Un conector requiere una conexión de red a la ubicación en la que tiene previsto crear y administrar entornos de trabajo. Por ejemplo, la red donde planea crear sistemas Cloud Volumes ONTAP o un sistema de almacenamiento en su entorno local.
+
+
+Acceso a Internet de salida:: La ubicación de red en la que se despliega el conector debe tener una conexión a Internet saliente para contactar con puntos finales específicos.
+
+
+Puntos finales contactados durante la instalación manual:: Al instalar manualmente el conector en su propio host Linux, el instalador del conector requiere acceso a las siguientes direcciones URL durante el proceso de instalación:
++
+--
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+Es posible que el host intente actualizar paquetes de sistema operativo durante la instalación. El host puede ponerse en contacto con diferentes sitios de duplicación para estos paquetes de SO.
+
+
+
+--
+
+
+Puntos finales contactados desde el conector:: El conector requiere acceso a Internet saliente para contactar con los siguientes puntos finales con el fin de administrar los recursos y procesos dentro de su entorno de nube pública para las operaciones diarias.
++
+--
+[cols="2a,1a"]
+|===
+| Puntos finales | Específico 
+
+
+ a| 
+\https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+Para gestionar recursos en Google Cloud.
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp.
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+Proporcionar funciones y servicios SaaS dentro de BlueXP.
+
+Tenga en cuenta que el conector se está poniendo en contacto con «cloudmanager.cloud.netapp.com"», pero comenzará a ponerse en contacto con «api.bluexp.netapp.com" en una próxima versión.
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+Para actualizar el conector y sus componentes de Docker.
+
+|===
+--
+
+
+Servidor proxy:: Si su organización requiere la implementación de un servidor proxy para todo el tráfico de Internet saliente, obtenga la siguiente información sobre su proxy HTTP o HTTPS. Deberá proporcionar esta información durante la instalación.
++
+--
+* Dirección IP
+* Credenciales
+* Certificado HTTPS
+
+
+--
+
+
+Puertos:: No hay tráfico entrante al conector, a menos que lo inicie o si el conector se utiliza como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP al soporte de NetApp.
++
+--
+* HTTP (80) y HTTPS (443) proporcionan acceso a la interfaz de usuario local, que utilizará en raras circunstancias.
+* SSH (22) solo es necesario si necesita conectarse al host para solucionar problemas.
+* Las conexiones de entrada a través del puerto 3128 son necesarias si implementa sistemas Cloud Volumes ONTAP en una subred en la que no hay una conexión de Internet de salida disponible.
++
+Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet de salida para enviar mensajes de AutoSupport, BlueXP configura automáticamente esos sistemas para que usen un servidor proxy incluido en el conector. El único requisito es asegurarse de que el grupo de seguridad del conector permite conexiones entrantes a través del puerto 3128. Tendrá que abrir este puerto después de desplegar el conector.
+
+
+
+--
+
+
+
+
+== Paso 3: Configurar permisos para el conector
+
+Se necesita una cuenta de servicio de Google Cloud para proporcionar al Connector los permisos que BlueXP necesita para gestionar recursos en Google Cloud. Cuando cree el Connector, deberá asociar esta cuenta de servicio con la VM de Connector.
+
+.Pasos
+. Cree un rol personalizado en Google Cloud:
++
+.. Cree un archivo YAML que incluya el contenido de link:reference-permissions-gcp.html["Permisos de cuenta de servicio para el conector"].
+.. Desde Google Cloud, active Cloud Shell.
+.. Cargue el archivo YAML que incluya los permisos necesarios.
+.. Cree un rol personalizado mediante `gcloud iam roles create` comando.
++
+En el ejemplo siguiente se crea una función denominada "conector" en el nivel de proyecto:
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentos de Google Cloud: Creación y gestión de roles personalizados"^]
+
+
+
+. Cree una cuenta de servicio en Google Cloud y asígnele el rol a la cuenta de servicio:
++
+.. En el servicio IAM y Admin, selecciona *Cuentas de servicio > Crear cuenta de servicio*.
+.. Ingrese los detalles de la cuenta de servicio y seleccione *Crear y continuar*.
+.. Seleccione la función que acaba de crear.
+.. Finalice los pasos restantes para crear la función.
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documentos de Google Cloud: Crear una cuenta de servicio"^]
+
+
+
+. Si planea implementar sistemas Cloud Volumes ONTAP en proyectos diferentes a los del proyecto en el que reside el conector, tendrá que proporcionar a la cuenta de servicio del conector acceso a dichos proyectos.
++
+Por ejemplo, supongamos que el conector está en el proyecto 1 y que desea crear sistemas Cloud Volumes ONTAP en el proyecto 2. Tendrá que otorgar acceso a la cuenta de servicio en el proyecto 2.
+
++
+.. En el servicio IAM & Admin, seleccione el proyecto de Google Cloud en el que desea crear sistemas Cloud Volumes ONTAP.
+.. En la página *IAM*, seleccione *conceder acceso* y proporcione la información necesaria.
++
+*** Introduzca el correo electrónico de la cuenta de servicio del conector.
+*** Seleccione el rol personalizado del conector.
+*** Seleccione *Guardar*.
+
+
+
+
++
+Para obtener información detallada, consulte https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documentación de Google Cloud"^]
+
+
+
+.Resultado
+Se ha configurado la cuenta de servicio del conector VM.
+
+
+
+== Paso 4: Configurar permisos de VPC compartidos
+
+Si utiliza un VPC compartido para implementar recursos en un proyecto de servicio, tendrá que preparar los permisos.
+
+Esta tabla es de referencia y el entorno debe reflejar la tabla de permisos cuando se haya completado la configuración de IAM.
+
+.Ver permisos de VPC compartidos
+[%collapsible]
+====
+[cols="10,10,10,18,18,34"]
+|===
+| Identidad | Creador | Alojadas en | Permisos de proyecto de servicio | Permisos del proyecto host | Específico 
+
+
+| Cuenta de Google para desplegar el conector | Personalizado | Proyecto de servicio  a| 
+link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Política de despliegue de conectores"]
+ a| 
+compute.networkUser
+| Despliegue del conector en el proyecto de servicio 
+
+
+| Cuenta de servicio del conector | Personalizado | Proyecto de servicio  a| 
+link:reference-permissions-gcp.html["Política de cuenta de servicio de conector"]
+| compute.networkUser
+
+deploymentmanager.editor | Implementación y mantenimiento de Cloud Volumes ONTAP y servicios en el proyecto de servicio 
+
+
+| Cuenta de servicio de Cloud Volumes ONTAP | Personalizado | Proyecto de servicio | storage.admin
+
+miembro: Cuenta de servicio de BlueXP como serviceAccount.user | N.A. | (Opcional) para la organización de datos en niveles y el backup y recuperación de BlueXP 
+
+
+| Agente de servicio de API de Google | Google Cloud | Proyecto de servicio  a| 
+(Predeterminado) Editor
+ a| 
+compute.networkUser
+| Interactúa con las API de Google Cloud en nombre de la implementación. Permite a BlueXP utilizar la red compartida. 
+
+
+| Cuenta de servicio predeterminada de Google Compute Engine | Google Cloud | Proyecto de servicio  a| 
+(Predeterminado) Editor
+ a| 
+compute.networkUser
+| Pone en marcha instancias de Google Cloud e infraestructura de computación en nombre de la puesta en marcha. Permite a BlueXP utilizar la red compartida. 
+|===
+Notas:
+
+. deploymentmanager.editor sólo es necesario en el proyecto host si no pasa reglas de firewall a la implementación y decide dejar que BlueXP las cree por usted. BlueXP creará una implementación en el proyecto host que contiene la regla de firewall VPC0 si no se especifica ninguna regla.
+. Firewall.create y firewall.delete sólo son necesarios si no está pasando reglas de firewall a la implementación y está eligiendo permitir que BlueXP las cree para usted. Estos permisos residen en el archivo .yaml de cuenta de BlueXP. Si va a implementar un par de alta disponibilidad mediante un VPC compartido, estos permisos se utilizarán para crear las reglas de firewall para VPC1, 2 y 3. Para todas las demás implementaciones, estos permisos también se utilizarán para crear reglas para VPC0.
+. Para la organización en niveles de los datos, la cuenta del servicio de organización en niveles debe tener el rol serviceAccount.user en la cuenta de servicio, no solo en el nivel del proyecto. Actualmente, si asigna serviceAccount.user en el nivel de proyecto, los permisos no se muestran cuando consulta la cuenta de servicio con getIAMPolicy.
+
+
+====
+
+
+== Paso 5: Habilita las API de Google Cloud
+
+Se deben habilitar varias API de Google Cloud antes de poder implementar sistemas de Cloud Volumes ONTAP en Google Cloud.
+
+.Paso
+. Habilite las siguientes API de Google Cloud en su proyecto:
++
+** API de Cloud Deployment Manager V2
+** API de registro en la nube
+** API de Cloud Resource Manager
+** API del motor de computación
+** API de gestión de acceso e identidad (IAM)
+** API del servicio de gestión de claves de cloud (KMS)
++
+(Solo es obligatorio si piensas utilizar el backup y la recuperación de datos de BlueXP con claves de cifrado gestionadas por el cliente (CMEK))
+
+
+
+
+
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentación de Google Cloud: Habilitar API"^]
+
+
+
+== Paso 6: Instale el conector
+
+Una vez completados los requisitos previos, puede instalar manualmente el software en su propio host Linux.
+
+.Antes de empezar
+Debe tener lo siguiente:
+
+* Privilegios de root para instalar el conector.
+* Detalles sobre un servidor proxy, si se necesita un proxy para el acceso a Internet desde el conector.
++
+Tiene la opción de configurar un servidor proxy después de la instalación, pero para hacerlo es necesario reiniciar el conector.
+
+* Un certificado firmado por CA, si el servidor proxy utiliza HTTPS o si el proxy es un proxy de interceptación.
+
+
+.Acerca de esta tarea
+El instalador disponible en el sitio de soporte de NetApp puede ser una versión anterior. Después de la instalación, el conector se actualiza automáticamente si hay una nueva versión disponible.
+
+.Pasos
+. Compruebe que docker está activado y en ejecución.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. Si las variables del sistema _http_proxy_ o _https_proxy_ están establecidas en el host, elimínelas:
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+Si no elimina estas variables del sistema, la instalación fallará.
+
+. Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
++
+Debe descargar el instalador "en línea" del conector que se utiliza en su red o en la nube. Hay disponible un instalador "sin conexión" independiente para el conector, pero sólo es compatible con implementaciones en modo privado.
+
+. Asigne permisos para ejecutar el script.
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+Donde <version> es la versión del conector que ha descargado.
+
+. Ejecute el script de instalación.
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+Los parámetros --proxy y --cacert son opcionales. Si tiene un servidor proxy, deberá introducir los parámetros como se muestra. El instalador no le solicita que proporcione información sobre un proxy.
+
++
+A continuación encontrará un ejemplo del comando utilizando los dos parámetros opcionales:
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxy configura el conector para que utilice un servidor proxy HTTP o HTTPS con uno de los siguientes formatos:
+
++
+** \http://address:port
+** \http://username:password@address:port
+** \https://address:port
+** \https://username:password@address:port
++
+El usuario debe ser un usuario local. Los usuarios de dominio no son compatibles.
+
+
+
++
+--cacert especifica un certificado firmado por CA que se utilizará para el acceso HTTPS entre el conector y el servidor proxy. Este parámetro sólo es obligatorio si se especifica un servidor proxy HTTPS o si el proxy es un proxy de interceptación.
+
+. Espere a que finalice la instalación.
++
+Al final de la instalación, el servicio Connector (occm) se reinicia dos veces si ha especificado un servidor proxy.
+
+. Abra un explorador Web desde un host que tenga una conexión con la máquina virtual Connector e introduzca la siguiente URL:
++
+https://_ipaddress_[]
+
+. Después de iniciar sesión, configure el conector:
++
+.. Especifique la cuenta BlueXP que desea asociar al conector.
+.. Escriba un nombre para el sistema.
+.. En *¿se está ejecutando en un entorno seguro?* mantener el modo restringido desactivado.
++
+Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. Sólo debe activar el modo restringido si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de entorno de administración de BlueXP. Si ese es el caso, link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar con BlueXP en modo restringido"].
+
+.. Selecciona *Comenzar*.
+
+
+
+
+.Resultado
+El conector ya está instalado y está configurado con su cuenta BlueXP.
+
+
+
+== Paso 7: Proporcionar permisos a BlueXP
+
+Tienes que proporcionar a BlueXP los permisos de Google Cloud que hayas configurado anteriormente. Al proporcionar los permisos, BlueXP podrá gestionar tus datos y la infraestructura de almacenamiento en Google Cloud.
+
+.Pasos
+. Vaya al portal de Google Cloud y asigne la cuenta de servicio a la instancia de Connector VM.
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentación de Google Cloud: Cambiar la cuenta de servicio y los ámbitos de acceso para una instancia"^]
+
+. Si quieres gestionar recursos en otros proyectos de Google Cloud, otorga acceso agregando la cuenta de servicio con el rol de BlueXP a ese proyecto. Deberá repetir este paso con cada proyecto.
+
+
+.Resultado
+BlueXP ahora tiene los permisos que necesita para realizar acciones en Google Cloud en su nombre.

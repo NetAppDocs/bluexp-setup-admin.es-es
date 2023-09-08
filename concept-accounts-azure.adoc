@@ -20,7 +20,7 @@ Descubre cómo BlueXP utiliza las credenciales y permisos de Azure para realizar
 
 == Credenciales iniciales de Azure
 
-Al implementar un conector desde BlueXP, necesita utilizar una cuenta de Azure o una entidad de servicio con permisos para implementar la máquina virtual Connector. Los permisos necesarios se enumeran en la link:task-set-up-permissions-azure.html["Política de implementación de conectores para Azure"].
+Al implementar un conector desde BlueXP, necesita utilizar una cuenta de Azure o una entidad de servicio con permisos para implementar la máquina virtual Connector. Los permisos necesarios se enumeran en la link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Política de implementación de conectores para Azure"].
 
 Cuando BlueXP pone en marcha la máquina virtual Connector en Azure, habilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada asignada por el sistema"^] en una máquina virtual, crea un rol personalizado y lo asigna a la máquina virtual. La función proporciona a BlueXP los permisos necesarios para gestionar recursos y procesos dentro de esa suscripción a Azure. link:reference-permissions-azure.html["Revise cómo BlueXP utiliza los permisos"].
 
@@ -66,10 +66,10 @@ Para aprender a configurar los permisos, consulte las siguientes páginas:
 
 * Modo estándar
 +
-** link:task-set-up-permissions-azure.html["Configure los permisos de Azure"]
-** link:task-set-up-permissions-on-prem.html["Configure permisos en el cloud para puestas en marcha en las instalaciones"]
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configure los permisos para una puesta en marcha de Azure Marketplace"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Configure los permisos para implementaciones en las instalaciones"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Configure los permisos de cloud para el modo restringido"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configure permisos de cloud para el modo privado"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 

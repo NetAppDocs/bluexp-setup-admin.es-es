@@ -16,7 +16,7 @@ summary: BlueXP es accesible desde una consola basada en Web. Cuando comience a 
 [role="lead"]
 BlueXP es accesible desde una consola basada en Web. Cuando comience a utilizar BlueXP, su primer paso consiste en registrarse con sus credenciales actuales del sitio de soporte de NetApp o mediante la creación de un inicio de sesión en cloud de NetApp.
 
-.Opciones de registro
+.Acerca de esta tarea
 Puede suscribirse a BlueXP mediante una de las siguientes opciones:
 
 * Sus credenciales existentes del sitio de soporte de NetApp (NSS)

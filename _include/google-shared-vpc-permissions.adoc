@@ -1,0 +1,56 @@
+= 
+:allow-uri-read: 
+
+
+Si utiliza un VPC compartido para implementar recursos en un proyecto de servicio, tendrá que preparar los permisos.
+
+Esta tabla es de referencia y el entorno debe reflejar la tabla de permisos cuando se haya completado la configuración de IAM.
+
+.Ver permisos de VPC compartidos
+[%collapsible]
+====
+[cols="10,10,10,18,18,34"]
+|===
+| Identidad | Creador | Alojadas en | Permisos de proyecto de servicio | Permisos del proyecto host | Específico 
+
+
+| Cuenta de Google para desplegar el conector | Personalizado | Proyecto de servicio  a| 
+link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Política de despliegue de conectores"]
+ a| 
+compute.networkUser
+| Despliegue del conector en el proyecto de servicio 
+
+
+| Cuenta de servicio del conector | Personalizado | Proyecto de servicio  a| 
+link:reference-permissions-gcp.html["Política de cuenta de servicio de conector"]
+| compute.networkUser
+
+deploymentmanager.editor | Implementación y mantenimiento de Cloud Volumes ONTAP y servicios en el proyecto de servicio 
+
+
+| Cuenta de servicio de Cloud Volumes ONTAP | Personalizado | Proyecto de servicio | storage.admin
+
+miembro: Cuenta de servicio de BlueXP como serviceAccount.user | N.A. | (Opcional) para la organización de datos en niveles y el backup y recuperación de BlueXP 
+
+
+| Agente de servicio de API de Google | Google Cloud | Proyecto de servicio  a| 
+(Predeterminado) Editor
+ a| 
+compute.networkUser
+| Interactúa con las API de Google Cloud en nombre de la implementación. Permite a BlueXP utilizar la red compartida. 
+
+
+| Cuenta de servicio predeterminada de Google Compute Engine | Google Cloud | Proyecto de servicio  a| 
+(Predeterminado) Editor
+ a| 
+compute.networkUser
+| Pone en marcha instancias de Google Cloud e infraestructura de computación en nombre de la puesta en marcha. Permite a BlueXP utilizar la red compartida. 
+|===
+Notas:
+
+. deploymentmanager.editor sólo es necesario en el proyecto host si no pasa reglas de firewall a la implementación y decide dejar que BlueXP las cree por usted. BlueXP creará una implementación en el proyecto host que contiene la regla de firewall VPC0 si no se especifica ninguna regla.
+. Firewall.create y firewall.delete sólo son necesarios si no está pasando reglas de firewall a la implementación y está eligiendo permitir que BlueXP las cree para usted. Estos permisos residen en el archivo .yaml de cuenta de BlueXP. Si va a implementar un par de alta disponibilidad mediante un VPC compartido, estos permisos se utilizarán para crear las reglas de firewall para VPC1, 2 y 3. Para todas las demás implementaciones, estos permisos también se utilizarán para crear reglas para VPC0.
+. Para la organización en niveles de los datos, la cuenta del servicio de organización en niveles debe tener el rol serviceAccount.user en la cuenta de servicio, no solo en el nivel del proyecto. Actualmente, si asigna serviceAccount.user en el nivel de proyecto, los permisos no se muestran cuando consulta la cuenta de servicio con getIAMPolicy.
+
+
+====
