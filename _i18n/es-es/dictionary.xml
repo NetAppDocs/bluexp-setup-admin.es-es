@@ -3406,7 +3406,6 @@ Este extremo solo se requiere en las regiones gubernamentales de Azure.</block>
   <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">Para asociar las credenciales a una nueva suscripción, seleccione *Agregar suscripción &gt; continuar* y siga los pasos del AWS Marketplace:</block>
   <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">Seleccione *Ver opciones de compra*.</block>
   <block id="0b45e429b84384fa541446c3364409c9" category="list-text">Seleccione *Configurar su cuenta*.</block>
-  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">30 de julio</block>
   <block id="167693b239be0e2939d61376cd3a5487" category="section-title">Conector 3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">Ahora puedes usar la API del servicio de auditoría de BlueXP para exportar registros de auditoría.</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">Obtenga más información sobre el uso de la API del servicio de auditoría</block>
@@ -3773,4 +3772,11 @@ miembro: Cuenta de servicio de BlueXP como serviceAccount.user</block>
   <block id="490065fa675522d3a515cadb526d26f6" category="sidebar">Crear desde el mercado</block>
   <block id="655a3c90b399118b5d073277c90e6b0f" category="sidebar">Instale manualmente</block>
   <block id="054df94b323e23fce659cffe65ef10ef" category="sidebar">Crea desde BlueXP o mediante gcloud</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 de septiembre de 2023</block>
+  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">Conector 3.9.33</block>
+  <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Cuando creas un conector en AWS desde BlueXP, ahora puedes buscar dentro del campo Par de claves para encontrar más fácilmente el par de claves que quieres usar con la instancia de Connector.</block>
+  <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">Una captura de pantalla de la opción de búsqueda en el campo Par de claves que aparece en la página Red al crear un conector en AWS desde BlueXP.</block>
+  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">Esta actualización también incluye correcciones de errores.</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">30 de julio de 2023</block>
 </blocks>

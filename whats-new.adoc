@@ -18,7 +18,22 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
-== 30 de julio
+== 10 de septiembre de 2023
+
+
+
+=== Conector 3.9.33
+
+* Cuando creas un conector en AWS desde BlueXP, ahora puedes buscar dentro del campo Par de claves para encontrar más fácilmente el par de claves que quieres usar con la instancia de Connector.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Una captura de pantalla de la opción de búsqueda en el campo Par de claves que aparece en la página Red al crear un conector en AWS desde BlueXP."]
+
+* Esta actualización también incluye correcciones de errores.
+
+
+
+
+== 30 de julio de 2023
 
 
 
