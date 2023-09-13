@@ -249,7 +249,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-
 
 * El conector ahora es compatible con cualquier entorno de nube que tenga un aislamiento completo de Internet. A continuación, puede usar la consola BlueXP que se ejecuta en el conector para implementar Cloud Volumes ONTAP en la misma ubicación y detectar clústeres de ONTAP en las instalaciones (si tiene una conexión desde su entorno de cloud a un entorno local). También puedes utilizar el backup y la recuperación de datos de BlueXP para realizar backups de volúmenes de Cloud Volumes ONTAP en las regiones comerciales de AWS y Azure. No hay otros servicios de BlueXP compatibles con este tipo de puesta en marcha, a excepción de la cartera digital de BlueXP.
 +
-La región del cloud puede ser una región en la que haya agencias estadounidenses seguras como AWS C2S/SC2S, Azure IL6 o cualquier región comercial.
+La región de la nube puede ser una región para agencias estadounidenses seguras como AWS Top Secret Cloud, AWS Secret Cloud, Azure IL6 o cualquier región comercial.
 
 +
 Para empezar, instale manualmente el software Connector, inicie sesión en la consola BlueXP que se ejecuta en el conector, añada la licencia BYOL a la cartera digital de BlueXP y, después, implemente Cloud Volumes ONTAP.
