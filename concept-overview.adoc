@@ -68,7 +68,6 @@ Análisis y control:: Use herramientas para supervisar, asignar y optimizar su a
 * https://bluexp.netapp.com/digital-advisor["Asesor digital"^]
 * https://bluexp.netapp.com/digital-advisor["Eficiencia económica"^]
 * https://bluexp.netapp.com/digital-advisor["Resiliencia operativa"^]
-* https://bluexp.netapp.com/ransomware-protection["Protección contra ransomware"^]
 
 
 --

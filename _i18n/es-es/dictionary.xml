@@ -566,8 +566,6 @@
   <block id="3e347fe716ab17eefd02acef8c0347bf" category="list-text"><block ref="3e347fe716ab17eefd02acef8c0347bf" category="inline-link-rx"></block></block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="inline-link">Asesor digital</block>
   <block id="86d4d1274a29106954740fc239a0af79" category="list-text"><block ref="86d4d1274a29106954740fc239a0af79" category="inline-link-rx"></block></block>
-  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="inline-link">Protección contra ransomware</block>
-  <block id="ecbf594bb3a0b1f21d5ca3e417aec924" category="list-text"><block ref="ecbf594bb3a0b1f21d5ca3e417aec924" category="inline-link-rx"></block></block>
   <block id="e1d4fcf84146530af8da4a20a003710d" category="inline-link">Obtenga más información sobre cómo puede utilizar BlueXP para ayudar a su organización</block>
   <block id="b2be08edab4d3d89797b89ae19e20493" category="paragraph"><block ref="b2be08edab4d3d89797b89ae19e20493" category="inline-link-rx"></block></block>
   <block id="902e65d33784bd8924eb05e622aa2dda" category="section-title">Proveedores de cloud compatibles</block>
@@ -3355,9 +3353,6 @@ Este extremo solo se requiere en las regiones gubernamentales de Azure.</block>
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">Para utilizar las funciones y los servicios de BlueXP, deberás proporcionar permisos para que BlueXP pueda realizar operaciones en tu entorno de cloud. Utilice los vínculos de esta página para acceder rápidamente a los permisos que necesita en función de su objetivo.</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">Organiza clústeres de ONTAP locales en niveles en Amazon S3</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">Permisos de StorageGRID</block>
-  <block id="eb44d47feda5532d1121c79d84128d2e" category="cell">Llamadas de API a AWS, a ONTAP, a la clasificación de BlueXP, a la protección contra ransomware de BlueXP y al enviar mensajes de AutoSupport a NetApp</block>
-  <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">Llamadas API a Azure, a ONTAP, a la clasificación de BlueXP, a la protección contra ransomware de BlueXP y al enviar mensajes de AutoSupport a NetApp</block>
-  <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">Llamadas API a Google Cloud, a ONTAP, a la clasificación de BlueXP, a la protección contra ransomware de BlueXP y al enviar mensajes de AutoSupport a NetApp</block>
   <block id="6d349a0af72df500a21b7660d8e471b2" category="paragraph"><block ref="6d349a0af72df500a21b7660d8e471b2" category="inline-link-rx"></block></block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Seleccione *Credenciales de usuario*.</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Para confirmar que el proceso de registro se ha realizado correctamente, seleccione el icono Ayuda y seleccione *Soporte*.</block>
@@ -3566,7 +3561,6 @@ También debe asegurarse de que la directiva esté actualizada a medida que se a
   <block id="2a3be610e29cddb2c56aa61b555b895a" category="list-text">Al crear la instancia de Connector en AWS, proporcionó una clave de acceso y una clave secreta de AWS. Es posible usar este par de claves para SSH a la instancia. El nombre de usuario para la instancia de Linux EC2 es ubuntu (para los conectores creados antes de mayo de 2023, el nombre de usuario era EC2-user).</block>
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">Cuando creó la máquina virtual de Connector en Azure, especificó un nombre de usuario y optó por autenticarse con una contraseña o clave pública SSH. Utilice el método de autenticación que ha elegido para conectarse a la máquina virtual.</block>
   <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
-  <block id="80a43f3cb5826b8218d88da517c1e84b" category="list-text">En este momento, se envían notificaciones por correo electrónico para obtener las siguientes funciones y servicios de BlueXP: Conector, cartera digital de BlueXP, copia y sincronización de BlueXP, backup y recuperación de BlueXP, organización en niveles de BlueXP, informes de migración de BlueXP y protección contra el ransomware de BlueXP. En futuras versiones se añadirán servicios adicionales.</block>
   <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Suscríbete a BlueXP desde AWS Marketplace</block>
   <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Suscríbete a BlueXP desde Azure Marketplace</block>
   <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Suscríbete a BlueXP desde Google Cloud Marketplace</block>
@@ -3778,4 +3772,8 @@ miembro: Cuenta de servicio de BlueXP como serviceAccount.user</block>
 
 No es compatible con Google Cloud ni en<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>,<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>, o.<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="fcbe8b204f3332d68f1b0f5f05c998db" category="cell">Como no hay acceso a Internet, las siguientes funciones no están disponibles: Actualizaciones de software automatizadas y AutoSupport.</block>
+  <block id="8bb35bd6add2b83baee34c828e6acacf" category="cell">Llamadas API a Azure, a ONTAP, a la clasificación de BlueXP y al enviar mensajes de AutoSupport a NetApp</block>
+  <block id="d80bf17e105d87b4295cb2e090a28117" category="list-text">En este momento, se envían notificaciones por correo electrónico para obtener las siguientes funciones y servicios de BlueXP: Conector, cartera digital de BlueXP, copia y sincronización de BlueXP, backup y recuperación de BlueXP, organización en niveles de BlueXP e informes de migración de BlueXP. En futuras versiones se añadirán servicios adicionales.</block>
+  <block id="2cc0b2404e9976abc7bb1156519a654c" category="cell">Llamadas API a AWS, a ONTAP, a la clasificación de BlueXP y al enviar mensajes de AutoSupport a NetApp</block>
+  <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">Llamadas API a Google Cloud, a ONTAP, a la clasificación de BlueXP y al enviar mensajes de AutoSupport a NetApp</block>
 </blocks>

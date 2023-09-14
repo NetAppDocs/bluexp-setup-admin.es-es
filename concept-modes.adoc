@@ -368,7 +368,7 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | StorageGRID | No | No 
 
 
-.17+| *Servicios* | Backup y recuperación | Sí | Sí 
+.16+| *Servicios* | Backup y recuperación | Sí | Sí 
 
 
 | Clasificación | Sí | Sí 
@@ -399,9 +399,6 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 
 
 | Resiliencia operativa | No | No 
-
-
-| Protección contra ransomware | No | No 
 
 
 | Reparación | No | No 
