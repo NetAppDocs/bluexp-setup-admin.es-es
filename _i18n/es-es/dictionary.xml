@@ -2271,7 +2271,6 @@ o.</block>
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">Especifique si la instancia debe tener una dirección IP pública.</block>
   <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">Especifique la configuración del firewall que habilite los métodos de conexión necesarios para la instancia del conector: SSH, HTTP y HTTPS.</block>
   <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">Se requieren algunas reglas más para configuraciones específicas.</block>
-  <block id="79b8b9ad9bf89b0b494ac4c62694d70f" category="list-text">*Configurar almacenamiento*: Mantenga las opciones de almacenamiento predeterminadas.</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*Detalles avanzados*: En *perfil de instancia de IAM*, elija la función de IAM que incluye los permisos necesarios para el conector.</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS inicia el software con la configuración especificada. La instancia y el software del conector deben estar funcionando en aproximadamente cinco minutos.</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">la federación de identidades habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Para empezar, aprenda cómo funciona Identity federation con BlueXP y, a continuación, revise una descripción general del proceso de configuración.</block>
@@ -3776,4 +3775,6 @@ No es compatible con Google Cloud ni en<block ref="da2732e6e9a1be4ab82a1194533aa
   <block id="d80bf17e105d87b4295cb2e090a28117" category="list-text">En este momento, se envían notificaciones por correo electrónico para obtener las siguientes funciones y servicios de BlueXP: Conector, cartera digital de BlueXP, copia y sincronización de BlueXP, backup y recuperación de BlueXP, organización en niveles de BlueXP e informes de migración de BlueXP. En futuras versiones se añadirán servicios adicionales.</block>
   <block id="2cc0b2404e9976abc7bb1156519a654c" category="cell">Llamadas API a AWS, a ONTAP, a la clasificación de BlueXP y al enviar mensajes de AutoSupport a NetApp</block>
   <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">Llamadas API a Google Cloud, a ONTAP, a la clasificación de BlueXP y al enviar mensajes de AutoSupport a NetApp</block>
+  <block id="3bb1e2709fa189f2a1cf46aadeab3b46" category="list-text">*Configurar almacenamiento*: Mantenga el tamaño predeterminado y el tipo de disco para el volumen raíz.</block>
+  <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">Si desea habilitar el cifrado de Amazon EBS en el volumen raíz, seleccione *Avanzado*, expanda *Volumen 1*, seleccione *Cifrado* y, a continuación, elija una clave KMS.</block>
 </blocks>

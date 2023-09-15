@@ -32,7 +32,10 @@ link:reference-ports-aws.html["Ver reglas de grupos de seguridad para AWS"].
 
 
 
-** *Configurar almacenamiento*: Mantenga las opciones de almacenamiento predeterminadas.
+** *Configurar almacenamiento*: Mantenga el tamaño predeterminado y el tipo de disco para el volumen raíz.
++
+Si desea habilitar el cifrado de Amazon EBS en el volumen raíz, seleccione *Avanzado*, expanda *Volumen 1*, seleccione *Cifrado* y, a continuación, elija una clave KMS.
+
 ** *Detalles avanzados*: En *perfil de instancia de IAM*, elija la función de IAM que incluye los permisos necesarios para el conector.
 ** *Resumen*: Revisa el resumen y selecciona *Iniciar Instancia*.
 
