@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-overview.html 
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
-summary: NetApp BlueXP proporciona a su organización un plano de control único que le ayuda a crear, proteger y dirigir los datos tanto en sus instalaciones como en sus entornos de cloud. La plataforma SaaS BlueXP incluye servicios de almacenamiento y datos que proporcionan gestión del almacenamiento, movilidad de datos, protección de datos, análisis y control de los datos. Las capacidades de gestión se proporcionan a través de una consola basada en web y API. 
+summary: NetApp BlueXP proporciona a su organización un plano de control único que le ayuda a crear, proteger y dirigir los datos tanto en sus instalaciones como en sus entornos de cloud. La plataforma SaaS de BlueXP incluye servicios que proporcionan gestión del almacenamiento, movilidad de datos, protección de datos, y análisis y control de los datos. Las capacidades de gestión se proporcionan a través de una consola basada en web y API. 
 ---
 = Más información sobre BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp BlueXP proporciona a su organización un plano de control único
 
 
 [role="lead"]
-NetApp BlueXP proporciona a su organización un plano de control único que le ayuda a crear, proteger y dirigir los datos tanto en sus instalaciones como en sus entornos de cloud. La plataforma SaaS BlueXP incluye servicios de almacenamiento y datos que proporcionan gestión del almacenamiento, movilidad de datos, protección de datos, análisis y control de los datos. Las capacidades de gestión se proporcionan a través de una consola basada en web y API.
+NetApp BlueXP proporciona a su organización un plano de control único que le ayuda a crear, proteger y dirigir los datos tanto en sus instalaciones como en sus entornos de cloud. La plataforma SaaS de BlueXP incluye servicios que proporcionan gestión del almacenamiento, movilidad de datos, protección de datos, y análisis y control de los datos. Las capacidades de gestión se proporcionan a través de una consola basada en web y API.
 
 
 
@@ -40,7 +40,6 @@ Reducida:: Descubra, ponga en marcha y gestione el almacenamiento, ya sea en AWS
 ** Sistemas StorageGRID
 
 
-* Orquestar y proteger https://bluexp.netapp.com/solutions/kubernetes["Datos persistentes de Kubernetes"^]
 
 
 --
@@ -58,10 +57,11 @@ Protección:: Use mecanismos de protección automatizados para proteger los dato
 --
 * https://bluexp.netapp.com/cloud-backup["Backup y recuperación"^]
 * https://bluexp.netapp.com/replication["Replicación"^]
+* https://bluexp.netapp.com/solutions/kubernetes["Protección de datos para cargas de trabajo de Kubernetes"^]
 
 
 --
-Análisis y control:: Use herramientas para supervisar, asignar y optimizar su almacenamiento de datos y su infraestructura.
+Análisis y control:: Use herramientas para supervisar, asignar y optimizar su almacenamiento de datos y su infraestructura. Obtenga información procesable para optimizar el estado, la resiliencia y la economía del almacenamiento.
 +
 --
 * https://bluexp.netapp.com/netapp-cloud-data-sense["Clasificación"^]

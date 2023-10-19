@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
 keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
-summary: Una cuenta de BlueXP proporciona multi-tenancy a tu organización, lo que te permite organizar usuarios y recursos en espacios de trabajo aislados. Por ejemplo, un grupo de usuarios puede desplegar y gestionar sistemas Cloud Volumes ONTAP en un espacio de trabajo que no es visible para otros usuarios que gestionan diferentes tipos de entornos de trabajo en un espacio de trabajo diferente. 
+summary: Una cuenta de BlueXP proporciona multi-tenancy a tu organización, lo que te permite organizar usuarios y recursos en espacios de trabajo aislados. Por ejemplo, un grupo de usuarios puede desplegar y gestionar entornos de trabajo de Cloud Volumes ONTAP en un espacio de trabajo que no es visible para los usuarios que gestionan entornos de trabajo en un espacio de trabajo diferente. 
 ---
 = Obtenga más información sobre las cuentas de BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Una cuenta de BlueXP proporciona multi-tenancy a tu organización, lo q
 
 
 [role="lead"]
-Una cuenta de _BlueXP_ ofrece multi-tenancy a tu organización, lo que te permite organizar usuarios y recursos en _workspaces_ aislados. Por ejemplo, un grupo de usuarios puede desplegar y gestionar sistemas Cloud Volumes ONTAP en un espacio de trabajo que no es visible para otros usuarios que gestionan diferentes tipos de entornos de trabajo en un espacio de trabajo diferente.
+Una cuenta de _BlueXP_ ofrece multi-tenancy a tu organización, lo que te permite organizar usuarios y recursos en _workspaces_ aislados. Por ejemplo, un grupo de usuarios puede desplegar y gestionar entornos de trabajo de Cloud Volumes ONTAP en un espacio de trabajo que no es visible para los usuarios que gestionan entornos de trabajo en un espacio de trabajo diferente.
 
 Cuando acceda por primera vez a BlueXP, se le pedirá que seleccione o cree una cuenta. Por ejemplo, verá la siguiente pantalla si aún no tiene una cuenta:
 

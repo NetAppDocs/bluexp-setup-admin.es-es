@@ -81,6 +81,8 @@ Al utilizar BlueXP en modo estándar, se necesita un conector para las siguiente
 
 ^1^ Mientras puede acceder a estos servicios sin un conector, se requiere un conector para iniciar acciones desde los servicios.
 
+Se necesita un conector para utilizar BlueXP en modo restringido o en modo privado.
+
 
 
 == Los conectores deben estar operativos en todo momento
@@ -130,9 +132,9 @@ link:concept-modes.html["Obtenga más información sobre los modos de implementa
 Un administrador de cuentas de BlueXP puede crear un conector directamente desde BlueXP, desde el mercado de su proveedor de la nube, o instalando manualmente el software en su propio host Linux. La forma de comenzar depende de si está utilizando BlueXP en modo estándar, modo restringido o modo privado.
 
 * link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"]
-* link:task-quick-start-standard-mode.html["Inicio rápido para BlueXP en modo estándar"]
-* link:task-quick-start-restricted-mode.html["Inicio rápido para BlueXP en modo restringido"]
-* link:task-quick-start-private-mode.html["Inicio rápido para BlueXP en modo privado"]
+* link:task-quick-start-standard-mode.html["Empieza a usar BlueXP en el modo estándar"]
+* link:task-quick-start-restricted-mode.html["Empieza a usar BlueXP en modo restringido"]
+* link:task-quick-start-private-mode.html["Empieza a usar BlueXP en modo privado"]
 
 
 
@@ -157,7 +159,7 @@ Para obtener más información sobre cómo configurar permisos, consulte lo sigu
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 
-Para ver los permisos exactos que necesita el conector, consulte las páginas siguientes:
+Para ver los permisos exactos que el conector necesita para las operaciones diarias, consulte las siguientes páginas:
 
 * link:reference-permissions-aws.html["Conozca cómo el conector utiliza los permisos de AWS"]
 * link:reference-permissions-azure.html["Conozca cómo el conector utiliza los permisos de Azure"]
