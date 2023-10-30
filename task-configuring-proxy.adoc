@@ -40,15 +40,20 @@ image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Con
 +
 .. Seleccione *Activar proxy*.
 .. Especifique el servidor con la sintaxis http://_address:port_[] o. https://_address:port_[]
-.. Especifique un nombre de usuario y una contraseña si se requiere autenticación básica para el servidor
+.. Especifique un nombre de usuario y una contraseña si el servidor necesita autenticación básica.
 +
-El usuario debe ser un usuario local. Los usuarios de dominio no son compatibles.
+Tenga en cuenta lo siguiente:
+
++
+*** El usuario puede ser un usuario local o un usuario de dominio.
+*** Para un usuario de dominio, debe introducir el código ASCII para \ de la siguiente manera: Domain-name%92user-name
++
+Por ejemplo: netapp%92proxy
+
+*** BlueXP no admite contraseñas que incluyan el carácter @.
+
 
 .. Seleccione *Guardar*.
-+
-
-NOTE: BlueXP no admite contraseñas que incluyan el carácter @.
-
 
 
 
