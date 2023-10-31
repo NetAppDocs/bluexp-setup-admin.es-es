@@ -247,7 +247,7 @@ Debe descargar el instalador "en línea" del conector que se utiliza en su red o
 +
 [source, cli]
 ----
-chmod +x OnCommandCloudManager-<version>
+chmod +x Cloud-Manager-Connector-Cloud-<version>
 ----
 +
 Donde <version> es la versión del conector que ha descargado.
@@ -256,7 +256,7 @@ Donde <version> es la versión del conector que ha descargado.
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+ ./Cloud-Manager-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
 Los parámetros --proxy y --cacert son opcionales. Si tiene un servidor proxy, deberá introducir los parámetros como se muestra. El instalador no le solicita que proporcione información sobre un proxy.
@@ -267,7 +267,7 @@ A continuación encontrará un ejemplo del comando utilizando los dos parámetro
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./Cloud-Manager-Connector-Cloud-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxy configura el conector para que utilice un servidor proxy HTTP o HTTPS con uno de los siguientes formatos:
