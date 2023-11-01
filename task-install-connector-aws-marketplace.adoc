@@ -59,6 +59,7 @@ Para gestionar recursos en AWS. El punto final exacto depende de la región de A
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp.
 

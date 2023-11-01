@@ -58,7 +58,9 @@ Puntos finales contactados desde el conector:: El conector requiere acceso a Int
 
 | Para administrar recursos en Google Cloud.
 
-| \https://support.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte técnico de NetApp.
+|
+\https://support.netapp.com
+\https://mysupport.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte técnico de NetApp.
 
 | \https://*.api.bluexp.netapp.com
 

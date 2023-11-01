@@ -72,6 +72,7 @@ Para gestionar recursos en regiones de Azure China.
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp.
 
