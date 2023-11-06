@@ -16,6 +16,9 @@ summary: Ahora que ha iniciado sesión y configurado BlueXP en modo estándar, l
 [role="lead"]
 Ahora que ha iniciado sesión y configurado BlueXP en modo estándar, los usuarios pueden crear y descubrir entornos de trabajo y utilizar servicios de datos BlueXP.
 
+
+TIP: Si instaló un Connector en AWS, Microsoft Azure o Google Cloud, BlueXP detecta automáticamente información sobre los buckets de Amazon S3, el almacenamiento de Azure Blob o los buckets de Google Cloud Storage en la ubicación donde se instaló Connector. Se agrega automáticamente un entorno de trabajo al lienzo de BlueXP.
+
 Para obtener ayuda, vaya al https://docs.netapp.com/us-en/bluexp-family/["página principal de la documentación de BlueXP"^] Para ver los documentos de todos los servicios de BlueXP.
 
 .Enlace relacionado

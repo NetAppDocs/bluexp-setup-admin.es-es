@@ -37,6 +37,8 @@ Acceso a Internet de salida:: La ubicación de red en la que se despliega el con
 Puntos finales contactados desde el conector:: El conector requiere acceso a Internet saliente para contactar con los siguientes puntos finales con el fin de administrar los recursos y procesos dentro de su entorno de nube pública para las operaciones diarias.
 +
 --
+Tenga en cuenta que los puntos finales que se muestran a continuación son todas las entradas de CNAME.
+
 [cols="2a,1a"]
 |===
 | Puntos finales | Específico 
@@ -418,6 +420,8 @@ La instancia debe estar lista en unos 7 minutos. Debe permanecer en la página h
 
 .Resultado
 Una vez completado el proceso, el conector está disponible para su uso en BlueXP.
+
+Si tienes buckets de Google Cloud Storage en la misma cuenta de Google Cloud en la que creaste el conector, verás que el entorno de trabajo de Google Cloud Storage aparece automáticamente en el lienzo de BlueXP. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["Descubre cómo gestionar Google Cloud Storage desde BlueXP"^]
 
 --
 .gcloud

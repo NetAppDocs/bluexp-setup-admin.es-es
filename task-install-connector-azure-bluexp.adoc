@@ -45,6 +45,8 @@ Acceso a Internet de salida:: La ubicación de red en la que se despliega el con
 Puntos finales contactados desde el conector:: El conector requiere acceso a Internet saliente para contactar con los siguientes puntos finales con el fin de administrar los recursos y procesos dentro de su entorno de nube pública para las operaciones diarias.
 +
 --
+Tenga en cuenta que los puntos finales que se muestran a continuación son todas las entradas de CNAME.
+
 [cols="2a,1a"]
 |===
 | Puntos finales | Específico 
@@ -495,3 +497,5 @@ La máquina virtual debe estar lista en unos 7 minutos. Debe permanecer en la p�
 
 .Resultado
 Una vez completado el proceso, el conector está disponible para su uso en BlueXP.
+
+Si tienes almacenamiento de Azure Blob en la misma suscripción de Azure donde creaste el conector, verás que aparece automáticamente un entorno de trabajo de almacenamiento de Azure Blob en el lienzo de BlueXP. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Descubre cómo gestionar el almacenamiento de Azure Blob desde BlueXP"^]

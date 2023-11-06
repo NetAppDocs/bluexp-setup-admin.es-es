@@ -17,13 +17,13 @@ sidebar:
     entries:
     - title: Novedades
       url: "/whats-new.html"
-    - title: Limitaciones
+    - title: Limitaciones conocidas
       url: "/reference-limitations.html"
   - title: Manos a la obra
     entries:
     - title: Aprenda lo básico
       entries:
-      - title: Introducción a BlueXP
+      - title: BlueXP
         url: "/concept-overview.html"
       - title: Cuentas
         url: "/concept-netapp-accounts.html"
@@ -43,31 +43,31 @@ sidebar:
         entries:
         - title: AWS
           entries:
-          - title: Las opciones de instalación
+          - title: Opciones de instalación del conector
             url: "/concept-install-options-aws.html"
-          - title: Crea desde BlueXP
+          - title: Cree un conector desde BlueXP
             url: "/task-install-connector-aws-bluexp.html"
-          - title: Crear desde el mercado
+          - title: Cree un conector desde el mercado
             url: "/task-install-connector-aws-marketplace.html"
-          - title: Instale manualmente
+          - title: Instale manualmente el conector
             url: "/task-install-connector-aws-manual.html"
         - title: Azure
           entries:
-          - title: Las opciones de instalación
+          - title: Opciones de instalación del conector
             url: "/concept-install-options-azure.html"
-          - title: Crea desde BlueXP
+          - title: Cree un conector desde BlueXP
             url: "/task-install-connector-azure-bluexp.html"
-          - title: Crear desde el mercado
+          - title: Cree un conector desde el mercado
             url: "/task-install-connector-azure-marketplace.html"
-          - title: Instale manualmente
+          - title: Instale manualmente el conector
             url: "/task-install-connector-azure-manual.html"
         - title: Google Cloud
           entries:
-          - title: Las opciones de instalación
+          - title: Opciones de instalación del conector
             url: "/concept-install-options-google.html"
-          - title: Crea desde BlueXP o mediante gcloud
+          - title: Crea un conector desde BlueXP o gcloud
             url: "/task-install-connector-google-bluexp-gcloud.html"
-          - title: Instale manualmente
+          - title: Instale manualmente el conector
             url: "/task-install-connector-google-manual.html"
         - title: En el entorno local
           url: "/task-install-connector-on-prem.html"
@@ -105,11 +105,11 @@ sidebar:
       url: "/concept-federation.html"
     - title: Cuentas BlueXP
       entries:
-      - title: Gestione su cuenta
+      - title: Administre su cuenta de BlueXP
         url: "/task-managing-netapp-accounts.html"
       - title: Supervisar las operaciones en su cuenta
         url: "/task-monitor-cm-operations.html"
-      - title: Cree otra cuenta
+      - title: Cree otra cuenta de BlueXP
         url: "/task-create-account.html"
       - title: Roles de usuario
         url: "/reference-user-roles.html"
@@ -119,29 +119,29 @@ sidebar:
         url: "/task-finding-system-id.html"
       - title: Administrar conectores existentes
         url: "/task-managing-connectors.html"
-      - title: Instale un certificado HTTPS
+      - title: Instale un certificado HTTPS para obtener acceso seguro
         url: "/task-installing-https-cert.html"
-      - title: Configure los ajustes de proxy
+      - title: Configure un conector para que utilice un servidor proxy
         url: "/task-configuring-proxy.html"
-      - title: Configuración predeterminada
+      - title: Configuración predeterminada del conector
         url: "/reference-connector-default-config.html"
-    - title: Credenciales
+    - title: Credenciales y suscripciones
       entries:
-      - title: Gestione las credenciales de AWS
+      - title: AWS
         entries:
-        - title: Descripción general
+        - title: Obtenga más información sobre las credenciales y los permisos
           url: "/concept-accounts-aws.html"
         - title: Administrar credenciales y suscripciones
           url: "/task-adding-aws-accounts.html"
-      - title: Gestione las credenciales de Azure
+      - title: Azure
         entries:
-        - title: Descripción general
+        - title: Obtenga más información sobre las credenciales y los permisos
           url: "/concept-accounts-azure.html"
         - title: Administrar credenciales y suscripciones
           url: "/task-adding-azure-accounts.html"
-      - title: Gestione las credenciales de Google Cloud
+      - title: Google Cloud
         entries:
-        - title: Descripción general
+        - title: Aprende sobre proyectos y permisos
           url: "/concept-accounts-gcp.html"
         - title: Administrar credenciales y suscripciones
           url: "/task-adding-gcp-accounts.html"
@@ -171,11 +171,11 @@ sidebar:
         url: "/reference-permissions-gcp.html"
     - title: Puertos
       entries:
-      - title: Reglas del grupo de seguridad en AWS
+      - title: Reglas de grupo de seguridad de conector en AWS
         url: "/reference-ports-aws.html"
-      - title: Reglas de grupos de seguridad en Azure
+      - title: Reglas de grupo de seguridad de conector en Azure
         url: "/reference-ports-azure.html"
-      - title: Reglas de firewall en Google Cloud
+      - title: Reglas de firewall de conector en Google Cloud
         url: "/reference-ports-gcp.html"
       - title: Puertos para el conector en las instalaciones
         url: "/reference-ports-on-prem.html"

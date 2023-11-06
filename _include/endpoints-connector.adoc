@@ -3,6 +3,11 @@
 
 
 Puntos finales contactados desde el conector:: El conector requiere acceso a Internet saliente para contactar con los siguientes puntos finales con el fin de administrar los recursos y procesos dentro de su entorno de nube pública para las operaciones diarias.
++
+--
+Tenga en cuenta que los puntos finales que se muestran a continuación son todas las entradas de CNAME.
+
+--
 
 
 | Servicios de AWS (amazonaws.com):

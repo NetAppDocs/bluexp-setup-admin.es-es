@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-connectors.html 
-keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
 summary: Después de crear un conector, es posible que deba gestionarlo de vez en cuando. Por ejemplo, puede que desee cambiar entre conectores si tiene más de uno. También es posible que debas actualizar manualmente el conector cuando usas BlueXP en modo privado. 
 ---
 = Administrar conectores existentes
@@ -18,6 +18,13 @@ Después de crear un conector, es posible que deba gestionarlo de vez en cuando.
 
 link:concept-connectors.html["Descubra cómo funcionan los conectores"].
 
+[NOTE]
+====
+El conector incluye una interfaz de usuario local, a la que se puede acceder desde el host del conector. Esta interfaz de usuario se proporciona a los clientes que utilizan BlueXP en el modo restringido o en el modo privado. Cuando utiliza BlueXP en el modo estándar, debe acceder a la interfaz de usuario desde https://console.bluexp.netapp.com/["Consola de SaaS de BlueXP"^]
+
+link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"].
+
+====
 
 
 == Mantenimiento del sistema operativo y los equipos virtuales
@@ -106,7 +113,7 @@ Si utiliza BlueXP en modo privado, puede actualizar Connector cuando haya una ve
 El conector debe reiniciarse durante el proceso de actualización para que la consola basada en Web no esté disponible durante la actualización.
 
 
-NOTE: En los hosts que tienen acceso a Internet, el conector actualiza automáticamente su software a la última versión, siempre que tenga acceso saliente a Internet para obtener la actualización de software.
+NOTE: Cuando usas BlueXP en modo estándar o en modo restringido, Connector actualiza automáticamente su software a la última versión, siempre y cuando tenga acceso a Internet saliente para obtener la actualización del software.
 
 .Pasos
 . Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^].

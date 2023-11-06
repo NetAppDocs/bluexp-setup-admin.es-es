@@ -4,7 +4,7 @@ permalink: reference-user-roles.html
 keywords: user, users, roles, role, task, permission, permissions, tasks, admin, Account Admin, Workspace Admin, Cloud Compliance Viewer, Cloud Data Sense, SnapCenter Admin 
 summary: Las funciones Administrador de cuentas, Administrador de área de trabajo, Visor de cumplimiento y Administrador de SnapCenter proporcionan permisos específicos a los usuarios. Puedes asignar uno de estos roles cuando asocias un nuevo usuario a tu cuenta de BlueXP. 
 ---
-= Funciones
+= Roles de usuario
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

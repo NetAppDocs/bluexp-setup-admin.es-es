@@ -4,7 +4,7 @@ permalink: concept-accounts-aws.html
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
 summary: Descubre cómo BlueXP utiliza las credenciales y permisos de AWS para realizar acciones en tu nombre. Comprender estos detalles puede resultar útil a la hora de gestionar las credenciales de una o más cuentas de AWS en BlueXP. Por ejemplo, quizás quieras saber cuándo añadir más credenciales de AWS a BlueXP. 
 ---
-= Credenciales y permisos de AWS
+= Obtenga más información acerca de los permisos y credenciales de AWS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
