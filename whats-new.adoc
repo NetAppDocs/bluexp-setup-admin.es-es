@@ -18,6 +18,16 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
+== 8 de noviembre de 2023
+
+
+
+=== Conector 3.9.35
+
+Esta versión incluye mejoras de seguridad y correcciones de errores menores.
+
+
+
 == 6 de octubre de 2023
 
 
