@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-quick-start-private-mode.html 
-keywords: private mode quick start, quick start 
+keywords: private mode quick start, quick start, aws top secret cloud, aws secret cloud, secret cloud, top secret cloud 
 summary: Empieza a usar BlueXP en modo privado preparando tu entorno y poniendo en marcha Connector. 
 ---
 = Flujo de trabajo inicial (modo privado)
@@ -15,6 +15,8 @@ summary: Empieza a usar BlueXP en modo privado preparando tu entorno y poniendo 
 
 [role="lead"]
 Empieza a usar BlueXP en modo privado preparando tu entorno y poniendo en marcha Connector.
+
+El modo privado se suele utilizar con entornos locales que no tienen conexión a Internet y con regiones de nube seguras, lo que incluye https://aws.amazon.com/federal/secret-cloud/["Cloud secreto de AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Cloud secreto principal de AWS"^], y. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
 
 Antes de empezar, debería comprender link:concept-netapp-accounts.html["Cuentas BlueXP"], link:concept-connectors.html["Conectores"], y. link:concept-modes.html["modos de despliegue"].
 
