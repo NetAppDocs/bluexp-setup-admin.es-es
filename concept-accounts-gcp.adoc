@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: Descubre cómo BlueXP utiliza las credenciales y los permisos de Google Cloud para realizar acciones en tu nombre. Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud. Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada a la VM de Connector. 
+summary: Descubre cómo BlueXP utiliza las credenciales de Google Cloud para realizar acciones en tu nombre y cómo esas credenciales están asociadas a las suscripciones del mercado. Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud. Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada a la VM de Connector. 
 ---
 = Obtén más información sobre los proyectos y permisos de Google Cloud
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Descubre cómo BlueXP utiliza las credenciales y los permisos de Google
 
 
 [role="lead"]
-Descubre cómo BlueXP utiliza las credenciales y los permisos de Google Cloud para realizar acciones en tu nombre. Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud. Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada a la VM de Connector.
+Descubre cómo BlueXP utiliza las credenciales de Google Cloud para realizar acciones en tu nombre y cómo esas credenciales están asociadas a las suscripciones del mercado. Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud. Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada a la VM de Connector.
 
 
 
@@ -37,6 +37,21 @@ Para aprender a configurar los permisos, consulte las siguientes páginas:
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Configure los permisos de Google Cloud para el modo estándar"]
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
+
+
+
+
+== Credenciales y suscripciones de Marketplace
+
+Cuando implementas un Connector en Google Cloud, BlueXP crea un conjunto de credenciales predeterminado para la cuenta de servicio de Google Cloud en el proyecto en el que reside Connector. Estas credenciales deben estar asociadas a una suscripción a Google Cloud Marketplace para poder pagar por Cloud Volumes ONTAP con una tarifa por hora (PAYGO) y utilizar otros servicios de BlueXP.
+
+link:task-adding-gcp-accounts.html["Descubre cómo asociar una suscripción a Google Cloud Marketplace"].
+
+Tenga en cuenta lo siguiente acerca de las credenciales de Google Cloud y las suscripciones al mercado:
+
+* Solo se puede asociar un conjunto de credenciales de Google Cloud a un conector
+* Solo puedes asociar una suscripción a Google Cloud Marketplace a las credenciales
+* Puede reemplazar una suscripción existente de Marketplace por una nueva
 
 
 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-aws.html 
-keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
-summary: Descubre cómo BlueXP utiliza las credenciales y permisos de AWS para realizar acciones en tu nombre. Comprender estos detalles puede resultar útil a la hora de gestionar las credenciales de una o más cuentas de AWS en BlueXP. Por ejemplo, quizás quieras saber cuándo añadir más credenciales de AWS a BlueXP. 
+keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials, marketplace subscription, replace subscription, subscription 
+summary: Descubre cómo BlueXP utiliza las credenciales de AWS para realizar acciones en tu nombre y cómo esas credenciales están asociadas a las suscripciones del mercado. Comprender estos detalles puede resultar útil a la hora de gestionar las credenciales de una o más cuentas de AWS en BlueXP. Por ejemplo, quizás quieras saber cuándo añadir más credenciales de AWS a BlueXP. 
 ---
 = Obtenga más información acerca de los permisos y credenciales de AWS
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Descubre cómo BlueXP utiliza las credenciales y permisos de AWS para r
 
 
 [role="lead"]
-Descubre cómo BlueXP utiliza las credenciales y permisos de AWS para realizar acciones en tu nombre. Comprender estos detalles puede resultar útil a la hora de gestionar las credenciales de una o más cuentas de AWS en BlueXP. Por ejemplo, quizás quieras saber cuándo añadir más credenciales de AWS a BlueXP.
+Descubre cómo BlueXP utiliza las credenciales de AWS para realizar acciones en tu nombre y cómo esas credenciales están asociadas a las suscripciones del mercado. Comprender estos detalles puede resultar útil a la hora de gestionar las credenciales de una o más cuentas de AWS en BlueXP. Por ejemplo, quizás quieras saber cuándo añadir más credenciales de AWS a BlueXP.
 
 
 
@@ -48,13 +48,13 @@ Revise las secciones siguientes para obtener más información.
 
 === Agregar credenciales de AWS a un conector existente
 
-Si desea iniciar Cloud Volumes ONTAP en diferentes cuentas de AWS, puede proporcionar claves de AWS para un usuario IAM o el ARN de un rol en una cuenta de confianza. En la siguiente imagen se muestran dos cuentas adicionales, una que proporciona permisos a través de una función IAM en una cuenta de confianza y otra a través de las claves AWS de un usuario de IAM:
+Si desea usar BlueXP con cuentas adicionales de AWS, puede proporcionar claves de AWS para un usuario de IAM o el ARN de un rol en una cuenta de confianza. En la siguiente imagen se muestran dos cuentas adicionales, una que proporciona permisos a través de una función IAM en una cuenta de confianza y otra a través de las claves AWS de un usuario de IAM:
 
 image:diagram_permissions_multiple_aws.png["Imagen conceptual que muestra dos cuentas adicionales. Cada uno tiene una política de IAM, una está conectada al usuario del IAM y la otra se conecta a un rol de IAM"]
 
 A continuación, se agregarían las credenciales de cuenta a BlueXP especificando el nombre de recurso de Amazon (ARN) del rol IAM o las claves de AWS del usuario de IAM.
 
-Después de añadir otro conjunto de credenciales, puede cambiar a ellas al crear un nuevo entorno de trabajo:
+Por ejemplo, es posible cambiar entre credenciales al crear un nuevo entorno de trabajo Cloud Volumes ONTAP:
 
 image:screenshot_accounts_switch_aws.png["Una captura de pantalla que muestra la selección entre cuentas de proveedor de nube después de seleccionar Cambiar cuenta en la página Detalles  credenciales."]
 
@@ -72,7 +72,59 @@ Agregar nuevas credenciales de AWS a BlueXP proporciona los permisos necesarios 
 
 
 
-== ¿Qué pasa con las puestas en marcha de Marketplace y las puestas en marcha en las instalaciones?
+== Credenciales y suscripciones de Marketplace
+
+Las credenciales que añadas a un conector deben estar asociadas a una suscripción de AWS Marketplace para que puedas pagar por Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o a través de un contrato anual, así como para utilizar otros servicios de BlueXP.
+
+link:task-adding-aws-accounts.html#subscribe["Aprenda a asociar una suscripción a AWS"].
+
+Tenga en cuenta lo siguiente acerca de las credenciales de AWS y las suscripciones al mercado:
+
+* Solo se puede asociar una suscripción de AWS Marketplace a un conjunto de credenciales de AWS
+* Puede reemplazar una suscripción existente de Marketplace por una nueva
+
+
+
+
+== PREGUNTAS FRECUENTES
+
+Las siguientes preguntas están relacionadas con las credenciales y suscripciones.
+
+
+
+=== ¿Cómo puedo rotar mis credenciales de AWS de forma segura?
+
+Como se describe en las secciones anteriores, BlueXP le permite proporcionar credenciales de AWS de varias formas: Un rol de IAM asociado a la instancia de Connector, asumiendo un rol de IAM en una cuenta de confianza o proporcionando claves de acceso de AWS.
+
+Con las dos primeras opciones, BlueXP utiliza el Servicio de token de seguridad de AWS para obtener credenciales temporales que giran constantemente. Este proceso es la mejor práctica, es automático y seguro.
+
+Si proporciona a BlueXP claves de acceso de AWS, debe rotar las claves actualizándolas en BlueXP a intervalos regulares. Este es un proceso completamente manual.
+
+
+
+=== ¿Puedo cambiar la suscripción de AWS Marketplace para entornos de trabajo de Cloud Volumes ONTAP?
+
+Sí, puedes. Al cambiar la suscripción de AWS Marketplace asociada a un conjunto de credenciales, todos los entornos de trabajo de Cloud Volumes ONTAP existentes y nuevos se cargarán con la nueva suscripción.
+
+link:task-adding-aws-accounts.html#subscribe["Aprenda a asociar una suscripción a AWS"].
+
+
+
+=== ¿Puedo añadir varias credenciales de AWS, cada una con diferentes suscripciones del mercado?
+
+Todas las credenciales de AWS que pertenezcan a la misma cuenta de AWS se asociarán a la misma suscripción de AWS Marketplace.
+
+Si tiene varias credenciales de AWS que pertenecen a diferentes cuentas de AWS, esas credenciales se pueden asociar con la misma suscripción de AWS Marketplace o con diferentes suscripciones.
+
+
+
+=== ¿Puedo mover entornos de trabajo existentes de Cloud Volumes ONTAP a otra cuenta de AWS?
+
+No, no es posible mover los recursos de AWS asociados con su entorno de trabajo de Cloud Volumes ONTAP a una cuenta de AWS diferente.
+
+
+
+=== ¿Cómo funcionan las credenciales en las implementaciones del mercado y en las instalaciones?
 
 En las secciones anteriores se describe el método de implementación recomendado para el conector, que es de BlueXP. También puede poner en marcha un conector en AWS desde AWS Marketplace y puede instalar manualmente el software del conector en su propio host Linux.
 
@@ -91,13 +143,3 @@ Para aprender a configurar los permisos, consulte las siguientes páginas:
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
-
-
-
-== ¿Cómo puedo rotar mis credenciales de AWS de forma segura?
-
-Como se ha descrito anteriormente, BlueXP permite proporcionar credenciales de AWS de varias maneras: Una función IAM asociada a la instancia de Connector, asumiendo una función IAM en una cuenta de confianza o proporcionando claves de acceso de AWS.
-
-Con las dos primeras opciones, BlueXP utiliza el Servicio de token de seguridad de AWS para obtener credenciales temporales que giran constantemente. Este proceso es la mejor práctica, es automático y seguro.
-
-Si proporciona a BlueXP claves de acceso de AWS, debe rotar las claves actualizándolas en BlueXP a intervalos regulares. Este es un proceso completamente manual.

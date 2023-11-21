@@ -20,7 +20,9 @@ Puede administrar las credenciales de Google Cloud asociadas a la instancia de V
 
 == Asocie una suscripción a Marketplace con credenciales de Google Cloud
 
-Al implementar un conector en Google Cloud, BlueXP crea un conjunto predeterminado de credenciales asociadas a la instancia de Connector VM. En cualquier momento, puede cambiar la suscripción de Marketplace asociada a estas credenciales. La suscripción permite crear un sistema Cloud Volumes ONTAP de pago por uso y utilizar otros servicios BlueXP.
+Al implementar un conector en Google Cloud, BlueXP crea un conjunto predeterminado de credenciales asociadas a la instancia de Connector VM. En cualquier momento, puedes cambiar la suscripción de Google Cloud Marketplace asociada a estas credenciales. La suscripción permite crear un sistema Cloud Volumes ONTAP de pago por uso y utilizar otros servicios BlueXP.
+
+La sustitución de la suscripción actual del mercado por una nueva suscripción cambia la suscripción del mercado para cualquier entorno de trabajo existente de Cloud Volumes ONTAP y todos los nuevos entornos de trabajo.
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.

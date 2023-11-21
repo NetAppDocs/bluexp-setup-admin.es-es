@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: Añada y gestione credenciales de Azure para que BlueXP tenga los permisos que necesita para implementar y gestionar recursos cloud en sus suscripciones a Azure. Si gestiona varias suscripciones a Azure Marketplace, puede asignar cada una de ellas a diferentes credenciales de Azure desde la página Credentials. 
 ---
-= Gestione credenciales y suscripciones de Azure para BlueXP
+= Gestiona las credenciales de Azure y las suscripciones al mercado para BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -327,7 +327,10 @@ Después de añadir sus credenciales de Azure a BlueXP, puede asociar una suscri
 Hay dos situaciones en las que puede asociar una suscripción a Azure Marketplace después de haber añadido las credenciales a BlueXP:
 
 * No asoció una suscripción cuando agregó inicialmente las credenciales a BlueXP.
-* Desea sustituir una suscripción existente de Azure Marketplace por una nueva suscripción.
+* Desea cambiar la suscripción de Azure Marketplace asociada con las credenciales de Azure.
++
+La sustitución de la suscripción actual del mercado por una nueva suscripción cambia la suscripción del mercado para cualquier entorno de trabajo existente de Cloud Volumes ONTAP y todos los nuevos entornos de trabajo.
+
 
 
 .Antes de empezar
