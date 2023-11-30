@@ -27,6 +27,9 @@ Estos extremos se ponen en contacto desde el equipo de un usuario al completar a
 \https://*.console.bluexp.netapp.com | Su navegador web se pone en contacto con estas URL cuando utiliza la consola basada en web de BlueXP. 
 
 
+| \https://aiq.netapp.com | Es necesario acceder al asesor digital de BlueXP. 
+
+
  a| 
 Servicios de AWS (amazonaws.com):
 

@@ -230,21 +230,20 @@ BlueXP quita el conector de sus registros.
 
 == Desinstale el software del conector
 
-Desinstale el software del conector para solucionar problemas o para quitar el software del host de forma permanente. Los pasos que debe seguir dependen de si ha instalado el conector en un host que tenga acceso a Internet o un host en una red restringida que no tenga acceso a Internet.
+Desinstale el software del conector para solucionar problemas o para quitar el software del host de forma permanente. Los pasos que debe usar dependen de si instaló el conector en un host que tiene acceso a Internet (modo estándar o modo restringido) o un host en una red que no tiene acceso a Internet (modo privado).
 
 
 
-=== Desinstale desde un host con acceso a Internet
+=== Desinstale cuando utilice el modo estándar o el modo restringido
 
-El conector en línea incluye una secuencia de comandos de desinstalación que puede utilizar para desinstalar el software.
+Los pasos a continuación le permiten desinstalar el software Connector cuando utiliza BlueXP en modo estándar o restringido.
 
-.Paso
+.Pasos
+. Conéctese a la máquina virtual de Linux para el conector.
 . Desde el host Linux, ejecute el script de desinstalación:
 +
-[source, cli]
-----
-/opt/application/netapp/service-manager-2/uninstall.sh [silent]
-----
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
+
 +
 _silent_ ejecuta la secuencia de comandos sin que se le solicite confirmación.
 
@@ -252,16 +251,15 @@ _silent_ ejecuta la secuencia de comandos sin que se le solicite confirmación.
 
 
 
-=== Desinstale desde un host sin acceso a Internet
+=== Desinstale al utilizar el modo privado
 
-Use estos comandos si descargó el software del conector del sitio de soporte de NetApp y lo instaló en una red restringida que no tiene acceso a Internet.
+Los siguientes pasos le permiten desinstalar el software Connector cuando utiliza BlueXP en modo privado donde no hay acceso a Internet disponible.
 
-.Paso
+.Pasos
+. Conéctese a la máquina virtual de Linux para el conector.
 . Desde el host Linux, ejecute los siguientes comandos:
 +
-[source, cli]
-----
-docker-compose -f /opt/application/netapp/ds/docker-compose.yml down -v
-rm -rf /opt/application/netapp/ds
-----
+`./opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
+
 

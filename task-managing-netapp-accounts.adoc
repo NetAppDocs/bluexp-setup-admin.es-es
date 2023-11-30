@@ -116,11 +116,13 @@ Ahora el usuario puede acceder a esas áreas de trabajo desde BlueXP, siempre y 
 
 == Crear y administrar cuentas de servicio
 
-Una cuenta de servicio actúa como un "usuario" que puede realizar llamadas API autorizadas a BlueXP con fines de automatización. Esto facilita la gestión de la automatización, ya que no necesita crear scripts de automatización basados en la cuenta de usuario de una persona real que pueda salir de la empresa en cualquier momento. Y si utiliza federation, puede crear un token sin que genere un token de actualización desde el cloud.
+Una cuenta de servicio actúa como un "usuario" que puede realizar llamadas API autorizadas a BlueXP con fines de automatización. Esto facilita la gestión de la automatización, ya que no necesita crear scripts de automatización basados en la cuenta de usuario de una persona real que pueda salir de la empresa en cualquier momento.
 
 Usted otorga permisos a una cuenta de servicio asignándole una función, al igual que cualquier otro usuario de BlueXP. También puede asociar la cuenta de servicio a espacios de trabajo específicos para controlar los entornos de trabajo (recursos) a los que puede acceder el servicio.
 
 Al crear la cuenta de servicio, BlueXP permite copiar o descargar un ID de cliente y un secreto de cliente para la cuenta de servicio. Este par de claves se utiliza para la autenticación con BlueXP.
+
+Tenga en cuenta que un token de actualización no es necesario para las operaciones de API cuando se utiliza una cuenta de servicio. https://docs.netapp.com/us-en/bluexp-automation/platform/grant_types.html["Obtenga más información sobre los tokens de actualización"^]
 
 
 
