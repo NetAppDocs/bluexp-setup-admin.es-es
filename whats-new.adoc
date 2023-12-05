@@ -18,6 +18,23 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
+== 5 de diciembre de 2023
+
+
+
+=== Liberación en modo privado
+
+Ya está disponible una nueva versión del modo privado para BlueXP. Esta versión incluye la versión 3.9.35 del conector y versiones de los servicios de BlueXP compatibles con el modo privado a partir de octubre de 2023.
+
+Esta nueva versión está disponible para descargar desde el sitio de soporte de NetApp.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["Obtén más información sobre los servicios de BlueXP que se incluyen en el modo privado"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Descubre cómo empezar a utilizar BlueXP en modo privado"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Aprenda a actualizar el conector cuando use el modo privado"]
+
+
+
+
 == 8 de noviembre de 2023
 
 

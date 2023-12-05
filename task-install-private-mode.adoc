@@ -36,14 +36,14 @@ sudo systemctl enable docker && sudo systemctl start docker
 ----
 . Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^]
 +
-Asegúrese de descargar el instalador para redes restringidas sin acceso a Internet.
+Asegúrese de descargar el instalador fuera de línea para redes privadas sin acceso a Internet.
 
 . Copie el instalador en el host Linux.
 . Asigne permisos para ejecutar el script.
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-<version>
+chmod +x /path/BlueXP-Connector-offline-<version>
 ----
 +
 Donde <version> es la versión del conector que ha descargado.
@@ -52,7 +52,7 @@ Donde <version> es la versión del conector que ha descargado.
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-<version>
+sudo /path/BlueXP-Connector-offline-<version>
 ----
 +
 Donde <version> es la versión del conector que ha descargado.

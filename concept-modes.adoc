@@ -276,9 +276,17 @@ Servicios de BlueXP compatibles en implementaciones locales:: BlueXP admite los 
 | Servicios compatibles | Notas 
 
 
-| Backup y recuperación | Solo se admiten los backups y restauraciones de volúmenes ONTAP en las instalaciones en sistemas StorageGRID.
+| Backup y recuperación  a| 
+* Se admiten los backups y la restauración de volúmenes de ONTAP en las instalaciones en sistemas StorageGRID.
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Descubra cómo realizar backups de datos de ONTAP en las instalaciones en StorageGRID"^]
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Descubra cómo realizar backups de datos de ONTAP en las instalaciones en StorageGRID"^] 
+* También se admiten los procesos de backup y restauración de volúmenes de ONTAP en las instalaciones en ONTAP S3.
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["Descubra cómo realizar backups de los datos de ONTAP en las instalaciones en ONTAP S3"^]
+
+
+
 
 
 | Clasificación  a| 
