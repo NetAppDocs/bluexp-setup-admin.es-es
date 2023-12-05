@@ -3839,4 +3839,7 @@ No es compatible con Google Cloud ni en<block ref="da2732e6e9a1be4ab82a1194533aa
   <block id="74456640d8afbf406f720d7bd598b445" category="list-text">También se admiten los procesos de backup y restauración de volúmenes de ONTAP en las instalaciones en ONTAP S3.</block>
   <block id="18bb302ce6a2bf46e1beed1133756fb6" category="inline-link">Descubra cómo realizar backups de los datos de ONTAP en las instalaciones en ONTAP S3</block>
   <block id="4befb86902877ee4e8c0bab35f4c9850" category="paragraph"><block ref="4befb86902877ee4e8c0bab35f4c9850" category="inline-link-rx"></block></block>
+  <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">5 de diciembre de 2023</block>
+  <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">Ya no son necesarios los siguientes permisos para el backup y la recuperación de BlueXP al realizar backups de datos de volúmenes en el almacenamiento de Azure Blob:</block>
+  <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">Estos permisos son necesarios para otros servicios de almacenamiento de BlueXP, por lo que seguirán teniendo el rol personalizado de Connector si utilizas esos otros servicios de almacenamiento.</block>
 </blocks>
