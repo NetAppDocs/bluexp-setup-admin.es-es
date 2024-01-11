@@ -18,14 +18,14 @@ Para ayudarle a comenzar, su representante de NetApp puede pedirle el ID de sist
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Ayuda.
-. Seleccione *Soporte > conector*.
+. Selecciona *Support > BlueXP Connector*.
 +
-El ID del sistema aparece en la parte superior.
+El ID del sistema aparece en la parte superior de la página.
 
 +
 *ejemplo*
 
 +
-image:screenshot_system_id.gif["Una captura de pantalla que muestra el ID de sistema para BlueXP que aparece en el panel de soporte técnico."]
+image:screenshot-system-id.png["Una captura de pantalla que muestra el ID de sistema para BlueXP que aparece en el panel de soporte técnico."]
 
 

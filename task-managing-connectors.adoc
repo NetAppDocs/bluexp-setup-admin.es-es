@@ -39,6 +39,23 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times["Tenga 
 
 
 
+== Ver la versión de un conector
+
+Puede ver la versión de su conector para verificar que el conector se actualiza automáticamente a la última versión o porque necesita compartirlo con su representante de NetApp.
+
+.Pasos
+. En la parte superior derecha de la consola de BlueXP, seleccione el icono Ayuda.
+. Selecciona *Support > BlueXP Connector*.
++
+La versión se muestra en la parte superior de la página.
+
++
+image:screenshot-connector-version.png["Una captura de pantalla que muestra la versión del conector en el panel de soporte."]
+
+
+
+
+
 == Cambiar entre conectores
 
 Si tiene varios conectores, puede alternar entre ellos para ver los entornos de trabajo asociados a un conector específico.
