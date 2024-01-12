@@ -158,7 +158,9 @@ Servicios compatibles con BlueXP:: BlueXP admite los siguientes servicios de alm
 
 | Backup y recuperación | Se admite en regiones gubernamentales y regiones comerciales con modo restringido. No se admite en regiones soberanas con modo restringido.
 
-Las siguientes funciones no son compatibles: Aplicaciones, máquinas virtuales y Kubernetes. 
+En el modo restringido, el backup y la recuperación de BlueXP solo admiten backup y restauración de datos de volúmenes de ONTAP. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Consulte la lista de destinos de backup admitidos para los datos de ONTAP"^]
+
+No se admiten los backups y la restauración de datos de aplicaciones, datos de máquinas virtuales y datos de Kubernetes. 
 
 
 | Clasificación  a| 
@@ -254,7 +256,11 @@ Servicios de BlueXP compatibles en las implementaciones de cloud:: BlueXP admite
 
 | Backup y recuperación | Compatible con regiones comerciales de AWS y Azure.
 
-No es compatible con Google Cloud ni en https://aws.amazon.com/federal/secret-cloud/["Cloud secreto de AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Cloud secreto principal de AWS"^], o. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+No es compatible con Google Cloud ni en https://aws.amazon.com/federal/secret-cloud/["Cloud secreto de AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Cloud secreto principal de AWS"^], o. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
+
+En el modo privado, el backup y la recuperación de BlueXP admite solo backup y restauración de datos de volúmenes de ONTAP. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Consulte la lista de destinos de backup admitidos para los datos de ONTAP"^]
+
+No se admiten los backups y la restauración de datos de aplicaciones, datos de máquinas virtuales y datos de Kubernetes. 
 
 
 | Cloud Volumes ONTAP | Como no hay acceso a Internet, las siguientes funciones no están disponibles: Actualizaciones de software automatizadas y AutoSupport. 
@@ -277,15 +283,9 @@ Servicios de BlueXP compatibles en implementaciones locales:: BlueXP admite los 
 
 
 | Backup y recuperación  a| 
-* Se admiten los backups y la restauración de volúmenes de ONTAP en las instalaciones en sistemas StorageGRID.
-+
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Descubra cómo realizar backups de datos de ONTAP en las instalaciones en StorageGRID"^]
+En el modo privado, el backup y la recuperación de BlueXP admite solo backup y restauración de datos de volúmenes de ONTAP. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Consulte la lista de destinos de backup admitidos para los datos de volúmenes ONTAP"^]
 
-* También se admiten los procesos de backup y restauración de volúmenes de ONTAP en las instalaciones en ONTAP S3.
-+
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["Descubra cómo realizar backups de los datos de ONTAP en las instalaciones en ONTAP S3"^]
-
-
+No se admiten los backups y la restauración de datos de aplicaciones, datos de máquinas virtuales y datos de Kubernetes.
 
 
 
@@ -343,7 +343,9 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | Área de producto | Servicio o característica BlueXP | Modo restringido | Modo privado 
 
 
-.11+| *Entornos de trabajo* | Amazon FSX para ONTAP | Sí | No 
+.11+| *Entornos de trabajo*
+
+Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo desde el lienzo de BlueXP. No indica los destinos de backup admitidos para el backup y recuperación de BlueXP. | Amazon FSX para ONTAP | Sí | No 
 
 
 | Amazon S3 | No | No 
@@ -376,7 +378,11 @@ Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. P
 | StorageGRID | No | No 
 
 
-.16+| *Servicios* | Backup y recuperación | Sí | Sí 
+.16+| *Servicios* | Backup y recuperación | Sí
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Consulte la lista de destinos de backup admitidos para los datos de volúmenes ONTAP"^] | Sí
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Consulte la lista de destinos de backup admitidos para los datos de volúmenes ONTAP"^] 
 
 
 | Clasificación | Sí | Sí 
