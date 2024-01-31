@@ -42,7 +42,7 @@ La identidad administrada asignada por el sistema asignada a la máquina virtual
 
 == Credenciales adicionales de Azure
 
-Si desea utilizar diferentes credenciales de Azure con BlueXP, debe conceder los permisos necesarios mediante link:task-adding-azure-accounts.html["Crear y configurar un servicio principal en Azure Active Directorio"] Para cada cuenta de Azure. La siguiente imagen muestra dos cuentas adicionales, cada una configurada con una función personalizada y principal de servicio que proporciona permisos:
+Si desea utilizar diferentes credenciales de Azure con BlueXP, debe conceder los permisos necesarios mediante link:task-adding-azure-accounts.html["Creación y configuración de un principal de servicio en Microsoft Entra ID"] Para cada cuenta de Azure. La siguiente imagen muestra dos cuentas adicionales, cada una configurada con una función personalizada y principal de servicio que proporciona permisos:
 
 image:diagram_permissions_multiple_azure.png["Una imagen conceptual que muestra la cuenta inicial de Azure, que recibe permisos a través de una función personalizada y una identidad administrada, y dos cuentas adicionales que reciben permisos a través de una función personalizada y una entidad de servicio."]
 
@@ -100,7 +100,7 @@ No, no es posible mover los recursos de Azure asociados con su entorno de trabaj
 
 En las secciones anteriores se describe el método de implementación recomendado para el conector, que es de BlueXP. También puede poner en marcha un conector en Azure desde Azure Marketplace y puede instalar el software del conector en su propio host Linux.
 
-Si utiliza Marketplace, puede proporcionar permisos asignando un rol personalizado a la máquina virtual del conector y a una identidad gestionada asignada por el sistema, o bien puede usar un director de servicio de Azure AD.
+Si utiliza Marketplace, puede proporcionar permisos asignando un rol personalizado a la VM de Connector y a una identidad administrada asignada por el sistema, o puede usar un principal de servicio de Microsoft Entra.
 
 Para implementaciones en las instalaciones, no puede configurar una identidad administrada para el conector, pero puede proporcionar permisos utilizando un director de servicio.
 

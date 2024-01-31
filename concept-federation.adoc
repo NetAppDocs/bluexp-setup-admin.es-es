@@ -56,7 +56,7 @@ La federación de identidades usa estándares abiertos, como el lenguaje de marc
 BlueXP admite los siguientes proveedores de identidades:
 
 * Proveedores de identidad del lenguaje de marcado de aserción de seguridad (SAML)
-* Microsoft Azure Active Directory (AD)
+* ID de Microsoft Entra
 * Servicios de Federación de Active Directory (ADFS).
 * PingFederate
 
@@ -129,9 +129,9 @@ Tenga en cuenta que la página se actualiza entre probar la conexión y habilita
 |===
 
 
-=== Microsoft Azure AD
+=== ID de Microsoft Entra
 
-En un nivel elevado, la configuración de una conexión federada entre BlueXP y Azure AD incluye los siguientes pasos:
+En un nivel general, la configuración de una conexión federada entre BlueXP y Microsoft Entra ID incluye los siguientes pasos:
 
 [cols="10,15,75"]
 |===
@@ -139,9 +139,9 @@ En un nivel elevado, la configuración de una conexión federada entre BlueXP y 
 
 
 | 1 | Administrador DE ANUNCIOS  a| 
-Configure Azure Active Directory para habilitar la federación de identidades con BlueXP.
+Configura Microsoft Entra ID para habilitar la federación de identidades con BlueXP.
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Vea las instrucciones para registrar la aplicación en Azure AD"^]
+https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Vea las instrucciones para registrar la aplicación con Microsoft Entra ID"^]
 
 
 TIP: Do _not_ complete los pasos que describen cómo crear una conexión en auth0. Creará esa conexión en el siguiente paso.
@@ -155,7 +155,7 @@ Para completar este paso, debe obtener lo siguiente de su administrador de AD:
 
 * ID del cliente
 * Valor secreto cliente
-* Dominio de Microsoft Azure AD
+* Dominio de Microsoft Entra ID
 
 
 Después de crear la conexión mediante esta información, la página Federation Setup (Configuración de Federación) enumera los parámetros que puede enviar al administrador de AD para completar la configuración en el paso siguiente.
@@ -165,7 +165,7 @@ NOTE: Tome nota de la fecha de caducidad de la clave secreta. Debe volver a la p
 
 
 
-| 3 | Administrador DE ANUNCIOS | Complete la configuración en Azure AD con los parámetros que se muestran en la página Federation Setup después de finalizar el paso 2. 
+| 3 | Administrador DE ANUNCIOS | Complete la configuración en Microsoft Entra ID utilizando los parámetros que se muestran en la página Configuración de federación después de finalizar el paso 2. 
 
 
 | 4 | Administrador de BlueXP | Compruebe y active la conexión desde https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^]

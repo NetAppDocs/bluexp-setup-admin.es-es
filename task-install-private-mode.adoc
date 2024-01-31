@@ -189,7 +189,7 @@ image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Con
 . Seleccione *Agregar Credenciales* y siga los pasos del asistente.
 +
 .. *Ubicación de credenciales*: Seleccione *Microsoft Azure > conector*.
-.. *Definir credenciales*: Introduzca información acerca del principal de servicio de Azure Active Directory que otorga los permisos necesarios:
+.. *Definir Credenciales*: Introduzca información sobre el principal de servicio Microsoft Entra que otorga los permisos requeridos:
 +
 *** ID de aplicación (cliente)
 *** ID de directorio (inquilino)

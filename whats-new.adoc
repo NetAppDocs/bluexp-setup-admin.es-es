@@ -689,9 +689,7 @@ A partir de diciembre de 2021, NetApp ahora utiliza Microsoft Azure Active Direc
 
 Si todavía no ha migrado su cuenta de NSS a IDaaS, primero debe migrar la cuenta y, a continuación, actualizar sus credenciales en Cloud Manager.
 
-* link:task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method["Aprenda a actualizar una cuenta de NSS con el nuevo método de autenticación"].
-* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Obtenga más información sobre el uso de Microsoft Azure AD por parte de NetApp para la gestión de identidades"^]
-
+https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Obtenga más información sobre el uso por parte de NetApp de Microsoft Azure Active Directory para la gestión de identidades"^]
 
 
 

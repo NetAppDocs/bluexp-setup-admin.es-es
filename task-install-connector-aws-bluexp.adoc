@@ -128,6 +128,14 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet de salida
 --
 
 
+Habilite NTP:: Si tienes pensado utilizar la clasificación de BlueXP para analizar tus orígenes de datos corporativos, debes habilitar un servicio de protocolo de tiempo de redes (NTP) tanto en el sistema BlueXP Connector como en el sistema de clasificación de BlueXP para que el tiempo se sincronice entre los sistemas. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Más información sobre la clasificación de BlueXP"^]
++
+--
+Deberá implementar este requisito de red después de crear el conector.
+
+--
+
+
 
 
 == Paso 2: Configure los permisos de AWS

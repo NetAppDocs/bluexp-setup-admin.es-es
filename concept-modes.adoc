@@ -68,7 +68,7 @@ La tabla siguiente ofrece una comparación de estos modos.
 | Acceso de interfaz de usuario | De la capa SaaS BlueXP | Localmente desde el conector VM | Localmente desde el conector VM 
 
 
-| Extremo de API | La capa SaaS BlueXP | La capa SaaS BlueXP | El conector 
+| Extremo de API | La capa SaaS BlueXP | El conector | El conector 
 
 
 | Autenticación | A través de SaaS mediante auth0, inicio de sesión de NSS o federación de identidades | A través de SaaS mediante auth0 o federación de identidades | Autenticación de usuario local 
@@ -138,9 +138,8 @@ También es necesario establecer una conexión con recursos de proveedor de clou
 Ubicación compatible para el conector:: En el modo restringido, el conector es compatible con la nube: En una región gubernamental, soberana o comercial.
 Instalación del conector:: Es posible instalar el conector en AWS o Azure Marketplace o una instalación manual en su propio host Linux.
 Actualizaciones de conectores:: Las actualizaciones automatizadas del software Connector están disponibles en BlueXP con actualizaciones mensuales.
-Acceso a la interfaz de usuario:: Puede accederse a la interfaz de usuario desde el conector que ha implementado en su región de cloud.
-Extremo de API:: Las llamadas API se realizan en el siguiente punto final:
-\https://cloudmanager.cloud.netapp.com
+Acceso a la interfaz de usuario:: Se puede acceder a la interfaz de usuario desde la máquina virtual de Connector que se implementa en la región de la nube.
+Extremo de API:: Se realizan llamadas API a la máquina virtual Connector.
 Autenticación:: La autenticación se proporciona a través del servicio en la nube de BlueXP con auth0. la federación de identidades también está disponible.
 Servicios compatibles con BlueXP:: BlueXP admite los siguientes servicios de almacenamiento y datos con modo restringido:
 +
