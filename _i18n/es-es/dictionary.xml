@@ -3832,4 +3832,29 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="b63eb36e7e2e258bb1104cee2cd67c79" category="inline-link-macro">Creación y configuración de un principal de servicio en Microsoft Entra ID</block>
   <block id="3c648c2bdafb5df126cd7d0e3dfcad8a" category="paragraph">Si desea utilizar diferentes credenciales de Azure con BlueXP, debe conceder los permisos necesarios mediante <block ref="45c7e71be639d18293cd100d389b6dc3" category="inline-link-macro-rx"></block> Para cada cuenta de Azure. La siguiente imagen muestra dos cuentas adicionales, cada una configurada con una función personalizada y principal de servicio que proporciona permisos:</block>
   <block id="66106267dde1c941a1fde19110f5e949" category="paragraph">Si utiliza Marketplace, puede proporcionar permisos asignando un rol personalizado a la VM de Connector y a una identidad administrada asignada por el sistema, o puede usar un principal de servicio de Microsoft Entra.</block>
+  <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">Introducción de BlueXP</block>
+  <block id="6cc6d549680ee5bae0375022aa7c117c" category="paragraph">NetApp BlueXP amplía y mejora las funcionalidades que se proporcionan a través de Cloud Manager. BlueXP es un plano de control unificado que proporciona una experiencia multicloud híbrida para servicios de almacenamiento y datos en los entornos de almacenamiento y de cloud en las instalaciones.</block>
+  <block id="4860911c5c67c5e04987564884e8b85e" category="list-text">Experiencia de gestión unificada</block>
+  <block id="c3eb39b445a75ad05505fe32c6f061df" category="list-text">BlueXP le permite gestionar todos sus activos de almacenamiento y datos desde una única interfaz.</block>
+  <block id="a28e6578744ceeb545878235d414e497" category="paragraph">Puedes usar BlueXP para crear y administrar almacenamiento en nube (por ejemplo, Cloud Volumes ONTAP y Azure NetApp Files), para mover, proteger y analizar datos, y para controlar muchos dispositivos de almacenamiento on-premises y en la periferia.</block>
+  <block id="fc8ff23d0bf81d0f8427b5c75023f80e" category="inline-link">Obtenga más información en el sitio Web de BlueXP</block>
+  <block id="6680bbdbd7bdd3c542020121df4cb264" category="paragraph"><block ref="6680bbdbd7bdd3c542020121df4cb264" category="inline-link-rx"></block></block>
+  <block id="31f0834695d820dc381e57397e466d12" category="list-text">Nuevo menú de navegación</block>
+  <block id="e6481c5ec5346aeaf59c7bacad0a735a" category="list-text">En el menú de navegación de BlueXP, los servicios ahora están organizados por categorías y se denominan según su funcionalidad. Por ejemplo, puedes acceder a la copia de seguridad y recuperación de BlueXP desde la categoría *Protección*.</block>
+  <block id="7cb04a79785e33be744a126127319a35" category="inline-image-macro">Captura de pantalla del menú de navegación de BlueXP que muestra categorías como almacenamiento y salud.</block>
+  <block id="e3a2069a256a46b571b57fe46324f5c0" category="paragraph"><block ref="e3a2069a256a46b571b57fe46324f5c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="68d4f3d7366b4ea59a65f0c44540e368" category="list-text">Integraciones de nuevos productos</block>
+  <block id="cf6a3994dac804af910024cf740e14ac" category="list-text">Ahora puede gestionar los bloques de Amazon S3 en las cuentas de AWS donde está instalado Connector.</block>
+  <block id="054332983ba253fe4573945dcdbc8109" category="list-text">Ahora puede gestionar más sistemas de almacenamiento en las instalaciones, como E-Series y StorageGRID.</block>
+  <block id="bcaa38b35b3f595027217ec10755368a" category="list-text">Ahora puedes utilizar servicios de datos que antes solo estaban disponibles como servicio independiente con una interfaz de usuario independiente, como el asesor digital de BlueXP (Active IQ).</block>
+  <block id="d59048f21fd887ad520398ce677be586" category="list-text">Leer más</block>
+  <block id="72098f7f145b12a125b92539edd37f4a" category="inline-link">Gestión de bloques de Amazon S3</block>
+  <block id="8a4a49cb4536baac7f58e0eb6e2dac29" category="list-text"><block ref="8a4a49cb4536baac7f58e0eb6e2dac29" category="inline-link-rx"></block></block>
+  <block id="23c19e9851a45bd1a62c97b5c51e16ab" category="inline-link">Gestione los sistemas de almacenamiento E-Series</block>
+  <block id="120b07a98eececd322e53cecc2102f44" category="list-text"><block ref="120b07a98eececd322e53cecc2102f44" category="inline-link-rx"></block></block>
+  <block id="280f0ea2e556e240b5f15b51047b45b8" category="inline-link">Gestione los sistemas de almacenamiento StorageGRID</block>
+  <block id="e85444ee57c2061143502fa15b083bcc" category="list-text"><block ref="e85444ee57c2061143502fa15b083bcc" category="inline-link-rx"></block></block>
+  <block id="f3bb3ec21babd88d81e5f7aefe69cced" category="inline-link">Obtenga información sobre la integración de Digital Advisor</block>
+  <block id="fd93e0ac3cede5691afd22e4d95042e3" category="list-text"><block ref="fd93e0ac3cede5691afd22e4d95042e3" category="inline-link-rx"></block></block>
+  <block id="ba1f7346b31e12566f94dd10dbca2587" category="section-title">Solicitar que se actualicen las credenciales de NSS</block>
 </blocks>
