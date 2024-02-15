@@ -40,6 +40,14 @@ No se puede editar su nombre si inicia sesión con una conexión federada o con 
 
 
 
+=== Requisito del servicio de metadatos de la instancia de Amazon EC2
+
+Debe tener en cuenta que se requiere IMDSv1 en las instancias EC2 antes de instalar manualmente el software Connector en AWS.
+
+link:reference-limitations.html["Obtenga más información sobre el requisito para IMDSv1 en AWS"].
+
+
+
 == 11 de enero de 2024
 
 

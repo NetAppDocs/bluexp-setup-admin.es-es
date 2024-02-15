@@ -24,9 +24,19 @@ Estas limitaciones son específicas para la configuración y administración de 
 
 
 
+=== Se requiere IMDSv1 en instancias de EC2
+
+Antes de instalar manualmente el software Connector en una instancia de EC2 en AWS cuando se utiliza el modo estándar o el modo restringido, debe asegurarse de que la instancia de EC2 utiliza la instancia de Metadata Service versión 1 (IMDSv1). El conector no es compatible con IMDSv2.
+
+Puesto que IMDSv2 es ahora la versión predeterminada en una nueva instancia de EC2, es necesario modificar las opciones de metadatos de la instancia para restaurar el uso de IMDSv1.
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["Documentación de AWS: Restaurar el uso de IMDSv1"^]
+
+
+
 === No se debe cambiar la configuración de instancia de EC2 por defecto
 
-Al implementar Connector en AWS, los siguientes ajustes de instancia de EC2 se configuran de forma predeterminada:
+Al implementar el conector en AWS desde BlueXP o desde AWS Marketplace, se configuran de forma predeterminada los siguientes ajustes de instancia de EC2:
 
 * IMDSv2 está configurado como opcional
 * HttpTokens está configurado como opcional

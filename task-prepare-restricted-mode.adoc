@@ -82,6 +82,14 @@ El conector es compatible con Google Cloud en una instancia de máquina virtual 
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
 Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
 Motor Docker:: Se requiere Docker Engine versión 19.3.1 o posterior en el host antes de instalar el conector. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
+IMDSv1:: La instancia Metadata Service versión 1 (IMDSv1) es necesaria en las instancias EC2. El conector no es compatible con IMDSv2.
++
+--
+Puesto que IMDSv2 es ahora la versión predeterminada en una nueva instancia de EC2, es necesario modificar las opciones de metadatos de la instancia para restaurar el uso de IMDSv1.
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["Documentación de AWS: Restaurar el uso de IMDSv1"^]
+
+--
 
 
 
