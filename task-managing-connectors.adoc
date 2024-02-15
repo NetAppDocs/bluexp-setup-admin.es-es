@@ -170,15 +170,21 @@ Si es necesario para su empresa, puede cambiar la dirección IP interna y la dir
 . Si ha cambiado la dirección IP pública y necesita conectarse a la interfaz de usuario local que se ejecuta en el conector, reinicie la instancia del conector para registrar la nueva dirección IP con BlueXP.
 . Si cambió la dirección IP privada, actualice la ubicación de copia de seguridad de los archivos de configuración de Cloud Volumes ONTAP para que las copias de seguridad se envíen a la nueva dirección IP privada del conector.
 +
-.. Ejecute el siguiente comando desde la interfaz de línea de comandos de Cloud Volumes ONTAP para quitar el destino de backup actual:
+Deberá actualizar la ubicación de copia de seguridad de cada sistema Cloud Volumes ONTAP.
+
++
+.. Ejecute el siguiente comando desde la interfaz de línea de comandos de Cloud Volumes ONTAP para mostrar el destino actual de backup:
 +
 [source, cli]
 ----
-system configuration backup settings modify -destination ""
+system configuration backup show
 ----
-.. Vaya a BlueXP y abra el entorno de trabajo.
-.. Seleccione el menú y seleccione *Avanzado > copias de seguridad de configuración*.
-.. Seleccione *establecer destino de copia de seguridad*.
+.. Ejecute el siguiente comando para actualizar la dirección IP del destino de copia de seguridad:
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
 
 
 

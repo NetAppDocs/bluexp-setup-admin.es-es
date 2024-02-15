@@ -2021,10 +2021,6 @@ o.</block>
   <block id="bfe6d8b96fb30d923a8089019f265d6b" category="list-text">Siga las instrucciones del proveedor de cloud para cambiar la dirección IP local o la dirección IP pública (o ambas) de la instancia de Connector.</block>
   <block id="db56ea1b582b55a06a12a4267a2c8d20" category="list-text">Si ha cambiado la dirección IP pública y necesita conectarse a la interfaz de usuario local que se ejecuta en el conector, reinicie la instancia del conector para registrar la nueva dirección IP con BlueXP.</block>
   <block id="c2b41de08c51bfb56dcd23e174ea8788" category="list-text">Si cambió la dirección IP privada, actualice la ubicación de copia de seguridad de los archivos de configuración de Cloud Volumes ONTAP para que las copias de seguridad se envíen a la nueva dirección IP privada del conector.</block>
-  <block id="a6a2880e12afb78f4820f1aaf905127c" category="list-text">Ejecute el siguiente comando desde la interfaz de línea de comandos de Cloud Volumes ONTAP para quitar el destino de backup actual:</block>
-  <block id="62d4c1187f5c26c9b533034e1decce4b" category="list-text">Vaya a BlueXP y abra el entorno de trabajo.</block>
-  <block id="4ca9c62606d1c97138981cac6d8eff5f" category="list-text">Seleccione el menú y seleccione *Avanzado &gt; copias de seguridad de configuración*.</block>
-  <block id="eb65e51e9fa3b9b54ae0d3622c7f3d2c" category="list-text">Seleccione *establecer destino de copia de seguridad*.</block>
   <block id="eb9bb09a006b6e7bcc7d0b9525344bcf" category="section-title">Editar los URI de un conector</block>
   <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">Agregue y elimine el identificador uniforme de recursos (URI) de un conector.</block>
   <block id="f98b44043815b68b5ba8272fb252dafd" category="list-text">Seleccione la lista desplegable *conector* del encabezado BlueXP.</block>
@@ -3857,4 +3853,16 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="f3bb3ec21babd88d81e5f7aefe69cced" category="inline-link">Obtenga información sobre la integración de Digital Advisor</block>
   <block id="fd93e0ac3cede5691afd22e4d95042e3" category="list-text"><block ref="fd93e0ac3cede5691afd22e4d95042e3" category="inline-link-rx"></block></block>
   <block id="ba1f7346b31e12566f94dd10dbca2587" category="section-title">Solicitar que se actualicen las credenciales de NSS</block>
+  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">15 de febrero de 2024</block>
+  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">Conector 3.9.37</block>
+  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.</block>
+  <block id="937efe0b961bcb892e05e19e0c147973" category="paragraph">En este momento, la versión 3.9.37 está disponible para modo estándar y modo restringido.</block>
+  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">Editar nombre</block>
+  <block id="c42458c54134318669b685ee8730a478" category="paragraph">Si usas las credenciales de la nube de NetApp para iniciar sesión en BlueXP, ahora puedes editar tu nombre en *Configuración de usuario*.</block>
+  <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">Una captura de pantalla que muestra la capacidad de editar su nombre en Configuración de usuario.</block>
+  <block id="19f8b99a1063fac466ee71dbd38b8447" category="paragraph"><block ref="19f8b99a1063fac466ee71dbd38b8447" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4a784443543a41df794122c52fae1df7" category="paragraph">No se puede editar su nombre si inicia sesión con una conexión federada o con su cuenta del sitio de soporte de NetApp.</block>
+  <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">Deberá actualizar la ubicación de copia de seguridad de cada sistema Cloud Volumes ONTAP.</block>
+  <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Ejecute el siguiente comando desde la interfaz de línea de comandos de Cloud Volumes ONTAP para mostrar el destino actual de backup:</block>
+  <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">Ejecute el siguiente comando para actualizar la dirección IP del destino de copia de seguridad:</block>
 </blocks>
