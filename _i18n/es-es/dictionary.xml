@@ -3580,7 +3580,6 @@ miembro: Cuenta de servicio de BlueXP como serviceAccount.user</block>
   <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">Conector 3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Cuando creas un conector en AWS desde BlueXP, ahora puedes buscar dentro del campo Par de claves para encontrar más fácilmente el par de claves que quieres usar con la instancia de Connector.</block>
   <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">Una captura de pantalla de la opción de búsqueda en el campo Par de claves que aparece en la página Red al crear un conector en AWS desde BlueXP.</block>
-  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">Esta actualización también incluye correcciones de errores.</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">30 de julio de 2023</block>
   <block id="e22252cf3c711c916163d727b6261500" category="paragraph">La región de la nube puede ser una región para agencias estadounidenses seguras como AWS Top Secret Cloud, AWS Secret Cloud, Azure IL6 o cualquier región comercial.</block>
@@ -3859,7 +3858,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">Editar nombre</block>
   <block id="c42458c54134318669b685ee8730a478" category="paragraph">Si usas las credenciales de la nube de NetApp para iniciar sesión en BlueXP, ahora puedes editar tu nombre en *Configuración de usuario*.</block>
   <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">Una captura de pantalla que muestra la capacidad de editar su nombre en Configuración de usuario.</block>
-  <block id="19f8b99a1063fac466ee71dbd38b8447" category="paragraph"><block ref="19f8b99a1063fac466ee71dbd38b8447" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4a784443543a41df794122c52fae1df7" category="paragraph">No se puede editar su nombre si inicia sesión con una conexión federada o con su cuenta del sitio de soporte de NetApp.</block>
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">Deberá actualizar la ubicación de copia de seguridad de cada sistema Cloud Volumes ONTAP.</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Ejecute el siguiente comando desde la interfaz de línea de comandos de Cloud Volumes ONTAP para mostrar el destino actual de backup:</block>
@@ -3872,8 +3870,10 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="1dd4f77b0b91e0fcf80bc700a9a86fd6" category="paragraph">Al implementar el conector en AWS desde BlueXP o desde AWS Marketplace, se configuran de forma predeterminada los siguientes ajustes de instancia de EC2:</block>
   <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
   <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">La instancia Metadata Service versión 1 (IMDSv1) es necesaria en las instancias EC2. El conector no es compatible con IMDSv2.</block>
-  <block id="7626696bd9f21a6589ce40ea53af6046" category="section-title">Requisito del servicio de metadatos de la instancia de Amazon EC2</block>
-  <block id="bce093b82ba18b11f0951a0e0b61a538" category="paragraph">Debe tener en cuenta que se requiere IMDSv1 en las instancias EC2 antes de instalar manualmente el software Connector en AWS.</block>
   <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link-macro">Obtenga más información sobre el requisito para IMDSv1 en AWS</block>
-  <block id="b305801a6c9c8eadb3e6439dc658aaa8" category="paragraph"><block ref="785f731db3565bf64fce6692ea6b4a4a" category="inline-link-macro-rx"></block>.</block>
+  <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">IMDSv1 requisito para EC2 instancias</block>
+  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">Debe tener en cuenta que la instancia Metadata Service versión 1 (IMDSv1) es necesaria en las instancias de Amazon EC2 antes de instalar manualmente el software Connector en AWS.</block>
+  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>.</block>
+  <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
