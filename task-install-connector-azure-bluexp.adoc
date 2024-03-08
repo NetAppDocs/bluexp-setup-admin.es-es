@@ -420,7 +420,7 @@ Su principal de servicio ahora está configurado y debe haber copiado el ID de a
 Crea el Connector directamente desde la consola basada en web de BlueXP.
 
 .Acerca de esta tarea
-Al crear el conector desde BlueXP se implementa una máquina virtual en Azure con una configuración predeterminada. link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada para el conector"].
+Al crear el conector desde BlueXP se implementa una máquina virtual en Azure con una configuración predeterminada. Después de crear el conector, no debe cambiar a un tipo de máquina virtual más pequeño que tenga menos CPU o RAM. link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada para el conector"].
 
 .Antes de empezar
 Debe tener lo siguiente:

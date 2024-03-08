@@ -73,6 +73,7 @@ La segunda directiva proporciona permisos para los siguientes servicios:
     "Statement": [
         {
             "Action": [
+                "ec2:DescribeAvailabilityZones",
                 "ec2:DescribeInstances",
                 "ec2:DescribeInstanceStatus",
                 "ec2:RunInstances",
@@ -1301,6 +1302,16 @@ El conector realiza las siguientes solicitudes de la API para gestionar etiqueta
 == Registro de cambios
 
 A medida que se añadan y eliminen permisos, los anotaremos en las secciones siguientes.
+
+
+
+=== 8 de marzo de 2024
+
+Ahora se incluye el siguiente permiso en la directiva Connector:
+
+EC2:DescripciónAvailabilityZones
+
+Este permiso es necesario para una próxima versión. Actualizaremos las notas de la versión con más detalles cuando esa versión esté disponible.
 
 
 
