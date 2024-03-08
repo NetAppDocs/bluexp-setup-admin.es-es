@@ -42,7 +42,7 @@ El servicio de metadatos de instancia (IMDS) se activa de la siguiente forma en 
 * Para Cloud Volumes ONTAP, IMDSv1 se habilita de forma predeterminada en las instancias nuevas y existentes. Puede configurar manualmente IMDSv2 en las instancias EC2 si lo prefiere.
 
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Aprenda a configurar IMDSv2 en instancias existentes"].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["Aprenda a configurar IMDSv2 en instancias existentes"].
 
 
 
