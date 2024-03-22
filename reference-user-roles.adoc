@@ -29,6 +29,12 @@ El rol de Visor de cumplimiento de normativas es para acceso de clasificación d
 | Activar servicios en entornos de trabajo | Sí | Sí | No | No 
 
 
+| Eliminar entornos de trabajo de un espacio de trabajo | Sí | Sí | No | No 
+
+
+| Eliminar entornos de trabajo | Sí | Sí | No | No 
+
+
 | Ver el estado de replicación de datos | Sí | Sí | No | No 
 
 
@@ -39,12 +45,6 @@ El rol de Visor de cumplimiento de normativas es para acceso de clasificación d
 
 
 | Consulta los resultados del análisis de clasificación de BlueXP | Sí | Sí | Sí | No 
-
-
-| Eliminar entornos de trabajo | Sí | No | No | No 
-
-
-| Conecte los clústeres de Kubernetes a entornos de trabajo | Sí | No | No | No 
 
 
 | Reciba el informe de Cloud Volumes ONTAP | Sí | No | No | No 
@@ -63,9 +63,6 @@ El rol de Visor de cumplimiento de normativas es para acceso de clasificación d
 
 
 | Consulte y gestione la consola de soporte | Sí | No | No | No 
-
-
-| Eliminar entornos de trabajo de BlueXP | Sí | No | No | No 
 
 
 | Instale un certificado HTTPS | Sí | No | No | No 
