@@ -382,7 +382,7 @@ A continuación encontrará un ejemplo del comando utilizando los dos parámetro
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.35 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxy configura el conector para que utilice un servidor proxy HTTP o HTTPS con uno de los siguientes formatos:

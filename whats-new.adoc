@@ -18,6 +18,48 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
+== 26 de marzo de 2024
+
+
+
+=== Versión en modo privado (3,9.38)
+
+Ya está disponible una nueva versión del modo privado para BlueXP. Esta versión incluye las siguientes versiones de los servicios de BlueXP que son compatibles con el modo privado.
+
+[cols="2*"]
+|===
+| Servicio | Versión incluida 
+
+
+| Conector | 3.9.38 
+
+
+| Backup y recuperación | 12 de marzo de 2024 
+
+
+| Clasificación | 4 de marzo de 2024 
+
+
+| Gestión de Cloud Volumes ONTAP | 8 de marzo de 2024 
+
+
+| Cartera digital | 30 de julio de 2023 
+
+
+| Gestión de clústeres de ONTAP en las instalaciones | 30 de julio de 2023 
+
+
+| Replicación | 18 de septiembre de 2022 
+|===
+Esta nueva versión está disponible para descargar desde el sitio de soporte de NetApp.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Aprende sobre el modo privado"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Descubre cómo empezar a utilizar BlueXP en modo privado"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Aprenda a actualizar el conector cuando use el modo privado"]
+
+
+
+
 == 8 de marzo de 2024
 
 
@@ -106,7 +148,7 @@ Esta versión incluye mejoras menores, correcciones de errores y soporte para Co
 
 
 
-=== Liberación en modo privado
+=== Versión en modo privado (3,9.35)
 
 Ya está disponible una nueva versión del modo privado para BlueXP. Esta versión incluye la versión 3.9.35 del conector y versiones de los servicios de BlueXP compatibles con el modo privado a partir de octubre de 2023.
 
