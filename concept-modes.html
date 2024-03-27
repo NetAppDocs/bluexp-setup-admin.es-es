@@ -1,0 +1,3121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head class="at-element-marker">
+  <title>Obtenga más información sobre los modos de implementación de BlueXP | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Obtenga más información sobre los modos de implementación de BlueXP | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/es-es/bluexp-setup-admin/concept-modes.html" />
+	<meta property="og:description" content="BlueXP ofrece múltiples modos de implementación que le permiten utilizar BlueXP de forma que se adapte a sus necesidades empresariales y de seguridad. El mod..." />
+  <meta property="og:image" content="https://docs.netapp.com/es-es/bluexp-setup-admin/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="BlueXP ofrece múltiples modos de implementación que le permiten utilizar BlueXP de forma que se adapte a sus necesidades empresariales y de seguridad. El mod...">
+  <meta name="keywords" content=" dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret"><!-- Icons -->
+  <link rel="icon" href="/es-es/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/es-es/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/es-es/bluexp-setup-admin/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/es-es/bluexp-setup-admin/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/es-es/bluexp-setup-admin/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/es-es/bluexp-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/concept-modes.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/es-es/bluexp-setup-admin/js/na-search.js'></script><script src='/es-es/bluexp-setup-admin/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/es-es/bluexp-setup-admin/js/custom-dropdown.js'></script>
+  <script src='/es-es/bluexp-setup-admin/js/FileSaver.min.js'></script>
+  <script src='/es-es/bluexp-setup-admin/js/jszip-utils.min.js'></script>
+  <script src='/es-es/bluexp-setup-admin/js/jszip.min.js'></script><script src='/es-es/bluexp-setup-admin/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/es-es/bluexp-setup-admin/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/es/">
+                <image id="ie-header-logo" src="/es-es/bluexp-setup-admin/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/es/support-and-training/documentation/">Documentos</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/es-es/bluexp-setup-admin/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">Español</span>
+                    <img src="/es-es/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/es-es/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/concept-modes.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/concept-modes.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/concept-modes.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/concept-modes.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/concept-modes.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/concept-modes.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/concept-modes.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/concept-modes.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/es-es/bluexp-setup-admin/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">Todo NetApp</span>
+                    <img src="/es-es/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/es-es/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/es/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Soporte</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Base de conocimientos</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/es/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Formación</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/es-es/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/es-es/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">Todos los documentos</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">Documentos de nube</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/es-es/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/es-es/bluexp-setup-admin/">-->
+      Setup and administration
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/es-es/bluexp-setup-admin/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/es-es/bluexp-setup-admin/search.html" 
+        data-type="widget"
+        data-placeholder="Buscar documentación"
+        data-no-results-found="No se han encontrado resultados para {query}"
+        data-did-you-mean="Busca {suggestion}."
+        data-no-results-found-did-you-mean="No se ha encontrado ningún resultado para {query}. ¿Querías decir {suggestion}?"
+        data-results-found="{hitCount} resultados encontrados"
+        data-error-message="Se ha producido un error. Por favor, inténtalo de nuevo."
+        data-error-reset="Restablecer búsqueda"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Documentos de configuración y administración"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/es-es/bluexp-setup-admin/index.html">
+        Documentos de configuración y administración
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Notas de la versión"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Notas de la versión</div>-->
+         Notas de la versión
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Novedades"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-setup-admin/whats-new.html">
+        Novedades
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitaciones conocidas"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-setup-admin/reference-limitations.html">
+        Limitaciones conocidas
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Manos a la obra"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Manos a la obra</div>-->
+         Manos a la obra
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Aprenda lo básico"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Aprenda lo básico</div>-->
+         Aprenda lo básico
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/concept-overview.html">
+        BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cuentas"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/concept-netapp-accounts.html">
+        Cuentas
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Conectores"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/concept-connectors.html">
+        Conectores
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Modos de implementación"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-modes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/concept-modes.html">
+        Modos de implementación
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Comience con el modo estándar"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Comience con el modo estándar</div>-->
+         Comience con el modo estándar
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Flujo de trabajo inicial"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-quick-start-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-quick-start-standard-mode.html">
+        Flujo de trabajo inicial
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepare las redes para usar la consola de BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-networking-saas-console.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-networking-saas-console.html">
+        Prepare las redes para usar la consola de BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regístrese en BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-sign-up-saas.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-sign-up-saas.html">
+        Regístrese en BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cree un conector"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Cree un conector</div>-->
+         Cree un conector
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Opciones de instalación del conector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-install-options-aws.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/concept-install-options-aws.html">
+        Opciones de instalación del conector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cree un conector desde BlueXP"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-connector-aws-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/task-install-connector-aws-bluexp.html">
+        Cree un conector desde BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cree un conector desde el mercado"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-connector-aws-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/task-install-connector-aws-marketplace.html">
+        Cree un conector desde el mercado
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Instale manualmente el conector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-connector-aws-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/task-install-connector-aws-manual.html">
+        Instale manualmente el conector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Opciones de instalación del conector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-install-options-azure.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/concept-install-options-azure.html">
+        Opciones de instalación del conector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cree un conector desde BlueXP"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-connector-azure-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/task-install-connector-azure-bluexp.html">
+        Cree un conector desde BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cree un conector desde el mercado"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-connector-azure-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/task-install-connector-azure-marketplace.html">
+        Cree un conector desde el mercado
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Instale manualmente el conector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-connector-azure-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/task-install-connector-azure-manual.html">
+        Instale manualmente el conector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Opciones de instalación del conector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-install-options-google.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/concept-install-options-google.html">
+        Opciones de instalación del conector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Crea un conector desde BlueXP o gcloud"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-connector-google-bluexp-gcloud.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html">
+        Crea un conector desde BlueXP o gcloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Instale manualmente el conector"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-connector-google-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/es-es/bluexp-setup-admin/task-install-connector-google-manual.html">
+        Instale manualmente el conector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="En el entorno local"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-connector-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/es-es/bluexp-setup-admin/task-install-connector-on-prem.html">
+        En el entorno local
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Suscríbase a BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-subscribe-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-subscribe-standard-mode.html">
+        Suscríbase a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Lo que puede hacer a continuación"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-whats-next.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-whats-next.html">
+        Lo que puede hacer a continuación
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Comience con el modo restringido"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Comience con el modo restringido</div>-->
+         Comience con el modo restringido
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Flujo de trabajo inicial"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-quick-start-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-quick-start-restricted-mode.html">
+        Flujo de trabajo inicial
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepárese para la puesta en marcha"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-prepare-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-prepare-restricted-mode.html">
+        Prepárese para la puesta en marcha
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Despliegue el conector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-install-restricted-mode.html">
+        Despliegue el conector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Suscríbase a BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-subscribe-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-subscribe-restricted-mode.html">
+        Suscríbase a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Lo que puede hacer a continuación"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-whats-next-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-whats-next-restricted-mode.html">
+        Lo que puede hacer a continuación
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Comience con el modo privado"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Comience con el modo privado</div>-->
+         Comience con el modo privado
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Flujo de trabajo inicial"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-quick-start-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-quick-start-private-mode.html">
+        Flujo de trabajo inicial
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepárese para la puesta en marcha"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-prepare-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-prepare-private-mode.html">
+        Prepárese para la puesta en marcha
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Despliegue el conector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-install-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-install-private-mode.html">
+        Despliegue el conector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Lo que puede hacer a continuación"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-whats-next-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-whats-next-private-mode.html">
+        Lo que puede hacer a continuación
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inicie sesión en BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-logging-in.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-setup-admin/task-logging-in.html">
+        Inicie sesión en BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administrar BlueXP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Administrar BlueXP</div>-->
+         Administrar BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="federación de identidades"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-federation.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-setup-admin/concept-federation.html">
+        federación de identidades
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cuentas BlueXP"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Cuentas BlueXP</div>-->
+         Cuentas BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administre su cuenta de BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-managing-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-managing-netapp-accounts.html">
+        Administre su cuenta de BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Supervisar las operaciones en su cuenta"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-monitor-cm-operations.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-monitor-cm-operations.html">
+        Supervisar las operaciones en su cuenta
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cree otra cuenta de BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-create-account.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-create-account.html">
+        Cree otra cuenta de BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Roles de usuario"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-user-roles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-user-roles.html">
+        Roles de usuario
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Conectores"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Conectores</div>-->
+         Conectores
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Busque el ID del sistema de un conector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-finding-system-id.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-finding-system-id.html">
+        Busque el ID del sistema de un conector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administrar conectores existentes"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-managing-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-managing-connectors.html">
+        Administrar conectores existentes
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Instale un certificado HTTPS para obtener acceso seguro"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-installing-https-cert.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-installing-https-cert.html">
+        Instale un certificado HTTPS para obtener acceso seguro
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configure un conector para que utilice un servidor proxy"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-configuring-proxy.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-configuring-proxy.html">
+        Configure un conector para que utilice un servidor proxy
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configuración predeterminada del conector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-connector-default-config.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-connector-default-config.html">
+        Configuración predeterminada del conector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Credenciales y suscripciones"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Credenciales y suscripciones</div>-->
+         Credenciales y suscripciones
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Obtenga más información sobre las credenciales y los permisos"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-accounts-aws.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/es-es/bluexp-setup-admin/concept-accounts-aws.html">
+        Obtenga más información sobre las credenciales y los permisos
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administrar credenciales y suscripciones"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-adding-aws-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/es-es/bluexp-setup-admin/task-adding-aws-accounts.html">
+        Administrar credenciales y suscripciones
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Obtenga más información sobre las credenciales y los permisos"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-accounts-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/es-es/bluexp-setup-admin/concept-accounts-azure.html">
+        Obtenga más información sobre las credenciales y los permisos
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administrar credenciales y suscripciones"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-adding-azure-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/es-es/bluexp-setup-admin/task-adding-azure-accounts.html">
+        Administrar credenciales y suscripciones
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Aprende sobre proyectos y permisos"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/concept-accounts-gcp.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/es-es/bluexp-setup-admin/concept-accounts-gcp.html">
+        Aprende sobre proyectos y permisos
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administrar credenciales y suscripciones"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-adding-gcp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/es-es/bluexp-setup-admin/task-adding-gcp-accounts.html">
+        Administrar credenciales y suscripciones
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administrar las credenciales de NSS asociadas con una cuenta de BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-adding-nss-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-adding-nss-accounts.html">
+        Administrar las credenciales de NSS asociadas con una cuenta de BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administre las credenciales asociadas con su inicio de sesión de BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-manage-user-credentials.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/task-manage-user-credentials.html">
+        Administre las credenciales asociadas con su inicio de sesión de BlueXP
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Referencia"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Referencia</div>-->
+         Referencia
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permisos"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Permisos</div>-->
+         Permisos
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Resumen de permisos"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-permissions.html">
+        Resumen de permisos
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permisos de AWS para Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-permissions-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-permissions-aws.html">
+        Permisos de AWS para Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permisos de Azure para Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-permissions-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-permissions-azure.html">
+        Permisos de Azure para Connector
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permisos de Google Cloud para Connector"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-permissions-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-permissions-gcp.html">
+        Permisos de Google Cloud para Connector
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Puertos"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Puertos</div>-->
+         Puertos
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Reglas de grupo de seguridad de conector en AWS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-ports-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-ports-aws.html">
+        Reglas de grupo de seguridad de conector en AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Reglas de grupo de seguridad de conector en Azure"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-ports-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-ports-azure.html">
+        Reglas de grupo de seguridad de conector en Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Reglas de firewall de conector en Google Cloud"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-ports-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-ports-gcp.html">
+        Reglas de firewall de conector en Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Puertos para el conector en las instalaciones"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/reference-ports-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/es-es/bluexp-setup-admin/reference-ports-on-prem.html">
+        Puertos para el conector en las instalaciones
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Conocimiento y apoyo"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/es-es/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/es-es/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Conocimiento y apoyo</div>-->
+         Conocimiento y apoyo
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regístrese para recibir soporte"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-setup-admin/task-support-registration.html">
+        Regístrese para recibir soporte
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Obtenga ayuda"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/es-es/bluexp-setup-admin/task-get-help.html">
+        Obtenga ayuda
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avisos legales"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/concept-modes.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/es-es/bluexp-setup-admin/legal-notices.html">
+        Avisos legales
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/es-es/bluexp-setup-admin"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/es-es/bluexp-setup-admin"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/es-es/bluexp-setup-admin/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> Se proporciona el idioma español mediante traducción automática para su comodidad. En caso de alguna inconsistencia, el inglés precede al español. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Obtenga más información sobre los modos de implementación de BlueXP</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-07 05:50:50 +0000">03/07/2024</time>
+        
+    
+    
+        <span>Colaboradores
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/es-es/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Sugerir cambios</span>
+        <img src="/es-es/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/es-es/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin.es-es/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/es-es/bluexp-setup-admin/concept-modes.html&page-title=Obtenga más información sobre los modos de implementación de BlueXP" class="page-nav-contribute-link" role="button">Solicitar cambios en el documento</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/concept-modes.adoc" class="page-nav-contribute-link" role="button">Editar esta página</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Descubre cómo colaborar</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/es-es/bluexp-setup-admin/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/es-es/bluexp-setup-admin/pdfs/fullsite-sidebar/Documentación_de_configuración_y_administración_de_BlueXP.pdf" >
+                    <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>PDF de este sitio de documentos</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Notas_de_la_versión.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Notas de la versión
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Manos_a_la_obra.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Manos a la obra
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Aprenda_lo_básico.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Aprenda lo básico
+          </a>
+          
+
+
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Comience_con_el_modo_estándar.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Comience con el modo estándar
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Cree_un_conector.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Cree un conector
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Comience_con_el_modo_restringido.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Comience con el modo restringido
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Comience_con_el_modo_privado.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Comience con el modo privado
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Administrar_BlueXP.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Administrar BlueXP
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Cuentas_BlueXP.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Cuentas BlueXP
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Conectores.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Conectores
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Credenciales_y_suscripciones.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Credenciales y suscripciones
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Referencia.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Referencia
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Permisos.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Permisos
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Puertos.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Puertos
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/es-es/bluexp-setup-admin/pdfs/sidebar/Conocimiento_y_apoyo.pdf" 
+            
+          >
+            <img src="/es-es/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Conocimiento y apoyo
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/es-es/bluexp-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Recopilación de documentos PDF independientes<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>BlueXP ofrece varios <em>modos de implementación</em> que le permiten utilizar BlueXP de forma que se adapte a sus necesidades empresariales y de seguridad. <em>Standard Mode</em> aprovecha la capa SaaS de BlueXP para proporcionar todas las funciones, mientras que <em>restricted mode</em> y <em>private mode</em> están disponibles para organizaciones que tienen restricciones de conectividad.</p>
+</div>
+<div class="paragraph">
+<p>Mientras BlueXP inhibe el flujo del tráfico, la comunicación y los datos cuando usa modo restringido o modo privado, es responsabilidad suya asegurarse de que su entorno (en las instalaciones y en el cloud) cumpla con las normativas requeridas.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="descripción-general">Descripción general</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP ofrece los siguientes modos de implementación para su cuenta. Cada modo difiere en términos de requisitos de conectividad saliente, ubicación de implementación, proceso de instalación, método de autenticación, servicios de datos y almacenamiento disponibles y métodos de carga.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Modo estándar</dt>
+<dd>
+<p>BlueXP es accesible a los usuarios como servicio en nube desde la consola basada en Web. Dependiendo de los servicios de BlueXP que tenga previsto utilizar, un administrador de BlueXP crea uno o más conectores para gestionar los datos dentro de su entorno de cloud híbrido.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Este modo utiliza la transmisión de datos cifrados a través de Internet pública.</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Modo restringido</dt>
+<dd>
+<p>Un conector BlueXP se instala en la nube (en una región gubernamental, una región soberana en nube o una región comercial) y tiene conectividad externa limitada a la capa SaaS BlueXP. Los usuarios acceden a BlueXP localmente desde la consola basada en Web que está disponible desde el conector, no desde la capa SaaS.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Este modo suele ser utilizado por los gobiernos estatales y locales y las empresas reguladas.</p>
+</div>
+<div class="paragraph">
+<p><a href="#modo-restringido">Obtenga más información acerca de la conectividad saliente a la capa SaaS</a>.</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Modo privado</dt>
+<dd>
+<p>Un conector BlueXP se instala en las instalaciones o en la nube (en una región segura, una región de nube soberana o una región comercial) y tiene conectividad <em>no</em> con la capa SaaS BlueXP. Los usuarios acceden a BlueXP localmente desde la consola basada en Web que está disponible desde el conector, no desde la capa SaaS.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Una región segura incluye <a href="https://aws.amazon.com/federal/secret-cloud/" target="_blank" rel="noopener">"Cloud secreto de AWS"</a>, <a href="https://aws.amazon.com/federal/top-secret-cloud/" target="_blank" rel="noopener">"Cloud secreto principal de AWS"</a>, y. <a href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6" target="_blank" rel="noopener">"Azure IL6"</a></p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>La tabla siguiente ofrece una comparación de estos modos.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16%;">
+<col style="width: 28%;">
+<col style="width: 28%;">
+<col style="width: 28%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">Modo estándar</th>
+<th class="tableblock halign-left valign-top">Modo restringido</th>
+<th class="tableblock halign-left valign-top">Modo privado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">¿Es necesaria una conexión a la capa SaaS de BlueXP?</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sólo saliente</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">¿Es necesaria una conexión con su proveedor de cloud?</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí, dentro de la región</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí, dentro de la región (si se utiliza Cloud Volumes ONTAP)</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Instalación del conector</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Desde BlueXP, Cloud Marketplace o instalación manual</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Marketplace o instalación manual</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Instalación manual</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Actualizaciones de conectores</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actualizaciones automáticas del software NetApp Connector</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actualizaciones automáticas del software NetApp Connector</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se requiere actualización manual</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Acceso de interfaz de usuario</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De la capa SaaS BlueXP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Localmente desde el conector VM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Localmente desde el conector VM</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Extremo de API</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La capa SaaS BlueXP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El conector</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El conector</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Autenticación</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A través de SaaS mediante auth0, inicio de sesión de NSS o federación de identidades</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A través de SaaS mediante auth0 o federación de identidades</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autenticación de usuario local</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Almacenamiento y servicios de datos</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Todos son compatibles</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Muchos son compatibles</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se admiten varios</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Opciones de licencia</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Suscripciones de mercado y BYOL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Suscripciones de mercado y BYOL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BYOL</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Lea las siguientes secciones para obtener más información sobre estos modos, como qué funciones y servicios de BlueXP son compatibles.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="modo-estándar">Modo estándar</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La siguiente imagen es un ejemplo de una implementación de modo estándar.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/diagram-standard-mode.png" alt="Una imagen conceptual que muestra la Internet pública donde están disponibles la consola basada en web, la capa SaaS y la autenticación auth0, una red virtual en el cloud donde un conector ejecuta y gestiona Cloud Volumes ONTAP y un clúster AFF en un centro de datos en las instalaciones."></span></p>
+</div>
+<div class="paragraph">
+<p>BlueXP funciona de la siguiente manera en modo estándar:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Comunicación saliente</dt>
+<dd>
+<p>Se requiere conectividad desde la capa SaaS conector a BlueXP, a los recursos disponibles públicamente de su proveedor de cloud y a otros componentes esenciales para las operaciones diarias.</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-install-connector-aws-bluexp.html#step-1-set-up-networking">"Puntos finales con los que el conector se pone en contacto en AWS"</a></p>
+</li>
+<li>
+<p><a href="task-install-connector-azure-bluexp.html#step-1-set-up-networking">"Puntos finales con los que el conector se contacta en Azure"</a></p>
+</li>
+<li>
+<p><a href="task-install-connector-google-bluexp-gcloud.html#step-1-set-up-networking">"Puntos finales con los que se contacta el conector en Google Cloud"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Ubicación compatible para el conector</dt>
+<dd>
+<p>En el modo estándar, el conector es compatible con el cloud o con las instalaciones.</p>
+</dd>
+<dt class="hdlist1">Instalación del conector</dt>
+<dd>
+<p>Es posible instalar el conector en un asistente de configuración de BlueXP, desde AWS o Azure Marketplace, o mediante un instalador para instalar manualmente el conector en su propio host Linux en su centro de datos o en la nube.</p>
+</dd>
+<dt class="hdlist1">Actualizaciones de conectores</dt>
+<dd>
+<p>Las actualizaciones automatizadas del software Connector están disponibles en BlueXP con actualizaciones mensuales.</p>
+</dd>
+<dt class="hdlist1">Acceso a la interfaz de usuario</dt>
+<dd>
+<p>Puede accederse a la interfaz de usuario desde la consola basada en web que se proporciona mediante la capa SaaS.</p>
+</dd>
+<dt class="hdlist1">Extremo de API</dt>
+<dd>
+<p>Las llamadas API se realizan en el siguiente punto final:<br>
+https://cloudmanager.cloud.netapp.com</p>
+</dd>
+<dt class="hdlist1">Autenticación</dt>
+<dd>
+<p>La autenticación se proporciona a través del servicio cloud de BlueXP mediante auth0 o a través de inicios de sesión del sitio de soporte de NetApp (NSS). la federación de identidades está disponible.</p>
+</dd>
+<dt class="hdlist1">Servicios compatibles con BlueXP</dt>
+<dd>
+<p>Todos los servicios de BlueXP están disponibles para los usuarios.</p>
+</dd>
+<dt class="hdlist1">Opciones de licencias compatibles</dt>
+<dd>
+<p>Las suscripciones a Marketplace y BYOL son compatibles con el modo estándar; sin embargo, las opciones de licencia admitidas dependen del servicio BlueXP que esté utilizando. Consulte la documentación de cada servicio para obtener más información sobre las opciones de licencia disponibles.</p>
+</dd>
+<dt class="hdlist1">Cómo comenzar con el modo estándar</dt>
+<dd>
+<p>Vaya a la <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">"Consola BlueXP basada en Web"</a> y regístrese.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="task-quick-start-standard-mode.html">"Aprenda cómo empezar a utilizar el modo estándar"</a>.</p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="modo-restringido">Modo restringido</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La siguiente imagen es un ejemplo de implementación de modo restringido.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/diagram-restricted-mode.png" alt="Una imagen conceptual que muestra la Internet pública donde están disponibles la capa SaaS y la autenticación auth0, una red virtual en el cloud donde se ejecuta un conector y proporciona acceso a la consola basada en web y gestiona Cloud Volumes ONTAP y un clúster de AFF en un centro de datos local."></span></p>
+</div>
+<div class="paragraph">
+<p>BlueXP funciona de la siguiente manera en modo restringido:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Comunicación saliente</dt>
+<dd>
+<p>Se requiere conectividad saliente desde el conector hasta la capa SaaS BlueXP para utilizar servicios de datos BlueXP, para habilitar actualizaciones de software automáticas del conector, para utilizar autenticación basada en auth0 y para enviar metadatos con fines de carga (nombre de VM de almacenamiento, capacidad asignada y UUID de volumen, tipo e IOPS).</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>La capa SaaS BlueXP no inicia la comunicación al conector. Toda la comunicación la inicia el conector, que puede extraer o insertar datos de o a la capa SaaS según sea necesario.</p>
+</div>
+<div class="paragraph">
+<p>También es necesario establecer una conexión con recursos de proveedor de cloud desde la región.</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Ubicación compatible para el conector</dt>
+<dd>
+<p>En el modo restringido, el conector es compatible con la nube: En una región gubernamental, soberana o comercial.</p>
+</dd>
+<dt class="hdlist1">Instalación del conector</dt>
+<dd>
+<p>Es posible instalar el conector en AWS o Azure Marketplace o una instalación manual en su propio host Linux.</p>
+</dd>
+<dt class="hdlist1">Actualizaciones de conectores</dt>
+<dd>
+<p>Las actualizaciones automatizadas del software Connector están disponibles en BlueXP con actualizaciones mensuales.</p>
+</dd>
+<dt class="hdlist1">Acceso a la interfaz de usuario</dt>
+<dd>
+<p>Se puede acceder a la interfaz de usuario desde la máquina virtual de Connector que se implementa en la región de la nube.</p>
+</dd>
+<dt class="hdlist1">Extremo de API</dt>
+<dd>
+<p>Se realizan llamadas API a la máquina virtual Connector.</p>
+</dd>
+<dt class="hdlist1">Autenticación</dt>
+<dd>
+<p>La autenticación se proporciona a través del servicio en la nube de BlueXP con auth0. la federación de identidades también está disponible.</p>
+</dd>
+<dt class="hdlist1">Servicios compatibles con BlueXP</dt>
+<dd>
+<p>BlueXP admite los siguientes servicios de almacenamiento y datos con modo restringido:</p>
+<div class="openblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Servicios compatibles</th>
+<th class="tableblock halign-left valign-top">Notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amazon FSX para ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soporte completo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azure NetApp Files</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soporte completo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup y recuperación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se admite en regiones gubernamentales y regiones comerciales con modo restringido. No se admite en regiones soberanas con modo restringido.<br>
+<br>
+En el modo restringido, el backup y la recuperación de BlueXP solo admiten backup y restauración de datos de volúmenes de ONTAP. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode" target="_blank" rel="noopener">"Consulte la lista de destinos de backup admitidos para los datos de ONTAP"</a><br>
+<br>
+No se admiten los backups y la restauración de datos de aplicaciones, datos de máquinas virtuales y datos de Kubernetes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clasificación</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Compatible en regiones gubernamentales con modo restringido. No se admite en regiones comerciales o en regiones soberanas con modo restringido.</p>
+</div>
+<div class="paragraph">
+<p>Se aplican las siguientes limitaciones:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Las cuentas de OneDrive, cuentas de SharePoint y cuentas de Google Drive no se pueden analizar.</p>
+</li>
+<li>
+<p>La funcionalidad de etiqueta de Microsoft Azure Information Protection (AIP) no se puede integrar.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soporte completo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cartera digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puede utilizar la cartera digital con las opciones de licencia admitidas que se indican a continuación para el modo restringido.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clústeres de ONTAP en las instalaciones</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se admiten tanto la detección con un conector como la detección sin un conector (detección directa).<br>
+<br>
+Cuando detecta un clúster en las instalaciones con un conector, la vista avanzada (System Manager) no es compatible.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Replicación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compatible en regiones gubernamentales con modo restringido. No se admite en regiones comerciales o en regiones soberanas con modo restringido.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Opciones de licencias compatibles</dt>
+<dd>
+<p>Las siguientes opciones de licencia son compatibles con el modo restringido:</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Suscripciones al mercado (contratos por horas y anuales)</p>
+<div class="paragraph">
+<p>Tenga en cuenta lo siguiente:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Para Cloud Volumes ONTAP, solo es compatible con las licencias basadas en capacidad.</p>
+</li>
+<li>
+<p>En Azure, los contratos anuales no son compatibles con las regiones gubernamentales.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>BYOL</p>
+<div class="paragraph">
+<p>Para Cloud Volumes ONTAP, tanto las licencias basadas en capacidad como las basadas en nodos son compatibles con BYOL.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Cómo comenzar con el modo restringido</dt>
+<dd>
+<p>Debe habilitar el modo restringido al crear su cuenta de BlueXP.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Si aún no tiene una cuenta, se le pedirá que cree su cuenta y habilite el modo restringido cuando inicie sesión en BlueXP por primera vez desde un conector que instaló manualmente o que creó desde el mercado de su proveedor de la nube.</p>
+</div>
+<div class="paragraph">
+<p>Si ya tiene una cuenta y desea crear otra, debe utilizar la API de soporte.</p>
+</div>
+<div class="paragraph">
+<p>Tenga en cuenta que no puede cambiar la configuración de modo restringido después de que BlueXP cree la cuenta. No se puede activar el modo restringido más adelante y no se puede desactivar más adelante. Se debe establecer en el momento de crear la cuenta.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-quick-start-restricted-mode.html">"Aprenda a empezar a utilizar el modo restringido"</a>.</p>
+</li>
+<li>
+<p><a href="task-create-account.html">"Aprenda a crear una cuenta de BlueXP adicional"</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="modo-privado">Modo privado</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En modo privado, puede instalar un conector en las instalaciones o en el cloud y, a continuación, utilizar BlueXP para gestionar los datos en su cloud híbrido. No hay conectividad con la capa SaaS BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>En la siguiente imagen, se muestra un ejemplo de puesta en marcha en modo privado en la que se instala el conector en el cloud y se gestiona tanto Cloud Volumes ONTAP como un clúster ONTAP en las instalaciones.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/diagram-private-mode-cloud.png" alt="Una imagen conceptual que muestra una red virtual en la nube donde un conector se ejecuta y proporciona acceso a la consola basada en web y gestiona Cloud Volumes ONTAP y un clúster de AFF en un centro de datos en las instalaciones."></span></p>
+</div>
+<div class="paragraph">
+<p>Mientras tanto, la segunda imagen muestra un ejemplo de implementación de modo privado en la que el conector está instalado en las instalaciones, administra un clúster ONTAP en las instalaciones y proporciona acceso a servicios de datos BlueXP compatibles.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/diagram-private-mode-onprem.png" alt="Una imagen conceptual que muestra un centro de datos en las instalaciones en el que se ejecuta un conector y que proporciona acceso a la consola basada en web, a los servicios de datos de BlueXP y gestiona un clúster de AFF en un centro de datos en las instalaciones."></span></p>
+</div>
+<div class="paragraph">
+<p>BlueXP funciona de la siguiente manera en modo privado:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Comunicación saliente</dt>
+<dd>
+<p>No se requiere conectividad saliente en la capa de BlueXP SaaS. Todos los paquetes, dependencias y componentes esenciales se empaquetan con el conector y se sirven desde la máquina local. La conectividad con los recursos disponibles públicamente de su proveedor de cloud es obligatoria únicamente si se pone en marcha Cloud Volumes ONTAP.</p>
+</dd>
+<dt class="hdlist1">Ubicación compatible para el conector</dt>
+<dd>
+<p>En modo privado, el conector es compatible con el cloud o el entorno local.</p>
+</dd>
+<dt class="hdlist1">Instalación del conector</dt>
+<dd>
+<p>Las instalaciones manuales del conector son compatibles con su propio host Linux, tanto en el cloud como en las instalaciones.</p>
+</dd>
+<dt class="hdlist1">Actualizaciones de conectores</dt>
+<dd>
+<p>Debe actualizar el software del conector manualmente. El software del conector se publica en el sitio de soporte de NetApp a intervalos no definidos.</p>
+</dd>
+<dt class="hdlist1">Acceso a la interfaz de usuario</dt>
+<dd>
+<p>Puede accederse a la interfaz de usuario desde el conector que ha implementado en su región de cloud o en sus instalaciones.</p>
+</dd>
+<dt class="hdlist1">Extremo de API</dt>
+<dd>
+<p>Se realizan llamadas API a la máquina virtual Connector.</p>
+</dd>
+<dt class="hdlist1">Autenticación</dt>
+<dd>
+<p>La autenticación se proporciona mediante la gestión y el acceso de usuarios locales. La autenticación no se proporciona a través del servicio en la nube de BlueXP.</p>
+</dd>
+<dt class="hdlist1">Servicios de BlueXP compatibles en las implementaciones de cloud</dt>
+<dd>
+<p>BlueXP admite los siguientes servicios de almacenamiento y datos con modo privado cuando el conector está instalado en la nube:</p>
+<div class="openblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Servicios compatibles</th>
+<th class="tableblock halign-left valign-top">Notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup y recuperación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compatible con regiones comerciales de AWS y Azure.<br>
+<br>
+No es compatible con Google Cloud ni en <a href="https://aws.amazon.com/federal/secret-cloud/" target="_blank" rel="noopener">"Cloud secreto de AWS"</a>, <a href="https://aws.amazon.com/federal/top-secret-cloud/" target="_blank" rel="noopener">"Cloud secreto principal de AWS"</a>, o. <a href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6" target="_blank" rel="noopener">"Azure IL6"</a><br>
+<br>
+En el modo privado, el backup y la recuperación de BlueXP admite solo backup y restauración de datos de volúmenes de ONTAP. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode" target="_blank" rel="noopener">"Consulte la lista de destinos de backup admitidos para los datos de ONTAP"</a><br>
+<br>
+No se admiten los backups y la restauración de datos de aplicaciones, datos de máquinas virtuales y datos de Kubernetes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Como no hay acceso a Internet, las siguientes funciones no están disponibles: Actualizaciones de software automatizadas y AutoSupport.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cartera digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puede utilizar la cartera digital con las opciones de licencia admitidas que se indican a continuación para el modo privado.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clústeres de ONTAP en las instalaciones</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Requiere conectividad desde el cloud (donde está instalado el conector) al entorno local.<br>
+<br>
+No se admite la detección sin conector (detección directa).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Servicios de BlueXP compatibles en implementaciones locales</dt>
+<dd>
+<p>BlueXP admite los siguientes servicios de almacenamiento y datos con modo privado cuando el conector está instalado en sus instalaciones:</p>
+<div class="openblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Servicios compatibles</th>
+<th class="tableblock halign-left valign-top">Notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup y recuperación</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>En el modo privado, el backup y la recuperación de BlueXP admite solo backup y restauración de datos de volúmenes de ONTAP. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode" target="_blank" rel="noopener">"Consulte la lista de destinos de backup admitidos para los datos de volúmenes ONTAP"</a></p>
+</div>
+<div class="paragraph">
+<p>No se admiten los backups y la restauración de datos de aplicaciones, datos de máquinas virtuales y datos de Kubernetes.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clasificación</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Las únicas fuentes de datos admitidas son las que se pueden detectar localmente.</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html#supported-data-sources" target="_blank" rel="noopener">"Ver las fuentes que puede descubrir localmente"</a></p>
+</div>
+</li>
+<li>
+<p>Las funciones que requieren acceso saliente a Internet no son compatibles.</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html#limitations" target="_blank" rel="noopener">"Vea las limitaciones de la función"</a></p>
+</div>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cartera digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puede utilizar la cartera digital con las opciones de licencia admitidas que se indican a continuación para el modo privado.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clústeres de ONTAP en las instalaciones</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No se admite la detección sin conector (detección directa).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Replicación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soporte completo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Opciones de licencias compatibles</dt>
+<dd>
+<p>Solo BYOL es compatible con el modo privado.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Para BYOL de Cloud Volumes ONTAP, solo las licencias basadas en nodos son compatibles. No se admite la gestión de licencias basadas en capacidad. Como no hay disponible una conexión a Internet de salida, deberá cargar manualmente el archivo de licencia de Cloud Volumes ONTAP en la cartera digital de BlueXP.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses" target="_blank" rel="noopener">"Descubre cómo añadir licencias a la cartera digital de BlueXP"</a></p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Cómo comenzar con el modo privado</dt>
+<dd>
+<p>Para acceder al modo privado, descargue el instalador "sin conexión" del sitio de soporte de NetApp.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="task-quick-start-private-mode.html">"Aprenda cómo empezar a utilizar el modo privado"</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-setup-admin/images/note.svg" alt="Nota">
+</td>
+<td class="content">
+Si desea utilizar BlueXP en <a href="https://aws.amazon.com/federal/secret-cloud/" target="_blank" rel="noopener">"Cloud secreto de AWS"</a> o la <a href="https://aws.amazon.com/federal/top-secret-cloud/" target="_blank" rel="noopener">"Cloud secreto principal de AWS"</a>, entonces debe seguir instrucciones separadas para comenzar en esos entornos. <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html" target="_blank" rel="noopener">"Descubra cómo empezar a utilizar Cloud Volumes ONTAP en el cloud secreto de AWS o en el cloud secreto superior"</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="comparación-de-servicios-y-características">Comparación de servicios y características</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La tabla siguiente puede ayudarle a identificar rápidamente qué servicios y funciones de BlueXP son compatibles con el modo restringido y el modo privado.</p>
+</div>
+<div class="paragraph">
+<p>Tenga en cuenta que algunos servicios pueden ser compatibles con limitaciones. Para obtener más información sobre cómo se admiten estos servicios con el modo restringido y el modo privado, consulte las secciones anteriores.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 19%;">
+<col style="width: 27%;">
+<col style="width: 27%;">
+<col style="width: 27%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Área de producto</th>
+<th class="tableblock halign-left valign-top">Servicio o característica BlueXP</th>
+<th class="tableblock halign-left valign-top">Modo restringido</th>
+<th class="tableblock halign-left valign-top">Modo privado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="11"><p class="tableblock"><strong>Entornos de trabajo</strong><br>
+<br>
+Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo desde el lienzo de BlueXP. No indica los destinos de backup admitidos para el backup y recuperación de BlueXP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amazon FSX para ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amazon S3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azure Blob</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azure NetApp Files</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes Service para Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Google Cloud Storage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clústeres de Kubernetes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clústeres de ONTAP en las instalaciones</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E-Series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">StorageGRID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="17"><p class="tableblock"><strong>Servicios</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup y recuperación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí<br>
+<br>
+<a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode" target="_blank" rel="noopener">"Consulte la lista de destinos de backup admitidos para los datos de volúmenes ONTAP"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí<br>
+<br>
+<a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode" target="_blank" rel="noopener">"Consulte la lista de destinos de backup admitidos para los datos de volúmenes ONTAP"</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clasificación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operaciones de cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copiar y sincronizar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asesor digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cartera digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recuperación tras siniestros</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eficiencia económica</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Almacenamiento en caché en el edge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Informes de migración</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resiliencia operativa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Protección contra ransomware</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reparación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Replicación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sostenibilidad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Organización en niveles</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Almacenamiento en caché de volúmenes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="5"><p class="tableblock">* Características*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credenciales</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cuentas de NSS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notificaciones</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Búsqueda</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Línea de tiempo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sí</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/es-es/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/es-es/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">En esta página</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Condiciones de uso</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Política de privacidad</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Política de cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Configuración de cookies</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Enviar comentarios sobre esta página</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/es-es/bluexp-setup-admin/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/es-es/bluexp-setup-admin/js/prism.js'></script>
+      <script type="text/javascript" src='/es-es/bluexp-setup-admin/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/es-es/bluexp-setup-admin/js/ie-tabbed-blocks.js'></script>
+    <script src='/es-es/bluexp-setup-admin/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
