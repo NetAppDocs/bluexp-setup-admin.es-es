@@ -54,14 +54,6 @@ Par de claves:: Cuando cree el conector, deberá seleccionar un par de claves EC
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
 Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
 Motor Docker:: Se requiere Docker Engine versión 19.3.1 o posterior en el host antes de instalar el conector. https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
-IMDSv1:: La instancia Metadata Service versión 1 (IMDSv1) es necesaria en las instancias EC2. El conector no es compatible con IMDSv2.
-+
---
-Puesto que IMDSv2 es ahora la versión predeterminada en una nueva instancia de EC2, es necesario modificar las opciones de metadatos de la instancia para restaurar el uso de IMDSv1.
-
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["Documentación de AWS: Restaurar el uso de IMDSv1"^]
-
---
 
 
 
@@ -162,6 +154,8 @@ Servidor proxy:: Si su organización requiere la implementación de un servidor 
 * Credenciales
 * Certificado HTTPS
 
+
+Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
 
 --
 
@@ -269,6 +263,9 @@ Debe tener lo siguiente:
 * Detalles sobre un servidor proxy, si se necesita un proxy para el acceso a Internet desde el conector.
 +
 Tiene la opción de configurar un servidor proxy después de la instalación, pero para hacerlo es necesario reiniciar el conector.
+
++
+Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
 
 * Un certificado firmado por CA, si el servidor proxy utiliza HTTPS o si el proxy es un proxy de interceptación.
 

@@ -167,6 +167,8 @@ Servidor proxy:: Si su organización requiere la implementación de un servidor 
 * Certificado HTTPS
 
 
+Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
+
 --
 
 
@@ -415,6 +417,9 @@ Debe tener lo siguiente:
 * Detalles sobre un servidor proxy, si se necesita un proxy para el acceso a Internet desde el conector.
 +
 Tiene la opción de configurar un servidor proxy después de la instalación, pero para hacerlo es necesario reiniciar el conector.
+
++
+Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
 
 * Un certificado firmado por CA, si el servidor proxy utiliza HTTPS o si el proxy es un proxy de interceptación.
 * Una identidad gestionada habilitada en la máquina virtual de Azure para poder proporcionar los permisos de Azure necesarios a través de un rol personalizado.

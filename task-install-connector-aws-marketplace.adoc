@@ -103,6 +103,8 @@ Servidor proxy:: Si su organización requiere la implementación de un servidor 
 * Certificado HTTPS
 
 
+Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
+
 --
 
 

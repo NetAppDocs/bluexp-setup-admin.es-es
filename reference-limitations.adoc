@@ -24,6 +24,14 @@ Estas limitaciones son específicas para la configuración y administración de 
 
 
 
+=== No se admiten servidores proxy transparentes
+
+BlueXP no admite servidores proxy transparentes con el conector.
+
+link:task-configuring-proxy.html["Obtenga más información sobre el uso de un servidor proxy con Connector"].
+
+
+
 === Posible conflicto con las direcciones IP en el rango 172
 
 BlueXP despliega el conector con dos interfaces que tienen direcciones IP en las gamas 172.17.0.0/16 y 172.18.0.0/16.

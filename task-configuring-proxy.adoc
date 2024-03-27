@@ -16,11 +16,18 @@ summary: Si las directivas de la empresa requieren que utilice un servidor proxy
 [role="lead"]
 Si las directivas de la empresa requieren que utilice un servidor proxy para todas las comunicaciones a Internet, deberá configurar los conectores para que utilicen ese servidor proxy. Si no configuró un conector para que utilice un servidor proxy durante la instalación, puede configurar el conector para que utilice ese servidor proxy en cualquier momento.
 
-BlueXP admite HTTP y HTTPS. El servidor proxy puede estar en la nube o en la red.
-
 Configurar el conector para que utilice un servidor proxy proporciona acceso saliente a Internet si no hay disponible una dirección IP pública o una puerta de enlace NAT. Este servidor proxy sólo proporciona el conector con una conexión saliente. No ofrece conectividad para los sistemas Cloud Volumes ONTAP.
 
 Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet de salida para enviar mensajes AutoSupport, BlueXP configura automáticamente esos sistemas Cloud Volumes ONTAP para que utilicen un servidor proxy incluido con el conector. El único requisito es asegurarse de que el grupo de seguridad del conector permite conexiones entrantes a través del puerto 3128. Tendrá que abrir este puerto después de desplegar el conector.
+
+
+
+== Configuraciones admitidas
+
+* BlueXP admite HTTP y HTTPS.
+* El servidor proxy puede estar en la nube o en la red.
+* BlueXP no admite servidores proxy transparentes.
+
 
 
 
