@@ -28,7 +28,11 @@ Las reglas de firewall de Google Cloud para el conector requieren reglas tanto e
 | SSH | 22 | Proporciona acceso SSH al host de Connector 
 
 
-| HTTP | 80 | Proporciona acceso HTTP desde navegadores web de cliente al local interfaz de usuario 
+| HTTP | 80  a| 
+* Proporciona acceso HTTP desde navegadores web de cliente al local interfaz de usuario
+* Se utiliza durante el proceso de actualización de Cloud Volumes ONTAP
+
+
 
 
 | HTTPS | 443 | Proporciona acceso HTTPS desde exploradores web de cliente al local interfaz de usuario 

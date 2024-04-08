@@ -23,7 +23,11 @@ Estas reglas de entrada se aplican a todos los modelos de implementación de Blu
 | Protocolo | Puerto | Específico 
 
 
-| HTTP | 80 | Proporciona acceso HTTP desde navegadores web de cliente al local interfaz de usuario 
+| HTTP | 80  a| 
+* Proporciona acceso HTTP desde navegadores web de cliente al local interfaz de usuario
+* Se utiliza durante el proceso de actualización de Cloud Volumes ONTAP
+
+
 
 
 | HTTPS | 443 | Proporciona acceso HTTPS desde exploradores web de cliente al local interfaz de usuario 

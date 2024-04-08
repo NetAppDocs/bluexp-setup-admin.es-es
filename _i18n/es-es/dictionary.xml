@@ -4004,4 +4004,5 @@ Con el modo privado, la única vez que BlueXP envía tráfico saliente es al pro
   <block id="9ddb47b49482c226b2e422f267668544" category="list-text">9.12.1 P2 (o cualquier parche posterior)</block>
   <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 (o cualquier parche posterior)</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1 o cualquier versión posterior a esta versión</block>
+  <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">Se utiliza durante el proceso de actualización de Cloud Volumes ONTAP</block>
 </blocks>

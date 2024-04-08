@@ -28,7 +28,11 @@ El grupo de seguridad de AWS para Connector requiere reglas tanto entrantes como
 | SSH | 22 | Proporciona acceso SSH al host de Connector 
 
 
-| HTTP | 80 | Proporciona acceso HTTP desde navegadores web de cliente al local interfaz de usuario 
+| HTTP | 80  a| 
+* Proporciona acceso HTTP desde navegadores web de cliente al local interfaz de usuario
+* Se utiliza durante el proceso de actualización de Cloud Volumes ONTAP
+
+
 
 
 | HTTPS | 443 | Ofrece acceso HTTPS desde los navegadores web del cliente a la interfaz de usuario local y conexiones desde la instancia de clasificación de BlueXP 
