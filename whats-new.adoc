@@ -18,6 +18,18 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
+== 11 de abril de 2024
+
+
+
+=== Actualización de Docker Engine
+
+Hemos actualizado los requisitos de Docker Engine para especificar la versión máxima admitida en el conector, que es 25,0.5. La versión mínima admitida sigue siendo la 19,3.1.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Ver requisitos del host de Connector"].
+
+
+
 == 26 de marzo de 2024
 
 
@@ -78,7 +90,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 El servicio de metadatos de instancia (IMDS) se activa de la siguiente forma en las instancias EC2:
 
-* Para nuevas puestas en marcha de Connector de BlueXP, de AWS Marketplace o mediante https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Guiones Terraform"^], IMDSv2 está activado por defecto en la instancia EC2.
+* Para nuevas puestas en marcha de Connector de BlueXP o mediante https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Guiones Terraform"^], IMDSv2 está activado por defecto en la instancia EC2.
 * Si inicia una nueva instancia de EC2 en AWS y, a continuación, instala manualmente el software Connector, también se habilita IMDSv2 de forma predeterminada.
 * Para los conectores existentes, IMDSv1 sigue siendo compatible, pero puede configurar manualmente IMDSv2 en la instancia EC2 si lo prefiere.
 * Para Cloud Volumes ONTAP, IMDSv1 se habilita de forma predeterminada en las instancias nuevas y existentes. Puede configurar manualmente IMDSv2 en las instancias EC2 si lo prefiere.
