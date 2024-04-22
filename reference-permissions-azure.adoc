@@ -731,20 +731,6 @@ El conector realiza las siguientes solicitudes de API para detectar y gestionar 
 
 
 
-=== Reparación
-
-El conector realiza las siguientes solicitudes de la API para gestionar etiquetas de recursos de Azure cuando utiliza la corrección de BlueXP:
-
-* Microsoft.Resources/resources/read
-* Microsoft.Resources/subscripciones/operationResults/read
-* Microsoft.Resources/subscriptions/ResourceGroups/read
-* Microsoft.Resources/subscripciones/resourcegroups/resources/read
-* Microsoft.Resources/etiquetas/leer
-* Microsoft.Resources/etiquetas/escritura
-
-
-
-
 === Organización en niveles
 
 El conector realiza las siguientes solicitudes de API al configurar la organización en niveles de BlueXP.

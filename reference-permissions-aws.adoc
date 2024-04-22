@@ -59,7 +59,6 @@ La segunda directiva proporciona permisos para los siguientes servicios:
 
 * Almacenamiento en caché en el edge
 * Kubernetes
-* Reparación
 
 
 [role="tabbed-block"]
@@ -1279,22 +1278,6 @@ El conector realiza las siguientes solicitudes de API para detectar y gestionar 
 * eks:ListClusters
 * eks:DescribeCluster
 * iam:GetInstanceProfile
-
-
-
-
-=== Reparación
-
-El conector realiza las siguientes solicitudes de la API para gestionar etiquetas de los recursos de AWS cuando utiliza la corrección de BlueXP:
-
-* ec2:CreateTags
-* ec2:DeleteTags
-* ec2:etiquetas a describTags
-* Tag:getResources
-* Etiqueta:getTagKeys
-* Etiqueta:getTagValues
-* Tag:TagResources
-* Tag:UntagResources
 
 
 
