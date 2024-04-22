@@ -139,13 +139,19 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 == Requiere el uso de IMDSv2 en instancias de Amazon EC2
 
-A partir de marzo de 2024, BlueXP ahora admite el servicio de metadatos de la instancia de Amazon EC2 versión 2 (IMDSv2) con Connector y con Cloud Volumes ONTAP (incluido el mediador para puestas en marcha de alta disponibilidad). IMDSv2 proporciona protección mejorada contra vulnerabilidades. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["Obtenga más información sobre IMDSv2 en el blog de seguridad de AWS"^]
+A partir de marzo de 2024, BlueXP ahora admite el servicio de metadatos de la instancia de Amazon EC2 versión 2 (IMDSv2) con Connector y con Cloud Volumes ONTAP (incluido el mediador para puestas en marcha de alta disponibilidad). En la mayoría de los casos, IMDSv2 se configura automáticamente en instancias de EC2 nuevas. IMDSv1 se activó antes de marzo de 2024. Si las directivas de seguridad lo requieren, es posible que deba configurar manualmente IMDSv2 en las instancias de EC2.
 
-* IMDSv2 está activado de forma predeterminada en todas las nuevas instancias de Connector EC2. IMDSv1 se activó antes de marzo de 2024.
-* IMDSv1 está habilitado de forma predeterminada en todas las instancias nuevas y existentes de Cloud Volumes ONTAP EC2.
+.Acerca de esta tarea
+IMDSv2 proporciona protección mejorada contra vulnerabilidades. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["Obtenga más información sobre IMDSv2 en el blog de seguridad de AWS"^]
 
+El servicio de metadatos de instancia (IMDS) se activa de la siguiente forma en las instancias EC2:
 
-Si las directivas de seguridad lo requieren, puede configurar las instancias de EC2 para que utilicen IMDSv2.
+* Para nuevas puestas en marcha de Connector de BlueXP o mediante https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Guiones Terraform"^], IMDSv2 está activado por defecto en la instancia EC2.
+* Si inicia una nueva instancia de EC2 en AWS y, a continuación, instala manualmente el software Connector, también se habilita IMDSv2 de forma predeterminada.
+* Si inicia Connector desde AWS Marketplace, IMDSv1 está habilitado de forma predeterminada. Puede configurar manualmente IMDSv2 en la instancia de EC2.
+* Para los conectores existentes, IMDSv1 sigue siendo compatible, pero puede configurar manualmente IMDSv2 en la instancia EC2 si lo prefiere.
+* Para Cloud Volumes ONTAP, IMDSv1 se habilita de forma predeterminada en las instancias nuevas y existentes. Puede configurar manualmente IMDSv2 en las instancias EC2 si lo prefiere.
+
 
 .Antes de empezar
 * La versión del conector debe ser 3.9.38 o posterior.
