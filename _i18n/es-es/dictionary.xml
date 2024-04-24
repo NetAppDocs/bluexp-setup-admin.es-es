@@ -854,8 +854,6 @@
   <block id="0987e5bde139c54427573b7afe1d9422" category="paragraph">El conector realiza las siguientes solicitudes de API para detectar y gestionar clústeres que se ejecutan en Azure Kubernetes Service (AKS):</block>
   <block id="42f3fa961e42affb80862a782c9341af" category="list-text">Microsoft.ContainerService/managedClusters/read</block>
   <block id="317850f59220c738a6550c8cc0fbd9c5" category="list-text">Microsoft.ContainerService/managedClusters/listClusterUserCredential/acción</block>
-  <block id="282baca6aef56652f503adce6afa9f07" category="section-title">Reparación</block>
-  <block id="92b5575604daffe3be8d9be7e9eea83d" category="paragraph">El conector realiza las siguientes solicitudes de la API para gestionar etiquetas de recursos de Azure cuando utiliza la corrección de BlueXP:</block>
   <block id="826e9938777ea2a0280d06c76218f7c7" category="paragraph">El conector realiza las siguientes solicitudes de API al configurar la organización en niveles de BlueXP.</block>
   <block id="f786a140deb938ac21ab095b7c402176" category="paragraph">El conector realiza las siguientes solicitudes API para operaciones diarias.</block>
   <block id="47ddffc293a6a5748897c2f965fa7212" category="list-text">Microsoft.Storage/storageAccounts/managementPolicies/Read</block>
@@ -1392,12 +1390,6 @@
   <block id="b272876bb8d27e636bb70f2dce15cb34" category="list-text">eks:ListClusters</block>
   <block id="457a1b6178515d282232753f808e8cf5" category="list-text">eks:DescribeCluster</block>
   <block id="53ac904630fdbb4d62f208e001934c7c" category="list-text">iam:GetInstanceProfile</block>
-  <block id="c8a11657cad4105099bd9eb0d4bdbaec" category="paragraph">El conector realiza las siguientes solicitudes de la API para gestionar etiquetas de los recursos de AWS cuando utiliza la corrección de BlueXP:</block>
-  <block id="4c62ed8ff3597b57ab26a72e8f7294b7" category="list-text">Tag:getResources</block>
-  <block id="b2ca34a52079f0ba5f066943f1dd2482" category="list-text">Etiqueta:getTagKeys</block>
-  <block id="f624e5f75138eb92caddd44e1bc7342e" category="list-text">Etiqueta:getTagValues</block>
-  <block id="5e665d8f5cf0c341dce9f3bd5e7f4cc0" category="list-text">Tag:TagResources</block>
-  <block id="5e10058ad3f07bfeca3eef81de09ce28" category="list-text">Tag:UntagResources</block>
   <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Ahora se necesita el siguiente permiso para Cloud Volumes ONTAP:</block>
   <block id="bf9c7c9727a11f040da47cdd589f7ea6" category="paragraph">Ahora se necesita el siguiente permiso para la organización en niveles de BlueXP:</block>
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">Pon en marcha el conector en modo privado para poder utilizar BlueXP sin conectividad saliente a la capa de BlueXP SaaS. Para comenzar, instala el Connector, configura BlueXP accediendo a la interfaz de usuario que se ejecuta en el Connector y, a continuación, proporciona los permisos de nube que hayas configurado previamente.</block>
@@ -3198,7 +3190,6 @@ Este extremo solo se requiere en las regiones gubernamentales de Azure.</block>
   <block id="ba192d211ab8fe6aceb98f59e685d1bb" category="list-text">Si aún no tiene una suscripción, seleccione *Agregar suscripción &gt; continuar* y siga los pasos de Google Cloud Marketplace.</block>
   <block id="375b5c037ddde62b74d4b30381271828" category="list-text">En el cuadro de diálogo emergente, seleccione *Registro con NetApp, Inc.*</block>
   <block id="dcb058618377cff08193ee6990096f07" category="list-text">Selecciona *Control de acceso (IAM)* &gt; *Añadir* &gt; *Añadir asignación de rol*.</block>
-  <block id="51c9db5527a197748c924f3777b04b5d" category="list-text">Seleccione *Seleccionar miembros*, seleccione la suscripción en la que se creó la máquina virtual Connector, elija *Virtual machine* y, a continuación, seleccione la máquina virtual Connector.</block>
   <block id="a907c3ee93defa4e7eb326edec72fa3d" category="list-text">Selecciona *Seleccionar*.</block>
   <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">Para asociar las credenciales a una nueva suscripción, seleccione *Agregar suscripción &gt; continuar* y siga los pasos del AWS Marketplace:</block>
   <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">Seleccione *Ver opciones de compra*.</block>
@@ -4022,4 +4013,8 @@ Con el modo privado, la única vez que BlueXP envía tráfico saliente es al pro
   <block id="946e79c4f58ab5a0a68d36b7ccc89998" category="list-text">Si inicia Connector desde AWS Marketplace, IMDSv1 está habilitado de forma predeterminada. Puede configurar manualmente IMDSv2 en la instancia de EC2.</block>
   <block id="f2e7cda30b20334f5432b14d41028597" category="paragraph">A partir de marzo de 2024, BlueXP ahora admite el servicio de metadatos de la instancia de Amazon EC2 versión 2 (IMDSv2) con Connector y con Cloud Volumes ONTAP (incluido el mediador para puestas en marcha de alta disponibilidad). En la mayoría de los casos, IMDSv2 se configura automáticamente en instancias de EC2 nuevas. IMDSv1 se activó antes de marzo de 2024. Si las directivas de seguridad lo requieren, es posible que deba configurar manualmente IMDSv2 en las instancias de EC2.</block>
   <block id="3c27ef222c1ee58d80a2a938ecc7eab9" category="paragraph">IMDSv2 proporciona protección mejorada contra vulnerabilidades.<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
+  <block id="8cdfbe4b35f3f9abb80295a7c104865a" category="paragraph">Es importante asignar el rol desde el servicio *Suscripciones* porque especifica el alcance de la asignación de rol en el nivel de suscripción. El _scope_ define el juego de recursos al que se aplica el acceso. Si especifica un ámbito a otro nivel (por ejemplo, a nivel de máquina virtual), se verá afectada su capacidad para completar acciones desde BlueXP.</block>
+  <block id="0fde3f77d505a0a1192041da57a5754b" category="inline-link">Documentación de Microsoft Azure: Conozca el ámbito de control de acceso basado en roles de Azure</block>
+  <block id="7ec9f2759e8cd477327da5c994d69fd0" category="paragraph"><block ref="7ec9f2759e8cd477327da5c994d69fd0" category="inline-link-rx"></block></block>
+  <block id="fae4c7bdd396cfb82d86677f8bc6f763" category="list-text">Seleccione *Seleccionar miembros*, seleccione la suscripción en la que se creó la máquina virtual Connector, en *Identidad administrada*, elija *Máquina virtual* y, a continuación, seleccione la máquina virtual Connector.</block>
 </blocks>
