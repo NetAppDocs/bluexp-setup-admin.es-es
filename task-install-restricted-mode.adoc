@@ -35,7 +35,7 @@ link:task-prepare-restricted-mode.html["Obtenga información sobre los requisito
 
 * Función IAM con una directiva adjunta que incluye los permisos necesarios para el conector.
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Aprenda a configurar los permisos de AWS"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Aprenda a configurar los permisos de AWS"]
 
 * Permisos para suscribirse y cancelar la suscripción a AWS Marketplace para su usuario de IAM.
 * Comprensión de los requisitos de CPU y RAM para la instancia.
@@ -103,7 +103,7 @@ link:task-prepare-restricted-mode.html["Obtenga información sobre los requisito
 
 * Función IAM con una directiva adjunta que incluye los permisos necesarios para el conector.
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Aprenda a configurar los permisos de AWS"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Aprenda a configurar los permisos de AWS"]
 
 * Permisos para suscribirse y cancelar la suscripción a AWS Marketplace para su usuario de IAM.
 * Una pareja de claves para la instancia de EC2.
@@ -157,7 +157,7 @@ link:task-prepare-restricted-mode.html["Obtenga información sobre los requisito
 
 * Una función personalizada de Azure que incluye los permisos necesarios para el conector.
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Aprenda a configurar los permisos de Azure"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Aprenda a configurar los permisos de Azure"]
 
 
 
@@ -220,18 +220,13 @@ Tiene la opción de configurar un servidor proxy después de la instalación, pe
 Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
 
 * Un certificado firmado por CA, si el servidor proxy utiliza HTTPS o si el proxy es un proxy de interceptación.
+* Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
 
 
 .Acerca de esta tarea
 El instalador disponible en el sitio de soporte de NetApp puede ser una versión anterior. Después de la instalación, el conector se actualiza automáticamente si hay una nueva versión disponible.
 
 .Pasos
-. Compruebe que docker está activado y en ejecución.
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . Si las variables del sistema _http_proxy_ o _https_proxy_ están establecidas en el host, elimínelas:
 +
 [source, cli]
@@ -270,7 +265,7 @@ A continuación encontrará un ejemplo del comando utilizando los dos parámetro
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxy configura el conector para que utilice un servidor proxy HTTP o HTTPS con uno de los siguientes formatos:
@@ -287,8 +282,15 @@ Tenga en cuenta lo siguiente:
 
 +
 *** El usuario puede ser un usuario local o un usuario de dominio.
-*** Para un usuario de dominio, debe utilizar el código ASCII para \ como se muestra anteriormente.
-*** BlueXP no admite contraseñas que incluyan el carácter @.
+*** Para un usuario de dominio, debe utilizar el código ASCII para un \ como se muestra anteriormente.
+*** BlueXP no admite nombres de usuario ni contraseñas que incluyan el carácter @.
+*** Si la contraseña incluye alguno de los siguientes caracteres especiales, debe escapar de ese carácter especial preponiéndolo con una barra diagonal inversa: & O !
++
+Por ejemplo:
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 
@@ -358,7 +360,7 @@ Si implementó el conector desde Azure Marketplace o si instaló manualmente el 
 
 Estos pasos no se aplican si ha implementado el conector desde AWS Marketplace porque ha elegido el rol de IAM necesario durante la implementación.
 
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Aprenda cómo preparar los permisos en el cloud"].
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Aprenda cómo preparar los permisos en el cloud"].
 
 [role="tabbed-block"]
 ====

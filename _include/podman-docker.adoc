@@ -1,0 +1,101 @@
+= 
+:allow-uri-read: 
+
+
+Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
+
+* Se requiere Podman para Red Hat Enterprise Linux 8 y 9.
+* Se requiere Docker Engine para Ubuntu, CentOS y Red Hat Enterprise Linux 7.
+
+
+.Pasos
+[role="tabbed-block"]
+====
+.Podman
+--
+Instale Podman 4,6.1.
+
+.Pasos
+. Elimine el paquete podman-docker si está instalado en el host.
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. Instale Podman.
++
+Podman está disponible en repositorios oficiales de Red Hat Enterprise Linux.
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
+. Active e inicie el servicio podman.socket.
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. Instale python3.
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. Instale el paquete de repositorio de EPEL si aún no está disponible en su sistema.
++
+Este paso es necesario porque podman-compose está disponible en el repositorio Extra Packages for Enterprise Linux (EPEL).
+
++
+Para Red Hat Enterprise Linux 9:
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+Para Red Hat Enterprise Linux 8:
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. Instale el paquete podman-compose 1,0.6.
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: Con el `dnf install` El comando cumple con los requisitos para agregar podman-compose a la variable de entorno PATH. El comando installation agrega podman-compose a /usr/bin, que ya está incluido en el `secure_path` opción en el host.
+
+
+
+--
+.Motor Docker
+--
+Instale una versión de Docker Engine entre 19.3.1 y 25,0.5.
+
+.Pasos
+. Instale Docker Engine.
++
+https://docs.docker.com/engine/install/["Consulte las instrucciones de instalación de Docker"^]
+
++
+Asegúrese de seguir los pasos para instalar una versión específica de Docker Engine. Al instalar la versión más reciente se instalará una versión de Docker no compatible con BlueXP.
+
+. Compruebe que Docker está habilitado y en ejecución.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====

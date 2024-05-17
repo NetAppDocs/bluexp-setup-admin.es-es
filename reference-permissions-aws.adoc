@@ -31,8 +31,8 @@ Tenga en cuenta lo siguiente:
 * Para ver instrucciones paso a paso para utilizar estas directivas, consulte las páginas siguientes:
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Configure los permisos para una puesta en marcha de AWS Marketplace"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Configure los permisos para implementaciones en las instalaciones"]
-** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configure los permisos para implementaciones en las instalaciones"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
 ** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 
@@ -1256,6 +1256,9 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 
 
 | ec2:ModifiyVolume | No | Sí | No 
+
+
+| Compruebe si la zona de disponibilidad es una zona local de AWS y valide que todos los parámetros de implementación sean compatibles | EC2:DescripciónAvailabilityZones | Sí | No | Sí 
 |===
 
 
@@ -1288,13 +1291,11 @@ A medida que se añadan y eliminen permisos, los anotaremos en las secciones sig
 
 
 
-=== 8 de marzo de 2024
+=== 9 de mayo de 2024
 
-Ahora se incluye el siguiente permiso en la directiva Connector:
+Ahora se requieren los siguientes permisos para Cloud Volumes ONTAP:
 
 EC2:DescripciónAvailabilityZones
-
-Este permiso es necesario para una próxima versión. Actualizaremos las notas de la versión con más detalles cuando esa versión esté disponible.
 
 
 

@@ -47,15 +47,13 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet de salida
 --
 
 
-Servidor proxy:: Si su organización requiere la implementación de un servidor proxy para todo el tráfico de Internet saliente, obtenga la siguiente información sobre su proxy HTTP o HTTPS. Deberá proporcionar esta información durante la instalación.
+Servidor proxy:: Si su organización requiere la implementación de un servidor proxy para todo el tráfico de Internet saliente, obtenga la siguiente información sobre su proxy HTTP o HTTPS. Deberá proporcionar esta información durante la instalación. Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
 +
 --
 * Dirección IP
 * Credenciales
 * Certificado HTTPS
 
-
-Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
 
 --
 

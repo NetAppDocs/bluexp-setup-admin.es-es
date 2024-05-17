@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: task-require-imdsv2.html 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
+summary: BlueXP es compatible con IMDSv2 con el conector y con Cloud Volumes ONTAP. En la mayoría de los casos, IMDSv2 se configura automáticamente en instancias de EC2 nuevas. IMDSv1 se activó antes de marzo de 2024. Si las directivas de seguridad lo requieren, es posible que deba configurar manualmente IMDSv2 en las instancias de EC2. 
+---
+= Requiere el uso de IMDSv2 en instancias de Amazon EC2
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP admite el servicio de metadatos de la instancia de Amazon EC2 versión 2 (IMDSv2) con Connector y con Cloud Volumes ONTAP (incluido el mediador para puestas en marcha de alta disponibilidad). En la mayoría de los casos, IMDSv2 se configura automáticamente en instancias de EC2 nuevas. IMDSv1 se activó antes de marzo de 2024. Si las directivas de seguridad lo requieren, es posible que deba configurar manualmente IMDSv2 en las instancias de EC2.
+
+.Antes de empezar
+* La versión del conector debe ser 3.9.38 o posterior.
+* Cloud Volumes ONTAP debe ejecutar una de las siguientes versiones:
++
+** 9.12.1 P2 (o cualquier parche posterior)
+** 9.13.0 P4 (o cualquier parche posterior)
+** 9.13.1 o cualquier versión posterior a esta versión
+
+
+* Este cambio requiere que reinicie las instancias de Cloud Volumes ONTAP.
+* Estos pasos requieren el uso de la CLI de AWS porque debe cambiar el límite de saltos de respuesta a 3.
+
+
+.Acerca de esta tarea
+IMDSv2 proporciona protección mejorada contra vulnerabilidades. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["Obtenga más información sobre IMDSv2 en el blog de seguridad de AWS"^]
+
+El servicio de metadatos de instancia (IMDS) se activa de la siguiente forma en las instancias EC2:
+
+* Para nuevas puestas en marcha de Connector de BlueXP o mediante https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Guiones Terraform"^], IMDSv2 está activado por defecto en la instancia EC2.
+* Si inicia una nueva instancia de EC2 en AWS y, a continuación, instala manualmente el software Connector, también se habilita IMDSv2 de forma predeterminada.
+* Si inicia Connector desde AWS Marketplace, IMDSv1 está habilitado de forma predeterminada. Puede configurar manualmente IMDSv2 en la instancia de EC2.
+* Para los conectores existentes, IMDSv1 sigue siendo compatible, pero puede configurar manualmente IMDSv2 en la instancia EC2 si lo prefiere.
+* Para Cloud Volumes ONTAP, IMDSv1 se habilita de forma predeterminada en las instancias nuevas y existentes. Puede configurar manualmente IMDSv2 en las instancias EC2 si lo prefiere.
+
+
+.Pasos
+. Requerir el uso de IMDSv2 en la instancia de conector:
++
+.. Conéctese a la máquina virtual de Linux para el conector.
++
+Al crear la instancia de Connector en AWS, proporcionó una clave de acceso y una clave secreta de AWS. Es posible usar este par de claves para SSH a la instancia. El nombre de usuario para la instancia de Linux EC2 es ubuntu (para los conectores creados antes de mayo de 2023, el nombre de usuario era EC2-user).
+
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs: Conéctese a su instancia de Linux"^]
+
+.. Instale la CLI de AWS.
++
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html["AWS Docs: Instale o actualice a la última versión de la CLI de AWS"^]
+
+.. Utilice la `aws ec2 modify-instance-metadata-options` Comando para requerir el uso de IMDSv2 y para cambiar el límite de salto de respuesta PUT a 3.
++
+*ejemplo*
+
++
+[source, awscli]
+----
+aws ec2 modify-instance-metadata-options \
+    --instance-id <instance-id> \
+    --http-put-response-hop-limit 3 \
+    --http-tokens required \
+    --http-endpoint enabled
+----
+
+
++
+
+NOTE: La `http-tokens` El parámetro establece IMDSv2 en Necesario. Cuando `http-tokens` es necesario, también debe establecer `http-endpoint` para activarlo.
+
+. Requerir el uso de IMDSv2 en instancias de Cloud Volumes ONTAP:
++
+.. Vaya a la https://console.aws.amazon.com/ec2/["Consola de Amazon EC2"^]
+.. En el panel de navegación, selecciona *Instancias*.
+.. Seleccione una instancia de Cloud Volumes ONTAP.
+.. Seleccione *Acciones > Configuración de instancia > Modificar opciones de metadatos de instancia*.
+.. En el cuadro de diálogo *Modificar opciones de metadatos de instancia*, seleccione lo siguiente:
++
+*** Para *servicio de metadatos de instancia*, selecciona *Habilitar*.
+*** Para *IMDSv2*, selecciona *Requerido*.
+*** Seleccione *Guardar*.
+
+
+.. Repita estos pasos para otras instancias de Cloud Volumes ONTAP, incluido el mediador HA.
+.. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-state.html["Pare e inicie las instancias de Cloud Volumes ONTAP"^]
+
+
+
+
+.Resultado
+La instancia de conector y las instancias de Cloud Volumes ONTAP ahora están configuradas para utilizar IMDSv2.

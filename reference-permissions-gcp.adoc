@@ -25,7 +25,7 @@ La función personalizada que se muestra a continuación proporciona los permiso
 Tendrá que aplicar esta función personalizada a una cuenta de servicio que se conecta a la máquina virtual del conector.
 
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Configure los permisos de Google Cloud para el modo estándar"]
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 

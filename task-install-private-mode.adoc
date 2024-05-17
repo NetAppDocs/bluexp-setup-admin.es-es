@@ -28,7 +28,7 @@ Si desea utilizar BlueXP en https://aws.amazon.com/federal/secret-cloud/["Cloud 
 Se requieren privilegios de usuario raíz para instalar el conector.
 
 .Pasos
-. Compruebe que docker está activado y en ejecución.
+. Compruebe que Docker está habilitado y en ejecución.
 +
 [source, cli]
 ----
@@ -95,7 +95,7 @@ Esta cuenta de usuario se ejecuta localmente en el sistema. No hay conexión con
 .Resultado
 El conector ahora está instalado y configurado.
 
-Cuando haya nuevas versiones del software del conector disponibles, estas se publicarán en el sitio de soporte de NetApp. link:task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Aprenda a actualizar el conector"].
+Cuando haya nuevas versiones del software del conector disponibles, estas se publicarán en el sitio de soporte de NetApp. link:task-upgrade-connector.html["Aprenda a actualizar el conector"].
 
 .El futuro
 Proporcione a BlueXP los permisos que configuró anteriormente.

@@ -9,8 +9,43 @@ Sistemas operativos compatibles::
 +
 --
 * Sistema operativo Ubuntu 22,04 LTS
+* CentOS 7,6 a 7,9
++
+NetApp continuará soportando el conector con CentOS 7 hasta el 30 de junio de 2024.
+
+* Red Hat Enterprise Linux
++
+** 7,6 a 7,9
++
+NetApp seguirá admitiendo el conector con RHEL 7 hasta el 30 de junio de 2024.
+
+** 8,6 a 8,9
+** 9,1 a 9,3
++
+El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
+
++
+El conector es compatible con las versiones en inglés de estos sistemas operativos.
+
+
+
+
+
+--
+
+
+Sistemas operativos compatibles::
++
+--
+* Sistema operativo Ubuntu 22,04 LTS
 * CentOS 7.6, 7.7, 7.8 y 7.9
++
+NetApp continuará soportando el conector con CentOS 7 hasta el 30 de junio de 2024.
+
 * Red Hat Enterprise Linux 7,6, 7,7, 7,8 y 7,9
++
+NetApp seguirá admitiendo el conector con RHEL 7 hasta el 30 de junio de 2024.
+
 +
 El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
 
@@ -25,7 +60,7 @@ El conector es compatible con las versiones en inglés de estos sistemas operati
 Hipervisor:: Se requiere un hipervisor con configuración básica o alojado certificado para ejecutar Ubuntu, CentOS o Red Hat Enterprise Linux.
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
+https://access.redhat.com/articles/973163["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
 
 --
 
@@ -62,6 +97,31 @@ Motor Docker:: Se requiere Docker Engine en el host antes de instalar Connector.
 * La versión máxima admitida es 25,0.5.
 +
 https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
+
+
+
+--
+
+
+Herramienta de orquestación de contenedores:: Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
++
+--
+* Se requiere la versión 4.6.1 de Podman para Red Hat Enterprise Linux 8 y 9.
++
+Se deben cumplir los siguientes requisitos previos para Podman:
+
++
+** El servicio podman.socket debe estar activado e iniciado
+** se debe instalar python3
+** Se debe instalar el paquete de composición podman versión 1.0.6
+** Se debe agregar la composición podman a la variable de entorno PATH
+
+
+* Se requiere Docker Engine para Ubuntu, CentOS y Red Hat Enterprise Linux 7.
++
+** La versión mínima admitida es 19,3.1.
+** La versión máxima admitida es 25,0.5.
+
 
 
 
