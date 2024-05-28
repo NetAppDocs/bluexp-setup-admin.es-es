@@ -29,7 +29,7 @@ Tendrá que aplicar esta función personalizada a una cuenta de servicio que se 
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 
-También debe asegurarse de que el rol esté actualizado a medida que se añadan nuevos permisos en versiones posteriores.
+También debe asegurarse de que el rol esté actualizado a medida que se añadan nuevos permisos en versiones posteriores. Si se requieren nuevos permisos, se mostrarán en las notas de la versión.
 
 [source, yaml]
 ----

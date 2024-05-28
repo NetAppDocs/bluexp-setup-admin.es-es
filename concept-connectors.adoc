@@ -167,6 +167,8 @@ Para ver los permisos exactos que el conector necesita para las operaciones diar
 * link:reference-permissions-gcp.html["Descubra cómo el conector utiliza los permisos de Google Cloud"]
 
 
+Es su responsabilidad actualizar las políticas de Connector a medida que se agregan nuevos permisos en las versiones posteriores. Si se requieren nuevos permisos, se mostrarán en las notas de la versión.
+
 
 
 == Actualizaciones de conectores

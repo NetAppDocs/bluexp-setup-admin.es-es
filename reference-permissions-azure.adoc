@@ -22,19 +22,20 @@ Cuando BlueXP inicia Connector VM en Azure, asocia una función personalizada a 
 
 El rol personalizado que se muestra a continuación proporciona los permisos que un conector necesita para administrar recursos y procesos dentro de su red de Azure.
 
-Al crear un conector directamente desde BlueXP, BlueXP aplica automáticamente esta función personalizada al conector.
+Tenga en cuenta lo siguiente:
 
-Si pone en marcha el conector desde Azure Marketplace o si instala manualmente el conector en un host Linux, deberá configurar el rol personalizado usted mismo.
+* Al crear un conector directamente desde BlueXP, BlueXP aplica automáticamente esta función personalizada al conector.
+* Si pone en marcha el conector desde Azure Marketplace o si instala manualmente el conector en un host Linux, deberá configurar el rol personalizado usted mismo.
+* En cualquier caso, debe asegurarse de que el rol esté actualizado a medida que se agregan nuevos permisos en las versiones posteriores. Si se requieren nuevos permisos, se mostrarán en las notas de la versión.
+* Para ver instrucciones paso a paso para utilizar estas directivas, consulte las páginas siguientes:
++
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configure los permisos para una puesta en marcha de Azure Marketplace"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configure los permisos para implementaciones en las instalaciones"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
+** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
-Para ver instrucciones paso a paso para utilizar estas directivas, consulte las páginas siguientes:
-
-* link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configure los permisos para una puesta en marcha de Azure Marketplace"]
-* link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configure los permisos para implementaciones en las instalaciones"]
-* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 
-También debe asegurarse de que el rol esté actualizado a medida que se añadan nuevos permisos en versiones posteriores.
 
 [source, json]
 ----

@@ -24,9 +24,9 @@ Las políticas de IAM disponibles a continuación proporcionan los permisos que 
 
 Tenga en cuenta lo siguiente:
 
-* Si crea un conector en una región estándar de AWS directamente desde BlueXP, BlueXP aplica automáticamente directivas al conector. En este caso no es necesario hacer nada.
+* Si crea un conector en una región estándar de AWS directamente desde BlueXP, BlueXP aplica automáticamente directivas al conector.
 * Debe configurar las políticas usted mismo si pone en marcha el conector desde AWS Marketplace, si instala manualmente el conector en un host Linux o si desea añadir credenciales de AWS adicionales a BlueXP.
-* También debe asegurarse de que las directivas estén actualizadas a medida que se añadan nuevos permisos en versiones posteriores.
+* En cualquier caso, debe asegurarse de que las políticas estén actualizadas a medida que se agregan nuevos permisos en versiones posteriores. Si se requieren nuevos permisos, se mostrarán en las notas de la versión.
 * Si es necesario, puede restringir las políticas de IAM mediante el IAM `Condition` elemento. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentación de AWS: Elemento de condición"^]
 * Para ver instrucciones paso a paso para utilizar estas directivas, consulte las páginas siguientes:
 +

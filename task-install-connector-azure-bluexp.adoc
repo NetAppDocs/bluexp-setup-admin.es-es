@@ -161,7 +161,7 @@ Tenga en cuenta que puede crear un rol personalizado de Azure mediante el portal
 . Copie los permisos necesarios para un nuevo rol personalizado en Azure y guárdelo en un archivo JSON.
 +
 
-NOTE: Este rol personalizado solo contiene los permisos necesarios para iniciar Connector VM en Azure desde BlueXP. No utilice esta política para otras situaciones. Cuando BlueXP crea el conector, aplica un nuevo conjunto de permisos al conector VM que permite al conector administrar los recursos de su entorno de nube pública.
+NOTE: Este rol personalizado solo contiene los permisos necesarios para iniciar Connector VM en Azure desde BlueXP. No utilice esta política para otras situaciones. Cuando BlueXP crea el conector, aplica un nuevo conjunto de permisos a la máquina virtual de Connector que permite al conector gestionar los recursos de Azure.
 
 +
 [source, json]
@@ -420,7 +420,9 @@ Su principal de servicio ahora está configurado y debe haber copiado el ID de a
 Crea el Connector directamente desde la consola basada en web de BlueXP.
 
 .Acerca de esta tarea
-Al crear el conector desde BlueXP se implementa una máquina virtual en Azure con una configuración predeterminada. Después de crear el conector, no debe cambiar a un tipo de máquina virtual más pequeño que tenga menos CPU o RAM. link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada para el conector"].
+* Al crear el conector desde BlueXP se implementa una máquina virtual en Azure con una configuración predeterminada. Después de crear el conector, no debe cambiar a un tipo de máquina virtual más pequeño que tenga menos CPU o RAM. link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada para el conector"].
+* Cuando BlueXP pone en marcha Connector, crea un rol personalizado y lo asigna a la máquina virtual Connector. Este rol incluye permisos que permiten al conector administrar recursos de Azure. Debe asegurarse de que el rol se mantiene actualizado a medida que se agregan nuevos permisos en versiones posteriores. link:reference-permissions-azure.html["Obtenga más información sobre el rol personalizado del conector"].
+
 
 .Antes de empezar
 Debe tener lo siguiente:
