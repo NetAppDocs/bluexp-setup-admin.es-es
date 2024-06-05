@@ -165,12 +165,6 @@ No se admiten los backups y la restauración de datos de aplicaciones, datos de 
 | Clasificación  a| 
 Compatible en regiones gubernamentales con modo restringido. No se admite en regiones comerciales o en regiones soberanas con modo restringido.
 
-Se aplican las siguientes limitaciones:
-
-* Las cuentas de OneDrive, cuentas de SharePoint y cuentas de Google Drive no se pueden analizar.
-* La funcionalidad de etiqueta de Microsoft Azure Information Protection (AIP) no se puede integrar.
-
-
 
 
 | Cloud Volumes ONTAP | Soporte completo 
