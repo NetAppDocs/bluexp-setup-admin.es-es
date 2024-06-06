@@ -2861,9 +2861,6 @@ Tenga en cuenta que la página se actualiza entre probar la conexión y habilita
   <block id="f4c6f851b00d5518bf888815de279aba" category="cell">Notas</block>
   <block id="34678ee868eeabce720fc4a0fd60c17a" category="cell">Soporte completo</block>
   <block id="0a44fe605745a017fde35750e5fae36a" category="paragraph">Compatible en regiones gubernamentales con modo restringido. No se admite en regiones comerciales o en regiones soberanas con modo restringido.</block>
-  <block id="9bff93d1123789b473f27a881c3e00c6" category="paragraph">Se aplican las siguientes limitaciones:</block>
-  <block id="b3478a494adde25715314b14559dd6a4" category="list-text">Las cuentas de OneDrive, cuentas de SharePoint y cuentas de Google Drive no se pueden analizar.</block>
-  <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">La funcionalidad de etiqueta de Microsoft Azure Information Protection (AIP) no se puede integrar.</block>
   <block id="8adfa152daa2970174717fd5e24151b2" category="cell">Puede utilizar la cartera digital con las opciones de licencia admitidas que se indican a continuación para el modo restringido.</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="cell">Clústeres de ONTAP en las instalaciones</block>
   <block id="2bd6e3220a2a60e7217c63bc76d9f73c" category="cell">Se admiten tanto la detección con un conector como la detección sin un conector (detección directa).
@@ -4109,7 +4106,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">Conector 3.9.40</block>
   <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">Esta versión de BlueXP Connector incluye compatibilidad con sistemas operativos adicionales, mejoras de seguridad menores y correcciones de errores.</block>
   <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">En este momento, la versión 3.9.40 está disponible para modo estándar y modo restringido.</block>
-  <block id="9788cee19c4b5d5971c7a99e340846e8" category="paragraph">El conector ahora es compatible con los hosts que ejecutan las siguientes versiones de Red Hat Enterprise Linux con instalaciones de conector _new_:</block>
   <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">Podman se requiere como herramienta de orquestación de contenedores para estos sistemas operativos.</block>
   <block id="3d007e1710eb9efcb8c51296efc8eb4f" category="paragraph">Debe conocer los requisitos de Podman, las limitaciones conocidas, un resumen de la compatibilidad con el sistema operativo, qué hacer si tiene un host RHEL 7, cómo comenzar y mucho más.</block>
   <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">Obtenga más información sobre la compatibilidad con RHEL 8 y 9 con Connector</block>
@@ -4198,4 +4194,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
   <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">Descubre las novedades de la gestión de Cloud Volumes ONTAP en BlueXP</block>
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
+  <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">El conector ahora es compatible con los hosts que ejecutan las siguientes versiones de Red Hat Enterprise Linux con instalaciones de conector _new_ cuando se utiliza BlueXP en modo estándar o restringido:</block>
 </blocks>

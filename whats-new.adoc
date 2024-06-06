@@ -79,7 +79,7 @@ En este momento, la versión 3.9.40 está disponible para modo estándar y modo 
 
 ==== Compatibilidad con RHEL 8 y 9
 
-El conector ahora es compatible con los hosts que ejecutan las siguientes versiones de Red Hat Enterprise Linux con instalaciones de conector _new_:
+El conector ahora es compatible con los hosts que ejecutan las siguientes versiones de Red Hat Enterprise Linux con instalaciones de conector _new_ cuando se utiliza BlueXP en modo estándar o restringido:
 
 * 8,6 a 8,9
 * 9,1 a 9,3
