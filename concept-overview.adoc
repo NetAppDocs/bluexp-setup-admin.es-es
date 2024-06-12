@@ -47,7 +47,6 @@ Movilidad:: Mueva los datos donde los necesite sincronizando, copiando, organiza
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["Copiar y sincronizar"^]
-* https://bluexp.netapp.com/global-file-cache["Almacenamiento en caché en el edge"^]
 * https://bluexp.netapp.com/cloud-tiering["Organización en niveles"^]
 
 
