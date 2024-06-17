@@ -4197,4 +4197,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">12 de junio de 2024</block>
   <block id="e7a68d45477c484e2ef45d11f3cea8f8" category="section-title">Conector 3.9.41</block>
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">La versión 3.9.41 está disponible para modo estándar y modo restringido.</block>
+  <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">BlueXP utiliza<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> para instalar el<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> directorio y su contenido.</block>
+  <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP requiere este espacio en<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> Porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> directorio. Los montajes externos o los enlaces simbólicos no funcionan en este espacio.</block>
 </blocks>

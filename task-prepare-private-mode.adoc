@@ -84,7 +84,17 @@ El conector es compatible con Google Cloud en una instancia de máquina virtual 
 
 --
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
++
+--
+BlueXP utiliza `/opt` para instalar el `/opt/application/netapp` directorio y su contenido.
+
+--
 Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
++
+--
+BlueXP requiere este espacio en `/var` Porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el `/var/lib/containers/storage` directorio. Los montajes externos o los enlaces simbólicos no funcionan en este espacio.
+
+--
 Motor Docker:: Se requiere Docker Engine en el host antes de instalar Connector.
 +
 --

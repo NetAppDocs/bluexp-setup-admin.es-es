@@ -62,7 +62,17 @@ https://access.redhat.com/articles/973163["Red Hat Solution: ¿Qué hipervisores
 CPU:: 4 núcleos o 4 vCPU
 RAM:: 14 GB
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
++
+--
+BlueXP utiliza `/opt` para instalar el `/opt/application/netapp` directorio y su contenido.
+
+--
 Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
++
+--
+BlueXP requiere este espacio en `/var` Porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el `/var/lib/containers/storage` directorio. Los montajes externos o los enlaces simbólicos no funcionan en este espacio.
+
+--
 Herramienta de orquestación de contenedores:: Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
 +
 --
