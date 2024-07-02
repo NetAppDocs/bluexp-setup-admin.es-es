@@ -5,7 +5,7 @@
 Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
 
 * Se requiere Podman para Red Hat Enterprise Linux 8 y 9.
-* Se requiere Docker Engine para Ubuntu, CentOS y Red Hat Enterprise Linux 7.
+* Se requiere Docker Engine para Ubuntu.
 
 
 .Pasos

@@ -46,33 +46,13 @@ Dónde instalas Connector determina los servicios y características de BlueXP q
 El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
 
 Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
-Sistemas operativos compatibles::
+Sistema operativo compatible:: Sistema operativo Ubuntu 22,04 LTS
 +
 --
-* Sistema operativo Ubuntu 22,04 LTS
-* CentOS 7.6, 7.7, 7.8 y 7.9
-+
-NetApp continuará soportando el conector con CentOS 7 hasta el 30 de junio de 2024.
-
-* Red Hat Enterprise Linux 7,6, 7,7, 7,8 y 7,9
-+
-NetApp seguirá admitiendo el conector con RHEL 7 hasta el 30 de junio de 2024.
-
-+
-El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
-
-+
-El conector es compatible con las versiones en inglés de estos sistemas operativos.
-
-
+El conector es compatible con las versiones en inglés de este sistema operativo.
 
 --
-Hipervisor:: Se requiere un hipervisor con configuración básica o alojado certificado para ejecutar Ubuntu, CentOS o Red Hat Enterprise Linux.
-+
---
-https://access.redhat.com/articles/973163["Red Hat Solution: ¿Qué hipervisores están certificados para ejecutar Red Hat Enterprise Linux?"^]
-
---
+Hipervisor:: Se requiere un hipervisor nativo o alojado que esté certificado para ejecutar un sistema operativo compatible.
 CPU:: 4 núcleos o 4 vCPU
 RAM:: 14 GB
 Tipo de instancia de AWS EC2:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos t3.xlarge.
