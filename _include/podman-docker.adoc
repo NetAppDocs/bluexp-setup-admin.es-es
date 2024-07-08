@@ -90,7 +90,7 @@ NOTE: Con el `dnf install` El comando cumple con los requisitos para agregar pod
 --
 .Motor Docker
 --
-Instale una versión de Docker Engine entre 19.3.1 y 25,0.5.
+Instale una versión de Docker Engine entre 23.0.6 y 25,0.5.
 
 .Pasos
 . Instale Docker Engine.

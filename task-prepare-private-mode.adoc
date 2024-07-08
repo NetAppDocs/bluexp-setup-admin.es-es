@@ -78,7 +78,7 @@ BlueXP requiere este espacio en `/var` Porque Docker o Podman están diseñados 
 Motor Docker:: Se requiere Docker Engine en el host antes de instalar Connector.
 +
 --
-* La versión mínima admitida es 19,3.1.
+* La versión mínima admitida es 23,0.6.
 * La versión máxima admitida es 25,0.5.
 +
 https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
