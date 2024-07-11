@@ -26,6 +26,8 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 Esta versión incluye mejoras menores, correcciones de errores y soporte para Connector en la región AWS Canada West (Calgary).
 
+La versión 3.9.42 está disponible para modo estándar y modo restringido.
+
 
 
 === Requisitos del motor Docker actualizados
