@@ -4204,4 +4204,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">15 de julio de 2024</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Compatibilidad con RHEL 8,10</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP ahora admite la instalación de Connector en un host Red Hat Enterprise Linux 8,10 cuando se utiliza el modo estándar o el modo restringido.</block>
+  <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">La compatibilidad con RHEL 8,10 comienza con la versión 3.9.40 del conector.</block>
 </blocks>
