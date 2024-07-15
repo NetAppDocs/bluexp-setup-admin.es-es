@@ -54,7 +54,7 @@ Sistemas operativos compatibles::
 * Sistema operativo Ubuntu 22,04 LTS
 * Red Hat Enterprise Linux
 +
-** 8,6 a 8,9
+** 8,6 a 8,10
 ** 9,1 a 9,3
 +
 El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.

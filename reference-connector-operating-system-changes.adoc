@@ -18,15 +18,65 @@ A medida que agregamos y eliminamos la compatibilidad con Connector en sistemas 
 
 
 
+== Sistemas operativos compatibles
+
+El conector BlueXP es compatible con los siguientes sistemas operativos Linux.
+
+[role="tabbed-block"]
+====
+.Modo estándar
+--
+Instalación manual::
++
+--
+* Sistema operativo Ubuntu 22,04 LTS
+* Red Hat Enterprise Linux
++
+** 8,6 a 8,10
+** 9,1 a 9,3
+
+
+
+
+--
+Puesta en marcha desde BlueXP:: Sistema operativo Ubuntu 22,04 LTS
+Puesta en marcha desde AWS Marketplace:: Sistema operativo Ubuntu 22,04 LTS
+Puesta en marcha desde Azure Marketplace:: Sistema operativo Ubuntu 22,04 LTS
+
+
+--
+.Modo restringido
+--
+Instalación manual::
++
+--
+* Sistema operativo Ubuntu 22,04 LTS
+* Red Hat Enterprise Linux
++
+** 8,6 a 8,10
+** 9,1 a 9,3
+
+
+
+
+--
+Puesta en marcha desde AWS Marketplace:: Sistema operativo Ubuntu 22,04 LTS
+Puesta en marcha desde Azure Marketplace:: Sistema operativo Ubuntu 22,04 LTS
+
+
+--
+.Modo privado
+--
+Instalación manual:: Sistema operativo Ubuntu 22,04 LTS
+
+
+--
+====
+
+
 == Compatibilidad con RHEL 8 y 9
 
-A partir de la versión 3.9.40, BlueXP admite Connector con las siguientes versiones de Red Hat Enterprise Linux (RHEL):
-
-* 8,6 a 8,9
-* 9,1 a 9,3
-
-
-Tenga en cuenta lo siguiente acerca de la compatibilidad con estas versiones de RHEL:
+Tenga en cuenta lo siguiente acerca de la compatibilidad con RHEL 8 y 9:
 
 Limitaciones::
 +
@@ -77,62 +127,6 @@ Docker Engine es necesario para este sistema operativo. Podman no es compatible.
 
 
 
-== Resumen de los sistemas operativos admitidos
-
-A continuación se muestra un resumen de la compatibilidad con el sistema operativo que se describe en las secciones anteriores.
-
-[role="tabbed-block"]
-====
-.Modo estándar
---
-Instalación manual::
-+
---
-* Sistema operativo Ubuntu 22,04 LTS
-* Red Hat Enterprise Linux
-+
-** 8,6 a 8,9
-** 9,1 a 9,3
-
-
-
-
---
-Puesta en marcha desde BlueXP:: Sistema operativo Ubuntu 22,04 LTS
-Puesta en marcha desde AWS Marketplace:: Sistema operativo Ubuntu 22,04 LTS
-Puesta en marcha desde Azure Marketplace:: Sistema operativo Ubuntu 22,04 LTS
-
-
---
-.Modo restringido
---
-Instalación manual::
-+
---
-* Sistema operativo Ubuntu 22,04 LTS
-* Red Hat Enterprise Linux
-+
-** 8,6 a 8,9
-** 9,1 a 9,3
-
-
-
-
---
-Puesta en marcha desde AWS Marketplace:: Sistema operativo Ubuntu 22,04 LTS
-Puesta en marcha desde Azure Marketplace:: Sistema operativo Ubuntu 22,04 LTS
-
-
---
-.Modo privado
---
-Instalación manual:: Sistema operativo Ubuntu 22,04 LTS
-
-
---
-====
-
-
 == Enlaces relacionados
 
 
@@ -160,8 +154,4 @@ Consulte las siguientes páginas para volver a detectar los entornos de trabajo 
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["Crear un entorno de trabajo de Azure NetApp Files"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["Descubra los sistemas E-Series"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["Descubra los sistemas StorageGRID"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html["Añada un clúster de Amazon Kubernetes"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html["Añada un clúster de Azure Kubernetes"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html["Añada un clúster de Google Cloud Kubernetes"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["Importe un clúster de OpenShift"^]
 

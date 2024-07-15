@@ -3989,8 +3989,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="895e31e93bd7a23981cc0cbeb5581840" category="summary">A medida que agregamos y eliminamos la compatibilidad con Connector en sistemas operativos Linux específicos, es posible que tenga preguntas sobre cómo afecta esta compatibilidad a sus implementaciones de Connector existentes.</block>
   <block id="06e657c37e762cbeb9edc676ff32181d" category="doc">Cambios en los sistemas operativos Linux admitidos</block>
   <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">Compatibilidad con RHEL 8 y 9</block>
-  <block id="931c37d7beb414a58946263b8614e645" category="paragraph">A partir de la versión 3.9.40, BlueXP admite Connector con las siguientes versiones de Red Hat Enterprise Linux (RHEL):</block>
-  <block id="6472d01a592db1ad2bf4a2c914623f1e" category="paragraph">Tenga en cuenta lo siguiente acerca de la compatibilidad con estas versiones de RHEL:</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="list-text">Limitaciones</block>
   <block id="12cde487ed6dcd882cede6dc73a2a96f" category="inline-link">Limitaciones conocidas para el backup y la recuperación de BlueXP</block>
   <block id="7dffd01ec33485e74fcb637e0b8fe15a" category="list-text">Cuando Connector está instalado en un host RHEL 8 o 9, el backup y la recuperación de BlueXP tienen limitaciones relacionadas con la restauración de archivos únicos y el análisis de ransomware. Para obtener más información, consulte<block ref="a84971be17ca73ce2bed9722547a4b2a" category="inline-link-rx"></block></block>
@@ -4017,8 +4015,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="6fdeb52b60ec4b9c7e60078047c5ce34" category="section-title">Soporte continuo para Ubuntu 22,04 LTS</block>
   <block id="a9aa1d1b3ffccec7f032ad3fee0e91b8" category="paragraph">El conector sigue siendo compatible con Ubuntu 22,04 LTS y es el sistema operativo predeterminado para implementaciones desde BlueXP y desde el mercado.</block>
   <block id="cadd936a18695c0f75406a35d18725ee" category="paragraph">Docker Engine es necesario para este sistema operativo. Podman no es compatible.</block>
-  <block id="42d12ee6ea3719c1f52fd78afdba631f" category="section-title">Resumen de los sistemas operativos admitidos</block>
-  <block id="4dd65f46069a455736b8e8c7d3fed71f" category="paragraph">A continuación se muestra un resumen de la compatibilidad con el sistema operativo que se describe en las secciones anteriores.</block>
   <block id="d20756c02f9913587a3e83e30f0e10d3" category="list-text">Instalación manual</block>
   <block id="0809934ab73994b74ff0369462a31319" category="list-text">Puesta en marcha desde BlueXP</block>
   <block id="12a87db5b86462e9bd05a612793965de" category="list-text">Puesta en marcha desde AWS Marketplace</block>
@@ -4041,14 +4037,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="90a582acc370affa7fa401384859e582" category="list-text"><block ref="90a582acc370affa7fa401384859e582" category="inline-link-rx"></block></block>
   <block id="d85b01f001ee16ebd8eb1917c739d824" category="inline-link">Descubra los sistemas StorageGRID</block>
   <block id="49193f8c0c9f916e42ecd0ff6595ef39" category="list-text"><block ref="49193f8c0c9f916e42ecd0ff6595ef39" category="inline-link-rx"></block></block>
-  <block id="29eef78ab52bc074b0642baafaa44a77" category="inline-link">Añada un clúster de Amazon Kubernetes</block>
-  <block id="2afa5bfababb7240c7ecb360518a2cea" category="list-text"><block ref="2afa5bfababb7240c7ecb360518a2cea" category="inline-link-rx"></block></block>
-  <block id="8cae45546ea6e7035e9b798f709fc911" category="inline-link">Añada un clúster de Azure Kubernetes</block>
-  <block id="a8c7ee49512f707b31b6b959a438f7ad" category="list-text"><block ref="a8c7ee49512f707b31b6b959a438f7ad" category="inline-link-rx"></block></block>
-  <block id="2872769900c1ca485d1628b4eefde308" category="inline-link">Añada un clúster de Google Cloud Kubernetes</block>
-  <block id="aa7a37aa9bcd687f934565cd13aefe20" category="list-text"><block ref="aa7a37aa9bcd687f934565cd13aefe20" category="inline-link-rx"></block></block>
-  <block id="24e61fea41861d29656588dd6c8ad263" category="inline-link">Importe un clúster de OpenShift</block>
-  <block id="4fc44e3aff437ef0c290689bf2e88325" category="list-text"><block ref="4fc44e3aff437ef0c290689bf2e88325" category="inline-link-rx"></block></block>
   <block id="7a0d21aaa1ef78351243ec252286827a" category="summary">BlueXP es compatible con IMDSv2 con el conector y con Cloud Volumes ONTAP. En la mayoría de los casos, IMDSv2 se configura automáticamente en instancias de EC2 nuevas. IMDSv1 se activó antes de marzo de 2024. Si las directivas de seguridad lo requieren, es posible que deba configurar manualmente IMDSv2 en las instancias de EC2.</block>
   <block id="7ff8d7153d4eb208dbc1a561fd9985a9" category="paragraph">BlueXP admite el servicio de metadatos de la instancia de Amazon EC2 versión 2 (IMDSv2) con Connector y con Cloud Volumes ONTAP (incluido el mediador para puestas en marcha de alta disponibilidad). En la mayoría de los casos, IMDSv2 se configura automáticamente en instancias de EC2 nuevas. IMDSv1 se activó antes de marzo de 2024. Si las directivas de seguridad lo requieren, es posible que deba configurar manualmente IMDSv2 en las instancias de EC2.</block>
   <block id="ed2660e5566ea9acdabcea9d70f95553" category="section-title">Paso 2: Instale Podman o Docker Engine</block>
@@ -4210,4 +4198,10 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">Ahora se requiere verificación de correo electrónico</block>
   <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">Ahora se requiere que los nuevos usuarios que se registren en BlueXP verifiquen su dirección de correo electrónico para poder iniciar sesión.</block>
   <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">La versión 3.9.42 está disponible para modo estándar y modo restringido.</block>
+  <block id="597f1630cd21d22c527f63002e42f059" category="list-text">8,6 a 8,10</block>
+  <block id="231007fefc880f5d22c9c9bd81be28b3" category="paragraph">El conector BlueXP es compatible con los siguientes sistemas operativos Linux.</block>
+  <block id="3cf44b158a4bb7a8c4ca007889bedc1a" category="paragraph">Tenga en cuenta lo siguiente acerca de la compatibilidad con RHEL 8 y 9:</block>
+  <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">15 de julio de 2024</block>
+  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Compatibilidad con RHEL 8,10</block>
+  <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP ahora admite la instalación de Connector en un host Red Hat Enterprise Linux 8,10 cuando se utiliza el modo estándar o el modo restringido.</block>
 </blocks>

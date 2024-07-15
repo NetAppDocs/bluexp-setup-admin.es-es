@@ -18,6 +18,18 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
+== 15 de julio de 2024
+
+
+
+=== Compatibilidad con RHEL 8,10
+
+BlueXP ahora admite la instalación de Connector en un host Red Hat Enterprise Linux 8,10 cuando se utiliza el modo estándar o el modo restringido.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Obtenga más información sobre la compatibilidad con RHEL 8 y 9 con Connector"].
+
+
+
 == 8 de julio de 2024
 
 
