@@ -190,7 +190,7 @@ Debe tener lo siguiente:
 
 
 .Pasos
-. Vaya a la https://aws.amazon.com/marketplace/pp/B018REK8QG["Página de BlueXP en AWS Marketplace"^]
+. Vaya a la https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Lista del conector BlueXP en el AWS Marketplace"^]
 . En la página de Marketplace, selecciona *Continuar con la suscripción* y luego selecciona *Continuar con la configuración*.
 +
 image:screenshot-subscribe-aws.png["Una captura de pantalla que muestra los botones continuar Suscribirse y continuar con Configuración en AWS Marketplace."]
