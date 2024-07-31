@@ -157,7 +157,7 @@ Para obtener más información sobre cómo configurar permisos, consulte lo sigu
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configure los permisos para el modo restringido"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurar permisos para el modo privado"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Configurar permisos para el modo privado"]
 
 
 Para ver los permisos exactos que el conector necesita para las operaciones diarias, consulte las siguientes páginas:

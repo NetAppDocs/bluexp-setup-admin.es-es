@@ -46,10 +46,23 @@ Dónde instalas Connector determina los servicios y características de BlueXP q
 El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
 
 Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
-Sistema operativo compatible:: Sistema operativo Ubuntu 22,04 LTS
+Sistema operativo compatible::
 +
 --
-El conector es compatible con las versiones en inglés de este sistema operativo.
+* Sistema operativo Ubuntu 22,04 LTS
+* Red Hat Enterprise Linux
++
+** 8,6 a 8,10
+** 9,1 a 9,3
++
+El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
+
++
+El conector es compatible con las versiones en inglés de estos sistemas operativos.
+
+
+
+
 
 --
 Hipervisor:: Se requiere un hipervisor nativo o alojado que esté certificado para ejecutar un sistema operativo compatible.
@@ -75,13 +88,25 @@ Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
 BlueXP requiere este espacio en `/var` Porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el `/var/lib/containers/storage` directorio. Los montajes externos o los enlaces simbólicos no funcionan en este espacio.
 
 --
-Motor Docker:: Se requiere Docker Engine en el host antes de instalar Connector.
+Herramienta de orquestación de contenedores:: Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
 +
 --
-* La versión mínima admitida es 23,0.6.
-* La versión máxima admitida es 25,0.5.
+* Se requiere la versión 4.6.1 de Podman para Red Hat Enterprise Linux 8 y 9.
 +
-https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
+Se deben cumplir los siguientes requisitos previos para Podman:
+
++
+** El servicio podman.socket debe estar activado e iniciado
+** se debe instalar python3
+** Se debe instalar el paquete de composición podman versión 1.0.6
+** Se debe agregar la composición podman a la variable de entorno PATH
+
+
+* Se requiere Docker Engine para Ubuntu.
++
+** La versión mínima admitida es 23,0.6.
+** La versión máxima admitida es 25,0.5.
+
 
 
 
@@ -90,7 +115,121 @@ https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^
 
 
 
-== Paso 4: Prepare la red para el conector
+== Paso 4: Instale Podman o Docker Engine
+
+Debe preparar el host para el conector instalando Podman o Docker Engine.
+
+Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
+
+* Se requiere Podman para Red Hat Enterprise Linux 8 y 9.
+* Se requiere Docker Engine para Ubuntu.
+
+
+.Pasos
+[role="tabbed-block"]
+====
+.Podman
+--
+Instale Podman 4,6.1.
+
+.Pasos
+. Elimine el paquete podman-docker si está instalado en el host.
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. Instale Podman.
++
+Podman está disponible en repositorios oficiales de Red Hat Enterprise Linux.
+
++
+Para Red Hat Enterprise Linux 9:
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
++
+Para Red Hat Enterprise Linux 8:
+
++
+[source, cli]
+----
+sudo dnf install podman-3:4.6.1
+----
+. Active e inicie el servicio podman.socket.
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. Instale python3.
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. Instale el paquete de repositorio de EPEL si aún no está disponible en su sistema.
++
+Este paso es necesario porque podman-compose está disponible en el repositorio Extra Packages for Enterprise Linux (EPEL).
+
++
+Para Red Hat Enterprise Linux 9:
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+Para Red Hat Enterprise Linux 8:
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. Instale el paquete podman-compose 1,0.6.
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: Con el `dnf install` El comando cumple con los requisitos para agregar podman-compose a la variable de entorno PATH. El comando installation agrega podman-compose a /usr/bin, que ya está incluido en el `secure_path` opción en el host.
+
+
+
+--
+.Motor Docker
+--
+Instale una versión de Docker Engine entre 23.0.6 y 25,0.5.
+
+.Pasos
+. Instale Docker Engine.
++
+https://docs.docker.com/engine/install/["Consulte las instrucciones de instalación de Docker"^]
+
++
+Asegúrese de seguir los pasos para instalar una versión específica de Docker Engine. Al instalar la versión más reciente se instalará una versión de Docker no compatible con BlueXP.
+
+. Compruebe que Docker está habilitado y en ejecución.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====
+
+
+== Paso 5: Preparar el networking
 
 Configure su red de modo que Connector pueda gestionar recursos y procesos en su entorno de cloud público. Además de tener una red virtual y una subred para el conector, deberá asegurarse de que se cumplen los siguientes requisitos.
 
@@ -202,7 +341,7 @@ Habilite NTP:: Si tienes pensado utilizar la clasificación de BlueXP para anali
 
 
 
-== Paso 5: Preparar permisos en la nube
+== Paso 6: Preparar permisos en la nube
 
 Si Connector está instalado en la nube y tiene pensado crear sistemas Cloud Volumes ONTAP, BlueXP requiere permisos de su proveedor de nube. Debe configurar permisos en su proveedor de cloud y, a continuación, asociar dichos permisos a la instancia de conector después de instalarla.
 
@@ -515,7 +654,7 @@ Ahora tiene una cuenta de servicio que puede asignar a la instancia de Connector
 ====
 
 
-== Paso 6: Habilita las API de Google Cloud
+== Paso 7: Habilita las API de Google Cloud
 
 Se necesitan varias API para poner en marcha Cloud Volumes ONTAP en Google Cloud.
 
