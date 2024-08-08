@@ -46,8 +46,8 @@ El conector es compatible con las versiones en inglés de estos sistemas operati
 
 --
 Hipervisor:: Se requiere un hipervisor nativo o alojado que esté certificado para ejecutar un sistema operativo compatible.
-CPU:: 4 núcleos o 4 vCPU
-RAM:: 14 GB
+CPU:: 8 núcleos o 8 vCPU
+RAM:: 32GB
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
 +
 --
@@ -60,10 +60,39 @@ Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
 BlueXP requiere este espacio en `/var` Porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el `/var/lib/containers/storage` directorio. Los montajes externos o los enlaces simbólicos no funcionan en este espacio.
 
 --
+
+
+[[podman-versions]]
 Herramienta de orquestación de contenedores:: Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
 +
 --
-* Se requiere la versión 4.6.1 de Podman para Red Hat Enterprise Linux 8 y 9.
+* Se requiere Podman para Red Hat Enterprise Linux 8 y 9.
++
+[cols="50a,50a"]
+|===
+| Versión de RHEL | Versión de Podman compatible 
+
+
+ a| 
+RHEL 8,6 a 8,9
+ a| 
+Podman 4.6.1
+
+
+
+ a| 
+RHEL 8,10
+ a| 
+Podman 4.6.1 y 4.9.4
+
+
+
+ a| 
+RHEL 9,1 a 9,3
+ a| 
+Podman 4.6.1
+
+|===
 +
 Se deben cumplir los siguientes requisitos previos para Podman:
 
@@ -100,7 +129,7 @@ Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de i
 ====
 .Podman
 --
-Instale Podman 4,6.1.
+Instale una versión compatible de Podman. <<podman-versions,Ver las versiones de Podman que admite BlueXP >>.
 
 .Pasos
 . Elimine el paquete podman-docker si está instalado en el host.
@@ -120,16 +149,22 @@ Para Red Hat Enterprise Linux 9:
 +
 [source, cli]
 ----
-sudo dnf install podman-2:4.6.1
+sudo dnf install podman-2:<version>
 ----
++
+Donde <version> es la versión compatible de Podman que está instalando. <<podman-versions,Ver las versiones de Podman que admite BlueXP >>.
+
 +
 Para Red Hat Enterprise Linux 8:
 
 +
 [source, cli]
 ----
-sudo dnf install podman-3:4.6.1
+sudo dnf install podman-3:<version>
 ----
++
+Donde <version> es la versión compatible de Podman que está instalando. <<podman-versions,Ver las versiones de Podman que admite BlueXP >>.
+
 . Active e inicie el servicio podman.socket.
 +
 [source, cli]

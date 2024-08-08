@@ -60,7 +60,7 @@ Estos pasos describen cómo iniciar la instancia desde la consola EC2 porque la 
 +
 ** *Nombre y etiquetas*: Introduzca un nombre y etiquetas para la instancia.
 ** *Aplicación y OS Image*: Omitir esta sección. El conector AMI ya está seleccionado.
-** *Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (se recomienda T3.xlarge).
+** *Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (se recomienda t3,2xlarge).
 ** *Par de claves (login)*: Seleccione el par de claves que desea utilizar para conectarse de forma segura a la instancia.
 ** *Ajustes de red*: Edite los ajustes de red según sea necesario:
 +
@@ -123,7 +123,7 @@ image:screenshot-gov-cloud-mktp.png["Una captura de pantalla que muestra la ofer
 
 . Siga las instrucciones para configurar y desplegar la instancia:
 +
-** *Elija un tipo de instancia*: En función de la disponibilidad de la región, elija uno de los tipos de instancia admitidos (se recomienda t3.xlarge).
+** *Elija un tipo de instancia*: En función de la disponibilidad de la región, elija uno de los tipos de instancia admitidos (se recomienda t3.2xlarge).
 +
 link:task-prepare-restricted-mode.html["Revise los requisitos de la instancia"].
 
@@ -174,7 +174,7 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Aprenda
 Tenga en cuenta lo siguiente al configurar la máquina virtual:
 
 +
-** *VM size*: Elija un tamaño de VM que cumpla con los requisitos de CPU y RAM. Recomendamos DS3 v2.
+** *VM size*: Elija un tamaño de VM que cumpla con los requisitos de CPU y RAM. Recomendamos Standard_D8s_v3.
 ** *Discos*: El conector puede funcionar de forma óptima con discos HDD o SSD.
 ** *IP pública*: Si desea utilizar una dirección IP pública con el conector VM, la dirección IP debe utilizar un SKU básico para garantizar que BlueXP utilice esta dirección IP pública.
 +

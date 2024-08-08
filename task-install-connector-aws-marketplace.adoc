@@ -165,9 +165,9 @@ Ahora tiene el rol de IAM que se puede asociar a la instancia de EC2 durante la 
 
 Al crear el conector, debe elegir un tipo de instancia EC2 que cumpla los siguientes requisitos.
 
-CPU:: 4 núcleos o 4 vCPU
-RAM:: 14 GB
-Tipo de instancia de AWS EC2:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos t3.xlarge.
+CPU:: 8 núcleos o 8 vCPU
+RAM:: 32GB
+Tipo de instancia de AWS EC2:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos t3.2xlarge.
 
 
 
@@ -204,7 +204,7 @@ Estos pasos describen cómo iniciar la instancia desde la consola EC2 porque la 
 +
 ** *Nombre y etiquetas*: Introduzca un nombre y etiquetas para la instancia.
 ** *Aplicación y OS Image*: Omitir esta sección. El conector AMI ya está seleccionado.
-** *Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (se recomienda T3.xlarge).
+** *Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (se recomienda t3,2xlarge).
 ** *Par de claves (login)*: Seleccione el par de claves que desea utilizar para conectarse de forma segura a la instancia.
 ** *Ajustes de red*: Edite los ajustes de red según sea necesario:
 +

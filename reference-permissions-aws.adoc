@@ -45,22 +45,6 @@ Seleccione su región para ver las políticas necesarias:
 ====
 Para las regiones estándar, los permisos se distribuyen en dos directivas. Son necesarias dos políticas debido a un límite máximo de tamaño de carácter para las políticas gestionadas en AWS.
 
-La primera directiva proporciona permisos para los siguientes servicios:
-
-* Detección de bloques de Amazon S3
-* Backup y recuperación
-* Clasificación
-* Cloud Volumes ONTAP
-* FSX para ONTAP
-* Organización en niveles
-
-
-La segunda directiva proporciona permisos para los siguientes servicios:
-
-* Almacenamiento en caché en el edge
-* Kubernetes
-
-
 [role="tabbed-block"]
 =====
 .Política #1
@@ -1260,29 +1244,6 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 
 | Compruebe si la zona de disponibilidad es una zona local de AWS y valide que todos los parámetros de implementación sean compatibles | EC2:DescripciónAvailabilityZones | Sí | No | Sí 
 |===
-
-
-=== Almacenamiento en caché en el edge
-
-Connector realiza las siguientes solicitudes de API para poner en marcha las instancias de almacenamiento en caché perimetral de BlueXP durante la puesta en marcha:
-
-* Cloudformation:Describacks
-* Cloudwatch:GetMetricStatistics
-* Cloudformation:ListStacks
-
-
-
-
-=== Kubernetes
-
-El conector realiza las siguientes solicitudes de API para detectar y gestionar clústeres de Amazon EKS:
-
-* ec2:regiones describidas
-* eks:ListClusters
-* eks:DescribeCluster
-* iam:GetInstanceProfile
-
-
 
 
 == Registro de cambios

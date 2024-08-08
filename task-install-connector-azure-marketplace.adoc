@@ -147,9 +147,9 @@ Deberá implementar este requisito de red después de crear el conector.
 
 Al crear el conector, debe elegir un tipo de máquina virtual que cumpla los siguientes requisitos.
 
-CPU:: 4 núcleos o 4 vCPU
-RAM:: 14 GB
-Tamaño de la máquina virtual de Azure:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos DS3 v2.
+CPU:: 8 núcleos o 8 vCPU
+RAM:: 32GB
+Tamaño de la máquina virtual de Azure:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos Standard_D8s_v3.
 
 
 
@@ -409,7 +409,7 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 Tenga en cuenta lo siguiente al configurar la máquina virtual:
 
 +
-** *VM size*: Elija un tamaño de VM que cumpla con los requisitos de CPU y RAM. Recomendamos DS3 v2.
+** *VM size*: Elija un tamaño de VM que cumpla con los requisitos de CPU y RAM. Recomendamos Standard_D8s_v3.
 ** *Discos*: El conector puede funcionar de forma óptima con discos HDD o SSD.
 ** *Grupo de seguridad de red*: El conector requiere conexiones entrantes mediante SSH, HTTP y HTTPS.
 +

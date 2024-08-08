@@ -59,7 +59,7 @@ Un entorno de trabajo representa un sistema de almacenamiento. Por ejemplo:
 
 * Un sistema Cloud Volumes ONTAP
 * Un clúster de ONTAP en las instalaciones
-* Un clúster de Kubernetes
+* Un sistema StorageGRID
 
 
 link:task-setting-up-netapp-accounts.html["Aprenda a agregar un área de trabajo"].

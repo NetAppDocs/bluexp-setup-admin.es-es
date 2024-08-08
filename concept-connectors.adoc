@@ -68,10 +68,7 @@ Al utilizar BlueXP en modo estándar, se necesita un conector para las siguiente
 * Recuperación tras siniestros
 * Sistemas E-Series
 * Eficiencia económica ^1^
-* Almacenamiento en caché en el edge
 * Buckets de Google Cloud Storage
-* Clústeres de Kubernetes
-* Informes de migración
 * Integración de clústeres de ONTAP en las instalaciones con servicios de datos de BlueXP
 * Resistencia operativa ^1^
 * Protección contra ransomware

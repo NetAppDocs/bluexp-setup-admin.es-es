@@ -17,7 +17,7 @@ Estos pasos describen cómo iniciar la instancia desde la consola EC2 porque la 
 +
 ** *Nombre y etiquetas*: Introduzca un nombre y etiquetas para la instancia.
 ** *Aplicación y OS Image*: Omitir esta sección. El conector AMI ya está seleccionado.
-** *Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (se recomienda T3.xlarge).
+** *Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (se recomienda t3,2xlarge).
 ** *Par de claves (login)*: Seleccione el par de claves que desea utilizar para conectarse de forma segura a la instancia.
 ** *Ajustes de red*: Edite los ajustes de red según sea necesario:
 +

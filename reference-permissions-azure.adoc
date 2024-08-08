@@ -166,7 +166,10 @@ Tenga en cuenta lo siguiente:
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
                     "Microsoft.Compute/images/write",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/write",
+                    "Microsoft.Compute/virtualMachineScaleSets/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/delete"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -698,38 +701,16 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 
 
 | Cifre cuentas de almacenamiento durante la creación | Microsoft.ManagedIdentity/userAssignedIdentities/ASSIGN/action | Sí | Sí | No 
+
+
+.3+| Utilice conjuntos de escalas de máquinas virtuales en modo de orquestación flexible para especificar zonas específicas para Cloud Volumes ONTAP | Microsoft Compute/virtualMachineScaleSets/write | Sí | No | No 
+
+
+| Microsoft Compute/virtualMachineScaleSets/read | Sí | No | No 
+
+
+| Microsoft Compute/virtualMachineScaleSets/delete | No | No | Sí 
 |===
-
-
-=== Almacenamiento en caché en el edge
-
-Connector realiza las siguientes solicitudes de API cuando utilizas el almacenamiento en caché perimetral de BlueXP:
-
-* Microsoft.Insights/Metrics/Read
-* Microsoft.Compute/virtualMachines/extensions/write
-* Microsoft.Compute/virtualMachines/extensions/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
-* Microsoft.Network/networkInterfaces/delete
-* Microsoft.Network/networkSecurityGroups/delete
-* Microsoft.Resources/despliegues/DELETE
-
-
-
-
-=== Kubernetes
-
-El conector realiza las siguientes solicitudes de API para detectar y gestionar clústeres que se ejecutan en Azure Kubernetes Service (AKS):
-
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Resources/suscripciones/ubicaciones/leer
-* Microsoft.Resources/subscripciones/operationResults/read
-* Microsoft.Resources/subscriptions/ResourceGroups/read
-* Microsoft.Resources/subscripciones/resourcegroups/resources/read
-* Microsoft.ContainerService/managedClusters/read
-* Microsoft.ContainerService/managedClusters/listClusterUserCredential/acción
-
-
 
 
 === Organización en niveles
@@ -754,6 +735,17 @@ El conector realiza las siguientes solicitudes API para operaciones diarias.
 == Registro de cambios
 
 A medida que se añadan y eliminen permisos, los anotaremos en las secciones siguientes.
+
+
+
+=== 7 de agosto de 2024
+
+Se han agregado los siguientes permisos a la política JSON porque son necesarios para la compatibilidad de Cloud Volumes ONTAP con los conjuntos de escalas de máquinas virtuales:
+
+* Microsoft Compute/virtualMachineScaleSets/write
+* Microsoft Compute/virtualMachineScaleSets/read
+* Microsoft Compute/virtualMachineScaleSets/delete
+
 
 
 
