@@ -50,6 +50,7 @@ Aunque no es necesario un conector para la detección directa de un clúster ONT
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Obtenga más información acerca de las opciones de detección y gestión para clústeres de ONTAP en las instalaciones"^]
 
+* Actualizaciones de software
 * Sostenibilidad
 
 

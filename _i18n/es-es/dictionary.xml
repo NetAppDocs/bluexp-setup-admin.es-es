@@ -4199,4 +4199,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Mejoras en la consola de soporte</block>
   <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">Al acceder a<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>, BlueXP  utiliza un certificado autofirmado para el acceso HTTPS. Si así lo requiere su empresa, puede instalar un certificado firmado por una entidad de certificación (CA), la cual ofrece mejor protección de seguridad que un certificado autofirmado. Después de instalar el certificado, BlueXP  utiliza el certificado firmado por CA cuando los usuarios acceden a la consola basada en web.</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 de agosto de 2024</block>
+  <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">Actualizaciones de software</block>
 </blocks>
