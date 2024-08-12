@@ -701,15 +701,6 @@ El conector realiza las siguientes solicitudes de API para implementar y gestion
 
 
 | Cifre cuentas de almacenamiento durante la creación | Microsoft.ManagedIdentity/userAssignedIdentities/ASSIGN/action | Sí | Sí | No 
-
-
-.3+| Utilice conjuntos de escalas de máquinas virtuales en modo de orquestación flexible para especificar zonas específicas para Cloud Volumes ONTAP | Microsoft Compute/virtualMachineScaleSets/write | Sí | No | No 
-
-
-| Microsoft Compute/virtualMachineScaleSets/read | Sí | No | No 
-
-
-| Microsoft Compute/virtualMachineScaleSets/delete | No | No | Sí 
 |===
 
 
@@ -735,17 +726,6 @@ El conector realiza las siguientes solicitudes API para operaciones diarias.
 == Registro de cambios
 
 A medida que se añadan y eliminen permisos, los anotaremos en las secciones siguientes.
-
-
-
-=== 7 de agosto de 2024
-
-Se han agregado los siguientes permisos a la política JSON porque son necesarios para la compatibilidad de Cloud Volumes ONTAP con los conjuntos de escalas de máquinas virtuales:
-
-* Microsoft Compute/virtualMachineScaleSets/write
-* Microsoft Compute/virtualMachineScaleSets/read
-* Microsoft Compute/virtualMachineScaleSets/delete
-
 
 
 
