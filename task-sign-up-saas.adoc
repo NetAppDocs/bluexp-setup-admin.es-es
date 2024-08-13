@@ -21,6 +21,11 @@ Cuando accedes a BlueXP por primera vez, BlueXP te permite registrarte o iniciar
 
 Inicio de sesión de BlueXP:: Puedes registrarte creando un inicio de sesión de BlueXP. Este método de autenticación requiere que especifique su dirección de correo electrónico y una contraseña. Después de verificar tu dirección de correo electrónico, puedes iniciar sesión y crear una cuenta de BlueXP si aún no perteneces a una.
 Credenciales del sitio de soporte de NetApp (NSS):: Si tienes credenciales del sitio de soporte de NetApp existentes, no necesitas registrarte en BlueXP. Inicias sesión con tus credenciales de NSS y, a continuación, BlueXP te pedirá que crees una cuenta de BlueXP, si ya no perteneces a una.
++
+--
+Tenga en cuenta que la experiencia de contraseña predeterminada es un código de acceso único (OTP) a la dirección de correo electrónico registrada. Se genera un nuevo OTP con cada intento de inicio de sesión.
+
+--
 Conexión federada:: Puede utilizar el inicio de sesión único para iniciar sesión con credenciales del directorio corporativo (identidad federada). El primer usuario de la cuenta de tu organización debe registrarse en BlueXP o iniciar sesión con las credenciales de NSS y, a continuación, configurar la federación de identidades. Después de eso, cada usuario posterior podrá iniciar sesión con sus credenciales de SSO.
 +
 --
