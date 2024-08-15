@@ -185,7 +185,6 @@
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP (80) y HTTPS (443) proporcionan acceso a la interfaz de usuario local, que utilizará en raras circunstancias.</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH (22) solo es necesario si necesita conectarse al host para solucionar problemas.</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">De forma predeterminada, BlueXP utiliza un certificado autofirmado para el acceso HTTPS a la consola Web. Puede instalar un certificado firmado por una CA, que proporciona una mejor protección de seguridad que un certificado autofirmado.</block>
-  <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">Instale un certificado HTTPS para obtener acceso seguro</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">Antes de empezar</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">Vea cómo</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">Debe crear un conector para poder cambiar la configuración de BlueXP. <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>.</block>
@@ -2857,7 +2856,6 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="0d1f9ac2ac0f76a6809ba58855ffa7f5" category="list-text">Opción 1: Asigne un rol personalizado a la máquina virtual de Azure mediante una identidad gestionada asignada por el sistema.</block>
   <block id="d31f2fb13b2fed83440a04d526a6ca7d" category="list-text">Opción 2: Proporcione a BlueXP las credenciales de una entidad de servicio de Azure que tenga los permisos necesarios.</block>
   <block id="c4da032e0a3943e2f3a51ca860a71925" category="list-text">Si tiene pensado instalar manualmente el software en su propio host, habilite una identidad gestionada asignada por el sistema en la máquina virtual para poder ofrecer los permisos de Azure necesarios a través de un rol personalizado.</block>
-  <block id="f53835e0f369158c476f99fda577e700" category="sidebar">Documentos de configuración y administración</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notas de la versión</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novedades</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Manos a la obra</block>
@@ -3493,7 +3491,6 @@ miembro: Cuenta de servicio de BlueXP como serviceAccount.user</block>
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Sistema operativo Ubuntu 22,04 LTS</block>
   <block id="fd1e4807d8caf9eb7b22acef39d3e5ce" category="list-text">Conéctese a la máquina virtual de Linux para el conector.</block>
   <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
-  <block id="72b013396e56865d3673702aa9bcc731" category="paragraph"><block ref="53c9ecf44ffc5c93a5a42f4cda983463" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">\https://aiq.netapp.com</block>
   <block id="034ade3fc7b98591feafb7b0039b2724" category="cell">Es necesario acceder al asesor digital de BlueXP.</block>
   <block id="345dbd48a6c734a7dc3b743f014493be" category="paragraph">Una cuenta de servicio actúa como un "usuario" que puede realizar llamadas API autorizadas a BlueXP con fines de automatización. Esto facilita la gestión de la automatización, ya que no necesita crear scripts de automatización basados en la cuenta de usuario de una persona real que pueda salir de la empresa en cualquier momento.</block>
@@ -3611,7 +3608,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">Una captura de pantalla que muestra la capacidad de editar su nombre en Configuración de usuario.</block>
   <block id="4a784443543a41df794122c52fae1df7" category="paragraph">No se puede editar su nombre si inicia sesión con una conexión federada o con su cuenta del sitio de soporte de NetApp.</block>
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">Deberá actualizar la ubicación de copia de seguridad de cada sistema Cloud Volumes ONTAP.</block>
-  <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Ejecute el siguiente comando desde la interfaz de línea de comandos de Cloud Volumes ONTAP para mostrar el destino actual de backup:</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">Ejecute el siguiente comando para actualizar la dirección IP del destino de copia de seguridad:</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
@@ -4206,4 +4202,8 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="70328d3965555bdfe7c71386e9e25887" category="doc">Instale un certificado firmado por CA para acceder a la consola web</block>
   <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">De manera predeterminada, BlueXP  utiliza un certificado SSL autofirmado para proporcionar un acceso seguro al<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> mediante una conexión HTTPS. Si así lo requiere su empresa, puede instalar un certificado firmado por una entidad de certificación (CA), la cual ofrece mejor protección de seguridad que un certificado autofirmado. Después de instalar el certificado, BlueXP  utiliza el certificado firmado por CA cuando los usuarios acceden a la consola basada en web.</block>
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">Tenga en cuenta que la experiencia de contraseña predeterminada es un código de acceso único (OTP) a la dirección de correo electrónico registrada. Se genera un nuevo OTP con cada intento de inicio de sesión.</block>
+  <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">En la interfaz de línea de comandos de Cloud Volumes ONTAP, establezca el nivel de privilegio en advanced:</block>
+  <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">Ejecute el siguiente comando para mostrar el destino de backup actual:</block>
+  <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
+  <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">Documentos de configuración y administración de BlueXP </block>
 </blocks>

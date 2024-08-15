@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Setup and administration
+  name: BlueXP setup and administration
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,7 +11,7 @@ settings:
   langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr,it-it
 sidebar:
   entries:
-  - title: Documentos de configuración y administración
+  - title: Documentos de configuración y administración de BlueXP 
     url: "/index.html"
   - title: Notas de la versión
     entries:
@@ -119,7 +119,7 @@ sidebar:
       entries:
       - title: Mantener la máquina virtual y el SO
         url: "/task-maintain-connectors.html"
-      - title: Instale un certificado HTTPS para obtener acceso seguro
+      - title: Instale un certificado firmado por CA para acceder a la consola web
         url: "/task-installing-https-cert.html"
       - title: Configure un conector para que utilice un servidor proxy
         url: "/task-configuring-proxy.html"
