@@ -18,6 +18,30 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
+== 22 de agosto de 2024
+
+
+
+=== Parche del conector 3.9.43
+
+Hemos actualizado el conector para admitir la versión Cloud Volumes ONTAP 9.15.1.
+
+La compatibilidad con esta versión incluye una actualización de la política de Connector para Azure. La política ahora incluye los siguientes permisos:
+
+[source, json]
+----
+"Microsoft.Compute/virtualMachineScaleSets/write",
+"Microsoft.Compute/virtualMachineScaleSets/read",
+"Microsoft.Compute/virtualMachineScaleSets/delete"
+----
+Estos permisos son necesarios para la compatibilidad de Cloud Volumes ONTAP con conjuntos de escalas de máquinas virtuales. Si tiene conectores existentes y desea utilizar esta nueva función, deberá agregar estos permisos a los roles personalizados asociados a sus credenciales de Azure.
+
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Obtenga más información sobre la compatibilidad de Cloud Volumes ONTAP con conjuntos de escala de máquinas virtuales"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Ver los permisos de Azure para Connector"].
+
+
+
+
 == 8 de agosto de 2024
 
 
