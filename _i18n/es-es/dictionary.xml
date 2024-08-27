@@ -184,7 +184,6 @@
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">Puertos</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP (80) y HTTPS (443) proporcionan acceso a la interfaz de usuario local, que utilizará en raras circunstancias.</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH (22) solo es necesario si necesita conectarse al host para solucionar problemas.</block>
-  <block id="288bb352dffecbb16aa463067359ba15" category="summary">De forma predeterminada, BlueXP utiliza un certificado autofirmado para el acceso HTTPS a la consola Web. Puede instalar un certificado firmado por una CA, que proporciona una mejor protección de seguridad que un certificado autofirmado.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">Antes de empezar</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">Vea cómo</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">Debe crear un conector para poder cambiar la configuración de BlueXP. <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>.</block>
@@ -203,7 +202,6 @@
   <block id="dfcb11207afc726eac079165a5f0eceb" category="cell">Instale su propio certificado firmado por CA</block>
   <block id="7ed9585d1e9f5512ccb2cfc8bd359ad0" category="list-text">Seleccione *instalar certificado firmado por CA*.</block>
   <block id="b554e76151718540fd187e6430e1ffd7" category="list-text">Cargue el archivo de certificado y la clave privada y, a continuación, seleccione *instalar*.</block>
-  <block id="6ff27fa7db63494c1f82ca8c8064562f" category="paragraph">Ahora BlueXP utiliza el certificado firmado por CA para proporcionar acceso HTTPS seguro. La siguiente imagen muestra una cuenta de BlueXP configurada para un acceso seguro:</block>
   <block id="1f2fc480562990aa572340adbb999816" category="inline-image-macro">Captura de pantalla: Muestra la página Configuración HTTPS después de instalar un certificado firmado. La página muestra las propiedades del certificado y una opción para renovar el certificado.</block>
   <block id="ef9bdb2657b8a54fd5e6d5f9b03516c0" category="paragraph"><block ref="ef9bdb2657b8a54fd5e6d5f9b03516c0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c817de507a4c172290a84aec3100fc8a" category="section-title">Renueve el certificado HTTPS de BlueXP</block>
@@ -4196,7 +4194,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40 Cuando se utiliza BlueXP  en modo estándar o en modo restringido</block>
   <block id="c8fff1f28296d1ce9e5b594252b146c8" category="list-text">3.9.42 Cuando se utiliza BlueXP  en modo privado</block>
   <block id="70328d3965555bdfe7c71386e9e25887" category="doc">Instale un certificado firmado por CA para acceder a la consola web</block>
-  <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">De manera predeterminada, BlueXP  utiliza un certificado SSL autofirmado para proporcionar un acceso seguro al<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> mediante una conexión HTTPS. Si así lo requiere su empresa, puede instalar un certificado firmado por una entidad de certificación (CA), la cual ofrece mejor protección de seguridad que un certificado autofirmado. Después de instalar el certificado, BlueXP  utiliza el certificado firmado por CA cuando los usuarios acceden a la consola basada en web.</block>
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">Tenga en cuenta que la experiencia de contraseña predeterminada es un código de acceso único (OTP) a la dirección de correo electrónico registrada. Se genera un nuevo OTP con cada intento de inicio de sesión.</block>
   <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">En la interfaz de línea de comandos de Cloud Volumes ONTAP, establezca el nivel de privilegio en advanced:</block>
   <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">Ejecute el siguiente comando para mostrar el destino de backup actual:</block>
@@ -4216,8 +4213,12 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">Hemos actualizado el conector para admitir la versión Cloud Volumes ONTAP 9.15.1.</block>
   <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">La compatibilidad con esta versión incluye una actualización de la política de Connector para Azure. La política ahora incluye los siguientes permisos:</block>
   <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">Estos permisos son necesarios para la compatibilidad de Cloud Volumes ONTAP con conjuntos de escalas de máquinas virtuales. Si tiene conectores existentes y desea utilizar esta nueva función, deberá agregar estos permisos a los roles personalizados asociados a sus credenciales de Azure.</block>
-  <block id="33deee49118b5c8f42cddf68ea82eb12" category="inline-link">Obtenga más información sobre la compatibilidad de Cloud Volumes ONTAP con conjuntos de escala de máquinas virtuales</block>
-  <block id="d68b9311c71dab46bbfe2456fb69212b" category="list-text"><block ref="d68b9311c71dab46bbfe2456fb69212b" category="inline-link-rx"></block></block>
   <block id="21952e368aec0a06297b408b56d39588" category="inline-link">Ver los permisos de Azure para Connector</block>
   <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>.</block>
+  <block id="649038b676315e0ebdd7132fcd5362c2" category="summary">Instale un certificado firmado por CA para el acceso de usuario a la consola basada en web cuando utilice BlueXP  en modo restringido o en modo privado.</block>
+  <block id="76b215b1722d5e63e6379d518b352edf" category="doc">Instale un certificado firmado por CA para acceder a la consola basada en web</block>
+  <block id="40e7815d87fea23da90e3571602f7f78" category="paragraph">Cuando se utiliza BlueXP  en modo restringido o en modo privado, se puede acceder a la interfaz de usuario desde la máquina virtual de Connector que se implementa en la región de cloud o en las instalaciones. De forma predeterminada, BlueXP  utiliza un certificado SSL autofirmado para proporcionar acceso HTTPS seguro a la consola basada en web que se ejecuta en el conector. Si así lo requiere su empresa, puede instalar un certificado firmado por una entidad de certificación (CA), la cual ofrece mejor protección de seguridad que un certificado autofirmado. Después de instalar el certificado, BlueXP  utiliza el certificado firmado por CA cuando los usuarios acceden a la consola basada en web.</block>
+  <block id="e7b76852295808494e2734a85e108067" category="paragraph">Ahora BlueXP utiliza el certificado firmado por CA para proporcionar acceso HTTPS seguro. La siguiente imagen muestra un conector configurado para un acceso seguro:</block>
+  <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">Obtenga más información sobre la versión 9.15.1 de Cloud Volumes ONTAP</block>
+  <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
 </blocks>
