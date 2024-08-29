@@ -69,7 +69,7 @@ Como resultado de este cambio, el tipo de instancia de VM predeterminado al impl
 * Google Cloud: N2-standard-8
 
 
-Este requisito se aplica a los conectores nuevos y existentes.
+Los requisitos actualizados de CPU y RAM se aplican a todos los conectores nuevos. Para los conectores existentes, se recomienda aumentar la CPU y la RAM para proporcionar un mejor rendimiento y fiabilidad.
 
 
 
