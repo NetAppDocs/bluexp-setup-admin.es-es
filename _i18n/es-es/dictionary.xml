@@ -2019,14 +2019,11 @@ o.</block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">Estos pasos describen cómo iniciar la instancia desde la consola EC2 porque la consola permite asociar una función IAM a la instancia del conector. Esto no es posible usando la acción *Iniciar desde el sitio web*.</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">Siga las instrucciones para configurar y desplegar la instancia:</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*Nombre y etiquetas*: Introduzca un nombre y etiquetas para la instancia.</block>
-  <block id="5fa511356078e407d467aeb21afa8311" category="list-text">*Aplicación y OS Image*: Omitir esta sección. El conector AMI ya está seleccionado.</block>
   <block id="3346e4a27b0ab9e94d29515e25908ed6" category="inline-link-macro">Revise los requisitos de la instancia</block>
   <block id="a2edeeec0c237aa79e3b1f0eb87b07e4" category="list-text">*Par de claves (login)*: Seleccione el par de claves que desea utilizar para conectarse de forma segura a la instancia.</block>
   <block id="db8b616682d262766c36f81013b4f840" category="list-text">*Ajustes de red*: Edite los ajustes de red según sea necesario:</block>
   <block id="c04d267ebc445e8f04c29787ecab6547" category="list-text">Elija el VPC y la subred que desee.</block>
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">Especifique si la instancia debe tener una dirección IP pública.</block>
-  <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">Especifique la configuración del firewall que habilite los métodos de conexión necesarios para la instancia del conector: SSH, HTTP y HTTPS.</block>
-  <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">Se requieren algunas reglas más para configuraciones específicas.</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*Detalles avanzados*: En *perfil de instancia de IAM*, elija la función de IAM que incluye los permisos necesarios para el conector.</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS inicia el software con la configuración especificada. La instancia y el software del conector deben estar funcionando en aproximadamente cinco minutos.</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">la federación de identidades habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Para empezar, aprenda cómo funciona Identity federation con BlueXP y, a continuación, revise una descripción general del proceso de configuración.</block>
@@ -3049,9 +3046,6 @@ Este extremo solo se requiere en las regiones gubernamentales de Azure.</block>
   <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">Elija *Amazon Web Services* como su proveedor de nube y seleccione *Continuar*.</block>
   <block id="15de410cab5b286c0cff40620cbbc2f8" category="list-text">Seleccione *Continuar* para prepararse para la implementación mediante la guía del producto. Cada paso de la guía del producto incluye la información que se incluye en esta página de la documentación.</block>
   <block id="43c314e15e760781773285daf91c0ad5" category="list-text">Selecciona *Saltar a la implementación* si ya lo preparaste siguiendo los pasos de esta página.</block>
-  <block id="21d86ad4e09aa752397558f2a4a4d776" category="list-text">En la página de Marketplace, selecciona *Continuar con la suscripción* y luego selecciona *Continuar con la configuración*.</block>
-  <block id="62e122f28cedb83482c8d975a0ebbc6b" category="list-text">Cambie cualquiera de las opciones predeterminadas y seleccione *Continuar para iniciar*.</block>
-  <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">En *Elegir acción*, selecciona *Iniciar a través de EC2* y luego selecciona *Iniciar*.</block>
   <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">*Resumen*: Revisa el resumen y selecciona *Iniciar Instancia*.</block>
   <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">Selecciona *Comenzar*.</block>
   <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">Selecciona *Obtenlo ahora* y luego selecciona *Continuar*.</block>
@@ -4023,7 +4017,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">18 de julio de 2024</block>
   <block id="4736cb006ef02fa673f618379e2106bd" category="cell">1 de julio de 2024 (versión 1,33)</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">10 de junio de 2024</block>
-  <block id="d2c0dfc6934302fa99dba597124c94a2" category="list-text">*Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (se recomienda t3,2xlarge).</block>
   <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 núcleos o 8 vCPU</block>
   <block id="911ede8df5585598c294830dafe276fa" category="list-text">32GB</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos t3.2xlarge.</block>
@@ -4221,4 +4214,14 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">Obtenga más información sobre la versión 9.15.1 de Cloud Volumes ONTAP</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
   <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">Los requisitos actualizados de CPU y RAM se aplican a todos los conectores nuevos. Para los conectores existentes, se recomienda aumentar la CPU y la RAM para proporcionar un mejor rendimiento y fiabilidad.</block>
+  <block id="f24abcf11233503db09edba21b8e5cdb" category="list-text">En la página de Marketplace, selecciona *Continuar para suscribirte*.</block>
+  <block id="b57313d1cbeb83e2be3f889cd8fc5526" category="list-text">Para suscribirse al software, seleccione *Aceptar Términos*.</block>
+  <block id="b33dcc2933561e1bbdc43d2b68e8ab24" category="paragraph">El proceso de suscripción puede tardar unos minutos.</block>
+  <block id="11c2c43373c3fc2b79b1a6f46f2372bf" category="list-text">Una vez completado el proceso de suscripción, selecciona *Continuar con la configuración*.</block>
+  <block id="84bdd294c5ae866bbc0419f7bba9f368" category="paragraph"><block ref="84bdd294c5ae866bbc0419f7bba9f368" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2630dda750b0b4c54559adbe4e5daa21" category="list-text">En la página *Configurar este software*, asegúrate de haber seleccionado la región correcta y luego selecciona *Continuar para iniciar*.</block>
+  <block id="4a3fda2105dbdf853aa237113073a9f0" category="list-text">En la página *Iniciar este software*, en *Elegir acción*, selecciona *Iniciar a través de EC2* y luego selecciona *Iniciar*.</block>
+  <block id="e5df21e6d1c0f91eabeef6ab2202379e" category="list-text">*Aplicaciones e imágenes del sistema operativo*: Omita esta sección. El conector AMI ya está seleccionado.</block>
+  <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (t3,2xlarge está preseleccionado y recomendado).</block>
+  <block id="2ff5664491ece284c069195a204d44c0" category="list-text">Especifique la configuración del grupo de seguridad que habilite los métodos de conexión necesarios para la instancia de conector: SSH, HTTP y HTTPS.</block>
 </blocks>

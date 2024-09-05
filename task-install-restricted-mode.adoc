@@ -47,29 +47,34 @@ link:task-prepare-restricted-mode.html#step-3-review-host-requirements["Revisar 
 
 .Pasos
 . Vaya a la https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Lista del conector BlueXP en el AWS Marketplace"^]
-. En la página de Marketplace, selecciona *Continuar con la suscripción* y luego selecciona *Continuar con la configuración*.
+. En la página de Marketplace, selecciona *Continuar para suscribirte*.
 +
 image:screenshot-subscribe-aws.png["Una captura de pantalla que muestra los botones continuar Suscribirse y continuar con Configuración en AWS Marketplace."]
 
-. Cambie cualquiera de las opciones predeterminadas y seleccione *Continuar para iniciar*.
-. En *Elegir acción*, selecciona *Iniciar a través de EC2* y luego selecciona *Iniciar*.
+. Para suscribirse al software, seleccione *Aceptar Términos*.
++
+El proceso de suscripción puede tardar unos minutos.
+
+. Una vez completado el proceso de suscripción, selecciona *Continuar con la configuración*.
++
+image:screenshot-subscribe-aws-configuration.png["Una captura de pantalla que muestra los botones continuar Suscribirse y continuar con Configuración en AWS Marketplace."]
+
+. En la página *Configurar este software*, asegúrate de haber seleccionado la región correcta y luego selecciona *Continuar para iniciar*.
+. En la página *Iniciar este software*, en *Elegir acción*, selecciona *Iniciar a través de EC2* y luego selecciona *Iniciar*.
 +
 Estos pasos describen cómo iniciar la instancia desde la consola EC2 porque la consola permite asociar una función IAM a la instancia del conector. Esto no es posible usando la acción *Iniciar desde el sitio web*.
 
 . Siga las instrucciones para configurar y desplegar la instancia:
 +
 ** *Nombre y etiquetas*: Introduzca un nombre y etiquetas para la instancia.
-** *Aplicación y OS Image*: Omitir esta sección. El conector AMI ya está seleccionado.
-** *Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (se recomienda t3,2xlarge).
+** *Aplicaciones e imágenes del sistema operativo*: Omita esta sección. El conector AMI ya está seleccionado.
+** *Tipo de instancia*: Dependiendo de la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (t3,2xlarge está preseleccionado y recomendado).
 ** *Par de claves (login)*: Seleccione el par de claves que desea utilizar para conectarse de forma segura a la instancia.
 ** *Ajustes de red*: Edite los ajustes de red según sea necesario:
 +
 *** Elija el VPC y la subred que desee.
 *** Especifique si la instancia debe tener una dirección IP pública.
-*** Especifique la configuración del firewall que habilite los métodos de conexión necesarios para la instancia del conector: SSH, HTTP y HTTPS.
-+
-Se requieren algunas reglas más para configuraciones específicas.
-
+*** Especifique la configuración del grupo de seguridad que habilite los métodos de conexión necesarios para la instancia de conector: SSH, HTTP y HTTPS.
 +
 link:reference-ports-aws.html["Ver reglas de grupos de seguridad para AWS"].
 
