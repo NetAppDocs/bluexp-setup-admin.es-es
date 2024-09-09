@@ -18,6 +18,82 @@ Descubra las novedades de las funciones de administración de BlueXP: Cuentas Bl
 
 
 
+== 9 de septiembre de 2024
+
+
+
+=== Conector 3.9.44
+
+Esta versión incluye soporte para Docker Engine 26, una mejora de los certificados SSL y correcciones de errores.
+
+La versión 3.9.44 está disponible para modo estándar y modo restringido.
+
+
+
+==== Compatibilidad con Docker Engine 26
+
+Docker Engine es la herramienta de orquestación de contenedores necesaria al instalar el conector en Ubuntu 22,04 LTS.
+
+A partir de la versión 3.9.44 del conector, Docker Engine 26 ahora es compatible con instalaciones _new_ Connector.
+
+La lista actualizada de versiones de Docker Engine compatibles es la siguiente:
+
+* La versión mínima admitida es 23,0.6.
+* La versión máxima admitida es 26,0.0.
+
+
+
+
+==== Certificado SSL actualizado para el acceso a la interfaz de usuario local
+
+Cuando se utiliza BlueXP  en modo restringido o en modo privado, se puede acceder a la interfaz de usuario desde la máquina virtual de Connector que se implementa en la región de nube o en las instalaciones. De forma predeterminada, BlueXP  utiliza un certificado SSL autofirmado para proporcionar acceso HTTPS seguro a la consola basada en web que se ejecuta en el conector.
+
+En esta versión, realizamos cambios en el certificado SSL para conectores nuevos y existentes:
+
+* El nombre común para el certificado ahora coincide con el nombre de host corto
+* El nombre alternativo del asunto del certificado es el nombre de dominio completo (FQDN) de la máquina host
+
+
+
+
+=== Compatibilidad con RHEL 9,4
+
+BlueXP  ahora admite la instalación del conector en un host de Red Hat Enterprise Linux 9,4 cuando se utiliza BlueXP  en modo estándar o restringido.
+
+La compatibilidad con RHEL 9,4 comienza con la versión 3.9.40 del conector.
+
+La lista actualizada de versiones de RHEL compatibles para el modo estándar y el modo restringido ahora incluye lo siguiente:
+
+* 8,6 a 8,10
+* 9,1 a 9,4
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Obtenga más información sobre la compatibilidad con RHEL 8 y 9 con Connector"].
+
+
+
+=== Soporte para Podman 4.9.4 con todas las versiones de RHEL
+
+Podman 4.9.4 ahora es compatible con todas las versiones compatibles de Red Hat Enterprise Linux. La versión 4.9.4 solo era compatible con RHEL 8,10.
+
+La lista actualizada de versiones compatibles de Podman incluye 4.6.1 y 4.9.4 con hosts de Red Hat Enterprise Linux.
+
+Podman es necesario para los hosts RHEL a partir de la versión 3.9.40 de Connector.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Obtenga más información sobre la compatibilidad con RHEL 8 y 9 con Connector"].
+
+
+
+=== Permisos de AWS y Azure actualizados
+
+Hemos actualizado las políticas de AWS y Azure para el conector para eliminar permisos que ya no son necesarios. Los permisos estaban relacionados con el almacenamiento en caché perimetral de BlueXP , la detección y la gestión de clústeres de Kubernetes, que ya no se admiten a partir de agosto de 2024.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log["Conozca lo que cambió en la política de AWS"].
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["Descubra lo que cambió en la política de Azure"].
+
+
+
+
 == 22 de agosto de 2024
 
 
@@ -48,7 +124,7 @@ Estos permisos son necesarios para la compatibilidad de Cloud Volumes ONTAP con 
 
 === Conector 3.9.43
 
-Esta versión incluye mejoras menores, correcciones de errores y requisitos para los nuevos permisos de Azure.
+Esta versión incluye mejoras y correcciones de errores menores.
 
 La versión 3.9.43 está disponible para modo estándar y modo restringido.
 

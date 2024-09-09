@@ -74,7 +74,7 @@ indexpage:
       url: reference-permissions-gcp.html
     - title: Administrar credenciales y suscripciones
       url: task-adding-gcp-accounts.html
-  - title: En el entorno local
+  - title: Localmente
     links:
     - title: Instale y configure un conector en modo estándar
       url: task-install-connector-on-prem.html

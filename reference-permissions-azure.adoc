@@ -152,8 +152,6 @@ Tenga en cuenta lo siguiente:
                     "Microsoft.Network/networkSecurityGroups/securityRules/write",
                     "Microsoft.Network/applicationSecurityGroups/delete",
                     "Microsoft.Network/networkSecurityGroups/securityRules/delete",
-                    "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action",
-                    "Microsoft.ContainerService/managedClusters/read",
                     "Microsoft.Synapse/workspaces/write",
                     "Microsoft.Synapse/workspaces/read",
                     "Microsoft.Synapse/workspaces/delete",
@@ -735,6 +733,16 @@ El conector realiza las siguientes solicitudes API para operaciones diarias.
 == Registro de cambios
 
 A medida que se añadan y eliminen permisos, los anotaremos en las secciones siguientes.
+
+
+
+=== 9 de septiembre de 2024
+
+Los siguientes permisos se eliminaron de la política JSON porque BlueXP  ya no admite la detección y la gestión de clústeres de Kubernetes:
+
+* Microsoft.ContainerService/managedClusters/listClusterUserCredential/acción
+* Microsoft.ContainerService/managedClusters/read
+
 
 
 

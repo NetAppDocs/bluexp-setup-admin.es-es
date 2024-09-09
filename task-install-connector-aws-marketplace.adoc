@@ -14,10 +14,12 @@ summary: Para crear un conector desde AWS Marketplace, debe configurar la red, p
 
 
 [role="lead"]
-Para crear un conector desde AWS Marketplace, debe configurar la red, preparar los permisos de AWS, revisar los requisitos de la instancia y, a continuación, crear el conector.
+Un conector es el software NetApp que se ejecuta en su red de cloud o en las instalaciones que le da la posibilidad de usar todas las funciones y servicios de BlueXP . Una de las opciones de instalación disponibles es crear un conector en AWS directamente desde AWS Marketplace. Para crear un conector desde AWS Marketplace, debe configurar la red, preparar los permisos de AWS, revisar los requisitos de la instancia y, a continuación, crear el conector.
 
 .Antes de empezar
-Usted debe revisar link:reference-limitations.html["Limitaciones del conector"].
+* Usted debe tener un link:concept-connectors.html["Comprensión de los conectores"].
+* Usted debe revisar link:reference-limitations.html["Limitaciones del conector"].
+
 
 
 

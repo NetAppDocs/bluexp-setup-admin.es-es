@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-connector-on-prem.html 
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: Instale un conector en las instalaciones y, a continuación, inicie sesión y configúrelo para que funcione con su cuenta de BlueXP. 
+summary: Instale un conector en las instalaciones y, a continuación, inicie sesión y configúrelo para que funcione con su cuenta de BlueXP . 
 ---
-= Instalar y configurar un conector en las instalaciones
+= Instale y configure un conector en las instalaciones
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,12 @@ summary: Instale un conector en las instalaciones y, a continuación, inicie ses
 
 
 [role="lead"]
-Instale un conector en las instalaciones y, a continuación, inicie sesión y configúrelo para que funcione con su cuenta de BlueXP.
+Un conector es el software NetApp que se ejecuta en su red de cloud o en las instalaciones que le da la posibilidad de usar todas las funciones y servicios de BlueXP . Para ejecutar Connector en las instalaciones, debe revisar los requisitos del host, configurar la red, preparar los permisos de la nube, instalar Connector, configurar Connector y, a continuación, proporcionar los permisos que preparó.
 
 .Antes de empezar
-Usted debe revisar link:reference-limitations.html["Limitaciones del conector"].
+* Usted debe tener un link:concept-connectors.html["Comprensión de los conectores"].
+* Usted debe revisar link:reference-limitations.html["Limitaciones del conector"].
+
 
 
 
@@ -33,7 +35,7 @@ Sistemas operativos compatibles::
 * Red Hat Enterprise Linux
 +
 ** 8,6 a 8,10
-** 9,1 a 9,3
+** 9,1 a 9,4
 +
 El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
 
@@ -66,37 +68,12 @@ BlueXP requiere este espacio en `/var` Porque Docker o Podman están diseñados 
 Herramienta de orquestación de contenedores:: Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
 +
 --
-* Se requiere Podman para Red Hat Enterprise Linux 8 y 9.
-+
-[cols="50a,50a"]
-|===
-| Versión de RHEL | Versión de Podman compatible 
-
-
- a| 
-RHEL 8,6 a 8,9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8,10
- a| 
-Podman 4.6.1 y 4.9.4
-
-
-
- a| 
-RHEL 9,1 a 9,3
- a| 
-Podman 4.6.1
-
-|===
+* Se requiere Podman para Red Hat Enterprise Linux.
 +
 Se deben cumplir los siguientes requisitos previos para Podman:
 
 +
+** Se requiere la versión 4.6.1 o 4.9.4 de Podman
 ** El servicio podman.socket debe estar activado e iniciado
 ** se debe instalar python3
 ** Se debe instalar el paquete de composición podman versión 1.0.6
@@ -106,7 +83,10 @@ Se deben cumplir los siguientes requisitos previos para Podman:
 * Se requiere Docker Engine para Ubuntu.
 +
 ** La versión mínima admitida es 23,0.6.
-** La versión máxima admitida es 25,0.5.
+** La versión máxima admitida es 26,0.0.
++
+Tenga en cuenta que Docker Engine 26 es compatible con instalaciones de conector _new_ a partir de la versión 3.9.44 del conector.
+
 
 
 
@@ -212,7 +192,7 @@ NOTE: Con el `dnf install` El comando cumple con los requisitos para agregar pod
 --
 .Motor Docker
 --
-Instale una versión de Docker Engine entre 23.0.6 y 25,0.5.
+Instale una versión compatible de Docker Engine. <<podman-versions,Vea las versiones de Docker Engine compatibles con BlueXP >>.
 
 .Pasos
 . Instale Docker Engine.
@@ -399,7 +379,7 @@ TIP: ¿Por qué no Google Cloud? Cuando Connector está instalado en las instala
 ====
 .AWS
 --
-Cuando el conector está instalado en las instalaciones, debe proporcionar permisos de BlueXP con AWS agregando claves de acceso para un usuario de IAM que tenga los permisos necesarios.
+Cuando el conector se instala en las instalaciones, debe proporcionar a BlueXP  permisos de AWS agregando claves de acceso para un usuario de IAM que tenga los permisos necesarios.
 
 Debe utilizar este método de autenticación si el conector está instalado en las instalaciones. No se puede utilizar la función IAM.
 
@@ -433,7 +413,7 @@ Ahora debe tener claves de acceso para un usuario de IAM que tenga los permisos 
 --
 .Azure
 --
-Cuando Connector se instala en las instalaciones, tendrás que proporcionar permisos de Azure a BlueXP configurando un principal de servicio en Microsoft Entra ID y obteniendo las credenciales de Azure que necesita BlueXP.
+Cuando el conector se instala en las instalaciones, debe proporcionar a BlueXP  permisos de Azure configurando un principal de servicio en Microsoft Entra ID y obteniendo las credenciales de Azure que BlueXP  necesita.
 
 .Cree una aplicación Microsoft Entra para el control de acceso basado en roles
 . Asegúrese de tener permisos en Azure para crear una aplicación de Active Directory y para asignar la aplicación a un rol.
@@ -587,7 +567,7 @@ Su principal de servicio ahora está configurado y debe haber copiado el ID de a
 
 == Paso 5: Instale el conector
 
-Descargue e instale el software Connector en un host Linux existente de forma local.
+Descargue e instale el software Connector en un host Linux existente en las instalaciones.
 
 .Antes de empezar
 Debe tener lo siguiente:
@@ -704,7 +684,7 @@ _ipaddress_ puede ser localhost, una dirección IP privada o una dirección IP p
 .. Escriba un nombre para el sistema.
 .. En *¿se está ejecutando en un entorno seguro?* mantener el modo restringido desactivado.
 +
-Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. (Además, el modo restringido no es compatible cuando el conector está instalado en las instalaciones.)
+Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. (Además, el modo restringido no es compatible cuando el conector está instalado en las instalaciones).
 
 .. Selecciona *Comenzar*.
 

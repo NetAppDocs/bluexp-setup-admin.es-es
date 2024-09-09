@@ -35,7 +35,7 @@ link:concept-modes.html["Aprenda cómo funciona el modo privado"].
 
 == Paso 2: Revise las opciones de instalación
 
-En modo privado, puede instalar el conector en las instalaciones o en la nube mediante la instalación manual del conector en su propio host Linux.
+En el modo privado, puede instalar el conector en las instalaciones o en la nube instalando manualmente el conector en su propio host Linux.
 
 Dónde instalas Connector determina los servicios y características de BlueXP que están disponibles cuando se utiliza el modo privado. Por ejemplo, el conector debe estar instalado en la nube si desea desplegar y administrar Cloud Volumes ONTAP. link:concept-modes.html#private-mode["Obtenga más información sobre el modo privado"].
 
@@ -94,37 +94,12 @@ BlueXP requiere este espacio en `/var` Porque Docker o Podman están diseñados 
 Herramienta de orquestación de contenedores:: Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
 +
 --
-* Se requiere Podman para Red Hat Enterprise Linux 8 y 9.
-+
-[cols="50a,50a"]
-|===
-| Versión de RHEL | Versión de Podman compatible 
-
-
- a| 
-RHEL 8,6 a 8,9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8,10
- a| 
-Podman 4.6.1 y 4.9.4
-
-
-
- a| 
-RHEL 9,1 a 9,3
- a| 
-Podman 4.6.1
-
-|===
+* Se requiere Podman para Red Hat Enterprise Linux.
 +
 Se deben cumplir los siguientes requisitos previos para Podman:
 
 +
+** Se requiere la versión 4.6.1 o 4.9.4 de Podman
 ** El servicio podman.socket debe estar activado e iniciado
 ** se debe instalar python3
 ** Se debe instalar el paquete de composición podman versión 1.0.6
@@ -134,7 +109,10 @@ Se deben cumplir los siguientes requisitos previos para Podman:
 * Se requiere Docker Engine para Ubuntu.
 +
 ** La versión mínima admitida es 23,0.6.
-** La versión máxima admitida es 25,0.5.
+** La versión máxima admitida es 26,0.0.
++
+Tenga en cuenta que Docker Engine 26 es compatible con instalaciones de conector _new_ a partir de la versión 3.9.44 del conector.
+
 
 
 
@@ -242,7 +220,7 @@ NOTE: Con el `dnf install` El comando cumple con los requisitos para agregar pod
 --
 .Motor Docker
 --
-Instale una versión de Docker Engine entre 23.0.6 y 25,0.5.
+Instale una versión compatible de Docker Engine. <<podman-versions,Vea las versiones de Docker Engine compatibles con BlueXP >>.
 
 .Pasos
 . Instale Docker Engine.
