@@ -90,12 +90,10 @@ Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
 BlueXP requiere este espacio en `/var` Porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el `/var/lib/containers/storage` directorio. Los montajes externos o los enlaces simbólicos no funcionan en este espacio.
 
 --
-
-
-[[podman-versions]]
 Herramienta de orquestación de contenedores:: Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
 +
 --
+[[podman-versions]]
 * Se requiere Podman para Red Hat Enterprise Linux.
 +
 Se deben cumplir los siguientes requisitos previos para Podman:
@@ -110,12 +108,18 @@ Se deben cumplir los siguientes requisitos previos para Podman:
 
 * Se requiere Docker Engine para Ubuntu.
 +
-** La versión mínima admitida es 23,0.6.
-** La versión máxima admitida es 26,0.0.
+[cols="3*"]
+|===
+| Versión del conector | Versión mínima de Docker Engine | Versión máxima de Docker Engine 
+
+
+| _New_ Instalación del conector a partir de 3.9.44 | 23.0.6 | 26.0.0 
+
+
+| Conectores creados antes de la versión 3.9.44 | 23.0.6 | 25.0.5 
+|===
 +
-Tenga en cuenta que Docker Engine 26 es compatible con instalaciones de conector _new_ a partir de la versión 3.9.44 del conector.
-
-
+https://docs.docker.com/engine/install/["Ver las instrucciones de instalación"^]
 
 
 

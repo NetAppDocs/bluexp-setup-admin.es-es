@@ -3709,7 +3709,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 (o cualquier parche posterior)</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1 o cualquier versión posterior a esta versión</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">Se utiliza durante el proceso de actualización de Cloud Volumes ONTAP</block>
-  <block id="970c4756c8fc49a0c32d6a5b32d6d6f5" category="list-text">Se requiere Docker Engine en el host antes de instalar Connector.</block>
   <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">Hemos actualizado los requisitos de Docker Engine para especificar la versión máxima admitida en el conector, que es 25,0.5. La versión mínima admitida sigue siendo la 19,3.1.</block>
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">Ver requisitos del host de Connector</block>
@@ -4192,8 +4191,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="2ff5664491ece284c069195a204d44c0" category="list-text">Especifique la configuración del grupo de seguridad que habilite los métodos de conexión necesarios para la instancia de conector: SSH, HTTP y HTTPS.</block>
   <block id="f04e7bde7d47a749e6ba7643ae027953" category="paragraph"><block ref="f04e7bde7d47a749e6ba7643ae027953" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">9,1 a 9,4</block>
-  <block id="3b1bfd730b4217c8855d7ce0b155acdc" category="list-text">La versión máxima admitida es 26,0.0.</block>
-  <block id="c4924fa73c6ac3240841a8329a4a87a2" category="paragraph">Tenga en cuenta que Docker Engine 26 es compatible con instalaciones de conector _new_ a partir de la versión 3.9.44 del conector.</block>
   <block id="c71ee68b655a1c2de6162e6ea2837535" category="list-text">Se requiere Podman para Red Hat Enterprise Linux.</block>
   <block id="3ee8b338aa466b632e26ed7928d4b063" category="list-text">Se requiere la versión 4.6.1 o 4.9.4 de Podman</block>
   <block id="f99019d3e8e3a4daa34cad5d0e1cccc2" category="inline-xref">Vea las versiones de Docker Engine compatibles con BlueXP </block>
@@ -4239,10 +4236,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">Conector 3.9.44</block>
   <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">Esta versión incluye soporte para Docker Engine 26, una mejora de los certificados SSL y correcciones de errores.</block>
   <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">La versión 3.9.44 está disponible para modo estándar y modo restringido.</block>
-  <block id="000a9ac711d57d6c617331857e9c3100" category="section-title">Compatibilidad con Docker Engine 26</block>
-  <block id="849eb58f322918eda95ee3acd8e4497d" category="paragraph">Docker Engine es la herramienta de orquestación de contenedores necesaria al instalar el conector en Ubuntu 22,04 LTS.</block>
-  <block id="4391ac6ef3fe7c6a1cb6b50f0df238d3" category="paragraph">A partir de la versión 3.9.44 del conector, Docker Engine 26 ahora es compatible con instalaciones _new_ Connector.</block>
-  <block id="ff42db58a1b88b5b9aedbcedc8daa613" category="paragraph">La lista actualizada de versiones de Docker Engine compatibles es la siguiente:</block>
   <block id="15ba9bb026c53a148756b12826c46f8b" category="section-title">Certificado SSL actualizado para el acceso a la interfaz de usuario local</block>
   <block id="b96edd49155123375756b26e44b38121" category="paragraph">Cuando se utiliza BlueXP  en modo restringido o en modo privado, se puede acceder a la interfaz de usuario desde la máquina virtual de Connector que se implementa en la región de nube o en las instalaciones. De forma predeterminada, BlueXP  utiliza un certificado SSL autofirmado para proporcionar acceso HTTPS seguro a la consola basada en web que se ejecuta en el conector.</block>
   <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">En esta versión, realizamos cambios en el certificado SSL para conectores nuevos y existentes:</block>
@@ -4264,4 +4257,18 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>.</block>
   <block id="d30916c53949113e97a8033f02e41364" category="paragraph">Esta versión incluye mejoras y correcciones de errores menores.</block>
   <block id="f0e69ccbb7ad96f546f7924206944bfa" category="sidebar">Localmente</block>
+  <block id="faa37a1c6dbb9f8ecd3c6fd701363f79" category="cell">Versión del conector</block>
+  <block id="24f3b77dafe74fa61e4dac1fa28fd846" category="cell">Versión mínima de Docker Engine</block>
+  <block id="f78ed5876382c6c98cfe5372fcdf962a" category="cell">Versión máxima de Docker Engine</block>
+  <block id="ca6fc29ee5b222437802127247ae33fd" category="cell">_New_ Instalación del conector a partir de 3.9.44</block>
+  <block id="15f1005256bbfb87197dfe3bfd5b588f" category="cell">23.0.6</block>
+  <block id="f2162c8532f84cb24bc54e30c4c0341c" category="cell">26.0.0</block>
+  <block id="4d2dd7c014e329b4fb387303e47f1d83" category="cell">Conectores creados antes de la versión 3.9.44</block>
+  <block id="9b8f09d8d408f824fbf8c4f7321295aa" category="cell">25.0.5</block>
+  <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">La versión máxima admitida es 25,0.5.</block>
+  <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">Soporte para Docker Engine 26 con nuevas instalaciones</block>
+  <block id="5c968eab53d6065ccf63e9766935cb7b" category="paragraph">A partir de la versión 3.9.44 del conector, Docker Engine 26 ahora es compatible con instalaciones de conector _new_ en hosts Ubuntu.</block>
+  <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">Si tiene un conector existente creado antes de la versión 3.9.44, Docker Engine 25.0.5 sigue siendo la versión máxima admitida en los hosts Ubuntu.</block>
+  <block id="c64c773fbe16e4df6ae417c106a467ef" category="inline-link">Obtenga más información sobre los requisitos de Docker Engine</block>
+  <block id="395f31b2f1bc9cb3993acbb14cf4fb1f" category="paragraph"><block ref="724b4d6e1bb3e6bea768572a2ce7c10e" category="inline-link-rx"></block>.</block>
 </blocks>
