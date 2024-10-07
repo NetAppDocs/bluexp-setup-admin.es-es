@@ -358,7 +358,10 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
 | StorageGRID | No | No 
 
 
-.15+| *Servicios* | Backup y recuperación | Sí
+.16+| *Servicios* | Alertas | No | No 
+
+
+| Backup y recuperación | Sí
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Consulte la lista de destinos de backup admitidos para los datos de volúmenes ONTAP"^] | Sí
 
