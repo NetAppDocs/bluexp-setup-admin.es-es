@@ -29,6 +29,7 @@ El conector BlueXP es compatible con los siguientes sistemas operativos Linux.
 Instalación manual::
 +
 --
+* Sistema operativo Ubuntu 24,04 LTS
 * Sistema operativo Ubuntu 22,04 LTS
 * Red Hat Enterprise Linux
 +
@@ -50,6 +51,7 @@ Puesta en marcha desde Azure Marketplace:: Sistema operativo Ubuntu 22,04 LTS
 Instalación manual::
 +
 --
+* Sistema operativo Ubuntu 24,04 LTS
 * Sistema operativo Ubuntu 22,04 LTS
 * Red Hat Enterprise Linux
 +
@@ -74,7 +76,7 @@ Instalación manual::
 * Red Hat Enterprise Linux
 +
 ** 8,6 a 8,10
-** 9,1 a 9,3
+** 9,1 a 9,4
 
 
 
@@ -131,14 +133,6 @@ Si ya tiene un conector existente que funcione en RHEL 7 o CentOS 7, no admitimo
 . Realice una instalación del conector _NEW_.
 . Configure el conector para detectar los entornos de trabajo que el conector antiguo estaba gestionando.
 
-
-
-
-== Soporte continuo para Ubuntu 22,04 LTS
-
-El conector sigue siendo compatible con Ubuntu 22,04 LTS y es el sistema operativo predeterminado para implementaciones desde BlueXP y desde el mercado.
-
-Docker Engine es necesario para este sistema operativo. Podman no es compatible.
 
 
 

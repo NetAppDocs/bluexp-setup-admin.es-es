@@ -105,7 +105,7 @@ link:reference-networking-saas-console.html["Consulte la lista de extremos con l
 --
 
 
-Servidor proxy:: Si su organización requiere la implementación de un servidor proxy para todo el tráfico de Internet saliente, obtenga la siguiente información sobre su proxy HTTP o HTTPS. Deberá proporcionar esta información durante la instalación. Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
+Servidor proxy:: Si su empresa requiere la implementación de un servidor proxy para todo el tráfico de Internet saliente, obtenga la siguiente información sobre su proxy HTTP o HTTPS. Deberá proporcionar esta información durante la instalación. Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
 +
 --
 * Dirección IP

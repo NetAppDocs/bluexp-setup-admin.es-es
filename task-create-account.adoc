@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-create-account.html 
 keywords: create account, account, create, create another account, tenancy account, tenancy, tenancy account creation 
-summary: Cuando se registra en BlueXP, se le pide que cree una cuenta para su organización. Esta cuenta puede ser todo lo que necesite, pero si su negocio requiere varias cuentas, tendrá que crear cuentas adicionales con la API de tenancy. 
+summary: Al configurar BlueXP  en modo restringido o privado, se le pedirá que cree una cuenta. Si necesita varias cuentas, debe crearlas mediante la API de soporte. 
 ---
 = Cree otra cuenta de BlueXP
 :hardbreaks:
@@ -14,14 +14,19 @@ summary: Cuando se registra en BlueXP, se le pide que cree una cuenta para su or
 
 
 [role="lead"]
-Cuando se registra en BlueXP, se le pide que cree una cuenta para su organización. Esta cuenta puede ser todo lo que necesite, pero si su negocio requiere varias cuentas, tendrá que crear cuentas adicionales con la API de tenancy.
+Al configurar BlueXP  en modo restringido o en modo privado, se le pedirá que cree una cuenta _BlueXP _, que le permite administrar usuarios y organizar recursos. Esta cuenta puede ser todo lo que necesite, pero si su negocio requiere varias cuentas, tendrá que crear cuentas adicionales con la API de tenancy.
 
-Utilice la siguiente llamada a la API para crear una cuenta de BlueXP adicional:
+Si usas BlueXP  en modo estándar, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización que administre mediante la administración de acceso e identidad (IAM) de BlueXP . link:concept-identity-and-access-management.html["Obtenga más información sobre BlueXP  IAM"].
 
+.Pasos
+. Utilice la siguiente llamada a la API para crear una cuenta de BlueXP adicional:
++
 PUBLICAR `/tenancy/account/{accountName}`
 
++
 Si desea habilitar el modo restringido, debe incluir lo siguiente en el cuerpo de la solicitud:
 
++
 [source, JSON]
 ----
 {
@@ -29,11 +34,13 @@ Si desea habilitar el modo restringido, debe incluir lo siguiente en el cuerpo d
 }
 ----
 
+
+
 NOTE: No se puede cambiar la configuración del modo restringido después de que BlueXP cree la cuenta. No se puede activar el modo restringido más adelante y no se puede desactivar más adelante. Se debe establecer en el momento de crear la cuenta.
 
 https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-id.html["Aprenda a usar esta llamada API"^]
 
-.Enlaces relacionados
+.Información relacionada
 * link:concept-netapp-accounts.html["Obtenga más información sobre las cuentas de BlueXP"]
 * link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"]
 

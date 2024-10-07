@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-monitor-cm-operations.html 
-keywords: administer, monitor, account, timeline, notifications, alerts, events, notification center, email 
-summary: Puede supervisar el estado de las operaciones que está realizando BlueXP para ver si hay algún problema que necesite solucionar. Puede ver el estado en el Centro de notificaciones, en la línea de tiempo o enviar notificaciones al correo electrónico. 
+keywords: administer, monitor, timeline, notifications, alerts, events, notification center, email 
+summary: Puede supervisar el estado de las operaciones que está realizando BlueXP para ver si hay algún problema que necesite solucionar. Puede ver el estado en la línea de tiempo, el Centro de notificaciones o enviar notificaciones a su correo electrónico. 
 ---
-= Supervisar las operaciones en su cuenta
+= Supervise las operaciones de BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Puede supervisar el estado de las operaciones que está realizando Blue
 
 
 [role="lead"]
-Puede supervisar el estado de las operaciones que está realizando BlueXP para ver si hay algún problema que necesite solucionar. Puede ver el estado en el Centro de notificaciones, en la línea de tiempo o enviar notificaciones al correo electrónico.
+Puede supervisar el estado de las operaciones que está realizando BlueXP para ver si hay algún problema que necesite solucionar. Puede ver el estado en la línea de tiempo, el Centro de notificaciones o enviar notificaciones a su correo electrónico.
 
-En la siguiente tabla se ofrece una comparación entre el Centro de notificaciones y la línea de tiempo para que pueda entender lo que cada uno puede ofrecer.
+La siguiente tabla proporciona una comparación de la línea de tiempo y el Centro de notificaciones para que pueda comprender lo que cada uno tiene para ofrecer.
 
 [cols="47,47"]
 |===
@@ -38,8 +38,27 @@ En la siguiente tabla se ofrece una comparación entre el Centro de notificacion
 | Filtrar resultados por importancia | Filtrar por servicio, acción, usuario, estado, etc. 
 
 
-| Permite enviar notificaciones por correo electrónico a los usuarios de la cuenta y a otros usuarios | No dispone de funciones de correo electrónico 
+| Proporciona la capacidad de enviar notificaciones por correo electrónico a los usuarios y a otros | No dispone de funciones de correo electrónico 
 |===
+
+
+== Audite la actividad del usuario desde la línea de tiempo de BlueXP 
+
+La línea de tiempo en BlueXP  muestra las acciones que los usuarios han realizado para administrar su organización o cuenta. Esto incluye acciones de gestión, como asociar usuarios, crear entornos de trabajo, crear conectores, etc.
+
+La comprobación de la línea de tiempo puede ser útil si necesita identificar quién realizó una acción específica o si necesita identificar el estado de una acción.
+
+.Pasos
+. En la parte superior derecha de la consola BlueXP , selecciona image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Línea de tiempo*.
+. Utilice los filtros situados encima de la tabla para cambiar las acciones que se muestran en la tabla.
++
+Por ejemplo, puedes usar el filtro *Servicio* para mostrar acciones relacionadas con un servicio de BlueXP  específico, o puedes usar el filtro *Usuario* para mostrar acciones relacionadas con una cuenta de usuario específica.
+
+
+
+.Resultado
+La línea de tiempo se actualiza para mostrar las acciones de gestión completadas.
+
 
 
 == Supervise las actividades mediante el Centro de notificaciones
@@ -50,7 +69,15 @@ Puede visualizar las notificaciones seleccionando la campana de notificación (i
 
 image:screenshot_notification_full.png["Captura de pantalla que muestra la lista a de notificaciones actuales en el Centro de notificaciones."]
 
-También puede configurar BlueXP para que envíe ciertos tipos de notificaciones por correo electrónico de modo que se le informe de la actividad importante del sistema incluso cuando no haya iniciado sesión en el sistema. Los correos electrónicos se pueden enviar a cualquier usuario que forme parte de su cuenta de BlueXP o a cualquier otro destinatario que necesite conocer ciertos tipos de actividad del sistema. Descubra cómo <<Establecer los ajustes de notificación por correo electrónico,defina los ajustes de notificación por correo electrónico>>.
+También puede configurar BlueXP para que envíe ciertos tipos de notificaciones por correo electrónico de modo que se le informe de la actividad importante del sistema incluso cuando no haya iniciado sesión en el sistema. Los correos electrónicos se pueden enviar a cualquier usuario que forme parte de su organización o cuenta de BlueXP , o a cualquier otro destinatario que necesite conocer ciertos tipos de actividad del sistema. Vea cómo <<Establecer los ajustes de notificación por correo electrónico,defina los ajustes de notificación por correo electrónico>>.
+
+
+
+=== Comparación del Centro de Notificaciones con las alertas de BlueXP 
+
+El centro de notificaciones le permite ver el estado de las operaciones que ha iniciado desde BlueXP  y configurar notificaciones de alerta para ciertos tipos de actividades del sistema. Mientras tanto, BlueXP  le permite ver problemas o riesgos potenciales del entorno de almacenamiento de ONTAP relacionados con la capacidad, la disponibilidad, el rendimiento, la protección y la seguridad.
+
+https://docs.netapp.com/us-en/bluexp-alerts/index.html["Más información sobre las alertas de BlueXP "^]
 
 
 
@@ -106,7 +133,7 @@ image:screenshot_notification_dismiss1.png["Una captura de pantalla que muestra 
 
 === Establecer los ajustes de notificación por correo electrónico
 
-Puede enviar tipos específicos de notificaciones por correo electrónico para que se le informe de la actividad importante del sistema incluso cuando no haya iniciado sesión en BlueXP. Los correos electrónicos se pueden enviar a cualquier usuario que forme parte de su cuenta de BlueXP o a cualquier otro destinatario que necesite conocer ciertos tipos de actividad del sistema.
+Puede enviar tipos específicos de notificaciones por correo electrónico para que se le informe de la actividad importante del sistema incluso cuando no haya iniciado sesión en BlueXP. Los correos electrónicos se pueden enviar a cualquier usuario que forme parte de su organización o cuenta de BlueXP , o a cualquier otro destinatario que necesite conocer ciertos tipos de actividad del sistema.
 
 [NOTE]
 ====
@@ -115,18 +142,18 @@ Puede enviar tipos específicos de notificaciones por correo electrónico para q
 
 
 ====
-Los filtros que establezca en el Centro de notificaciones no determinan los tipos de notificaciones que recibirá por correo electrónico. De forma predeterminada, los administradores de cuentas de BlueXP recibirán correos electrónicos para todas las notificaciones "críticas" y "recomendaciones". Estas notificaciones se realizan en todos los servicios; no puedes elegir recibir notificaciones solo para determinados servicios, como Connectors o la copia de seguridad y recuperación de BlueXP.
+Los filtros que establezca en el Centro de notificaciones no determinan los tipos de notificaciones que recibirá por correo electrónico. De forma predeterminada, cualquier administrador de BlueXP  recibirá correos electrónicos para todas las notificaciones «críticas» y «recomendaciones». Estas notificaciones se realizan en todos los servicios; no puedes elegir recibir notificaciones solo para determinados servicios, como Connectors o la copia de seguridad y recuperación de BlueXP.
 
 Todos los demás usuarios y destinatarios están configurados para no recibir ningún correo electrónico de notificación, por lo que tendrá que configurar la configuración de notificaciones para cualquier usuario adicional.
 
-Debe ser un administrador de cuentas para personalizar los ajustes de notificaciones.
+Debe ser un administrador de BlueXP  para personalizar la configuración de notificaciones.
 
 .Pasos
 . En la barra de menús de BlueXP, seleccione *Configuración > Alertas y Configuración de notificaciones*.
 +
 image:screenshot-settings-notifications.png["Captura de pantalla que muestra cómo mostrar la página Configuración de alertas y notificaciones."]
 
-. Seleccione un usuario o varios usuarios en la ficha _Account Users_ o en la ficha _Additional Recipients_ y elija el tipo de notificaciones que desea enviar:
+. Seleccione un usuario, o varios usuarios, en la pestaña _Users_ o en la pestaña _Additional Recipients_ y elija el tipo de notificaciones que se van a enviar:
 +
 ** Para realizar cambios para un único usuario, seleccione el menú en la columna Notificaciones de ese usuario, compruebe los tipos de notificaciones que se van a enviar y seleccione *aplicar*.
 ** Para realizar cambios en varios usuarios, marque la casilla de cada usuario, seleccione *Administrar notificaciones por correo electrónico*, seleccione los tipos de notificaciones que desea enviar y seleccione *aplicar*.
@@ -141,7 +168,7 @@ image:screenshot-change-notifications.png["Captura de pantalla que muestra cómo
 
 === Añada otros destinatarios de correo electrónico
 
-Los usuarios que aparecen en la ficha _Account Users_ se rellenan automáticamente desde los usuarios de su cuenta de BlueXP (desde la link:task-managing-netapp-accounts.html#create-and-manage-users["Gestionar cuenta"]). Puede agregar direcciones de correo electrónico en la ficha _Additional Recipients_ para otras personas o grupos que no tienen acceso a BlueXP, pero que necesitan recibir notificaciones sobre ciertos tipos de alertas y notificaciones.
+Los usuarios que aparecen en la pestaña _Usuarios_ se rellenan automáticamente de los usuarios de la organización o cuenta de BlueXP . Puede agregar direcciones de correo electrónico en la ficha _Additional Recipients_ para otras personas o grupos que no tienen acceso a BlueXP, pero que necesitan recibir notificaciones sobre ciertos tipos de alertas y notificaciones.
 
 .Pasos
 . En la página Configuración de alertas y notificaciones, seleccione *Agregar nuevos destinatarios*.
@@ -150,19 +177,3 @@ image:screenshot-add-email-recipient.png["Captura de pantalla que muestra cómo 
 
 . Introduzca el nombre, la dirección de correo electrónico y seleccione los tipos de notificaciones que recibirá el destinatario y seleccione *Agregar nuevo destinatario*.
 
-
-
-
-== Auditar la actividad de usuario en su cuenta
-
-La línea de tiempo de BlueXP muestra las acciones que los usuarios han completado para administrar su cuenta. Esto incluye acciones de gestión como asociar usuarios, crear áreas de trabajo, crear conectores y mucho más.
-
-La comprobación de la línea de tiempo puede ser útil si necesita identificar quién realizó una acción específica o si necesita identificar el estado de una acción.
-
-.Pasos
-. En la barra de menús de BlueXP, seleccione *Configuración > línea de tiempo*.
-. En los filtros, seleccione *Servicio*, active *Cliente* y seleccione *aplicar*.
-
-
-.Resultado
-La línea de tiempo se actualiza para mostrar las acciones de gestión de cuentas.

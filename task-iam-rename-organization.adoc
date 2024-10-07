@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: task-iam-rename-organization.html 
+keywords: rename organization, change organization name, name change, rename, change name, iam, identity and access management 
+summary: Si es necesario, puede cambiar el nombre de la organización de BlueXP . 
+---
+= Cambie el nombre de su organización de BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si es necesario, puede cambiar el nombre de su organización de BlueXP  desde BlueXP  Identity and Access Management (IAM). El nombre de la organización aparece en la parte superior de la consola basada en web de BlueXP  y en las páginas de IAM.
+
+.Pasos
+. En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
+. Desde la página *Organización*, navega a la primera fila de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Editar organización*.
++
+image:screenshot-iam-edit-organization.png["Captura de pantalla de la página Visión General que muestra el icono de acciones y la opción Editar organización."]
+
+. Introduzca un nuevo nombre de organización y seleccione *Aplicar*.
+
+
+.Resultado
+BlueXP  actualiza el nombre de su organización. Debe ver inmediatamente el nombre actualizado en la parte superior de la consola de BlueXP .
+
+.Información relacionada
+* link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidades y accesos de BlueXP "]
+* link:task-iam-get-started.html["Comience a usar BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Obtenga más información sobre la API para IAM de BlueXP "^]
+

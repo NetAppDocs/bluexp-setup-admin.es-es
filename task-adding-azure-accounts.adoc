@@ -289,7 +289,7 @@ Debe crear un conector para poder cambiar la configuración de BlueXP. link:conc
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
 +
-image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
+image:screenshot-settings-icon-organization.png["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
 . Seleccione *Agregar Credenciales* y siga los pasos del asistente.
 +
@@ -357,13 +357,13 @@ Se le redirigirá al sitio web de BlueXP.
 
 .. Desde la página *asignación de suscripción*:
 +
-*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
-*** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
+*** Seleccione las organizaciones o cuentas de BlueXP  con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elige si deseas reemplazar automáticamente la suscripción existente para una organización o cuenta con esta nueva suscripción.
 +
-BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+BlueXP  reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
 
 +
-Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 *** Seleccione *Guardar*.
 +
@@ -386,7 +386,7 @@ Edite sus credenciales de Azure en BlueXP modificando los detalles acerca de sus
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
-. En la página *credenciales de cuenta*, seleccione el menú de acción para un conjunto de credenciales y, a continuación, seleccione *Editar credenciales*.
+. En la página *Credenciales de la organización* o *Credenciales de la cuenta*, selecciona el menú de acción para un conjunto de credenciales y luego selecciona *Editar Credenciales*.
 . Realice los cambios necesarios y, a continuación, seleccione *aplicar*.
 
 
@@ -398,6 +398,6 @@ Si ya no necesita un conjunto de credenciales, puede eliminarlas de BlueXP. Sól
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
-. En la página *credenciales de cuenta*, seleccione el menú de acción para un conjunto de credenciales y, a continuación, seleccione *Eliminar credenciales*.
+. En la página *Credenciales de la organización* o *Credenciales de la cuenta*, selecciona el menú de acción para un conjunto de credenciales y luego selecciona *Eliminar Credenciales*.
 . Seleccione *Eliminar* para confirmar.
 

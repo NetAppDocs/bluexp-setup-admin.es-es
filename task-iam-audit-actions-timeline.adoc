@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: task-iam-audit-actions-timeline.html 
+keywords: iam, audit, monitor, audit iam actions, monitor iam actions 
+summary: 'Supervisar o auditar las acciones de gestión de identidades y acceso (IAM) de BlueXP  desde el cronograma.' 
+---
+= Supervise o audite la actividad de IAM desde la línea de tiempo de BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si necesita supervisar o auditar una acción que se ha completado desde la gestión de identidades y acceso (IAM) de BlueXP , puede ver los detalles en la línea de tiempo de BlueXP . Por ejemplo, puede que desee verificar quién ha agregado un miembro a una organización o si un proyecto se ha eliminado correctamente.
+
+.Pasos
+. En la parte superior derecha de la consola BlueXP , selecciona image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Línea de tiempo*.
+. En los filtros, seleccione *Servicio* y luego seleccione *Artenza*.
+. Utilice cualquiera de los demás filtros para cambiar las acciones que se muestran en la tabla.
++
+Por ejemplo, puedes usar el filtro *Usuario* para mostrar acciones relacionadas con una cuenta de usuario específica.
+
+
+
+.Resultado
+Se actualiza la línea de tiempo para indicar las acciones de gestión completadas relacionadas con IAM de BlueXP .

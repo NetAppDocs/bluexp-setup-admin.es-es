@@ -27,7 +27,7 @@ Por ejemplo, digamos que trabaja en un entorno multicloud. Es posible que tenga 
 .Paso
 . Seleccione la lista desplegable *conector*, seleccione otro conector y, a continuación, seleccione *interruptor*.
 +
-image:screenshot_connector_switch.gif["Captura de pantalla que muestra el icono conector en el cabezal y la acción Switch."]
+image:screenshot-connector-switch.png["Captura de pantalla que muestra el icono conector en el cabezal y la acción Switch."]
 
 
 

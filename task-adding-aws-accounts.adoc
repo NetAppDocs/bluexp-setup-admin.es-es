@@ -132,9 +132,9 @@ Si acaba de crear estas credenciales en su proveedor de cloud, es posible que tr
 . Asegúrese de que el conector correcto está seleccionado actualmente en BlueXP.
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
 +
-image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
+image:screenshot-settings-icon-organization.png["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
-. En la página *credenciales de cuenta*, seleccione *Agregar credenciales* y siga los pasos del asistente.
+. En la página *Credenciales de la organización* o *Credenciales de la cuenta*, selecciona *Añadir Credenciales* y sigue los pasos del asistente.
 +
 .. *Ubicación de credenciales*: Seleccione *Servicios Web de Amazon > conector*.
 .. *Definir credenciales*: Proporcione el ARN (nombre de recurso de Amazon) de una función de IAM de confianza, o introduzca una clave de acceso de AWS y una clave secreta.
@@ -199,9 +199,9 @@ Si acaba de crear la función IAM, puede tardar unos minutos en estar disponible
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
 +
-image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
+image:screenshot-settings-icon-organization.png["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
-. En la página *credenciales de cuenta*, seleccione *Agregar credenciales* y siga los pasos del asistente.
+. En la página *Credenciales de la organización* o *Credenciales de la cuenta*, selecciona *Añadir Credenciales* y sigue los pasos del asistente.
 +
 .. *Ubicación de credenciales*: Seleccione *Servicios Web de Amazon > BlueXP*.
 .. *Definir credenciales*: Proporcionar el ARN (nombre de recurso de Amazon) de la función IAM.
@@ -257,13 +257,13 @@ Se le redirigirá al sitio web de BlueXP.
 
 .. Desde la página *asignación de suscripción*:
 +
-*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
-*** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
+*** Seleccione las organizaciones o cuentas de BlueXP  con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elige si deseas reemplazar automáticamente la suscripción existente para una organización o cuenta con esta nueva suscripción.
 +
-BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+BlueXP  reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
 
 +
-Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 *** Seleccione *Guardar*.
 +
@@ -280,20 +280,28 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 
-== Asocie una suscripción existente a su cuenta
+== Asocie una suscripción existente a su organización o cuenta
 
-Cuando te suscribes a BlueXP desde AWS Marketplace, el último paso del proceso es asociar la suscripción a tus cuentas de BlueXP desde el sitio web de BlueXP. Si no has completado este paso, no podrás usar la suscripción con tu cuenta de BlueXP.
+Cuando te suscribes a BlueXP  desde el mercado de AWS, el último paso del proceso es asociar la suscripción a tus organizaciones de BlueXP  o cuentas de BlueXP  desde el sitio web de BlueXP . Si no ha completado este paso, no podrá utilizar la suscripción con su organización o cuenta de BlueXP .
+
+
+TIP: Si utiliza BlueXP  en modo estándar, tendrá una organización _BlueXP _, que gestionará mediante la administración de identidad y acceso (IAM) de BlueXP . Pero si estás usando BlueXP  en modo restringido o en modo privado, entonces tendrás una cuenta _BlueXP _.
+
+* link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"]
+* link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidades y accesos de BlueXP "]
+* link:concept-netapp-accounts.html["Obtenga más información sobre las cuentas de BlueXP"]
+
 
 Sigue los pasos que aparecen a continuación si te suscribiste a BlueXP desde AWS Marketplace, pero te has perdido el paso para asociar la suscripción a tu cuenta.
 
 .Pasos
-. Ve a la cartera digital de BlueXP para confirmar que no has asociado tu suscripción a tu cuenta de BlueXP.
+. Vaya a la cartera digital de BlueXP  para confirmar que no ha asociado su suscripción a su organización o cuenta de BlueXP .
 +
 .. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 .. Seleccione *Suscripciones*.
 .. Comprueba que no aparezca tu suscripción a BlueXP.
 +
-Solo verá las suscripciones asociadas a la cuenta que está viendo actualmente. Si no ve su suscripción, continúe con los siguientes pasos.
+Solo verá las suscripciones asociadas a la organización o cuenta que está visualizando en ese momento. Si no ve su suscripción, continúe con los siguientes pasos.
 
 
 
@@ -318,20 +326,20 @@ Ten en cuenta que es posible que se te pida iniciar sesión en BlueXP primero.
 
 . Desde la página *asignación de suscripción*:
 +
-** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
-** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
+** Seleccione las organizaciones o cuentas de BlueXP  con las que desea asociar esta suscripción.
+** En el campo *Reemplazar suscripción existente*, elige si deseas reemplazar automáticamente la suscripción existente para una organización o cuenta con esta nueva suscripción.
 +
-BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+BlueXP  reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
 
 +
-Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 +
 image:screenshot-subscription-assignment.png["Una captura de pantalla de la página Asignación de suscripciones que te permite elegir las cuentas exactas de BlueXP para asociarlas a esta suscripción."]
 
 
 
-. Ve a la cartera digital de BlueXP para confirmar que la suscripción está asociada a tu cuenta de BlueXP.
+. Vaya a la cartera digital de BlueXP  para confirmar que la suscripción está asociada a su organización o cuenta de BlueXP .
 +
 .. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 .. Seleccione *Suscripciones*.
@@ -341,7 +349,7 @@ image:screenshot-subscription-assignment.png["Una captura de pantalla de la pág
 . Confirme que la suscripción está asociada a sus credenciales de AWS.
 +
 .. En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
-.. En la página *Account credentials*, verifique que la suscripción esté asociada con sus credenciales de AWS.
+.. En la página *Credenciales de la organización* o *Credenciales de la cuenta*, verifique que la suscripción esté asociada a sus credenciales de AWS.
 +
 Veamos un ejemplo.
 
@@ -363,7 +371,7 @@ TIP: No se pueden editar las credenciales de un perfil de instancia asociado a u
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
-. En la página *credenciales de cuenta*, seleccione el menú de acción para un conjunto de credenciales y, a continuación, seleccione *Editar credenciales*.
+. En la página *Credenciales de la organización* o *Credenciales de la cuenta*, selecciona el menú de acción para un conjunto de credenciales y luego selecciona *Editar Credenciales*.
 . Realice los cambios necesarios y, a continuación, seleccione *aplicar*.
 
 
@@ -378,6 +386,6 @@ TIP: No se pueden eliminar las credenciales de un perfil de instancia asociado a
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
-. En la página *credenciales de cuenta*, seleccione el menú de acción para un conjunto de credenciales y, a continuación, seleccione *Eliminar credenciales*.
+. En la página *Credenciales de la organización* o *Credenciales de la cuenta*, selecciona el menú de acción para un conjunto de credenciales y luego selecciona *Eliminar Credenciales*.
 . Seleccione *Eliminar* para confirmar.
 

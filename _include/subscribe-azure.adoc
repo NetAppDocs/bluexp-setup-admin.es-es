@@ -23,13 +23,13 @@ Se le redirigirá al sitio web de BlueXP.
 
 .. Desde la página *asignación de suscripción*:
 +
-*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
-*** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
+*** Seleccione las organizaciones o cuentas de BlueXP  con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elige si deseas reemplazar automáticamente la suscripción existente para una organización o cuenta con esta nueva suscripción.
 +
-BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+BlueXP  reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
 
 +
-Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 *** Seleccione *Guardar*.
 +

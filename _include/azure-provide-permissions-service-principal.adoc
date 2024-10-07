@@ -4,7 +4,7 @@
 
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
 +
-image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
+image:screenshot-settings-icon-organization.png["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
 . Seleccione *Agregar Credenciales* y siga los pasos del asistente.
 +

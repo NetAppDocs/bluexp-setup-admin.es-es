@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: task-iam-get-started.html 
+keywords: iam, quick start, get started, get started with iam, identity and access management 
+summary: Para comenzar con IAM, personalice la jerarquía de la organización, agregue miembros adicionales, agregue o detecte recursos y asocie dichos recursos a proyectos. 
+---
+= Comience a utilizar la gestión de acceso e identidad de BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cuando te registras en BlueXP , se te pedirá que crees una nueva organización. La organización incluye un miembro (un administrador de organización) y un proyecto por defecto. Para configurar la administración de identidades y accesos (IAM) de BlueXP  para satisfacer las necesidades de su empresa, deberá personalizar la jerarquía de su organización, agregar miembros adicionales, agregar o detectar recursos y asociar dichos recursos en su jerarquía.
+
+Debe tener permisos de administrador de la organización* para administrar toda la organización desde BlueXP  IAM. Si tiene permisos de administrador de carpeta o proyecto*, solo puede administrar las carpetas y proyectos para los que tenga permisos.
+
+Siga estos pasos para configurar una nueva organización de BlueXP . El orden en el que realice estos pasos puede ser diferente, dependiendo de las necesidades de su organización.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Edite el proyecto por defecto o agréguelo a la jerarquía de la organización
+[role="quick-margin-para"]
+Puede utilizar simplemente el proyecto predeterminado o crear proyectos y carpetas adicionales que coincidan con la jerarquía de su negocio.
+
+[role="quick-margin-para"]
+link:task-iam-manage-folders-projects.html["Aprenda a organizar sus recursos con carpetas y proyectos"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Asocie miembros a su organización
+[role="quick-margin-para"]
+Si varias personas de su empresa necesitan acceder y gestionar recursos de BlueXP , deberá asociar sus cuentas de usuario a su organización y proporcionar los permisos adecuados en toda la jerarquía de recursos. También tiene la opción de agregar cuentas de servicio a su organización.
+
+[role="quick-margin-para"]
+link:task-iam-manage-members-permissions.html["Aprenda a administrar miembros y sus permisos"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Añadir o detectar recursos
+[role="quick-margin-para"]
+Agregar o detectar recursos en BlueXP  como _entornos de trabajo_. Un entorno de trabajo representa un sistema de almacenamiento que los miembros de la organización gestionan desde dentro de un proyecto. Por ejemplo, un sistema Cloud Volumes ONTAP o un clúster de ONTAP en las instalaciones.
+
+[role="quick-margin-para"]
+Aprenda a crear o descubrir recursos desde el lienzo de BlueXP :
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["Amazon FSX para ONTAP de NetApp"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html["Sistemas E-Series"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["Clústeres de ONTAP en las instalaciones"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["StorageGRID"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Asociar recursos a proyectos adicionales
+[role="quick-margin-para"]
+Al crear o detectar un recurso en BlueXP , dicho recurso se asocia automáticamente al proyecto seleccionado al crear o detectar el entorno de trabajo. Si desea que ese recurso esté disponible para otro proyecto de su organización, deberá crear una asociación entre ellos. Si el recurso lo gestiona un conector, también debe crear una asociación entre el proyecto y el conector asociado.
+
+[role="quick-margin-list"]
+* link:task-iam-manage-resources.html["Aprenda a gestionar la jerarquía de recursos de su organización"].
+* link:task-iam-associate-connectors.html["Aprenda a asociar un conector a una carpeta o proyecto"].
+
+
+.Información relacionada
+* link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidades y accesos de BlueXP "]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Obtenga más información sobre la API para IAM de BlueXP "^]
+

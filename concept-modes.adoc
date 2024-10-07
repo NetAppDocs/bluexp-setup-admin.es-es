@@ -22,7 +22,7 @@ Mientras que BlueXP  inhibe el flujo de tráfico, comunicación y datos cuando 
 
 == Descripción general
 
-BlueXP ofrece los siguientes modos de implementación para su cuenta. Cada modo difiere en términos de requisitos de conectividad saliente, ubicación de implementación, proceso de instalación, método de autenticación, servicios de datos y almacenamiento disponibles y métodos de carga.
+BlueXP  ofrece tres modos de despliegue. Cada modo difiere en términos de requisitos de conectividad saliente, ubicación de implementación, proceso de instalación, método de autenticación, servicios de datos y almacenamiento disponibles y métodos de carga.
 
 Modo estándar:: BlueXP es accesible a los usuarios como servicio en nube desde la consola basada en Web. Dependiendo de los servicios de BlueXP que tenga previsto utilizar, un administrador de BlueXP crea uno o más conectores para gestionar los datos dentro de su entorno de cloud híbrido.
 +
@@ -407,7 +407,13 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Almacenamiento en caché de volúmenes | No | No 
 
 
-.5+| * Características* | Credenciales | Sí | Sí 
+.7+| * Características* | Gestión de identidades y acceso BlueXP  | No | No 
+
+
+| Cuentas BlueXP | Sí | Sí 
+
+
+| Credenciales | Sí | Sí 
 
 
 | Cuentas de NSS | Sí | No 

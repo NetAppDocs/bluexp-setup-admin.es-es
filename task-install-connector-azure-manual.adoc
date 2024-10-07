@@ -28,26 +28,64 @@ Un conector es el software NetApp que se ejecuta en su red de cloud o en las ins
 El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
 
 Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
-Sistemas operativos compatibles::
-+
---
-* Sistema operativo Ubuntu 22,04 LTS
-* Red Hat Enterprise Linux
-+
-** 8,6 a 8,10
-** 9,1 a 9,4
-+
-El host debe estar registrado con Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
-
-+
-El conector es compatible con las versiones en inglés de estos sistemas operativos.
-
-
-
-
-
---
 Hipervisor:: Se requiere un hipervisor nativo o alojado que esté certificado para ejecutar un sistema operativo compatible.
+[[podman-versions]]Requisitos del sistema operativo y del contenedor:: BlueXP  admite el conector con los siguientes sistemas operativos cuando se utiliza BlueXP  en modo estándar o en modo restringido. Antes de instalar el conector, se necesita una herramienta de orquestación de contenedores.
++
+--
+[cols="2a,2a,2a,2a,2a"]
+|===
+| De NetApp | Versiones de OS compatibles | Versiones de conector admitidas | Herramienta de contenedor requerida | SELinux 
+
+
+ a| 
+Red Hat Enterprise Linux
+ a| 
+9,1 a 9,4
+
+8,6 a 8,10
+ a| 
+3.9.40 o posterior con BlueXP  en modo estándar o restringido
+ a| 
+Podman versión 4.6.1 o 4.9.4
+
+<<podman-configuration,Ver los requisitos de configuración de Podman>>.
+ a| 
+Compatible en modo de aplicación o modo permisivo
+
+
+
+ a| 
+Ubuntu
+ a| 
+24,04 LTS
+ a| 
+3.9.45 o posterior con BlueXP  en modo estándar o restringido
+ a| 
+Docker Engine 26.0.0
+ a| 
+No admitido
+
+
+
+ a| 
+22,04 LTS
+ a| 
+3.9.29 o posterior
+ a| 
+Docker Engine 23.0.6 a 26.0.0
+
+26.0.0 es compatible con _NEW_ Connector 3.9.44 o instalaciones posteriores
+ a| 
+No admitido
+
+|===
+Notas:
+
+* El conector es compatible con las versiones en inglés de estos sistemas operativos.
+* Para RHEL, el host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
+
+
+--
 CPU:: 8 núcleos o 8 vCPU
 RAM:: 32GB
 Tamaño de la máquina virtual de Azure:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos Standard_D8s_v3.
@@ -63,40 +101,6 @@ Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
 BlueXP requiere este espacio en `/var` Porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el `/var/lib/containers/storage` directorio. Los montajes externos o los enlaces simbólicos no funcionan en este espacio.
 
 --
-Herramienta de orquestación de contenedores:: Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
-+
---
-[[podman-versions]]
-* Se requiere Podman para Red Hat Enterprise Linux.
-+
-Se deben cumplir los siguientes requisitos previos para Podman:
-
-+
-** Se requiere la versión 4.6.1 o 4.9.4 de Podman
-** El servicio podman.socket debe estar activado e iniciado
-** se debe instalar python3
-** Se debe instalar el paquete de composición podman versión 1.0.6
-** Se debe agregar la composición podman a la variable de entorno PATH
-
-
-* Se requiere Docker Engine para Ubuntu.
-+
-[cols="3*"]
-|===
-| Versión del conector | Versión mínima de Docker Engine | Versión máxima de Docker Engine 
-
-
-| _New_ Instalación del conector a partir de 3.9.44 | 23.0.6 | 26.0.0 
-
-
-| Conectores creados antes de la versión 3.9.44 | 23.0.6 | 25.0.5 
-|===
-+
-https://docs.docker.com/engine/install/["Ver las instrucciones de instalación de Docker"^]
-
-
-
---
 
 
 
@@ -106,7 +110,13 @@ https://docs.docker.com/engine/install/["Ver las instrucciones de instalación d
 Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de instalar el conector.
 
 * Se requiere Podman para Red Hat Enterprise Linux 8 y 9.
++
+<<podman-versions,Ver las versiones de Podman que admite BlueXP >>.
+
 * Se requiere Docker Engine para Ubuntu.
++
+<<podman-versions,Vea las versiones de Docker Engine compatibles con BlueXP >>.
+
 
 
 .Pasos
@@ -114,7 +124,13 @@ Dependiendo del sistema operativo, se requiere Podman o Docker Engine antes de i
 ====
 .Podman
 --
-Instale una versión compatible de Podman. <<podman-versions,Ver las versiones de Podman que admite BlueXP >>.
+Siga estos pasos para instalar Podman y configurarlo para cumplir con los siguientes requisitos:
+
+* El servicio podman.socket debe estar activado e iniciado
+* se debe instalar python3
+* Se debe instalar el paquete de composición podman versión 1.0.6
+* Se debe agregar la composición podman a la variable de entorno PATH
+
 
 .Pasos
 . Elimine el paquete podman-docker si está instalado en el host.
@@ -197,13 +213,10 @@ NOTE: Con el `dnf install` El comando cumple con los requisitos para agregar pod
 --
 .Motor Docker
 --
-Instale una versión compatible de Docker Engine. <<podman-versions,Vea las versiones de Docker Engine compatibles con BlueXP >>.
+Siga la documentación de Docker para instalar Docker Engine.
 
 .Pasos
-. Instale Docker Engine.
-+
-https://docs.docker.com/engine/install/["Consulte las instrucciones de instalación de Docker"^]
-
+. https://docs.docker.com/engine/install/["Consulte las instrucciones de instalación de Docker"^]
 +
 Asegúrese de seguir los pasos para instalar una versión específica de Docker Engine. Al instalar la versión más reciente se instalará una versión de Docker no compatible con BlueXP.
 
@@ -322,7 +335,7 @@ Para actualizar el conector y sus componentes de Docker.
 --
 
 
-Servidor proxy:: Si su organización requiere la implementación de un servidor proxy para todo el tráfico de Internet saliente, obtenga la siguiente información sobre su proxy HTTP o HTTPS. Deberá proporcionar esta información durante la instalación. Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
+Servidor proxy:: Si su empresa requiere la implementación de un servidor proxy para todo el tráfico de Internet saliente, obtenga la siguiente información sobre su proxy HTTP o HTTPS. Deberá proporcionar esta información durante la instalación. Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
 +
 --
 * Dirección IP
@@ -674,7 +687,7 @@ https://_ipaddress_[]
 
 . Después de iniciar sesión, configure el conector:
 +
-.. Especifique la cuenta BlueXP que desea asociar al conector.
+.. Especifique la organización BlueXP  que desea asociar al conector.
 .. Escriba un nombre para el sistema.
 .. En *¿se está ejecutando en un entorno seguro?* mantener el modo restringido desactivado.
 +
@@ -686,7 +699,7 @@ Debe mantener desactivado el modo restringido porque estos pasos describen cómo
 
 
 .Resultado
-El conector ya está instalado y está configurado con su cuenta BlueXP.
+El conector ya está instalado y se configura con su organización BlueXP .
 
 Si tienes almacenamiento de Azure Blob en la misma suscripción de Azure donde creaste el conector, verás que aparece automáticamente un entorno de trabajo de almacenamiento de Azure Blob en el lienzo de BlueXP. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Descubre cómo gestionar el almacenamiento de Azure Blob desde BlueXP"^]
 
@@ -740,7 +753,7 @@ Vaya a la https://console.bluexp.netapp.com["Consola BlueXP"^] Para empezar a ut
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
 +
-image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
+image:screenshot-settings-icon-organization.png["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
 . Seleccione *Agregar Credenciales* y siga los pasos del asistente.
 +

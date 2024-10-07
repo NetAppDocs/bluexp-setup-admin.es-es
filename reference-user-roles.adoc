@@ -14,19 +14,29 @@ summary: Las funciones Administrador de cuentas, Administrador de área de traba
 
 
 [role="lead"]
-Las funciones Administrador de cuentas, Administrador de área de trabajo, Visor de cumplimiento y Administrador de SnapCenter proporcionan permisos específicos a los usuarios. Puedes asignar uno de estos roles cuando asocias un nuevo usuario a tu cuenta de BlueXP.
+Cuando utilice BlueXP  en modo restringido o en modo privado, utilizará una cuenta _BlueXP _ para administrar usuarios. Puede proporcionar permisos específicos a los usuarios de su cuenta seleccionando entre las siguientes funciones: Administrador de cuenta, Administrador de espacio de trabajo, Visor de cumplimiento y Administrador de SnapCenter
 
-El rol de Visor de cumplimiento de normativas es para acceso de clasificación de BlueXP de solo lectura.
+Si usas BlueXP  en modo estándar, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización _BlueXP _ que gestionará mediante la administración de identidades y accesos (IAM) de BlueXP .
+
+* link:concept-identity-and-access-management.html["Obtenga más información sobre BlueXP  IAM"]
+* link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"]
+
 
 [cols="24,19,19,19,19"]
 |===
 | Tarea | Administrador de cuentas | Administrador de área de trabajo | Visor de cumplimiento de normativas | Administrador de SnapCenter 
 
 
-| Gestionar entornos de trabajo | Sí | Sí | No | No 
+| Crear conectores | Sí | No | No | No 
 
 
-| Activar servicios en entornos de trabajo | Sí | Sí | No | No 
+| Gestionar entornos de trabajo | Sí | Sí | No | Sí 
+
+
+| Activar servicios en entornos de trabajo | Sí | Sí | No | Sí 
+
+
+| Utilizar los servicios BlueXP  | Sí | Sí | No | Sí 
 
 
 | Eliminar entornos de trabajo de un espacio de trabajo | Sí | Sí | No | No 
@@ -41,7 +51,7 @@ El rol de Visor de cumplimiento de normativas es para acceso de clasificación d
 | Visualice la línea de tiempo | Sí | Sí | No | No 
 
 
-| Cambiar entre espacios de trabajo | Sí | Sí | Sí | No 
+| Cambiar entre espacios de trabajo | Sí | Sí | Sí | Sí 
 
 
 | Consulta los resultados del análisis de clasificación de BlueXP | Sí | Sí | Sí | No 
@@ -50,24 +60,16 @@ El rol de Visor de cumplimiento de normativas es para acceso de clasificación d
 | Reciba el informe de Cloud Volumes ONTAP | Sí | No | No | No 
 
 
-| Crear conectores | Sí | No | No | No 
-
-
 | Administrar cuentas de BlueXP | Sí | No | No | No 
 
 
-| Gestionar credenciales | Sí | No | No | No 
+| Gestionar credenciales | Sí | Sí | No | No 
 
 
-| Modificar la configuración de BlueXP | Sí | No | No | No 
+| Modificar la configuración de BlueXP | Sí | Sí | No | No 
 
 
-| Consulte y gestione la consola de soporte | Sí | No | No | No 
-
-
-| Instale un certificado HTTPS | Sí | No | No | No 
+| Consulte y gestione la consola de soporte | Sí | Sí | No | No 
 |===
-.Enlaces relacionados
-* link:task-setting-up-netapp-accounts.html["Configuración de áreas de trabajo y usuarios en la cuenta de BlueXP"]
-* link:task-managing-netapp-accounts.html["Gestión de áreas de trabajo y usuarios en la cuenta de BlueXP"]
-
+.Enlace relacionado
+link:task-managing-netapp-accounts.html["Administre su cuenta de BlueXP"]

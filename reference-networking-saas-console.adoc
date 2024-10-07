@@ -4,7 +4,7 @@ permalink: reference-networking-saas-console.html
 keywords: networking, urls, endpoints, web browser, console, network, set up networking 
 summary: Al usar la consola basada en web de BlueXP que se proporciona a través de la capa SaaS, se pone en contacto con varios extremos cuando completa unas pocas tareas administrativas. Los equipos que accedan a la consola de BlueXP deben tener conexiones a estos extremos. 
 ---
-= Prepare las redes para usar la consola de BlueXP
+= Prepare las redes para la consola de BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -74,7 +74,7 @@ Servicios de AWS (amazonaws.com):
 |===
 Más allá de estos puntos finales, también debe asegurarse de que Connector tiene acceso a Internet saliente para contactar puntos finales específicos para las operaciones diarias. Puede encontrar la lista de estos puntos finales siguiendo los enlaces de la siguiente sección.
 
-.Enlaces relacionados
+.Información relacionada
 * Prepare la conexión a redes para el conector
 +
 ** link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["Configure las redes de AWS"]

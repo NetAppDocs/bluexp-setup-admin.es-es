@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: Asocie una cuenta del sitio de soporte de NetApp con su cuenta de BlueXP para habilitar los flujos de trabajo clave para Cloud Volumes ONTAP. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP. 
+summary: Asocie una cuenta del sitio de soporte de NetApp con su organización o cuenta de BlueXP  para habilitar flujos de trabajo clave para Cloud Volumes ONTAP. Estas credenciales de NSS están asociadas a toda la organización o cuenta de BlueXP . 
 ---
-= Administrar las credenciales de NSS asociadas con una cuenta de BlueXP
+= Gestione las credenciales de NSS asociadas a una organización o cuenta de BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,23 @@ summary: Asocie una cuenta del sitio de soporte de NetApp con su cuenta de BlueX
 
 
 [role="lead"]
-Asocie una cuenta del sitio de soporte de NetApp con su cuenta de BlueXP para habilitar los flujos de trabajo clave para Cloud Volumes ONTAP. Estas credenciales de NSS están asociadas a toda la cuenta de BlueXP.
+Asocie una cuenta del sitio de soporte de NetApp con su organización o cuenta de BlueXP  para habilitar flujos de trabajo clave para Cloud Volumes ONTAP. Estas credenciales de NSS están asociadas a toda la organización o cuenta de BlueXP .
+
+BlueXP  también admite la asociación de una cuenta NSS por cuenta de usuario de BlueXP . link:task-manage-user-credentials.html["Aprenda a gestionar las credenciales en el nivel de usuario"].
 
 
-NOTE: BlueXP también admite la asociación de una cuenta NSS por usuario de BlueXP. link:task-manage-user-credentials.html["Aprenda a gestionar las credenciales en el nivel de usuario"].
+TIP: Si utiliza BlueXP  en modo estándar, tendrá una organización _BlueXP _, que gestionará mediante la administración de identidad y acceso (IAM) de BlueXP . Pero si estás usando BlueXP  en modo restringido o en modo privado, entonces tendrás una cuenta _BlueXP _.
+
+* link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"]
+* link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidades y accesos de BlueXP "]
+* link:concept-netapp-accounts.html["Obtenga más información sobre las cuentas de BlueXP"]
+
 
 
 
 == Descripción general
 
-Se requiere la asociación de las credenciales del sitio de soporte de NetApp con el ID de cuenta de BlueXP específico para habilitar las siguientes tareas en BlueXP:
+Es necesario asociar las credenciales del sitio de soporte de NetApp con su número de serie de cuenta de BlueXP  específico para habilitar las siguientes tareas en BlueXP :
 
 * Puesta en marcha de Cloud Volumes ONTAP cuando usted traiga su propia licencia (BYOL)
 +
@@ -36,13 +43,13 @@ Se requiere que proporcione su cuenta de NSS para activar el soporte de su siste
 * Actualizar el software Cloud Volumes ONTAP a la versión más reciente
 
 
-Estas credenciales están asociadas a su ID de cuenta de BlueXP específico. Los usuarios que pertenecen a la cuenta BlueXP pueden acceder a estas credenciales desde *Soporte > Gestión NSS*.
+Estas credenciales están asociadas con el número de serie de su cuenta de BlueXP  específico. Los usuarios que pertenecen a la organización o cuenta de BlueXP  pueden acceder a estas credenciales desde *Soporte > Administración de NSS*.
 
 
 
 == Añada una cuenta de NSS
 
-La consola de soporte le permite añadir y gestionar sus cuentas de la página de soporte de NetApp para utilizarlas con BlueXP a nivel de cuenta de BlueXP.
+La consola de soporte permite agregar y gestionar sus cuentas del sitio de soporte de NetApp para usarlas con BlueXP  en el nivel de cuenta o de la organización de BlueXP .
 
 * Si tiene una cuenta de nivel de cliente, puede añadir una o varias cuentas de NSS.
 * Si tiene una cuenta de partner o distribuidor, puede añadir una o varias cuentas de NSS, pero no se podrán añadir junto con las cuentas de nivel de cliente.

@@ -103,7 +103,7 @@ https://_ipaddress_[]
 
 . Después de iniciar sesión, configure el conector:
 +
-.. Especifique la cuenta BlueXP que desea asociar al conector.
+.. Especifique la organización BlueXP  que desea asociar al conector.
 .. Escriba un nombre para el sistema.
 .. En *¿se está ejecutando en un entorno seguro?* mantener el modo restringido desactivado.
 +
@@ -115,4 +115,4 @@ Debe mantener desactivado el modo restringido porque estos pasos describen cómo
 
 
 .Resultado
-El conector ya está instalado y está configurado con su cuenta BlueXP.
+El conector ya está instalado y se configura con su organización BlueXP .

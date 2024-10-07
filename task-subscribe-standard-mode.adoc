@@ -51,13 +51,13 @@ Se le redirigirá al sitio web de BlueXP.
 
 .. Desde la página *asignación de suscripción*:
 +
-*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
-*** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
+*** Seleccione las organizaciones o cuentas de BlueXP  con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elige si deseas reemplazar automáticamente la suscripción existente para una organización o cuenta con esta nueva suscripción.
 +
-BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+BlueXP  reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
 
 +
-Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 *** Seleccione *Guardar*.
 +
@@ -96,13 +96,13 @@ Se le redirigirá al sitio web de BlueXP.
 
 .. Desde la página *asignación de suscripción*:
 +
-*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
-*** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
+*** Seleccione las organizaciones o cuentas de BlueXP  con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elige si deseas reemplazar automáticamente la suscripción existente para una organización o cuenta con esta nueva suscripción.
 +
-BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+BlueXP  reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
 
 +
-Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 *** Seleccione *Guardar*.
 +
@@ -148,7 +148,7 @@ Este paso envía la solicitud de transferencia a NetApp.
 
 .. En el cuadro de diálogo emergente, seleccione *Registro con NetApp, Inc.*
 +
-Este paso debe completarse para vincular la suscripción a Google Cloud a su cuenta de BlueXP. El proceso de vinculación de una suscripción no está completo hasta que se le redirigirá de esta página y, a continuación, inicie sesión en BlueXP.
+Este paso debe completarse para vincular la suscripción a Google Cloud con tu organización o cuenta de BlueXP . El proceso de vinculación de una suscripción no está completo hasta que se le redirigirá de esta página y, a continuación, inicie sesión en BlueXP.
 
 +
 image:screenshot_gcp_marketplace_register.png["Captura de pantalla de una ventana emergente de registro."]
@@ -159,13 +159,13 @@ image:screenshot_gcp_marketplace_register.png["Captura de pantalla de una ventan
 NOTE: Si alguien de su organización ya se ha suscrito a la suscripción de NetApp BlueXP desde su cuenta de facturación, se le redirigirá a https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["La página Cloud Volumes ONTAP en el sitio Web de BlueXP"^] en su lugar. Si esto no se realiza de forma inesperada, póngase en contacto con el equipo de ventas de NetApp. Google sólo activa una suscripción por cuenta de facturación de Google.
 
 +
-*** Seleccione las cuentas de BlueXP con las que desea asociar esta suscripción.
-*** En el campo *sustituir suscripción existente*, elija si desea sustituir automáticamente la suscripción existente para una cuenta con esta nueva suscripción.
+*** Seleccione las organizaciones o cuentas de BlueXP  con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elige si deseas reemplazar automáticamente la suscripción existente para una organización o cuenta con esta nueva suscripción.
 +
-BlueXP reemplaza la suscripción existente para todas las credenciales de la cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
+BlueXP  reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción. Si alguna vez no se ha asociado un conjunto de credenciales a una suscripción, esta nueva suscripción no se asociará a dichas credenciales.
 
 +
-Para el resto de cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 *** Seleccione *Guardar*.
 +
@@ -186,7 +186,7 @@ image:screenshot_gcp_associate.gif["Captura de pantalla de la página de asignac
 
 --
 ====
-.Enlaces relacionados
+.Información relacionada
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Gestione las licencias basadas en la capacidad de su propia licencia para Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Gestiona las licencias BYOL para los servicios de datos de BlueXP"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Gestione las credenciales y suscripciones de AWS para BlueXP"]
