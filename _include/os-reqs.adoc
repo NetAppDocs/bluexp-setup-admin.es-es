@@ -125,6 +125,16 @@ Tipo de instancia de AWS EC2:: Tipo de instancia que cumple los requisitos anter
 Par de claves:: Cuando cree el conector, deberá seleccionar un par de claves EC2 para utilizarlo con la instancia.
 
 
+Límite de salto de respuesta PUT al usar IMDSv2:: Si IMDSv2 está habilitado en la instancia EC2 (este es el valor predeterminado para las nuevas instancias EC2), debe cambiar el límite de salto de respuesta PUT en la instancia a 3. Si no cambia el límite en la instancia de EC2, recibirá un error de inicialización de la interfaz de usuario cuando intente configurar el conector.
++
+--
+* link:task-require-imdsv2.html["Requiere el uso de IMDSv2 en instancias de Amazon EC2"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["Documentación de AWS: Cambie el límite de salto de respuesta PUT"^]
+
+
+--
+
+
 Tamaño de la máquina virtual de Azure:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos Standard_D8s_v3.
 
 
