@@ -101,7 +101,7 @@ Límite de salto de respuesta PUT al usar IMDSv2:: Si IMDSv2 está habilitado en
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
 +
 --
-BlueXP utiliza `/opt` para instalar el `/opt/application/netapp` directorio y su contenido.
+BlueXP  utiliza `/opt` para instalar el `/opt/application/netapp` directorio y su contenido.
 
 --
 Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles

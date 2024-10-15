@@ -18,6 +18,16 @@ Descubra las novedades de las funciones de administración de BlueXP : Gestión
 
 
 
+== 10 de octubre de 2024
+
+
+
+=== Parche del conector 3.9.45
+
+Este parche incluye correcciones de errores.
+
+
+
 == 7 de octubre de 2024
 
 

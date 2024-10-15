@@ -170,12 +170,6 @@ link:reference-iam-predefined-roles.html["Obtenga más información sobre los ro
 
 
 
-==== Roles personalizados
-
-Los roles personalizados no se admiten en este momento.
-
-
-
 === Conectores
 
 Cuando un _Organization admin_ crea un conector, BlueXP  asocia automáticamente ese conector con la organización y el proyecto seleccionado actualmente. _Organization admin_ tiene acceso automáticamente a ese conector desde cualquier lugar de la organización. Pero si tiene otros miembros en la organización con roles diferentes, esos miembros solo podrán acceder a ese conector desde el proyecto en el que se creó, a menos que asocie ese conector con otros proyectos.
