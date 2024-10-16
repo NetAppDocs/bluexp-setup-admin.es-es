@@ -3889,7 +3889,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="3baace5508f5436415356f7f1c718d50" category="list-text">*RAM*: 32 GB</block>
   <block id="e5ee5282a10eef25059e919331c8ea5e" category="list-text">* Tipo de máquina *: Recomendamos n2-standard-8.</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">*Elija un tipo de instancia*: En función de la disponibilidad de la región, elija uno de los tipos de instancia admitidos (se recomienda t3.2xlarge).</block>
-  <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">En este momento, se envían notificaciones por correo electrónico de las siguientes características y servicios de BlueXP : Conector, cartera digital BlueXP , copia y sincronización de BlueXP , copia y recuperación de datos BlueXP  y organización en niveles BlueXP . En futuras versiones se añadirán servicios adicionales.</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">Conector 3.9.43</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">La versión 3.9.43 está disponible para modo estándar y modo restringido.</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">Actualización de los requisitos de CPU y RAM</block>
@@ -4858,4 +4857,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">10 de octubre de 2024</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">Parche del conector 3.9.45</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">Este parche incluye correcciones de errores.</block>
+  <block id="ab99e6e0b893c9db1dce5c6dc26245bc" category="list-text">Las notificaciones se envían por correo electrónico de las siguientes características y servicios de BlueXP : Conector, cartera digital de BlueXP , copia y sincronización de BlueXP  y copia de seguridad y recuperación de BlueXP .</block>
 </blocks>
