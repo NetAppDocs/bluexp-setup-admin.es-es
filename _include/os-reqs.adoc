@@ -29,7 +29,7 @@ Podman versión 4.6.1 o 4.9.4
 
 <<podman-configuration,Ver los requisitos de configuración de Podman>>.
  a| 
-Compatible en modo de aplicación o modo permisivo
+Compatible con el modo de aplicación o el modo permisivo ^1^
 
 
 
@@ -60,8 +60,9 @@ No admitido
 |===
 Notas:
 
-* El conector es compatible con las versiones en inglés de estos sistemas operativos.
-* Para RHEL, el host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
+. La gestión de sistemas Cloud Volumes ONTAP no es compatible con conectores que tienen SELinux activado en el sistema operativo.
+. El conector es compatible con las versiones en inglés de estos sistemas operativos.
+. Para RHEL, el host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
 
 
 --
@@ -88,7 +89,7 @@ Podman versión 4.6.1 o 4.9.4
 
 <<podman-configuration,Ver los requisitos de configuración de Podman>>.
  a| 
-Compatible en modo de aplicación o modo permisivo
+Compatible con el modo de aplicación o el modo permisivo ^1^
 
 
 
@@ -108,8 +109,9 @@ No admitido
 |===
 Notas:
 
-* El conector es compatible con las versiones en inglés de estos sistemas operativos.
-* Para RHEL, el host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
+. La gestión de sistemas Cloud Volumes ONTAP no es compatible con conectores que tienen SELinux activado en el sistema operativo.
+. El conector es compatible con las versiones en inglés de estos sistemas operativos.
+. Para RHEL, el host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
 
 
 --

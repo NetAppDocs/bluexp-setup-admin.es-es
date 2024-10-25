@@ -162,7 +162,7 @@ Agregue las credenciales de AWS a BlueXP proporcionando el ARN de una función I
 
 === Configure el rol IAM
 
-Configure una función de IAM que permita a la capa SaaS BlueXP asumir la función.
+Configure un rol de IAM que permita a la capa de software como servicio (SaaS) de BlueXP  asumir el rol.
 
 .Pasos
 . Vaya a la consola IAM de la cuenta de destino.

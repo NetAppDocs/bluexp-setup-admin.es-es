@@ -14,7 +14,7 @@ summary: Pon en marcha el conector en modo privado para poder utilizar BlueXP si
 
 
 [role="lead"]
-Pon en marcha el conector en modo privado para poder utilizar BlueXP sin conectividad saliente a la capa de BlueXP SaaS. Para comenzar, instala el Connector, configura BlueXP accediendo a la interfaz de usuario que se ejecuta en el Connector y, a continuación, proporciona los permisos de nube que hayas configurado previamente.
+Implemente el conector en modo privado para que pueda utilizar BlueXP  sin conectividad saliente a la capa de software como servicio (SaaS) de BlueXP . Para comenzar, instala el Connector, configura BlueXP accediendo a la interfaz de usuario que se ejecuta en el Connector y, a continuación, proporciona los permisos de nube que hayas configurado previamente.
 
 
 

@@ -50,7 +50,7 @@ Podman versión 4.6.1 o 4.9.4
 
 <<podman-configuration,Ver los requisitos de configuración de Podman>>.
  a| 
-Compatible en modo de aplicación o modo permisivo
+Compatible con el modo de aplicación o el modo permisivo ^1^
 
 
 
@@ -81,8 +81,9 @@ No admitido
 |===
 Notas:
 
-* El conector es compatible con las versiones en inglés de estos sistemas operativos.
-* Para RHEL, el host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
+. La gestión de sistemas Cloud Volumes ONTAP no es compatible con conectores que tienen SELinux activado en el sistema operativo.
+. El conector es compatible con las versiones en inglés de estos sistemas operativos.
+. Para RHEL, el host debe estar registrado en Red Hat Subscription Management. Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros necesario durante la instalación del conector.
 
 
 --
@@ -249,6 +250,14 @@ Conexiones a redes de destino:: Un conector requiere una conexión de red a la u
 
 
 Acceso a Internet de salida:: La ubicación de red en la que se despliega el conector debe tener una conexión a Internet saliente para contactar con puntos finales específicos.
+
+
+Puntos finales contactados desde los equipos cuando se utiliza la consola basada en web de BlueXP :: Los equipos que acceden a la consola de BlueXP  desde un navegador web deben tener la capacidad de contactar con varios puntos finales. Necesitará utilizar la consola BlueXP  para configurar el conector y para utilizar el día a día de BlueXP .
++
+--
+link:reference-networking-saas-console.html["Prepare las redes para la consola de BlueXP "].
+
+--
 
 
 Puntos finales contactados durante la instalación manual:: Al instalar manualmente el conector en su propio host Linux, el instalador del conector requiere acceso a las siguientes direcciones URL durante el proceso de instalación:

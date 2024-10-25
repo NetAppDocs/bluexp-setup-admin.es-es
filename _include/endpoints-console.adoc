@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+Puntos finales contactados desde los equipos cuando se utiliza la consola basada en web de BlueXP :: Los equipos que acceden a la consola de BlueXP  desde un navegador web deben tener la capacidad de contactar con varios puntos finales. Necesitará utilizar la consola BlueXP  para configurar el conector y para utilizar el día a día de BlueXP .
++
+--
+link:reference-networking-saas-console.html["Prepare las redes para la consola de BlueXP "].
+
+--
+

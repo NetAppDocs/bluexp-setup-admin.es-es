@@ -14,9 +14,13 @@ summary: Al usar la consola basada en web de BlueXP que se proporciona a través
 
 
 [role="lead"]
-Al usar la consola basada en web de BlueXP que se proporciona a través de la capa SaaS, se pone en contacto con varios extremos cuando completa unas pocas tareas administrativas. Los equipos que accedan a la consola de BlueXP deben tener conexiones a estos extremos.
+Cuando inicie sesión y utilice la consola basada en web de BlueXP , BlueXP  se pondrá en contacto con varios puntos finales para completar las acciones que inicie. Los equipos que acceden a la consola de BlueXP  deben tener conexiones a estos extremos.
 
-Estos extremos se ponen en contacto desde el equipo de un usuario al completar acciones específicas desde la consola de BlueXP. También debes consultar los requisitos de red para el conector y para servicios de BlueXP específicos. Para obtener más información, consulte los enlaces relacionados al final de esta página.
+Estos extremos se contactan en dos situaciones:
+
+* Desde la computadora de un usuario al completar acciones específicas de la https://console.bluexp.netapp.com["Consola BlueXP basada en Web"^] que está disponible como software como servicio (SaaS).
+* Desde el equipo de un usuario al abrir un navegador web, introduzca la dirección IP del host del conector y, a continuación, inicie sesión y configure el conector. Estos pasos son necesarios si instala manualmente el conector.
+
 
 [cols="2*"]
 |===
@@ -24,7 +28,10 @@ Estos extremos se ponen en contacto desde el equipo de un usuario al completar a
 
 
 | \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com | Su navegador web se pone en contacto con estas URL cuando utiliza la consola basada en web de BlueXP. 
+\https://*.console.bluexp.netapp.com | Este es el punto final que se introduce en el navegador web para utilizar la consola basada en web de BlueXP . 
+
+
+| \https://api.bluexp.netapp.com | La consola basada en web de BlueXP  se pone en contacto con este punto final para interactuar con la API de BlueXP  en relación con las acciones relacionadas con la autorización, licencias, suscripciones, credenciales, notificaciones y más. 
 
 
 | \https://aiq.netapp.com | Es necesario acceder al asesor digital de BlueXP. 

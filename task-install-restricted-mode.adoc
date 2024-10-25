@@ -14,7 +14,7 @@ summary: Pon en marcha el conector en modo restringido para poder utilizar BlueX
 
 
 [role="lead"]
-Pon en marcha el conector en modo restringido para poder utilizar BlueXP con una conectividad saliente limitada a la capa SaaS de BlueXP. Para comenzar, instala el Connector, configura BlueXP accediendo a la interfaz de usuario que se ejecuta en el Connector y, a continuación, proporciona los permisos de nube que hayas configurado previamente.
+Implemente el conector en modo restringido para que pueda utilizar BlueXP  con conectividad saliente limitada a la capa de software como servicio (SaaS) de BlueXP . Para comenzar, instala el Connector, configura BlueXP accediendo a la interfaz de usuario que se ejecuta en el Connector y, a continuación, proporciona los permisos de nube que hayas configurado previamente.
 
 
 
