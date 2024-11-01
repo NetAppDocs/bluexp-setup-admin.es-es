@@ -275,6 +275,9 @@ Preparar la red para el acceso de los usuarios a la consola BlueXP:: En modo res
 | Puntos finales | Específico 
 
 
+| \https://api.bluexp.netapp.com | La consola basada en web de BlueXP  se pone en contacto con este punto final para interactuar con la API de BlueXP  en relación con las acciones relacionadas con la autorización, licencias, suscripciones, credenciales, notificaciones y más. 
+
+
 | \https://signin.b2c.netapp.com | Se requiere actualizar las credenciales del sitio de soporte de NetApp (NSS) o añadir nuevas credenciales de NSS a BlueXP. 
 
 
