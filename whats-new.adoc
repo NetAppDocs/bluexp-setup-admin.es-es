@@ -18,6 +18,26 @@ Descubra las novedades de las funciones de administración de BlueXP : Gestión
 
 
 
+== 11 de noviembre de 2024
+
+
+
+=== Conector 3.9.46
+
+Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.
+
+En este momento, la versión 3.9.46 está disponible para modo estándar y modo restringido.
+
+
+
+=== ID de proyectos de IAM
+
+Ahora puede ver el ID de un proyecto desde la administración de acceso e identidad de BlueXP . Es posible que necesite usar el ID al realizar una llamada a la API.
+
+link:task-iam-manage-folders-projects.html#project-id["Aprenda a obtener el ID de un proyecto"].
+
+
+
 == 10 de octubre de 2024
 
 
