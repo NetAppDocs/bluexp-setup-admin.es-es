@@ -24,9 +24,9 @@ No es necesario un conector para comenzar con BlueXP. Puede utilizar varias cara
 
 Puede utilizar las siguientes funciones y servicios de BlueXP sin un conector:
 
-* Creación del entorno de trabajo de Amazon FSX para ONTAP de NetApp
+* Amazon FSX para ONTAP de NetApp
 +
-Aunque no es necesario que un conector cree un entorno de trabajo, es necesario crear y gestionar volúmenes, replicar datos e integrar FSx para ONTAP con servicios como la clasificación de BlueXP y la copia y sincronización de BlueXP.
+Algunas acciones requieren un conector o un enlace de fábrica de carga de trabajo BlueXP . https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["Aprenda qué acciones requieren un conector o enlace"^]
 
 * Catálogo de automatización
 * Azure NetApp Files
@@ -52,6 +52,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["O
 
 * Actualizaciones de software
 * Sostenibilidad
+* Fábrica de cargas de trabajo
 
 
 

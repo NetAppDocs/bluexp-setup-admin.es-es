@@ -764,7 +764,7 @@ En las siguientes secciones se describe cómo se utilizan los permisos para cada
 
 === Amazon FSX para ONTAP
 
-El conector realiza las siguientes solicitudes de API para administrar Amazon FSx for ONTAP:
+El conector realiza las siguientes solicitudes de API para administrar un sistema de archivos de Amazon FSx for ONTAP:
 
 * ec2:DescribInstances
 * ec2:DescribeInstanceStatus
