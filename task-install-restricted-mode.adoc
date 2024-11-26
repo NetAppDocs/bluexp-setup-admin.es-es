@@ -319,8 +319,10 @@ Configure BlueXP.
 
 Cuando acceda a la consola BlueXP por primera vez, se le solicitará que elija una cuenta para asociar el conector y tendrá que activar el modo restringido.
 
+.Antes de empezar
+La persona que configura el conector BlueXP  debe iniciar sesión en BlueXP  mediante un inicio de sesión que no pertenezca a una organización de BlueXP  que funcione en modo estándar.
 
-NOTE: Si ya tiene una cuenta y desea crear otra, debe utilizar la API de soporte. link:task-create-account.html["Aprenda a crear una cuenta de BlueXP adicional"].
+Si su inicio de sesión de BlueXP  está asociado a una organización que funciona en modo estándar, deberá registrarse a un nuevo inicio de sesión de BlueXP  o a las credenciales del sitio de soporte de NetApp que no pertenecen a ninguna organización. De lo contrario, no verá la opción de habilitar el modo restringido en la pantalla de configuración.
 
 .Pasos
 . Abra un explorador Web desde un host que tenga una conexión con la instancia de Connector e introduzca la siguiente URL:
@@ -331,10 +333,7 @@ https://_ipaddress_[]
 . Después de iniciar sesión, configure BlueXP:
 +
 .. Introduzca un nombre para el conector.
-.. Introduzca un nombre para una nueva cuenta de BlueXP o seleccione una cuenta existente.
-+
-Puede seleccionar una cuenta existente si su inicio de sesión ya está asociado con una cuenta de BlueXP.
-
+.. Escriba un nombre para una nueva cuenta de BlueXP .
 .. Seleccione *¿está ejecutando en un entorno protegido?*
 .. Seleccione *Activar modo restringido en esta cuenta*.
 +
