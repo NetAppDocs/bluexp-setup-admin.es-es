@@ -21,7 +21,6 @@ Debe entender cómo funciona la asociación Connector. link:concept-identity-and
 
 .Acerca de esta tarea
 * Cuando una _Carpeta o un proyecto admin_ ve la página *Conectores*, la página muestra todos los Conectores de la organización. Sin embargo, un miembro con este rol solo puede ver y asociar conectores con las carpetas y proyectos para los que tienen permisos. link:reference-iam-predefined-roles.html["Obtenga más información sobre las acciones que puede completar una _Carpeta o un proyecto admin_"].
-* Debido a un problema conocido, la página Conectores de BlueXP  IAM muestra cualquier conector antiguo que haya eliminado previamente de BlueXP .
 
 
 .Pasos

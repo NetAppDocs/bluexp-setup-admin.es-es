@@ -18,63 +18,65 @@ La gestión de identidades y accesos (IAM) de BlueXP  incluye varios roles pred
 
 
 
-== Administrador de la organización
+== Funciones de la plataforma
 
-Descripción:: Proporciona control total de toda la organización de BlueXP .
-Permisos:: Un miembro que tenga este rol puede completar todas las acciones en BlueXP .
+BlueXP  IAM incluye dos funciones de plataforma: Administrador de organización y Administrador de carpetas o proyectos. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope. La función de administrador de organización tiene permisos en todas las carpetas y proyectos, mientras que la carpeta o el administrador del proyecto sólo tienen permisos en la carpeta o el proyecto al que se han asignado.
+
+La función de administrador de carpeta o proyecto no puede crear conectores.
+
+Permisos::
 
 
+[cols="24,19,19"]
+|===
+| Tarea | Administrador de la organización | Administrador de carpeta o proyecto 
 
 
-== Administrador de carpetas o proyectos
+| Crear conectores | Sí | No 
 
-Descripción:: Proporciona un control total de uno o más proyectos y carpetas.
+
+| Crear, modificar o suprimir entornos de trabajo (añadir o detectar nuevos recursos mediante el lienzo de BlueXP ) | Sí | Sí 
+
+
+| Cree proyectos/carpetas, incluido el cambio de nombre, la eliminación y la edición | Sí | Sí 
+
+
+| Asigne roles y añada usuarios | Sí | Sí 
+
+
+| Asociar recursos y conectores a carpetas y proyectos | Sí | Sí 
+
+
+| Gestione credenciales desde Configuración > Credenciales | Sí | Sí 
+
+
+| Consulta la línea de tiempo de BlueXP  | Sí | Sí 
+
+
+| Utilizar los servicios BlueXP  | Sí | Sí 
+
+
+| Registre BlueXP  para obtener soporte y enviar casos | Sí | Sí 
+|===
+Ejemplo de roles de organización en BlueXP  para una organización multinacional grande:: XYZ Corporation, una empresa multinacional, tiene como objetivo segregar el acceso a recursos de almacenamiento de datos basados en regiones geográficas: Norteamérica, Europa y Asia Pacífico. Quieren que cada región tenga un control exclusivo sobre sus recursos mientras mantienen una supervisión centralizada.
 +
 --
-Tenga en cuenta que si asigna este rol en el nivel de carpeta, el miembro tiene permisos para todos los proyectos asociados a esa carpeta.
+Para lograr esto, una persona que tiene asignada la función de administrador de la organización en BlueXP  de Xyz Corporation crea un entorno de trabajo inicial y, a continuación, crea carpetas separadas en BlueXP  para cada región. La carpeta de cada región contiene proyectos (con recursos asociados) relacionados con esa región. El administrador de la organización asigna a un usuario de BlueXP  en cada región respectiva la función de administrador de carpeta/proyecto.
 
---
-Permisos:: Un miembro que tenga este rol puede realizar las siguientes acciones en BlueXP :
-+
---
-* Gestione todos los entornos de trabajo en los proyectos y carpetas para los que tienen permisos
-* Utilizar todos los servicios BlueXP 
-* Desde BlueXP  IAM, un administrador de una carpeta puede administrar las carpetas, los proyectos y los recursos que son hijos de esa carpeta:
-+
-** Agregue carpetas o proyectos dentro de la carpeta
-** Editar carpetas y proyectos: Sus nombres, recursos asociados y acceso de miembros
-** Suprimir carpetas y proyectos
-** Agregue una cuenta de usuario y asocie un rol a nivel de carpeta o proyecto
-** Asociar un conector a una carpeta o proyecto
-** Agregue un rol a un miembro en el nivel de carpeta o proyecto
-** Ver recursos asociados a carpetas y proyectos
-** Asociar recursos visibles a carpetas o proyectos adicionales
-** Disociar un recurso de una carpeta o proyecto
-
-
-* Desde BlueXP  IAM, un administrador de un proyecto puede administrar ese proyecto y sus recursos asociados de la siguiente manera:
-+
-** Edite el proyecto: Su nombre, recursos asociados y acceso de miembros
-** Agregue una cuenta de usuario y asocie un rol en el nivel de proyecto
-** Asocie un conector a un proyecto, si el miembro tiene permisos de administrador a otros proyectos que tienen otros conectores asociados
-** Agregue un rol a un miembro en el nivel de proyecto
-** Ver los recursos asociados al proyecto
-** Asocie recursos al proyecto, si el miembro tiene permisos de administrador a otros proyectos que tienen otros recursos asociados
-** Disociar un recurso del proyecto
-** Elimine el proyecto
-
-
-* Gestione credenciales desde Configuración > Credenciales
-* Consulta la línea de tiempo de BlueXP 
-* Registre BlueXP  para obtener soporte y enviar casos
-
+Una vez completada la configuración inicial, los administradores regionales con la función de administrador de carpeta o proyecto pueden crear nuevos entornos de trabajo y agregar usuarios dentro de sus regiones. Estos administradores regionales también pueden agregar/eliminar/cambiar el nombre de las carpetas y los proyectos a los que están asignados. El administrador de la organización hereda permisos para cualquier nuevo entorno de trabajo o recursos, manteniendo la visibilidad del uso del almacenamiento en toda la organización.
 
 --
 
 
 
 
-== Administrador de SnapCenter
+== Roles de servicios de datos
+
+Los roles de servicios de datos pueden completar sus tareas en cualquier proyecto o carpeta.
+
+
+
+=== Administrador de SnapCenter
 
 Descripción:: Ofrece la posibilidad de realizar backups de snapshots de clústeres de ONTAP en las instalaciones mediante backup y recuperación de datos de BlueXP  en aplicaciones.
 Permisos:: Un miembro que tenga este rol puede realizar las siguientes acciones en BlueXP :
@@ -90,7 +92,7 @@ Permisos:: Un miembro que tenga este rol puede realizar las siguientes acciones 
 
 
 
-== Visor de clasificación
+=== Visor de clasificación
 
 Descripción:: Proporciona la posibilidad de ver los resultados de la exploración de clasificación de BlueXP .
 Permisos:: Ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos.

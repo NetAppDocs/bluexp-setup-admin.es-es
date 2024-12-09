@@ -296,7 +296,6 @@ Preparar la red para el acceso de los usuarios a la consola BlueXP:: En modo res
 Puntos finales contactados durante la instalación manual:: Al instalar manualmente el conector en su propio host Linux, el instalador del conector requiere acceso a las siguientes direcciones URL durante el proceso de instalación:
 +
 --
-* \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://signin.b2c.NetApp.com (este punto final es la URL de CNAME para \https://mysupport.NetApp.com)
 * \https://cloudmanager.cloud.netapp.com/tenancy
