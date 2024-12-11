@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-overview.html 
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
-summary: NetApp BlueXP proporciona a su organización un plano de control único que le ayuda a crear, proteger y dirigir los datos tanto en sus instalaciones como en sus entornos de cloud. La plataforma SaaS de BlueXP incluye servicios que proporcionan gestión del almacenamiento, movilidad de datos, protección de datos, y análisis y control de los datos. Las capacidades de gestión se proporcionan a través de una consola basada en web y API. 
+summary: NetApp BlueXP proporciona a su organización un plano de control único que le ayuda a crear, proteger y dirigir los datos tanto en sus instalaciones como en sus entornos de cloud. 
 ---
 = Más información sobre BlueXP
 :hardbreaks:
@@ -20,60 +20,84 @@ NetApp BlueXP proporciona a su organización un plano de control único que le a
 
 == Funciones
 
-La plataforma BlueXP proporciona cuatro pilares principales de la gestión de datos: Almacenamiento, movilidad, protección, análisis y control.
+BlueXP  proporciona un control unificado del almacenamiento en tu multinube híbrida y servicios de datos integrados para proteger, asegurar y optimizar los datos.
 
-Reducida:: Detecta, pon en marcha y gestiona el almacenamiento, ya sea en AWS, Azure, Google Cloud o en las instalaciones.
+
+
+=== Control unificado del almacenamiento desde el lienzo de BlueXP 
+
+El lienzo _BlueXP _ le permite detectar, poner en marcha, optimizar y gestionar el almacenamiento en la nube y on-premises. El lienzo proporciona una ubicación única para toda la gestión del almacenamiento.
+
+
+
+==== Almacenamiento local y en cloud admitidos
+
+BlueXP  permite gestionar los siguientes tipos de almacenamiento desde el lienzo de BlueXP :
+
+Soluciones de almacenamiento en cloud::
 +
 --
-* Configure y utilice los servicios cloud de almacenamiento de archivos:
-+
-** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
-** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX para ONTAP de NetApp"^]
-** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service para Google Cloud"^]
-
-
-* Configuración y uso https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] para lograr una gestión de datos eficiente con varios protocolos en todos los clouds.
-* Detectar y gestionar https://bluexp.netapp.com/netapp-on-premises["almacenamiento en las instalaciones"^]:
-+
-** Sistemas E-Series
-** Clústeres ONTAP
-** Sistemas StorageGRID
-
-
+* Amazon FSX para ONTAP de NetApp
+* Azure NetApp Files
+* Cloud Volumes ONTAP
 
 
 --
-Movilidad:: Mueva los datos donde los necesite mediante la sincronización, la copia y la organización en niveles de los datos.
+Almacenamiento de objetos y flash en las instalaciones::
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["Copiar y sincronizar"^]
-* https://bluexp.netapp.com/cloud-tiering["Organización en niveles"^]
+* Sistemas E-Series
+* Clústeres ONTAP
+* Sistemas StorageGRID
 
 
 --
-Protección:: Use mecanismos de protección automatizados para proteger los datos contra la pérdida de datos, interrupciones del servicio no planificadas, ransomware y otras amenazas cibernéticas.
+Almacenamiento de objetos en cloud::
 +
 --
-* https://bluexp.netapp.com/cloud-backup["Backup y recuperación"^]
-* https://bluexp.netapp.com/disaster-recovery["Recuperación tras siniestros"^]
-* https://bluexp.netapp.com/replication["Replicación"^]
-* https://bluexp.netapp.com/ransomware-protection["Protección contra ransomware"^]
-
-
---
-Análisis y control:: Use herramientas para supervisar, asignar y optimizar su almacenamiento de datos y su infraestructura. Obtenga información procesable para optimizar el estado, la resiliencia y la economía del almacenamiento.
-+
---
-* https://bluexp.netapp.com/netapp-cloud-data-sense["Clasificación"^]
-* https://bluexp.netapp.com/digital-advisor["Asesor digital"^]
-* https://bluexp.netapp.com/digital-advisor["Eficiencia económica"^]
-* https://bluexp.netapp.com/digital-advisor["Resiliencia operativa"^]
+* Almacenamiento Amazon S3
+* Almacenamiento de Azure Blob
+* Google Cloud Storage
 
 
 --
 
 
-https://bluexp.netapp.com/["Más información sobre cómo puede utilizar BlueXP  para gestionar datos en su entorno multicloud híbrido"^]
+
+
+==== Gestión del almacenamiento desde entornos de trabajo
+
+En el lienzo de BlueXP , _working environments_ representa el almacenamiento en la nube y en las instalaciones que has detectado o puesto en marcha. Puede seleccionar un entorno de trabajo e integrarlo con los servicios de datos de BlueXP  o introducir el entorno de trabajo para completar acciones de gestión del almacenamiento, como añadir volúmenes.
+
+image:screenshot-canvas.png["Una captura de pantalla del lienzo de BlueXP  que muestra varios entornos de trabajo, uno de los cuales se selecciona y muestra la capacidad de activar los servicios de datos de BlueXP  o seleccionar Entrar entorno de trabajo para gestionar el almacenamiento."]
+
+
+
+=== Servicios integrados para proteger, asegurar y optimizar los datos
+
+BlueXP  incluye una amplia suite de servicios de datos integrados que te ayudan a mantener la seguridad, la integridad y la disponibilidad de los datos en tus entornos de almacenamiento on-premises y en la nube.
+
+Alertas BlueXP:: Vea problemas relacionados con la capacidad, la disponibilidad, el rendimiento, la protección y la seguridad de su entorno de ONTAP.
+Catálogo de automatización de BlueXP:: Use soluciones generadas por scripts para automatizar la implementación e integración de productos y servicios de NetApp.
+Backup y recuperación de BlueXP:: Realice backups y restauraciones de datos en el cloud y en las instalaciones.
+Clasificación de BlueXP:: Consiga que los datos de aplicaciones y los entornos de cloud estén listos para la privacidad.
+Operaciones de cloud BlueXP:: Obtenga visibilidad de sus gastos en tecnología cloud e identifique posibles ahorros.
+Copia y sincronización de BlueXP:: Sincronice datos entre almacenes de datos en las instalaciones y en el cloud.
+Asesor digital de BlueXP:: Use análisis predictivos y soporte proactivo para optimizar su infraestructura de datos.
+Cartera digital de BlueXP:: Administre y supervise sus licencias y suscripciones.
+Recuperación ante desastres de BlueXP:: Protege las cargas de trabajo de VMware on-premises usando VMware Cloud on Amazon FSx para ONTAP como sitio de recuperación ante desastres.
+Eficiencia económica de BlueXP:: Identificar clusters con baja capacidad actual o prevista e implementar niveles de datos o recomendaciones adicionales de capacidad.
+Resiliencia operativa de BlueXP:: Implementar las soluciones de riesgo de configuración automatizadas del firmware y el software para mantener el estado de los clústeres ONTAP.
+Protección contra ransomware de BlueXP:: Detectar anomalías que puedan provocar ataques de ransomware. Proteja y recupere cargas de trabajo.
+Replicación de BlueXP:: Replicar datos entre sistemas de almacenamiento para dar soporte a backup y recuperación ante desastres
+Actualizaciones de software de BlueXP:: Automatice la evaluación, la planificación y la ejecución de las actualizaciones de ONTAP.
+Consola de sostenibilidad de BlueXP:: Analice la sostenibilidad de sus sistemas de almacenamiento.
+Organización en niveles de BlueXP:: Lleve su almacenamiento ONTAP en las instalaciones al cloud.
+Almacenamiento en caché de volúmenes de BlueXP:: Cree un volumen de caché editable para acelerar el acceso a los datos o descargar el tráfico de volúmenes con un acceso frecuente.
+Fábrica de cargas de trabajo BlueXP:: Diseña, configura y opera cargas de trabajo clave con Amazon FSx for NetApp ONTAP.
+
+
+https://www.netapp.com/bluexp/["Obtenga más información sobre BlueXP  y los servicios de datos disponibles"^]
 
 
 
@@ -91,7 +115,7 @@ El precio de BlueXP depende de los servicios que usted planea utilizar. https://
 
 == Cómo funciona BlueXP
 
-BlueXP  incluye una consola basada en web que se proporciona a través de la capa SaaS, un sistema de administración de acceso y recursos, y conectores que administran los entornos de trabajo y habilitan los servicios en la nube de BlueXP .
+BlueXP  incluye una consola basada en web que se proporciona a través de la capa SaaS, un sistema de gestión de acceso y recursos, conectores que administran entornos de trabajo y habilitan los servicios en la nube de BlueXP , y diferentes modos de implementación para satisfacer los requisitos de su negocio.
 
 
 
@@ -129,7 +153,7 @@ link:concept-connectors.html["Más información sobre conectores"].
 
 === Modos de implementación
 
-BlueXP  es compatible con entornos con restricciones de seguridad y conectividad. Puede utilizar _restricted mode_ o _private mode_ para limitar la conectividad saliente a la capa SaaS BlueXP.
+BlueXP  ofrece tres modos de despliegue. _Modo estándar_ aprovecha el software BlueXP  como capa de servicio (SaaS) para proporcionar una funcionalidad completa. Si su entorno tiene restricciones de seguridad y conectividad, _RESTRICTED MODE_ y _PRIVATE MODE_ limitan la conectividad saliente a la capa SaaS de BlueXP .
 
 link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"].
 
