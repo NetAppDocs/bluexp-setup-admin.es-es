@@ -10,11 +10,72 @@ Puntos finales contactados durante la instalación manual:: Al instalar manualme
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* Para obtener imágenes, el instalador necesita acceder a uno de estos dos conjuntos de puntos finales:
++
+** Opción 1 (recomendado):
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** Opción 2:
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
 
 
 --
 
+
+Puntos finales contactados durante la instalación manual:: Cuando instala manualmente Connector en su propio host Linux, el instalador del Connector requiere acceso a varias URL durante el proceso de instalación.
++
+--
+* Los siguientes puntos finales siempre se contactan sin importar dónde instale el conector:
++
+** \https://mysupport.netapp.com
+** \https://signin.b2c.NetApp.com (este punto final es la URL de CNAME para \https://mysupport.NetApp.com)
+** \https://cloudmanager.cloud.netapp.com/tenancy
+** \https://stream.cloudmanager.cloud.netapp.com
+** \https://production-artifacts.cloudmanager.cloud.netapp.com
+
+
+* Si instala Connector en una región de AWS Government, Installer también necesita acceso a estos puntos finales:
++
+** \https://*.blob.core.windows.net
+** \https://cloudmanagerinfraprod.azurecr.io
+
+
+* Si instala Connector en una región de Azure Government, el instalador también necesita acceso a estos puntos finales:
++
+** \https://*.blob.core.windows.net
+** \https://occmclientinfragov.azurecr.us
+
+
+* Si instala Connector en una región comercial o soberana, puede elegir entre dos conjuntos de puntos finales:
++
+** Opción 1 (recomendado):
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** Opción 2:
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
+
+
+--
+
+
+Se recomiendan los puntos finales enumerados en la opción 1 porque son más seguros. Le recomendamos que configure su firewall para permitir los puntos finales enumerados en la opción 1, mientras no permite los puntos finales enumerados en la opción 2. Tenga en cuenta lo siguiente acerca de estos puntos finales: ** Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del conector. No hay compatibilidad con versiones anteriores del conector. ** El conector contacta primero con los puntos finales enumerados en la opción 2. Si no se puede acceder a esos puntos finales, el conector contactará automáticamente con los puntos finales enumerados en la opción 1. ** Los puntos finales de la opción 1 no son compatibles si utiliza el conector con copia de seguridad y recuperación de BlueXP  o protección contra ransomware BlueXP . En este caso, puede desactivar los puntos finales enumerados en la opción 1, mientras permite los puntos finales enumerados en la opción 2.
 
 Es posible que el host intente actualizar paquetes de sistema operativo durante la instalación. El host puede ponerse en contacto con diferentes sitios de duplicación para estos paquetes de SO.

@@ -67,32 +67,48 @@ Tenga en cuenta que los puntos finales que se muestran a continuación son todas
 \https://support.netapp.com
 \https://mysupport.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte técnico de NetApp.
 
-| \https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+| \https://\*.api.BlueXP .NetApp.com \https://api.BlueXP .NetApp.com \https://*.cloudmanager.cloud.NetApp.com \https://cloudmanager.cloud.NetApp.com \https://NetApp-cloud-account.auth0.com
 
 | Para proporcionar servicios y funciones de SaaS en BlueXP.
 
 Tenga en cuenta que el conector se está poniendo en contacto con «cloudmanager.cloud.netapp.com"», pero comenzará a ponerse en contacto con «api.bluexp.netapp.com" en una próxima versión.
 
-| \https://*.blob.core.windows.net
+A| Elija entre dos conjuntos de puntos finales:
 
-\https://cloudmanagerinfraprod.azurecr.io
+* Opción 1 (recomendado) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
 
-Para actualizar el conector y sus componentes Docker.
+* Opción 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
 
-| \https://*.blob.core.windows.net
 
-\https://cloudmanagerinfraprod.azurecr.io
-Este punto final no es necesario en las regiones gubernamentales de Azure.
 
-\https://occmclientinfragov.azurecr.us
-Este extremo solo se requiere en las regiones gubernamentales de Azure.
+| Para obtener imágenes para actualizaciones de Connector.
 
-Para actualizar el conector y sus componentes Docker.
+^1^ Se recomiendan los puntos finales enumerados en la opción 1 porque son más seguros. Le recomendamos que configure su firewall para permitir los puntos finales enumerados en la opción 1, mientras no permite los puntos finales enumerados en la opción 2. Tenga en cuenta lo siguiente acerca de estos puntos finales:
+
++ * Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del conector. No hay compatibilidad con versiones anteriores del conector. * El conector contacta primero con los puntos finales enumerados en la opción 2. Si no se puede acceder a esos puntos finales, el conector contactará automáticamente con los puntos finales enumerados en la opción 1. * Los puntos finales en la opción 1 no son compatibles si utiliza el conector con copia de seguridad y recuperación de BlueXP  o protección contra ransomware BlueXP . En este caso, puede desactivar los puntos finales enumerados en la opción 1, mientras permite los puntos finales enumerados en la opción 2.
+
+| Si el conector está en una región gubernamental de AWS: \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+Para obtener imágenes para actualizaciones de Connector cuando Connector está instalado en una región gubernamental de AWS.
+
+| Si el conector está en una región gubernamental de Azure: \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us
+
+Para obtener imágenes para actualizaciones de Connector cuando Connector está instalado en una región gubernamental de Azure.
+
+A| Si el conector se encuentra en una región comercial o soberana, puede elegir entre dos conjuntos de puntos finales:
+
+* Opción 1 (recomendado) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* Opción 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+Para obtener imágenes para actualizaciones de Connector cuando el Connector está instalado en una región comercial o soberana.

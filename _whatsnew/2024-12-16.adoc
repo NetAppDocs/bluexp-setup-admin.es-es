@@ -1,0 +1,40 @@
+= Nuevos puntos finales seguros para obtener imágenes de Connector
+:allow-uri-read: 
+
+
+
+
+=== Nuevos puntos finales seguros para obtener imágenes de Connector
+
+Al instalar Connector, o cuando se produce una actualización automática, Connector contacta con los repositorios para descargar imágenes para la instalación o actualización. De forma predeterminada, el conector siempre ha contactado con los siguientes puntos finales:
+
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
+
+
+El primer punto final incluye un comodín porque no podemos proporcionar una ubicación definitiva. El proveedor de servicios gestiona el equilibrio de carga del repositorio, lo que significa que las descargas pueden producirse desde diferentes puntos finales.
+
+Para mayor seguridad, Connector ahora puede descargar imágenes de instalación y actualizaciones desde puntos finales dedicados:
+
+* \https://bluexpinfraprod.eastus2.data.azurecr.io
+* \https://bluexpinfraprod.azurecr.io
+
+
+Le recomendamos que comience a utilizar estos nuevos puntos finales eliminando los puntos finales existentes de las reglas de firewall y permitiendo los nuevos puntos finales.
+
+Estos nuevos puntos finales se admiten a partir de la versión 3.9.47 del conector. No hay compatibilidad con versiones anteriores del conector.
+
+Tenga en cuenta lo siguiente:
+
+* Los puntos finales existentes siguen soportados. Si no desea utilizar los nuevos puntos finales, no se requieren cambios.
+* El conector contacta primero con los puntos finales existentes. Si no se puede acceder a esos puntos finales, el conector contactará automáticamente con los nuevos puntos finales.
+* Los nuevos puntos finales no se admiten en los siguientes escenarios:
++
+** Si el conector está instalado en una región gubernamental.
+** Si usa el conector con backup y recuperación de datos de BlueXP  o protección contra ransomware de BlueXP .
+
+
++
+En ambos casos, puede seguir utilizando los puntos finales existentes.
+
+

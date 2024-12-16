@@ -83,15 +83,7 @@ Para obtener información sobre licencias y enviar mensajes de AutoSupport al so
 
 
  a| 
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+\https://\*.api.BlueXP .NetApp.com \https://api.BlueXP .NetApp.com \https://*.cloudmanager.cloud.NetApp.com \https://cloudmanager.cloud.NetApp.com \https://NetApp-cloud-account.auth0.com
  a| 
 Proporcionar funciones y servicios SaaS dentro de BlueXP.
 
@@ -100,13 +92,28 @@ Tenga en cuenta que el conector se está poniendo en contacto con «cloudmanager
 
 
  a| 
-\https://*.blob.core.windows.net
+Elija entre dos conjuntos de puntos finales:
 
-\https://cloudmanagerinfraprod.azurecr.io
+* Opción 1 (recomendado) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* Opción 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
  a| 
-Para actualizar el conector y sus componentes de Docker.
+Para obtener imágenes para actualizaciones de Connector.
 
 |===
+^1^ Se recomiendan los puntos finales enumerados en la opción 1 porque son más seguros. Le recomendamos que configure su firewall para permitir los puntos finales enumerados en la opción 1, mientras no permite los puntos finales enumerados en la opción 2. Tenga en cuenta lo siguiente acerca de estos puntos finales:
+
+* Los puntos finales enumerados en la opción 1 se admiten a partir de la versión 3.9.47 del conector. No hay compatibilidad con versiones anteriores del conector.
+* El conector contacta primero con los puntos finales enumerados en la opción 2. Si no se puede acceder a esos puntos finales, el conector contactará automáticamente con los puntos finales enumerados en la opción 1.
+* Los extremos de la opción 1 no son compatibles si utiliza el conector con backup y recuperación de datos de BlueXP  o la protección contra ransomware de BlueXP . En este caso, puede desactivar los puntos finales enumerados en la opción 1, mientras permite los puntos finales enumerados en la opción 2.
+
+
 --
 
 
