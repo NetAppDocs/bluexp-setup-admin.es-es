@@ -73,7 +73,7 @@ Si tiene varios conectores, puede alternar entre ellos para ver los entornos de 
 .Resultado
 BlueXP  actualiza y muestra los entornos de trabajo asociados al conector seleccionado.
 
-.Enlace relacionado
+.Información relacionada
 link:task-iam-associate-connectors.html["Asociar conectores a carpetas y proyectos"].
 
 

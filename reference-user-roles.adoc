@@ -71,5 +71,5 @@ Si usas BlueXP  en modo estándar, no tendrás una cuenta de BlueXP . En su lu
 
 | Consulte y gestione la consola de soporte | Sí | Sí | No | No 
 |===
-.Enlace relacionado
+.Información relacionada
 link:task-managing-netapp-accounts.html["Administre su cuenta de BlueXP"]

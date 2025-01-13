@@ -14,40 +14,21 @@ summary: Gestione la jerarquía de recursos de su organización asociando recurs
 
 
 [role="lead"]
-Cuando utiliza la administración de acceso e identidad de BlueXP  (IAM) para asociar un miembro a la organización, proporciona permisos a nivel de organización, carpeta o proyecto. Para asegurarse de que esos miembros tienen permisos para acceder a los recursos correctos, deberá gestionar la jerarquía de recursos de su organización asociando recursos a proyectos y carpetas específicos. Un _resource_ es un entorno de trabajo que BlueXP  ya gestiona.
+Cuando utiliza la administración de acceso e identidad de BlueXP  (IAM) para asociar un miembro a la organización, proporciona permisos a nivel de organización, carpeta o proyecto. Para asegurarse de que esos miembros tienen permisos para acceder a los recursos correctos, deberá gestionar la jerarquía de recursos de su organización asociando recursos a proyectos y carpetas específicos. Un _resource_ es un recurso de almacenamiento que BlueXP  ya gestiona o conoce.
 
 
 
 == Ver los recursos de su organización
 
-Para empezar a gestionar la jerarquía de recursos, debe conocer los recursos asociados a la organización.
+Puede ver los recursos detectados y sin detectar asociados a su organización. Los recursos no detectados normalmente son recursos de almacenamiento conocidos a través del asesor digital para el que no se han añadido como entornos de trabajo.
+
+
+NOTE: Los recursos de Amazon FSx for NetApp ONTAP no se muestran en la página de recursos de IAM porque no puedes asociarlos a un rol de IAM. Puede ver estos recursos en su respectivo lienzo o desde cargas de trabajo.
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
-. Selecciona *Recursos*.
-
-
-.Resultado
-Los recursos asociados con su organización se muestran en la tabla *Recursos*.
-
-.El futuro
-Para buscar un recurso específico, puede <<find-resources,busque y filtre el contenido de la tabla>>.
-
-Después de encontrar el recurso que está buscando, puede realizar cualquiera de las siguientes acciones:
-
-* <<view-folders-and-projects,Ver las carpetas y los proyectos asociados al recurso>>
-* <<associate-resource,Asocie el recurso a carpetas y proyectos adicionales>>
-* <<remove-resource,Elimine el recurso de una carpeta o proyecto>>
-
-
-
-
-== Encuentre recursos específicos en su organización
-
-Si tiene un gran número de recursos en su organización, puede utilizar las opciones de búsqueda y filtro para buscar un recurso específico.
-
-.Pasos
-. En la página *Recursos*, selecciona *Búsqueda avanzada y filtrado*.
+. Selecciona *Recursos* para ver la página Recursos.
+. Selecciona *Búsqueda avanzada y filtrado*.
 . Utilice cualquiera de las opciones disponibles para encontrar el recurso que está buscando:
 +
 ** *Buscar por nombre de recurso*: Ingrese una cadena de texto y seleccione *Agregar*.
@@ -59,14 +40,19 @@ Si tiene un gran número de recursos en su organización, puede utilizar las opc
 . Selecciona *Buscar*.
 
 
-.Resultado
-El contenido de la tabla Recursos se actualiza para mostrar los recursos que coinciden con las selecciones de búsqueda y filtro.
+.El futuro
+Después de encontrar el recurso que está buscando, puede realizar cualquiera de las siguientes acciones:
+
+* <<associate-resource,Asocie el recurso a carpetas y proyectos adicionales>>
+* <<view-folders-and-projects,Ver las carpetas y los proyectos asociados al recurso>>
+* <<remove-resource,Elimine el recurso de una carpeta o proyecto>>
+
 
 
 
 == Asociar un recurso a carpetas y proyectos
 
-Si desea que un recurso esté disponible para otra carpeta o proyecto de su organización, deberá crear una asociación entre la carpeta o el proyecto y el recurso.
+Si desea que un recurso esté disponible para una carpeta o un proyecto en su organización, deberá crear una asociación entre la carpeta o el proyecto y el recurso.
 
 .Antes de empezar
 Debe comprender cómo funciona la asociación de recursos. link:concept-identity-and-access-management.html#resources["Obtenga información sobre los recursos, incluido cuándo asociar un recurso a una carpeta"].
@@ -79,13 +65,11 @@ Debe comprender cómo funciona la asociación de recursos. link:concept-identity
 Tenga en cuenta que solo puede seleccionar entre las carpetas y proyectos para los que tiene permisos de administrador.
 
 . Seleccione *Asociar recursos*.
++
+** Si asoció el recurso a proyectos, los miembros que tienen permisos para esos proyectos ahora tienen la capacidad de acceder al recurso en BlueXP .
+** Si ha asociado el recurso a una carpeta, una _Carpeta o un proyecto admin_ puede acceder al recurso desde BlueXP  IAM. link:concept-identity-and-access-management.html#resources["Obtenga información sobre cómo asociar un recurso a una carpeta"].
 
 
-.Resultado
-BlueXP  asocia el recurso a las carpetas y proyectos seleccionados.
-
-* Si asoció el recurso a proyectos, los miembros que tienen permisos para esos proyectos ahora tienen la capacidad de acceder al recurso en BlueXP .
-* Si ha asociado el recurso a una carpeta, una _Carpeta o un proyecto admin_ puede acceder al recurso desde BlueXP  IAM. link:concept-identity-and-access-management.html#resources["Obtenga información sobre cómo asociar un recurso a una carpeta"].
 
 
 .Después de terminar
@@ -102,9 +86,6 @@ Para identificar dónde está disponible un recurso en la jerarquía de la organ
 .Pasos
 . Desde la página *Recursos*, navega a un recurso de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Ver detalles*.
 
-
-.Resultado
-BlueXP  muestra las carpetas y los proyectos asociados al recurso.
 
 El siguiente ejemplo muestra un recurso asociado a un proyecto.
 
@@ -130,9 +111,6 @@ Si desea eliminar un recurso detectado de toda la organización, debe eliminar e
 . Para la carpeta o proyecto para el que desea eliminar el recurso, seleccione image:icon-delete.png["Un icono de una lata de basura"]
 . Confirme que desea eliminar la asociación seleccionando *Eliminar*.
 
-
-.Resultado
-BlueXP  elimina la asociación. Los miembros ya no pueden acceder al recurso desde esa carpeta o proyecto.
 
 
 

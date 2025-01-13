@@ -23,9 +23,9 @@ La gestión de identidades y accesos (IAM) de BlueXP  le permite organizar sus 
 Cuando crea su organización BlueXP , incluye un solo proyecto. Puede crear proyectos adicionales para gestionar los recursos de su organización. Opcionalmente, puede crear carpetas para agrupar proyectos relacionados.
 
 .Acerca de esta tarea
-La profundidad de la jerarquía de su organización puede reducirse a 7 niveles. Como resultado, puede crear carpetas anidadas hasta 6 niveles. La última carpeta anidada puede incluir proyectos en el séptimo nivel de la jerarquía.
+La profundidad de la jerarquía de recursos de su organización puede reducirse a 7 niveles. Como resultado, puede crear carpetas anidadas hasta 6 niveles. La última carpeta anidada puede incluir proyectos en el séptimo nivel de la jerarquía.
 
-La siguiente imagen ilustra la profundidad máxima de la jerarquía de la organización:
+La siguiente imagen ilustra la profundidad máxima de la jerarquía de recursos de la organización:
 
 image:screenshot-iam-max-depth.png["Captura de pantalla que muestra una organización, seis carpetas anidadas y un proyecto en la última carpeta anidada."]
 
@@ -55,97 +55,6 @@ link:reference-iam-predefined-roles.html["Obtenga información sobre los roles p
 . Seleccione *Agregar*.
 
 
-.Resultado
-BlueXP  crea la carpeta o el proyecto y asocia los recursos y miembros especificados.
-
-
-
-== Ver los recursos y miembros asociados a una carpeta o proyecto
-
-Para verificar que los recursos están organizados correctamente y son accesibles para los miembros correctos de su organización, puede ver qué recursos y miembros están asociados a una carpeta o proyecto.
-
-.Pasos
-. Desde la página *Organización*, navega a un proyecto o carpeta de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Editar carpeta* o *Editar proyecto*.
-+
-image:screenshot-iam-edit-project.png["Captura de pantalla de la página Organización que muestra la opción Editar proyecto al seleccionar el menú de acción de un proyecto de la tabla."]
-
-. En la página *Editar*, vea los detalles sobre los recursos asociados y el acceso de los miembros:
-+
-** Selecciona *Recursos* para ver los recursos asociados. En la tabla, la columna *Status* identifica los recursos asociados a la carpeta o proyecto.
-+
-image:screenshot-iam-allocated-resources.png["Captura de pantalla de la página Editar proyecto que muestra los recursos disponibles que puede asociar o desasociar con el proyecto."]
-
-** Seleccione *Acceso* para ver los miembros que tienen acceso a la carpeta o proyecto.
-+
-image:screenshot-iam-member-access.png["Captura de pantalla de la página Editar proyecto que muestra los miembros que tienen acceso al proyecto."]
-
-
-
-
-
-.El futuro
-Si es necesario, puede <<modify-resources,modifique los recursos asociados>> o <<modify-members,modificar el acceso de los miembros>>.
-
-
-
-== Modificar los recursos asociados a una carpeta o proyecto
-
-Puede modificar los recursos asociados a una carpeta o proyecto asociando o desasociando un recurso. Por ejemplo, es posible que desee asociar un recurso a otro proyecto porque ese recurso tiene capacidad que otro equipo puede utilizar.
-
-.Antes de empezar
-link:concept-identity-and-access-management.html#associate-resource-folder["Descubra cuándo puede asociar un recurso a una carpeta"].
-
-.Pasos
-. Desde la página *Organización*, navega a un proyecto o carpeta de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Editar carpeta* o *Editar proyecto*.
-. En la página *Editar*, selecciona *Recursos*.
-+
-En la tabla, la columna *Status* identifica los recursos asociados a la carpeta o proyecto.
-
-. Seleccione los recursos que desea asociar o desasociar.
-. Dependiendo de los recursos que haya seleccionado, seleccione *Asociar con el proyecto* o *Desasociar del proyecto*.
-+
-image:screenshot-iam-associate-resources.png["Captura de pantalla de la página Editar proyecto que muestra la opción Asociar recursos que está disponible después de seleccionar recursos que no están asociados actualmente."]
-
-. Seleccione *Aplicar*
-
-
-.Resultado
-BlueXP  asocia los recursos con la carpeta o el proyecto. Los miembros de la organización que tienen permisos para esa carpeta o proyecto ahora pueden acceder a los recursos asociados.
-
-
-
-== Modificar el acceso de miembro a una carpeta o proyecto
-
-Modifique el acceso de los miembros a una carpeta o proyecto para garantizar que los miembros correctos tengan acceso a los recursos asociados a la carpeta o el proyecto.
-
-.Pasos
-. Desde la página *Organización*, navega a un proyecto o carpeta de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Editar carpeta* o *Editar proyecto*.
-. En la página *Editar*, selecciona *Acceso*.
-+
-BlueXP  muestra la lista de miembros que tienen acceso a la carpeta o al proyecto.
-
-. Modificar acceso de miembros:
-+
-** *Agregar un miembro*: Seleccione el miembro que desea agregar a la carpeta o proyecto y asígnele un rol.
-** *Cambiar el rol de un miembro*: Para cualquier miembro que tenga un rol distinto del Administrador de la Organización, seleccione su rol existente y luego elija un nuevo rol.
-+
-Si se ha proporcionado un rol en un nivel superior de la jerarquía (en el nivel de carpeta u organización), debe considerar si desea cambiar el rol en el nivel inferior o superior. Por ejemplo, si asignó la función _Folder o project admin_ en el nivel de carpeta, cambiar la función en el nivel de proyecto a permisos de nivel inferior no alterará los permisos para el miembro. Dado que los roles se heredan de la jerarquía de la organización, el miembro aún tendría permisos de administrador en el nivel de proyecto.
-
-+
-link:concept-identity-and-access-management.html#role-inheritance["Obtenga más información sobre la herencia de roles"].
-
-** * Eliminar acceso de miembro*: Para los miembros que tienen un rol definido en la carpeta o proyecto para el que está viendo, puede eliminar su acceso.
-+
-Si se ha proporcionado acceso de miembro en un nivel superior de la jerarquía (en el nivel de carpeta u organización), no se puede eliminar el acceso de miembro al visualizar esta carpeta o proyecto. Debe cambiar a esa parte de la jerarquía. Como alternativa, puede link:task-iam-manage-members-permissions.html#manage-permissions["Gestione los permisos desde la página Miembros"].
-
-
-
-. Seleccione *aplicar*.
-
-
-.Resultado
-BlueXP  actualiza los miembros que tienen acceso a la carpeta o al proyecto.
-
 
 
 == Obtenga el ID de un proyecto
@@ -174,9 +83,6 @@ Si es necesario, puede cambiar el nombre de sus carpetas y proyectos.
 . En la página *Editar*, introduce un nuevo nombre y selecciona *Aplicar*.
 
 
-.Resultado
-BlueXP  actualiza el nombre de la carpeta o del proyecto.
-
 
 
 == Eliminar una carpeta o un proyecto
@@ -193,8 +99,82 @@ Puede eliminar las carpetas y los proyectos que ya no necesite.
 . Confirme que desea eliminar la carpeta o el proyecto.
 
 
-.Resultado
-BlueXP  elimina la carpeta o el proyecto. Esa carpeta o proyecto ya no está disponible para los miembros de la organización.
+
+
+== Ver los recursos asociados a una carpeta o proyecto
+
+Para verificar que los recursos están organizados correctamente y son accesibles para los miembros correctos de su organización, puede ver qué recursos y miembros están asociados a una carpeta o proyecto.
+
+.Pasos
+. Desde la página *Organización*, navega a un proyecto o carpeta de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Editar carpeta* o *Editar proyecto*.
++
+image:screenshot-iam-edit-project.png["Captura de pantalla de la página Organización que muestra la opción Editar proyecto al seleccionar el menú de acción de un proyecto de la tabla."]
+
+. En la página *Editar*, puede ver detalles sobre la carpeta o proyecto seleccionado ampliando las secciones *Recursos* o *Acceso*.
++
+** Selecciona *Recursos* para ver los recursos asociados. En la tabla, la columna *Status* identifica los recursos asociados a la carpeta o proyecto.
++
+image:screenshot-iam-allocated-resources.png["Captura de pantalla de la página Editar proyecto que muestra los recursos disponibles que puede asociar o desasociar con el proyecto."]
+
+
+
+
+
+
+
+== Modificar los recursos asociados a una carpeta o proyecto
+
+Puede modificar los recursos asociados a una carpeta o proyecto asociando o desasociando un recurso. Por ejemplo, es posible que desee asociar un recurso a otro proyecto porque ese recurso tiene capacidad que otro equipo puede utilizar. Una vez que haya asociado un recurso a una carpeta o proyecto, los miembros de la organización que tengan permisos para esa carpeta o proyecto podrán acceder al recurso asociado.
+
+.Antes de empezar
+link:concept-identity-and-access-management.html#associate-resource-folder["Descubra cuándo puede asociar un recurso a una carpeta"].
+
+.Pasos
+. Desde la página *Organización*, navega a un proyecto o carpeta de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Editar carpeta* o *Editar proyecto*.
+. En la página *Editar*, selecciona *Recursos*.
++
+En la tabla, la columna *Status* identifica los recursos asociados a la carpeta o proyecto.
+
+. Seleccione los recursos que desea asociar o desasociar.
+. Dependiendo de los recursos que haya seleccionado, seleccione *Asociar con el proyecto* o *Desasociar del proyecto*.
++
+image:screenshot-iam-associate-resources.png["Captura de pantalla de la página Editar proyecto que muestra la opción Asociar recursos que está disponible después de seleccionar recursos que no están asociados actualmente."]
+
+. Seleccione *Aplicar*
+
+
+
+
+== Ver miembros asociados a una carpeta o proyecto
+
+* Seleccione *Acceso* para ver los miembros que tienen acceso a la carpeta o proyecto.
++
+image:screenshot-iam-member-access.png["Captura de pantalla de la página Editar proyecto que muestra los miembros que tienen acceso al proyecto."]
+
+
+
+
+
+== Modificar el acceso de miembro a una carpeta o proyecto
+
+Modifique el acceso de los miembros a una carpeta o proyecto para garantizar que los miembros correctos tengan acceso a los recursos asociados a la carpeta o el proyecto.
+
+Si se ha proporcionado acceso de miembro en un nivel superior de la jerarquía (en el nivel de carpeta u organización), no puede eliminar ni cambiar el acceso de miembro al ver la carpeta o el proyecto de nivel inferior. Debe cambiar a esa parte de la jerarquía y actualizar los permisos del miembro allí. Como alternativa, puede link:task-iam-manage-members-permissions.html#manage-permissions["Gestione los permisos desde la página Miembros"].
+
+link:concept-identity-and-access-management.html#role-inheritance["Obtenga más información sobre la herencia de roles"].
+
+.Pasos
+. Desde la página *Organización*, navega a un proyecto o carpeta de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Editar carpeta* o *Editar proyecto*.
+. En la página *Editar*, selecciona *Acceso* para ver la lista de miembros que tienen acceso a la carpeta o proyecto seleccionado.
+. Modificar acceso de miembros:
++
+** *Agregar un miembro*: Seleccione el miembro que desea agregar a la carpeta o proyecto y asígnele un rol.
+** *Cambiar el rol de un miembro*: Para cualquier miembro que tenga un rol distinto del Administrador de la Organización, seleccione su rol existente y luego elija un nuevo rol.
+** * Eliminar acceso de miembro*: Para los miembros que tienen un rol definido en la carpeta o proyecto para el que está viendo, puede eliminar su acceso.
+
+
+. Seleccione *aplicar*.
+
 
 
 

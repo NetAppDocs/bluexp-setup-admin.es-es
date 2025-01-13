@@ -136,7 +136,7 @@ Si ya tiene un conector existente que funcione en RHEL 7 o CentOS 7, no admitimo
 
 
 
-== Enlaces relacionados
+== Información relacionada
 
 
 

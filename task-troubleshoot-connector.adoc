@@ -16,7 +16,7 @@ summary: Para solucionar problemas con el conector, puede trabajar con el soport
 [role="lead"]
 Para solucionar los problemas relacionados con el conector, puede trabajar con el soporte de NetApp que puede solicitar el ID del sistema, la versión del conector o los mensajes de AutoSupport más recientes. También puede ver la base de conocimientos de NetApp para solucionar los problemas por sí mismo.
 
-.Enlace relacionado
+.Información relacionada
 link:task-get-help.html["Obtener ayuda del servicio de soporte de NetApp"].
 
 
