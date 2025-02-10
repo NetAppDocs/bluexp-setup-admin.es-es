@@ -464,8 +464,6 @@
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">Sistemas operativos compatibles</block>
   <block id="1aa77ca522dde8d598ae9c2372a7494b" category="paragraph">El conector es compatible con las versiones en inglés de estos sistemas operativos.</block>
   <block id="1b21b0d71706897b69f108572c444d40" category="list-text">Hipervisor</block>
-  <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
-  <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
   <block id="38522fbf43585538a7a55ea25460e779" category="list-text">Tipo de instancia de AWS EC2</block>
   <block id="6cd56a4cc4ddbbfd2bc9d57de5d788aa" category="list-text">Par de claves</block>
   <block id="0a772cdeecb207bdf7ffd5850a8d59bd" category="list-text">Espacio en disco en /opt</block>
@@ -1051,7 +1049,6 @@
   <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">Asocie una suscripción a Marketplace con credenciales de Google Cloud</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">Captura de pantalla del menú de acción para un conjunto de credenciales existentes.</block>
-  <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fff6f5125be05a94543d2e88dbd30b27" category="inline-image-macro">Captura de pantalla de un proyecto y suscripción de Google Cloud seleccionados para las credenciales de Google Cloud.</block>
   <block id="cab980518d03aa36afc924b709828a6e" category="paragraph"><block ref="cab980518d03aa36afc924b709828a6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a0df3203d8f6522d2b39b5f4c38db03" category="admonition">Antes de completar los siguientes pasos, asegúrese de que tiene privilegios de administrador de facturación en su cuenta de Google Cloud así como un inicio de sesión de BlueXP.</block>
@@ -2488,7 +2485,6 @@ Tenga en cuenta que la página se actualiza entre probar la conexión y habilita
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">Para obtener más información, consulte<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Aprenda a crear un conector</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">Debe crear un conector para poder cambiar la configuración de BlueXP. <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
-  <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eceb74088d706d5484df6b70296f87ad" category="paragraph">Edite sus credenciales de AWS en BlueXP cambiando el tipo de cuenta (las claves de AWS o asumen la función), editando el nombre o actualizando las credenciales (las claves o el rol ARN).</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">No se pueden editar las credenciales de un perfil de instancia asociado a una instancia de conector.</block>
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">No se pueden eliminar las credenciales de un perfil de instancia asociado a una instancia de conector.</block>
@@ -2655,10 +2651,7 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="13348442cc6a27032d2b4aa28b75a5d3" category="cell">Búsqueda</block>
   <block id="285c4c5f9756d9707fc1afed457a8b43" category="summary">El grupo de seguridad de Azure para Connector requiere reglas tanto entrantes como salientes. BlueXP crea automáticamente este grupo de seguridad cuando creas un conector desde BlueXP. Debe configurar este grupo de seguridad para todas las demás opciones de instalación.</block>
   <block id="60a24477cd4bc1d96c88b21629d8cd7c" category="summary">Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora o a través de un contrato anual. Si adquirió una licencia de NetApp, deberá suscribirse a la oferta de mercado. Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede la capacidad de su licencia o si el plazo de la licencia expira.</block>
-  <block id="7280e590fc25414ce879506ed16e2a62" category="doc">Suscribirse a BlueXP (modo estándar)</block>
   <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora (PAYGO) o a través de un contrato anual. Si adquirió una licencia de NetApp (BYOL), también deberá suscribirse a la oferta de mercado. Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede la capacidad de su licencia o si el plazo de la licencia expira.</block>
-  <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">Una suscripción al mercado permite cargar los siguientes servicios de BlueXP:</block>
-  <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">La suscripción a BlueXP implica asociar una suscripción al mercado con las credenciales de la nube asociadas con un conector. Si ha seguido el flujo de trabajo para empezar con el modo estándar, ya debe tener un conector. Para obtener más información, consulte la <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>.</block>
   <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una suscripción al mercado con credenciales asociadas a BlueXP.</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">Gestione las licencias basadas en la capacidad de su propia licencia para Cloud Volumes ONTAP</block>
   <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
@@ -2667,8 +2660,6 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="e3fd5027f5754ca33b0f205f3239ffbf" category="list-text"><block ref="e3fd5027f5754ca33b0f205f3239ffbf" category="inline-link-rx"></block></block>
   <block id="2bd1bfde12dacc81686c7c76ab937dbc" category="list-text"><block ref="2bd1bfde12dacc81686c7c76ab937dbc" category="inline-link-rx"></block></block>
   <block id="1ec77dbe2fe8675dd025e595535feb02" category="list-text"><block ref="1ec77dbe2fe8675dd025e595535feb02" category="inline-link-rx"></block></block>
-  <block id="033749020c175fc0ec8206a7654a4cec" category="doc">Suscribirse a BlueXP (modo restringido)</block>
-  <block id="ba66b75d479f2289bcf99d989de6e0b1" category="paragraph">Una suscripción al mercado permite cargar los siguientes servicios de BlueXP con modo restringido:</block>
   <block id="d639d0a55c1a57a909ac7ffab5f941c6" category="paragraph">La suscripción a BlueXP implica asociar una suscripción al mercado con las credenciales de la nube asociadas con un conector. Si ha seguido el flujo de trabajo de inicio con modo restringido, ya debe tener un conector. Para obtener más información, consulte la <block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block>.</block>
   <block id="9816c573c33f4a6c99fc578d678ba65a" category="summary">Las reglas de firewall de Google Cloud para el conector requieren reglas tanto entrantes como salientes. BlueXP crea automáticamente este grupo de seguridad cuando creas un conector desde BlueXP. Debe configurar este grupo de seguridad para todas las demás opciones de instalación.</block>
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">Las reglas de firewall predefinidas para el conector abren todo el tráfico saliente. Si eso es aceptable, siga las reglas básicas de la salida. Si necesita más reglas rígidas, utilice las reglas avanzadas de salida.</block>
@@ -2839,13 +2830,10 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="05498c836fbd4349a752efbb54e8949c" category="list-text">Seleccione *certificados y secretos &gt; Nuevo secreto de cliente*.</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">Seleccione *Agregar*.</block>
   <block id="c6233dcd0500982eabc73e85f42efc41" category="list-text">Seleccione *Agregar Credenciales* y siga los pasos del asistente.</block>
-  <block id="6372aab032a410c40af497b1755aa8b2" category="list-text">Seleccione el menú de acción para un conjunto de credenciales y luego seleccione *Suscripción asociada*.</block>
-  <block id="5aa5ca3c4ae1419b335323e6ee592b93" category="list-text">Para asociar las credenciales a una suscripción existente, seleccione la suscripción en la lista desplegable y seleccione *asociado*.</block>
   <block id="875d095c260fa8c96e0e69a41dd336b7" category="list-text">Para asociar las credenciales a una nueva suscripción, seleccione *Agregar suscripción &gt; continuar* y siga los pasos de Azure Marketplace:</block>
   <block id="12975d5f412a47bef9db3c7a4d365814" category="list-text">Seleccione *Suscribirse*.</block>
   <block id="9dc9a5b2f23fe90a0fd71125f3034dfd" category="list-text">Rellene el formulario y seleccione *Suscribirse*.</block>
   <block id="3221538307211e131f96e1a83b1a5235" category="list-text">Una vez completado el proceso de suscripción, seleccione *Configurar cuenta ahora*.</block>
-  <block id="497002c594b6f249087bf6b22381ee4d" category="list-text">Para asociar las credenciales a una suscripción existente, seleccione un proyecto de Google Cloud y una suscripción en la lista desplegable y, a continuación, seleccione *asociado*.</block>
   <block id="ba192d211ab8fe6aceb98f59e685d1bb" category="list-text">Si aún no tiene una suscripción, seleccione *Agregar suscripción &gt; continuar* y siga los pasos de Google Cloud Marketplace.</block>
   <block id="375b5c037ddde62b74d4b30381271828" category="list-text">En el cuadro de diálogo emergente, seleccione *Registro con NetApp, Inc.*</block>
   <block id="dcb058618377cff08193ee6990096f07" category="list-text">Selecciona *Control de acceso (IAM)* &gt; *Añadir* &gt; *Añadir asignación de rol*.</block>
@@ -3601,8 +3589,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="06e657c37e762cbeb9edc676ff32181d" category="doc">Cambios en los sistemas operativos Linux admitidos</block>
   <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">Compatibilidad con RHEL 8 y 9</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="list-text">Limitaciones</block>
-  <block id="12cde487ed6dcd882cede6dc73a2a96f" category="inline-link">Limitaciones conocidas para el backup y la recuperación de BlueXP</block>
-  <block id="7dffd01ec33485e74fcb637e0b8fe15a" category="list-text">Cuando Connector está instalado en un host RHEL 8 o 9, el backup y la recuperación de BlueXP tienen limitaciones relacionadas con la restauración de archivos únicos y el análisis de ransomware. Para obtener más información, consulte<block ref="a84971be17ca73ce2bed9722547a4b2a" category="inline-link-rx"></block></block>
   <block id="b6417b62aacc6d16c1ae7a79d851d413" category="list-text">La clasificación BlueXP es compatible si instala el Connector en un host RHEL 8 o 9 que reside en las instalaciones. No se admite si el host RHEL 8 o 9 reside en AWS, Azure o Google Cloud.</block>
   <block id="b71010c70a84a098ff97c54119ce9797" category="list-text">Podman es necesario como herramienta de orquestación de contenedores al instalar el conector en un host RHEL 8 o 9. Docker Engine no es compatible con RHEL 8 y 9.</block>
   <block id="6949300ff5b5cf6bb192114a06c923bb" category="list-text">Modo de despliegue</block>
@@ -3803,8 +3789,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">18 de julio de 2024</block>
   <block id="4736cb006ef02fa673f618379e2106bd" category="cell">1 de julio de 2024 (versión 1,33)</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">10 de junio de 2024</block>
-  <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 núcleos o 8 vCPU</block>
-  <block id="911ede8df5585598c294830dafe276fa" category="list-text">32GB</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos t3.2xlarge.</block>
   <block id="021caa7094e7de94c50c2e35da292351" category="list-text">Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos Standard_D8s_v3.</block>
   <block id="bff17a7a57b9d5cdc97a4f823a72230f" category="list-text">Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos n2-standard-8.</block>
@@ -4135,10 +4119,8 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="d2d6f4fd74e2ac2b843a4f202e5a89b6" category="doc">Active el inicio de sesión único mediante la federación de identidades con BlueXP </block>
   <block id="194f68541f58f6c331eacf4db74f4f78" category="summary">La gestión de identidades y accesos (IAM) de BlueXP  le permite controlar el acceso a los recursos de su organización.</block>
   <block id="d135d1b6a10879ca27887c632f4576d7" category="doc">Obtenga más información sobre la gestión de identidades y accesos de BlueXP </block>
-  <block id="4c68d7a9d2f72cab48af82d15bdd22b9" category="paragraph">La gestión de identidades y accesos (IAM) de BlueXP  le permite organizar y controlar el acceso a sus recursos de NetApp. Puede organizar sus recursos de acuerdo con la jerarquía de su organización. Por ejemplo, puede organizar recursos por ubicación geográfica, sitio o unidad de negocio. A continuación, puede asignar permisos a miembros en partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.</block>
   <block id="81ac1402c03d0a47ef27fe0243ef45dc" category="inline-link-macro">Obtenga más información sobre la introducción de BlueXP  IAM</block>
   <block id="5fdbce3d2319aac7495f83deb2cfb4ec" category="paragraph">IAM de BlueXP  reemplaza y mejora la funcionalidad anterior proporcionada por las cuentas de BlueXP . <block ref="05afd8790c123b20ba2a3355efdad456" category="inline-link-macro-rx"></block>.</block>
-  <block id="35a6ef4b2983f2c48bb7abdcd826e67f" category="paragraph">BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar. Si utiliza BlueXP  en modo restringido o en modo privado, utilice una _account_ de BlueXP  para administrar usuarios y recursos.</block>
   <block id="03dc9106de5affc832d68c188393146d" category="section-title">Cómo funciona BlueXP  IAM</block>
   <block id="c070b3ed0873722a725505fd8f648c60" category="paragraph">BlueXP  IAM le permite otorgar acceso a los recursos de su organización mediante la definición de los miembros que tienen permisos para partes específicas de la jerarquía de la organización. Por ejemplo, un miembro puede tener permisos de administrador de proyecto para un proyecto que tiene cinco recursos asociados.</block>
   <block id="7d5499ec968e6c97c7264ba95116b2d6" category="paragraph">Al utilizar BlueXP  IAM, gestionará los siguientes componentes:</block>
@@ -4254,8 +4236,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="352b89440d5beff7b1d3a05b715d29f3" category="paragraph">BlueXP  ofrece tres modos de despliegue. Cada modo difiere en términos de requisitos de conectividad saliente, ubicación de implementación, proceso de instalación, método de autenticación, servicios de datos y almacenamiento disponibles y métodos de carga.</block>
   <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="cell">Gestión de identidades y acceso BlueXP </block>
   <block id="f9fe38e333c2ca53b0f55bf1d77ff415" category="summary">Una cuenta de BlueXP  permite gestionar usuarios y organizar recursos en espacios de trabajo aislados cuando se utiliza el modo restringido o el modo privado.</block>
-  <block id="da7e730676141f6182a7c02360c7231a" category="paragraph">Cuando utilice BlueXP  en modo restringido o en modo privado, utilizará una cuenta _BlueXP _ para administrar usuarios y organizar recursos en _workspaces_ aislados. Por ejemplo, un grupo de usuarios puede desplegar y gestionar entornos de trabajo de Cloud Volumes ONTAP en un espacio de trabajo que no es visible para los usuarios que gestionan entornos de trabajo en un espacio de trabajo diferente.</block>
-  <block id="4d5a6c38dc6ac6534bdcc6ab92e89432" category="paragraph">Si usas BlueXP  en modo estándar, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización _BlueXP _ que gestionará mediante la administración de identidades y accesos (IAM) de BlueXP .</block>
   <block id="a5a81005322e1187e396e2f1252dca71" category="inline-link-macro">Obtenga más información sobre BlueXP  IAM</block>
   <block id="0a3f88a939958973fc19097a4507c320" category="list-text"><block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block></block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="inline-link">Amazon FSX para ONTAP de NetApp</block>
@@ -4273,7 +4253,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="cdf60a7d13d1d74e115661d87ae97a3f" category="list-text">Sistema operativo Ubuntu 24,04 LTS</block>
   <block id="b6f945763d62ac8e8f24fb52111049ee" category="summary">La gestión de identidades y accesos de BlueXP  incluye varios roles predefinidos que puede asignar a los miembros de la organización.</block>
   <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">Roles y permisos predefinidos de IAM de BlueXP </block>
-  <block id="58f6c76de5e396f2cb8175b3a9628439" category="paragraph">La gestión de identidades y accesos (IAM) de BlueXP  incluye varios roles predefinidos que se pueden asignar a los miembros de la organización en diferentes niveles de la jerarquía de recursos. Antes de asignar estos roles, debe comprender los permisos que incluye cada rol.</block>
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="section-title">Administrador de la organización</block>
   <block id="b35f7cd4ff8cf3b50f8a254ff8eaab4d" category="list-text">Un miembro que tenga este rol puede realizar las siguientes acciones en BlueXP :</block>
   <block id="b7468effacd77ea7140c661bd2dce11a" category="list-text">Gestione todos los entornos de trabajo en los proyectos y carpetas para los que tienen permisos</block>
@@ -4291,7 +4270,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="ef8eb5bec0bebce3b4cac1797fe12831" category="list-text"><block ref="ef8eb5bec0bebce3b4cac1797fe12831" category="inline-link-macro-rx"></block></block>
   <block id="24fff469b53b3c0caad8c3049aada3bc" category="doc">Prepare las redes para la consola de BlueXP </block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">Información relacionada</block>
-  <block id="d7d13641730495fed0b36f7a2cfb5657" category="paragraph">Cuando utilice BlueXP  en modo restringido o en modo privado, utilizará una cuenta _BlueXP _ para administrar usuarios. Puede proporcionar permisos específicos a los usuarios de su cuenta seleccionando entre las siguientes funciones: Administrador de cuenta, Administrador de espacio de trabajo, Visor de cumplimiento y Administrador de SnapCenter</block>
   <block id="1e3e0a42c3e9d5acf6234aecce4a2177" category="cell">Utilizar los servicios BlueXP </block>
   <block id="e351b985910352ae6ebe3e03c618e2b9" category="paragraph"><block ref="e351b985910352ae6ebe3e03c618e2b9" category="inline-link-macro-rx"></block></block>
   <block id="32bf39c0f4f8e0ff3b8343a1c55eccc0" category="inline-link">Documentos de la cartera digital</block>
@@ -4313,8 +4291,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="acc5d74b9730b17cf679fd826310c607" category="paragraph">Estas credenciales están asociadas con el número de serie de su cuenta de BlueXP  específico. Los usuarios que pertenecen a la organización o cuenta de BlueXP  pueden acceder a estas credenciales desde *Soporte &gt; Administración de NSS*.</block>
   <block id="607d5f9332bf0fe8fef9f43fcf68c22e" category="paragraph">La consola de soporte permite agregar y gestionar sus cuentas del sitio de soporte de NetApp para usarlas con BlueXP  en el nivel de cuenta o de la organización de BlueXP .</block>
   <block id="72c38f83a9b4d27b609d1241238f7402" category="summary">Al configurar BlueXP  en modo restringido o privado, se le pedirá que cree una cuenta. Si necesita varias cuentas, debe crearlas mediante la API de soporte.</block>
-  <block id="6c51e0305a581ec236781db2baf30bac" category="paragraph">Al configurar BlueXP  en modo restringido o en modo privado, se le pedirá que cree una cuenta _BlueXP _, que le permite administrar usuarios y organizar recursos. Esta cuenta puede ser todo lo que necesite, pero si su negocio requiere varias cuentas, tendrá que crear cuentas adicionales con la API de tenancy.</block>
-  <block id="770867b0b0a2458eaea7ebb70fd87cd2" category="paragraph">Si usas BlueXP  en modo estándar, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización que administre mediante la administración de acceso e identidad (IAM) de BlueXP . <block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block>.</block>
   <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">La lista de entornos de trabajo está dentro del ámbito de la organización (o cuenta) de BlueXP , el proyecto (o el espacio de trabajo) y el conector que ha seleccionado en el banner superior del servicio.</block>
   <block id="aeaa07e62e0681df3c00b18be44e1799" category="summary">Si los miembros de su organización necesitan usar un conector en otro proyecto, debe crear una asociación desde BlueXP  IAM.</block>
   <block id="9c1561cceda808c78453a453f4175e14" category="doc">Asociar un conector BlueXP  a otras carpetas y proyectos</block>
@@ -4415,7 +4391,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">Seleccione *Aplicar*</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">Modificar el acceso de miembro a una carpeta o proyecto</block>
   <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">Modifique el acceso de los miembros a una carpeta o proyecto para garantizar que los miembros correctos tengan acceso a los recursos asociados a la carpeta o el proyecto.</block>
-  <block id="91686a8345015e73c2baa91ffbe5ecd6" category="list-text">En la página *Editar*, selecciona *Acceso*.</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">Modificar acceso de miembros:</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*Agregar un miembro*: Seleccione el miembro que desea agregar a la carpeta o proyecto y asígnele un rol.</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*Cambiar el rol de un miembro*: Para cualquier miembro que tenga un rol distinto del Administrador de la Organización, seleccione su rol existente y luego elija un nuevo rol.</block>
@@ -4454,24 +4429,19 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="ef40c18024e43a3effd7c56a4ee5e3b8" category="list-text">*Seleccione una organización, carpeta o proyecto*: Elija el nivel de su jerarquía de recursos para el que el miembro debe tener permisos.</block>
   <block id="6a4cc2830754c534e4d4ede0d53dd765" category="list-text">Solo puede seleccionar entre las carpetas y proyectos para los que tiene permisos de administrador.</block>
   <block id="78693d86cfd1ee5b776ba655fad718c2" category="list-text">Si selecciona la organización o una carpeta, el miembro tendrá permisos para todo lo que reside en la organización o carpeta.</block>
-  <block id="cb604814075da4e4c030eb2c875d037c" category="list-text">*Seleccione un rol*: Elija un rol que le proporcione al miembro permisos para los recursos asociados a la organización, carpeta o proyecto que seleccionó.</block>
   <block id="edd875bb1109a9f8286024a3b4794e94" category="list-text">Si seleccionó la organización, puede elegir entre cualquier rol que no sea *Carpeta o administrador de proyectos*.</block>
   <block id="4361a448252604e85e36e94b87d2292d" category="list-text">Si seleccionó una carpeta o un proyecto, puede elegir entre cualquier función que no sea *Administrador de la organización*.</block>
-  <block id="6bf9e2157bec6406efede412c9a7f3d8" category="list-text">*Agregar rol*: Si desea proporcionar acceso a carpetas o proyectos adicionales dentro de su organización, seleccione *Agregar rol*, especifique otra carpeta o proyecto, y luego elija un rol.</block>
-  <block id="e7cafc47c0f061eadce634a20633d476" category="paragraph">BlueXP  agrega el usuario a la organización.</block>
   <block id="2c83e58d75bb3a8e196e882a13fad2b6" category="paragraph">El usuario debe recibir un correo electrónico de NetApp BlueXP . El correo electrónico incluye información que el miembro puede utilizar para acceder a BlueXP .</block>
   <block id="18ceb42f6a360de22895a255078e9829" category="open-title">Cuenta de servicio</block>
   <block id="3cf18c3e40a1206110812c369cc39dee" category="list-text">*Tipo de entidad*: Selecciona *Cuenta de servicio*.</block>
   <block id="79cb42be7b748ee1bfa8b8bda6dcca1e" category="list-text">*Nombre de la cuenta de servicio*: Introduzca un nombre para la cuenta de servicio.</block>
   <block id="f67f980ba471dba7c5f95c824dd43bf6" category="list-text">Descargue o copie el ID de cliente y el secreto de cliente.</block>
   <block id="8294c35652607973fb1c045f68ed7198" category="paragraph">El secreto de cliente sólo es visible una vez y BlueXP no lo almacena en ninguna parte. Copie o descargue el secreto y guárdelo de forma segura. Tenga en cuenta que puede volver a crear el ID de cliente y el secreto de cliente más tarde según sea necesario.</block>
-  <block id="7dd9ac3b82f77a633f44a54628281caa" category="paragraph">BlueXP  agrega la cuenta de servicio a su organización.</block>
   <block id="043819e1bae944c0c66cfa39d92d377a" category="section-title">Ver miembros de la organización</block>
   <block id="85f7f0a38e4d8907b849af9be7f0523b" category="paragraph">Puede ver una lista de todos los miembros de su organización de BlueXP . Para comprender qué recursos y permisos están disponibles para un miembro, puede ver los roles asignados al miembro en diferentes niveles de la jerarquía de recursos de la organización.</block>
   <block id="4bd98620ebfd813b73be1bb04c31e63a" category="paragraph">La página *Miembros* muestra detalles sobre dos tipos de miembros: Cuentas de usuario y cuentas de servicio.</block>
   <block id="ac926c3351f3a5bf1296ce5e7341b403" category="paragraph">Los miembros de tu organización aparecen en la tabla *Miembros*.</block>
   <block id="9c537de44875b062f96c3c19b5d405f8" category="list-text">Desde la página *Miembros*, navega a un miembro de la tabla, selecciona <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> y luego selecciona *Ver detalles*.</block>
-  <block id="dfd8d68ee86525e48890a53eb4a7ef69" category="paragraph">BlueXP  muestra detalles sobre el miembro, que incluye las carpetas y proyectos para los que el miembro tiene permisos en toda la jerarquía de recursos de la organización.</block>
   <block id="6f3b2d366fd74358540895c5d487f7fc" category="paragraph">He aquí un ejemplo de un miembro al que se le ha asignado el rol _Folder o project admin_ para una carpeta, que proporciona permisos a los tres proyectos de la carpeta.</block>
   <block id="a6102229f11a975b96c232bac6fe4518" category="inline-image-macro">Captura de pantalla de la página de detalles para un miembro que tiene permisos para un proyecto y una carpeta.</block>
   <block id="77029620a91c1437c153c854b16400d8" category="paragraph"><block ref="77029620a91c1437c153c854b16400d8" category="inline-image-macro-rx" type="image"></block></block>
@@ -4480,58 +4450,26 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="3d5d541246a5be6ff781d877024461b5" category="paragraph"><block ref="3d5d541246a5be6ff781d877024461b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c2a2a4211749f24853726e3f3a3f7a50" category="inline-link-macro">Ver todos los miembros asociados a una carpeta o proyecto específico</block>
   <block id="1b6d4c30361c139d898bdf90eabbe5db" category="paragraph"><block ref="f0a4010d1241fe1a26982be23d0ea714" category="inline-link-macro-rx"></block>.</block>
-  <block id="776acd2cbd38043ee8a559500a3c08b8" category="section-title">Gestionar los permisos de un miembro</block>
-  <block id="33c733a7c79ecaf94ff72d68d1380f99" category="paragraph">Un rol define los permisos asignados a un miembro en el nivel de organización, carpeta o proyecto. Cada miembro de la organización puede tener un rol asignado en diferentes niveles de la jerarquía de la organización. Puede ser el mismo rol o un rol diferente. Por ejemplo, puede asignar un rol de miembro A para el proyecto 1 y el rol B para el proyecto 2.</block>
   <block id="07e7a075870b5fd1a97b81d0f2032e95" category="admonition">No se puede asignar ningún rol adicional a un miembro que tenga asignado el rol de administrador de la organización. Ya tienen permisos en toda la organización.</block>
-  <block id="1d54adc5a01cf744fbd32cf11ffe9bb7" category="section-title">Agregar un rol a un miembro</block>
   <block id="ffb0fd8d3db2f95c2bb0961f852f2b9f" category="paragraph">Proporcione a un miembro permisos adicionales en su organización agregando roles que se aplican a la organización, carpeta o nivel de proyecto.</block>
   <block id="276d24e9485b31bc0a3bf0758ebc947d" category="list-text">Desde la página *Miembros*, navega a un miembro de la tabla, selecciona <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> y luego selecciona *Agregar un rol*.</block>
   <block id="5f4f2140800f25dcab7691933bfbdbdb" category="list-text">Para agregar un rol, complete los pasos del cuadro de diálogo:</block>
   <block id="a09853f10b1e18c9e2f541f7e1763305" category="list-text">Selecciona *Añadir nuevos roles*.</block>
-  <block id="f79c177f403a3ca6381c6f78b9609b80" category="paragraph">BlueXP  añade los roles. El miembro ahora tiene permisos para los recursos de la organización, carpeta o proyecto que ha seleccionado.</block>
-  <block id="5d4215cb3f8195257d8c88bf98595abe" category="section-title">Cambie de un rol a otro</block>
-  <block id="e771bf7ac33be61bdf00c2ea7fc03998" category="paragraph">Si necesita modificar los permisos de un miembro, puede cambiar el rol asociado a ese miembro en el nivel de organización, carpeta o proyecto.</block>
-  <block id="d89b2042f4ce3e364f18c0eb45c99356" category="paragraph">Si necesita cambiar las funciones de varios miembros de la organización, puede utilizar una acción masiva para completar todos los cambios de una vez.</block>
-  <block id="a18b11a5572ce31c0b380d71d8df5bb9" category="open-title">Un miembro</block>
-  <block id="845e17597d8d3da152c11dabc243f4e4" category="list-text">En la tabla, navegue a la organización, carpeta o proyecto y, a continuación, seleccione un nuevo rol.</block>
-  <block id="c4550179ec4d126514726a79ad76c8a1" category="paragraph">BlueXP  actualiza los roles asociados a ese miembro en el nivel de organización, carpeta y proyecto.</block>
-  <block id="5394f1457d9d63e0201a5fd504346f00" category="open-title">Varios miembros</block>
-  <block id="e399336058a14bf4ff08ec67a09ed7a3" category="list-text">Desde la página *Organización*, navega a un proyecto o carpeta de la tabla, selecciona <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> y luego selecciona *Editar organización*, *Editar carpeta* o *Editar proyecto*.</block>
-  <block id="215b65c0c6b889c16ead175b98f917d5" category="list-text">Seleccione Todos los miembros o seleccione individualmente dos o más miembros.</block>
-  <block id="dad55b15ee639e06e0f30982722e1635" category="list-text">Seleccione *Definir rol*.</block>
-  <block id="69cc5b0ed95d422ff6c1d3d52de8c785" category="inline-image-macro">Captura de pantalla de la parte Acceso del cuadro de diálogo de edición que permite seleccionar la acción Definir rol después de seleccionar dos o más miembros.</block>
-  <block id="7cf468e24cab5bc3e7517a362545f945" category="paragraph"><block ref="7cf468e24cab5bc3e7517a362545f945" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9288e22101210bbf855b72095560a27c" category="list-text">Seleccione el rol que desea asignar a los miembros y luego seleccione *Definir*.</block>
-  <block id="27e7adcace4a5cbdc1da6d0d229248d7" category="paragraph">BlueXP  actualiza los roles de todos los miembros seleccionados.</block>
-  <block id="528a4b75a900c412adab255cf7a4df50" category="section-title">Eliminar permisos para una carpeta o proyecto</block>
   <block id="dc291d6979f5152f329545d84fe8f44e" category="paragraph">Puede eliminar los permisos de un miembro a una carpeta o proyecto específicos eliminando su rol.</block>
   <block id="4038b7041781142ee383a5f32eb9a5ad" category="paragraph">Si un miembro tiene permisos en su organización para _Only_ una carpeta o proyecto, no puede eliminar ese rol. Tiene dos opciones:</block>
   <block id="46008f3c0187ee8bc97921f4799f037a" category="list-text">Si desea que el miembro tenga permisos para otra parte de la jerarquía de recursos, primero debe agregar ese rol y, a continuación, suprimir el rol existente.</block>
-  <block id="c5a9e7f2d1f93fabc381b65634e94749" category="list-text">Si no desea que el miembro tenga permisos para nada, simplemente puede eliminar al miembro de su organización.</block>
   <block id="a55ecc4bf928da93f86f41bb1fa482cc" category="inline-image-macro">Un icono de una lata de basura</block>
-  <block id="776326a0ac90b669316cb0e9cbab55c0" category="list-text">En la tabla, navegue hasta el nivel de carpeta o proyecto y, a continuación, seleccione <block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fbfd5aa47697579a000ac3aa3884cd1a" category="paragraph">BlueXP  elimina los permisos para ese miembro en el nivel de carpeta o proyecto.</block>
   <block id="a657b530c9804722859fcb4792bf4466" category="section-title">Vuelva a crear las credenciales para una cuenta de servicio</block>
   <block id="4e62056c599bc8dfbb5e6f1f5a707256" category="paragraph">Puede volver a crear las credenciales (ID de cliente y secreto de cliente) para una cuenta de servicio en cualquier momento. Puede volver a crear las credenciales si las ha perdido o si su empresa necesita que gire las credenciales de seguridad después de un período de tiempo.</block>
   <block id="0bf91f2741972566e7b71facbe211ab9" category="paragraph">Al volver a crear las credenciales, se suprimen las credenciales existentes para la cuenta de servicio y, a continuación, se crean nuevas credenciales. No podrá utilizar las credenciales anteriores.</block>
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">En la tabla *Miembros*, navega a una cuenta de servicio, selecciona <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> y luego selecciona *recrear secretos*.</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">Selecciona *Volver a crear*.</block>
-  <block id="fef720cdea9308393ab25d3fcc148e17" category="paragraph">Un nuevo ID de cliente y un secreto de cliente ahora están asociados a la cuenta de servicio.</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">Eliminar un miembro de la organización</block>
   <block id="05dc5a4527f82cde43f14fa38fb2640e" category="paragraph">Es posible que necesite eliminar a un miembro de su organización, por ejemplo, si abandonó la empresa.</block>
-  <block id="5e7aeb8cbe9cdc031d92f74ef4d40fd0" category="paragraph">Esta tarea no elimina la cuenta de BlueXP  del miembro ni la cuenta del sitio de soporte de NetApp. Simplemente elimina el miembro y sus permisos asociados de su organización.</block>
   <block id="0479745abf593369ddbda5e8df849e57" category="list-text">Desde la página *Miembros*, navega a un miembro de la tabla, selecciona <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> y luego selecciona *Eliminar usuario*.</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">Confirme que desea eliminar el miembro de su organización.</block>
-  <block id="75e73ef4d25f9f9ea49c38a3bcb941e4" category="paragraph">BlueXP  elimina el miembro. Si ese miembro vuelve a iniciar sesión en BlueXP , ya no tendrá acceso a la organización de BlueXP .</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">Gestione la jerarquía de recursos de su organización asociando recursos a proyectos y carpetas específicos.</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">Ver los recursos de su organización</block>
-  <block id="7e2927a58abcc62c9eb5c28962dc9573" category="paragraph">Después de encontrar el recurso que está buscando, puede realizar cualquiera de las siguientes acciones:</block>
-  <block id="d488db7f816284f6712caf2d76eb5169" category="inline-xref">Ver las carpetas y los proyectos asociados al recurso</block>
-  <block id="ea450edd18061a7cc42c1dc5a73807e9" category="list-text"><block ref="725a161a6f11aca02e0e25e2ae9628c0" category="inline-xref-macro-rx"></block></block>
-  <block id="6a9d36cda6e7da452a233dae9f9b821c" category="inline-xref">Asocie el recurso a carpetas y proyectos adicionales</block>
-  <block id="e43736ff73ca6844bfafd7ef8dc58bad" category="list-text"><block ref="7d9c5683f2b3adedfbcf34a695515c4d" category="inline-xref-macro-rx"></block></block>
-  <block id="b6af3f20458abefb8743e926f21c0677" category="inline-xref">Elimine el recurso de una carpeta o proyecto</block>
-  <block id="1797f1c38c97687b6136c8e69786e0a2" category="list-text"><block ref="bb02d809bee1364f03f71b60d989a04d" category="inline-xref-macro-rx"></block></block>
   <block id="3d1bc41342a56d581edf9d1765f01a0b" category="list-text">Utilice cualquiera de las opciones disponibles para encontrar el recurso que está buscando:</block>
   <block id="48ca2619b5dca392dc3969df94469cf3" category="list-text">*Buscar por nombre de recurso*: Ingrese una cadena de texto y seleccione *Agregar*.</block>
   <block id="b2efca9e0863336ee0d7aa6af1771c24" category="list-text">*Plataforma*: Selecciona una o más plataformas, como Amazon Web Services.</block>
@@ -4555,10 +4493,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="0d8f80667cd7bc86a6f6ea26c12d18b9" category="paragraph">El siguiente ejemplo muestra un recurso asociado a un proyecto.</block>
   <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">Una captura de pantalla de la página de detalles del recurso que muestra un recurso asociado a un proyecto que está directamente debajo de la organización.</block>
   <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e4975c67206b991961fd4bcafcfdcb06" category="inline-xref">asocie el recurso a un proyecto o carpeta adicional</block>
-  <block id="b2b8405c251505e73b6f299e51537cde" category="list-text">Puede <block ref="a442a7300de9bd550df7e0b303674dfb" category="inline-xref-macro-rx"></block>.</block>
-  <block id="50a6a7359fd63777aaa93f91ca89a8bf" category="inline-xref">elimine el recurso de una carpeta o proyecto específico</block>
-  <block id="7c3a34fff9d504a76d85b9789ba5cda9" category="list-text">Puede <block ref="3afb050ceb060bcbe4b73cf3bf59470f" category="inline-xref-macro-rx"></block>.</block>
   <block id="69f07c715f27603d2e0d422829ad4190" category="inline-link-macro">ver los miembros que tienen acceso a las carpetas y proyectos asociados al recurso</block>
   <block id="7e77a0d272b850a5b082c2fed060594a" category="list-text">Si necesita determinar qué miembros de la organización tienen acceso al recurso, puede <block ref="7b75e3c2af3e500cfb657c057dbc7c5e" category="inline-link-macro-rx"></block>.</block>
   <block id="02daa88c7c6888cad8b055624d764072" category="section-title">Eliminar un recurso de una carpeta o proyecto</block>
@@ -4610,7 +4544,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="3079cacc26f7b40554d23e060596a405" category="inline-link-macro">Obtenga más información sobre el uso de las credenciales de NSS con su organización o cuenta de BlueXP </block>
   <block id="a24a552d29f91b8982fae044dc32dff5" category="paragraph"><block ref="fb2c227ba20c316c7f097a2784c0c843" category="inline-link-macro-rx"></block>.</block>
   <block id="a15dab64157b0024121a37b3726311bd" category="summary">Administre su cuenta de BlueXP  agregando usuarios, creando cuentas de servicio con fines de automatización, agregando espacios de trabajo y más.</block>
-  <block id="ad91be9e96aa62a4fcd46230362092d6" category="paragraph">Cuando usas BlueXP  en modo restringido o en modo privado, usarás una cuenta _BlueXP _ para administrar usuarios y organizar recursos. Cuando creas tu cuenta, solo incluye un solo usuario administrador y un espacio de trabajo. Puede administrar la cuenta para que se adapte a sus necesidades agregando usuarios, creando cuentas de servicio con fines de automatización, agregando espacios de trabajo y más.</block>
   <block id="b89af40709c02abb8e0b01ae305dfd7f" category="summary">Puede supervisar el estado de las operaciones que está realizando BlueXP para ver si hay algún problema que necesite solucionar. Puede ver el estado en la línea de tiempo, el Centro de notificaciones o enviar notificaciones a su correo electrónico.</block>
   <block id="57bee919903f0c92a41c5582519db779" category="doc">Supervise las operaciones de BlueXP </block>
   <block id="5d4df6d8936b94b888789b2712dcb953" category="paragraph">La siguiente tabla proporciona una comparación de la línea de tiempo y el Centro de notificaciones para que pueda comprender lo que cada uno tiene para ofrecer.</block>
@@ -4805,20 +4738,16 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="2b595e935d43f3d843783e855ec947b7" category="paragraph">El instalador sigue contactando \https://mysupport.NetApp.com.</block>
   <block id="624278dc2f533755332cf0c1ebe752d5" category="paragraph">La página Conectores muestra sólo los Conectores disponibles actualmente. Ya no muestra los conectores que ha eliminado.</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">Funciones de la plataforma</block>
-  <block id="eda0520752c1c966551048d00dbbcc59" category="paragraph">BlueXP  IAM incluye dos funciones de plataforma: Administrador de organización y Administrador de carpetas o proyectos. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope. La función de administrador de organización tiene permisos en todas las carpetas y proyectos, mientras que la carpeta o el administrador del proyecto sólo tienen permisos en la carpeta o el proyecto al que se han asignado.</block>
   <block id="6573eb5e7a9033869897566e8b1b5f6a" category="paragraph">La función de administrador de carpeta o proyecto no puede crear conectores.</block>
   <block id="36dc01ca540c36d8a66ee2b32bacb1b6" category="cell">Administrador de carpeta o proyecto</block>
   <block id="10c51a836e78385fbf6ad623ad658ee0" category="cell">Crear conectores</block>
   <block id="1feb614364d6d0a180fddcd6e40a0223" category="cell">Crear, modificar o suprimir entornos de trabajo (añadir o detectar nuevos recursos mediante el lienzo de BlueXP )</block>
-  <block id="d76dfeebf19d1a2fc8c868ca8643d76d" category="cell">Cree proyectos/carpetas, incluido el cambio de nombre, la eliminación y la edición</block>
   <block id="15a95a870efdd28ed28ff5a317681ee4" category="cell">Asigne roles y añada usuarios</block>
-  <block id="8af970b54258caf527bed05d8f62f054" category="cell">Asociar recursos y conectores a carpetas y proyectos</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">Ejemplo de roles de organización en BlueXP  para una organización multinacional grande</block>
   <block id="c89eaf90b9f27cb0ed6b4d2e288716ba" category="list-text">XYZ Corporation, una empresa multinacional, tiene como objetivo segregar el acceso a recursos de almacenamiento de datos basados en regiones geográficas: Norteamérica, Europa y Asia Pacífico. Quieren que cada región tenga un control exclusivo sobre sus recursos mientras mantienen una supervisión centralizada.</block>
   <block id="38e4f28b5f78613457381816eb4a925e" category="paragraph">Para lograr esto, una persona que tiene asignada la función de administrador de la organización en BlueXP  de Xyz Corporation crea un entorno de trabajo inicial y, a continuación, crea carpetas separadas en BlueXP  para cada región. La carpeta de cada región contiene proyectos (con recursos asociados) relacionados con esa región. El administrador de la organización asigna a un usuario de BlueXP  en cada región respectiva la función de administrador de carpeta/proyecto.</block>
   <block id="b232bda0fe68f193c9d3c56d75b4bb04" category="paragraph">Una vez completada la configuración inicial, los administradores regionales con la función de administrador de carpeta o proyecto pueden crear nuevos entornos de trabajo y agregar usuarios dentro de sus regiones. Estos administradores regionales también pueden agregar/eliminar/cambiar el nombre de las carpetas y los proyectos a los que están asignados. El administrador de la organización hereda permisos para cualquier nuevo entorno de trabajo o recursos, manteniendo la visibilidad del uso del almacenamiento en toda la organización.</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="section-title">Roles de servicios de datos</block>
-  <block id="cc3c87c04d3731bf67b97240bf975b52" category="paragraph">Los roles de servicios de datos pueden completar sus tareas en cualquier proyecto o carpeta.</block>
   <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">9 de diciembre de 2024</block>
   <block id="6dbd17d362d540a01bdcf61fb73192e3" category="paragraph"><block ref="6dbd17d362d540a01bdcf61fb73192e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8aed33df97a7e5d16736c205973e6239" category="paragraph"><block ref="8aed33df97a7e5d16736c205973e6239" category="inline-image-macro-rx" type="image"></block></block>
@@ -4961,4 +4890,90 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">Más información sobre la creación de un caso de soporte</block>
   <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>.</block>
   <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">13 de enero de 2025</block>
+  <block id="c933dbf26cb872c859f8dbb81999eff8" category="paragraph">Host puede ser de cualquier arquitectura que cumpla con los siguientes requisitos de tamaño.</block>
+  <block id="9fc9c9f38ac896bc2bd0e275904e2b5d" category="list-text">*CPU:* 8 núcleos o 8 vCPU</block>
+  <block id="35116a9bfaf82c27806c3c9614e3380e" category="list-text">*RAM:* 32 GB</block>
+  <block id="c0317bb7a0bafdead64d85dfbc6db80e" category="paragraph">Host puede ser de cualquier arquitectura que cumpla con estos requisitos de tamaño.</block>
+  <block id="2b67fdb5c1c9190b50c83306e4021a2c" category="paragraph"><block ref="2b67fdb5c1c9190b50c83306e4021a2c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e52d2dcc592495f70c82c59eee98424f" category="list-text">Seleccione el menú de acción para un conjunto de credenciales y luego seleccione *Configurar suscripción*. +nueva captura de pantalla necesaria (TS) <block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ef5d79e3ae5671ca28e5f6e3b02eed27" category="list-text">Para configurar una suscripción existente con las credenciales seleccionadas, seleccione un proyecto y una suscripción de Google Cloud en la lista desplegable y, a continuación, seleccione *Configurar*.</block>
+  <block id="8e64dfb0168516c0e7f7880ae745072a" category="doc">Conector 3.9.49</block>
+  <block id="f5c64d3f640238b8d1e1ed7062c5561f" category="paragraph">En este momento, la versión 3.9.49 está disponible para modo estándar y modo restringido.</block>
+  <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">Compatibilidad para asignar más de un rol a un usuario.</block>
+  <block id="6708a31732ccaf29d9ba72b524255e3e" category="list-text">Ahora, los roles están asociados a una de tres categorías: Plataforma, aplicación y servicios de datos.</block>
+  <block id="035261365b324f2942fd56c2f10f6ed5" category="inline-link">Lea acerca de los roles de IAM</block>
+  <block id="ff73dba782f434133f0fc81382cc8398" category="list-text">Hay dos nuevos roles asociados a la categoría de aplicación: Visor del almacenamiento y Administrador del almacenamiento.<block ref="ac81447e1825c80c6c47ed7167f706b3" category="inline-link-rx"></block></block>
+  <block id="67012c1335c677ff94cd2d777a3c7213" category="list-text">IAM ahora se utiliza en el modo restringido de BlueXP </block>
+  <block id="2a3e7caa563b2592e27f3890e8d21765" category="section-title">El modo restringido ahora utiliza BlueXP  IAM</block>
+  <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">La gestión de acceso e identidad de BlueXP  (IAM) se utiliza ahora en modo restringido.</block>
+  <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">La gestión de identidades y accesos (IAM) de BlueXP  es un modelo de gestión de recursos y accesos que reemplaza y mejora la funcionalidad anterior proporcionada por las cuentas de BlueXP  cuando se utiliza BlueXP  en modo estándar y restringido.</block>
+  <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">Cómo afecta BlueXP  IAM a su cuenta existente en modo restringido</block>
+  <block id="8f2f21c16dc203c77301e868fae6ff8c" category="paragraph">BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar y restringido. Si utiliza BlueXP  en modo privado, seguirá utilizando una _account_ de BlueXP  para gestionar espacios de trabajo, usuarios y recursos.</block>
+  <block id="71d8d71c8cd5b49b9c78b0ae89ca1b5f" category="paragraph">La gestión de identidades y accesos (IAM) de BlueXP  le permite organizar y controlar el acceso a sus recursos de NetApp. Puede organizar sus recursos de acuerdo con la jerarquía de su organización. Por ejemplo, puede organizar recursos por ubicación geográfica, sitio o unidad de negocio. A continuación, puede asignar roles pIAM a miembros en partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.</block>
+  <block id="492bd3385d9d03385f8098817a8d0196" category="paragraph">BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar y modo restringido. Si utiliza BlueXP  en modo privado, utilice una _account_ de BlueXP  para gestionar usuarios y recursos.</block>
+  <block id="5d733a1853078585aec87e3ef2524bec" category="paragraph">Cuando utilice BlueXP  en modo privado, utilizará una cuenta _BlueXP _ para administrar usuarios y organizar recursos en _workspaces_ aislados. Por ejemplo, un grupo de usuarios puede desplegar y gestionar entornos de trabajo de Cloud Volumes ONTAP en un espacio de trabajo que no es visible para los usuarios que gestionan entornos de trabajo en un espacio de trabajo diferente.</block>
+  <block id="73f420193f5136d2f1d09a09d6f9aabb" category="paragraph">Si usas BlueXP  en modo estándar o restringido, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización _BlueXP _ que gestionará mediante la administración de identidades y accesos (IAM) de BlueXP .</block>
+  <block id="0a53964e7a92fbb432f9201620004f32" category="paragraph">La gestión de identidades y accesos (IAM) de BlueXP  incluye varios roles predefinidos que se pueden asignar a los miembros de la organización en diferentes niveles de la jerarquía de recursos. Antes de asignar estos roles, debe comprender los permisos que incluye cada rol. Las funciones se dividen en tres categorías: Plataforma, aplicación y servicio de datos.</block>
+  <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">Los roles de plataforma son los roles más amplios que puede asignar a los usuarios y permiten amplios permisos para la administración de BlueXP , incluida la asignación de roles y la adición de usuarios, además de poder realizar todas las funciones de BlueXP . BlueXP  IAM incluye dos funciones de plataforma: Administrador de organización y Administrador de carpetas o proyectos. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope.</block>
+  <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">Permite al usuario acceder sin restricciones a todos los proyectos y carpetas de una organización, agregar miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos.</block>
+  <block id="08fe1197004da98b5b31b7f36eb2ecd2" category="section-title">Administrador de carpetas o proyectos</block>
+  <block id="d35d08b038947991ac552eb86cf0f88e" category="paragraph">Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a proyectos o carpetas que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos dentro de la carpeta o proyecto que están asignados.</block>
+  <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">Tabla de comparación de roles de plataforma</block>
+  <block id="7a6a3038937ff2733afeba79c5939221" category="cell">Crear proyectos/carpetas, incluida la eliminación</block>
+  <block id="9190c2227acc58d22f06cf5bd5f7f517" category="cell">Cambiar el nombre de los proyectos/carpetas existentes</block>
+  <block id="f713962a8902c207873eb4046423a1bd" category="cell">Asociar recursos a carpetas y proyectos</block>
+  <block id="894e6dbd6e66d6ab2ca99432100d70c4" category="cell">Asociar conectores a carpetas y proyectos</block>
+  <block id="aa3ec14d13bb1138309921733478241a" category="cell">Eliminar conectores de carpetas y proyectos</block>
+  <block id="a45abfc4b47949975fbb4a65b1c69386" category="cell">Gestionar conectores (editar certificados, configuración, etc.)</block>
+  <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">Funciones de la aplicación</block>
+  <block id="a8cd96485fd6550be6397e836024466a" category="paragraph">Los roles de las aplicaciones proporcionan acceso a aplicaciones de BlueXP  como el asesor digital de Active IQ (también conocido como asesor digital).</block>
+  <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="section-title">Administrador de almacenamiento</block>
+  <block id="5aa668ad17ac4c6dff7f61a5848484d4" category="paragraph">Permite al usuario llevar a cabo funciones de administración del almacenamiento en BlueXP , como actualizaciones de software, creación y eliminación de entornos de trabajo de BlueXP .</block>
+  <block id="5c15172341e03d32ed74659c371f8934" category="list-text">Puede ver el lienzo de BlueXP . Puede crear y administrar conectores BlueXP . Tiene acceso de lectura/escritura a funciones de estado del almacenamiento y gobernanza de BlueXP , incluidas las siguientes:</block>
+  <block id="3e13881bc2ca947e3961fcf40ae74430" category="list-text">Actualizaciones de software (puede realizar actualizaciones de software)</block>
+  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="list-text">Panel de sostenibilidad</block>
+  <block id="1d63b1d397254c4d509474883c1cb2b9" category="section-title">Visor de almacenamiento</block>
+  <block id="9af31d1128df8146e70487ad0eba97f4" category="paragraph">Ofrece acceso de solo lectura a las funciones sanitarias y gubernamentales de BlueXP . Este rol normalmente se asigna a los usuarios responsables de la supervisión del estado de los recursos de almacenamiento de una organización. Los usuarios con este rol pueden ver múltiples aplicaciones de BlueXP  para crear planes de actualización de software, planes de eficiencia y ver el estado general del almacenamiento.</block>
+  <block id="a191e428602026277274d53cff237c2c" category="list-text">Tiene acceso de solo lectura a las funciones de gobierno y estado del almacenamiento de BlueXP , incluidas las siguientes:</block>
+  <block id="0920501bc6df68e157496ea6dfe73a04" category="list-text">Actualizaciones de software (pueden descargar planes de actualización)</block>
+  <block id="09246652e91bee267cf93f6b3c2e9a32" category="paragraph">Los roles de servicios de datos proporcionan a los usuarios permiso para utilizar los servicios de datos dentro de la organización, proyecto o carpeta a la que tienen acceso.</block>
+  <block id="d85398008b1578fbbd6e3fb398a3b5a6" category="paragraph">Cuando utilice BlueXP  en modo privado, utilizará una cuenta _BlueXP _ para administrar usuarios. Puede proporcionar permisos específicos a los usuarios de su cuenta seleccionando entre las siguientes funciones: Administrador de cuenta, Administrador de espacio de trabajo, Visor de cumplimiento y Administrador de SnapCenter</block>
+  <block id="392a6856ccd2e3342fd3b66da6f5f4f4" category="paragraph">Al configurar BlueXP  en modo privado, se le pedirá que cree una cuenta _BlueXP _, lo que le permite gestionar usuarios y organizar recursos. Esta cuenta puede ser todo lo que necesite, pero si su negocio requiere varias cuentas, tendrá que crear cuentas adicionales con la API de tenancy.</block>
+  <block id="1d54d188c16d54d03c291e397f5f5d3c" category="paragraph">Si usas BlueXP  en modo estándar o restringido, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización que administre mediante la administración de acceso e identidad (IAM) de BlueXP . <block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block>.</block>
+  <block id="9c671793f6e87d755268257623fd8ca3" category="paragraph">Para administrar usuarios y sus permisos, debe tener asignado uno de los siguientes roles:</block>
+  <block id="e315fd1b95b71681931eeb8955a37b50" category="paragraph">Los usuarios con este rol pueden gestionar todos los miembros</block>
+  <block id="c51c480c437b7c47a9f2adb67928e089" category="paragraph">Los usuarios con este rol solo pueden gestionar miembros de la carpeta o proyecto designado</block>
+  <block id="a5aee08a089c901f8eb42f2d09ad05cd" category="paragraph">Puede agregar una cuenta de servicio directamente desde BlueXP . Sin embargo, los usuarios deben registrarse primero en una cuenta de BlueXP  antes de poder agregarlos a una organización o asignar un rol.</block>
+  <block id="e882dcb285b727741daef45bc38e2d7b" category="paragraph">Para administrar usuarios y sus permisos, debe tener la función *Administrador de organización* o la función *Carpeta o administrador de proyecto*. Recuerde que los usuarios con la función *Folder o project admin* solo pueden administrar miembros para la carpeta o proyectos de los que tienen permisos de administrador.</block>
+  <block id="516abd045e4dfab41688be05ed0e24b2" category="list-text">*Seleccione una categoría* y luego seleccione un *rol* que le proporcione al miembro permisos para los recursos asociados a la organización, carpeta o proyecto que seleccionó.</block>
+  <block id="5fe83be1c3cd8b5af9b7f3c7fae6d1ad" category="list-text">*Agregar rol*: Si desea proporcionar acceso a carpetas o proyectos adicionales dentro de su organización o otorgar al usuario permisos adicionales en el área seleccionada, seleccione *Agregar rol*, especifique otra carpeta o proyecto o una categoría de rol diferente y luego elija un rol.</block>
+  <block id="58f4b315c1bb5704a3e82ffd26d7c1a8" category="paragraph">Eliminar un miembro de su organización no elimina la cuenta de BlueXP  del miembro ni la cuenta del sitio de soporte de NetApp. Simplemente elimina el miembro y sus permisos asociados de su organización.</block>
+  <block id="71a902b9bd8bd5f915e170707c50e813" category="section-title">Gestionar roles de miembros</block>
+  <block id="e4195c5655315762128bb9e5d89d8f01" category="paragraph">A los miembros de la organización se les pueden asignar roles en cada nivel y más de un nivel de la jerarquía de recursos. Puede asignar roles de miembros relevantes para sus responsabilidades en la organización BlueXP . Por ejemplo, si tiene siete dentro de la jerarquía de recursos que representan los proyectos respectivos (entornos de trabajo) dentro de ellos, puede asignar a alguien el rol Administrador de almacenamiento para tres de los proyectos y, a continuación, asignar un miembro diferente al Administrador de almacenamiento para los proyectos restantes. Otra posibilidad sería asignar a un usuario el rol de administrador de almacenamiento para toda la organización. Puede administrar los roles de los miembros según las necesidades de su organización.</block>
+  <block id="bb6a1c303d753a3800aa29f0149ef2da" category="paragraph">Puede anular la asignación de un rol de un miembro, agregar un nuevo rol o ambos. Un rol define los permisos asignados a un miembro en el nivel de organización, carpeta o proyecto. Puede asignar roles de miembros relevantes a sus responsabilidades en la organización de BlueXP .</block>
+  <block id="6cbcd95c7c747face3f074348da093de" category="paragraph">Cada miembro de la organización puede tener un rol asignado en diferentes niveles de la jerarquía de la organización. Puede ser el mismo rol o un rol diferente. Por ejemplo, puede asignar un rol de miembro A para el proyecto 1 y el rol B para el proyecto 2.</block>
+  <block id="34025ad60edecbf8612a359edaca8684" category="section-title">Ver roles asignados a un miembro</block>
+  <block id="914f7dbf9ae27653eb2ab889d315d7b8" category="paragraph">Puede ver un miembro para verificar qué roles están asignados actualmente.</block>
+  <block id="787919896edfa2afa28d9030c2bd8ee2" category="list-text">En la tabla, expanda la fila respectiva para la organización, carpeta o proyecto donde desee ver el rol asignado del miembro y seleccione *Ver* en la columna *Rol*.</block>
+  <block id="3f4fb5bf409c65d0cdc07e16e971923b" category="section-title">Asigne un rol</block>
+  <block id="868c665304c1cc003d592c37eb2d9284" category="inline-link-macro">Obtenga información sobre los roles de IAM</block>
+  <block id="e55e8648841d578e12ecc4f02dcf8c7e" category="list-text">*Seleccione una categoría*: BlueXP  separa los roles en tres categorías: Plataforma, aplicación y servicios de datos. <block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>.</block>
+  <block id="c46547e3019dfd55748629f99ac2f49c" category="list-text">Seleccione un *rol*: Elija un rol que proporcione al miembro permisos para los recursos asociados a la organización, carpeta o proyecto que seleccionó.</block>
+  <block id="5f3c99e4fd9b4f957adfdcdde4d5a1de" category="list-text">*Agregar rol*: Si desea proporcionar acceso a carpetas o proyectos adicionales dentro de su organización, seleccione *Agregar rol*, especifique otra carpeta o proyecto o categoría de rol, y luego seleccione una categoría de rol y un rol correspondiente.</block>
+  <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">Cambiar el rol asignado de un miembro</block>
+  <block id="955a0a3e2fca13996f710db6f2fbe6a3" category="paragraph">Puede cambiar el rol asignado a un en el nivel de organización, carpeta o proyecto. Los miembros pueden tener diferentes roles en diferentes niveles de su organización.</block>
+  <block id="28e019f4a845184dbf1a98b3299252a4" category="list-text">En la tabla, expanda la fila correspondiente para la organización, carpeta o proyecto en el que desee cambiar el rol asignado del miembro y seleccione *Ver* en la columna *Rol* para ver los roles asignados a este miembro.</block>
+  <block id="4dfcfc5ce7a8e9f46e4eabc1e80c4d28" category="list-text">Para cambiar el rol de un miembro, elige *Cambiar* junto al rol que quieres cambiar. Sólo puede cambiar este rol a un rol dentro de la misma categoría de rol. Por ejemplo, puede cambiar de un rol de aplicación a otro. Se le pedirá que confirme el cambio.</block>
+  <block id="9a3441a99feefccc201b51666c68d0d2" category="inline-image-macro">Un icono que se asemeja a una papelera</block>
+  <block id="9410d39af130c313b964685327e24e7a" category="list-text">Para anular la asignación del rol de un miembro, seleccione <block ref="65d5e1d842da62aa3653eba17c2cb20e" category="inline-image-macro-rx" type="image"></block> junto al rol para anular la asignación del rol respectivo al miembro. Se le pedirá que confirme la eliminación.</block>
+  <block id="1712db0afa6be365f3fb2fe0061eb0c7" category="section-title">Anular la asignación de un rol de un miembro</block>
+  <block id="31ddf498fec35ac8707e5b28a896efa1" category="list-text">Si no desea que el miembro tenga permisos para nada, debe eliminar al miembro de su organización.</block>
+  <block id="34a938f284a603fceb6aa9e92a05299f" category="list-text">En la tabla, navegue hasta el nivel de carpeta o proyecto y, a continuación, seleccione <block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block>. Se le pedirá que confirme la eliminación.</block>
+  <block id="cb78cc211125b48169ddebcb45d3029b" category="paragraph">Cuando usas BlueXP  en modo privado, usarás una cuenta _BlueXP _ para administrar usuarios y organizar recursos. Cuando creas tu cuenta, solo incluye un solo usuario administrador y un espacio de trabajo. Puede administrar la cuenta para que se adapte a sus necesidades agregando usuarios, creando cuentas de servicio con fines de automatización, agregando espacios de trabajo y más.</block>
+  <block id="545e0b69c795ac2990b49f290e8c1c99" category="doc">Suscribirse a servicios de datos de BlueXP  (modo restringido)</block>
+  <block id="bb53c4f02e33d64ba478ff18f8fb837e" category="paragraph">Una suscripción de Marketplace permite cargar los siguientes servicios de datos de BlueXP  con modo restringido:</block>
+  <block id="d406f894e93540ac3e08a4bdebcc5418" category="doc">Suscribirse a servicios de datos de BlueXP  (modo estándar)</block>
+  <block id="4c98c292f5ea23f8a2d9dd45741b9411" category="paragraph">Una suscripción a Marketplace permite cargar los siguientes servicios de datos de BlueXP :</block>
+  <block id="dcaa51b19c3334da8a1c68178fddabbe" category="paragraph">La suscripción a los servicios de datos de BlueXP  implica la asociación de una suscripción de Marketplace con las credenciales de nube asociadas a un conector. Si ha seguido el flujo de trabajo para empezar con el modo estándar, ya debe tener un conector. Para obtener más información, consulte la <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>.</block>
+  <block id="c523b074da0b63e607578686184d5981" category="section-title">10 de febrero de 2025</block>
 </blocks>

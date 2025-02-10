@@ -14,18 +14,31 @@ summary: La gestión de identidades y accesos de BlueXP  incluye varios roles p
 
 
 [role="lead"]
-La gestión de identidades y accesos (IAM) de BlueXP  incluye varios roles predefinidos que se pueden asignar a los miembros de la organización en diferentes niveles de la jerarquía de recursos. Antes de asignar estos roles, debe comprender los permisos que incluye cada rol.
+La gestión de identidades y accesos (IAM) de BlueXP  incluye varios roles predefinidos que se pueden asignar a los miembros de la organización en diferentes niveles de la jerarquía de recursos. Antes de asignar estos roles, debe comprender los permisos que incluye cada rol. Las funciones se dividen en tres categorías: Plataforma, aplicación y servicio de datos.
 
 
 
 == Funciones de la plataforma
 
-BlueXP  IAM incluye dos funciones de plataforma: Administrador de organización y Administrador de carpetas o proyectos. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope. La función de administrador de organización tiene permisos en todas las carpetas y proyectos, mientras que la carpeta o el administrador del proyecto sólo tienen permisos en la carpeta o el proyecto al que se han asignado.
+Los roles de plataforma son los roles más amplios que puede asignar a los usuarios y permiten amplios permisos para la administración de BlueXP , incluida la asignación de roles y la adición de usuarios, además de poder realizar todas las funciones de BlueXP . BlueXP  IAM incluye dos funciones de plataforma: Administrador de organización y Administrador de carpetas o proyectos. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope.
+
+
+
+=== Administrador de la organización
+
+Permite al usuario acceder sin restricciones a todos los proyectos y carpetas de una organización, agregar miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos.
+
+
+
+=== Administrador de carpetas o proyectos
+
+Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a proyectos o carpetas que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos dentro de la carpeta o proyecto que están asignados.
 
 La función de administrador de carpeta o proyecto no puede crear conectores.
 
-Permisos::
 
+
+=== Tabla de comparación de roles de plataforma
 
 [cols="24,19,19"]
 |===
@@ -38,13 +51,25 @@ Permisos::
 | Crear, modificar o suprimir entornos de trabajo (añadir o detectar nuevos recursos mediante el lienzo de BlueXP ) | Sí | Sí 
 
 
-| Cree proyectos/carpetas, incluido el cambio de nombre, la eliminación y la edición | Sí | Sí 
+| Crear proyectos/carpetas, incluida la eliminación | Sí | No 
+
+
+| Cambiar el nombre de los proyectos/carpetas existentes | Sí | Sí 
 
 
 | Asigne roles y añada usuarios | Sí | Sí 
 
 
-| Asociar recursos y conectores a carpetas y proyectos | Sí | Sí 
+| Asociar recursos a carpetas y proyectos | Sí | Sí 
+
+
+| Asociar conectores a carpetas y proyectos | Sí | No 
+
+
+| Eliminar conectores de carpetas y proyectos | Sí | No 
+
+
+| Gestionar conectores (editar certificados, configuración, etc.) | Sí | No 
 
 
 | Gestione credenciales desde Configuración > Credenciales | Sí | Sí 
@@ -70,15 +95,64 @@ Una vez completada la configuración inicial, los administradores regionales con
 
 
 
+== Funciones de la aplicación
+
+Los roles de las aplicaciones proporcionan acceso a aplicaciones de BlueXP  como el asesor digital de Active IQ (también conocido como asesor digital).
+
+
+
+=== Administrador de almacenamiento
+
+Permite al usuario llevar a cabo funciones de administración del almacenamiento en BlueXP , como actualizaciones de software, creación y eliminación de entornos de trabajo de BlueXP .
+
+Permisos:: Puede ver el lienzo de BlueXP . Puede crear y administrar conectores BlueXP . Tiene acceso de lectura/escritura a funciones de estado del almacenamiento y gobernanza de BlueXP , incluidas las siguientes:
++
+--
+* Asesor digital
+* Resiliencia operativa
+* Actualizaciones de software (puede realizar actualizaciones de software)
+* Cartera digital
+* Eficiencia económica
+* Panel de sostenibilidad
+* Alertas
+
+
+--
+
+
+
+
+=== Visor de almacenamiento
+
+Ofrece acceso de solo lectura a las funciones sanitarias y gubernamentales de BlueXP . Este rol normalmente se asigna a los usuarios responsables de la supervisión del estado de los recursos de almacenamiento de una organización. Los usuarios con este rol pueden ver múltiples aplicaciones de BlueXP  para crear planes de actualización de software, planes de eficiencia y ver el estado general del almacenamiento.
+
+Permisos:: Tiene acceso de solo lectura a las funciones de gobierno y estado del almacenamiento de BlueXP , incluidas las siguientes:
++
+--
+* Asesor digital
+* Resiliencia operativa
+* Actualizaciones de software (pueden descargar planes de actualización)
+* Cartera digital
+* Eficiencia económica
+* Panel de sostenibilidad
+* Alertas
+
+
+--
+
+
+
+
 == Roles de servicios de datos
 
-Los roles de servicios de datos pueden completar sus tareas en cualquier proyecto o carpeta.
+Los roles de servicios de datos proporcionan a los usuarios permiso para utilizar los servicios de datos dentro de la organización, proyecto o carpeta a la que tienen acceso.
 
 
 
 === Administrador de SnapCenter
 
-Descripción:: Ofrece la posibilidad de realizar backups de snapshots de clústeres de ONTAP en las instalaciones mediante backup y recuperación de datos de BlueXP  en aplicaciones.
+Ofrece la posibilidad de realizar backups de snapshots de clústeres de ONTAP en las instalaciones mediante backup y recuperación de datos de BlueXP  en aplicaciones.
+
 Permisos:: Un miembro que tenga este rol puede realizar las siguientes acciones en BlueXP :
 +
 --
@@ -94,7 +168,8 @@ Permisos:: Un miembro que tenga este rol puede realizar las siguientes acciones 
 
 === Visor de clasificación
 
-Descripción:: Proporciona la posibilidad de ver los resultados de la exploración de clasificación de BlueXP .
+Proporciona la posibilidad de ver los resultados de la exploración de clasificación de BlueXP .
+
 Permisos:: Ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos.
 +
 --

@@ -338,14 +338,14 @@ Debe crear un conector para poder cambiar la configuración de BlueXP. link:conc
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
-. Seleccione el menú de acción para un conjunto de credenciales y luego seleccione *Suscripción asociada*.
+. Seleccione el menú de acción para un conjunto de credenciales y luego seleccione *Configurar suscripción*.
 +
 Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una suscripción al mercado con credenciales asociadas a BlueXP.
 
 +
 image:screenshot_azure_add_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
 
-. Para asociar las credenciales a una suscripción existente, seleccione la suscripción en la lista desplegable y seleccione *asociado*.
+. Para asociar las credenciales a una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
 . Para asociar las credenciales a una nueva suscripción, seleccione *Agregar suscripción > continuar* y siga los pasos de Azure Marketplace:
 +
 .. Si se le solicita, inicie sesión en su cuenta de Azure.

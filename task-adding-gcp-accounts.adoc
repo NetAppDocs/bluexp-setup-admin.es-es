@@ -26,11 +26,8 @@ La sustitución de la suscripción actual del mercado por una nueva suscripción
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
-. Seleccione el menú de acción para un conjunto de credenciales y luego seleccione *Suscripción asociada*.
-+
-image:screenshot_gcp_add_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
-
-. Para asociar las credenciales a una suscripción existente, seleccione un proyecto de Google Cloud y una suscripción en la lista desplegable y, a continuación, seleccione *asociado*.
+. Seleccione el menú de acción para un conjunto de credenciales y luego seleccione *Configurar suscripción*. +nueva captura de pantalla necesaria (TS) image:screenshot_gcp_add_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
+. Para configurar una suscripción existente con las credenciales seleccionadas, seleccione un proyecto y una suscripción de Google Cloud en la lista desplegable y, a continuación, seleccione *Configurar*.
 +
 image:screenshot_gcp_associate.gif["Captura de pantalla de un proyecto y suscripción de Google Cloud seleccionados para las credenciales de Google Cloud."]
 

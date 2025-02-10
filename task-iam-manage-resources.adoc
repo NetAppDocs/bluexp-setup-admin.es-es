@@ -40,14 +40,6 @@ NOTE: Los recursos de Amazon FSx for NetApp ONTAP no se muestran en la página d
 . Selecciona *Buscar*.
 
 
-.El futuro
-Después de encontrar el recurso que está buscando, puede realizar cualquiera de las siguientes acciones:
-
-* <<associate-resource,Asocie el recurso a carpetas y proyectos adicionales>>
-* <<view-folders-and-projects,Ver las carpetas y los proyectos asociados al recurso>>
-* <<remove-resource,Elimine el recurso de una carpeta o proyecto>>
-
-
 
 
 == Asociar un recurso a carpetas y proyectos
@@ -83,6 +75,9 @@ link:task-iam-associate-connectors.html["Aprenda a asociar un conector a una car
 
 Para identificar dónde está disponible un recurso en la jerarquía de la organización, puede ver las carpetas y los proyectos asociados a ese recurso.
 
+
+NOTE: Si necesita determinar qué miembros de la organización tienen acceso al recurso, puede link:task-iam-manage-folders-projects.html#view-associated-resources-members["ver los miembros que tienen acceso a las carpetas y proyectos asociados al recurso"].
+
 .Pasos
 . Desde la página *Recursos*, navega a un recurso de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Ver detalles*.
 
@@ -91,11 +86,8 @@ El siguiente ejemplo muestra un recurso asociado a un proyecto.
 
 image:screenshot-iam-resource-details.png["Una captura de pantalla de la página de detalles del recurso que muestra un recurso asociado a un proyecto que está directamente debajo de la organización."]
 
-.El futuro
-* Puede <<associate-resource,asocie el recurso a un proyecto o carpeta adicional>>.
-* Puede <<remove-resource,elimine el recurso de una carpeta o proyecto específico>>.
-* Si necesita determinar qué miembros de la organización tienen acceso al recurso, puede link:task-iam-manage-folders-projects.html#view-associated-resources-members["ver los miembros que tienen acceso a las carpetas y proyectos asociados al recurso"].
 
+NOTE: Si necesita determinar qué miembros de la organización tienen acceso al recurso, puede link:task-iam-manage-folders-projects.html#view-associated-resources-members["ver los miembros que tienen acceso a las carpetas y proyectos asociados al recurso"].
 
 
 
@@ -103,8 +95,8 @@ image:screenshot-iam-resource-details.png["Una captura de pantalla de la página
 
 Para eliminar un recurso de una carpeta o proyecto, debe eliminar la asociación entre la carpeta o el proyecto y el recurso. Después de eliminar la asociación, los miembros de la organización ya no podrán gestionar el recurso desde la carpeta o el proyecto.
 
-.Acerca de esta tarea
-Si desea eliminar un recurso detectado de toda la organización, debe eliminar el entorno de trabajo del lienzo de BlueXP .
+
+NOTE: Si desea eliminar un recurso detectado de toda la organización, debe eliminar el entorno de trabajo del lienzo de BlueXP .
 
 .Pasos
 . Desde la página *Recursos*, navega a un recurso de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Ver detalles*.

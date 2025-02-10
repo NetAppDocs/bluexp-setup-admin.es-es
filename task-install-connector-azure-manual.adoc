@@ -28,6 +28,15 @@ Un conector es el software NetApp que se ejecuta en su red de cloud o en las ins
 El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
 
 Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
++
+--
+Host puede ser de cualquier arquitectura que cumpla con los siguientes requisitos de tamaño.
+
+* *CPU:* 8 núcleos o 8 vCPU
+* *RAM:* 32 GB
+
+
+--
 Hipervisor:: Se requiere un hipervisor nativo o alojado que esté certificado para ejecutar un sistema operativo compatible.
 [[podman-versions]]Requisitos del sistema operativo y del contenedor:: BlueXP  admite el conector con los siguientes sistemas operativos cuando se utiliza BlueXP  en modo estándar o en modo restringido. Antes de instalar el conector, se necesita una herramienta de orquestación de contenedores.
 +
@@ -87,8 +96,13 @@ Notas:
 
 
 --
-CPU:: 8 núcleos o 8 vCPU
-RAM:: 32GB
+
+
+Host puede ser de cualquier arquitectura que cumpla con estos requisitos de tamaño.
+
+* *CPU:* 8 núcleos o 8 vCPU
+* *RAM:* 32 GB
++
 Tamaño de la máquina virtual de Azure:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos Standard_D8s_v3.
 Espacio en disco en /opt:: Debe haber 100 GIB de espacio disponibles
 +
@@ -102,6 +116,8 @@ Espacio en disco en /var:: Debe haber 20 GiB de espacio disponibles
 BlueXP requiere este espacio en `/var` Porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el `/var/lib/containers/storage` directorio. Los montajes externos o los enlaces simbólicos no funcionan en este espacio.
 
 --
+
+
 
 
 

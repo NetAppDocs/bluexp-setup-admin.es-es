@@ -14,9 +14,9 @@ summary: Administre su cuenta de BlueXP  agregando usuarios, creando cuentas de
 
 
 [role="lead"]
-Cuando usas BlueXP  en modo restringido o en modo privado, usarás una cuenta _BlueXP _ para administrar usuarios y organizar recursos. Cuando creas tu cuenta, solo incluye un solo usuario administrador y un espacio de trabajo. Puede administrar la cuenta para que se adapte a sus necesidades agregando usuarios, creando cuentas de servicio con fines de automatización, agregando espacios de trabajo y más.
+Cuando usas BlueXP  en modo privado, usarás una cuenta _BlueXP _ para administrar usuarios y organizar recursos. Cuando creas tu cuenta, solo incluye un solo usuario administrador y un espacio de trabajo. Puede administrar la cuenta para que se adapte a sus necesidades agregando usuarios, creando cuentas de servicio con fines de automatización, agregando espacios de trabajo y más.
 
-Si usas BlueXP  en modo estándar, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización _BlueXP _ que gestionará mediante la administración de identidades y accesos (IAM) de BlueXP .
+Si usas BlueXP  en modo estándar o restringido, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización _BlueXP _ que gestionará mediante la administración de identidades y accesos (IAM) de BlueXP .
 
 * link:concept-identity-and-access-management.html["Obtenga más información sobre BlueXP  IAM"]
 * link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"]
