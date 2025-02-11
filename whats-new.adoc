@@ -34,13 +34,11 @@ En este momento, la versión 3.9.49 está disponible para modo estándar y modo 
 
 * Compatibilidad para asignar más de un rol a un usuario.
 * Los roles ahora están asociados a una de dos categorías: Plataforma y servicio de datos.
-
-
-[]
-====
 * Ahora, los roles están asociados a una de tres categorías: Plataforma, aplicación y servicios de datos.
 * Hay dos nuevos roles asociados a la categoría de aplicación: Visor del almacenamiento y Administrador del almacenamiento. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Lea acerca de los roles de IAM"]
 * IAM ahora se utiliza en el modo restringido de BlueXP 
+
+
 
 
 ==== El modo restringido ahora utiliza BlueXP  IAM
@@ -98,7 +96,11 @@ Este cambio introduce una nueva API para BlueXP  IAM, pero es compatible con ve
 .Modos de despliegue admitidos
 BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar y restringido. Si utiliza BlueXP  en modo privado, seguirá utilizando una _account_ de BlueXP  para gestionar espacios de trabajo, usuarios y recursos.
 
+
+
 == 13 de enero de 2025
+
+
 
 === Conector 3.9.48
 
@@ -106,13 +108,17 @@ Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de
 
 En este momento, la versión 3.9.48 está disponible para modo estándar y modo restringido.
 
-=== Gestión de acceso e identidad de BlueXP 
+
+
+=== Gestión de identidades y acceso BlueXP 
 
 * Ahora, la página Resources muestra los recursos no detectados. Los recursos no detectados son recursos de almacenamiento de los que BlueXP  conoce, pero no ha creado entornos de trabajo para. Por ejemplo, los recursos que se muestran en el asesor digital que aún no tienen entornos de trabajo se muestran en la página Recursos como recursos no detectados.
 * Los recursos de Amazon FSx for NetApp ONTAP no se muestran en la página de recursos de IAM porque no puedes asociarlos a un rol de IAM. Puede ver estos recursos en su respectivo lienzo o desde cargas de trabajo.
 
 
-=== Crear un caso de soporte para servicios BlueXP  adicionales
+
+
+=== Crear un caso de soporte para servicios de BlueXP  adicionales
 
 Después de registrar BlueXP  para recibir soporte, puede crear un caso de soporte directamente desde la consola basada en web de BlueXP . Al crear el caso, debe seleccionar el servicio al que está asociado el problema.
 
@@ -124,9 +130,13 @@ A partir de esta versión, ahora puede crear un caso de soporte y asociarlo con 
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["Más información sobre la creación de un caso de soporte"].
 
+
+
 == 16 de diciembre de 2024
 
-=== Nuevos puntos finales seguros para obtener imágenes del conector
+
+
+=== Nuevos puntos finales seguros para obtener imágenes de Connector
 
 Al instalar Connector, o cuando se produce una actualización automática, Connector contacta con los repositorios para descargar imágenes para la instalación o actualización. De forma predeterminada, el conector siempre ha contactado con los siguientes puntos finales:
 
@@ -161,7 +171,11 @@ En ambos casos, puede seguir utilizando los puntos finales existentes.
 
 
 
+
+
 == 9 de diciembre de 2024
+
+
 
 === Conector 3.9.47
 
@@ -174,11 +188,17 @@ Cuando instale manualmente el conector, el instalador ya no se pondrá en contac
 
 El instalador sigue contactando \https://mysupport.NetApp.com.
 
-=== Gestión de acceso e identidad de BlueXP 
+
+
+=== Gestión de identidades y acceso BlueXP 
 
 La página Conectores muestra sólo los Conectores disponibles actualmente. Ya no muestra los conectores que ha eliminado.
 
+
+
 == 26 de noviembre de 2024
+
+
 
 === Versión en modo privado (3,9.46)
 
@@ -214,7 +234,11 @@ Para obtener más información sobre el modo privado, incluido el modo de actual
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Aprenda a actualizar el conector cuando use el modo privado"]
 
 
+
+
 == 11 de noviembre de 2024
+
+
 
 === Conector 3.9.46
 
@@ -222,21 +246,31 @@ Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de
 
 En este momento, la versión 3.9.46 está disponible para modo estándar y modo restringido.
 
-=== ID para proyectos de IAM
+
+
+=== ID de proyectos de IAM
 
 Ahora puede ver el ID de un proyecto desde la administración de acceso e identidad de BlueXP . Es posible que necesite usar el ID al realizar una llamada a la API.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["Aprenda a obtener el ID de un proyecto"].
 
+
+
 == 10 de octubre de 2024
 
-=== Patch del conector 3.9.45
+
+
+=== Parche del conector 3.9.45
 
 Este parche incluye correcciones de errores.
 
+
+
 == 7 de octubre de 2024
 
-=== Gestión de acceso e identidad de BlueXP 
+
+
+=== Gestión de identidades y acceso BlueXP 
 
 La gestión de identidades y accesos (IAM) de BlueXP  es un nuevo modelo de gestión de recursos y accesos que reemplaza y mejora la funcionalidad anterior proporcionada por las cuentas de BlueXP  cuando se utiliza BlueXP  en modo estándar.
 
@@ -289,6 +323,8 @@ BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar. Si util
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["Comience a usar BlueXP  IAM"]
 
 
+
+
 === Conector 3.9.45
 
 Esta versión incluye compatibilidad ampliada del sistema operativo y correcciones de errores.
@@ -299,6 +335,8 @@ La versión 3.9.45 está disponible para modo estándar y modo restringido.
 A partir de la versión 3.9.45, BlueXP  ahora admite nuevas instalaciones del conector en los hosts Ubuntu 24,04 LTS cuando se utiliza BlueXP  en modo estándar o en modo restringido.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Ver requisitos del host de Connector"].
+
+
 
 === Compatibilidad con SELinux con hosts de RHEL
 
@@ -314,7 +352,11 @@ Tenga en cuenta las siguientes limitaciones:
 
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["Obtenga más información sobre SELinux"^]
 
+
+
 == 30 de septiembre de 2024
+
+
 
 === Versión en modo privado (3,9.44)
 
@@ -365,7 +407,11 @@ Para obtener más información sobre el modo privado, incluido el modo de actual
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Aprenda a actualizar el conector cuando use el modo privado"]
 
 
+
+
 == 9 de septiembre de 2024
+
+
 
 === Conector 3.9.44
 
@@ -389,6 +435,8 @@ En esta versión, realizamos cambios en el certificado SSL para conectores nuevo
 * El nombre alternativo del asunto del certificado es el nombre de dominio completo (FQDN) de la máquina host
 
 
+
+
 === Compatibilidad con RHEL 9,4
 
 BlueXP  ahora admite la instalación del conector en un host de Red Hat Enterprise Linux 9,4 cuando se utiliza BlueXP  en modo estándar o restringido.
@@ -403,6 +451,8 @@ La lista actualizada de versiones de RHEL compatibles para el modo estándar y e
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Obtenga más información sobre la compatibilidad con RHEL 8 y 9 con Connector"].
 
+
+
 === Soporte para Podman 4.9.4 con todas las versiones de RHEL
 
 Podman 4.9.4 ahora es compatible con todas las versiones compatibles de Red Hat Enterprise Linux. La versión 4.9.4 solo era compatible con RHEL 8,10.
@@ -413,7 +463,9 @@ Podman es necesario para los hosts RHEL a partir de la versión 3.9.40 de Connec
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Obtenga más información sobre la compatibilidad con RHEL 8 y 9 con Connector"].
 
-=== Se han actualizado los permisos de AWS y Azure
+
+
+=== Permisos de AWS y Azure actualizados
 
 Hemos actualizado las políticas de AWS y Azure para el conector para eliminar permisos que ya no son necesarios. Los permisos estaban relacionados con el almacenamiento en caché perimetral de BlueXP , la detección y la gestión de clústeres de Kubernetes, que ya no se admiten a partir de agosto de 2024.
 
@@ -421,9 +473,13 @@ Hemos actualizado las políticas de AWS y Azure para el conector para eliminar p
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["Descubra lo que cambió en la política de Azure"].
 
 
+
+
 == 22 de agosto de 2024
 
-=== Patch del conector 3.9.43
+
+
+=== Parche del conector 3.9.43
 
 Hemos actualizado el conector para admitir la versión Cloud Volumes ONTAP 9.15.1.
 
@@ -441,7 +497,11 @@ Estos permisos son necesarios para la compatibilidad de Cloud Volumes ONTAP con 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Ver los permisos de Azure para Connector"].
 
 
+
+
 == 8 de agosto de 2024
+
+
 
 === Conector 3.9.43
 
@@ -449,7 +509,9 @@ Esta versión incluye mejoras y correcciones de errores menores.
 
 La versión 3.9.43 está disponible para modo estándar y modo restringido.
 
-=== Se han actualizado los requisitos de CPU y RAM
+
+
+=== Actualización de los requisitos de CPU y RAM
 
 Para proporcionar una mayor fiabilidad y mejorar el rendimiento de BlueXP  y el conector, ahora necesitamos CPU y RAM adicionales para la máquina virtual de conector:
 
@@ -466,15 +528,23 @@ Como resultado de este cambio, el tipo de instancia de VM predeterminado al impl
 
 Los requisitos actualizados de CPU y RAM se aplican a todos los conectores nuevos. Para los conectores existentes, se recomienda aumentar la CPU y la RAM para proporcionar un mejor rendimiento y fiabilidad.
 
-=== Soporte para Podman 4.9.4 con RHEL 8,10
+
+
+=== Compatibilidad con Podman 4.9.4 con RHEL 8,10
 
 Ahora se admite la versión 4.9.4 de Podman al instalar Connector en un host Red Hat Enterprise Linux 8,10.
 
-=== Validación de usuario para la federación de identidades
+
+
+=== Validación de usuario para federación de identidades
 
 Si utiliza la federación de identidades con BlueXP , todos los usuarios que inicien sesión en BlueXP  por primera vez deberán completar un formulario rápido para validar su identidad.
 
+
+
 == 31 de julio de 2024
+
+
 
 === Versión en modo privado (3,9.42)
 
@@ -531,7 +601,11 @@ Para obtener más información sobre las versiones de estos servicios de BlueXP,
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Descubre las novedades de la gestión de Cloud Volumes ONTAP en BlueXP"^]
 
 
+
+
 == 15 de julio de 2024
+
+
 
 === Compatibilidad con RHEL 8,10
 
@@ -541,7 +615,11 @@ La compatibilidad con RHEL 8,10 comienza con la versión 3.9.40 del conector.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Obtenga más información sobre la compatibilidad con RHEL 8 y 9 con Connector"].
 
+
+
 == 8 de julio de 2024
+
+
 
 === Conector 3.9.42
 
@@ -549,7 +627,9 @@ Esta versión incluye mejoras menores, correcciones de errores y soporte para Co
 
 La versión 3.9.42 está disponible para modo estándar y modo restringido.
 
-=== Se han actualizado los requisitos del motor Docker
+
+
+=== Requisitos del motor Docker actualizados
 
 Cuando Connector está instalado en un host Ubuntu, la versión mínima admitida de Docker Engine es ahora 23,0.6. Anteriormente era 19,3.1.
 
@@ -557,11 +637,17 @@ La versión máxima admitida sigue siendo 25,0.5.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Ver requisitos del host de Connector"].
 
-=== Verificación de correo electrónico ahora necesaria
+
+
+=== Ahora se requiere verificación de correo electrónico
 
 Ahora se requiere que los nuevos usuarios que se registren en BlueXP verifiquen su dirección de correo electrónico para poder iniciar sesión.
 
+
+
 == 12 de junio de 2024
+
+
 
 === Conector 3.9.41
 
@@ -569,7 +655,11 @@ Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de
 
 La versión 3.9.41 está disponible para modo estándar y modo restringido.
 
+
+
 == 4 de junio de 2024
+
+
 
 === Versión en modo privado (3,9.40)
 
@@ -612,7 +702,11 @@ Para obtener más información sobre las versiones de estos servicios de BlueXP,
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Descubre las novedades de la gestión de Cloud Volumes ONTAP en BlueXP"^]
 
 
+
+
 == 17 de mayo de 2024
+
+
 
 === Conector 3.9.40
 
@@ -645,13 +739,19 @@ En la versión 3.9.38, actualizamos la directiva Connector para AWS para incluir
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Obtenga más información sobre el soporte para las zonas locales de AWS"^]
 
 
+
+
 == 22 de abril de 2024
+
+
 
 === Conector 3.9.39
 
 Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.
 
 En este momento, la versión 3.9.39 está disponible para modo estándar y modo restringido.
+
+
 
 === Permisos de AWS para crear un conector
 
@@ -671,7 +771,11 @@ NOTE: Esta directiva sólo contiene los permisos necesarios para iniciar la inst
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["Aprenda a configurar permisos de AWS para crear un conector desde AWS"].
 
+
+
 == 11 de abril de 2024
+
+
 
 === Actualización de Docker Engine
 
@@ -679,7 +783,11 @@ Hemos actualizado los requisitos de Docker Engine para especificar la versión m
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Ver requisitos del host de Connector"].
 
+
+
 == 26 de marzo de 2024
+
+
 
 === Versión en modo privado (3,9.38)
 
@@ -717,7 +825,11 @@ Esta nueva versión está disponible para descargar desde el sitio de soporte de
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Aprenda a actualizar el conector cuando use el modo privado"]
 
 
+
+
 == 8 de marzo de 2024
+
+
 
 === Conector 3.9.38
 
@@ -744,6 +856,8 @@ Hemos actualizado la política de Connector para AWS para incluir el permiso «E
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Ver los permisos de AWS para el conector"].
 
+
+
 === Configuración de proxy y configuración de Cloud Volumes ONTAP
 
 La configuración del servidor proxy para el conector ahora está disponible en la página *Administrar conectores* (modo estándar) o en la página *Editar conectores* (modo restringido y modo privado).
@@ -754,13 +868,19 @@ Además, cambiamos el nombre de la página *Configuración del conector* a *Conf
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["Una captura de pantalla que muestra la opción Configuración de Cloud Volumes ONTAP que está disponible en el menú Configuración."]
 
+
+
 == 15 de febrero de 2024
+
+
 
 === Conector 3.9.37
 
 Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.
 
 En este momento, la versión 3.9.37 está disponible para modo estándar y modo restringido.
+
+
 
 === Editar nombre
 
@@ -770,7 +890,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 No se puede editar su nombre si inicia sesión con una conexión federada o con su cuenta del sitio de soporte de NetApp.
 
+
+
 == 11 de enero de 2024
+
+
 
 === Conector 3.9.36
 
@@ -780,7 +904,11 @@ Esta versión incluye mejoras menores, correcciones de errores y soporte para Co
 * La región de Arabia Saudita en Google Cloud
 
 
+
+
 == 5 de diciembre de 2023
+
+
 
 === Versión en modo privado (3,9.35)
 
@@ -793,19 +921,31 @@ Esta nueva versión está disponible para descargar desde el sitio de soporte de
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Aprenda a actualizar el conector cuando use el modo privado"]
 
 
+
+
 == 8 de noviembre de 2023
+
+
 
 === Conector 3.9.35
 
 Esta versión incluye mejoras de seguridad y correcciones de errores menores.
 
+
+
 == 6 de octubre de 2023
+
+
 
 === Conector 3.9.34
 
 Esta versión incluye mejoras y correcciones de errores menores.
 
+
+
 == 10 de septiembre de 2023
+
+
 
 === Conector 3.9.33
 
@@ -816,7 +956,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * Esta actualización también incluye correcciones de errores.
 
 
+
+
 == 30 de julio de 2023
+
+
 
 === Conector 3.9.32
 
@@ -838,7 +982,11 @@ Tenga en cuenta que también se puede acceder a este enlace desde la interfaz de
 
 
 
+
+
 == 2 de julio de 2023
+
+
 
 === Conector 3.9.31
 
@@ -864,7 +1012,11 @@ Tenga en cuenta que este punto final sigue siendo necesario para todas las demá
 
 
 
+
+
 == 4 de junio de 2023
+
+
 
 === Conector 3.9.30
 
@@ -916,7 +1068,11 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Consulte la lista complet
 
 
 
+
+
 == 7 de mayo de 2023
+
+
 
 === Conector 3.9.29
 
@@ -942,9 +1098,13 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-20
 
 
 
+
+
 == 4 de abril de 2023
 
-=== Modos de despliegue
+
+
+=== Modos de implementación
 
 BlueXP _modos de implementación_ le permiten utilizar BlueXP de forma que se ajuste a sus requisitos empresariales y de seguridad. Puede elegir entre tres modos:
 
@@ -958,7 +1118,11 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Obtenga má
 
 NOTE: La introducción del modo restringido sustituye a la opción de activar o desactivar la plataforma SaaS. Puede habilitar el modo restringido en el momento de crear una cuenta. No se puede habilitar ni deshabilitar más adelante.
 
+
+
 == 3 de abril de 2023
+
+
 
 === Conector 3.9.28
 
@@ -992,7 +1156,11 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-
 
 
 
+
+
 == 5 de marzo de 2023
+
+
 
 === Conector 3.9.27
 
@@ -1027,7 +1195,11 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-
 
 
 
+
+
 == 5 de febrero de 2023
+
+
 
 === Conector 3.9.26
 
@@ -1071,7 +1243,11 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-februa
 
 
 
+
+
 == 1 de enero de 2023
+
+
 
 === Conector 3.9.25
 
@@ -1079,7 +1255,11 @@ Esta versión del conector incluye mejoras y correcciones de errores de Cloud Vo
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-january-2023["Obtenga información acerca de las mejoras de Cloud Volumes ONTAP"^]
 
+
+
 == 4 de diciembre de 2022
+
+
 
 === Conector 3.9.24
 
@@ -1093,7 +1273,11 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-januar
 
 
 
+
+
 == 6 de noviembre de 2022
+
+
 
 === Conector 3.9.23
 
@@ -1107,7 +1291,11 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#6-novemb
 
 
 
+
+
 == 1 de noviembre de 2022
+
+
 
 === Introducción de BlueXP
 
@@ -1148,11 +1336,17 @@ Leer más::
 --
 
 
-=== Petición de datos para actualizar las credenciales de NSS
+
+
+=== Solicitar que se actualicen las credenciales de NSS
 
 Cloud Manager ahora le solicita que actualice las credenciales asociadas con sus cuentas del sitio de soporte de NetApp cuando el token de actualización asociado con su cuenta caduque después de 3 meses. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["Aprenda a gestionar cuentas de NSS"^]
 
+
+
 == 18 de septiembre de 2022
+
+
 
 === Conector 3.9.22
 
@@ -1167,7 +1361,11 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#18-septe
 
 
 
+
+
 == 31 de julio de 2022
+
+
 
 === Conector 3.9.21
 
@@ -1187,9 +1385,13 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#31-july-
 
 
 
+
+
 == 15 de julio de 2022
 
-=== Cambios de política
+
+
+=== Cambios en las políticas
 
 Hemos actualizado la documentación añadiendo las políticas de Cloud Manager directamente dentro de los documentos. Esto significa que ahora puede ver los permisos necesarios para el conector y Cloud Volumes ONTAP junto con los pasos que describen cómo configurarlos. Antes, estas políticas eran accesibles desde una página del sitio de soporte de NetApp.
 
@@ -1197,7 +1399,11 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 También hemos creado una página que proporciona enlaces a cada una de las políticas. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Consulte el resumen de permisos de Cloud Manager"].
 
+
+
 == 3 de julio de 2022
+
+
 
 === Conector 3.9.20
 
@@ -1237,7 +1443,11 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2
 
 
 
+
+
 == 28 de junio de 2022
+
+
 
 === Inicie sesión con las credenciales de NetApp
 
@@ -1246,7 +1456,11 @@ Cuando los nuevos usuarios se registren en Cloud Central, ahora podrán seleccio
 
 NOTE: Los inicios de sesión existentes que utilizan una dirección de correo electrónico y una contraseña deben seguir utilizando ese método de inicio de sesión. La opción Iniciar sesión con NetApp está disponible para los nuevos usuarios que se registren.
 
+
+
 == 7 de junio de 2022
+
+
 
 === Conector 3.9.19
 
@@ -1263,13 +1477,21 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["Consulte la lista comple
 
 
 
+
+
 == 12 de mayo de 2022
 
-=== Patch del conector 3.9.18
+
+
+=== Parche del conector 3.9.18
 
 Hemos actualizado el conector para introducir correcciones de errores. La solución más destacable es un problema que afecta a la puesta en marcha de Cloud Volumes ONTAP en Google Cloud cuando el conector se encuentra en un VPC compartido.
 
+
+
 == 2 de mayo de 2022
+
+
 
 === Conector 3.9.18
 
@@ -1308,7 +1530,11 @@ Asegúrese de proporcionar estos permisos a cada conjunto de credenciales de AWS
 
 
 
+
+
 == 3 de abril de 2022
+
+
 
 === Conector 3.9.17
 
@@ -1319,7 +1545,11 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 * Esta versión del conector también incluye mejoras de Cloud Volumes ONTAP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2022["Obtenga información sobre estas mejoras"^]
 
 
+
+
 == 27 de febrero de 2022
+
+
 
 === Conector 3.9.16
 
@@ -1327,13 +1557,21 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 * Esta versión del conector también incluye mejoras de Cloud Volumes ONTAP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#27-february-2022["Obtenga información sobre estas mejoras"^]
 
 
+
+
 == 30 de enero de 2022
+
+
 
 === Conector 3.9.15
 
 Esta versión del conector incluye mejoras de Cloud Volumes ONTAP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-january-2022["Obtenga información sobre estas mejoras"^]
 
+
+
 == 2 de enero de 2022
+
+
 
 === Puntos finales reducidos para el conector
 
@@ -1341,21 +1579,29 @@ Hemos reducido el número de extremos con los que debe ponerse en contacto un co
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-checklist-cm.html["Consulte la lista de los extremos necesarios"]
 
+
+
 === Cifrado de disco EBS para el conector
 
 Al implementar un nuevo conector en AWS desde Cloud Manager, ahora puede elegir cifrar los discos EBS del conector con la clave maestra predeterminada o una clave administrada.
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-disk-encryption.png["Captura de pantalla que muestra la opción de cifrado de disco al crear un conector en AWS."]
 
-=== Dirección de correo electrónico para cuentas NSS
+
+
+=== Dirección de correo electrónico de las cuentas de NSS
 
 Cloud Manager ahora puede mostrar la dirección de correo electrónico asociada con una cuenta del sitio de soporte de NetApp.
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-nss-display-email.png["Una captura de pantalla que muestra el menú de acción de una cuenta del sitio de soporte de NetApp con capacidad para mostrar la dirección de correo electrónico."]
 
+
+
 == 28 de noviembre de 2021
 
-=== Se requiere una actualización para las cuentas del sitio de soporte de NetApp
+
+
+=== Actualización necesaria para las cuentas del sitio de soporte de NetApp
 
 A partir de diciembre de 2021, NetApp ahora utiliza Microsoft Azure Active Directory como proveedor de identidades para servicios de autenticación específicos para soporte y licencias. Como resultado de esta actualización, Cloud Manager le solicitará que actualice las credenciales de las cuentas del sitio de soporte de NetApp existentes que haya añadido anteriormente.
 
@@ -1363,27 +1609,39 @@ Si todavía no ha migrado su cuenta de NSS a IDaaS, primero debe migrar la cuent
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Obtenga más información sobre el uso por parte de NetApp de Microsoft Azure Active Directory para la gestión de identidades"^]
 
-=== Cambie las cuentas NSS para Cloud Volumes ONTAP
+
+
+=== Cambiar las cuentas de NSS para Cloud Volumes ONTAP
 
 Si su organización tiene varias cuentas en la página de soporte de NetApp, ahora puede cambiar qué cuenta está asociada a un sistema Cloud Volumes ONTAP.
 
 link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-nss-account["Aprenda a conectar un entorno de trabajo a una cuenta de NSS diferente"].
 
+
+
 == 4 de noviembre de 2021
 
-=== Certificación SOC 2 Tipo 2
+
+
+=== Certificación SOC 2 de tipo 2
 
 Una empresa independiente certificada de contables y un auditor de servicios examinaron Cloud Manager, Cloud Sync, Cloud Tiering, Cloud Data Sense y Cloud Backup (plataforma Cloud Manager), y afirmaron que han obtenido los informes de SOC 2 de tipo 2 basados en los criterios aplicables de los servicios de confianza.
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["Consulte los informes de SOC 2 de NetApp"^].
 
-=== El conector ya no se admite como proxy
+
+
+=== El conector ya no es compatible como proxy
 
 Ya no puede utilizar el conector de Cloud Manager como servidor proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP. Esta funcionalidad se ha eliminado y ya no se admite. Necesitará proporcionar conectividad AutoSupport a través de una instancia NAT o de los servicios proxy del entorno.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["Obtenga más información sobre la verificación de AutoSupport con Cloud Volumes ONTAP"^]
 
+
+
 == 31 de octubre de 2021
+
+
 
 === Autenticación con principal de servicio
 
@@ -1391,19 +1649,29 @@ Al crear un conector nuevo en Microsoft Azure, ahora puede autenticarse con un d
 
 link:task-creating-connectors-azure.html["Aprenda a autenticarse con un director de servicio de Azure"].
 
+
+
 === Mejora de credenciales
 
 Hemos rediseñado la página de credenciales para facilitar su uso y lograr que coincida con el aspecto actual de la interfaz de Cloud Manager.
 
+
+
 == 2 de septiembre de 2021
 
-=== Se ha agregado Un nuevo servicio de notificación
+
+
+=== Se ha agregado un nuevo servicio de notificación
 
 El servicio de notificación se ha introducido de modo que puede ver el estado de las operaciones de Cloud Manager que ha iniciado durante su sesión actual. Puede verificar si la operación se ha realizado correctamente o si ha fallado. link:task-monitor-cm-operations.html["Consulte cómo se supervisan las operaciones de la cuenta"].
 
+
+
 == 7 de julio de 2021
 
-=== Mejoras para agregar el asistente de conector
+
+
+=== Mejoras en el asistente Agregar conector
 
 Hemos rediseñado el asistente *Add Connector* para añadir nuevas opciones y facilitar su uso. Ahora puede añadir etiquetas, especificar un rol (para AWS o Azure), cargar un certificado raíz para un servidor proxy, ver código para la automatización de Terraform, ver detalles del progreso, etc.
 
@@ -1412,7 +1680,9 @@ Hemos rediseñado el asistente *Add Connector* para añadir nuevas opciones y fa
 * link:task-creating-connectors-gcp.html["Cree un conector en Google Cloud"]
 
 
-=== Gestión de cuentas NSS desde la consola de soporte
+
+
+=== Gestión de cuentas de NSS desde la consola de soporte
 
 Las cuentas del sitio de soporte de NetApp (NSS) ahora se gestionan desde la consola de soporte, en lugar de hacerlo desde el menú Configuración. Este cambio facilita la búsqueda y la gestión de toda la información relacionada con el soporte desde una única ubicación.
 
@@ -1420,7 +1690,11 @@ link:task-adding-nss-accounts.html["Aprenda a gestionar cuentas de NSS"].
 
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot_nss_management.png["Una captura de pantalla de la pestaña NSS Management en la consola de soporte, donde puede agregar cuentas de NSS."]
 
+
+
 == 5 de mayo de 2021
+
+
 
 === Cuentas en la línea de tiempo
 
@@ -1428,15 +1702,21 @@ La línea de tiempo de Cloud Manager ahora muestra acciones y eventos relacionad
 
 link:task-monitor-cm-operations.html["Aprenda a filtrar la línea de tiempo al servicio de tenancy"].
 
+
+
 == 11 de abril de 2021
 
-=== Llamadas API directamente a Cloud Manager
+
+
+=== API llama directamente a Cloud Manager
 
 Si configuró un servidor proxy, ahora puede habilitar una opción para enviar llamadas API directamente a Cloud Manager sin pasar por el proxy. Esta opción es compatible con conectores que se ejecutan en AWS o en Google Cloud.
 
 link:task-configuring-proxy.html["Obtenga más información sobre este ajuste"].
 
-=== Usuarios de la cuenta de servicio
+
+
+=== Usuarios de cuentas de servicio
 
 Ahora puede crear un usuario de cuenta de servicio.
 
@@ -1444,11 +1724,15 @@ Una cuenta de servicio actúa como un "usuario" que puede realizar llamadas API 
 
 link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["Obtenga más información acerca del uso de cuentas de servicio"].
 
+
+
 === Vistas previas privadas
 
 Ahora puede permitir que las vistas previas privadas de su cuenta obtengan acceso a nuevos servicios cloud de NetApp conforme vayan disponibles como vista previa en Cloud Manager.
 
 link:task-managing-netapp-accounts.html#allow-private-previews["Obtenga más información sobre esta opción"].
+
+
 
 === Servicios de terceros
 
@@ -1456,9 +1740,13 @@ También puede permitir que los servicios de terceros de su cuenta tengan acceso
 
 link:task-managing-netapp-accounts.html#allow-third-party-services["Obtenga más información sobre esta opción"].
 
+
+
 == 8 de marzo de 2021
 
 Esta actualización incluye mejoras en varias características y servicios.
+
+
 
 === Mejoras de Cloud Volumes ONTAP
 
@@ -1497,7 +1785,9 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gc
 
 
 
-=== Mejoras del conector
+
+
+=== Mejoras en los conectores
 
 * Ahora Cloud Manager notifica a los usuarios administradores mediante un correo electrónico cuando no se está ejecutando un conector.
 +
@@ -1506,6 +1796,8 @@ Mantener sus conectores en funcionamiento ayuda a garantizar la mejor gestión d
 * Cloud Manager ahora muestra una notificación si necesita cambiar el tipo de instancia de su Connector.
 +
 Al cambiar el tipo de instancia, se garantiza que puede utilizar las nuevas funciones y capacidades que le faltan actualmente.
+
+
 
 
 
@@ -1529,7 +1821,9 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#s
 
 
 
-=== Mejoras de la organización en niveles del cloud
+
+
+=== Mejoras en la organización en niveles del cloud
 
 * Al organizar en niveles en Google Cloud Storage, puedes aplicar una regla de ciclo de vida, de modo que los datos organizados en niveles pasen de la clase de almacenamiento estándar al almacenamiento Nearline, Coldline o Archive de menor coste transcurridos 30 días.
 * Ahora Cloud Tiering muestra si tienes clústeres de ONTAP en las instalaciones sin detectar de manera que puedas añadirlos a Cloud Manager para permitir la organización en niveles u otros servicios en esos clústeres.
@@ -1538,14 +1832,18 @@ https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discover
 
 
 
+
+
 === Mejoras de Azure NetApp Files
 
 Ahora puede cambiar de forma dinámica el nivel de servicio de un volumen para satisfacer las necesidades de las cargas de trabajo y optimizar los costes. El volumen se mueve al otro pool de capacidad sin afectar al volumen. https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["Leer más"^]
 
+
+
 == 9 de febrero de 2021
+
+
 
 === Mejoras en la consola de soporte
 
 Hemos actualizado la consola de soporte de con el fin de permitirle añadir sus credenciales del sitio de soporte de NetApp, que le registra para recibir soporte. También puede iniciar un caso de soporte de NetApp directamente desde la consola. Simplemente haga clic en el icono Ayuda y luego *Soporte*.
-
-====
