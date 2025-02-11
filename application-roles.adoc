@@ -1,0 +1,53 @@
+= Funciones de la aplicación
+:allow-uri-read: 
+
+
+
+
+== Funciones de la aplicación
+
+Los roles de las aplicaciones proporcionan acceso a aplicaciones de BlueXP  como el asesor digital de Active IQ (también conocido como asesor digital).
+
+
+
+=== Administrador de almacenamiento
+
+Permite al usuario llevar a cabo funciones de administración del almacenamiento en BlueXP , como actualizaciones de software, creación y eliminación de entornos de trabajo de BlueXP .
+
+Permisos:: Puede ver el lienzo de BlueXP . Puede crear y administrar conectores BlueXP . Tiene acceso de lectura/escritura a funciones de estado del almacenamiento y gobernanza de BlueXP , incluidas las siguientes:
++
+--
+* Asesor digital
+* Resiliencia operativa
+* Actualizaciones de software (puede realizar actualizaciones de software)
+* Cartera digital
+* Eficiencia económica
+* Panel de sostenibilidad
+* Alertas
+
+
+--
+
+
+
+
+=== Visor de almacenamiento
+
+Ofrece acceso de solo lectura a las funciones sanitarias y gubernamentales de BlueXP . Este rol normalmente se asigna a los usuarios responsables de la supervisión del estado de los recursos de almacenamiento de una organización. Los usuarios con este rol pueden ver múltiples aplicaciones de BlueXP  para crear planes de actualización de software, planes de eficiencia y ver el estado general del almacenamiento.
+
+Permisos:: Tiene acceso de solo lectura a las funciones de gobierno y estado del almacenamiento de BlueXP , incluidas las siguientes:
++
+--
+* Asesor digital
+* Resiliencia operativa
+* Actualizaciones de software (pueden descargar planes de actualización)
+* Cartera digital
+* Eficiencia económica
+* Panel de sostenibilidad
+* Alertas
+
+
+--
+
+
+Ejemplo de la tarea: Por ejemplo, si tiene siete en la jerarquía de recursos que representan los proyectos respectivos (entornos de trabajo) dentro de ellos, puede asignar a alguien el rol de administrador de almacenamiento para tres de los proyectos y, a continuación, asignar un miembro diferente al administrador de almacenamiento para los proyectos restantes. Otra posibilidad sería asignar a un usuario el rol de administrador de almacenamiento para toda la organización. Puede administrar los roles de los miembros según las necesidades de su organización.

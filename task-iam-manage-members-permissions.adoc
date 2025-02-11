@@ -194,7 +194,7 @@ link:task-iam-manage-folders-projects.html#view-associated-resources-members["Ve
 
 == Gestionar roles de miembros
 
-A los miembros de la organización se les pueden asignar roles en cada nivel y más de un nivel de la jerarquía de recursos. Puede asignar roles de miembros relevantes para sus responsabilidades en la organización BlueXP . Por ejemplo, si tiene siete dentro de la jerarquía de recursos que representan los proyectos respectivos (entornos de trabajo) dentro de ellos, puede asignar a alguien el rol Administrador de almacenamiento para tres de los proyectos y, a continuación, asignar un miembro diferente al Administrador de almacenamiento para los proyectos restantes. Otra posibilidad sería asignar a un usuario el rol de administrador de almacenamiento para toda la organización. Puede administrar los roles de los miembros según las necesidades de su organización.
+A los miembros de la organización se les pueden asignar roles en cada nivel y más de un nivel de la jerarquía de recursos. Puede asignar roles de miembros relevantes para sus responsabilidades en la organización BlueXP .
 
 Puede anular la asignación de un rol de un miembro, agregar un nuevo rol o ambos. Un rol define los permisos asignados a un miembro en el nivel de organización, carpeta o proyecto. Puede asignar roles de miembros relevantes a sus responsabilidades en la organización de BlueXP .
 
@@ -227,7 +227,7 @@ Proporcione a un miembro permisos adicionales en su organización agregando role
 +
 Si selecciona la organización o una carpeta, el miembro tendrá permisos para todo lo que reside en la organización o carpeta.
 
-** *Seleccione una categoría*: BlueXP  separa los roles en tres categorías: Plataforma, aplicación y servicios de datos. link:reference-iam-predefined-roles.html["Obtenga información sobre los roles de IAM"^].
+** *Seleccione una categoría*: BlueXP  Separar roles en dos categorías: Plataforma y servicio de datos. link:reference-iam-predefined-roles.html["Obtenga información sobre los roles de IAM"^].
 ** Seleccione un *rol*: Elija un rol que proporcione al miembro permisos para los recursos asociados a la organización, carpeta o proyecto que seleccionó.
 +
 *** Si seleccionó la organización, puede elegir entre cualquier rol que no sea *Carpeta o administrador de proyectos*.
@@ -252,7 +252,7 @@ Puede cambiar el rol asignado a un en el nivel de organización, carpeta o proye
 .Pasos
 . Desde la página *Miembros*, navega a un miembro de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Ver detalles*.
 . En la tabla, expanda la fila correspondiente para la organización, carpeta o proyecto en el que desee cambiar el rol asignado del miembro y seleccione *Ver* en la columna *Rol* para ver los roles asignados a este miembro.
-. Para cambiar el rol de un miembro, elige *Cambiar* junto al rol que quieres cambiar. Sólo puede cambiar este rol a un rol dentro de la misma categoría de rol. Por ejemplo, puede cambiar de un rol de aplicación a otro. Se le pedirá que confirme el cambio.
+. Para cambiar el rol de un miembro, elige *Cambiar* junto al rol que quieres cambiar. Sólo puede cambiar este rol a un rol dentro de la misma categoría de rol. Por ejemplo, puede cambiar de un rol de servicio de datos a otro. Se le pedirá que confirme el cambio.
 +
 .. Para anular la asignación del rol de un miembro, seleccione image:icon-delete.png["Un icono que se asemeja a una papelera"] junto al rol para anular la asignación del rol respectivo al miembro. Se le pedirá que confirme la eliminación.
 
