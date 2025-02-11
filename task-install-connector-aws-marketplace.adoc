@@ -174,14 +174,9 @@ Ahora tiene el rol de IAM que se puede asociar a la instancia de EC2 durante la 
 
 Al crear el conector, debe elegir un tipo de instancia EC2 que cumpla los siguientes requisitos.
 
-Host puede ser de cualquier arquitectura que cumpla con estos requisitos de tamaño.
-
-* *CPU:* 8 núcleos o 8 vCPU
-* *RAM:* 32 GB
-+
+CPU:: 8 núcleos o 8 vCPU
+RAM:: 32GB
 Tipo de instancia de AWS EC2:: Tipo de instancia que cumple los requisitos anteriores de CPU y RAM. Recomendamos t3.2xlarge.
-
-
 
 
 

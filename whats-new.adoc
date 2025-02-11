@@ -34,9 +34,6 @@ En este momento, la versión 3.9.49 está disponible para modo estándar y modo 
 
 * Compatibilidad para asignar más de un rol a un usuario.
 * Los roles ahora están asociados a una de dos categorías: Plataforma y servicio de datos.
-* Ahora, los roles están asociados a una de tres categorías: Plataforma, aplicación y servicios de datos.
-* Hay dos nuevos roles asociados a la categoría de aplicación: Visor del almacenamiento y Administrador del almacenamiento. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Lea acerca de los roles de IAM"]
-* IAM ahora se utiliza en el modo restringido de BlueXP 
 
 
 
@@ -95,6 +92,15 @@ Este cambio introduce una nueva API para BlueXP  IAM, pero es compatible con ve
 
 .Modos de despliegue admitidos
 BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar y restringido. Si utiliza BlueXP  en modo privado, seguirá utilizando una _account_ de BlueXP  para gestionar espacios de trabajo, usuarios y recursos.
+
+.Mejoras adicionales de IAM
+* Compatibilidad para asignar más de un rol a un usuario.
+* Ahora, los roles están asociados a una de tres categorías: Plataforma, aplicación y servicios de datos.
+* Hay dos nuevos roles asociados a la categoría de aplicación: Visor del almacenamiento y Administrador del almacenamiento.
++
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Lea acerca de los roles de IAM"]
+
+
 
 
 
