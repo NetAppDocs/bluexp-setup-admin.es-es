@@ -46,6 +46,15 @@ Dónde instalas Connector determina los servicios y características de BlueXP q
 El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
 
 Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
++
+--
+Host puede ser de cualquier arquitectura que cumpla con los siguientes requisitos de tamaño:
+
+* CPU: 8 núcleos o 8 vCPU
+* RAM: 32 GB
+
+
+--
 [[podman-versions]]Requisitos del sistema operativo y del contenedor:: BlueXP  admite el conector con los siguientes sistemas operativos cuando se utiliza BlueXP  en modo privado. Antes de instalar el conector, se necesita una herramienta de orquestación de contenedores.
 +
 --

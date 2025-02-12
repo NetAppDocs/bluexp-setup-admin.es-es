@@ -3,6 +3,15 @@
 
 
 Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
++
+--
+Host puede ser de cualquier arquitectura que cumpla con los siguientes requisitos de tamaño:
+
+* CPU: 8 núcleos o 8 vCPU
+* RAM: 32 GB
+
+
+--
 
 
 Hipervisor:: Se requiere un hipervisor nativo o alojado que esté certificado para ejecutar un sistema operativo compatible.
