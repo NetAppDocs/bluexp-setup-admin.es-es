@@ -14,7 +14,7 @@ summary: 'La gestión de identidades y accesos (IAM) de BlueXP  le permite cont
 
 
 [role="lead"]
-La gestión de identidades y accesos (IAM) de BlueXP  le permite organizar y controlar el acceso a sus recursos de NetApp. Puede organizar sus recursos de acuerdo con la jerarquía de su organización. Por ejemplo, puede organizar recursos por ubicación geográfica, sitio o unidad de negocio. A continuación, puede asignar roles pIAM a miembros en partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.
+La gestión de identidades y accesos (IAM) de BlueXP  le permite organizar y controlar el acceso a sus recursos de NetApp. Puede organizar sus recursos de acuerdo con la jerarquía de su organización. Por ejemplo, puede organizar recursos por ubicación geográfica, sitio o unidad de negocio. A continuación, puede asignar roles de IAM a miembros de partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.
 
 IAM de BlueXP  reemplaza y mejora la funcionalidad anterior proporcionada por las cuentas de BlueXP . link:whats-new.html#iam["Obtenga más información sobre la introducción de BlueXP  IAM"].
 
