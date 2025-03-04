@@ -409,7 +409,7 @@ Habilite NTP:: Si tienes pensado utilizar la clasificación de BlueXP para anali
 
 
 
-== Paso 4: Configurar permisos
+== Paso 4: Configure los permisos de implementación de Connector
 
 Necesitas proporcionar permisos de Azure a BlueXP mediante una de las siguientes opciones:
 
@@ -421,7 +421,7 @@ Sigue los pasos para preparar permisos para BlueXP.
 
 [role="tabbed-block"]
 ====
-.Función personalizada
+.Cree un rol personalizado para el despliegue de Connector
 --
 Tenga en cuenta que puede crear un rol personalizado de Azure mediante el portal de Azure, Azure PowerShell, Azure CLI o la API DE REST. Los siguientes pasos muestran cómo crear el rol con la CLI de Azure. Si prefiere utilizar un método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentación de Azure"^]
 

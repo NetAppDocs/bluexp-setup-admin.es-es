@@ -116,7 +116,7 @@ BlueXP requiere permisos de Azure para Connector y para servicios individuales.
 | Objetivo | Descripción | Enlace 
 
 
-| Pon en marcha el conector de BlueXP | Al implementar un conector desde BlueXP, necesita utilizar una cuenta de Azure o una entidad de servicio con permisos para implementar Connector VM en Azure. | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Configure los permisos de Azure"] 
+| Pon en marcha el conector de BlueXP | Al implementar un conector desde BlueXP, necesita utilizar una cuenta de Azure o una entidad de servicio con permisos para implementar Connector VM en Azure. | link:task-install-connector-azure-bluexp.html#connector-custom-role["Configure los permisos de Azure"] 
 
 
 | Proporcione permisos para el conector  a| 

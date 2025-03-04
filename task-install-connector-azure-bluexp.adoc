@@ -14,7 +14,7 @@ summary: Para crear un conector en Azure desde BlueXP, debe configurar la red, p
 
 
 [role="lead"]
-Un conector es el software NetApp que se ejecuta en su red de cloud o en las instalaciones que le da la posibilidad de usar todas las funciones y servicios de BlueXP . Una de las opciones de instalación disponibles es crear un conector en Azure directamente desde BlueXP . Para crear un conector en Azure desde BlueXP, debe configurar la red, preparar los permisos de Azure y, a continuación, crear el conector.
+Puede crear un conector en Azure directamente desde BlueXP . Para crear un conector en Azure desde BlueXP , debe configurar la red, preparar un rol de Azure para usarlo para implementar el conector y, a continuación, implementar el conector.
 
 .Antes de empezar
 * Usted debe tener un link:concept-connectors.html["Comprensión de los conectores"].
@@ -160,9 +160,13 @@ Deberá implementar este requisito de red después de crear el conector.
 
 
 
-== Paso 2: Crear un rol personalizado
+== Paso 2: Crear una política de implementación de Connector (rol personalizado)
+
+Debe crear un rol personalizado que tenga permisos para desplegar Connector en Azure.
 
 Cree una función personalizada de Azure que pueda asignar a su cuenta de Azure o a un director de servicio de Microsoft Entra. BlueXP autentica con Azure y utiliza estos permisos para crear la instancia de Connector en su nombre.
+
+Una vez que BlueXP  implementa la máquina virtual Connector en Azure, habilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada asignada por el sistema"^] en la máquina virtual, crea automáticamente la función que necesita y la asigna a la máquina virtual. El rol creado automáticamente proporciona a BlueXP  los permisos necesarios para gestionar recursos y procesos dentro de esa suscripción de Azure. link:reference-permissions-azure.html["Revise cómo BlueXP utiliza los permisos"].
 
 Tenga en cuenta que puede crear un rol personalizado de Azure mediante el portal de Azure, Azure PowerShell, Azure CLI o la API DE REST. Los siguientes pasos muestran cómo crear el rol con la CLI de Azure. Si prefiere utilizar un método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentación de Azure"^]
 

@@ -16,17 +16,16 @@ summary: Cuando BlueXP inicia Connector VM en Azure, asocia una función persona
 [role="lead"]
 Cuando BlueXP inicia Connector VM en Azure, asocia una función personalizada a la máquina virtual que proporciona al conector permisos para gestionar recursos y procesos en esa suscripción a Azure. El conector utiliza los permisos para realizar llamadas API a varios servicios de Azure.
 
+Si necesita o no crear este rol personalizado para el conector depende de cómo lo haya desplegado.
 
+.Puesta en marcha desde BlueXP 
+Cuando se utiliza BlueXP  para implementar la máquina virtual Connector en Azure, se habilita un en la máquina virtual, se crea un https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada asignada por el sistema"^] rol personalizado y se asigna a la máquina virtual. La función proporciona a BlueXP los permisos necesarios para gestionar recursos y procesos dentro de esa suscripción a Azure. Los permisos del rol se mantienen actualizados cuando se actualiza el conector. No es necesario crear este rol para Connector ni administrar actualizaciones.
 
-== Permisos de roles personalizados
+.Implementación manual o desde Azure Marketplace
+Cuando implementa Connector desde Azure Marketplace o si instala el Connector manualmente en un host Linux, debe configurar el rol personalizado usted mismo y mantener sus permisos con cualquier cambio.
 
-El rol personalizado que se muestra a continuación proporciona los permisos que un conector necesita para administrar recursos y procesos dentro de su red de Azure.
+Deberá asegurarse de que el rol esté actualizado a medida que se añadan nuevos permisos en las versiones posteriores. Si se requieren nuevos permisos, se mostrarán en las notas de la versión.
 
-Tenga en cuenta lo siguiente:
-
-* Al crear un conector directamente desde BlueXP, BlueXP aplica automáticamente esta función personalizada al conector.
-* Si pone en marcha el conector desde Azure Marketplace o si instala manualmente el conector en un host Linux, deberá configurar el rol personalizado usted mismo.
-* En cualquier caso, debe asegurarse de que el rol esté actualizado a medida que se agregan nuevos permisos en las versiones posteriores. Si se requieren nuevos permisos, se mostrarán en las notas de la versión.
 * Para ver instrucciones paso a paso para utilizar estas directivas, consulte las páginas siguientes:
 +
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configure los permisos para una puesta en marcha de Azure Marketplace"]
