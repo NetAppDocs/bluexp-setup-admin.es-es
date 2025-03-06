@@ -41,7 +41,7 @@ link:reference-connector-default-config.html["Obtenga información sobre la conf
 
 
 
-== Parada del inicio de la máquina virtual Connector
+== Parada e inicio de Connector VM
 
 Si necesita detener y, a continuación, iniciar Connector VM, debe hacerlo desde la consola de su proveedor de cloud o mediante los procedimientos estándar para la gestión en las instalaciones.
 
@@ -119,6 +119,6 @@ Agregue y elimine el identificador uniforme de recursos (URI) de un conector.
 . Seleccione la lista desplegable *conector* del encabezado BlueXP.
 . Seleccione *gestionar conectores*.
 . Seleccione el menú de acción de un conector y seleccione *Editar conector*.
-. Seleccione *Connector URIs*.
+. Expanda la barra *Connector URI* para ver los URI de un conector.
 . Agregue y elimine URIs y, a continuación, seleccione *aplicar*.
 

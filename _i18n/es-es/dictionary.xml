@@ -570,7 +570,6 @@
   <block id="e3884a4ce043ad31217e0098c7c0537f" category="doc">Administre las credenciales asociadas con su inicio de sesión de BlueXP</block>
   <block id="5a66a53c80f94aa60f854872b432d82d" category="paragraph">En función de las acciones que haya adoptado en BlueXP, quizás tenga credenciales de ONTAP asociadas y credenciales del sitio de soporte de NetApp (NSS) con su inicio de sesión de usuario de BlueXP. Puede ver y administrar esas credenciales en BlueXP después de haberlas asociado. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.</block>
   <block id="823a6e1d7fe661be55dd3af05f972b11" category="section-title">Credenciales de ONTAP</block>
-  <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">Cuando detecta directamente un clúster de ONTAP en las instalaciones sin usar un conector, se le solicita que introduzca las credenciales de ONTAP para el clúster. Estas credenciales se gestionan en el nivel de usuario, lo que significa que otros usuarios que inician sesión no las pueden ver.</block>
   <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">Credenciales de NSS</block>
   <block id="9b7ea233ab4085c74e7506949f6c1a49" category="paragraph">Las credenciales de NSS asociadas con tu inicio de sesión de BlueXP permiten el registro de soporte, la gestión de casos y el acceso al asesor digital.</block>
   <block id="f57a365a74c463e64fe68cc99fbed5f5" category="list-text">Cuando accedes a *Soporte &gt; Recursos* y te registras para recibir soporte, se te pedirá que asocies las credenciales de NSS con tu inicio de sesión de BlueXP.</block>
@@ -1755,7 +1754,6 @@ o.</block>
   <block id="fa25ff644bc82c03a613715d969f788d" category="list-text">No puede especificar un método de autenticación al crear un conector en Google Cloud. Sin embargo, puede conectarse a la instancia de VM de Linux mediante Google Cloud Console o Google Cloud CLI (gcloud).</block>
   <block id="b60097f9f3ac90a5ce4fd69c66be0717" category="inline-link">Google Cloud Docs: Conexión a equipos virtuales Linux</block>
   <block id="b80f2820ec689140e03615f3240fde24" category="paragraph"><block ref="b80f2820ec689140e03615f3240fde24" category="inline-link-rx"></block></block>
-  <block id="bdfe8a8b0f5b6a0b4242be2e550dff4a" category="paragraph">Si utiliza BlueXP en modo privado, puede actualizar Connector cuando haya una versión más reciente disponible en el sitio de soporte de NetApp.</block>
   <block id="84692ef80d23d7ba11b5ce40223e1af5" category="paragraph">El conector debe reiniciarse durante el proceso de actualización para que la consola basada en Web no esté disponible durante la actualización.</block>
   <block id="d651da37c0942c2e8d61b167e835ec80" category="list-text">Descargue el software del conector de<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>.</block>
   <block id="29796d02ce8782cd7e5fc7ab3be29617" category="list-text">Una vez finalizada la actualización, puede verificar la versión del conector en *Ayuda &gt; Soporte &gt; conector*.</block>
@@ -3627,8 +3625,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="9a8e93f292200e4d86cfd716262b53cc" category="paragraph">\http://bxpproxyuser:netapp1\!@address:3128</block>
   <block id="b47596b2df9e477c6203e15d91a678ba" category="section-title">Paso 8: Proporcionar permisos a BlueXP</block>
   <block id="1963a5845bb573651eecf0188b584456" category="summary">BlueXP actualiza automáticamente un conector a la última versión cuando se usa BlueXP en modo estándar o modo restringido. Normalmente, cada mes se lanzan nuevas versiones para introducir nuevas funciones y proporcionar mejoras de estabilidad. Si lo prefiere, puede configurar Connector para extraer actualizaciones de imágenes de un repositorio local. Para implementaciones de modo privado, siempre debe actualizar manualmente el conector usted mismo.</block>
-  <block id="d6b403d1857ecb824db228cac4a628ae" category="doc">Actualice un conector cuando utilice el modo privado</block>
-  <block id="eb775c24a0b347148812da8a6496489b" category="admonition">Cuando utilizas BlueXP en modo estándar o en modo restringido, no es necesario actualizar manualmente el conector. BlueXP actualiza automáticamente un Connector a la última versión, siempre y cuando el Connector tenga acceso a Internet saliente para obtener la actualización del software.</block>
   <block id="eb762959fcc0cce31949abce6f8eb1c1" category="list-text">Prepare un host Linux dedicado que cumpla con los requisitos de CPU, RAM, espacio en disco, herramienta de orquestación de contenedores y más.</block>
   <block id="99ca40e706695ba7607287669fab39f3" category="cell">Compruebe si la zona de disponibilidad es una zona local de AWS y valide que todos los parámetros de implementación sean compatibles</block>
   <block id="0683995d371439e19d907680da921ba9" category="section-title">9 de mayo de 2024</block>
@@ -3683,7 +3679,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="6f16d8c603420093f0274e54a03d0a2f" category="admonition">Si tiene un conector existente, debe tener en cuenta <block ref="bd6e461b9eed09ced9eb75610086f8d1" category="inline-link-macro-rx"></block>.</block>
   <block id="6a8efb58df7d7b111b6073b7ce536fe1" category="section-title">Parches del sistema operativo y el conector</block>
   <block id="5c6b62893e9b8753b16ce8db64ae077c" category="paragraph">No es necesario detener ningún servicio en el host de Connector al aplicar parches de seguridad del sistema operativo.</block>
-  <block id="d4c7d564cf9384303b11292ec4d09bf7" category="section-title">Parada del inicio de la máquina virtual Connector</block>
   <block id="f65f967e9525533fe9edbca2e40db32f" category="paragraph">Si necesita detener y, a continuación, iniciar Connector VM, debe hacerlo desde la consola de su proveedor de cloud o mediante los procedimientos estándar para la gestión en las instalaciones.</block>
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">Obtenga información sobre los modos de implementación</block>
   <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">Ver los permisos de AWS</block>
@@ -4979,5 +4974,48 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">Una vez que BlueXP  implementa la máquina virtual Connector en Azure, habilita una<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> en la máquina virtual, crea automáticamente la función que necesita y la asigna a la máquina virtual. El rol creado automáticamente proporciona a BlueXP  los permisos necesarios para gestionar recursos y procesos dentro de esa suscripción de Azure. <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>.</block>
   <block id="be77518281f390b896a01faba311cae7" category="section-title">Paso 4: Configure los permisos de implementación de Connector</block>
   <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">Cree un rol personalizado para el despliegue de Connector</block>
-  <block id="87a06bc88e9a560195c606632e964e42" category="list-text">Seleccione *Connector URIs*.</block>
+  <block id="68ea9cebb3c452c83085356b253868c5" category="paragraph">Ahora puede desactivar las actualizaciones automáticas para el conector. Esto es útil si necesita manejar manualmente las actualizaciones de software por razones comerciales.</block>
+  <block id="3d4e00cd939cc5521989a751b4b1dbdb" category="paragraph">Los clientes podrán desactivar las actualizaciones automáticas de la versión 3.9.48 o superior del conector.</block>
+  <block id="71ae02c171873e7af0f7b72300d1da9b" category="inline-link">Gestionar actualizaciones de conectores</block>
+  <block id="d8d6c527b108697862bc5a357c01048f" category="list-text"><block ref="d8d6c527b108697862bc5a357c01048f" category="inline-link-rx"></block></block>
+  <block id="56997c9a04ad826028323008fa4ae68f" category="doc">Forzar a los usuarios a introducir credenciales ONTAP para acceder a la vista Avanzada (ONTAP System Manager)</block>
+  <block id="7947a3598cd43dbb491dfbcdf1970bb1" category="paragraph">Ahora puede forzar a los usuarios a introducir sus credenciales de ONTAP para acceder a System Manager de ONTAP. Esta configuración es aplicable tanto a Cloud Volumes ONTAP como a ONTAP en las instalaciones. Los usuarios con el rol de administrador de la organización pueden configurar este valor.</block>
+  <block id="47c94941fabbd38f1b71c23663c608d6" category="section-title">Parada e inicio de Connector VM</block>
+  <block id="90754b70edd81e7b1f33fbe6f09ee188" category="list-text">Expanda la barra *Connector URI* para ver los URI de un conector.</block>
+  <block id="fbd9d54f39ed5129df98414b561236de" category="paragraph">Los usuarios necesitan credenciales de administrador de ONTAP para detectar clústeres de ONTAP en BlueXP . Sin embargo, el acceso al administrador del sistema de ONTAP depende de si utiliza o no un conector.</block>
+  <block id="b2d980523e7f68a234b1bef9046bf610" category="paragraph-title">Sin conector</block>
+  <block id="dbe7e61b89ec728b027dc1237e881b38" category="paragraph">Los usuarios deben introducir sus credenciales de ONTAP para acceder a ONTAP System Manager del clúster. Los usuarios pueden elegir guardar estas credenciales en BlueXP , lo que significa que no se les pedirá que las introduzcan cada vez. Las credenciales de usuario sólo son visibles para el usuario respectivo y se pueden gestionar desde la página de credenciales de usuario.</block>
+  <block id="ebed6caedf3ce370608544cd61300fb9" category="paragraph-title">Con un conector</block>
+  <block id="e8cbfb0691fa9052d50053bb8d48f3ca" category="paragraph">De forma predeterminada, no se solicita a los usuarios que introduzcan sus credenciales de ONTAP para acceder a ONTAP System Manager. Sin embargo, un administrador de BlueXP  (con el rol de administrador de la organización) puede configurar BlueXP  para solicitar a los usuarios que introduzcan sus credenciales de ONTAP. Cuando esta configuración está habilitada, los usuarios deben introducir sus credenciales de ONTAP cada vez, ya que no están almacenadas en BlueXP .</block>
+  <block id="f990e553cdc4c29c2efffba33e08a8c7" category="inline-link-macro">Leer más.</block>
+  <block id="efd19a04c99c31329dfaad38a02c2181" category="paragraph"><block ref="efd19a04c99c31329dfaad38a02c2181" category="inline-link-macro-rx"></block></block>
+  <block id="034059bc028cfbb547d4683b2caff29f" category="summary">Los administradores pueden configurar un conector BlueXP  para solicitar al usuario sus credenciales de ONTAP.</block>
+  <block id="29f68982771966bddc72b7dbd3b2f3d3" category="doc">Aplicar permisos de ONTAP para la vista avanzada de ONTAP (ONTAP System Manager)</block>
+  <block id="3b0e6670a76f82f4c760fe4ff152d8c0" category="paragraph">De forma predeterminada, las credenciales del conector permiten a los usuarios de BlueXP  acceder a la vista avanzada (Administrador del sistema de ONTAP). En su lugar, es posible configurar BlueXP  para solicitar a los usuarios sus credenciales de ONTAP. Esto garantiza que los permisos ONTAP de un usuario se apliquen cuando funcionan con clústeres de ONTAP en clústeres en las instalaciones tanto de Cloud Volumes ONTAP como de ONTAP.</block>
+  <block id="19c9798fb0fc2fbadcc32b5470960e0e" category="admonition">Debe tener el rol de administrador de la organización para editar la configuración del conector.</block>
+  <block id="1d34d896e9246492a9cf64de3c5abb49" category="list-text">Seleccione el menú de acción en la fila correspondiente al conector que desea editar.</block>
+  <block id="79200641e6b3df738c3bda6a52fd51c1" category="list-text">Expanda la opción *Forzar credenciales*.</block>
+  <block id="305fd31774e543ad8e03e87cad28ea54" category="list-text">Seleccione la casilla de verificación para habilitar la opción *Forzar credenciales* y luego seleccione *Guardar*.</block>
+  <block id="09d01e9645cf22853822390959d6c792" category="list-text">Verifique que la opción esté habilitada visualizando la opción *Forzar Credenciales*.</block>
+  <block id="74b59d176e85a927c1b9ec89cd8847b2" category="inline-image-macro">Captura de pantalla que muestra que las credenciales de fuerza están activadas</block>
+  <block id="e47d9b41f27e043909b844e706663ff6" category="paragraph"><block ref="e47d9b41f27e043909b844e706663ff6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="651a32308986dea9de3797c8e0997c14" category="paragraph">Cuando utiliza BlueXP  en modo estándar o en modo restringido, BlueXP  actualiza automáticamente su conector a la última versión, siempre y cuando el conector tenga acceso a Internet saliente para obtener la actualización de software. Si necesita administrar manualmente cuando se actualiza el conector, puede desactivar las actualizaciones automáticas para el modo estándar o el modo restringido.</block>
+  <block id="a30a1e13c5419a2d602474533f69dcd1" category="admonition">Al ejecutar BlueXP  en modo privado, siempre debe actualizar el conector usted mismo.</block>
+  <block id="6c66e308926fc039cc9e20fe56d7abdf" category="section-title">Desactive las actualizaciones automáticas</block>
+  <block id="a1188a88192f3f804b6f1b62d79bcd67" category="paragraph">La desactivación de la actualización automática del conector consta de dos pasos. En primer lugar, debe asegurarse de que su conector actual está en buen estado y actualizado. A continuación, edite un archivo de configuración para desactivar la función de actualización automática.</block>
+  <block id="04b99f73471ca057d71f53c3f053b60e" category="admonition">Solo puede desactivar las actualizaciones automáticas si tiene la versión de conector 3.9.48 o superior.</block>
+  <block id="377245fa7e4be29c2941f9c3069eae57" category="section-title">Compruebe el estado del conector</block>
+  <block id="70a6926b672111815dfe273a0292468d" category="paragraph">Debe verificar que el conector es estable y que todos los contenedores que se ejecutan en la VM del conector están en buen estado y en funcionamiento. Después de desactivar las actualizaciones automáticas, la VM del conector deja de buscar nuevos servicios o paquetes de actualización.</block>
+  <block id="aca0bf9b192b34e35fb37ccbd9cd98be" category="paragraph">Utilice uno de los siguientes comandos para verificar el conector. Todos los servicios deben tener el estado _Running_. Si no es así, póngase en contacto con el soporte de NetApp antes de deshabilitar la actualización automática.</block>
+  <block id="c5fd214cdd0d2b3b4272e73b022ba5c2" category="list-text">Docker</block>
+  <block id="21fa3d085631029b33cc6537b5b1a964" category="section-title">Desactive la actualización automática del conector</block>
+  <block id="f1a415c9565a5203c9cab67d50062380" category="paragraph">Para deshabilitar las actualizaciones automáticas, establezca el indicador _isUpgradeDisabled_ en el archivo _com/opt/application/NetApp/service-manager-2/config.json_. De forma predeterminada, este indicador se establece en falso y el conector se actualiza automáticamente. Puede definir este indicador en true para desactivar las actualizaciones automáticas.</block>
+  <block id="fda5aa414d851bf8018163c5fe4acb1a" category="paragraph">Para volver a habilitar la actualización automática, siga estos pasos y establezca el indicador _isUpgradeDisabled_ en FALSE.</block>
+  <block id="942778941acc11e030b5e5615f2d8d41" category="list-text">Asegúrese de haber verificado que su conector está actualizado y en buen estado.</block>
+  <block id="667f94e7aab832b818ed3d6710e2b890" category="list-text">Edite el archivo _/opt/application/NetApp/service-manager-2/config.json_ y cambie el valor del indicador _isUpgradeDisabled_ a true como se muestra cerca de la parte inferior de este ejemplo.</block>
+  <block id="9e3e4c61d70076bf677edfc157a67761" category="list-text">Guarde el archivo.</block>
+  <block id="92ae5258778c2fa8ece2b13c88ec0853" category="list-text">Reinicie el servicio del gestor de servicios 2 ejecutando el siguiente comando:</block>
+  <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">Actualice el conector</block>
+  <block id="084d853adc45dcd521da8dd702d68cc0" category="section-title">15 de febrero de 2025</block>
+  <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">Aplique los permisos de ONTAP en BlueXP </block>
 </blocks>

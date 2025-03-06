@@ -1,0 +1,9 @@
+= Forzar a los usuarios a introducir credenciales ONTAP para acceder a la vista Avanzada (ONTAP System Manager)
+:allow-uri-read: 
+
+
+
+
+=== Forzar a los usuarios a introducir credenciales ONTAP para acceder a la vista Avanzada (ONTAP System Manager)
+
+Ahora puede forzar a los usuarios a introducir sus credenciales de ONTAP para acceder a System Manager de ONTAP. Esta configuración es aplicable tanto a Cloud Volumes ONTAP como a ONTAP en las instalaciones. Los usuarios con el rol de administrador de la organización pueden configurar este valor.
