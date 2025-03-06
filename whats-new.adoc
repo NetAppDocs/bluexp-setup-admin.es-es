@@ -18,19 +18,46 @@ Descubra las novedades de las funciones de administración de BlueXP : Gestión
 
 
 
-== 15 de febrero de 2025
+== 10 de marzo de 2025
 
 
 
-=== Conector
+=== Conector 3.9.50
 
-Ahora puede desactivar las actualizaciones automáticas para el conector. Esto es útil si necesita manejar manualmente las actualizaciones de software por razones comerciales.
+Esta versión del conector BlueXP  incluye mejoras de seguridad menores y correcciones de errores, así como las siguientes funciones.
 
-Los clientes podrán desactivar las actualizaciones automáticas de la versión 3.9.48 o superior del conector.
+En este momento, la versión 3.9.50 está disponible para modo estándar y modo restringido.
 
-.Información relacionada
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Gestionar actualizaciones de conectores"]
 
+
+=== Actualización del conector 3.9.49
+
+
+
+==== Acceso de administrador del sistema de ONTAP cuando BlueXP  utiliza un conector
+
+Un administrador de BlueXP  (usuarios con la función de administrador de la organización) puede configurar BlueXP  para solicitar a los usuarios que introduzcan sus credenciales de ONTAP para acceder al administrador del sistema de ONTAP. Cuando esta configuración está habilitada, los usuarios deben introducir sus credenciales de ONTAP cada vez, ya que no están almacenadas en BlueXP .
+
+Esta función está disponible en la versión de conector 3.9.49 y superior. link:task-ontap-access-connector.html["Aprenda a configurar los ajustes de las credenciales."^].
+
+
+
+=== Actualización del conector 3.9.48
+
+
+
+==== Capacidad para desactivar la configuración de actualización automática del conector
+
+Puede desactivar la función de actualización automática del conector.
+
+Cuando utiliza BlueXP  en modo estándar o en modo restringido, BlueXP  actualiza automáticamente su conector a la última versión, siempre y cuando el conector tenga acceso a Internet saliente para obtener la actualización de software. Si necesita administrar manualmente cuando se actualiza el conector, ahora puede desactivar las actualizaciones automáticas para el modo estándar o el modo restringido.
+
+
+NOTE: Este cambio no afecta al modo privado de BlueXP , donde siempre debe actualizar el conector usted mismo.
+
+Esta función está disponible en la versión de conector 3.9.48 y superior.
+
+link:task-upgrade-connector.html["Descubra cómo desactivar la actualización automática del conector."^]
 
 
 
@@ -48,7 +75,8 @@ En este momento, la versión 3.9.49 está disponible para modo estándar y modo 
 
 === Gestión de identidades y accesos (IAM) de BlueXP 
 
-* Compatibilidad para asignar más de un rol a un usuario.
+* Compatibilidad con la asignación de varios roles a un usuario de BlueXP .
+* Soporte para asignar un rol en varios recursos de la organización BlueXP  (organización/carpeta/proyecto)
 * Los roles ahora están asociados a una de dos categorías: Plataforma y servicio de datos.
 
 

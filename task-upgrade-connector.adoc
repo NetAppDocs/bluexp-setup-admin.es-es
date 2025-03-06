@@ -23,7 +23,7 @@ NOTE: Al ejecutar BlueXP  en modo privado, siempre debe actualizar el conector 
 
 == Desactive las actualizaciones automáticas
 
-La desactivación de la actualización automática del conector consta de dos pasos. En primer lugar, debe asegurarse de que su conector actual está en buen estado y actualizado. A continuación, edite un archivo de configuración para desactivar la función de actualización automática.
+La desactivación de la actualización automática del conector consta de dos pasos. En primer lugar, debe asegurarse de que su conector actual está en buen estado y actualizado. A continuación, editará un archivo de configuración para desactivar la función de actualización automática.
 
 
 NOTE: Solo puede desactivar las actualizaciones automáticas si tiene la versión de conector 3.9.48 o superior.
@@ -92,7 +92,6 @@ Para volver a habilitar la actualización automática, siga estos pasos y establ
   },
   "isUpgradeDisabled": true,
   "serviceAPIServerBaseUrl": "http://10.250.250.1:8890"
-}
 ----
 . Guarde el archivo.
 . Reinicie el servicio del gestor de servicios 2 ejecutando el siguiente comando:
