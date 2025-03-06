@@ -4980,7 +4980,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="b2d980523e7f68a234b1bef9046bf610" category="paragraph-title">Sin conector</block>
   <block id="dbe7e61b89ec728b027dc1237e881b38" category="paragraph">Los usuarios deben introducir sus credenciales de ONTAP para acceder a ONTAP System Manager del clúster. Los usuarios pueden elegir guardar estas credenciales en BlueXP , lo que significa que no se les pedirá que las introduzcan cada vez. Las credenciales de usuario sólo son visibles para el usuario respectivo y se pueden gestionar desde la página de credenciales de usuario.</block>
   <block id="ebed6caedf3ce370608544cd61300fb9" category="paragraph-title">Con un conector</block>
-  <block id="e8cbfb0691fa9052d50053bb8d48f3ca" category="paragraph">De forma predeterminada, no se solicita a los usuarios que introduzcan sus credenciales de ONTAP para acceder a ONTAP System Manager. Sin embargo, un administrador de BlueXP  (con el rol de administrador de la organización) puede configurar BlueXP  para solicitar a los usuarios que introduzcan sus credenciales de ONTAP. Cuando esta configuración está habilitada, los usuarios deben introducir sus credenciales de ONTAP cada vez, ya que no están almacenadas en BlueXP .</block>
   <block id="f990e553cdc4c29c2efffba33e08a8c7" category="inline-link-macro">Leer más.</block>
   <block id="efd19a04c99c31329dfaad38a02c2181" category="paragraph"><block ref="efd19a04c99c31329dfaad38a02c2181" category="inline-link-macro-rx"></block></block>
   <block id="034059bc028cfbb547d4683b2caff29f" category="summary">Los administradores pueden configurar un conector BlueXP  para solicitar al usuario sus credenciales de ONTAP.</block>
@@ -5012,9 +5011,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">Aplique los permisos de ONTAP en BlueXP </block>
   <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">Compatibilidad con la asignación de varios roles a un usuario de BlueXP .</block>
   <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">Soporte para asignar un rol en varios recursos de la organización BlueXP  (organización/carpeta/proyecto)</block>
-  <block id="23b3b711859803a815b81aca1cc4811c" category="doc">Conector 3.9.50</block>
-  <block id="d1ff7c4409f85da727e1eb68fa6e3a26" category="paragraph">Esta versión del conector BlueXP  incluye mejoras de seguridad menores y correcciones de errores, así como las siguientes funciones.</block>
-  <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">En este momento, la versión 3.9.50 está disponible para modo estándar y modo restringido.</block>
   <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">Actualización del conector 3.9.49</block>
   <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">Acceso de administrador del sistema de ONTAP cuando BlueXP  utiliza un conector</block>
   <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">Un administrador de BlueXP  (usuarios con la función de administrador de la organización) puede configurar BlueXP  para solicitar a los usuarios que introduzcan sus credenciales de ONTAP para acceder al administrador del sistema de ONTAP. Cuando esta configuración está habilitada, los usuarios deben introducir sus credenciales de ONTAP cada vez, ya que no están almacenadas en BlueXP .</block>
@@ -5030,4 +5026,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">La desactivación de la actualización automática del conector consta de dos pasos. En primer lugar, debe asegurarse de que su conector actual está en buen estado y actualizado. A continuación, editará un archivo de configuración para desactivar la función de actualización automática.</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 de marzo de 2025</block>
+  <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">De forma predeterminada, no se solicita a los usuarios que introduzcan sus credenciales de ONTAP para acceder a ONTAP System Manager. Sin embargo, un administrador de BlueXP  (con el rol de administrador de la organización) puede configurar BlueXP  para solicitar a los usuarios que introduzcan sus credenciales de ONTAP. Cuando esta configuración está habilitada, los usuarios deben introducir sus credenciales de ONTAP cada vez.</block>
 </blocks>
