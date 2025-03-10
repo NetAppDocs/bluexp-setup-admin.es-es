@@ -1,34 +1,17 @@
-= Actualización del conector 3.9.49
+= Actualización del conector 3.9.50
 :allow-uri-read: 
 
 
 
 
-=== Actualización del conector 3.9.49
+=== Actualización del conector 3.9.50
+
+Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.
+
+En este momento, la versión 3.9.50 está disponible para modo estándar y modo restringido.
 
 
 
-==== Acceso de administrador del sistema de ONTAP cuando BlueXP  utiliza un conector
+=== Versión beta de NetApp Keystone disponible en BlueXP 
 
-Un administrador de BlueXP  (usuarios con la función de administrador de la organización) puede configurar BlueXP  para solicitar a los usuarios que introduzcan sus credenciales de ONTAP para acceder al administrador del sistema de ONTAP. Cuando esta configuración está habilitada, los usuarios deben introducir sus credenciales de ONTAP cada vez, ya que no están almacenadas en BlueXP .
-
-Esta función está disponible en la versión de conector 3.9.49 y superior. link:task-ontap-access-connector.html["Aprenda a configurar los ajustes de las credenciales."^].
-
-
-
-=== Actualización del conector 3.9.48
-
-
-
-==== Capacidad para desactivar la configuración de actualización automática del conector
-
-Puede desactivar la función de actualización automática del conector.
-
-Cuando utiliza BlueXP  en modo estándar o en modo restringido, BlueXP  actualiza automáticamente su conector a la última versión, siempre y cuando el conector tenga acceso a Internet saliente para obtener la actualización de software. Si necesita administrar manualmente cuando se actualiza el conector, ahora puede desactivar las actualizaciones automáticas para el modo estándar o el modo restringido.
-
-
-NOTE: Este cambio no afecta al modo privado de BlueXP , donde siempre debe actualizar el conector usted mismo.
-
-Esta función está disponible en la versión de conector 3.9.48 y superior.
-
-link:task-upgrade-connector.html["Descubra cómo desactivar la actualización automática del conector."^]
+NetApp Keystone pronto estará disponible a través de BlueXP  y ya se encontrará en fase beta. Puede acceder a la página de registro de la versión beta de NetApp Keystone desde la barra de navegación izquierda de BlueXP .
