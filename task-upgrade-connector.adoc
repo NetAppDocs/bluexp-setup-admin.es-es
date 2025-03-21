@@ -23,7 +23,7 @@ NOTE: Al ejecutar BlueXP  en modo privado, siempre debe actualizar el conector 
 
 == Desactive las actualizaciones automáticas
 
-La desactivación de la actualización automática del conector consta de dos pasos. En primer lugar, debe asegurarse de que su conector actual está en buen estado y actualizado. A continuación, editará un archivo de configuración para desactivar la función de actualización automática.
+La desactivación de la actualización automática del conector consta de dos pasos. En primer lugar, debe asegurarse de que su conector está en buen estado y actualizado. A continuación, editará un archivo de configuración para desactivar la función de actualización automática.
 
 
 NOTE: Solo puede desactivar las actualizaciones automáticas si tiene la versión de conector 3.9.48 o superior.
@@ -58,13 +58,14 @@ podman ps -a
 
 === Desactive la actualización automática del conector
 
-Para deshabilitar las actualizaciones automáticas, establezca el indicador _isUpgradeDisabled_ en el archivo _com/opt/application/NetApp/service-manager-2/config.json_. De forma predeterminada, este indicador se establece en falso y el conector se actualiza automáticamente. Puede definir este indicador en true para desactivar las actualizaciones automáticas.
+Para deshabilitar las actualizaciones automáticas, establezca el indicador _isUpgradeDisabled_ en el archivo _com/opt/application/NetApp/service-manager-2/config.json_. De forma predeterminada, este indicador se establece en falso y el conector se actualiza automáticamente. Puede definir este indicador en true para desactivar las actualizaciones automáticas. Debe estar familiarizado con la sintaxis JSON antes de completar este paso.
 
 Para volver a habilitar la actualización automática, siga estos pasos y establezca el indicador _isUpgradeDisabled_ en FALSE.
 
 .Pasos
 . Asegúrese de haber verificado que su conector está actualizado y en buen estado.
-. Edite el archivo _/opt/application/NetApp/service-manager-2/config.json_ y cambie el valor del indicador _isUpgradeDisabled_ a true como se muestra cerca de la parte inferior de este ejemplo.
+. Cree una copia de seguridad del archivo _/opt/application/NetApp/service-manager-2/config.json_ para asegurarse de que puede revertir los cambios.
+. Edite el archivo _/opt/application/NetApp/service-manager-2/config.json_ y cambie el valor del indicador _isUpgradeDisabled_ a true.
 +
 [source]
 ----
@@ -76,6 +77,12 @@ Para volver a habilitar la actualización automática, siga estos pasos y establ
 [source, cli]
 ----
 systemctl restart netapp-service-manager.service
+----
+. Ejecute el siguiente comando y compruebe que el estado del conector se muestra como _active(running)_: _
++
+[source, cli]
+----
+systemctl status netapp-service-manager.service
 ----
 
 
