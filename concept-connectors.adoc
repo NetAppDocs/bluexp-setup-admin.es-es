@@ -36,7 +36,7 @@ Aunque no es necesario un conector para configurar y gestionar Azure NetApp File
 * Cloud Volumes Service para Google Cloud
 * Copiar y sincronizar
 * Asesor digital
-* Cartera digital
+* Cartera digital (solo licencias, la supervisión de suscripciones requiere un conector)
 +
 En casi todos los casos, puede agregar una licencia a la cartera digital sin un conector.
 

@@ -5034,4 +5034,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">Cree una copia de seguridad del archivo _/opt/application/NetApp/service-manager-2/config.json_ para asegurarse de que puede revertir los cambios.</block>
   <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">Edite el archivo _/opt/application/NetApp/service-manager-2/config.json_ y cambie el valor del indicador _isUpgradeDisabled_ a true.</block>
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">Ejecute el siguiente comando y compruebe que el estado del conector se muestra como _active(running)_: _</block>
+  <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">Cartera digital (solo licencias, la supervisión de suscripciones requiere un conector)</block>
 </blocks>
