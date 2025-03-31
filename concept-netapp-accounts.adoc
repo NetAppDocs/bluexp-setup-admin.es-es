@@ -14,7 +14,7 @@ summary: Una cuenta de BlueXP  permite gestionar usuarios y organizar recursos 
 
 
 [role="lead"]
-Cuando utilice BlueXP  en modo privado, utilizará una cuenta _BlueXP _ para administrar usuarios y organizar recursos en _workspaces_ aislados. Por ejemplo, un grupo de usuarios puede desplegar y gestionar entornos de trabajo de Cloud Volumes ONTAP en un espacio de trabajo que no es visible para los usuarios que gestionan entornos de trabajo en un espacio de trabajo diferente.
+Cuando utilice BlueXP  en modo privado, utilizará una cuenta _BlueXP _ para administrar usuarios y organizar recursos en un _workspace_ aislado.
 
 Si usas BlueXP  en modo estándar o restringido, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización _BlueXP _ que gestionará mediante la administración de identidades y accesos (IAM) de BlueXP .
 
@@ -26,11 +26,9 @@ Si usas BlueXP  en modo estándar o restringido, no tendrás una cuenta de Blue
 
 == Descripción general
 
-Cuando acceda por primera vez a BlueXP, se le pedirá que seleccione o cree una cuenta. Por ejemplo, verá la siguiente pantalla si aún no tiene una cuenta:
+Cuando accede por primera vez a BlueXP , ya se crea una cuenta para usted con un espacio de trabajo llamado _Workspace-1_.
 
-image:screenshot-account-selection.png["Una captura de pantalla del asistente de configuración de BlueXP que le solicita la cuenta BlueXP en la que desea crear BlueXP."]
-
-Los administradores de cuentas de BlueXP pueden modificar la configuración de esta cuenta gestionando usuarios (miembros), áreas de trabajo y conectores:
+A continuación, puede agregar miembros (usuarios) a esta cuenta e implementar conectores:
 
 image:screenshot-account-settings.png["Captura de pantalla que muestra el widget Administrar cuenta desde el que puede administrar usuarios, áreas de trabajo y conectores."]
 
@@ -40,31 +38,17 @@ link:task-managing-netapp-accounts.html["Aprenda a administrar su cuenta de Blue
 
 == Miembros
 
-Los miembros son usuarios de BlueXP que usted asocia con su cuenta de BlueXP. La asociación de un usuario con una cuenta y una o más áreas de trabajo de esa cuenta permite a esos usuarios crear y administrar entornos de trabajo en BlueXP.
-
-Al asociar un usuario, debe asignarles un rol:
-
-* _Account Admin_: Puede realizar cualquier acción en BlueXP.
-* _Workspace Admin_: Puede crear y administrar recursos en el área de trabajo asignada.
-* _Compliance Viewer_: Solo puede ver la información de cumplimiento para la clasificación de BlueXP y generar informes para espacios de trabajo a los que tengan permiso para acceder.
-
-
-link:reference-user-roles.html["Obtenga más información sobre estos roles"].
+Los miembros son usuarios de BlueXP que usted asocia con su cuenta de BlueXP. La asociación de un usuario a una cuenta y su espacio de trabajo en esa cuenta permite a esos usuarios crear y gestionar entornos de trabajo en BlueXP .
 
 
 
-== Espacios de trabajo
+== Espacio de trabajo
 
-En BlueXP, un área de trabajo aísla cualquier número de _entornos de trabajo_ de otros usuarios de la cuenta. Los administradores de área de trabajo no pueden acceder a los entornos de trabajo de un área de trabajo a menos que el administrador de cuentas asocie el administrador a ese espacio de trabajo.
+En BlueXP, un área de trabajo aísla cualquier número de _entornos de trabajo_ de otros usuarios de la cuenta. Los usuarios (miembros) de BlueXP  no pueden acceder a los entornos de trabajo de un espacio de trabajo a menos que estén asociados a ese espacio de trabajo.
 
-Un entorno de trabajo representa un sistema de almacenamiento. Por ejemplo:
+Un entorno de trabajo representa sistemas de almacenamiento como su clúster ONTAP en las instalaciones.
 
-* Un sistema Cloud Volumes ONTAP
-* Un clúster de ONTAP en las instalaciones
-* Un sistema StorageGRID
-
-
-link:task-setting-up-netapp-accounts.html["Aprenda a agregar un área de trabajo"].
+El modo privado de BlueXP  sólo admite un espacio de trabajo.
 
 
 
@@ -72,33 +56,6 @@ link:task-setting-up-netapp-accounts.html["Aprenda a agregar un área de trabajo
 
 Un conector ejecuta las acciones que BlueXP necesita realizar para gestionar su infraestructura de datos. El conector se ejecuta en una instancia de máquina virtual que se implementa en su proveedor de cloud o en un host en las instalaciones que haya configurado.
 
-Puede utilizar un conector con más de un servicio BlueXP. Por ejemplo, si estás usando un conector para gestionar Cloud Volumes ONTAP, puedes utilizar ese mismo conector con otro servicio como la organización en niveles de BlueXP.
+Puede utilizar un conector con más de un servicio BlueXP. Por ejemplo, si utiliza un conector para gestionar las copias de seguridad y la recuperación, puede utilizar ese mismo conector con otro servicio como la organización en niveles de BlueXP .
 
 link:concept-connectors.html["Más información sobre conectores"].
-
-
-
-== Ejemplos
-
-Los siguientes ejemplos muestran cómo se pueden configurar las cuentas.
-
-
-NOTE: En las dos imágenes de ejemplo siguientes, el conector y los sistemas Cloud Volumes ONTAP no residen en la cuenta de BlueXP: Se ejecutan en un proveedor de la nube. Ésta es una representación conceptual de la relación entre cada componente.
-
-
-
-=== Múltiples espacios de trabajo
-
-En el ejemplo siguiente se muestra una cuenta que utiliza dos espacios de trabajo para crear entornos aislados. El primer espacio de trabajo es para un entorno de producción y el segundo para un entorno de desarrollo.
-
-image:diagram_cloud_central_accounts_one.png["Diagrama que muestra una única cuenta de BlueXP que contiene dos áreas de trabajo. Cada área de trabajo está asociada con el mismo conector y cada una tiene su propio administrador de área de trabajo"]
-
-
-
-=== Múltiples cuentas
-
-A continuación, se muestra otro ejemplo que demuestra el nivel más alto de multi-tenancy utilizando dos cuentas separadas de BlueXP. Por ejemplo, un proveedor de servicios puede utilizar BlueXP en una cuenta para proporcionar servicios a sus clientes, mientras que usa otra cuenta para proporcionar recuperación ante desastres para una de sus unidades de negocio.
-
-Tenga en cuenta que la cuenta 2 incluye dos conectores independientes. Esto puede suceder si tiene sistemas en regiones independientes o en proveedores de cloud independientes.
-
-image:diagram_cloud_central_accounts_two.png["Diagrama que muestra dos cuentas de BlueXP, cada una con varias áreas de trabajo y sus administradores de área de trabajo asociados."]

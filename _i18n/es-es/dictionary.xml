@@ -380,10 +380,6 @@
   <block id="4ec920ccbe2fc417ccd7dcd957eb9653" category="inline-link">Descubra cómo implementar Cloud Volumes ONTAP en Google Cloud y seleccione un proyecto</block>
   <block id="486db18d2aa67b603506d28b5425dc88" category="list-text"><block ref="486db18d2aa67b603506d28b5425dc88" category="inline-link-rx"></block></block>
   <block id="389368f5d98ef09e3dca047f7f72f270" category="doc">Obtenga más información sobre las cuentas de BlueXP</block>
-  <block id="684ef065a6596c929baa4364adca2e52" category="paragraph">Cuando acceda por primera vez a BlueXP, se le pedirá que seleccione o cree una cuenta. Por ejemplo, verá la siguiente pantalla si aún no tiene una cuenta:</block>
-  <block id="21ad8a394fd878b4f709af241e04c2fc" category="inline-image-macro">Una captura de pantalla del asistente de configuración de BlueXP que le solicita la cuenta BlueXP en la que desea crear BlueXP.</block>
-  <block id="f735901c47be672686b9be997d3bf0d7" category="paragraph"><block ref="f735901c47be672686b9be997d3bf0d7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1403ef0f8512715bcf44602da2445c6a" category="paragraph">Los administradores de cuentas de BlueXP pueden modificar la configuración de esta cuenta gestionando usuarios (miembros), áreas de trabajo y conectores:</block>
   <block id="b2eef7b6d059839882bf88ec94098a7c" category="inline-image-macro">Captura de pantalla que muestra el widget Administrar cuenta desde el que puede administrar usuarios, áreas de trabajo y conectores.</block>
   <block id="8cdce640828eda5cb8aadf745fb4ab7b" category="paragraph"><block ref="8cdce640828eda5cb8aadf745fb4ab7b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd68fc4363142093bc10a45e34942eaa" category="inline-link-macro">Aprenda a administrar su cuenta de BlueXP</block>
@@ -392,37 +388,10 @@
   <block id="42d7d856cc8f6a2f82ed10cd8356e7d2" category="inline-link-macro">Obtenga más información sobre los modos de implementación de BlueXP</block>
   <block id="1df8907309ce450576ac5f9690e79be6" category="paragraph"><block ref="fc99fd3d00f85ca19dd4470da06057e4" category="inline-link-macro-rx"></block>.</block>
   <block id="ef53538ae41a651c7f72ab6cb1135d8c" category="section-title">Miembros</block>
-  <block id="87c8bd0bab910ee42d9dcd76825a8518" category="paragraph">Los miembros son usuarios de BlueXP que usted asocia con su cuenta de BlueXP. La asociación de un usuario con una cuenta y una o más áreas de trabajo de esa cuenta permite a esos usuarios crear y administrar entornos de trabajo en BlueXP.</block>
-  <block id="40b681a46714eeb24e21a893a14eac81" category="paragraph">Al asociar un usuario, debe asignarles un rol:</block>
-  <block id="d8b443dec47ef3fe29b32e2c5b56a6ec" category="list-text">_Account Admin_: Puede realizar cualquier acción en BlueXP.</block>
-  <block id="d67e41e5b96d2ab3e94f85f61f3e3591" category="list-text">_Workspace Admin_: Puede crear y administrar recursos en el área de trabajo asignada.</block>
-  <block id="d282481c14e6e7d0691f4297fb3551e1" category="list-text">_Compliance Viewer_: Solo puede ver la información de cumplimiento para la clasificación de BlueXP y generar informes para espacios de trabajo a los que tengan permiso para acceder.</block>
-  <block id="e9b0a93b5b5cd95f3a2c544875c51ae3" category="inline-link-macro">Obtenga más información sobre estos roles</block>
-  <block id="7895b348f81fb8e1118370d6314dfb51" category="paragraph"><block ref="a7cac0974b1a57b009ba128474746390" category="inline-link-macro-rx"></block>.</block>
-  <block id="d5e92609cf510f5f97ac326e907a0540" category="section-title">Espacios de trabajo</block>
-  <block id="7c7a58e5b2c203f9e3345dac2f055a34" category="paragraph">En BlueXP, un área de trabajo aísla cualquier número de _entornos de trabajo_ de otros usuarios de la cuenta. Los administradores de área de trabajo no pueden acceder a los entornos de trabajo de un área de trabajo a menos que el administrador de cuentas asocie el administrador a ese espacio de trabajo.</block>
-  <block id="dcc399fb58d401bf940e5d9de0f0387a" category="paragraph">Un entorno de trabajo representa un sistema de almacenamiento. Por ejemplo:</block>
-  <block id="a340186ec1e6c164285cf5a71abe8c4c" category="list-text">Un sistema Cloud Volumes ONTAP</block>
-  <block id="e64a5009263178a9824652eb7624d300" category="list-text">Un clúster de ONTAP en las instalaciones</block>
-  <block id="db0bbabf83c6d4f2a7e710c9d223191c" category="inline-link-macro">Aprenda a agregar un área de trabajo</block>
-  <block id="ced2d945d98014d4467b685b8314caa1" category="paragraph"><block ref="5fada74255cc5bbf99ee00eda10403ac" category="inline-link-macro-rx"></block>.</block>
   <block id="fe4a785cf549e843e958f443c4baf0fe" category="section-title">Conectores</block>
   <block id="fff317b16975fac3ed7dff38b2438221" category="paragraph">Un conector ejecuta las acciones que BlueXP necesita realizar para gestionar su infraestructura de datos. El conector se ejecuta en una instancia de máquina virtual que se implementa en su proveedor de cloud o en un host en las instalaciones que haya configurado.</block>
-  <block id="20dcfd7d53957cc7f9ffca8bea6d9956" category="paragraph">Puede utilizar un conector con más de un servicio BlueXP. Por ejemplo, si estás usando un conector para gestionar Cloud Volumes ONTAP, puedes utilizar ese mismo conector con otro servicio como la organización en niveles de BlueXP.</block>
   <block id="649d75c6283da2a4b802839db32a41af" category="inline-link-macro">Más información sobre conectores</block>
   <block id="75599088791b92751fdc2c9cee3a481e" category="paragraph"><block ref="c5bcec7879e3189e4c7a5fdbd8b19a5b" category="inline-link-macro-rx"></block>.</block>
-  <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">Ejemplos</block>
-  <block id="6643fe16b29885768bd30191d9673e3e" category="paragraph">Los siguientes ejemplos muestran cómo se pueden configurar las cuentas.</block>
-  <block id="55d306b0964facf3eec9eb4328a8f318" category="admonition">En las dos imágenes de ejemplo siguientes, el conector y los sistemas Cloud Volumes ONTAP no residen en la cuenta de BlueXP: Se ejecutan en un proveedor de la nube. Ésta es una representación conceptual de la relación entre cada componente.</block>
-  <block id="383125a3caa092f6d45708ef9ada6bf3" category="section-title">Múltiples espacios de trabajo</block>
-  <block id="ddc6e5885facb249d958d56dc9bb1acc" category="paragraph">En el ejemplo siguiente se muestra una cuenta que utiliza dos espacios de trabajo para crear entornos aislados. El primer espacio de trabajo es para un entorno de producción y el segundo para un entorno de desarrollo.</block>
-  <block id="bd77fae89cd1084b07d3a302df90985c" category="inline-image-macro">Diagrama que muestra una única cuenta de BlueXP que contiene dos áreas de trabajo. Cada área de trabajo está asociada con el mismo conector y cada una tiene su propio administrador de área de trabajo</block>
-  <block id="a8025adf7850719a8ca3988fd116e914" category="paragraph"><block ref="a8025adf7850719a8ca3988fd116e914" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="959d380c34a57a6cd90f6c22fbdf36d5" category="section-title">Múltiples cuentas</block>
-  <block id="4593ef78e963ff557ed723a13c4c254d" category="paragraph">A continuación, se muestra otro ejemplo que demuestra el nivel más alto de multi-tenancy utilizando dos cuentas separadas de BlueXP. Por ejemplo, un proveedor de servicios puede utilizar BlueXP en una cuenta para proporcionar servicios a sus clientes, mientras que usa otra cuenta para proporcionar recuperación ante desastres para una de sus unidades de negocio.</block>
-  <block id="895677275494125470d7cc56c3ce30f8" category="paragraph">Tenga en cuenta que la cuenta 2 incluye dos conectores independientes. Esto puede suceder si tiene sistemas en regiones independientes o en proveedores de cloud independientes.</block>
-  <block id="95a00cde96c8528d426e00f8e01264a4" category="inline-image-macro">Diagrama que muestra dos cuentas de BlueXP, cada una con varias áreas de trabajo y sus administradores de área de trabajo asociados.</block>
-  <block id="27ce19ec81ea0efd6efd2acc34163a86" category="paragraph"><block ref="27ce19ec81ea0efd6efd2acc34163a86" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7fc084d4fa6d37ac9aaea34d698aece0" category="doc">Inicio rápido para BlueXP en modo restringido</block>
   <block id="d82a01de8fc043d47b50211e2437d663" category="paragraph">Empieza a usar BlueXP en modo restringido preparando tu entorno, poniendo en marcha Connector y suscribiéndote a BlueXP.</block>
   <block id="b6ff2c8bfe1c4f67a13521ec6fe0231d" category="list-text">Configure redes que proporcionen acceso a las redes de destino, acceso saliente a Internet para instalaciones manuales e Internet saliente para el acceso diario.</block>
@@ -898,12 +867,6 @@
   <block id="53c512e9599c71e1a585d636a5229820" category="list-text">Modo estándar</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">Configure los permisos de Azure</block>
   <block id="12f7970cff397ea2f0846f3904f8e00f" category="inline-link-macro">Configure permisos en el cloud para puestas en marcha en las instalaciones</block>
-  <block id="6c45b1e5876b4865e0208a9ade3da041" category="doc">Cree otra cuenta de BlueXP</block>
-  <block id="6eb6b03d63d198bc73be4828f333e30e" category="paragraph">Utilice la siguiente llamada a la API para crear una cuenta de BlueXP adicional:</block>
-  <block id="ffa4f1b743e7c72a7bca2233b70cf51d" category="paragraph">PUBLICAR<block ref="9e456101e3e272027aab89f5f360d6be" prefix=" " category="inline-code"></block></block>
-  <block id="35083c8541bb2de95fd92715b18737cb" category="paragraph">Si desea habilitar el modo restringido, debe incluir lo siguiente en el cuerpo de la solicitud:</block>
-  <block id="69a442aca267a323cb2e19a768758f93" category="admonition">No se puede cambiar la configuración del modo restringido después de que BlueXP cree la cuenta. No se puede activar el modo restringido más adelante y no se puede desactivar más adelante. Se debe establecer en el momento de crear la cuenta.</block>
-  <block id="82ed80a9e9141ee7778aeb10a225c2fc" category="inline-link">Aprenda a usar esta llamada API</block>
   <block id="07999df8a3fec91dcf6daa7e52777cc7" category="list-text"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block></block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link-macro">Obtenga más información sobre los modos de implementación de BlueXP</block>
   <block id="d8c1ee023ea7a4705048e3464cfcb854" category="list-text"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block></block>
@@ -944,25 +907,7 @@
   <block id="ae447524ca7a094fbd322687e0154e93" category="inline-link">Documentación de AWS: Adición y eliminación de políticas de IAM</block>
   <block id="7c04a15d03a827f3e932f6ea885fb875" category="list-text"><block ref="7c04a15d03a827f3e932f6ea885fb875" category="inline-link-rx"></block></block>
   <block id="59c8a7b2e005ee251a6301c0ca1f23b3" category="list-text">Asegúrese de que el usuario tiene una clave de acceso que puede agregar a BlueXP después de instalar el conector.</block>
-  <block id="9370643895ad52c4da3ddf50c1e24a82" category="summary">Las funciones Administrador de cuentas, Administrador de área de trabajo, Visor de cumplimiento y Administrador de SnapCenter proporcionan permisos específicos a los usuarios. Puedes asignar uno de estos roles cuando asocias un nuevo usuario a tu cuenta de BlueXP.</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">Tarea</block>
-  <block id="023bddc1580239bc605771883a09c8ff" category="cell">Administrador de cuentas</block>
-  <block id="7088282dd5defa41ae1744ff713534b6" category="cell">Administrador de área de trabajo</block>
-  <block id="5a40def00412ea7ddaf8437f7a50cfda" category="cell">Visor de cumplimiento de normativas</block>
-  <block id="17b46331a35bd9a61bb349fcf9e0e04f" category="cell">Administrador de SnapCenter</block>
-  <block id="71e4f728e47ac15ca1906f608d2c8041" category="cell">Gestionar entornos de trabajo</block>
-  <block id="cd080f78167fbc0cad16806de7c4cb6c" category="cell">Activar servicios en entornos de trabajo</block>
-  <block id="e111db5964f3341f9a0b4794494aa9bf" category="cell">Ver el estado de replicación de datos</block>
-  <block id="f8ed80d1b6ae9da0960249538d655425" category="cell">Visualice la línea de tiempo</block>
-  <block id="39ac68e476b37c123efa68256cf31a7d" category="cell">Cambiar entre espacios de trabajo</block>
-  <block id="838203d064fe980b5ae00097d667d9f4" category="cell">Consulta los resultados del análisis de clasificación de BlueXP</block>
-  <block id="93b557fcf4dca896b9a77328a5ae0e92" category="cell">Eliminar entornos de trabajo</block>
-  <block id="778cfbd8e3739e3af0e367072a92b2c3" category="cell">Reciba el informe de Cloud Volumes ONTAP</block>
-  <block id="91ddd20c84fc1e8ded7b005f805d8705" category="cell">Crear conectores</block>
-  <block id="044b77b68a82998776d7f4dc9b550bee" category="cell">Administrar cuentas de BlueXP</block>
-  <block id="1eda8b1f4dfa35b119f2a579170d4546" category="cell">Gestionar credenciales</block>
-  <block id="d7cea5f953c31662cd13f98b3b7d8608" category="cell">Modificar la configuración de BlueXP</block>
-  <block id="59d212e47ec92d175a35d52f6c448d89" category="cell">Consulte y gestione la consola de soporte</block>
   <block id="45f5c7b6248438f849cf619c647c63e4" category="paragraph">Si quieres usar los servicios de BlueXP en AWS o Azure con un conector on-premises, necesitas configurar permisos en tu proveedor de nube para que puedas añadir las credenciales al conector después de instalarlo.</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="open-title">AWS</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">Ahora debe tener claves de acceso para un usuario de IAM que tenga los permisos necesarios. Después de instalar el conector, deberá asociar estas credenciales con el conector de BlueXP.</block>
@@ -1666,16 +1611,10 @@
   <block id="b8c45dd3fc7b806721f81b6d91964231" category="summary">Después de empezar a utilizar BlueXP en modo privado, puede empezar a utilizar los servicios BlueXP compatibles con modo privado.</block>
   <block id="299e0f249c257857628a7f5786b1b039" category="doc">Qué puede hacer después (modo privado)</block>
   <block id="fced466a309d5f02b614e19af9c50a3a" category="paragraph">Si necesita ayuda, consulte la siguiente documentación:</block>
-  <block id="535581d758075804b4cc52814e262a35" category="inline-link">Creación de sistemas Cloud Volumes ONTAP</block>
-  <block id="dabdf1a1811b65cabed1b8e76ccae920" category="list-text"><block ref="dabdf1a1811b65cabed1b8e76ccae920" category="inline-link-rx"></block></block>
   <block id="c5fbee6586294d81141f8dd158707985" category="inline-link">Detectar clústeres de ONTAP en las instalaciones</block>
   <block id="f19b6baefd30f42b716828a3ce67d843" category="list-text"><block ref="f19b6baefd30f42b716828a3ce67d843" category="inline-link-rx"></block></block>
-  <block id="37fa21b7ca602fd8fe055b26a1de7d8b" category="inline-link">Replicar datos</block>
-  <block id="634c5d39383447a348842c01b2483754" category="list-text"><block ref="634c5d39383447a348842c01b2483754" category="inline-link-rx"></block></block>
   <block id="36eb10a8720e9fc3cc595882ff021ccf" category="inline-link">Analiza los datos de volúmenes de ONTAP on-premises con la clasificación de BlueXP</block>
   <block id="eb14ba8446024f1dd902949682a561b2" category="list-text"><block ref="eb14ba8446024f1dd902949682a561b2" category="inline-link-rx"></block></block>
-  <block id="04b86b3e706875b04f815d45eb8e76ee" category="inline-link">Haz un backup de los datos de volúmenes de ONTAP en las instalaciones en StorageGRID mediante el backup y la recuperación de BlueXP</block>
-  <block id="c60a13b5352c81dedc5a2bed03d2f76a" category="list-text"><block ref="c60a13b5352c81dedc5a2bed03d2f76a" category="inline-link-rx"></block></block>
   <block id="2fc22405cb36e8596d9bdb7b52cbf10c" category="summary">Es posible que desee obtener más información sobre el conector antes de implementarlo o si necesita solucionar cualquier problema.</block>
   <block id="6e8114a6676a5923599d8d78479d23d8" category="doc">Configuración predeterminada del conector</block>
   <block id="ebed13b527202f35f3ec91ab58b5a4c2" category="paragraph">Es posible que desee obtener más información sobre la configuración del conector antes de implementarlo o si necesita solucionar cualquier problema.</block>
@@ -2060,51 +1999,29 @@ Tenga en cuenta que la página se actualiza entre probar la conexión y habilita
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">Seleccione la casilla de verificación para activar la opción y, a continuación, seleccione *Guardar*.</block>
   <block id="f2b686d839a94b2d7f1e0a55d1c7c302" category="doc">Administre su cuenta de BlueXP</block>
   <block id="315b1bcfec7b067d1365b30389121dcb" category="section-title">Gestione su cuenta con la API de tenancy</block>
-  <block id="ab92d1e2231079f7f278e33e63f88ee9" category="paragraph">Si desea administrar la configuración de su cuenta enviando solicitudes de API, deberá utilizar la API _Tenancy_. Esta API es diferente de la API de BlueXP, que se utiliza para crear y gestionar entornos de trabajo de Cloud Volumes ONTAP.</block>
   <block id="1dc658529d6408dff5a6f0516b76a420" category="inline-link">Vea los extremos de la API de tenancy</block>
   <block id="48073a193e8d0854b9bf3ba1031439d1" category="paragraph"><block ref="48073a193e8d0854b9bf3ba1031439d1" category="inline-link-rx"></block></block>
   <block id="35c0393b7b6f22ece5c742b2eaf8c91f" category="section-title">Crear y administrar usuarios</block>
-  <block id="9e4e26e36e8844fa4042a9c996fe1d79" category="paragraph">Los usuarios de su cuenta pueden acceder a los recursos y gestionarlos en espacios de trabajo específicos.</block>
   <block id="3bf6330f5f4c7c3dfddc9670cfaf4a22" category="section-title">Añadir usuarios</block>
   <block id="e412b22fd354200b6f07850685564e9b" category="paragraph">Asocie usuarios a su cuenta de BlueXP para que esos usuarios puedan crear y administrar entornos de trabajo en BlueXP.</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">Sitio web de NetApp BlueXP</block>
-  <block id="6a7aea1b41b1a97a4114346dadbbcc12" category="list-text">Si el usuario aún no lo ha hecho, pida al usuario que vaya a.<block ref="2fbfa33fd647f6f78a572269d50d0708" category="inline-link-rx"></block> y regístrese.</block>
   <block id="aeb8221008e9f6c1ef2c8833cef411ed" category="list-text">En la parte superior de BlueXP, seleccione la lista desplegable *cuenta*.</block>
   <block id="81da0bcfa753963ae97ffa63aa2045d3" category="inline-image-macro">Captura de pantalla que muestra la opción Configuración de la cuenta en el banner superior de BlueXP.</block>
   <block id="0fad82c7de53b27425f25cc82c5a54c6" category="paragraph"><block ref="0fad82c7de53b27425f25cc82c5a54c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="155907ffed37b938531a447277cae166" category="inline-image-macro">Captura de pantalla que muestra la opción gestionar configuración de cuenta disponible en el menú desplegable cuenta.</block>
   <block id="c04c08fe80b97e132e0d3900955bcba0" category="paragraph"><block ref="c04c08fe80b97e132e0d3900955bcba0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a4f6d118b5dde10993a1937e971e7afb" category="list-text">En la ficha Miembros, seleccione *Usuario asociado*.</block>
-  <block id="66305d9d43f9788034811d163f26dc58" category="list-text">Introduzca la dirección de correo electrónico del usuario y seleccione un rol para el usuario:</block>
-  <block id="bc18148d37d0ca0b48c3b71b47ecdda6" category="list-text">*Administración de cuentas*: Puede realizar cualquier acción en BlueXP.</block>
-  <block id="65c47c4ebd9f5dfbe69260b3f6beea0b" category="list-text">*Administración de área de trabajo*: Puede crear y administrar recursos en áreas de trabajo asignadas.</block>
-  <block id="d9bef132ebdee987c9b28b5929df0f95" category="list-text">*Visor de cumplimiento*: Solo puede ver la información de cumplimiento para la clasificación de BlueXP y generar informes para espacios de trabajo a los que tienen permiso para acceder.</block>
-  <block id="cd300641cc6f26fb104a34058424d793" category="list-text">Si ha seleccionado Administrador de área de trabajo o Visor de cumplimiento, seleccione uno o varios espacios de trabajo para asociarlos con ese usuario.</block>
-  <block id="25cabb65f9365ced3f9b187f48c34b86" category="inline-image-macro">Captura de pantalla que muestra cómo asociar un usuario seleccionando una función y los espacios de trabajo asociados.</block>
-  <block id="09361541a55bd16f3d97641580297263" category="paragraph"><block ref="09361541a55bd16f3d97641580297263" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e43ddb0fd3dbaee9a42e954a181ab141" category="list-text">Seleccione *asociado*.</block>
-  <block id="c7ff327cee5edeb542a8940b9fe77bf0" category="paragraph">El usuario debe recibir un correo electrónico de NetApp BlueXP titulado "Account Association". El correo electrónico incluye la información necesaria para acceder a BlueXP.</block>
-  <block id="8c7e9f2dfcd0125922dfbce36a1a4c2a" category="section-title">Quitar usuarios</block>
   <block id="7a66d4af3e7fb51250c45aab6250b558" category="paragraph">Al desasociar un usuario, ya no pueden acceder a los recursos de una cuenta de BlueXP.</block>
   <block id="632b32263c50ab83ab2f7a15f4295517" category="list-text">En la parte superior de BlueXP, seleccione la lista desplegable *cuenta* y seleccione *gestionar cuenta*.</block>
   <block id="951c184370ed21ebfa0d073293c2ed42" category="list-text">En la ficha Miembros, seleccione el menú de acciones de la fila correspondiente al usuario.</block>
   <block id="637326a7ff87029a386cbc57a721bddd" category="inline-image-macro">Captura de pantalla que muestra el menú de acciones disponible al pasar el nombre de un usuario en la tabla usuarios.</block>
-  <block id="357ea3bd3c0ef6c545391cef7aa07936" category="paragraph"><block ref="357ea3bd3c0ef6c545391cef7aa07936" category="inline-image-macro-rx" type="image"></block></block>
   <block id="19cb8b4a145c7797030b76d14d20452d" category="list-text">Seleccione *desasociar usuario* y seleccione *desasociar* para confirmar.</block>
-  <block id="14187bd1325859883b3b447f05c04d08" category="paragraph">El usuario ya no puede acceder a los recursos de esta cuenta de BlueXP.</block>
-  <block id="01696963c048419e928e3eb2ed594d93" category="section-title">Administrar los espacios de trabajo de un administrador de área de trabajo</block>
-  <block id="8ecff25aa4ee2497099b60f83bd4dde7" category="paragraph">Puede asociar y desasociar administradores de área de trabajo con áreas de trabajo en cualquier momento. La asociación del usuario les permite crear y ver los entornos de trabajo en ese espacio de trabajo.</block>
-  <block id="3e6af9f693b3800e5b4a6dc2a98bfc63" category="list-text">Seleccione *gestionar espacios de trabajo*.</block>
-  <block id="aca7ecb913d1693820d3cecc61146e57" category="list-text">Seleccione los espacios de trabajo que desea asociar con el usuario y seleccione *aplicar*.</block>
-  <block id="00c13424586ec3eadb8e36d6a47c5a3d" category="paragraph">Ahora el usuario puede acceder a esas áreas de trabajo desde BlueXP, siempre y cuando el conector también esté asociado a las áreas de trabajo.</block>
   <block id="f932d2619edea0dc69b40e9be53abdc4" category="section-title">Crear y administrar cuentas de servicio</block>
-  <block id="3867fe57530ba0aa0540b395cae02bbe" category="paragraph">Usted otorga permisos a una cuenta de servicio asignándole una función, al igual que cualquier otro usuario de BlueXP. También puede asociar la cuenta de servicio a espacios de trabajo específicos para controlar los entornos de trabajo (recursos) a los que puede acceder el servicio.</block>
   <block id="3e90ee6ffbf4747b6daa7514209e20ef" category="paragraph">Al crear la cuenta de servicio, BlueXP permite copiar o descargar un ID de cliente y un secreto de cliente para la cuenta de servicio. Este par de claves se utiliza para la autenticación con BlueXP.</block>
   <block id="41d9e1257b3e21add2e59d038938ea94" category="section-title">Cree una cuenta de servicio</block>
   <block id="a6181f7eb68c3b9ae53c98621898ae4c" category="paragraph">Cree tantas cuentas de servicio como necesite para gestionar los recursos en sus entornos de trabajo.</block>
   <block id="9530a7e1e515f7e5be46c5beefe3c9dd" category="list-text">Seleccione *Administrar cuenta* junto a la cuenta seleccionada actualmente.</block>
   <block id="34b25592e0f4828f53d5ac3c47e02e4f" category="list-text">En la ficha Miembros, seleccione *Crear cuenta de servicio*.</block>
-  <block id="0c507d64182f3bdd3fef1c4ccfad6af5" category="list-text">Introduzca un nombre y seleccione un rol. Si ha elegido una función que no sea Administrador de cuentas, elija el área de trabajo para asociarla con esta cuenta de servicio.</block>
   <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">Seleccione *Crear*.</block>
   <block id="a708a553b3abfac9aade748b9d27bc4e" category="list-text">Copie o descargue el ID del cliente y el secreto del cliente.</block>
   <block id="ae99e864274efa07106098e3eb606275" category="paragraph">El secreto de cliente sólo es visible una vez y BlueXP no lo almacena en ninguna parte. Copie o descargue el secreto y guárdelo de forma segura.</block>
@@ -2127,31 +2044,13 @@ Tenga en cuenta que la página se actualiza entre probar la conexión y habilita
   <block id="22afe6994929c83f3a017a74a15c514d" category="paragraph">Elimine una cuenta de servicio si ya no necesita utilizarla.</block>
   <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">Seleccione *Eliminar*.</block>
   <block id="c7278ad95902888aff28b4a74e97eea8" category="list-text">Seleccione *Eliminar* de nuevo para confirmar.</block>
-  <block id="c1fa7350cf0c84974f24411e8efc84d0" category="section-title">Administrar espacios de trabajo</block>
   <block id="a1b9ad007db816daa5055da2e20b5950" category="paragraph">Gestione sus espacios de trabajo creando, cambiando el nombre y borrándolos. Tenga en cuenta que no puede eliminar un área de trabajo si contiene recursos. Debe estar vacío.</block>
   <block id="5889796437b06df82d560d80b917d8ea" category="list-text">Seleccione *espacios de trabajo*.</block>
-  <block id="43623b24ff4be4e0e0174dccd5d4446a" category="list-text">Seleccione una de las siguientes opciones:</block>
-  <block id="5b217bfc33b6b7bdc85429aa9e599f59" category="list-text">Seleccione *Agregar nuevo espacio de trabajo* para crear un nuevo espacio de trabajo.</block>
   <block id="49c1639da53b5c2b8f5b992ab3d0804f" category="list-text">Seleccione *Cambiar nombre* para cambiar el nombre del espacio de trabajo.</block>
-  <block id="b13f43cea555895a880f4e45ca382595" category="list-text">Seleccione *Eliminar* para eliminar el espacio de trabajo.</block>
-  <block id="4e3fd74d2efa1bbd6baaa1fe112eca60" category="section-title">Administrar los espacios de trabajo de un conector</block>
-  <block id="e98ed4965158505163fc6b7ffa9ba9b0" category="paragraph">Debe asociar el conector con áreas de trabajo para que los administradores de área de trabajo puedan acceder a esas áreas de trabajo desde BlueXP.</block>
-  <block id="acff4181fbf10d78defb836baab72c8d" category="paragraph">Si sólo tiene Administradores de cuentas, no es necesario asociar el conector a áreas de trabajo. Los administradores de cuentas tienen la posibilidad de acceder a todas las áreas de trabajo de BlueXP de forma predeterminada.</block>
-  <block id="b7f7a48c60012c23b8adb659da31b71a" category="inline-link-macro">Obtenga más información sobre usuarios, áreas de trabajo y conectores</block>
-  <block id="e75928b1dc1ca3932b7aca29ff283aa4" category="list-text">Seleccione *conector*.</block>
-  <block id="36a0e8f51d7a9a76f77fc1b370f8c049" category="list-text">Seleccione *Administrar espacios de trabajo* para el conector que desea asociar.</block>
-  <block id="13a89cea3d139c1997539c3cc4d05ec3" category="list-text">Seleccione las áreas de trabajo que desea asociar con el conector y seleccione *aplicar*.</block>
   <block id="af215eeaa16a3620c27468ccc641cc45" category="section-title">Cambie el nombre de su cuenta</block>
   <block id="31d12df20ad7cd56c0aa4738009b7ed9" category="paragraph">Cambie el nombre de su cuenta en cualquier momento para cambiarlo por algo significativo para usted.</block>
   <block id="a6faaace9f6137747871a8d053f687c2" category="list-text">En la ficha *Descripción general*, seleccione el icono de edición junto al nombre de la cuenta.</block>
   <block id="1d1dac548e3d665ab4cf5a5684666609" category="list-text">Escriba un nuevo nombre de cuenta y seleccione *Guardar*.</block>
-  <block id="d80999df772b0c9cdbf05080eda00873" category="section-title">Permitir vistas previas privadas</block>
-  <block id="ef80752aa8699be8e58bcdf00438dc7a" category="paragraph">Permita que las vistas previas privadas de su cuenta tengan acceso a nuevos servicios que están disponibles como vista previa en BlueXP.</block>
-  <block id="0a1328e44a818b47ecf6db707c8721d7" category="paragraph">No se garantiza que los servicios de la vista previa privada se comporten como se espera y podrían soportar interrupciones de servicio y que falten funciones.</block>
-  <block id="b48299c449bac839819763792d4aff22" category="list-text">En la ficha *Descripción general*, active la opción *permitir vista previa privada*.</block>
-  <block id="be01cd1242a81da984b776c6a5aacb83" category="section-title">Permitir servicios de terceros</block>
-  <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">Permita que los servicios de terceros de su cuenta tengan acceso a servicios de terceros disponibles en BlueXP. Los servicios de terceros son servicios de cloud similares a los que ofrece NetApp, pero son gestionados y respaldados por empresas terceros.</block>
-  <block id="90837faa596ab1d28c90a381b6997722" category="list-text">En la ficha *Descripción general*, active la opción *permitir servicios de terceros*.</block>
   <block id="f664478fbdfbd15104b014e41c35e88c" category="doc">Resumen de permisos para BlueXP</block>
   <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="section-title">Permisos de AWS</block>
   <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="cell">Enlace</block>
@@ -2327,7 +2226,6 @@ Tenga en cuenta que la página se actualiza entre probar la conexión y habilita
   <block id="0b7c0e66015972c9e3c3e051249db480" category="list-text">*Grupo de seguridad de red*: El conector requiere conexiones entrantes mediante SSH, HTTP y HTTPS.</block>
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">*Identidad*: En *Gestión*, seleccione *Activar identidad administrada asignada por el sistema*.</block>
   <block id="2d3bb174766a8cbc78a4d5d0a2739c56" category="paragraph">Cuando acceda a la consola BlueXP por primera vez, se le solicitará que elija una cuenta para asociar el conector y tendrá que activar el modo restringido.</block>
-  <block id="b22816a3d20c18e89e4ef89984ca5df6" category="inline-link-macro">Aprenda a crear una cuenta de BlueXP adicional</block>
   <block id="d0afc367dac05a517daede09c87a1703" category="list-text">Regístrese o inicie sesión en BlueXP.</block>
   <block id="31925d7c2cb5897bb831e016bf096aeb" category="list-text">Después de iniciar sesión, configure BlueXP:</block>
   <block id="511a9fce084315d00b23c33c017b6f00" category="list-text">Introduzca un nombre para el conector.</block>
@@ -2582,12 +2480,8 @@ Cuando detecta un clúster en las instalaciones con un conector, la vista avanza
   <block id="762e4ad93da7526b1209d0aed9dd1b9d" category="paragraph">Para Cloud Volumes ONTAP, tanto las licencias basadas en capacidad como las basadas en nodos son compatibles con BYOL.</block>
   <block id="838ac5ba738d283ecc822963f2f2d06a" category="list-text">Cómo comenzar con el modo restringido</block>
   <block id="f83ff3887b801a33b3415e7f5a63a592" category="list-text">Debe habilitar el modo restringido al crear su cuenta de BlueXP.</block>
-  <block id="4a541a5764b0e217148ef51716eeb6d5" category="paragraph">Si aún no tiene una cuenta, se le pedirá que cree su cuenta y habilite el modo restringido cuando inicie sesión en BlueXP por primera vez desde un conector que instaló manualmente o que creó desde el mercado de su proveedor de la nube.</block>
-  <block id="4be00e060509ea4e6ad71f0e8dc51282" category="paragraph">Si ya tiene una cuenta y desea crear otra, debe utilizar la API de soporte.</block>
-  <block id="199786afc13c29e842e0341565940ffb" category="paragraph">Tenga en cuenta que no puede cambiar la configuración de modo restringido después de que BlueXP cree la cuenta. No se puede activar el modo restringido más adelante y no se puede desactivar más adelante. Se debe establecer en el momento de crear la cuenta.</block>
   <block id="999ae70b12514c648b606bf0f3afabcb" category="inline-link-macro">Aprenda a empezar a utilizar el modo restringido</block>
   <block id="3adc000476556fe48061c952620b6394" category="list-text"><block ref="b25261838e688763c403e651d058df29" category="inline-link-macro-rx"></block>.</block>
-  <block id="cdd00bf67dbaadd905bfd3009de402e0" category="list-text"><block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>.</block>
   <block id="1ba924375f21d42237f7e64fdfaa9eb2" category="paragraph">En la siguiente imagen, se muestra un ejemplo de puesta en marcha en modo privado en la que se instala el conector en el cloud y se gestiona tanto Cloud Volumes ONTAP como un clúster ONTAP en las instalaciones.</block>
   <block id="a5fee7a4c74b489c2e8e8d39b686e4e8" category="inline-image-macro">Una imagen conceptual que muestra una red virtual en la nube donde un conector se ejecuta y proporciona acceso a la consola basada en web y gestiona Cloud Volumes ONTAP y un clúster de AFF en un centro de datos en las instalaciones.</block>
   <block id="a694033f641f0571740cee35545e0d7b" category="paragraph"><block ref="a694033f641f0571740cee35545e0d7b" category="inline-image-macro-rx" type="image"></block></block>
@@ -2690,7 +2584,6 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="a222de5f9a1db461954d4160797dfa76" category="sidebar">Administrar BlueXP</block>
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">federación de identidades</block>
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">Cuentas BlueXP</block>
-  <block id="f4040f71a7d553f2519487070892b115" category="sidebar">Roles de usuario</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">Administrar credenciales y suscripciones</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Referencia</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">Resumen de permisos</block>
@@ -2801,7 +2694,6 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">Para utilizar las funciones y los servicios de BlueXP, deberás proporcionar permisos para que BlueXP pueda realizar operaciones en tu entorno de cloud. Utilice los vínculos de esta página para acceder rápidamente a los permisos que necesita en función de su objetivo.</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">Organiza clústeres de ONTAP locales en niveles en Amazon S3</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">Permisos de StorageGRID</block>
-  <block id="6d349a0af72df500a21b7660d8e471b2" category="paragraph"><block ref="6d349a0af72df500a21b7660d8e471b2" category="inline-link-rx"></block></block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Seleccione *Credenciales de usuario*.</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Para confirmar que el proceso de registro se ha realizado correctamente, seleccione el icono Ayuda y seleccione *Soporte*.</block>
   <block id="8281d32bb775e644bd52916734e16bef" category="paragraph">El conector realiza las siguientes solicitudes de API cuando usas la clasificación de BlueXP para analizar datos de Azure NetApp Files:</block>
@@ -2869,10 +2761,7 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">Seleccione para cambiar las columnas que aparecen en la tabla <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> y, a continuación, seleccione las columnas que desea mostrar.</block>
   <block id="348552521b849746260fe8d296d34c15" category="list-text">Seleccione para gestionar un caso existente <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> y seleccione una de las opciones disponibles:</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Cerrar caso*: Proporciona detalles sobre por qué estás cerrando el caso y selecciona *Cerrar caso*.</block>
-  <block id="57ab38f0801cd04e83411dd83b30729f" category="inline-link-macro">Aprenda a administrar los espacios de trabajo de Connector</block>
-  <block id="bb9f1b247d229038dd3e314bd90af7da" category="admonition">También debes asociar el conector a los espacios de trabajo para que los administradores de espacios de trabajo puedan acceder a esos espacios de trabajo desde BlueXP. <block ref="1e9768478c545fd11a6bc38c853aa6cd" category="inline-link-macro-rx"></block>.</block>
   <block id="aaa1dcd03bd1289bed9f95d54940df48" category="paragraph">Al volver a crear la clave se eliminará la clave existente para esta cuenta de servicio y, a continuación, se creará una clave nueva. No podrá utilizar la tecla anterior.</block>
-  <block id="28d4bc1715fb315a1134ddb9ce9b69ef" category="paragraph">Si ha creado un nuevo espacio de trabajo, también debe agregar Connector a ese espacio de trabajo. Si no agrega Connector, los administradores de Workspace no podrán acceder a ninguno de los recursos del espacio de trabajo. Consulte la siguiente sección para obtener más detalles.</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">Seleccione *continuar*.</block>
   <block id="b7d7e6e6aa05f7913906689b7f1e583a" category="list-text">*Revisión*: Revisa tus selecciones y selecciona *Lanzamiento*.</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*Revisión*: Revisa los detalles, acepta el contrato de licencia y luego selecciona *Configurar*.</block>
@@ -2925,7 +2814,6 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="ea472a728fa8ea8a9d957dafbf3b3c56" category="paragraph"><block ref="4bafa1fce0633bbc25f458d6925369da" category="inline-link-macro-rx"></block>.</block>
   <block id="51a7ac19cbf0f9d074132cf117ad2e0c" category="paragraph">Añadir credenciales de AWS a un conector existente proporciona los permisos necesarios para gestionar recursos y procesos dentro de su entorno de cloud público. <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>.</block>
   <block id="fb2327495633231db53b83b63281ec59" category="paragraph"><block ref="ba792a8f94fc4fa1d6890491a6d3ca88" category="inline-link-macro-rx"></block>.</block>
   <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>.</block>
@@ -3483,7 +3371,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="da79c9a9c81722678ed4139ebb8929d9" category="inline-link">Descubra cómo detectar estos clústeres adicionales</block>
   <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
   <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">Ahora puede cambiar de forma dinámica el nivel de servicio de un volumen para satisfacer las necesidades de las cargas de trabajo y optimizar los costes. El volumen se mueve al otro pool de capacidad sin afectar al volumen.<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
-  <block id="849f31cbd6498a40e853e0172989edd1" category="cell">Eliminar entornos de trabajo de un espacio de trabajo</block>
   <block id="b7070cb9b31e0d402b92f5c1d4efa401" category="paragraph">Ya está disponible una nueva versión del modo privado para BlueXP. Esta versión incluye las siguientes versiones de los servicios de BlueXP que son compatibles con el modo privado.</block>
   <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">Versión incluida</block>
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">Conector</block>
@@ -3780,7 +3667,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="ebf399faefe8b72bdfba77e608b5c6b1" category="cell">Se admite en regiones gubernamentales y regiones comerciales con modo restringido. No se admite en regiones soberanas con modo restringido. En el modo restringido, el backup y la recuperación de datos de BlueXP  solo admite backup y restauración de datos de volúmenes de ONTAP.<block ref="db0a18d2a99588054f71bf6c0bd14abb" category="inline-link-rx"></block> No se admiten los backups y la restauración de los datos de aplicaciones y los datos de máquinas virtuales.</block>
   <block id="207db32d1fe68c1dcdb493d5ea79d77f" category="cell">Compatible con regiones comerciales de AWS y Azure. No se admite en Google Cloud o en , o en<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block><block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block><block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block> el modo privado, el backup y la recuperación de datos de BlueXP  admite el backup y la restauración de datos exclusivos de volúmenes de ONTAP.<block ref="178bedf5671592d86ab011b6af0333e7" category="inline-link-rx"></block> No se admiten los backups y la restauración de los datos de aplicaciones y los datos de máquinas virtuales.</block>
   <block id="1b021f96102834ba370c95f2fe7f48a9" category="paragraph">No se admiten los backups y la restauración de los datos de aplicaciones y los datos de máquinas virtuales.</block>
-  <block id="f439d97e3276e0c28f34a11e91777e11" category="list-text">Un sistema StorageGRID</block>
   <block id="33ff271280dc3e0c2c15bf39aeefdeb9" category="list-text">El tipo de instancia de EC2 es t3.2xlarge.</block>
   <block id="f637fe372218bb6ee39fd481301dc99f" category="list-text">El tipo de máquina virtual es Standard_D8s_v3.</block>
   <block id="d8c41b98cc9656d72fb99f79ff2425ba" category="list-text">La instancia del equipo virtual es n2-standard-8.</block>
@@ -4132,7 +4018,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="24fff469b53b3c0caad8c3049aada3bc" category="doc">Prepare las redes para la consola de BlueXP </block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">Información relacionada</block>
   <block id="1e3e0a42c3e9d5acf6234aecce4a2177" category="cell">Utilizar los servicios BlueXP </block>
-  <block id="e351b985910352ae6ebe3e03c618e2b9" category="paragraph"><block ref="e351b985910352ae6ebe3e03c618e2b9" category="inline-link-macro-rx"></block></block>
   <block id="32bf39c0f4f8e0ff3b8343a1c55eccc0" category="inline-link">Documentos de la cartera digital</block>
   <block id="950b8d2ee51e322cd0332cda491f261e" category="list-text"><block ref="950b8d2ee51e322cd0332cda491f261e" category="inline-link-rx"></block></block>
   <block id="7b0893f7350a7ce29533d2ee8bafbcea" category="list-text">En la página *Credenciales de la organización* o *Credenciales de la cuenta*, selecciona *Añadir Credenciales* y sigue los pasos del asistente.</block>
@@ -4151,7 +4036,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="e2ca9dfd816e611b53e740c0def06a75" category="paragraph">Es necesario asociar las credenciales del sitio de soporte de NetApp con su número de serie de cuenta de BlueXP  específico para habilitar las siguientes tareas en BlueXP :</block>
   <block id="acc5d74b9730b17cf679fd826310c607" category="paragraph">Estas credenciales están asociadas con el número de serie de su cuenta de BlueXP  específico. Los usuarios que pertenecen a la organización o cuenta de BlueXP  pueden acceder a estas credenciales desde *Soporte &gt; Administración de NSS*.</block>
   <block id="607d5f9332bf0fe8fef9f43fcf68c22e" category="paragraph">La consola de soporte permite agregar y gestionar sus cuentas del sitio de soporte de NetApp para usarlas con BlueXP  en el nivel de cuenta o de la organización de BlueXP .</block>
-  <block id="72c38f83a9b4d27b609d1241238f7402" category="summary">Al configurar BlueXP  en modo restringido o privado, se le pedirá que cree una cuenta. Si necesita varias cuentas, debe crearlas mediante la API de soporte.</block>
   <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">La lista de entornos de trabajo está dentro del ámbito de la organización (o cuenta) de BlueXP , el proyecto (o el espacio de trabajo) y el conector que ha seleccionado en el banner superior del servicio.</block>
   <block id="aeaa07e62e0681df3c00b18be44e1799" category="summary">Si los miembros de su organización necesitan usar un conector en otro proyecto, debe crear una asociación desde BlueXP  IAM.</block>
   <block id="9c1561cceda808c78453a453f4175e14" category="doc">Asociar un conector BlueXP  a otras carpetas y proyectos</block>
@@ -4756,7 +4640,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">Cómo afecta BlueXP  IAM a su cuenta existente en modo restringido</block>
   <block id="8f2f21c16dc203c77301e868fae6ff8c" category="paragraph">BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar y restringido. Si utiliza BlueXP  en modo privado, seguirá utilizando una _account_ de BlueXP  para gestionar espacios de trabajo, usuarios y recursos.</block>
   <block id="492bd3385d9d03385f8098817a8d0196" category="paragraph">BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar y modo restringido. Si utiliza BlueXP  en modo privado, utilice una _account_ de BlueXP  para gestionar usuarios y recursos.</block>
-  <block id="5d733a1853078585aec87e3ef2524bec" category="paragraph">Cuando utilice BlueXP  en modo privado, utilizará una cuenta _BlueXP _ para administrar usuarios y organizar recursos en _workspaces_ aislados. Por ejemplo, un grupo de usuarios puede desplegar y gestionar entornos de trabajo de Cloud Volumes ONTAP en un espacio de trabajo que no es visible para los usuarios que gestionan entornos de trabajo en un espacio de trabajo diferente.</block>
   <block id="73f420193f5136d2f1d09a09d6f9aabb" category="paragraph">Si usas BlueXP  en modo estándar o restringido, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización _BlueXP _ que gestionará mediante la administración de identidades y accesos (IAM) de BlueXP .</block>
   <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">Los roles de plataforma son los roles más amplios que puede asignar a los usuarios y permiten amplios permisos para la administración de BlueXP , incluida la asignación de roles y la adición de usuarios, además de poder realizar todas las funciones de BlueXP . BlueXP  IAM incluye dos funciones de plataforma: Administrador de organización y Administrador de carpetas o proyectos. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope.</block>
   <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">Permite al usuario acceder sin restricciones a todos los proyectos y carpetas de una organización, agregar miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos.</block>
@@ -4781,9 +4664,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="a191e428602026277274d53cff237c2c" category="list-text">Tiene acceso de solo lectura a las funciones de gobierno y estado del almacenamiento de BlueXP , incluidas las siguientes:</block>
   <block id="0920501bc6df68e157496ea6dfe73a04" category="list-text">Actualizaciones de software (pueden descargar planes de actualización)</block>
   <block id="09246652e91bee267cf93f6b3c2e9a32" category="paragraph">Los roles de servicios de datos proporcionan a los usuarios permiso para utilizar los servicios de datos dentro de la organización, proyecto o carpeta a la que tienen acceso.</block>
-  <block id="d85398008b1578fbbd6e3fb398a3b5a6" category="paragraph">Cuando utilice BlueXP  en modo privado, utilizará una cuenta _BlueXP _ para administrar usuarios. Puede proporcionar permisos específicos a los usuarios de su cuenta seleccionando entre las siguientes funciones: Administrador de cuenta, Administrador de espacio de trabajo, Visor de cumplimiento y Administrador de SnapCenter</block>
-  <block id="392a6856ccd2e3342fd3b66da6f5f4f4" category="paragraph">Al configurar BlueXP  en modo privado, se le pedirá que cree una cuenta _BlueXP _, lo que le permite gestionar usuarios y organizar recursos. Esta cuenta puede ser todo lo que necesite, pero si su negocio requiere varias cuentas, tendrá que crear cuentas adicionales con la API de tenancy.</block>
-  <block id="1d54d188c16d54d03c291e397f5f5d3c" category="paragraph">Si usas BlueXP  en modo estándar o restringido, no tendrás una cuenta de BlueXP . En su lugar, dispondrá de una organización que administre mediante la administración de acceso e identidad (IAM) de BlueXP . <block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block>.</block>
   <block id="9c671793f6e87d755268257623fd8ca3" category="paragraph">Para administrar usuarios y sus permisos, debe tener asignado uno de los siguientes roles:</block>
   <block id="e315fd1b95b71681931eeb8955a37b50" category="paragraph">Los usuarios con este rol pueden gestionar todos los miembros</block>
   <block id="c51c480c437b7c47a9f2adb67928e089" category="paragraph">Los usuarios con este rol solo pueden gestionar miembros de la carpeta o proyecto designado</block>
@@ -4810,7 +4690,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="1712db0afa6be365f3fb2fe0061eb0c7" category="section-title">Anular la asignación de un rol de un miembro</block>
   <block id="31ddf498fec35ac8707e5b28a896efa1" category="list-text">Si no desea que el miembro tenga permisos para nada, debe eliminar al miembro de su organización.</block>
   <block id="34a938f284a603fceb6aa9e92a05299f" category="list-text">En la tabla, navegue hasta el nivel de carpeta o proyecto y, a continuación, seleccione <block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block>. Se le pedirá que confirme la eliminación.</block>
-  <block id="cb78cc211125b48169ddebcb45d3029b" category="paragraph">Cuando usas BlueXP  en modo privado, usarás una cuenta _BlueXP _ para administrar usuarios y organizar recursos. Cuando creas tu cuenta, solo incluye un solo usuario administrador y un espacio de trabajo. Puede administrar la cuenta para que se adapte a sus necesidades agregando usuarios, creando cuentas de servicio con fines de automatización, agregando espacios de trabajo y más.</block>
   <block id="545e0b69c795ac2990b49f290e8c1c99" category="doc">Suscribirse a servicios de datos de BlueXP  (modo restringido)</block>
   <block id="bb53c4f02e33d64ba478ff18f8fb837e" category="paragraph">Una suscripción de Marketplace permite cargar los siguientes servicios de datos de BlueXP  con modo restringido:</block>
   <block id="d406f894e93540ac3e08a4bdebcc5418" category="doc">Suscribirse a servicios de datos de BlueXP  (modo estándar)</block>
@@ -4957,7 +4836,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="69ac82a1779b2cc7d528017241f5324f" category="paragraph">Host puede ser de cualquier arquitectura que cumpla con los siguientes requisitos de tamaño:</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU: 8 núcleos o 8 vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM: 32 GB</block>
-  <block id="0c257ecd276502d9a2d45fc70759eec6" category="admonition">A partir de febrero de 2025, estas funciones de usuario quedan obsoletas para los modos de despliegue estándar y restringido. El modo privado de BlueXP  solo proporciona un rol para asociarlo con usuarios, que es el rol de administrador de Cloud Manager y otorga todos los permisos de BlueXP .</block>
   <block id="e1625dbf565504d716b37b407e4f24a4" category="paragraph">La gestión de identidades y accesos (IAM) de BlueXP  le permite organizar y controlar el acceso a sus recursos de NetApp. Puede organizar sus recursos de acuerdo con la jerarquía de su organización. Por ejemplo, puede organizar recursos por ubicación geográfica, sitio o unidad de negocio. A continuación, puede asignar roles de IAM a miembros de partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.</block>
   <block id="179864dbcf93f914bb2504e0d17f7afc" category="paragraph">Al implementar un conector desde BlueXP, necesita utilizar una cuenta de Azure o una entidad de servicio con permisos para implementar la máquina virtual Connector. Los permisos necesarios se muestran en la <block ref="a3d6867da21f74b7e760876f5e090de9" category="inline-link-macro-rx"></block>.</block>
   <block id="1f0c50a54c656fee9ca2814ffcfc5d68" category="paragraph">Si necesita o no crear este rol personalizado para el conector depende de cómo lo haya desplegado.</block>
@@ -5036,4 +4914,30 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">Ejecute el siguiente comando y compruebe que el estado del conector se muestra como _active(running)_: _</block>
   <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">Cartera digital (solo licencias, la supervisión de suscripciones requiere un conector)</block>
   <block id="01dc19e1f1ebe0b9a261b5e0d555ea43" category="admonition">Cuando elige que BlueXP  envíe el mensaje de AutoSupport, puede demorar hasta cinco horas porque BlueXP  equilibra la carga automáticamente al enviar mensajes de AutoSupport. Si la comunicación con el soporte de NetApp es urgente, debe descargar el archivo y enviarlo al soporte de NetApp por sí mismo.</block>
+  <block id="af2a1aff4c4ed387dd33eb596bbaf2a8" category="paragraph">Si aún no tiene una organización, se le pedirá que cree su organización y habilite el modo restringido cuando inicie sesión en BlueXP  por primera vez desde un conector que instaló manualmente o que creó desde el mercado del proveedor de cloud.</block>
+  <block id="a5eb9e0a1f3f84009b5aca7f1045fa8f" category="paragraph">Tenga en cuenta que no puede cambiar la configuración del modo restringido después de que BlueXP  cree la organización. No se puede activar el modo restringido más adelante y no se puede desactivar más adelante.</block>
+  <block id="195cbc3c250aa5f076039dab882472ff" category="paragraph">Cuando utilice BlueXP  en modo privado, utilizará una cuenta _BlueXP _ para administrar usuarios y organizar recursos en un _workspace_ aislado.</block>
+  <block id="ec43ee2f174bf4ff9fffe4e5af69c91e" category="paragraph">Cuando accede por primera vez a BlueXP , ya se crea una cuenta para usted con un espacio de trabajo llamado _Workspace-1_.</block>
+  <block id="c18adc394c9393cc0392756d09ac1b6f" category="paragraph">A continuación, puede agregar miembros (usuarios) a esta cuenta e implementar conectores:</block>
+  <block id="e15be06539f5627357723492b23b5867" category="paragraph">Los miembros son usuarios de BlueXP que usted asocia con su cuenta de BlueXP. La asociación de un usuario a una cuenta y su espacio de trabajo en esa cuenta permite a esos usuarios crear y gestionar entornos de trabajo en BlueXP .</block>
+  <block id="03a21915504df93cf5dba0636080f62e" category="section-title">Espacio de trabajo</block>
+  <block id="2017e078789fd0addbcaf5a632f62c2e" category="paragraph">En BlueXP, un área de trabajo aísla cualquier número de _entornos de trabajo_ de otros usuarios de la cuenta. Los usuarios (miembros) de BlueXP  no pueden acceder a los entornos de trabajo de un espacio de trabajo a menos que estén asociados a ese espacio de trabajo.</block>
+  <block id="604243fb4bff2e2402eaae4f311b3df4" category="paragraph">Un entorno de trabajo representa sistemas de almacenamiento como su clúster ONTAP en las instalaciones.</block>
+  <block id="7a4da8d378a7ac849ecd26f5169e03f7" category="paragraph">El modo privado de BlueXP  sólo admite un espacio de trabajo.</block>
+  <block id="4e4242880317657b4734648e5c616311" category="paragraph">Puede utilizar un conector con más de un servicio BlueXP. Por ejemplo, si utiliza un conector para gestionar las copias de seguridad y la recuperación, puede utilizar ese mismo conector con otro servicio como la organización en niveles de BlueXP .</block>
+  <block id="e0e9e731481515c17cf65805ad428331" category="inline-link">Gestionar actualizaciones de software</block>
+  <block id="0a32c4661a15107c25c5e4cd536c3d3c" category="list-text"><block ref="0a32c4661a15107c25c5e4cd536c3d3c" category="inline-link-rx"></block></block>
+  <block id="4511fafef456a01dd2cbabdabb734998" category="inline-link">Supervise el uso de las licencias con la cartera digital</block>
+  <block id="8d0e7d68f7bb3c4c298177f8b8c6232f" category="list-text"><block ref="8d0e7d68f7bb3c4c298177f8b8c6232f" category="inline-link-rx"></block></block>
+  <block id="c90eda5e0b72907efe78600d5424fbc5" category="inline-link">Consulte la información de estado del almacenamiento con el asesor digital</block>
+  <block id="824682cce11107aff85423939d254bf0" category="list-text"><block ref="824682cce11107aff85423939d254bf0" category="inline-link-rx"></block></block>
+  <block id="212a5708873a440ed6b7eaae02c343de" category="paragraph">Cuando usas BlueXP  en modo privado, usarás una cuenta _BlueXP _ para administrar usuarios y organizar recursos. Cuando creas tu cuenta, solo incluye un solo usuario y un espacio de trabajo. Puede administrar la cuenta para que se adapte a sus necesidades agregando usuarios y creando cuentas de servicio con fines de automatización.</block>
+  <block id="6b38a71077363d56c57552a1b394924d" category="paragraph">Si desea administrar la configuración de su cuenta enviando solicitudes de API, deberá utilizar la API _Tenancy_. Esta API es diferente a la API de BlueXP . Tenga en cuenta que no puede crear nuevas cuentas o espacios de trabajo en modo privado, incluso con la API.</block>
+  <block id="3daefe35cc50ad6df6bcff21289c6a88" category="section-title">Cambie el nombre del espacio de trabajo</block>
+  <block id="572681268b8e71e5c76720d43cac2cd7" category="paragraph">Los usuarios de su cuenta pueden acceder y gestionar los recursos del espacio de trabajo.</block>
+  <block id="1ced32350b9e502e26ffb568fa0629ce" category="list-text">Introduzca la dirección de correo electrónico del usuario.</block>
+  <block id="2b17e91a19b3155c8281317a8648a9e4" category="list-text">Seleccione *asociado*. El usuario debe recibir un correo electrónico de NetApp BlueXP  titulado “Asociación de cuentas”. El correo electrónico incluye la información necesaria para acceder a BlueXP .</block>
+  <block id="e9c015fe86d3a5d04392492e021c0201" category="section-title">Elimine usuarios de su cuenta</block>
+  <block id="dd74de0d68eefd1c10bd1501afbc8b46" category="list-text">Introduzca un nombre.</block>
+  <block id="7711ad044bac260fa3951b31e2d96f88" category="sidebar">Cuentas de BlueXP  (solo modo privado)</block>
 </blocks>

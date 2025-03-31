@@ -18,12 +18,9 @@ Después de empezar a utilizar BlueXP en modo privado, puede empezar a utilizar 
 
 Si necesita ayuda, consulte la siguiente documentación:
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Creación de sistemas Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["Detectar clústeres de ONTAP en las instalaciones"^]
-* https://docs.netapp.com/us-en/bluexp-replication/index.html["Replicar datos"^]
+* https://docs.netapp.com/us-en/bluexp-software-updates/index.html["Gestionar actualizaciones de software"^]
 * https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["Analiza los datos de volúmenes de ONTAP on-premises con la clasificación de BlueXP"^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Haz un backup de los datos de volúmenes de ONTAP en las instalaciones en StorageGRID mediante el backup y la recuperación de BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["Supervise el uso de las licencias con la cartera digital"^]
+* https://docs.netapp.com/us-en/active-iq/index.html["Consulte la información de estado del almacenamiento con el asesor digital"^]
 
-
-.Información relacionada
-link:concept-modes.html["Modos de implementación de BlueXP"]

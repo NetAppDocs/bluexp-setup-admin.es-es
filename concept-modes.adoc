@@ -196,14 +196,11 @@ Para Cloud Volumes ONTAP, tanto las licencias basadas en capacidad como las basa
 Cómo comenzar con el modo restringido:: Debe habilitar el modo restringido al crear su cuenta de BlueXP.
 +
 --
-Si aún no tiene una cuenta, se le pedirá que cree su cuenta y habilite el modo restringido cuando inicie sesión en BlueXP por primera vez desde un conector que instaló manualmente o que creó desde el mercado de su proveedor de la nube.
+Si aún no tiene una organización, se le pedirá que cree su organización y habilite el modo restringido cuando inicie sesión en BlueXP  por primera vez desde un conector que instaló manualmente o que creó desde el mercado del proveedor de cloud.
 
-Si ya tiene una cuenta y desea crear otra, debe utilizar la API de soporte.
-
-Tenga en cuenta que no puede cambiar la configuración de modo restringido después de que BlueXP cree la cuenta. No se puede activar el modo restringido más adelante y no se puede desactivar más adelante. Se debe establecer en el momento de crear la cuenta.
+Tenga en cuenta que no puede cambiar la configuración del modo restringido después de que BlueXP  cree la organización. No se puede activar el modo restringido más adelante y no se puede desactivar más adelante.
 
 * link:task-quick-start-restricted-mode.html["Aprenda a empezar a utilizar el modo restringido"].
-* link:task-create-account.html["Aprenda a crear una cuenta de BlueXP adicional"].
 
 
 --
