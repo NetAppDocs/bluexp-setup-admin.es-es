@@ -1,0 +1,89 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-roles.html 
+keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members 
+summary: La gestión de identidades y accesos de BlueXP  permite representar una jerarquía de recursos completa mediante carpetas y proyectos. 
+---
+= Use roles para gestionar el acceso de usuarios a los recursos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  permite asignar roles a los usuarios en función de lo que tengan que hacer y dónde.
+
+Los usuarios con las funciones Administrador de organización, Carpeta o Administrador de proyecto tienen la responsabilidad de asignar roles a otros usuarios. Puede asignar roles de acceso por proyecto o carpeta. Por ejemplo, puede asignar a un usuario el rol de administrador de protección contra ransomware para un proyecto y el rol de administrador de SnapCenter para un proyecto diferente. De forma alternativa, si un usuario requiere el rol de administrador de clasificación para todos los proyectos de una carpeta específica, puede otorgarles este rol de acceso en el nivel de carpeta.
+
+Use roles de acceso para asignar el acceso a los recursos de almacenamiento en función de las tareas de BlueXP  específicas que los usuarios necesitan realizar. Por ejemplo, si un usuario de BlueXP  debe interactuar con servicios de protección contra ransomware, se debe otorgar un rol de acceso que incluya permisos de visualización o administrativos para el servicio de protección contra ransomware para el proyecto para el que se ha otorgado el rol de acceso.
+
+Asigne roles a los usuarios según su estrategia de IAM para mejorar la seguridad. Los roles de BlueXP  IAM están diseñados para garantizar que los usuarios solo tengan acceso a lo que necesitan.
+
+
+NOTE: Recuerde que no puede otorgar directamente a los recursos. Los recursos se deben asignar primero a proyectos. Considere la posibilidad de configurar la jerarquía de recursos antes de asignar el acceso de los usuarios. link:task-iam-manage-folders-projects.html["Aprenda a organizar sus recursos en BlueXP  IAM con carpetas y proyectos."]
+
+
+
+== Ver roles asignados a un miembro
+
+Cuando agrega un miembro a su organización de BlueXP , se le solicita que le asigne un rol. Puede verificar los roles que están asignados actualmente.
+
+Si tiene el rol _Folder o project admin_, la página muestra todos los miembros de la organización. Sin embargo, solo puede ver y gestionar los permisos de miembros para las carpetas y proyectos para los que tiene permisos. link:reference-iam-predefined-roles.html["Obtenga más información sobre las acciones que puede completar una _Carpeta o un proyecto admin_"].
+
+. Desde la página *Miembros*, navega a un miembro de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Ver detalles*.
+. En la tabla, expanda la fila correspondiente para la organización, carpeta o proyecto en el que desee ver el rol asignado del miembro y seleccione *Ver* en la columna *Rol*.
+
+
+
+
+== Agregar un rol de acceso a un miembro
+
+Normalmente, asignará un rol al miembro cuando los agregue a su organización. Sin embargo, puede actualizar el rol de un miembro en cualquier momento eliminando un rol o agregando un rol diferente. Puede eliminar el acceso de un usuario a un proyecto eliminando su rol.
+
+Puede asignar a un usuario un rol de acceso para su organización, carpeta o proyecto.
+
+Los miembros pueden tener varios roles dentro del mismo proyecto y en diferentes proyectos. Por ejemplo, las organizaciones más pequeñas pueden asignar todos los roles de acceso disponibles al mismo usuario, mientras que las organizaciones más grandes pueden hacer que los usuarios realicen tareas más especializadas en BlueXP . También puede asignar a un usuario el rol de administrador de proyección de ransomware para la organización. En ese ejemplo, el usuario podría realizar tareas de protección frente al ransomware en todos los proyectos de su organización.
+
+Su estrategia de rol de acceso debe alinearse con la forma en que ha organizado sus recursos de NetApp en BlueXP .
+
+
+TIP: No se puede asignar ningún rol adicional a un miembro que tenga asignado el rol de administrador de la organización. Ya tienen permisos en toda la organización. A un miembro con el rol de carpeta o proyecto no se le puede asignar ningún otro rol dentro de la carpeta o proyecto en el que ya tenga ese rol. Ambas funciones proporcionan acceso a todos los servicios de BlueXP  dentro del ámbito que están asignados.
+
+.Pasos
+. Desde la página *Miembros*, navega a un miembro de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Agregar un rol*.
+. Para agregar un rol, complete los pasos del cuadro de diálogo:
++
+** *Seleccione una organización, carpeta o proyecto*: Elija el nivel de su jerarquía de recursos para el que el miembro debe tener permisos.
++
+Si selecciona la organización o una carpeta, el miembro tendrá permisos para todo lo que reside en la organización o carpeta.
+
+** *Seleccione una categoría*: BlueXP  Separar roles en dos categorías: Plataforma y servicio de datos. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"^].
+** Seleccione un *rol*: Elija un rol que proporcione al miembro permisos para los recursos asociados a la organización, carpeta o proyecto que seleccionó.
+
+
+
+
+link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"^]. * *Agregar rol*: Si desea proporcionar acceso a carpetas o proyectos adicionales dentro de su organización, seleccione *Agregar rol*, especifique otra carpeta o proyecto o categoría de rol, y luego seleccione una categoría de rol y un rol correspondiente.
+
+. Selecciona *Añadir nuevos roles*.
+
+
+
+
+=== Cambiar el rol asignado de un miembro
+
+Puede cambiar los roles asignados a un miembro si necesita ajustar el acceso de un usuario.
+
+.Pasos
+. Desde la página *Miembros*, navega a un miembro de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Ver detalles*.
+. En la tabla, expanda la fila correspondiente para la organización, carpeta o proyecto en el que desee cambiar el rol asignado del miembro y seleccione *Ver* en la columna *Rol* para ver los roles asignados a este miembro.
+. Puede cambiar un rol existente para un miembro o eliminar un rol.
++
+.. Para cambiar el rol de un miembro, elige *Cambiar* junto al rol que quieres cambiar. Sólo puede cambiar este rol a un rol dentro de la misma categoría de rol. Por ejemplo, puede cambiar de un rol de servicio de datos a otro. Se le pedirá que confirme el cambio.
+.. Para anular la asignación del rol de un miembro, seleccione image:icon-delete.png["Un icono que se asemeja a una papelera"] junto al rol para anular la asignación del rol respectivo al miembro. Se le pedirá que confirme la eliminación.
+
+
+

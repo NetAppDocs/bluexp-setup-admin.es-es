@@ -15,7 +15,7 @@ La versión 3.9.50 incluye actualizaciones de los siguientes componentes y servi
 | Componente o servicio | Versión incluida en esta versión | Cambios desde la versión anterior del modo privado 
 
 
-| Conector | 3,9.50, 3.9.49 | GTO al https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["Novedades en la página de conectores de BlueXP "] y consulte los cambios incluidos para las versiones 3.9.50 y 3,9.49. 
+| Conector | 3,9.50, 3.9.49 | Vaya a https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["Novedades en la página de conectores de BlueXP "] y consulte los cambios incluidos para las versiones 3.9.50 y 3,9.49. 
 
 
 | Backup y recuperación | 17 de marzo de 2025 | Vaya a https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Novedades en la página de backup y recuperación de BlueXP"^] y consulte los cambios incluidos en la versión de marzo de 2024. 
