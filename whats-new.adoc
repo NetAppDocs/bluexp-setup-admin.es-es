@@ -37,7 +37,7 @@ En este momento, la versión 3.9.51 está disponible para modo estándar y modo 
 * Si tiene la función de administrador de organización o de carpeta o de administrador de proyecto, ahora puede asociar una suscripción de Keystone a un proyecto de IAM. La asociación de una suscripción de Keystone con un proyecto de IAM le permite controlar el acceso a Keystone dentro de BlueXP .
 
 
-link:reference-iam-predefined-roles.html["Obtenga información sobre los nuevos roles."^].
+link:reference-iam-predefined-roles.html["Obtenga información sobre los nuevos roles."^]
 
 
 
