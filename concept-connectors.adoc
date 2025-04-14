@@ -22,7 +22,7 @@ Si ejecuta BlueXP  en modo estándar, no necesitará instalar un conector para 
 
 == Qué puede hacer sin un conector en modo estándar
 
-Algunos de los servicios más importantes de BlueXP  están disponibles sin instalar un conector si se está ejecutando en modo estándar.
+Puede empezar a utilizar BlueXP  para gestionar de forma centralizada sus recursos de almacenamiento sin instalar un conector si se ejecuta en modo estándar.
 
 Puede utilizar las siguientes funciones y servicios de BlueXP sin un conector:
 
