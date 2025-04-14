@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-connectors.html 
-keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
+keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agent' 
 summary: Un conector es el software de NetApp que se ejecuta en su red de cloud o en las instalaciones. Ejecuta las acciones que BlueXP necesita realizar para gestionar su infraestructura de datos. El conector sondea constantemente la capa SaaS BlueXP para cualquier acción que necesite tomar. No necesitas un conector para empezar con BlueXP, pero tendrás que crear un conector para desbloquear todas las funciones y servicios de BlueXP. 
 ---
 = Más información sobre conectores
