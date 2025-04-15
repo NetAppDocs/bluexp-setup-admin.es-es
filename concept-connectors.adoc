@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-connectors.html 
-keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agent' 
+keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
 summary: Un conector es el software de NetApp que se ejecuta en su red de cloud o en las instalaciones. Ejecuta las acciones que BlueXP necesita realizar para gestionar su infraestructura de datos. El conector sondea constantemente la capa SaaS BlueXP para cualquier acción que necesite tomar. No necesitas un conector para empezar con BlueXP, pero tendrás que crear un conector para desbloquear todas las funciones y servicios de BlueXP. 
 ---
 = Más información sobre conectores
@@ -14,15 +14,13 @@ summary: Un conector es el software de NetApp que se ejecuta en su red de cloud 
 
 
 [role="lead"]
-Un conector es el software NetApp que se instala y ejecuta las acciones que BlueXP  necesita realizar para gestionar la infraestructura de almacenamiento. No necesita un conector para muchas de las características de BlueXP , pero algunas características no están disponibles si no lo hace.
-
-Si ejecuta BlueXP  en modo estándar, no necesitará instalar un conector para ejecutar algunos de los servicios de BlueXP , como las actualizaciones de software y la cartera digital. Sin embargo, algunos de los servicios premium de BlueXP , como la protección contra ransomware o la recuperación ante desastres, requieren la instalación de un conector. Si utilizas BlueXP  en modo restringido o privado, tendrás que instalar un conector.
+Un _Connector_ es el software de NetApp que se ejecuta en la red del cloud o en las instalaciones. Ejecuta las acciones que BlueXP necesita realizar para gestionar su infraestructura de datos. El conector sondea constantemente la capa de software como servicio (SaaS) de BlueXP  para cualquier acción que deba realizar. No necesitas un conector para empezar con BlueXP, pero tendrás que crear un conector para desbloquear todas las funciones y servicios de BlueXP.
 
 
 
-== Qué puede hacer sin un conector en modo estándar
+== Lo que puede hacer sin un conector
 
-Puede empezar a utilizar BlueXP  para gestionar de forma centralizada sus recursos de almacenamiento sin instalar un conector si se ejecuta en modo estándar.
+No es necesario un conector para comenzar con BlueXP. Puede utilizar varias características y servicios dentro de BlueXP sin crear nunca un conector.
 
 Puede utilizar las siguientes funciones y servicios de BlueXP sin un conector:
 
@@ -43,7 +41,7 @@ Aunque no es necesario un conector para configurar y gestionar Azure NetApp File
 En casi todos los casos, puede agregar una licencia a la cartera digital sin un conector.
 
 +
-La única vez que se requiere un conector para agregar una licencia a la cartera digital es para licencias Cloud Volumes ONTAP _node-based_. Se necesita un conector porque BlueXP  necesita acceder a los datos de licencia instalados en sus sistemas Cloud Volumes ONTAP.
+La única vez que se requiere un conector para agregar una licencia a la cartera digital es para licencias Cloud Volumes ONTAP _node-based_. En este caso, se requiere un conector porque los datos se toman de las licencias instaladas en los sistemas Cloud Volumes ONTAP.
 
 * Detección directa de clústeres de ONTAP en las instalaciones
 +
@@ -61,7 +59,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["O
 
 == Cuando se necesita un conector
 
-Cuando utilice BlueXP  en modo estándar, deberá instalar uno o más conectores para habilitar las siguientes funciones y servicios en BlueXP :
+Al utilizar BlueXP en modo estándar, se necesita un conector para las siguientes funciones y servicios de BlueXP:
 
 * Alertas
 * Funciones de gestión de Amazon FSX para ONTAP
@@ -72,21 +70,25 @@ Cuando utilice BlueXP  en modo estándar, deberá instalar uno o más conectore
 * Cloud Volumes ONTAP
 * Recuperación tras siniestros
 * Sistemas E-Series
-* Eficiencia económica (solo vista)
+* Eficiencia económica ^1^
 * Buckets de Google Cloud Storage
 * Integración de clústeres de ONTAP en las instalaciones con servicios de datos de BlueXP
-* Flexibilidad operativa (solo vista)
+* Resistencia operativa ^1^
 * Protección contra ransomware
 * Sistemas StorageGRID
 * Organización en niveles
 * Almacenamiento en caché de volúmenes
 
 
+^1^ Mientras puede acceder a estos servicios sin un conector, se requiere un conector para iniciar acciones desde los servicios.
+
+Se necesita un conector para utilizar BlueXP en modo restringido o en modo privado.
+
 
 
 == Los conectores deben estar operativos en todo momento
 
-Debido a que los conectores son una parte fundamental de la arquitectura de servicio de BlueXP , debe asegurarse de que sus conectores relevantes estén activos, operativos y accesibles en todo momento. Mientras que el servicio está diseñado para superar breves interrupciones de la disponibilidad del conector, debe tomar medidas inmediatas cuando sea necesario para solucionar fallos en la infraestructura.
+Los conectores son una parte fundamental de la arquitectura de servicios de BlueXP. Es su responsabilidad asegurarse de que los conectores relevantes estén activos, operativos y accesibles en todo momento. Mientras que el servicio está diseñado para superar breves interrupciones de la disponibilidad del conector, debe tomar medidas inmediatas cuando sea necesario para solucionar fallos en la infraestructura.
 
 Esta documentación se rige por el EULA. Si el producto no se utiliza de acuerdo con la documentación, la funcionalidad y el funcionamiento del producto, así como los derechos del usuario final, pueden verse afectados negativamente.
 
@@ -102,12 +104,12 @@ Si su sistema Cloud Volumes ONTAP tiene una licencia BYOL basada en nodos, el si
 
 == Ubicaciones admitidas
 
-Puede instalar Connectors en un entorno de hiperescalador compatible, o en sus instalaciones, según sus necesidades.
+Se admite un conector en las siguientes ubicaciones:
 
 * Amazon Web Services
 * Microsoft Azure
 +
-Implemente su conector en la misma región de Azure que los sistemas Cloud Volumes ONTAP que gestiona, o en https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] el para los sistemas Cloud Volumes ONTAP. Esto garantiza que se utilice una conexión de enlace privado de Azure entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Conozca cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure"^]
+Un conector en Azure debe ponerse en marcha en la misma región de Azure que los sistemas Cloud Volumes ONTAP que gestiona, o en el https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] para los sistemas Cloud Volumes ONTAP. Este requisito garantiza que se utilice una conexión de enlace privado de Azure entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Conozca cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure"^]
 
 * Google Cloud
 +
@@ -177,7 +179,7 @@ Es su responsabilidad actualizar las políticas de Connector a medida que se agr
 
 == Actualizaciones de conectores
 
-NetApp normalmente actualiza el software Connector cada mes para introducir nuevas funciones y proporcionar mejoras de estabilidad. Mientras que la mayoría de los servicios y características de la plataforma BlueXP  se ofrecen a través de software basado en SaaS, algunas características dependen de la versión del conector. Que incluye gestión de Cloud Volumes ONTAP, gestión de clústeres ONTAP en las instalaciones, configuración y ayuda.
+Normalmente actualizamos el software del conector cada mes para introducir nuevas funciones y para proporcionar mejoras de estabilidad. Mientras que la mayoría de los servicios y características de la plataforma BlueXP  se ofrecen a través de software basado en SaaS, algunas características dependen de la versión del conector. Que incluye gestión de Cloud Volumes ONTAP, gestión de clústeres ONTAP en las instalaciones, configuración y ayuda.
 
 Cuando usas BlueXP en modo estándar o en modo restringido, Connector actualiza automáticamente su software a la última versión, siempre y cuando tenga acceso a Internet saliente para obtener la actualización del software. Si utiliza BlueXP en modo privado, deberá actualizar manualmente el conector.
 
@@ -199,13 +201,13 @@ Si necesita parar e iniciar el conector VM, debe hacerlo desde la consola de su 
 
 == Múltiples entornos de trabajo y conectores
 
-Puede utilizar el mismo conector para gestionar varios entornos de trabajo en BlueXP . El número máximo de entornos de trabajo que debe gestionar un único conector varía. Depende del tipo de entorno laboral, del número de volúmenes, de la cantidad de capacidad que se administra y del número de usuarios.
+Un conector puede gestionar varios entornos de trabajo en BlueXP. El número máximo de entornos de trabajo que debe gestionar un único conector varía. Depende del tipo de entorno laboral, del número de volúmenes, de la cantidad de capacidad que se administra y del número de usuarios.
 
-Si tiene una puesta en marcha a gran escala, trabaje con su representante de NetApp para dimensionar el entorno.
+Si tiene una puesta en marcha a gran escala, trabaje con su representante de NetApp para dimensionar el entorno. Si experimenta algún problema a lo largo del camino, póngase en contacto con nosotros a través del chat en el producto.
 
-Otra consideración a la hora de determinar cuántos conectores necesita es dónde reside su almacenamiento. Por ejemplo, si tiene Cloud Volumes ONTAP tanto en Google Cloud como en Azure, necesitará un conector para cada entorno. En los casos en los que su almacenamiento exista por completo en las instalaciones, puede ejecutar el conector en cualquier proveedor a hiperescala o en sus instalaciones.
+En algunos casos, es posible que sólo necesite un conector, pero es posible que necesite dos o más conectores.
 
-Aquí hay otros ejemplos:
+A continuación, se muestran algunos ejemplos:
 
 * Tiene un entorno multicloud (por ejemplo, AWS y Azure) y prefiere tener un conector en AWS y otro en Azure. Cada una de ellas gestiona los sistemas Cloud Volumes ONTAP que se ejecutan en estos entornos.
 * Un proveedor de servicios puede utilizar una organización de BlueXP  para proporcionar servicios a sus clientes, mientras utiliza otra organización para prestar recuperación ante desastres a una de sus unidades de negocio. Cada organización tendría conectores separados.

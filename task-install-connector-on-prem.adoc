@@ -14,7 +14,7 @@ summary: Instale un conector en las instalaciones y, a continuación, inicie ses
 
 
 [role="lead"]
-Un conector es el software NetApp que se ejecuta en su red de cloud o en las instalaciones que le da la posibilidad de usar todas las funciones y servicios de BlueXP . Para ejecutar Connector en las instalaciones, debe revisar los requisitos del host, configurar la red, preparar los permisos de la nube, instalar Connector, configurar Connector y, a continuación, proporcionar los permisos que preparó.
+Puede instalar un conector en una de sus máquinas locales. Para ejecutar Connector en las instalaciones, debe revisar los requisitos del host, configurar la red, preparar los permisos de la nube, instalar Connector, configurar Connector y, a continuación, proporcionar los permisos que preparó.
 
 .Antes de empezar
 * Usted debe tener un link:concept-connectors.html["Comprensión de los conectores"].

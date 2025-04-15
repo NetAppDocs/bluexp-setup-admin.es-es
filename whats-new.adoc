@@ -34,10 +34,6 @@ En este momento, la versión 3.9.51 está disponible para modo estándar y modo 
 
 * Los usuarios sin el administrador de la organización, la carpeta o el administrador del proyecto deben tener asignada una función de protección contra ransomware para tener acceso a la protección contra ransomware. Puede asignar al usuario uno de estos dos roles: Administrador de protección contra ransomware o visor de protección contra ransomware.
 * Los usuarios sin el administrador de la organización, la carpeta o el administrador del proyecto deben tener asignada una función de Keystone para tener acceso a Keystone. Se puede asignar a un usuario uno de estos dos roles: Administrador de Keystone o visor de Keystone.
-
-
-link:https://docs.netapp.com/reference-iam-predefined-roles.html["Obtenga información sobre los nuevos roles."^]
-
 * Si tiene la función de administrador de organización o de carpeta o de administrador de proyecto, ahora puede asociar una suscripción de Keystone a un proyecto de IAM. La asociación de una suscripción de Keystone con un proyecto de IAM le permite controlar el acceso a Keystone dentro de BlueXP .
 
 
@@ -105,7 +101,7 @@ NetApp Keystone pronto estará disponible a través de BlueXP  y ya se encontra
 
 Un administrador de BlueXP  (usuarios con la función de administrador de la organización) puede configurar BlueXP  para solicitar a los usuarios que introduzcan sus credenciales de ONTAP para acceder al administrador del sistema de ONTAP. Cuando esta configuración está habilitada, los usuarios deben introducir sus credenciales de ONTAP cada vez, ya que no están almacenadas en BlueXP .
 
-Esta función está disponible en la versión de conector 3.9.49 y superior. link:task-ontap-access-connector.html["Aprenda a configurar los ajustes de las credenciales."^].
+Esta función está disponible en la versión de conector 3.9.49 y superior. link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["Aprenda a configurar los ajustes de las credenciales."^].
 
 
 
@@ -124,7 +120,7 @@ NOTE: Este cambio no afecta al modo privado de BlueXP , donde siempre debe actu
 
 Esta función está disponible en la versión de conector 3.9.48 y superior.
 
-link:task-upgrade-connector.html["Descubra cómo desactivar la actualización automática del conector."^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Descubra cómo desactivar la actualización automática del conector."^]
 
 
 

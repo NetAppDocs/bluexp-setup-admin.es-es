@@ -14,7 +14,7 @@ summary: Para instalar manualmente Connector en su propio host Linux, debe revis
 
 
 [role="lead"]
-Puede instalar manualmente un conector en un host Linux que se ejecute en Azure. Para instalar manualmente Connector en su propio host Linux, debe revisar los requisitos del host, configurar la red, preparar los permisos de Azure, instalar Connector y, a continuación, proporcionar los permisos preparados.
+Un conector es el software NetApp que se ejecuta en su red de cloud o en las instalaciones que le da la posibilidad de usar todas las funciones y servicios de BlueXP . Una de las opciones de instalación disponibles es instalar manualmente el software Connector en un host Linux que se ejecuta en Azure. Para instalar manualmente Connector en su propio host Linux, debe revisar los requisitos del host, configurar la red, preparar los permisos de Azure, instalar Connector y, a continuación, proporcionar los permisos preparados.
 
 .Antes de empezar
 * Usted debe tener un link:concept-connectors.html["Comprensión de los conectores"].

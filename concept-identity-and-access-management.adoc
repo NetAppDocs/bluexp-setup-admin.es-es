@@ -14,9 +14,7 @@ summary: 'La gestión de identidades y accesos (IAM) de BlueXP  le permite cont
 
 
 [role="lead"]
-La gestión de acceso e identidad de BlueXP  (IAM) es un mecanismo de control de acceso fundamental y escalable que administra el acceso de los usuarios a los recursos de BlueXP , otorgando niveles de permiso adecuados mediante roles de privilegios mínimos.
-
-Con IAM, puede organizar y controlar el acceso a sus recursos de NetApp. Puede organizar sus recursos de acuerdo con la jerarquía de su organización. Por ejemplo, puede organizar recursos por ubicación geográfica, sitio o unidad de negocio. A continuación, puede asignar roles de IAM a miembros de partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.
+La gestión de identidades y accesos (IAM) de BlueXP  le permite organizar y controlar el acceso a sus recursos de NetApp. Puede organizar sus recursos de acuerdo con la jerarquía de su organización. Por ejemplo, puede organizar recursos por ubicación geográfica, sitio o unidad de negocio. A continuación, puede asignar roles de IAM a miembros de partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.
 
 IAM de BlueXP  reemplaza y mejora la funcionalidad anterior proporcionada por las cuentas de BlueXP . link:whats-new.html#iam["Obtenga más información sobre la introducción de BlueXP  IAM"].
 
@@ -32,18 +30,14 @@ BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar y modo r
 
 BlueXP  IAM le permite otorgar acceso a los recursos de su organización mediante la definición de los miembros que tienen permisos para partes específicas de la jerarquía de la organización. Por ejemplo, un miembro puede tener permisos de administrador de proyecto para un proyecto que tiene cinco recursos asociados.
 
-Los usuarios deben tener el rol de administrador de organización o el rol de administrador de carpeta o proyecto para gestionar las carpetas. Los usuarios con la función Administrador de organización pueden crear y gestionar recursos en cualquier lugar de la organización de BlueXP . Los usuarios con rol de administrador de carpeta y proyecto sólo pueden hacerlo para las carpetas o proyectos a los que se han asignado.
-
-Link::reference-iam-predefined-roles.html[Más información sobre los roles de BlueXP .]
-
-Al utilizar BlueXP  IAM, los usuarios con estos roles gestionarán los siguientes componentes:
+Al utilizar BlueXP  IAM, gestionará los siguientes componentes:
 
 * La organización
 * Carpetas
 * Proyectos
 * Recursos
 * Miembros
-* Funciones
+* Roles y permisos
 * Conectores
 
 
@@ -63,7 +57,9 @@ image:diagram-iam-resource-hierarchy.png["Diagrama conceptual que muestra la jer
 
 === Organización
 
-Una _ORGANIZATION_ es el nivel superior del sistema IAM de BlueXP  y, por lo general, representa a su empresa. Su organización consta de recursos como conectores, almacenamiento y suscripciones que puede organizar en carpetas y proyectos. A continuación, puede asignar a los miembros de la organización (usuario) acceso a carpetas o proyectos de acuerdo con sus responsabilidades en la gestión de sus entornos de almacenamiento.
+Una _ORGANIZATION_ es el nivel superior del sistema IAM de BlueXP  y, por lo general, representa a su empresa. La organización consta de carpetas, proyectos, miembros, roles y recursos. Los conectores están asociados a proyectos específicos de la organización.
+
+Cuando te registras en BlueXP , se te pedirá que crees una nueva organización.
 
 
 
@@ -73,9 +69,7 @@ A _FOLDER_ le permite agrupar proyectos relacionados y separarlos de otros proye
 
 Las carpetas pueden contener proyectos, otras carpetas o una combinación de ambos.
 
-Dependiendo del tamaño de la organización y del número de recursos de almacenamiento que tenga, las carpetas son una herramienta útil para mantener organizados los recursos de NetApp. También le permiten administrar mejor el acceso si desea compartir la administración de diferentes carpetas con diferentes usuarios. Puede asignar a un usuario la función de administrador de carpeta o proyecto para una carpeta concreta y, a continuación, podrá gestionar el acceso a la carpeta y sus proyectos, así como crear nuevos proyectos en la carpeta.
-
-Al crear una carpeta, puede asignar a los usuarios acceso a ella. Al asignar un rol de acceso a una carpeta a un usuario, dicho usuario puede realizar las tareas asociadas a ese rol para todos los proyectos dentro de la carpeta respectiva. Por el contrario, puede optar por otorgar acceso de usuario en un proyecto por proyecto en su lugar.
+No es necesario crear carpetas. Son opcionales.
 
 
 
@@ -83,11 +77,7 @@ Al crear una carpeta, puede asignar a los usuarios acceso a ella. Al asignar un 
 
 Un _project_ representa un espacio de trabajo en BlueXP  al que los miembros de la organización acceden desde el lienzo de BlueXP  para gestionar los recursos. Por ejemplo, un proyecto puede incluir un sistema Cloud Volumes ONTAP, un clúster de ONTAP en las instalaciones o un sistema de archivos FSx para ONTAP.
 
-Usted crea múltiples proyectos para proporcionar un acceso más granular a sus recursos de NetApp. Por ejemplo, las organizaciones más pequeñas pueden tener un proyecto para cada unidad de negocio o ubicación geográfica. Puede que organizaciones de mayor tamaño deseen organizar sus recursos de almacenamiento en varios proyectos por unidad de negocio para seguir controlando el acceso. Puede asignar a los usuarios acceso a los recursos por proyecto o carpeta.
-
 Una organización puede tener uno o varios proyectos. Un proyecto puede residir directamente debajo de la organización o dentro de una carpeta.
-
-Cuando sus proyectos residen en una carpeta, puede hacerlo
 
 
 
@@ -172,11 +162,11 @@ Puede asignar a cada miembro de la organización un rol en diferentes niveles de
 
 
 
-==== Acceda a roles
+==== Roles predefinidos
 
-BlueXP  admite varios roles de acceso que puede asignar a los miembros de su organización.
+BlueXP  admite varios roles predefinidos que puede asignar a los miembros de la organización.
 
-link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"].
+link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles predefinidos de IAM"].
 
 
 
