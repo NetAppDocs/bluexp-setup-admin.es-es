@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-install-options-aws.html 
-keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
+keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install, deploy 
 summary: Hay varias formas diferentes de crear un conector en AWS. Directamente desde BlueXP es la forma más común. 
 ---
 = Opciones de instalación de conectores en AWS
