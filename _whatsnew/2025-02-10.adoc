@@ -75,3 +75,25 @@ Este cambio introduce una nueva API para BlueXP  IAM, pero es compatible con ve
 
 .Modos de despliegue admitidos
 BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar y restringido. Si utiliza BlueXP  en modo privado, seguirá utilizando una _account_ de BlueXP  para gestionar espacios de trabajo, usuarios y recursos.
+
+
+
+=== Versión en modo privado (3,9.48)
+
+Ya está disponible una nueva versión de modo privado para descargar desde el https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
+
+La versión 3.9.48 incluye actualizaciones de los siguientes componentes y servicios de BlueXP .
+
+[cols="3*"]
+|===
+| Componente o servicio | Versión incluida en esta versión | Cambios desde la versión anterior del modo privado 
+
+
+| Conector | 3.9.48 | Vaya a https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["Novedades en la página de conectores de BlueXP "] y consulte los cambios incluidos para las versiones 3,9.48. 
+
+
+| Backup y recuperación | 5 de febrero de 2025 | Vaya a https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Novedades en la página de backup y recuperación de BlueXP"^] y consulte los cambios incluidos en la versión de febrero de 2025. 
+
+
+| Clasificación | 22 de enero de 2025 (versión 1,39) | Vaya a https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Novedades en la página de clasificación de BlueXP"^] y consulte los cambios incluidos en la versión 1,39. 
+|===

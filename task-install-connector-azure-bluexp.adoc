@@ -87,8 +87,6 @@ Para obtener información sobre licencias y enviar mensajes de AutoSupport al so
  a| 
 Proporcionar funciones y servicios SaaS dentro de BlueXP.
 
-Tenga en cuenta que el conector se está poniendo en contacto con «cloudmanager.cloud.netapp.com"», pero comenzará a ponerse en contacto con «api.bluexp.netapp.com" en una próxima versión.
-
 
 
  a| 

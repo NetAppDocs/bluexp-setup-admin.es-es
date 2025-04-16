@@ -71,8 +71,6 @@ Tenga en cuenta que los puntos finales que se muestran a continuación son todas
 
 | Para proporcionar servicios y funciones de SaaS en BlueXP.
 
-Tenga en cuenta que el conector se está poniendo en contacto con «cloudmanager.cloud.netapp.com"», pero comenzará a ponerse en contacto con «api.bluexp.netapp.com" en una próxima versión.
-
 A| Elija entre dos conjuntos de puntos finales:
 
 * Opción 1 (recomendado) ^1^

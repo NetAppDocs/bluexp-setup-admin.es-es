@@ -2752,7 +2752,6 @@ No se admite la detección sin conector (detección directa).</block>
   <block id="b7d7e6e6aa05f7913906689b7f1e583a" category="list-text">*Revisión*: Revisa tus selecciones y selecciona *Lanzamiento*.</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*Revisión*: Revisa los detalles, acepta el contrato de licencia y luego selecciona *Configurar*.</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">Tenga en cuenta que el conector se está poniendo en contacto con «cloudmanager.cloud.netapp.com"», pero comenzará a ponerse en contacto con «api.bluexp.netapp.com" en una próxima versión.</block>
   <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet de salida para enviar mensajes de AutoSupport, BlueXP configura automáticamente esos sistemas para que usen un servidor proxy incluido en el conector. El único requisito es asegurarse de que el grupo de seguridad del conector permite conexiones entrantes a través del puerto 3128. Tendrá que abrir este puerto después de desplegar el conector.</block>
   <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">Cree un conector en Azure desde BlueXP</block>
   <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">Al crear el conector desde BlueXP, debes proporcionar un inicio de sesión que permita a BlueXP autenticarse con Azure y poner en marcha la máquina virtual. Dispone de dos opciones:</block>
@@ -5038,4 +5037,12 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*En la pestaña Informes*:</block>
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter no tiene un rol de visor.</block>
   <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Los usuarios sin el administrador de la organización o la carpeta o el administrador del proyecto deben tener asignada una función de protección contra ransomware para tener acceso a la protección contra ransomware. Puede asignar al usuario uno de estos dos roles: Administrador de protección contra ransomware o visor de protección contra ransomware.</block>
+  <block id="92b9ccffb9a7aebd350ecfd6d0c224c9" category="section-title">Versión en modo privado (3,9.48)</block>
+  <block id="cbf6e80d5966345d963bedae0e933eb6" category="paragraph">La versión 3.9.48 incluye actualizaciones de los siguientes componentes y servicios de BlueXP .</block>
+  <block id="b3a482492c0cc68db9c85faa2f89ba61" category="cell">3.9.48</block>
+  <block id="6a8544d6477cbe97e8f2b597011b60cc" category="cell">Vaya a<block ref="682cda11c1c81d1c1e6c42597faddff3" category="inline-link-rx"></block> y consulte los cambios incluidos para las versiones 3,9.48.</block>
+  <block id="2fd37378e1e9677d0e420385f414d8f5" category="cell">5 de febrero de 2025</block>
+  <block id="ea4e82ea5af0ff62421ac55574c06dca" category="cell">Vaya a<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de febrero de 2025.</block>
+  <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">22 de enero de 2025 (versión 1,39)</block>
+  <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">Vaya a<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión 1,39.</block>
 </blocks>
