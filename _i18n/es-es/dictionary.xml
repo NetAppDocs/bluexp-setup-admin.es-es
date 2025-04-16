@@ -4893,7 +4893,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">En este momento, la versión 3.9.51 está disponible para modo estándar y modo restringido.</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Gestión de acceso e identidades (IAM) de BlueXP </block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 de abril de 2025</block>
-  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Los usuarios sin el administrador de la organización, la carpeta o el administrador del proyecto deben tener asignada una función de protección contra ransomware para tener acceso a la protección contra ransomware. Puede asignar al usuario uno de estos dos roles: Administrador de protección contra ransomware o visor de protección contra ransomware.</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">Los usuarios sin el administrador de la organización, la carpeta o el administrador del proyecto deben tener asignada una función de Keystone para tener acceso a Keystone. Se puede asignar a un usuario uno de estos dos roles: Administrador de Keystone o visor de Keystone.</block>
   <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">Si tiene la función de administrador de organización o de carpeta o de administrador de proyecto, ahora puede asociar una suscripción de Keystone a un proyecto de IAM. La asociación de una suscripción de Keystone con un proyecto de IAM le permite controlar el acceso a Keystone dentro de BlueXP .</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 de marzo de 2025</block>
@@ -5038,4 +5037,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="08fec10c338548595a28b0310a1c0600" category="cell">Agregue o modifique destinos de SIEM</block>
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*En la pestaña Informes*:</block>
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter no tiene un rol de visor.</block>
+  <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Los usuarios sin el administrador de la organización o la carpeta o el administrador del proyecto deben tener asignada una función de protección contra ransomware para tener acceso a la protección contra ransomware. Puede asignar al usuario uno de estos dos roles: Administrador de protección contra ransomware o visor de protección contra ransomware.</block>
 </blocks>
