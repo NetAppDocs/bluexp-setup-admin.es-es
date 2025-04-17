@@ -14,13 +14,13 @@ summary: La gestión de identidades y accesos de BlueXP  incluye varios roles p
 
 
 [role="lead"]
-La gestión de identidades y accesos (IAM) de BlueXP  incluye varios roles predefinidos que se pueden asignar a los miembros de la organización en diferentes niveles de la jerarquía de recursos. Antes de asignar estos roles, debe comprender los permisos que incluye cada rol. Los roles se dividen en dos categorías: Plataforma y servicio de datos.
+La gestión de identidades y accesos (IAM) de BlueXP  incluye varios roles predefinidos que se pueden asignar a los miembros de la organización en diferentes niveles de la jerarquía de recursos. Antes de asignar estos roles, debe comprender los permisos que incluye cada rol. Las funciones se incluyen en las siguientes categorías: Plataforma, aplicación y servicio de datos.
 
 
 
 == Funciones de la plataforma
 
-Los roles de plataforma son los roles más amplios que puede asignar a los usuarios y permiten amplios permisos para la administración de BlueXP , incluida la asignación de roles y la adición de usuarios, además de poder realizar todas las funciones de BlueXP . BlueXP  IAM incluye dos funciones de plataforma: Administrador de organización y Administrador de carpetas o proyectos. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope.
+Los roles de plataforma son los roles más amplios que puedes asignar a los usuarios y permitir todos los permisos deadministración de BlueXP, incluida la asignación de roles y la adición de usuarios. Los usuarios con roles de plataforma tienen acceso a todos los servicios de datos y aplicaciones dentro de BlueXP . BlueXP  IAM incluye dos funciones de plataforma: Administrador de organización y Administrador de carpetas o proyectos. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope.
 
 
 
@@ -32,9 +32,9 @@ Permite al usuario acceder sin restricciones a todos los proyectos y carpetas de
 
 === Administrador de carpetas o proyectos
 
-Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a proyectos o carpetas que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos dentro de la carpeta o proyecto que están asignados.
+Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a carpetas o proyectos que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos o aplicación en recursos dentro de la carpeta o proyecto que se les asigna.
 
-La función de administrador de carpeta o proyecto no puede crear conectores.
+El rol de administrador de carpeta o proyecto no puede crear conectores.
 
 
 
@@ -42,7 +42,7 @@ La función de administrador de carpeta o proyecto no puede crear conectores.
 
 [cols="24,19,19"]
 |===
-| Tarea | Administrador de la organización | Administrador de carpeta o proyecto 
+| Tarea | Administrador de la organización | Administrador de carpetas o proyectos 
 
 
 | Crear conectores | Sí | No 
@@ -51,10 +51,10 @@ La función de administrador de carpeta o proyecto no puede crear conectores.
 | Crear, modificar o suprimir entornos de trabajo (añadir o detectar nuevos recursos mediante el lienzo de BlueXP ) | Sí | Sí 
 
 
-| Crear proyectos/carpetas, incluida la eliminación | Sí | No 
+| Cree carpetas y proyectos, incluida la eliminación | Sí | No 
 
 
-| Cambiar el nombre de los proyectos/carpetas existentes | Sí | Sí 
+| Cambie el nombre de las carpetas y proyectos existentes | Sí | Sí 
 
 
 | Asigne roles y añada usuarios | Sí | Sí 
@@ -69,7 +69,7 @@ La función de administrador de carpeta o proyecto no puede crear conectores.
 | Eliminar conectores de carpetas y proyectos | Sí | No 
 
 
-| Gestionar conectores (editar certificados, configuración, etc.) | Sí | No 
+| Administrar conectores (editar certificados, configuración, etc.) | Sí | No 
 
 
 | Gestione credenciales desde Configuración > Credenciales | Sí | Sí 
@@ -88,7 +88,7 @@ Ejemplo de roles de organización en BlueXP  para una organización multinacion
 --
 Para lograr esto, una persona que tiene asignada la función de administrador de la organización en BlueXP  de Xyz Corporation crea un entorno de trabajo inicial y, a continuación, crea carpetas separadas en BlueXP  para cada región. La carpeta de cada región contiene proyectos (con recursos asociados) relacionados con esa región. El administrador de la organización asigna a un usuario de BlueXP  en cada región respectiva la función de administrador de carpeta/proyecto.
 
-Una vez completada la configuración inicial, los administradores regionales con la función de administrador de carpeta o proyecto pueden crear nuevos entornos de trabajo y agregar usuarios dentro de sus regiones. Estos administradores regionales también pueden agregar/eliminar/cambiar el nombre de las carpetas y los proyectos a los que están asignados. El administrador de la organización hereda permisos para cualquier nuevo entorno de trabajo o recursos, manteniendo la visibilidad del uso del almacenamiento en toda la organización.
+Una vez completada la configuración inicial, los administradores regionales con la función de administrador de carpetas o proyectos pueden crear nuevos entornos de trabajo y agregar usuarios dentro de sus regiones. Estos administradores regionales también pueden agregar/eliminar/cambiar el nombre de las carpetas y los proyectos a los que están asignados. El administrador de la organización hereda permisos para cualquier nuevo entorno de trabajo o recursos, manteniendo la visibilidad del uso del almacenamiento en toda la organización.
 
 --
 
@@ -97,7 +97,7 @@ Una vez completada la configuración inicial, los administradores regionales con
 
 == Funciones de la aplicación
 
-A continuación se muestra una lista de los roles de la categoría Aplicación.
+A continuación se muestra una lista de roles en la categoría de aplicación. Cada rol otorga permisos específicos dentro de su ámbito designado. Los usuarios que no tengan el rol de aplicación o un rol de plataforma necesarios no podrán acceder a la aplicación.
 
 
 
@@ -129,14 +129,14 @@ Sí
 3+| *Página de suscripción de Keystone*: 
 
 
-| Puede ver suscripciones  a| 
+| Ver suscripciones  a| 
 Sí
  a| 
 Sí
 
 
 
-| Puede modificar o renovar suscripciones  a| 
+| Modificar o renovar suscripciones  a| 
 Sí
  a| 
 No
@@ -228,7 +228,7 @@ No
 
 
 
-| Puede ver la solicitud de servicio creada por cualquier usuario de la organización  a| 
+| CView solicitudes de servicio creadas por cualquier usuario dentro de la organización  a| 
 Sí
  a| 
 Sí
@@ -236,9 +236,9 @@ Sí
 |===
 
 
-== Roles de servicios de datos
+== Roles de servicio de datos
 
-A continuación se muestra la lista de roles en la categoría Servicios de datos.
+A continuación se muestra una lista de roles en la categoría de servicio de datos. Cada rol otorga permisos específicos dentro de su ámbito designado. Los usuarios que no tengan el rol de servicio de datos o un rol de plataforma necesarios no podrán acceder al servicio de datos.
 
 
 
