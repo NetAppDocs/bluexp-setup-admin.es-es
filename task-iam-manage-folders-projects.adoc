@@ -159,7 +159,7 @@ image:screenshot-iam-member-access.png["Captura de pantalla de la página Editar
 
 Modifique el acceso de los miembros a una carpeta o proyecto para garantizar que los miembros correctos tengan acceso a los recursos asociados a la carpeta o el proyecto.
 
-Si se ha proporcionado acceso de miembro en un nivel superior de la jerarquía (en el nivel de carpeta u organización), no puede eliminar ni cambiar el acceso de miembro al ver la carpeta o el proyecto de nivel inferior. Debe cambiar a esa parte de la jerarquía y actualizar los permisos del miembro allí. Como alternativa, puede link:task-iam-manage-members-permissions.html#manage-permissions["Gestione los permisos desde la página Miembros"].
+Si se ha proporcionado acceso de miembro en un nivel superior de la jerarquía (en el nivel de carpeta u organización), no puede eliminar ni cambiar el acceso de miembro al ver la carpeta o el proyecto de nivel inferior. Debe cambiar a esa parte de la jerarquía y actualizar los permisos del miembro allí. Como alternativa, puede link:task-iam-manage-roles.html#manage-permissions["Gestione los permisos desde la página Miembros"].
 
 link:concept-identity-and-access-management.html#role-inheritance["Obtenga más información sobre la herencia de roles"].
 

@@ -35,10 +35,10 @@ indexpage:
       url: task-iam-get-started.html
     - title: Organiza tus recursos con carpetas y proyectos
       url: task-iam-manage-folders-projects.html
-    - title: Gestionar miembros y sus permisos
+    - title: Agregar miembros y cuentas de servicio
       url: task-iam-manage-members-permissions.html
-    - title: Gestione la jerarquía de recursos
-      url: task-iam-manage-resources.html
+    - title: Utilice roles para controlar el acceso de los miembros a los recursos
+      url: task-iam-manage-roles.html
   - title: Conectores
     links:
     - title: Más información sobre conectores
