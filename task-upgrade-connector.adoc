@@ -102,7 +102,7 @@ Asegúrese de descargar el instalador fuera de línea para redes privadas sin ac
 +
 [source, cli]
 ----
-chmod +x /path/BlueXP-Connector-offline-<version>
+chmod +x /path/BlueXP-Connector-Offline-<version>
 ----
 +
 Donde <version> es la versión del conector que ha descargado.
@@ -111,7 +111,7 @@ Donde <version> es la versión del conector que ha descargado.
 +
 [source, cli]
 ----
-sudo /path/BlueXP-Connector-offline-<version>
+sudo /path/BlueXP-Connector-Offline-<version>
 ----
 +
 Donde <version> es la versión del conector que ha descargado.
