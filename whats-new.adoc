@@ -82,6 +82,12 @@ Para obtener más información sobre el modo privado, incluido el modo de actual
 
 Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.
 
+* La gestión de sistemas Cloud Volumes ONTAP ahora es compatible con conectores que tienen SELinux activado en el sistema operativo.
++
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["Obtenga más información sobre SELinux"^]
+
+
+
 En este momento, la versión 3.9.50 está disponible para modo estándar y modo restringido.
 
 
@@ -125,6 +131,31 @@ Esta función está disponible en la versión de conector 3.9.48 y superior.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Descubra cómo desactivar la actualización automática del conector."^]
 
+
+
+== 18 de febrero de 2025
+
+
+
+=== Versión en modo privado (3,9.48)
+
+Ya está disponible una nueva versión de modo privado para descargar desde el https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
+
+La versión 3.9.48 incluye actualizaciones de los siguientes componentes y servicios de BlueXP .
+
+[cols="3*"]
+|===
+| Componente o servicio | Versión incluida en esta versión | Cambios desde la versión anterior del modo privado 
+
+
+| Conector | 3.9.48 | Vaya a https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["Novedades en la página de conectores de BlueXP "] y consulte los cambios incluidos para las versiones 3,9.48. 
+
+
+| Backup y recuperación | 21 de febrero de 2025 | Vaya a https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Novedades en la página de backup y recuperación de BlueXP"^] y consulte los cambios incluidos en la versión de febrero de 2025. 
+
+
+| Clasificación | 22 de enero de 2025 (versión 1,39) | Vaya a https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Novedades en la página de clasificación de BlueXP"^] y consulte los cambios incluidos en la versión 1,39. 
+|===
 
 
 == 10 de febrero de 2025
