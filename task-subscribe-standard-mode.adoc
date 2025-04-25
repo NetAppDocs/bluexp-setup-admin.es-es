@@ -80,9 +80,6 @@ Para todas las demás organizaciones o cuentas, deberá asociar manualmente la s
 +
 Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una suscripción al mercado con credenciales asociadas a BlueXP.
 
-+
-image:screenshot_azure_add_subscription.png["Captura de pantalla del menú de acción para un conjunto de credenciales existentes."]
-
 . Para asociar las credenciales a una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
 . Para asociar las credenciales a una nueva suscripción, seleccione *Agregar suscripción > continuar* y siga los pasos de Azure Marketplace:
 +
