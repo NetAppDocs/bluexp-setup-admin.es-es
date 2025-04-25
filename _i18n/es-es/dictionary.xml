@@ -2173,7 +2173,6 @@ Tenga en cuenta que la página se actualiza entre probar la conexión y habilita
   <block id="ef21f4467b6f56b5c04a15d016e654a2" category="paragraph">Después de añadir sus credenciales de Azure a BlueXP, puede asociar una suscripción de Azure Marketplace a esas credenciales. La suscripción permite crear un sistema Cloud Volumes ONTAP de pago por uso y utilizar otros servicios BlueXP.</block>
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">Hay dos situaciones en las que puede asociar una suscripción a Azure Marketplace después de haber añadido las credenciales a BlueXP:</block>
   <block id="20e15acf80fa51f5de6b9e96c9c64fde" category="list-text">No asoció una suscripción cuando agregó inicialmente las credenciales a BlueXP.</block>
-  <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Si se le solicita, inicie sesión en su cuenta de Azure.</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">Se le redirigirá al sitio web de BlueXP.</block>
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">Desde la página *asignación de suscripción*:</block>
@@ -5013,7 +5012,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">Roles de servicio de datos</block>
   <block id="3b5148467641fe76592e826ef571410c" category="paragraph">A continuación se muestra una lista de roles en la categoría de servicio de datos. Cada rol otorga permisos específicos dentro de su ámbito designado. Los usuarios que no tengan el rol de servicio de datos o un rol de plataforma necesarios no podrán acceder al servicio de datos.</block>
   <block id="490e13bea5876f4583d326593619ee16" category="list-text">La gestión de sistemas Cloud Volumes ONTAP ahora es compatible con conectores que tienen SELinux activado en el sistema operativo.</block>
-  <block id="a34db0f5fbf1e24b51b5a7a24f301c5e" category="doc">Gestione las credenciales de NSS BlueXP  asociadas</block>
   <block id="c60157a3e7becc31536d0dc036b53af0" category="admonition">Si utiliza BlueXP  en modo estándar o restringido, tendrá una _BlueXP  ORGANIZATION_, que gestionará mediante la administración de acceso e identidad de BlueXP  (IAM). Pero si estás usando BlueXP  en modo privado, entonces tendrás una cuenta _BlueXP _.</block>
   <block id="6dbd01b1c2b8dd3f051f0a9d6b7b2bd3" category="paragraph">Puede agregar y gestionar sus cuentas del sitio de soporte de NetApp para su uso con BlueXP  desde la consola de soporte de BlueXP .</block>
   <block id="cd35825320d9b999711fdb0b0b96b105" category="paragraph">Cuando haya agregado su cuenta NSS, BlueXP  puede utilizar esta información para aspectos como descargas de licencias, verificación de actualizaciones de software y futuros registros de soporte.</block>
@@ -5023,7 +5021,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="256ed78b4e0484125eb0f0e66fdb7156" category="inline-link-macro">Obtenga información sobre el Centro de notificaciones</block>
   <block id="4689ffd51b2968888f8c155b13dfcaf5" category="paragraph">Por motivos de seguridad, debe actualizar sus credenciales de NSS cada 90 días. Recibirá una notificación en el centro de notificaciones de BlueXP  si su credencial de NSS ha vencido. <block ref="7547de016d191efcd551f32d625b2bc1" category="inline-link-macro-rx"></block>.</block>
   <block id="a68bd898b36ffcd9b8247470114f5f4a" category="paragraph">Las credenciales vencidas pueden interrumpir lo siguiente, pero no se limitan a:</block>
-  <block id="41a210fc1fd64ddb44bf15d9fe670679" category="list-text">actualizaciones de licencias en la cartera digital, lo que significa que no podrá aprovechar la capacidad recién adquirida.</block>
   <block id="9866777d09d57d152447888262701c25" category="list-text">Capacidad para enviar y realizar un seguimiento de casos de soporte.</block>
   <block id="6179959f116f310a8ad1ec9ecbaf81f6" category="paragraph">Además, puede actualizar las credenciales de NSS asociadas a su organización si desea cambiar la cuenta de NSS asociada a su organización de BlueXP . Por ejemplo, si la persona asociada a su cuenta de NSS ha abandonado la empresa.</block>
   <block id="021c1a8115e127518ed9afb84086b193" category="paragraph">NetApp utiliza Microsoft Entra ID como proveedor de identidad para los servicios de autenticación relacionados con el soporte y la licencia.</block>
@@ -5033,4 +5030,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="91db0dcecdec6f07d8d7296d1c7d5cf1" category="list-text">Para la cuenta NSS que desea actualizar, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>seleccione y luego seleccione *Mostrar dirección de correo electrónico*. Puede utilizar el botón de copia para copiar la dirección de correo electrónico.</block>
   <block id="95113dfcf72340b0f58f2233f6b68f7d" category="paragraph">No se puede eliminar una cuenta asociada actualmente a un entorno de trabajo de Cloud Volumes ONTAP. Lo primero que necesita<block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>.</block>
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 de febrero de 2025</block>
+  <block id="186343db38833a48df757e694e69337d" category="doc">Permite gestionar las credenciales de NSS asociadas con BlueXP </block>
+  <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">Actualizaciones de licencias en la cartera digital, lo que significa que no podrá aprovechar la capacidad recién adquirida.</block>
 </blocks>

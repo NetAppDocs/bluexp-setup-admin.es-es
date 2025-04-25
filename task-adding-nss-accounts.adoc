@@ -4,7 +4,7 @@ permalink: task-adding-nss-accounts.html
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss, digital wallet, license 
 summary: Asocie una cuenta del sitio de soporte de NetApp con su organización o cuenta de BlueXP  para habilitar flujos de trabajo clave para Cloud Volumes ONTAP. Estas credenciales de NSS están asociadas a toda la organización o cuenta de BlueXP . 
 ---
-= Gestione las credenciales de NSS BlueXP  asociadas
+= Permite gestionar las credenciales de NSS asociadas con BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -95,7 +95,7 @@ Por motivos de seguridad, debe actualizar sus credenciales de NSS cada 90 días.
 
 Las credenciales vencidas pueden interrumpir lo siguiente, pero no se limitan a:
 
-* actualizaciones de licencias en la cartera digital, lo que significa que no podrá aprovechar la capacidad recién adquirida.
+* Actualizaciones de licencias en la cartera digital, lo que significa que no podrá aprovechar la capacidad recién adquirida.
 * Capacidad para enviar y realizar un seguimiento de casos de soporte.
 
 
