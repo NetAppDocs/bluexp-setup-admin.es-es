@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-El mantenimiento del sistema operativo en el host del conector es responsabilidad suya. Por ejemplo, debe aplicar actualizaciones de seguridad al sistema operativo en el host del conector siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo.
+El mantenimiento del sistema operativo en el host del conector es responsabilidad de usted (cliente). Por ejemplo, usted (cliente) debe aplicar actualizaciones de seguridad al sistema operativo en el host de Connector siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo.
 
 Tenga en cuenta que no es necesario detener ningún servicio en el host de Connector al aplicar actualizaciones de seguridad menores.
 
