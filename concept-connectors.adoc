@@ -191,9 +191,9 @@ link:task-upgrade-connector.html["Aprenda a actualizar manualmente el software C
 
 El mantenimiento del sistema operativo en el host del conector es responsabilidad de usted (cliente). Por ejemplo, usted (cliente) debe aplicar actualizaciones de seguridad al sistema operativo en el host de Connector siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo.
 
-Tenga en cuenta que no es necesario detener ningún servicio en el host de Connector al aplicar actualizaciones de seguridad menores.
+Tenga en cuenta que usted (cliente) no necesita detener ningún servicio en el host de Connector al aplicar actualizaciones de seguridad menores.
 
-Si necesita parar e iniciar el conector VM, debe hacerlo desde la consola de su proveedor de cloud o mediante los procedimientos estándar para la gestión en las instalaciones.
+Si usted (cliente) necesita detener y luego iniciar la máquina virtual Connector, debe hacerlo desde la consola de su proveedor de cloud o mediante los procedimientos estándar para la gestión en las instalaciones.
 
 <<Los conectores deben estar operativos en todo momento,Tenga en cuenta que el conector debe estar operativo en todo momento>>.
 

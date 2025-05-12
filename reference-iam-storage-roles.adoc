@@ -1,0 +1,310 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-storage-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: La gestión de identidades y accesos de BlueXP  proporciona dos funciones administrativas que puede asignar a los miembros de la organización. 
+---
+= Roles de acceso a almacenamiento para BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Es posible asignar los siguientes roles a los usuarios para proporcionarles acceso a las funciones de gestión del almacenamiento en BlueXP  que se asocian con los recursos de almacenamiento compatibles. A los usuarios se les puede asignar una función de administración que les permita realizar acciones en la gestión del almacenamiento o un rol de visor si solo tienen responsabilidades de supervisión.
+
+Pueden asignarse roles de almacenamiento a usuarios de los siguientes recursos y funciones de almacenamiento:
+
+Recursos de almacenamiento:
+
+* Clústeres de ONTAP en las instalaciones
+* StorageGRID
+* E-Series
+
+
+Servicios y características de BlueXP :
+
+* Asesor digital
+* Actualizaciones de software
+* Resiliencia operativa
+* Eficiencia económica
+* Sostenibilidad
+
+
+.Ejemplo de roles de almacenamiento en BlueXP 
+XYZ Corporation, una empresa multinacional, cuenta con un gran equipo de ingenieros de almacenamiento y administradores de almacenamiento. Quieren capacitar a este equipo para gestionar los activos de almacenamiento para sus respectivas regiones, pero restringir su acceso a tareas básicas de administración de BlueXP , como gestión de usuarios, creación de conectores y herramientas de gestión de costes, como la cartera digital.
+
+Dentro de un equipo de 12, dos usuarios reciben el rol *Storage Viewer*, que les permite monitorear los recursos de almacenamiento asociados con los proyectos de BlueXP  a los que están asignados. A los nueve restantes se les da el rol de administrador de almacenamiento*, que incluye la capacidad de administrar actualizaciones de software, acceder al Administrador del sistema de ONTAP a través de BlueXP , así como descubrir recursos de almacenamiento (agregar entornos de trabajo). A una persona del equipo se le asigna el rol de *Especialista en salud del sistema* para que pueda administrar el estado de los recursos de almacenamiento en su región, pero no modificar ni eliminar ningún entorno de trabajo. Esta persona también puede realizar actualizaciones de software en los recursos de almacenamiento para los proyectos asignados.
+
+La organización tiene dos usuarios adicionales con la función *Administrador de organización* que pueden administrar todos los aspectos de BlueXP , incluyendo la administración de usuarios, la creación de conectores y herramientas de administración de costos como la cartera digital, así como varios usuarios con la función *Carpeta o administrador de proyectos* que pueden realizar tareas de administración de BlueXP  para las carpetas y proyectos a los que están asignados.
+
+La siguiente tabla indica que las acciones que puede realizar cada rol de almacenamiento BlueXP .
+
+[cols="40,20a,20a,20a"]
+|===
+| Característica y acción | Administrador de almacenamiento | Especialista en salud de sistemas | Visor de almacenamiento 
+
+
+4+| *Canvas*: 
+
+
+| Descubrir nuevos recursos (crear un nuevo entorno de trabajo)  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Ver los recursos detectados  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Eliminar entornos de trabajo  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Modificar entornos de trabajo  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| *Crear conector*  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+4+| *Asesor digital* 
+
+
+| Ver todas las páginas y funciones  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+4+| *Cartera digital* 
+
+
+| Ver todas las páginas y funciones  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+4+| *Actualizaciones de software* 
+
+
+| Ver página de destino y recomendaciones  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Revisar las recomendaciones de versiones potenciales y las ventajas clave  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Vea los detalles de actualización de un clúster  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Ejecute las comprobaciones previas a la actualización y descargue el plan de actualización  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Instale las actualizaciones de software  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+4+| *Resiliencia operacional* 
+
+
+| Revisar los problemas de riesgo de seguridad  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Descargue los libros de estrategia de Ansible  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Solucione los problemas automáticamente  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+4+| *Eficiencia económica* 
+
+
+| Revisar el estado de planificación de la capacidad  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Elija la siguiente acción (práctica recomendada, nivel)  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Organice en niveles los datos fríos en el almacenamiento en cloud y libere almacenamiento  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Configurar recordatorios  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+4+| *Sostenibilidad* 
+
+
+| Vea el panel y las recomendaciones  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Descargar datos de informes  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Edite el porcentaje de mitigación de carbono  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Corrija las recomendaciones  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Aplazar las recomendaciones  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+4+| *Acceso al administrador del sistema* 
+
+
+| Puede introducir credenciales  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+4+| *Credenciales* 
+
+
+| Credenciales de usuario  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+|===

@@ -104,6 +104,8 @@ No admitido
 Docker Engine 23.0.6 a 26.0.0
 
 26.0.0 es compatible con _NEW_ Connector 3.9.44 o instalaciones posteriores
+
+27.0.0 y 28.0.0 son compatibles con _NEW_ Connector 3.9.52 o instalaciones posteriores
  a| 
 No admitido
 

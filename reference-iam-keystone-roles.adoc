@@ -1,0 +1,143 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-keystone-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: La gestión de identidades y accesos de BlueXP  proporciona dos funciones administrativas que puede asignar a los miembros de la organización. 
+---
+= Roles de acceso de Keystone para BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Los roles de Keystone proporcionan acceso a las consolas de Keystone y permiten a los usuarios ver y gestionar su suscripción de Keystone. Existen dos roles de Keystone: El administrador de Keystone y el visor de Keystone. La principal diferencia entre los dos roles son las acciones que pueden tomar en Keystone. El rol de administrador de Keystone es el único rol que permite crear solicitudes de servicio o modificar suscripciones.
+
+.Ejemplo de roles de Keystone en BlueXP 
+Dentro de una suscripción a Keystone, XYZ Corporation cuenta con cuatro ingenieros de almacenamiento de diferentes departamentos que ven información sobre su suscripción a Keystone. Aunque todos estos usuarios necesitan supervisar la suscripción de Keystone, solo el jefe del equipo puede hacer solicitudes de servicio. A tres de los miembros del equipo se les da el rol *Keystone Viewer*, mientras que al jefe del equipo se le da el rol *Keystone admin* para que haya un punto de control sobre las solicitudes de servicio para la empresa.
+
+La siguiente tabla indica las acciones que puede realizar cada rol Keystone.
+
+[cols="40,20a,20a"]
+|===
+| Característica y acción | Administrador de Keystone | Visor de Keystone 
+
+
+| Visualice las siguientes pestañas: Suscripción, Activos, Supervisión y Administración  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *Página de suscripción de Keystone*: 
+
+
+| Ver suscripciones  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Modificar o renovar suscripciones  a| 
+Sí
+ a| 
+No
+
+
+
+3+| *Página de activos de Keystone*: 
+
+
+| Consulta de activos  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Gestionar activos  a| 
+Sí
+ a| 
+No
+
+
+
+3+| *Página de alertas de Keystone*: 
+
+
+| Ver las alertas  a| 
+Sí
+ a| 
+No
+
+
+
+| Gestionar alertas  a| 
+Sí
+ a| 
+No
+
+
+
+| Crear alertas para sí mismo  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *Cartera digital*: 
+
+
+| Puede ver la cartera digital  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *Página de informes de Keystone*: 
+
+
+| Descargar informes  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Gestionar informes  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear informes para sí mismo  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *Solicitudes de servicio*: 
+
+
+| Crear solicitudes de servicio  a| 
+Sí
+ a| 
+No
+
+
+
+| Consulta de solicitudes de servicio creadas por cualquier usuario de la organización  a| 
+Sí
+ a| 
+Sí
+
+|===

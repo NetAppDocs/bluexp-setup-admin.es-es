@@ -22,77 +22,16 @@ La gestión de identidades y accesos (IAM) de BlueXP  incluye varios roles pred
 
 Los roles de plataforma son los roles más amplios que puedes asignar a los usuarios y permitir todos los permisos deadministración de BlueXP, incluida la asignación de roles y la adición de usuarios. Los usuarios con roles de plataforma tienen acceso a todos los servicios de datos y aplicaciones dentro de BlueXP . BlueXP  IAM incluye dos funciones de plataforma: Administrador de organización y Administrador de carpetas o proyectos. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope.
 
-
-
-=== Administrador de la organización
-
-Permite al usuario acceder sin restricciones a todos los proyectos y carpetas de una organización, agregar miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos.
-
-
-
-=== Administrador de carpetas o proyectos
-
-Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a carpetas o proyectos que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos o aplicación en recursos dentro de la carpeta o proyecto que se les asigna.
-
-El rol de administrador de carpeta o proyecto no puede crear conectores.
-
-
-
-=== Tabla de comparación de roles de plataforma
-
-[cols="24,19,19"]
+[cols="1,2"]
 |===
-| Tarea | Administrador de la organización | Administrador de carpetas o proyectos 
+| Función de la plataforma | Responsabilidades 
 
 
-| Crear conectores | Sí | No 
+| link:reference-iam-platform-roles.html["Administrador de la organización"^] | Permite al usuario acceder sin restricciones a todos los proyectos y carpetas de una organización, agregar miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos. Los usuarios con este rol tienen la tarea de organizar y gestionar todo el entorno de BlueXP . Pueden crear carpetas y proyectos, asignar roles y agregar usuarios a cualquier proyecto o carpeta. También pueden gestionar todos los entornos de trabajo dentro de la organización. Este es el único rol de acceso que puede crear conectores. 
 
 
-| Crear, modificar o suprimir entornos de trabajo (añadir o detectar nuevos recursos mediante el lienzo de BlueXP ) | Sí | Sí 
-
-
-| Cree carpetas y proyectos, incluida la eliminación | Sí | No 
-
-
-| Cambie el nombre de las carpetas y proyectos existentes | Sí | Sí 
-
-
-| Asigne roles y añada usuarios | Sí | Sí 
-
-
-| Asociar recursos a carpetas y proyectos | Sí | Sí 
-
-
-| Asociar conectores a carpetas y proyectos | Sí | No 
-
-
-| Eliminar conectores de carpetas y proyectos | Sí | No 
-
-
-| Administrar conectores (editar certificados, configuración, etc.) | Sí | No 
-
-
-| Gestione credenciales desde Configuración > Credenciales | Sí | Sí 
-
-
-| Consulta la línea de tiempo de BlueXP  | Sí | Sí 
-
-
-| Utilizar los servicios BlueXP  | Sí | Sí 
-
-
-| Registre BlueXP  para obtener soporte y enviar casos | Sí | Sí 
+| link:reference-iam-platform-roles.html["Administrador de carpetas o proyectos"^] | Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a carpetas o proyectos que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos o aplicación en recursos dentro de la carpeta o proyecto que se les asigna. El rol de administrador de carpeta o proyecto NO PUEDE crear conectores. 
 |===
-Ejemplo de roles de organización en BlueXP  para una organización multinacional grande:: XYZ Corporation, una empresa multinacional, tiene como objetivo segregar el acceso a recursos de almacenamiento de datos basados en regiones geográficas: Norteamérica, Europa y Asia Pacífico. Quieren que cada región tenga un control exclusivo sobre sus recursos mientras mantienen una supervisión centralizada.
-+
---
-Para lograr esto, una persona que tiene asignada la función de administrador de la organización en BlueXP  de Xyz Corporation crea un entorno de trabajo inicial y, a continuación, crea carpetas separadas en BlueXP  para cada región. La carpeta de cada región contiene proyectos (con recursos asociados) relacionados con esa región. El administrador de la organización asigna a un usuario de BlueXP  en cada región respectiva la función de administrador de carpeta/proyecto.
-
-Una vez completada la configuración inicial, los administradores regionales con la función de administrador de carpetas o proyectos pueden crear nuevos entornos de trabajo y agregar usuarios dentro de sus regiones. Estos administradores regionales también pueden agregar/eliminar/cambiar el nombre de las carpetas y los proyectos a los que están asignados. El administrador de la organización hereda permisos para cualquier nuevo entorno de trabajo o recursos, manteniendo la visibilidad del uso del almacenamiento en toda la organización.
-
---
-
-
 
 
 == Funciones de la aplicación
@@ -100,139 +39,26 @@ Una vez completada la configuración inicial, los administradores regionales con
 A continuación se muestra una lista de roles en la categoría de aplicación. Cada rol otorga permisos específicos dentro de su ámbito designado. Los usuarios que no tengan el rol de aplicación o un rol de plataforma necesarios no podrán acceder a la aplicación.
 
 
-
-=== Roles de Keystone
-
-Puede usar los siguientes roles para asignar acceso a los usuarios a Keystone.
-
-
 NOTE: Acceder a Keystone a través de BlueXP  está en fase beta. Si desea participar en la beta de Keystone, póngase en contacto con su representante de NetApp.
 
-* *Administrador de Keystone*: Administra la suscripción de Keystone, así como realiza acciones en alertas, informes y suscripciones.
-* *Visor de Keystone*: Ver la suscripción de Keystone, así como ver informes, alertas y activos.
-
-
-La siguiente tabla indica las acciones que puede realizar cada rol Keystone.
-
-[cols="40,20a,20a"]
+[cols="1,2"]
 |===
-| Característica y acción | Administrador de Keystone | Visor de Keystone 
+| Rol de la aplicación | Responsabilidades 
 
 
-| Visualice las siguientes pestañas: Suscripción, Activos, Supervisión y Administración  a| 
-Sí
- a| 
-Sí
+| link:reference-iam-keystone-roles.html["Administrador de Keystone"] | Los usuarios con el rol de administrador de Keystone pueden crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. 
 
 
-
-3+| *Página de suscripción de Keystone*: 
-
-
-| Ver suscripciones  a| 
-Sí
- a| 
-Sí
+| link:reference-iam-keystone-roles.html["Visor de Keystone"] | Los usuarios con el rol de visor de Keystone NO PUEDEN realizar solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. /// 
 
 
-
-| Modificar o renovar suscripciones  a| 
-Sí
- a| 
-No
+| link:reference-iam-storage-roles.html["Administrador de almacenamiento"] | Administre funciones de gobernanza y estado del almacenamiento, detecte recursos de almacenamiento, y modifique y elimine los entornos de trabajo existentes. 
 
 
-
-3+| *Página de activos de Keystone*: 
-
-
-| Consulta de activos  a| 
-Sí
- a| 
-Sí
+| link:reference-iam-storage-roles.html["Visor de almacenamiento"] | Vea las funciones de estado y gobernanza del almacenamiento, y también vea los recursos de almacenamiento detectados previamente. No se pueden detectar, modificar ni eliminar los entornos de trabajo de almacenamiento existentes. 
 
 
-
-| Gestionar activos  a| 
-Sí
- a| 
-No
-
-
-
-3+| *Página de alertas de Keystone*: 
-
-
-| Ver las alertas  a| 
-Sí
- a| 
-No
-
-
-
-| Gestionar alertas  a| 
-Sí
- a| 
-No
-
-
-
-| Crear alertas para sí mismo  a| 
-Sí
- a| 
-Sí
-
-
-
-3+| *Cartera digital*: 
-
-
-| Puede ver la cartera digital  a| 
-Sí
- a| 
-Sí
-
-
-
-3+| *Página de informes de Keystone*: 
-
-
-| Descargar informes  a| 
-Sí
- a| 
-Sí
-
-
-
-| Gestionar informes  a| 
-Sí
- a| 
-Sí
-
-
-
-| Crear informes para sí mismo  a| 
-Sí
- a| 
-Sí
-
-
-
-3+| *Solicitudes de servicio*: 
-
-
-| Crear solicitudes de servicio  a| 
-Sí
- a| 
-No
-
-
-
-| CView solicitudes de servicio creadas por cualquier usuario dentro de la organización  a| 
-Sí
- a| 
-Sí
-
+| link:reference-iam-storage-roles.html["Especialista en salud de sistemas"] | Administre las funciones de almacenamiento y estado y gobernanza, todos los permisos del administrador de almacenamiento, excepto no puede modificar ni eliminar los entornos de trabajo existentes. /// 
 |===
 
 
@@ -240,216 +66,31 @@ Sí
 
 A continuación se muestra una lista de roles en la categoría de servicio de datos. Cada rol otorga permisos específicos dentro de su ámbito designado. Los usuarios que no tengan el rol de servicio de datos o un rol de plataforma necesarios no podrán acceder al servicio de datos.
 
-
-
-=== Visor de clasificación
-
-Proporciona la posibilidad de ver los resultados de la exploración de clasificación de BlueXP .
-
-La clasificación no tiene un rol de administrador.
-
-Permisos:: Ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos.
-
-
-No hay otras acciones disponibles para un miembro que tenga este rol.
-
-
-
-=== Protección contra ransomware
-
-Puede usar los siguientes roles para asignar acceso a los usuarios a la protección contra ransomware.
-
-* *Ransomware protection admin*: Administrar acciones en las pestañas Proteger, Alertas, Recuperar, Configuración e Informes.
-* *Visor de protección contra ransomware*: Ver datos de carga de trabajo, ver datos de alerta, descargar datos de recuperación e informes de descarga.
-
-
-La siguiente tabla indica que cada rol de protección contra ransomware de BlueXP  puede realizar acciones.
-
-[cols="40,20a,20a"]
+[cols="10,24"]
 |===
-| Característica y acción | Administrador de protección frente a ransomware | Visor de protección contra ransomware 
+| Rol del servicio de datos | Responsabilidades 
 
 
-| Ver panel y todas las pestañas  a| 
-Sí
- a| 
-Sí
+| Administrador de clasificación | Proporciona la posibilidad de ver los resultados de la exploración de clasificación de BlueXP . La clasificación no tiene un rol de visor. Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos. 
 
 
+| link:reference-iam-ransomware-roles.html["Administrador de protección frente a ransomware"^] | Gestiona acciones en las pestañas Proteger, Alerts, Recover, Settings e Reports del servicio de protección contra ransomware. 
 
-| Inicie una prueba gratuita  a| 
-Sí
- a| 
-No
 
+| link:reference-iam-ransomware-roles.html["Visor de protección contra ransomware"^] | Ver datos de carga de trabajo, ver datos de alerta, descargar datos de recuperación y descargar informes en el servicio de protección contra ransomware. 
 
 
-| Inicie la detección de las cargas de trabajo  a| 
-Sí
- a| 
-No
+| Administrador de SnapCenter  a| 
+Ofrece la posibilidad de realizar backups de snapshots de clústeres de ONTAP en las instalaciones mediante backup y recuperación de datos de BlueXP  en aplicaciones. Un miembro que tenga este rol puede realizar las siguientes acciones en BlueXP :
 
-
-
-3+| *En la pestaña Proteger*: 
-
-
-| Agregar, modificar o eliminar políticas  a| 
-Sí
- a| 
-No
-
-
-
-| Proteja las cargas de trabajo  a| 
-Sí
- a| 
-No
-
-
-
-| Identificar los datos confidenciales  a| 
-Sí
- a| 
-No
-
-
-
-| Editar la protección de cargas de trabajo  a| 
-Sí
- a| 
-No
-
-
-
-| Ver detalles de la carga de trabajo  a| 
-Sí
- a| 
-Sí
-
-
-
-| Descargar datos  a| 
-Sí
- a| 
-Sí
-
-
-
-3+| *En la pestaña Alertas*: 
-
-
-| Ver detalles de alerta  a| 
-Sí
- a| 
-Sí
-
-
-
-| Editar el estado del incidente  a| 
-Sí
- a| 
-No
-
-
-
-| Ver detalles del incidente  a| 
-Sí
- a| 
-Sí
-
-
-
-| Obtener una lista completa de archivos afectados  a| 
-Sí
- a| 
-No
-
-
-
-| Descargar datos de alertas  a| 
-Sí
- a| 
-Sí
-
-
-
-3+| *En la pestaña Recuperar*: 
-
-
-| Descargar archivos afectados  a| 
-Sí
- a| 
-No
-
-
-
-| Restaure la carga de trabajo  a| 
-Sí
- a| 
-No
-
-
-
-| Descargar datos de recuperación  a| 
-Sí
- a| 
-Sí
-
-
-
-| Descargar informes  a| 
-Sí
- a| 
-Sí
-
-
-
-3+| *En la pestaña Configuración*: 
-
-
-| Agregue o modifique destinos de copia de seguridad  a| 
-Sí
- a| 
-No
-
-
-
-| Agregue o modifique destinos de SIEM  a| 
-Sí
- a| 
-No
-
-
-
-3+| *En la pestaña Informes*: 
-
-
-| Descargar informes  a| 
-Sí
- a| 
-Sí
-
-|===
-
-
-=== Administrador de SnapCenter
-
-Ofrece la posibilidad de realizar backups de snapshots de clústeres de ONTAP en las instalaciones mediante backup y recuperación de datos de BlueXP  en aplicaciones.
-
-SnapCenter no tiene un rol de visor.
-
-Permisos:: Un miembro que tenga este rol puede realizar las siguientes acciones en BlueXP :
-+
---
 * Realice cualquier acción desde Copia de seguridad y recuperación > Aplicaciones
 * Gestione todos los entornos de trabajo en los proyectos y carpetas para los que tienen permisos
 * Utilizar todos los servicios BlueXP 
 
 
---
+SnapCenter no tiene un rol de visor.
 
-
+|===
 
 
 == Enlaces relacionados

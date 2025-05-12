@@ -407,7 +407,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Fábrica de cargas de trabajo | No | No 
 
 
-.7+| * Características* | Gestión de identidades y acceso BlueXP  | No | No 
+.7+| * Características* | Gestión de identidades y acceso BlueXP  | Sí | No 
 
 
 | Cuentas BlueXP | Sí | Sí 

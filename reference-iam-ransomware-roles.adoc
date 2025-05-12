@@ -1,0 +1,186 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-ransomware-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: La gestión de identidades y accesos de BlueXP  proporciona dos funciones administrativas que puede asignar a los miembros de la organización. 
+---
+= Roles de acceso de protección contra ransomware para BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Los roles de ransomware están diseñados para proporcionar acceso al servicio de protección contra ransomware. A los usuarios se les puede asignar un rol administrativo que les permita actuar en la protección contra ransomware o un rol de visor si solo tienen responsabilidades de supervisión. Los dos roles son el administrador de protección contra ransomware y el visor de protección contra ransomware. La principal diferencia entre los dos roles son las acciones que pueden tomar en la protección contra ransomware.
+
+La siguiente tabla indica que cada rol de protección contra ransomware de BlueXP  puede realizar acciones.
+
+[cols="40,20a,20a"]
+|===
+| Característica y acción | Administrador de protección frente a ransomware | Visor de protección contra ransomware 
+
+
+| Ver panel y todas las pestañas  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Inicie una prueba gratuita  a| 
+Sí
+ a| 
+No
+
+
+
+| Inicie la detección de las cargas de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+3+| *En la pestaña Proteger*: 
+
+
+| Agregar, modificar o eliminar políticas  a| 
+Sí
+ a| 
+No
+
+
+
+| Proteja las cargas de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+| Identificar los datos confidenciales  a| 
+Sí
+ a| 
+No
+
+
+
+| Editar la protección de cargas de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+| Ver detalles de la carga de trabajo  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Descargar datos  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *En la pestaña Alertas*: 
+
+
+| Ver detalles de alerta  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Editar el estado del incidente  a| 
+Sí
+ a| 
+No
+
+
+
+| Ver detalles del incidente  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Obtener una lista completa de archivos afectados  a| 
+Sí
+ a| 
+No
+
+
+
+| Descargar datos de alertas  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *En la pestaña Recuperar*: 
+
+
+| Descargar archivos afectados  a| 
+Sí
+ a| 
+No
+
+
+
+| Restaure la carga de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+| Descargar datos de recuperación  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Descargar informes  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *En la pestaña Configuración*: 
+
+
+| Agregue o modifique destinos de copia de seguridad  a| 
+Sí
+ a| 
+No
+
+
+
+| Agregue o modifique destinos de SIEM  a| 
+Sí
+ a| 
+No
+
+
+
+3+| *En la pestaña Informes*: 
+
+
+| Descargar informes  a| 
+Sí
+ a| 
+Sí
+
+|===
