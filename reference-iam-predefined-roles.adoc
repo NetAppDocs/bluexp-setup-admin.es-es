@@ -46,19 +46,10 @@ NOTE: Acceder a Keystone a través de BlueXP  está en fase beta. Si desea part
 | Rol de la aplicación | Responsabilidades 
 
 
-| link:reference-iam-keystone-roles.html["Administrador de Keystone"] | Los usuarios con el rol de administrador de Keystone pueden crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. 
+| link:reference-iam-keystone-roles.html["Administrador de Keystone"^] | Los usuarios con el rol de administrador de Keystone pueden crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. 
 
 
-| link:reference-iam-keystone-roles.html["Visor de Keystone"] | Los usuarios con el rol de visor de Keystone NO PUEDEN realizar solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. /// 
-
-
-| link:reference-iam-storage-roles.html["Administrador de almacenamiento"] | Administre funciones de gobernanza y estado del almacenamiento, detecte recursos de almacenamiento, y modifique y elimine los entornos de trabajo existentes. 
-
-
-| link:reference-iam-storage-roles.html["Visor de almacenamiento"] | Vea las funciones de estado y gobernanza del almacenamiento, y también vea los recursos de almacenamiento detectados previamente. No se pueden detectar, modificar ni eliminar los entornos de trabajo de almacenamiento existentes. 
-
-
-| link:reference-iam-storage-roles.html["Especialista en salud de sistemas"] | Administre las funciones de almacenamiento y estado y gobernanza, todos los permisos del administrador de almacenamiento, excepto no puede modificar ni eliminar los entornos de trabajo existentes. /// 
+| link:reference-iam-keystone-roles.html["Visor de Keystone"^] | Los usuarios con el rol de visor de Keystone NO PUEDEN crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. 
 |===
 
 

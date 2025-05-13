@@ -5039,19 +5039,10 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
   <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a carpetas o proyectos que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos o aplicación en recursos dentro de la carpeta o proyecto que se les asigna. El rol de administrador de carpeta o proyecto NO PUEDE crear conectores.</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">Rol de la aplicación</block>
-  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Los usuarios con el rol de administrador de Keystone pueden crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden.</block>
-  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
-  <block id="1457cd573aaf85c5528a52382534d843" category="cell">Los usuarios con el rol de visor de Keystone NO PUEDEN realizar solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. ///</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Administrador de almacenamiento</block>
-  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
-  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">Administre funciones de gobernanza y estado del almacenamiento, detecte recursos de almacenamiento, y modifique y elimine los entornos de trabajo existentes.</block>
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">Visor de almacenamiento</block>
-  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
-  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">Vea las funciones de estado y gobernanza del almacenamiento, y también vea los recursos de almacenamiento detectados previamente. No se pueden detectar, modificar ni eliminar los entornos de trabajo de almacenamiento existentes.</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">Especialista en salud de sistemas</block>
-  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
-  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">Administre las funciones de almacenamiento y estado y gobernanza, todos los permisos del administrador de almacenamiento, excepto no puede modificar ni eliminar los entornos de trabajo existentes. ///</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">Rol del servicio de datos</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">Administrador de clasificación</block>
   <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">Proporciona la posibilidad de ver los resultados de la exploración de clasificación de BlueXP . La clasificación no tiene un rol de visor. Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos.</block>
@@ -5111,4 +5102,7 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">Obtenga más información sobre los roles de acceso de BlueXP </block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">Roles de servicios de datos</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">Funciones de protección contra ransomware</block>
+  <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
+  <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
+  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Los usuarios con el rol de visor de Keystone NO PUEDEN crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden.</block>
 </blocks>
