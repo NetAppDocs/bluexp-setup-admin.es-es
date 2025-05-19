@@ -5105,4 +5105,7 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
   <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Los usuarios con el rol de visor de Keystone NO PUEDEN crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden.</block>
+  <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Ahora se admiten extremos seguros para las descargas de Connector para backup y recuperación y protección contra ransomware</block>
+  <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">Obtenga información sobre puntos finales seguros para descargas de Connector.</block>
+  <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Si utiliza la protección de copia de seguridad y recuperación o Ransomware, ahora puede utilizar extremos seguros para las descargas de Connector. <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
 </blocks>

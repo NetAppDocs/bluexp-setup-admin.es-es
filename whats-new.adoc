@@ -54,6 +54,12 @@ En este momento, la versión 3.9.51 está disponible para modo estándar y modo 
 
 
 
+==== Ahora se admiten extremos seguros para las descargas de Connector para backup y recuperación y protección contra ransomware
+
+Si utiliza la protección de copia de seguridad y recuperación o Ransomware, ahora puede utilizar extremos seguros para las descargas de Connector. link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["Obtenga información sobre puntos finales seguros para descargas de Connector."^]
+
+
+
 === Gestión de acceso e identidades (IAM) de BlueXP 
 
 * Los usuarios sin el administrador de la organización o la carpeta o el administrador del proyecto deben tener asignada una función de protección contra ransomware para tener acceso a la protección contra ransomware. Puede asignar al usuario uno de estos dos roles: Administrador de protección contra ransomware o visor de protección contra ransomware.
