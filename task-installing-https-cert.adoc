@@ -20,7 +20,7 @@ Cuando se utiliza BlueXP  en modo restringido o en modo privado, se puede acced
 
 == Antes de empezar
 
-Debe crear un conector para poder cambiar la configuración de BlueXP. link:concept-connectors.html#how-to-create-a-connector["Aprenda a crear un conector"].
+Debe crear un conector para poder cambiar la configuración de BlueXP. link:concept-connectors.html#connector-installation["Aprenda a crear un conector"].
 
 
 

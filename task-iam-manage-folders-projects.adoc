@@ -23,7 +23,7 @@ La gestión de identidades y accesos (IAM) de BlueXP  le permite organizar sus 
 Cuando crea su organización BlueXP , incluye un solo proyecto. Puede crear proyectos adicionales para gestionar los recursos de su organización. Opcionalmente, puede crear carpetas para agrupar proyectos relacionados.
 
 .Acerca de esta tarea
-La profundidad de la jerarquía de recursos de su organización puede reducirse a 7 niveles. Como resultado, puede crear carpetas anidadas hasta 6 niveles. La última carpeta anidada puede incluir proyectos en el séptimo nivel de la jerarquía.
+La jerarquía de recursos de su organización puede tener hasta 7 niveles, con carpetas anidadas en el séptimo nivel.
 
 La siguiente imagen ilustra la profundidad máxima de la jerarquía de recursos de la organización:
 
@@ -38,7 +38,7 @@ image:screenshot-iam-max-depth.png["Captura de pantalla que muestra una organiza
 ** *Nombre y ubicación*: Introduce un nombre y elige una ubicación en la jerarquía para la carpeta o proyecto. Una carpeta o proyecto puede residir directamente debajo de la organización o dentro de una carpeta.
 ** *Recursos*: Seleccione los recursos que desea asociar a esta carpeta o proyecto.
 +
-Sólo puede seleccionar entre los recursos asociados al padre de la carpeta o proyecto. Si el padre es la organización, puede elegir entre cualquier recurso de la organización. Si el padre es una carpeta, solo puede seleccionar entre los recursos asociados a la carpeta.
+Puede seleccionar recursos asociados con la carpeta o proyecto principal: todos los recursos para una organización principal o recursos específicos de la carpeta para una carpeta principal.
 
 +
 link:concept-identity-and-access-management.html#associate-resource-folder["Descubra cuándo puede asociar un recurso a una carpeta"].
@@ -64,11 +64,11 @@ Si usas la API de BlueXP , es posible que necesites obtener el ID de un proyect
 .Pasos
 . Desde la página *Organización*, navega a un proyecto en la tabla y selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"]
 +
-Aparece el ID de proyecto.
+El sistema muestra el ID del proyecto.
 
 . Para copiar el ID, seleccione el botón Copiar.
 +
-image:screenshot-iam-project-id.png["Captura de pantalla de la tabla de carpetas y proyectos que muestra el código de proyecto Fater seleccionando el menú de acción de un proyecto."]
+image:screenshot-iam-project-id.png["Captura de pantalla de la tabla de carpetas y proyectos que muestra el ID de proyecto después de seleccionar el menú de acción de un proyecto."]
 
 
 
@@ -124,7 +124,7 @@ image:screenshot-iam-allocated-resources.png["Captura de pantalla de la página 
 
 == Modificar los recursos asociados a una carpeta o proyecto
 
-Puede modificar los recursos asociados a una carpeta o proyecto asociando o desasociando un recurso. Por ejemplo, es posible que desee asociar un recurso a otro proyecto porque ese recurso tiene capacidad que otro equipo puede utilizar. Una vez que haya asociado un recurso a una carpeta o proyecto, los miembros de la organización que tengan permisos para esa carpeta o proyecto podrán acceder al recurso asociado.
+Los miembros con permisos para una carpeta o proyecto pueden acceder a sus recursos asociados.
 
 .Antes de empezar
 link:concept-identity-and-access-management.html#associate-resource-folder["Descubra cuándo puede asociar un recurso a una carpeta"].
@@ -157,9 +157,9 @@ image:screenshot-iam-member-access.png["Captura de pantalla de la página Editar
 
 == Modificar el acceso de miembro a una carpeta o proyecto
 
-Modifique el acceso de los miembros a una carpeta o proyecto para garantizar que los miembros correctos tengan acceso a los recursos asociados a la carpeta o el proyecto.
+Modificar el acceso de los miembros para garantizar que los miembros correctos puedan acceder a los recursos asociados.
 
-Si se ha proporcionado acceso de miembro en un nivel superior de la jerarquía (en el nivel de carpeta u organización), no puede eliminar ni cambiar el acceso de miembro al ver la carpeta o el proyecto de nivel inferior. Debe cambiar a esa parte de la jerarquía y actualizar los permisos del miembro allí. Como alternativa, puede link:task-iam-manage-roles.html#manage-permissions["Gestione los permisos desde la página Miembros"].
+El acceso de miembros proporcionado en un nivel de jerarquía superior no se puede cambiar en niveles inferiores. Debe cambiar a esa parte de la jerarquía y actualizar los permisos del miembro allí. Como alternativa, puede link:task-iam-manage-roles.html#manage-permissions["Gestione los permisos desde la página Miembros"].
 
 link:concept-identity-and-access-management.html#role-inheritance["Obtenga más información sobre la herencia de roles"].
 

@@ -22,13 +22,13 @@ Debe entender cómo funciona la asociación Connector. link:concept-identity-and
 
 
 .Pasos
-. En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
+. En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["Icono de ajustes"]> *Gestión de identidades y acceso*.
 . Seleccione *Conectores*.
 . En la tabla, busque el conector que desea asociar.
 +
-Para buscar un conector específico, puede utilizar la búsqueda que está encima de la tabla y filtrar el contenido de la tabla seleccionando una parte específica de la jerarquía de recursos.
+Utilice la búsqueda sobre la tabla para encontrar un conector específico o filtrar la tabla por jerarquía de recursos.
 
-. Para ver primero las carpetas y proyectos con los que está asociado el conector, image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"]seleccione y luego seleccione *Ver detalles*.
+. Para ver las carpetas y proyectos vinculados al Conector, seleccione image:icon-action.png["Un icono con tres puntos"] y luego seleccione *Ver detalles*.
 +
 BlueXP  muestra detalles sobre las carpetas y proyectos a los que está asociado el conector.
 

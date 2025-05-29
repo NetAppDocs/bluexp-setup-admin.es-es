@@ -235,7 +235,7 @@ La sustitución de la suscripción actual del mercado por una nueva suscripción
 
 
 .Antes de empezar
-Debe crear un conector para poder cambiar la configuración de BlueXP. link:concept-connectors.html#how-to-create-a-connector["Aprenda a crear un conector"].
+Debe crear un conector para poder cambiar la configuración de BlueXP. link:concept-connectors.html#connector-installation["Aprenda a crear un conector"].
 
 En el siguiente vídeo se muestran los pasos para suscribirse a BlueXP  desde AWS Marketplace:
 

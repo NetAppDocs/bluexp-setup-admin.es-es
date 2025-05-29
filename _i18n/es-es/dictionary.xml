@@ -175,8 +175,6 @@
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">Puertos</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP (80) y HTTPS (443) proporcionan acceso a la interfaz de usuario local, que utilizará en raras circunstancias.</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH (22) solo es necesario si necesita conectarse al host para solucionar problemas.</block>
-  <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">Vea cómo</block>
-  <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">Debe crear un conector para poder cambiar la configuración de BlueXP. <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>.</block>
   <block id="c49ff7d7009f9d4727b2b25afa496418" category="section-title">Instale un certificado HTTPS</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">En la parte superior derecha de la consola BlueXP, seleccione el icono Configuración y seleccione *Configuración HTTPS*.</block>
   <block id="4d646a6e32f8084a095a674812f1fb31" category="list-text">En la página HTTPS Setup, instale un certificado generando una solicitud de firma de certificación (CSR) o instalando su propio certificado firmado por una CA:</block>
@@ -2268,7 +2266,6 @@ Tenga en cuenta que la página se actualiza entre probar la conexión y habilita
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">Documentación de BlueXP para Amazon FSX para ONTAP</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">Para obtener más información, consulte<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Aprenda a crear un conector</block>
-  <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">Debe crear un conector para poder cambiar la configuración de BlueXP. <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
   <block id="eceb74088d706d5484df6b70296f87ad" category="paragraph">Edite sus credenciales de AWS en BlueXP cambiando el tipo de cuenta (las claves de AWS o asumen la función), editando el nombre o actualizando las credenciales (las claves o el rol ARN).</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">No se pueden editar las credenciales de un perfil de instancia asociado a una instancia de conector.</block>
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">No se pueden eliminar las credenciales de un perfil de instancia asociado a una instancia de conector.</block>
@@ -3875,8 +3872,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">En la parte superior derecha de la consola de BlueXP , seleccione <block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block>&gt; *Gestión de identidades y acceso*.</block>
   <block id="898a5f7650c6f7bf6a01efe09c881973" category="list-text">Seleccione *Conectores*.</block>
   <block id="efd7c600c956f9a4ecd581c9e8a5de04" category="list-text">En la tabla, busque el conector que desea asociar.</block>
-  <block id="0e081d7aa898f932c4f244f1d41dd4df" category="paragraph">Para buscar un conector específico, puede utilizar la búsqueda que está encima de la tabla y filtrar el contenido de la tabla seleccionando una parte específica de la jerarquía de recursos.</block>
-  <block id="16b0f0c24bd4a14288344d064f0b09c2" category="list-text">Para ver primero las carpetas y proyectos con los que está asociado el conector, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>seleccione y luego seleccione *Ver detalles*.</block>
   <block id="a2884a208c64d00906f60b988f29dfd3" category="paragraph">BlueXP  muestra detalles sobre las carpetas y proyectos a los que está asociado el conector.</block>
   <block id="7b0e84897f645e2241868699f64b6699" category="list-text">Seleccione *Asociar a carpeta o proyecto*.</block>
   <block id="3ecb65defa4c1a5901512a34a0590820" category="list-text">Seleccione una carpeta o proyecto y luego seleccione *Aceptar*.</block>
@@ -3936,7 +3931,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="5506a3204ff4171234856af0ca0d34fd" category="list-text">Proporcione detalles sobre la carpeta o el proyecto:</block>
   <block id="0ab63481584814b59197d796cfc5dc97" category="list-text">*Nombre y ubicación*: Introduce un nombre y elige una ubicación en la jerarquía para la carpeta o proyecto. Una carpeta o proyecto puede residir directamente debajo de la organización o dentro de una carpeta.</block>
   <block id="f46059ba82cb53e4af025ce918760999" category="list-text">*Recursos*: Seleccione los recursos que desea asociar a esta carpeta o proyecto.</block>
-  <block id="217f7358d2ee319a9c814b539574d78d" category="paragraph">Sólo puede seleccionar entre los recursos asociados al padre de la carpeta o proyecto. Si el padre es la organización, puede elegir entre cualquier recurso de la organización. Si el padre es una carpeta, solo puede seleccionar entre los recursos asociados a la carpeta.</block>
   <block id="dc401be3adab60c813414832f0b97d88" category="inline-link-macro">Descubra cuándo puede asociar un recurso a una carpeta</block>
   <block id="d706c5ded100123a86d8602a03703158" category="paragraph"><block ref="114ceb4aae340f51ba021c40f504c25f" category="inline-link-macro-rx"></block>.</block>
   <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">*Acceso*: Vea los miembros que tendrán acceso a la carpeta o proyecto en función de los permisos existentes ya definidos en su jerarquía de recursos.</block>
@@ -3961,7 +3955,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">Seleccione *Aplicar*</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">Modificar el acceso de miembro a una carpeta o proyecto</block>
-  <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">Modifique el acceso de los miembros a una carpeta o proyecto para garantizar que los miembros correctos tengan acceso a los recursos asociados a la carpeta o el proyecto.</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">Modificar acceso de miembros:</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*Agregar un miembro*: Seleccione el miembro que desea agregar a la carpeta o proyecto y asígnele un rol.</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*Cambiar el rol de un miembro*: Para cualquier miembro que tenga un rol distinto del Administrador de la Organización, seleccione su rol existente y luego elija un nuevo rol.</block>
@@ -4243,8 +4236,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="798eb88714cdc2034c3335c3a6c21193" category="list-text">Desde la página *Organización*, navega a un proyecto en la tabla y selecciona <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="efb318f1d905ec45c96414554f0f7c18" category="paragraph">Aparece el ID de proyecto.</block>
   <block id="811c7706be3ba95d1d407ea18e420365" category="list-text">Para copiar el ID, seleccione el botón Copiar.</block>
-  <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">Captura de pantalla de la tabla de carpetas y proyectos que muestra el código de proyecto Fater seleccionando el menú de acción de un proyecto.</block>
-  <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 de noviembre de 2024</block>
   <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">Versión en modo privado (3,9.46)</block>
   <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">Ya está disponible una nueva versión de modo privado para descargar desde el<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
@@ -4393,11 +4384,9 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">Hay dos escenarios en los que puede configurar una suscripción a AWS Marketplace después de haber agregado las credenciales a BlueXP :</block>
   <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">No configuraste una suscripción cuando agregaste inicialmente las credenciales a BlueXP .</block>
   <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">Desea cambiar la suscripción de AWS Marketplace que está configurada para las credenciales de AWS.</block>
-  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">La profundidad de la jerarquía de recursos de su organización puede reducirse a 7 niveles. Como resultado, puede crear carpetas anidadas hasta 6 niveles. La última carpeta anidada puede incluir proyectos en el séptimo nivel de la jerarquía.</block>
   <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">La siguiente imagen ilustra la profundidad máxima de la jerarquía de recursos de la organización:</block>
   <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">Ver los recursos asociados a una carpeta o proyecto</block>
   <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">En la página *Editar*, puede ver detalles sobre la carpeta o proyecto seleccionado ampliando las secciones *Recursos* o *Acceso*.</block>
-  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">Puede modificar los recursos asociados a una carpeta o proyecto asociando o desasociando un recurso. Por ejemplo, es posible que desee asociar un recurso a otro proyecto porque ese recurso tiene capacidad que otro equipo puede utilizar. Una vez que haya asociado un recurso a una carpeta o proyecto, los miembros de la organización que tengan permisos para esa carpeta o proyecto podrán acceder al recurso asociado.</block>
   <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">Ver miembros asociados a una carpeta o proyecto</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">En la página *Editar*, selecciona *Acceso* para ver la lista de miembros que tienen acceso a la carpeta o proyecto seleccionado.</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">Cuando utiliza la administración de acceso e identidad de BlueXP  (IAM) para asociar un miembro a la organización, proporciona permisos a nivel de organización, carpeta o proyecto. Para asegurarse de que esos miembros tienen permisos para acceder a los recursos correctos, deberá gestionar la jerarquía de recursos de su organización asociando recursos a proyectos y carpetas específicos. Un _resource_ es un recurso de almacenamiento que BlueXP  ya gestiona o conoce.</block>
@@ -4827,7 +4816,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">22 de enero de 2025 (versión 1,39)</block>
   <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">Vaya a<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión 1,39.</block>
   <block id="09d7c2dac047caa965175fead07159aa" category="cell">21 de febrero de 2025</block>
-  <block id="c77472b3cb88175d9f673b4976ce643a" category="paragraph">Si se ha proporcionado acceso de miembro en un nivel superior de la jerarquía (en el nivel de carpeta u organización), no puede eliminar ni cambiar el acceso de miembro al ver la carpeta o el proyecto de nivel inferior. Debe cambiar a esa parte de la jerarquía y actualizar los permisos del miembro allí. Como alternativa, puede <block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>.</block>
   <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">Agregue miembros de BlueXP  y administre sus permisos</block>
   <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>.</block>
   <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">Aprenda a usar los roles para controlar el acceso a los recursos de BlueXP .</block>
@@ -5133,4 +5121,24 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="ab244aa8ea93b8114e0cc9009af3f81b" category="list-text">Ahora puede administrar más sistemas de almacenamiento locales, como E-Series y StorageGRID.</block>
   <block id="036d3952a98988224205b6f039be487f" category="list-text"><block ref="036d3952a98988224205b6f039be487f" category="inline-link-rx"></block></block>
   <block id="6a3405f47013290acf99c18684c84269" category="list-text">Cloud Tiering ahora muestra si tiene clústeres locales de ONTAP no descubiertos para que pueda agregarlos a Cloud Manager y habilitar la organización en niveles u otros servicios en esos clústeres.</block>
+  <block id="5aac456da49390227897f1fa93e12f80" category="doc">Versión en modo privado (3,9.52)</block>
+  <block id="3ad3533e2236195b0d2ff39cc302bac1" category="paragraph">La versión 3.9.52 incluye actualizaciones para los siguientes componentes y servicios de BlueXP.</block>
+  <block id="918d08b069e4e8b9bd825945d099eff0" category="cell">3.9.52, 3.9.51</block>
+  <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">Ir a la <block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block> y consulte los cambios incluidos para las versiones 3.9.52 y 3.9.50.</block>
+  <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">Ir a la <block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de mayo de 2025.</block>
+  <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">12 de mayo de 2025 (versión 1.43)</block>
+  <block id="e604d3f0ea5a3e895506b1c61f048b4d" category="paragraph">Debe crear un conector para poder cambiar la configuración de BlueXP. <block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block>.</block>
+  <block id="5b5ddc8c08b78e13543c02ee18a88455" category="paragraph">Debe crear un conector antes de poder cambiar la configuración de BlueXP. <block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block> .</block>
+  <block id="e049b2d97a8ed0a8d2e842c6e0c625b3" category="inline-image-macro">Icono de ajustes</block>
+  <block id="1ffc44d5620a15f62b04c6a8580e783a" category="list-text">En la parte superior derecha de la consola de BlueXP , seleccione <block ref="c0116accfefd0197a42c99a28533a02c" category="inline-image-macro-rx" type="image"></block>&gt; *Gestión de identidades y acceso*.</block>
+  <block id="aa16286c48b235d2df04d578aeed8edb" category="paragraph">Utilice la búsqueda sobre la tabla para encontrar un conector específico o filtrar la tabla por jerarquía de recursos.</block>
+  <block id="f53392d049b9dddff4ba55ad74c96588" category="inline-image-macro">Un icono con tres puntos</block>
+  <block id="c16d0f9fc94c90341b26a5a3efda881c" category="list-text">Para ver las carpetas y proyectos vinculados al Conector, seleccione <block ref="e85cc783c74f9ef35cfeeca99fcaf6f6" category="inline-image-macro-rx" type="image"></block> y luego seleccione *Ver detalles*.</block>
+  <block id="e91f37331347d046e8f84d619f57d7c8" category="paragraph">La jerarquía de recursos de su organización puede tener hasta 7 niveles, con carpetas anidadas en el séptimo nivel.</block>
+  <block id="8d7e1bfd65485e98b0f12b20edd6d4b2" category="paragraph">Puede seleccionar recursos asociados con la carpeta o proyecto principal: todos los recursos para una organización principal o recursos específicos de la carpeta para una carpeta principal.</block>
+  <block id="e6e4545a44f4062ee0d1ed5ca569ddc1" category="paragraph">El sistema muestra el ID del proyecto.</block>
+  <block id="189b8907a7ab6c4c7b1ea92510e40d70" category="paragraph">Los miembros con permisos para una carpeta o proyecto pueden acceder a sus recursos asociados.</block>
+  <block id="838d404665efe77bad8374ea27c3b7ca" category="paragraph">Modificar el acceso de los miembros para garantizar que los miembros correctos puedan acceder a los recursos asociados.</block>
+  <block id="a5adc30e4e36f3ae2a8e99ff0f19a490" category="paragraph">El acceso de miembros proporcionado en un nivel de jerarquía superior no se puede cambiar en niveles inferiores. Debe cambiar a esa parte de la jerarquía y actualizar los permisos del miembro allí. Como alternativa, puede <block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>.</block>
+  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">29 de mayo de 2025</block>
 </blocks>
