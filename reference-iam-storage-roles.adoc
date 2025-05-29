@@ -16,6 +16,9 @@ summary: La gestión de identidades y accesos de BlueXP  proporciona dos funcio
 [role="lead"]
 Es posible asignar los siguientes roles a los usuarios para proporcionarles acceso a las funciones de gestión del almacenamiento en BlueXP  que se asocian con los recursos de almacenamiento compatibles. A los usuarios se les puede asignar una función de administración que les permita realizar acciones en la gestión del almacenamiento o un rol de visor si solo tienen responsabilidades de supervisión.
 
+
+NOTE: Estos roles no están disponibles desde la API de asociación de BlueXP.
+
 Pueden asignarse roles de almacenamiento a usuarios de los siguientes recursos y funciones de almacenamiento:
 
 Recursos de almacenamiento:

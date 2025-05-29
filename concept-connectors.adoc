@@ -94,14 +94,6 @@ Esta documentación se rige por el EULA. Si el producto no se utiliza de acuerdo
 
 
 
-=== Impacto sobre Cloud Volumes ONTAP
-
-Un conector es un componente clave en el estado y funcionamiento de Cloud Volumes ONTAP. Si el conector está apagado, los sistemas PAYGO de Cloud Volumes ONTAP y los sistemas BYOL basados en capacidad se apagan después de perder la comunicación con un conector durante más de 14 días. Esto sucede porque el conector actualiza las licencias del sistema cada día.
-
-Si su sistema Cloud Volumes ONTAP tiene una licencia BYOL basada en nodos, el sistema seguirá ejecutándose transcurridos 14 días porque la licencia se instala en el sistema Cloud Volumes ONTAP.
-
-
-
 == Ubicaciones admitidas
 
 Se admite un conector en las siguientes ubicaciones:

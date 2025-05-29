@@ -139,6 +139,8 @@ sidebar:
           entries:
           - title: Roles de Keystone
             url: "/reference-iam-keystone-roles.html"
+          - title: Roles de almacenamiento
+            url: "/reference-iam-storage.roles.html"
         - title: Roles de servicios de datos
           entries:
           - title: Funciones de protección contra ransomware
