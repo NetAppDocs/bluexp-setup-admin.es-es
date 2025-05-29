@@ -166,9 +166,7 @@ Compatible en regiones gubernamentales con modo restringido. No se admite en reg
 | Cartera digital | Puede utilizar la cartera digital con las opciones de licencia admitidas que se indican a continuación para el modo restringido. 
 
 
-| Clústeres de ONTAP en las instalaciones | Se admiten tanto la detección con un conector como la detección sin un conector (detección directa).
-
-Cuando detecta un clúster en las instalaciones con un conector, la vista avanzada (System Manager) no es compatible. 
+| Clústeres de ONTAP en las instalaciones | Se admiten tanto la detección con un conector como la detección sin un conector (detección directa). Cuando descubre un clúster local con un conector, la vista avanzada (Administrador del sistema) no es compatible. 
 
 
 | Replicación | Compatible en regiones gubernamentales con modo restringido. No se admite en regiones comerciales o en regiones soberanas con modo restringido. 
@@ -251,7 +249,7 @@ Servicios de BlueXP compatibles en las implementaciones de cloud:: BlueXP admite
 No se admite la detección sin conector (detección directa). 
 |===
 --
-Servicios de BlueXP compatibles en implementaciones locales:: BlueXP admite los siguientes servicios de almacenamiento y datos con modo privado cuando el conector está instalado en sus instalaciones:
+Servicios BlueXP compatibles en implementaciones locales:: BlueXP admite los siguientes servicios de almacenamiento y datos con modo privado cuando el conector está instalado en sus instalaciones:
 +
 --
 [cols="2*"]
@@ -343,7 +341,7 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
 | Google Cloud Storage | No | No 
 
 
-| Clústeres de ONTAP en las instalaciones | Sí | Sí 
+| Clústeres de ONTAP locales | Sí | Sí 
 
 
 | E-Series | No | No 

@@ -131,7 +131,7 @@ No, no es posible mover los recursos de AWS asociados con su entorno de trabajo 
 
 
 
-=== ¿Cómo funcionan las credenciales en las implementaciones del mercado y en las instalaciones?
+=== ¿Cómo funcionan las credenciales para las implementaciones del mercado y las implementaciones locales?
 
 En las secciones anteriores se describe el método de implementación recomendado para el conector, que es de BlueXP. También puede poner en marcha un conector en AWS desde AWS Marketplace y puede instalar manualmente el software del conector en su propio host Linux.
 
@@ -144,7 +144,7 @@ Para aprender a configurar los permisos, consulte las siguientes páginas:
 * Modo estándar
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Configure los permisos para una puesta en marcha de AWS Marketplace"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configure los permisos para implementaciones en las instalaciones"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configurar permisos para implementaciones locales"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configure los permisos para el modo restringido"]

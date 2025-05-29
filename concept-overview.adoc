@@ -79,10 +79,10 @@ BlueXP  incluye una amplia suite de servicios de datos integrados que te ayudan
 
 Alertas BlueXP:: Vea problemas relacionados con la capacidad, la disponibilidad, el rendimiento, la protección y la seguridad de su entorno de ONTAP.
 Catálogo de automatización de BlueXP:: Use soluciones generadas por scripts para automatizar la implementación e integración de productos y servicios de NetApp.
-Backup y recuperación de BlueXP:: Realice backups y restauraciones de datos en el cloud y en las instalaciones.
+Backup y recuperación de BlueXP:: Realice copias de seguridad y restaure datos locales y en la nube.
 Clasificación de BlueXP:: Consiga que los datos de aplicaciones y los entornos de cloud estén listos para la privacidad.
 Operaciones de cloud BlueXP:: Obtenga visibilidad de sus gastos en tecnología cloud e identifique posibles ahorros.
-Copia y sincronización de BlueXP:: Sincronice datos entre almacenes de datos en las instalaciones y en el cloud.
+Copia y sincronización de BlueXP:: Sincronice datos entre almacenes de datos locales y en la nube.
 Asesor digital de BlueXP:: Use análisis predictivos y soporte proactivo para optimizar su infraestructura de datos.
 Cartera digital de BlueXP:: Administre y supervise sus licencias y suscripciones.
 Recuperación ante desastres de BlueXP:: Protege las cargas de trabajo de VMware on-premises usando VMware Cloud on Amazon FSx para ONTAP como sitio de recuperación ante desastres.
@@ -92,7 +92,7 @@ Protección contra ransomware de BlueXP:: Detectar anomalías que puedan provoca
 Replicación de BlueXP:: Replicar datos entre sistemas de almacenamiento para dar soporte a backup y recuperación ante desastres
 Actualizaciones de software de BlueXP:: Automatice la evaluación, la planificación y la ejecución de las actualizaciones de ONTAP.
 Consola de sostenibilidad de BlueXP:: Analice la sostenibilidad de sus sistemas de almacenamiento.
-Organización en niveles de BlueXP:: Lleve su almacenamiento ONTAP en las instalaciones al cloud.
+Organización en niveles de BlueXP:: Amplíe su almacenamiento local de ONTAP a la nube.
 Almacenamiento en caché de volúmenes de BlueXP:: Cree un volumen de caché editable para acelerar el acceso a los datos o descargar el tráfico de volúmenes con un acceso frecuente.
 Fábrica de cargas de trabajo BlueXP:: Diseña, configura y opera cargas de trabajo clave con Amazon FSx for NetApp ONTAP.
 
