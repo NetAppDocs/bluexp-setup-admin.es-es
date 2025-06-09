@@ -17,17 +17,17 @@ summary: Prepara tu entorno antes de poner en marcha BlueXP en modo privado. Por
 Prepara tu entorno antes de poner en marcha BlueXP en modo privado. Por ejemplo, debe revisar los requisitos del host, preparar redes, configurar permisos y mucho más.
 
 
-NOTE: Si desea utilizar BlueXP en https://aws.amazon.com/federal/secret-cloud/["Cloud secreto de AWS"^] o la https://aws.amazon.com/federal/top-secret-cloud/["Cloud secreto principal de AWS"^], entonces debe seguir instrucciones separadas para comenzar en esos entornos. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Descubra cómo empezar a utilizar Cloud Volumes ONTAP en el cloud secreto de AWS o en el cloud secreto superior"^]
+NOTE: Para utilizar BlueXP en el  https://aws.amazon.com/federal/secret-cloud/["Cloud secreto de AWS"^] o el  https://aws.amazon.com/federal/top-secret-cloud/["Cloud secreto principal de AWS"^] , siga las instrucciones específicas para esos entornos.  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Descubra cómo empezar a utilizar Cloud Volumes ONTAP en el cloud secreto de AWS o en el cloud secreto superior"^]
 
 
 
 == Paso 1: Entender cómo funciona el modo privado
 
-Antes de empezar, debe comprender cómo funciona BlueXP en modo privado.
+Antes de comenzar, debes comprender el modo privado.
 
-Por ejemplo, debe entender que necesita utilizar la interfaz basada en explorador que está disponible localmente desde el conector BlueXP que necesita instalar. No puede acceder a BlueXP desde la consola basada en Web que se proporciona a través de la capa SaaS.
+Por ejemplo, debe utilizar la interfaz basada en navegador que está disponible localmente desde el Conector que instale. No puede acceder a BlueXP desde la consola basada en Web que se proporciona a través de la capa SaaS.
 
-Además, no todos los servicios de BlueXP están disponibles.
+Además, no todas las funciones y servicios están disponibles.
 
 link:concept-modes.html["Aprenda cómo funciona el modo privado"].
 
@@ -43,7 +43,7 @@ Dónde instalas Connector determina los servicios y características de BlueXP q
 
 == Paso 3: Revise los requisitos del host
 
-El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
+El host debe cumplir con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc. para ejecutar el software del conector.
 
 Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
 +
@@ -263,9 +263,8 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 == Paso 5: Preparar el networking
 
-Configure su red de modo que Connector pueda gestionar recursos y procesos en su entorno de cloud público. Además de tener una red virtual y una subred para el conector, deberá asegurarse de que se cumplen los siguientes requisitos.
+Configure la red del Conector para administrar recursos en su nube pública. Además de tener una red virtual y una subred para el Conector, asegúrese de que se cumplan los siguientes requisitos. Conexiones a redes de destino: El Conector debe tener una conexión de red a la ubicación donde planea administrar el almacenamiento. Por ejemplo, el VPC o vnet donde planea poner en marcha Cloud Volumes ONTAP, o el centro de datos donde residen los clústeres de ONTAP en las instalaciones.
 
-Conexiones a redes de destino:: El conector debe tener una conexión de red a la ubicación en la que desea gestionar el almacenamiento. Por ejemplo, el VPC o vnet donde planea poner en marcha Cloud Volumes ONTAP, o el centro de datos donde residen los clústeres de ONTAP en las instalaciones.
 Extremos para operaciones del día a día:: Si está planeando crear sistemas Cloud Volumes ONTAP, el conector necesita conectividad con los extremos de los recursos disponibles públicamente de su proveedor de cloud.
 +
 --
@@ -375,7 +374,7 @@ Habilite NTP:: Si tienes pensado utilizar la clasificación de BlueXP para anali
 
 == Paso 6: Preparar permisos en la nube
 
-Si Connector está instalado en la nube y tiene pensado crear sistemas Cloud Volumes ONTAP, BlueXP requiere permisos de su proveedor de nube. Debe configurar permisos en su proveedor de cloud y, a continuación, asociar dichos permisos a la instancia de conector después de instalarla.
+Si el conector está instalado en la nube y planea crear sistemas Cloud Volumes ONTAP, BlueXP requiere permisos del proveedor de la nube. Debe configurar permisos en su proveedor de cloud y, a continuación, asociar dichos permisos a la instancia de conector después de instalarla.
 
 Para ver los pasos requeridos, seleccione la opción de autenticación que desee usar para su proveedor de cloud.
 
@@ -410,7 +409,7 @@ Ahora tiene un rol de IAM para la instancia de Connector EC2.
 --
 .Clave de acceso de AWS
 --
-Configurar permisos y una clave de acceso para un usuario de IAM. Deberá proporcionar a BlueXP la clave de acceso de AWS después de instalar el conector y configurar BlueXP.
+Configurar permisos y una clave de acceso para un usuario de IAM. Proporcione a BlueXP la clave de acceso de AWS después de instalar el Conector y configurar BlueXP.
 
 .Pasos
 . Inicie sesión en la consola de AWS y desplácese al servicio IAM.
@@ -442,7 +441,7 @@ La cuenta ahora tiene los permisos necesarios.
 --
 .Rol de Azure
 --
-Cree un rol personalizado de Azure con los permisos necesarios. Asignará este rol al conector VM.
+Cree un rol personalizado de Azure con los permisos necesarios. Asigne esta función a la máquina virtual del conector.
 
 Tenga en cuenta que puede crear un rol personalizado de Azure mediante el portal de Azure, Azure PowerShell, Azure CLI o la API DE REST. Los siguientes pasos muestran cómo crear el rol con la CLI de Azure. Si prefiere utilizar un método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentación de Azure"^]
 
@@ -639,7 +638,7 @@ Ahora tienes un secreto de cliente que BlueXP puede usarlo para autenticar con M
 
 
 .Resultado
-Su principal de servicio ahora está configurado y debe haber copiado el ID de aplicación (cliente), el ID de directorio (arrendatario) y el valor del secreto de cliente. Necesita introducir esta información en BlueXP cuando agrega una cuenta de Azure.
+Su principal de servicio ahora está configurado y debe haber copiado el ID de aplicación (cliente), el ID de directorio (arrendatario) y el valor del secreto de cliente. Ingrese esta información en BlueXP cuando agregue una cuenta de Azure.
 
 --
 .Cuenta de servicio de Google Cloud
@@ -688,7 +687,7 @@ Ahora tiene una cuenta de servicio que puede asignar a la instancia de Connector
 
 == Paso 7: Habilita las API de Google Cloud
 
-Se necesitan varias API para poner en marcha Cloud Volumes ONTAP en Google Cloud.
+Debe habilitar varias API para implementar Cloud Volumes ONTAP en Google Cloud.
 
 .Paso
 . https://cloud.google.com/apis/docs/getting-started#enabling_apis["Habilite las siguientes API de Google Cloud en su proyecto"^]

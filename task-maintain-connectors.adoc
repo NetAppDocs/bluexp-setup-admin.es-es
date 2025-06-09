@@ -14,7 +14,7 @@ summary: El mantenimiento del sistema operativo en el host del conector es respo
 
 
 [role="lead"]
-El mantenimiento del sistema operativo en el host del conector es responsabilidad suya. Por ejemplo, debe aplicar actualizaciones de seguridad al sistema operativo en el host del conector siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo.
+El mantenimiento del sistema operativo en el host del Conector es responsabilidad del cliente. Por ejemplo, debe aplicar actualizaciones de seguridad al sistema operativo del host del Conector siguiendo los procedimientos estándar de su empresa para la distribución de sistemas operativos.
 
 
 TIP: Si tiene un conector existente, debe tener en cuenta link:reference-connector-operating-system-changes.html["Cambios en los sistemas operativos Linux admitidos"].

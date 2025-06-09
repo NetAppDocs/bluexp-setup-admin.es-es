@@ -27,6 +27,9 @@ Puede instalar manualmente q Connector en un host Linux que se ejecute en Google
 
 El software del conector debe ejecutarse en un host que cumpla con requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
 
+
+NOTE: El Conector reserva el rango de UID y GID de 19000 a 19200. Este rango es fijo y no se puede modificar. Si algún software de terceros en su host utiliza UID o GID dentro de este rango, la instalación del Conector fallará. NetApp recomienda usar un host sin software de terceros para evitar conflictos.
+
 Host dedicado:: El conector no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.
 +
 --

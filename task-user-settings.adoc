@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: task-user-settings.html 
+keywords: user profile, mfa, change password, role, login, mulit-factor, authentication 
+summary: 'Puede modificar su perfil de BlueXP, incluso cambiar su contraseña, habilitar la autenticación multifactor (MFA) y ver quién es su administrador de BlueXP.' 
+---
+= Administra tu configuración de usuario de BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede acceder a su perfil de BlueXP que le permite habilitar la autenticación multifactor (MFA) y comunicarse con su administrador de BlueXP.
+
+En BlueXP, cada usuario tiene un perfil que contiene información sobre él y su configuración. Puede ver y editar la configuración de su perfil desde la consola de BlueXP.
+
+
+
+== Cambiar tu nombre para mostrar
+
+Puedes cambiar tu nombre para mostrar en la consola de BlueXP. Este nombre se usa para identificarte en la consola y es visible para otros usuarios. No es el mismo que tu nombre de usuario ni tu dirección de correo electrónico, por lo que no se pueden cambiar.
+
+.Pasos
+. Seleccione el icono de perfil en la esquina superior derecha de la consola BlueXP para ver el panel de configuración de usuario.
+. Seleccione el icono *Editar* junto a su nombre.
+. Ingrese su nuevo nombre para mostrar en el campo *Nombre*.
+
+
+
+
+== Configurar la autenticación multifactor
+
+Puedes configurar la autenticación multifactor (MFA) para tu cuenta de BlueXP. La MFA mejora la seguridad de la cuenta al requerir una segunda forma de verificar tu identidad, además de tu contraseña.
+
+Los usuarios que utilizan el inicio de sesión único con un proveedor de identidad externo o el sitio de soporte de NetApp no pueden habilitar la MFA. Si alguna de estas situaciones se cumple en su caso, no verá la opción para habilitar la MFA en la configuración de su perfil.
+
+No habilite la autenticación multifactor (MFA) si su cuenta de usuario es para acceder a la API de BlueXP. La autenticación multifactor impide el acceso a la API cuando está habilitada para una cuenta de usuario. Use cuentas de servicio para todo el acceso a la API.
+
+.Antes de empezar
+* Debes haber descargado ya una aplicación de autenticación, como Google Authenticator o Microsoft Authenticator, en tu dispositivo.
+* Necesitará su contraseña para configurar MFA.
+
+
+
+NOTE: Si no tiene acceso a su aplicación de autenticación o pierde su código de recuperación, comuníquese con su administrador de BlueXP para obtener ayuda.
+
+.Pasos
+. Seleccione el icono de perfil en la esquina superior derecha de la consola BlueXP para ver el panel de configuración de usuario.
+. Seleccione *Configurar* junto al encabezado *Autenticación multifactor*.
+. Siga las instrucciones para configurar MFA para su cuenta.
+. Al terminar, se te pedirá que guardes tu código de recuperación. Puedes copiarlo o descargarlo en un archivo de texto. Guarda este código en un lugar seguro. Lo necesitarás si pierdes el acceso a tu aplicación de autenticación.
++
+Después de configurar MFA, se le solicitará que ingrese un código único de su aplicación de autenticación cada vez que inicie sesión en BlueXP.
+
+
+
+
+
+== Regenera tu código de recuperación de MFA
+
+Solo puedes usar los códigos de recuperación una vez. Si usas o pierdes el tuyo, crea uno nuevo.
+
+.Pasos
+. Seleccione el icono de perfil en la esquina superior derecha de la consola BlueXP para ver el panel de configuración de usuario.
+. Seleccionar image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] junto al encabezado *Autenticación multifactor*.
+. Seleccione *Regenerar código de recuperación*.
+. Copie el código de recuperación generado y guárdelo en una ubicación segura.
+
+
+
+
+== Comuníquese con el administrador de su organización
+
+Si necesita contactar al administrador de su organización, puede enviarle un correo electrónico directamente desde BlueXP. El administrador es responsable de gestionar las cuentas de usuario y los permisos dentro de su organización.
+
+
+NOTE: Debe tener una aplicación de correo electrónico predeterminada configurada en su navegador para poder utilizar la función *Contactar a los administradores*.
+
+.Pasos
+. Seleccione el icono de perfil en la esquina superior derecha de la consola BlueXP para ver el panel de configuración de usuario.
+. Seleccione *Contactar a los administradores* para enviar un correo electrónico al administrador de su organización.
+. Seleccione la aplicación de correo electrónico que desea utilizar.
+. Termina el correo electrónico y selecciona *Enviar*.
+

@@ -14,7 +14,7 @@ summary: BlueXP actualiza automáticamente un conector a la última versión cua
 
 
 [role="lead"]
-Cuando utiliza BlueXP  en modo estándar o en modo restringido, BlueXP  actualiza automáticamente su conector a la última versión, siempre y cuando el conector tenga acceso a Internet saliente para obtener la actualización de software. Si necesita administrar manualmente cuando se actualiza el conector, puede desactivar las actualizaciones automáticas para el modo estándar o el modo restringido.
+Cuando utiliza el modo estándar o el modo restringido, BlueXP actualiza automáticamente su Conector a la última versión, siempre que el Conector tenga acceso a Internet saliente para obtener la actualización del software. Si necesita administrar manualmente cuando se actualiza el conector, puede desactivar las actualizaciones automáticas para el modo estándar o el modo restringido.
 
 
 NOTE: Al ejecutar BlueXP  en modo privado, siempre debe actualizar el conector usted mismo.

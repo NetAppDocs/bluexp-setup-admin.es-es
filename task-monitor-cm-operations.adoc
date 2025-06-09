@@ -44,7 +44,7 @@ La siguiente tabla proporciona una comparación de la línea de tiempo y el Cent
 
 == Audite la actividad del usuario desde la línea de tiempo de BlueXP 
 
-La línea de tiempo en BlueXP  muestra las acciones que los usuarios han realizado para administrar su organización o cuenta. Esto incluye acciones de gestión, como asociar usuarios, crear entornos de trabajo, crear conectores, etc.
+La línea de tiempo muestra las acciones que los usuarios completaron para administrar su organización o cuenta. Esto incluye acciones de gestión, como asociar usuarios, crear entornos de trabajo, crear conectores, etc.
 
 La comprobación de la línea de tiempo puede ser útil si necesita identificar quién realizó una acción específica o si necesita identificar el estado de una acción.
 
@@ -137,7 +137,7 @@ Puede enviar tipos específicos de notificaciones por correo electrónico para q
 
 [NOTE]
 ====
-* Las notificaciones se envían por correo electrónico de las siguientes características y servicios de BlueXP : Conector, cartera digital de BlueXP , copia y sincronización de BlueXP  y copia de seguridad y recuperación de BlueXP .
+* Se envían notificaciones por correo electrónico para las siguientes funciones y servicios: el Conector, la billetera digital, la copia y sincronización, y la copia de seguridad y recuperación.
 * No se admite el envío de notificaciones por correo electrónico cuando el conector está instalado en un sitio sin acceso a Internet.
 
 
@@ -146,7 +146,7 @@ Los filtros que establezca en el Centro de notificaciones no determinan los tipo
 
 Todos los demás usuarios y destinatarios están configurados para no recibir ningún correo electrónico de notificación, por lo que tendrá que configurar la configuración de notificaciones para cualquier usuario adicional.
 
-Debe ser un administrador de BlueXP  para personalizar la configuración de notificaciones.
+Debe tener el rol de administrador de la organización para personalizar la configuración de notificaciones.
 
 .Pasos
 . En la barra de menús de BlueXP, seleccione *Configuración > Alertas y Configuración de notificaciones*.
@@ -168,7 +168,7 @@ image:screenshot-change-notifications.png["Captura de pantalla que muestra cómo
 
 === Añada otros destinatarios de correo electrónico
 
-Los usuarios que aparecen en la pestaña _Usuarios_ se rellenan automáticamente de los usuarios de la organización o cuenta de BlueXP . Puede agregar direcciones de correo electrónico en la ficha _Additional Recipients_ para otras personas o grupos que no tienen acceso a BlueXP, pero que necesitan recibir notificaciones sobre ciertos tipos de alertas y notificaciones.
+Los usuarios que aparecen en la pestaña _Usuarios_ se completan automáticamente a partir de los usuarios de su organización o cuenta. Puede agregar direcciones de correo electrónico en la ficha _Additional Recipients_ para otras personas o grupos que no tienen acceso a BlueXP, pero que necesitan recibir notificaciones sobre ciertos tipos de alertas y notificaciones.
 
 .Pasos
 . En la página Configuración de alertas y notificaciones, seleccione *Agregar nuevos destinatarios*.

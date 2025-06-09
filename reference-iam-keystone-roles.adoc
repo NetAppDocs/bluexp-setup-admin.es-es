@@ -17,7 +17,7 @@ summary: La gestión de identidades y accesos de BlueXP  proporciona dos funcio
 Los roles de Keystone proporcionan acceso a las consolas de Keystone y permiten a los usuarios ver y gestionar su suscripción de Keystone. Existen dos roles de Keystone: El administrador de Keystone y el visor de Keystone. La principal diferencia entre los dos roles son las acciones que pueden tomar en Keystone. El rol de administrador de Keystone es el único rol que permite crear solicitudes de servicio o modificar suscripciones.
 
 .Ejemplo de roles de Keystone en BlueXP 
-Dentro de una suscripción a Keystone, XYZ Corporation cuenta con cuatro ingenieros de almacenamiento de diferentes departamentos que ven información sobre su suscripción a Keystone. Aunque todos estos usuarios necesitan supervisar la suscripción de Keystone, solo el jefe del equipo puede hacer solicitudes de servicio. A tres de los miembros del equipo se les da el rol *Keystone Viewer*, mientras que al jefe del equipo se le da el rol *Keystone admin* para que haya un punto de control sobre las solicitudes de servicio para la empresa.
+XYZ Corporation tiene cuatro ingenieros de almacenamiento de diferentes departamentos que visualizan la información de suscripción de Keystone. Aunque todos estos usuarios necesitan supervisar la suscripción de Keystone, solo el jefe del equipo puede hacer solicitudes de servicio. A tres de los miembros del equipo se les da el rol *Keystone Viewer*, mientras que al jefe del equipo se le da el rol *Keystone admin* para que haya un punto de control sobre las solicitudes de servicio para la empresa.
 
 La siguiente tabla indica las acciones que puede realizar cada rol Keystone.
 

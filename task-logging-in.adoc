@@ -16,8 +16,6 @@ summary: La forma en que inicies sesión en BlueXP depende del modo de puesta en
 [role="lead"]
 La forma en que inicies sesión en BlueXP depende del modo de puesta en marcha de BlueXP que utilices en tu cuenta.
 
-El conector incluye una interfaz de usuario local, a la que se puede acceder desde el host del conector. Esta interfaz de usuario se proporciona a los clientes que utilizan BlueXP en el modo restringido o en el modo privado. Cuando utiliza BlueXP en el modo estándar, debe acceder a la interfaz de usuario desde https://console.bluexp.netapp.com/["Consola de SaaS de BlueXP"^]
-
 link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"].
 
 [role="tabbed-block"]

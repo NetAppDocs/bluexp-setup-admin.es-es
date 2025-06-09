@@ -14,16 +14,16 @@ summary: Gestione la jerarquía de recursos de su organización asociando recurs
 
 
 [role="lead"]
-Cuando utiliza la administración de acceso e identidad de BlueXP  (IAM) para asociar un miembro a la organización, proporciona permisos a nivel de organización, carpeta o proyecto. Para asegurarse de que esos miembros tienen permisos para acceder a los recursos correctos, deberá gestionar la jerarquía de recursos de su organización asociando recursos a proyectos y carpetas específicos. Un _resource_ es un recurso de almacenamiento que BlueXP  ya gestiona o conoce.
+Cuando asocia un miembro a su organización, proporciona permisos a nivel de organización, carpeta o proyecto. Para asegurarse de que esos miembros tienen permisos para acceder a los recursos correctos, deberá gestionar la jerarquía de recursos de su organización asociando recursos a proyectos y carpetas específicos. Un _resource_ es un recurso de almacenamiento que BlueXP  ya gestiona o conoce.
 
 
 
 == Ver los recursos de su organización
 
-Puede ver los recursos detectados y sin detectar asociados a su organización. Los recursos no detectados normalmente son recursos de almacenamiento conocidos a través del asesor digital para el que no se han añadido como entornos de trabajo.
+Puede ver los recursos detectados y sin detectar asociados a su organización. Los recursos no descubiertos son recursos de almacenamiento identificados por el asesor digital pero que no se agregan como entornos de trabajo.
 
 
-NOTE: Los recursos de Amazon FSx for NetApp ONTAP no se muestran en la página de recursos de IAM porque no puedes asociarlos a un rol de IAM. Puede ver estos recursos en su respectivo lienzo o desde cargas de trabajo.
+NOTE: La página de recursos de IAM no muestra los recursos de Amazon FSx para NetApp ONTAP porque no puede asociarlos con una función de IAM. Puede ver estos recursos en su respectivo lienzo o desde cargas de trabajo.
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
@@ -44,7 +44,7 @@ NOTE: Los recursos de Amazon FSx for NetApp ONTAP no se muestran en la página d
 
 == Asociar un recurso a carpetas y proyectos
 
-Si desea que un recurso esté disponible para una carpeta o un proyecto en su organización, deberá crear una asociación entre la carpeta o el proyecto y el recurso.
+Para que un recurso esté disponible para una carpeta o proyecto, asocie el recurso a la carpeta o proyecto.
 
 .Antes de empezar
 Debe comprender cómo funciona la asociación de recursos. link:concept-identity-and-access-management.html#resources["Obtenga información sobre los recursos, incluido cuándo asociar un recurso a una carpeta"].
@@ -93,7 +93,7 @@ NOTE: Si necesita determinar qué miembros de la organización tienen acceso al 
 
 == Eliminar un recurso de una carpeta o proyecto
 
-Para eliminar un recurso de una carpeta o proyecto, debe eliminar la asociación entre la carpeta o el proyecto y el recurso. Después de eliminar la asociación, los miembros de la organización ya no podrán gestionar el recurso desde la carpeta o el proyecto.
+Para eliminar un recurso de una carpeta o proyecto, debe eliminar la asociación entre la carpeta o el proyecto y el recurso. Eliminar la asociación impide que los miembros de la organización administren el recurso en la carpeta o el proyecto.
 
 
 NOTE: Si desea eliminar un recurso detectado de toda la organización, debe eliminar el entorno de trabajo del lienzo de BlueXP .

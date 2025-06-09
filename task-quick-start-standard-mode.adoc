@@ -14,9 +14,9 @@ summary: Empieza a usar BlueXP en el modo estándar preparando redes para la con
 
 
 [role="lead"]
-Empieza a usar BlueXP en el modo estándar preparando redes para la consola de BlueXP, registrando y creando una cuenta, opcionalmente creando un conector y suscribiéndose a BlueXP.
+Comience a utilizar BlueXP en modo estándar preparando la red para la consola de BlueXP, registrándose y creando una cuenta, creando opcionalmente un conector y suscribiéndose a NetApp Intelligent Services.
 
-En el modo estándar, los usuarios pueden acceder a BlueXP como un servicio en la nube desde la consola basada en web. Antes de comenzar, debe tener un entendimiento de link:concept-modes.html["modos de despliegue"] y. link:concept-connectors.html["Conectores"]
+En el modo estándar, accede a una consola basada en web alojada como un producto de software como servicio (SaaS) de NetApp. Antes de comenzar, debe tener un entendimiento de link:concept-modes.html["modos de despliegue"] y. link:concept-connectors.html["Conectores"]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] link:reference-networking-saas-console.html["Prepare las redes para usar la consola de BlueXP"]
 [role="quick-margin-para"]
@@ -24,7 +24,7 @@ Los equipos que accedan a la consola de BlueXP deberían tener conexiones a extr
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] link:task-sign-up-saas.html["Regístrate y crea una organización"]
 [role="quick-margin-para"]
-Vaya a https://console.bluexp.netapp.com["Consola BlueXP"^] y regístrese. Se le dará la opción de crear una organización de BlueXP , pero puede omitir ese paso si está siendo invitado a una organización existente.
+Vaya a https://console.bluexp.netapp.com["Consola BlueXP"^] y regístrese. Se le dará la opción de crear una organización, pero puede omitir ese paso si lo invitan a una organización existente.
 
 [role="quick-margin-para"]
 En este momento, ha iniciado sesión y puede empezar a utilizar varios servicios de BlueXP como Digital Advisor, Amazon FSX para ONTAP, Azure NetApp Files y muchos más. link:concept-connectors.html["Aprenda lo que puede hacer sin un conector"].
@@ -45,8 +45,8 @@ Puede crear un conector en su red local o en la nube.
 
 
 [role="quick-margin-para"]
-Tenga en cuenta que si desea utilizar los servicios de BlueXP para gestionar el almacenamiento y los datos en Google Cloud, el conector debe estar ejecutándose en Google Cloud.
+Tenga en cuenta que si desea utilizar los Servicios de Datos Inteligentes de NetApp para gestionar el almacenamiento y los datos en Google Cloud, el Conector debe estar ejecutándose en Google Cloud .
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] link:task-subscribe-standard-mode.html["Suscríbase a BlueXP"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] link:task-subscribe-standard-mode.html["Suscríbase a los servicios inteligentes de NetApp (opcional)"]
 [role="quick-margin-para"]
-Suscríbase a BlueXP en el mercado de su proveedor de la nube para pagar los servicios de BlueXP a una tarifa por hora (PAYGO) o a través de un contrato anual.
+Suscríbase a los Servicios Inteligentes de NetApp desde la plataforma de su proveedor de nube para pagar por los servicios de datos con una tarifa por hora (PAYGO) o mediante un contrato anual. Los Servicios Inteligentes de NetApp incluyen backup y recuperación, Cloud Volumes ONTAP, organización por niveles, protección contra ransomware y recuperación ante desastres. La clasificación está incluida en su suscripción sin coste adicional.

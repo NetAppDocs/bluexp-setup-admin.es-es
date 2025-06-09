@@ -22,7 +22,7 @@ link:concept-modes.html["Obtenga más información sobre los modos de implementa
 
 == Desinstale Connector cuando utilice el modo estándar o restringido
 
-Si utiliza BlueXP en modo estándar o en modo restringido (es decir, el host de Connector tiene conectividad saliente), siga los pasos que se describen a continuación para desinstalar el software Connector.
+Si está utilizando el modo estándar o el modo restringido (en otras palabras, el host del Conector tiene conectividad saliente), debe seguir los pasos a continuación para desinstalar el software del Conector.
 
 .Pasos
 . Conéctese a la máquina virtual de Linux para el conector.
@@ -39,7 +39,7 @@ _silent_ ejecuta la secuencia de comandos sin que se le solicite confirmación.
 
 == Desinstale Connector cuando utilice el modo privado
 
-Si utilizas BlueXP en modo privado (es decir, el host del conector tiene conectividad saliente _no_), debes seguir los pasos que se indican a continuación para desinstalar el software Connector.
+Si está utilizando el modo privado (en otras palabras, el host del Conector no tiene conectividad saliente), debe seguir los pasos a continuación para desinstalar el software del Conector.
 
 .Paso
 . Conéctese a la máquina virtual de Linux para el conector.
@@ -50,7 +50,7 @@ Si utilizas BlueXP en modo privado (es decir, el host del conector tiene conecti
 /opt/application/netapp/ds/cleanup.sh
 rm -rf /opt/application/netapp/
 ----
-. Desde el host de Linux, elimine los archivos de imagen del contenedor antiguos, que ahora no se utilizan. Esto garantiza que haya suficiente espacio en el directorio /var para volver a instalar.
+. Desde el host Linux, elimine los archivos de imágenes de contenedor antiguos y no utilizados para liberar espacio en el directorio /var para la reinstalación.
 +
 [role="tabbed-block"]
 ====
@@ -80,7 +80,7 @@ Si un conector está inactivo, puede eliminarlo de la lista de conectores de Blu
 Tenga en cuenta lo siguiente sobre la extracción de un conector:
 
 * Esta acción no elimina la máquina virtual.
-* Esta acción no se puede revertir--una vez que se quita un conector de BlueXP, no se puede volver a agregar.
+* Esta acción no se puede revertir: una vez que elimines un conector, no podrás volver a agregarlo.
 
 
 .Pasos

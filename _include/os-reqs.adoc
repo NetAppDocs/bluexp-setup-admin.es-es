@@ -14,6 +14,9 @@ Host puede ser de cualquier arquitectura que cumpla con los siguientes requisito
 --
 
 
+
+NOTE: El Conector reserva el rango de UID y GID de 19000 a 19200. Este rango es fijo y no se puede modificar. Si algún software de terceros en su host utiliza UID o GID dentro de este rango, la instalación del Conector fallará. NetApp recomienda usar un host sin software de terceros para evitar conflictos.
+
 Hipervisor:: Se requiere un hipervisor nativo o alojado que esté certificado para ejecutar un sistema operativo compatible.
 
 

@@ -59,7 +59,7 @@ image:diagram-iam-resource-hierarchy.png["Diagrama conceptual que muestra la jer
 
 Una _ORGANIZATION_ es el nivel superior del sistema IAM de BlueXP  y, por lo general, representa a su empresa. La organización consta de carpetas, proyectos, miembros, roles y recursos. Los conectores están asociados a proyectos específicos de la organización.
 
-Cuando te registras en BlueXP , se te pedirá que crees una nueva organización.
+BlueXP le solicita que cree una nueva organización cuando se registra.
 
 
 
@@ -108,7 +108,7 @@ _Organization admin_ puede asociar un recurso a la carpeta:
 
 image:diagram-iam-resource-association-folder-2.png["Un diagrama que muestra una carpeta, un recurso que está asociado a la carpeta y dos proyectos que residen en la carpeta: Proyecto A y proyecto B."]
 
-La asociación del recurso a la carpeta no hace que ese recurso sea accesible automáticamente desde todos los proyectos de la carpeta. Pero _Folder o Project admin_ puede decidir para qué proyectos se debe poner a disposición ese recurso. Después de tomar esa decisión, el administrador puede asociar el recurso con los proyectos correctos.
+Asociar un recurso a una carpeta no lo hace automáticamente accesible para todos los proyectos de la carpeta. El administrador de la carpeta o del proyecto decide qué proyectos pueden acceder al recurso. Después de tomar esa decisión, el administrador puede asociar el recurso con los proyectos correctos.
 
 En este ejemplo, el administrador asocia el recurso con el Proyecto A:
 
@@ -144,14 +144,14 @@ Cuando asocia un miembro a un rol, debe seleccionar toda la organización, una c
 
 Al asignar un rol, el rol se hereda por la jerarquía de la organización:
 
-Organización:: Los roles otorgados en el nivel de organización los heredan todas las carpetas, proyectos y recursos de la organización. Eso significa que el miembro tiene permisos para todo en la organización.
-Carpetas:: Los roles otorgados en el nivel de carpeta son heredados por todas las carpetas, proyectos y recursos de la carpeta.
+Organización:: Cuando se le otorga a un miembro roles de acceso a nivel de la organización, todas las carpetas, proyectos y recursos de la organización heredan esos roles. Eso significa que el miembro tiene permisos para todo en la organización.
+Carpetas:: Cuando se otorga un rol de acceso a nivel de carpeta, todas las carpetas, proyectos y recursos de la carpeta heredan ese rol.
 +
 --
 Por ejemplo, si asigna un rol en el nivel de carpeta y esa carpeta tiene tres proyectos, el miembro tendrá permisos para esos tres proyectos y cualquier recurso asociado.
 
 --
-Proyectos:: Los roles otorgados en el nivel de proyecto son heredados por todos los recursos asociados a ese proyecto.
+Proyectos:: Cuando se otorga un rol de acceso a nivel de proyecto, todos los recursos asociados con ese proyecto heredan ese rol.
 
 
 
@@ -174,12 +174,12 @@ link:reference-iam-predefined-roles.html["Obtenga más información sobre los ro
 
 Cuando un _Organization admin_ crea un conector, BlueXP  asocia automáticamente ese conector con la organización y el proyecto seleccionado actualmente. _Organization admin_ tiene acceso automáticamente a ese conector desde cualquier lugar de la organización. Pero si tiene otros miembros en la organización con roles diferentes, esos miembros solo podrán acceder a ese conector desde el proyecto en el que se creó, a menos que asocie ese conector con otros proyectos.
 
-Es posible que desee que un conector esté disponible para utilizarlo con otro proyecto en los siguientes casos:
+Puedes poner un conector a disposición de otro proyecto en estos casos:
 
 * Desea permitir que los miembros de la organización utilicen un conector existente para crear o detectar entornos de trabajo adicionales en otro proyecto
 * Ha asociado un recurso existente a otro proyecto y ese recurso lo gestiona un conector
 +
-Si se detecta un recurso asociado a un proyecto adicional mediante un conector BlueXP , también debe asociar el conector al proyecto al que está asociado el recurso. De lo contrario, los miembros que no tienen el rol _Organization admin_ no pueden acceder al conector y al recurso asociado desde el lienzo de BlueXP .
+Si se descubre un recurso que asocia con un proyecto adicional mediante un conector BlueXP, también deberá asociar el conector con el proyecto con el que ahora está asociado el recurso. De lo contrario, el conector y su recurso asociado no serán accesibles desde el lienzo de BlueXP para los miembros que no tengan el rol de _Administrador de la organización_.
 
 
 

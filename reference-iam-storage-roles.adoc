@@ -14,12 +14,12 @@ summary: La gestión de identidades y accesos de BlueXP  proporciona dos funcio
 
 
 [role="lead"]
-Es posible asignar los siguientes roles a los usuarios para proporcionarles acceso a las funciones de gestión del almacenamiento en BlueXP  que se asocian con los recursos de almacenamiento compatibles. A los usuarios se les puede asignar una función de administración que les permita realizar acciones en la gestión del almacenamiento o un rol de visor si solo tienen responsabilidades de supervisión.
+Es posible asignar los siguientes roles a los usuarios para proporcionarles acceso a las funciones de gestión del almacenamiento en BlueXP  que se asocian con los recursos de almacenamiento compatibles. Puede asignar a los usuarios un rol administrativo para administrar el almacenamiento o un rol de espectador para monitorear.
 
 
 NOTE: Estos roles no están disponibles desde la API de asociación de BlueXP.
 
-Pueden asignarse roles de almacenamiento a usuarios de los siguientes recursos y funciones de almacenamiento:
+Los administradores pueden asignar roles de almacenamiento a los usuarios para los siguientes recursos y funciones de almacenamiento:
 
 Recursos de almacenamiento:
 
@@ -38,13 +38,13 @@ Servicios y características de BlueXP :
 
 
 .Ejemplo de roles de almacenamiento en BlueXP 
-XYZ Corporation, una empresa multinacional, cuenta con un gran equipo de ingenieros de almacenamiento y administradores de almacenamiento. Quieren capacitar a este equipo para gestionar los activos de almacenamiento para sus respectivas regiones, pero restringir su acceso a tareas básicas de administración de BlueXP , como gestión de usuarios, creación de conectores y herramientas de gestión de costes, como la cartera digital.
+XYZ Corporation, una empresa multinacional, cuenta con un gran equipo de ingenieros de almacenamiento y administradores de almacenamiento. Permiten que este equipo administre los activos de almacenamiento para sus regiones mientras limita el acceso a las tareas principales de BlueXP, como la administración de usuarios, la creación de conectores y herramientas de costos como la billetera digital.
 
 Dentro de un equipo de 12, dos usuarios reciben el rol *Storage Viewer*, que les permite monitorear los recursos de almacenamiento asociados con los proyectos de BlueXP  a los que están asignados. A los nueve restantes se les da el rol de administrador de almacenamiento*, que incluye la capacidad de administrar actualizaciones de software, acceder al Administrador del sistema de ONTAP a través de BlueXP , así como descubrir recursos de almacenamiento (agregar entornos de trabajo). A una persona del equipo se le asigna el rol de *Especialista en salud del sistema* para que pueda administrar el estado de los recursos de almacenamiento en su región, pero no modificar ni eliminar ningún entorno de trabajo. Esta persona también puede realizar actualizaciones de software en los recursos de almacenamiento para los proyectos asignados.
 
 La organización tiene dos usuarios adicionales con la función *Administrador de organización* que pueden administrar todos los aspectos de BlueXP , incluyendo la administración de usuarios, la creación de conectores y herramientas de administración de costos como la cartera digital, así como varios usuarios con la función *Carpeta o administrador de proyectos* que pueden realizar tareas de administración de BlueXP  para las carpetas y proyectos a los que están asignados.
 
-La siguiente tabla indica que las acciones que puede realizar cada rol de almacenamiento BlueXP .
+La siguiente tabla muestra las acciones que realiza cada rol de almacenamiento de BlueXP.
 
 [cols="40,20a,20a,20a"]
 |===

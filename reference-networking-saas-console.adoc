@@ -14,11 +14,11 @@ summary: Al usar la consola basada en web de BlueXP que se proporciona a través
 
 
 [role="lead"]
-Cuando inicie sesión y utilice la consola basada en web de BlueXP , BlueXP  se pondrá en contacto con varios puntos finales para completar las acciones que inicie. Los equipos que acceden a la consola de BlueXP  deben tener conexiones a estos extremos.
+Al iniciar sesión y usar la consola web, BlueXP se conecta a varios endpoints para completar las acciones que usted inicia. Los equipos que acceden a la consola deben tener conexiones a estos endpoints.
 
 Estos extremos se contactan en dos situaciones:
 
-* Desde la computadora de un usuario al completar acciones específicas de la https://console.bluexp.netapp.com["Consola BlueXP basada en Web"^] que está disponible como software como servicio (SaaS).
+* Desde la computadora de un usuario al completar acciones desde el  https://console.bluexp.netapp.com["Consola BlueXP basada en Web"^] que está disponible como software como servicio (SaaS).
 * Desde el equipo de un usuario al abrir un navegador web, introduzca la dirección IP del host del conector y, a continuación, inicie sesión y configure el conector. Estos pasos son necesarios si instala manualmente el conector.
 
 
@@ -28,13 +28,13 @@ Estos extremos se contactan en dos situaciones:
 
 
 | \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com | Este es el punto final que se introduce en el navegador web para utilizar la consola basada en web de BlueXP . 
+\https://*.console.bluexp.netapp.com | Este es el punto final que ingresa en su navegador web para utilizar la consola basada en web. 
 
 
-| \https://api.bluexp.netapp.com | La consola basada en web de BlueXP  se pone en contacto con este punto final para interactuar con la API de BlueXP  en relación con las acciones relacionadas con la autorización, licencias, suscripciones, credenciales, notificaciones y más. 
+| \https://api.bluexp.netapp.com | La consola basada en web se comunica con este punto final para interactuar con la API para acciones relacionadas con autorización, licencias, suscripciones, credenciales, notificaciones y más. 
 
 
-| \https://aiq.netapp.com | Es necesario acceder al asesor digital de BlueXP. 
+| \https://aiq.netapp.com | Necesario para acceder al asesor digital. 
 
 
  a| 
@@ -46,7 +46,7 @@ Servicios de AWS (amazonaws.com):
 * Servicio de token de seguridad (STS)
 * Simple Storage Service (S3)
 
-| Necesario para implementar un conector desde BlueXP en AWS. El extremo exacto depende de la región en la que se despliega el conector. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."^] 
+| Necesario para implementar un conector desde BlueXP en AWS. El punto final exacto depende de la región en la que implemente el conector.  https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."] Sugerencia:  https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."] 
 
 
 | \https://management.azure.com
@@ -77,9 +77,9 @@ Servicios de AWS (amazonaws.com):
 \https://services.cloud.netapp.com | El explorador Web se conecta a estos extremos para una autenticación de usuario centralizada a través de BlueXP. 
 
 
-| \https://widget.intercom.io | Si busca un chat integrado en los productos que le permita hablar con expertos en cloud de NetApp. 
+| \https://widget.intercom.io | Para el chat dentro del producto que le permite hablar con el soporte de NetApp. 
 |===
-Más allá de estos puntos finales, también debe asegurarse de que Connector tiene acceso a Internet saliente para contactar puntos finales específicos para las operaciones diarias. Puede encontrar la lista de estos puntos finales siguiendo los enlaces de la siguiente sección.
+Asegúrese de que el Conector tenga acceso a internet saliente para contactar con los puntos finales para las operaciones diarias. Siga los enlaces de la siguiente sección para encontrar la lista de estos puntos finales.
 
 .Información relacionada
 * Prepare la conexión a redes para el conector

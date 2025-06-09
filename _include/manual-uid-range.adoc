@@ -1,0 +1,136 @@
+= 
+:allow-uri-read: 
+
+
+.Antes de empezar
+Debe tener lo siguiente:
+
+* Privilegios de root para instalar el conector.
+* Detalles sobre un servidor proxy, si se necesita un proxy para el acceso a Internet desde el conector.
++
+Tiene la opción de configurar un servidor proxy después de la instalación, pero para hacerlo es necesario reiniciar el conector.
+
++
+Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
+
+* Un certificado firmado por CA, si el servidor proxy utiliza HTTPS o si el proxy es un proxy de interceptación.
+
+
+.Acerca de esta tarea
+El instalador disponible en el sitio de soporte de NetApp puede ser una versión anterior. Después de la instalación, el conector se actualiza automáticamente si hay una nueva versión disponible.
+
+.Pasos
+. Si las variables del sistema _http_proxy_ o _https_proxy_ están establecidas en el host, elimínelas:
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+Si no elimina estas variables del sistema, la instalación fallará.
+
+. Descargue el software del conector de https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^]Y, a continuación, cópielo en el host Linux.
++
+Debe descargar el instalador "en línea" del conector que se utiliza en su red o en la nube. Hay disponible un instalador "sin conexión" independiente para el conector, pero sólo es compatible con implementaciones en modo privado.
+
+. Asigne permisos para ejecutar el script.
++
+[source, cli]
+----
+chmod +x BlueXP-Connector-Cloud-<version>
+----
++
+Donde <version> es la versión del conector que ha descargado.
+
+. Ejecute el script de instalación.
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+Los parámetros --proxy y --cacert son opcionales. Si tiene un servidor proxy, deberá introducir los parámetros como se muestra. El instalador no le solicita que proporcione información sobre un proxy.
+
++
+A continuación encontrará un ejemplo del comando utilizando los dos parámetros opcionales:
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxy configura el conector para que utilice un servidor proxy HTTP o HTTPS con uno de los siguientes formatos:
+
++
+** \http://address:port
+** \http://user-name:password@address:port
+** \http://domain-name%92user-name:password@address:port
+** \https://address:port
+** \https://user-name:password@address:port
+** \https://domain-name%92user-name:password@address:port
++
+Tenga en cuenta lo siguiente:
+
++
+*** El usuario puede ser un usuario local o un usuario de dominio.
+*** Para un usuario de dominio, debe utilizar el código ASCII para un \ como se muestra anteriormente.
+*** BlueXP no admite nombres de usuario ni contraseñas que incluyan el carácter @.
+*** Si la contraseña incluye alguno de los siguientes caracteres especiales, debe escapar de ese carácter especial preponiéndolo con una barra diagonal inversa: & O !
++
+Por ejemplo:
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
+
+
+
+
++
+--cacert especifica un certificado firmado por CA que se utilizará para el acceso HTTPS entre el conector y el servidor proxy. Este parámetro sólo es obligatorio si se especifica un servidor proxy HTTPS o si el proxy es un proxy de interceptación.
+
+. Si usó Podman, necesitará ajustar el puerto aardvark-dns.
++
+.. SSH a la máquina virtual del conector BlueXP.
+.. Abra el archivo podman _/usr/share/containers/containers.conf_ y modifique el puerto seleccionado para el servicio DNS de Aardvark. Por ejemplo, cámbielo a 54.
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. Reinicie la máquina virtual del conector.
+
+
+
+
+. Espere a que finalice la instalación.
++
+Al final de la instalación, el servicio Connector (occm) se reinicia dos veces si ha especificado un servidor proxy.
+
+. Abra un explorador Web desde un host que tenga una conexión con la máquina virtual Connector e introduzca la siguiente URL:
++
+https://_ipaddress_[]
+
+. Después de iniciar sesión, configure el conector:
++
+.. Especifique la organización BlueXP  que desea asociar al conector.
+.. Escriba un nombre para el sistema.
+.. En *¿se está ejecutando en un entorno seguro?* mantener el modo restringido desactivado.
++
+Debe mantener desactivado el modo restringido porque estos pasos describen cómo utilizar BlueXP en modo estándar. Sólo debe activar el modo restringido si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de entorno de administración de BlueXP. Si ese es el caso, link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar con BlueXP en modo restringido"].
+
+.. Selecciona *Comenzar*.
+
+
+

@@ -337,7 +337,7 @@ La sustitución de la suscripción actual del mercado por una nueva suscripción
 Debe crear un conector antes de poder cambiar la configuración de BlueXP. link:concept-connectors.html#connector-installation["Aprenda a crear un conector"] .
 
 .Pasos
-. En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
+. En la parte superior derecha de la consola, seleccione el ícono Configuración y seleccione *Credenciales*.
 . Seleccione el menú de acción para un conjunto de credenciales y luego seleccione *Configurar suscripción*.
 +
 Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una suscripción al mercado con credenciales asociadas a BlueXP.
@@ -350,7 +350,7 @@ Debe seleccionar las credenciales asociadas a un conector. No puedes asociar una
 .. Rellene el formulario y seleccione *Suscribirse*.
 .. Una vez completado el proceso de suscripción, seleccione *Configurar cuenta ahora*.
 +
-Se le redirigirá al sitio web de BlueXP.
+Serás redirigido a BlueXP.
 
 .. Desde la página *asignación de suscripción*:
 +
@@ -367,7 +367,7 @@ Para todas las demás organizaciones o cuentas, deberá asociar manualmente la s
 En el siguiente vídeo se muestran los pasos para suscribirse desde Azure Marketplace:
 
 +
-.Suscríbete a BlueXP desde Azure Marketplace
+.Suscríbase a NetApp Intelligent Services desde Azure Marketplace
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
