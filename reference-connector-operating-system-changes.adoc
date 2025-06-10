@@ -20,7 +20,7 @@ A medida que agregamos y eliminamos la compatibilidad con Connector en sistemas 
 
 == Sistemas operativos compatibles
 
-El conector BlueXP es compatible con los siguientes sistemas operativos Linux.
+NetApp admite el conector BlueXP con los siguientes sistemas operativos Linux.
 
 [role="tabbed-block"]
 ====
@@ -93,9 +93,9 @@ Instalación manual::
 Tenga en cuenta lo siguiente acerca de la compatibilidad con RHEL 8 y 9:
 
 Limitaciones:: La clasificación BlueXP es compatible si instala el Connector en un host RHEL 8 o 9 que reside en las instalaciones. No se admite si el host RHEL 8 o 9 reside en AWS, Azure o Google Cloud.
-Herramienta de orquestación de contenedores:: Podman es necesario como herramienta de orquestación de contenedores al instalar el conector en un host RHEL 8 o 9. Docker Engine no es compatible con RHEL 8 y 9.
+Herramienta de orquestación de contenedores:: Debe utilizar la herramienta Podman como herramienta de orquestación de contenedores al instalar el Conector en un host RHEL 8 o 9. Docker Engine no es compatible con RHEL 8 y 9.
 Modo de despliegue:: RHEL 8 y 9 son compatibles cuando se utiliza BlueXP en el modo estándar, el modo restringido y el modo privado.
-Versiones de conector admitidas:: RHEL 8 y 9 son compatibles a partir de las siguientes versiones del conector:
+Versiones de conector admitidas:: NetApp admite RHEL 8 y 9 a partir de las siguientes versiones del Conector:
 +
 --
 * 3.9.40 Cuando se utiliza BlueXP  en modo estándar o en modo restringido
@@ -119,7 +119,7 @@ https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-e
 
 === Conectores existentes en RHEL 7 o CentOS 7
 
-Si ya tiene un conector existente que funcione en RHEL 7 o CentOS 7, no admitimos la actualización ni la conversión del sistema operativo a RHEL 8 o 9. Para iniciar la ejecución de un conector en un host RHEL 8 o 9, debe hacer lo siguiente:
+Si ya tiene un conector existente que funcione en RHEL 7 o CentOS 7, no admitimos la actualización ni la conversión del sistema operativo a RHEL 8 o 9. Debe crear un nuevo conector en un sistema operativo compatible.
 
 . Configure un host RHEL 8 o 9.
 . Instale Podman.

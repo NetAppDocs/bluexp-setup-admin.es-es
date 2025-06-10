@@ -26,7 +26,7 @@ BlueXP  proporciona un control unificado del almacenamiento en tu multinube hí
 
 === Control unificado del almacenamiento desde el lienzo de BlueXP 
 
-El lienzo _BlueXP _ le permite detectar, poner en marcha, optimizar y gestionar el almacenamiento en la nube y on-premises. El lienzo proporciona una ubicación única para toda la gestión del almacenamiento.
+El lienzo _BlueXP_ le permite descubrir, implementar y administrar el almacenamiento local y en la nube. El lienzo proporciona una ubicación única para toda la gestión del almacenamiento.
 
 
 
@@ -67,7 +67,7 @@ Almacenamiento de objetos en cloud::
 
 ==== Gestión del almacenamiento desde entornos de trabajo
 
-En el lienzo de BlueXP , _working environments_ representa el almacenamiento en la nube y en las instalaciones que has detectado o puesto en marcha. Puede seleccionar un entorno de trabajo e integrarlo con los servicios de datos de BlueXP  o introducir el entorno de trabajo para completar acciones de gestión del almacenamiento, como añadir volúmenes.
+En el lienzo de BlueXP, los entornos de trabajo representan el almacenamiento detectado o implementado. Puede seleccionar un entorno de trabajo para integrarlo con los servicios de datos de BlueXP o administrar el almacenamiento, como agregar volúmenes.
 
 image:screenshot-canvas.png["Una captura de pantalla del lienzo de BlueXP  que muestra varios entornos de trabajo, uno de los cuales se selecciona y muestra la capacidad de activar los servicios de datos de BlueXP  o seleccionar Entrar entorno de trabajo para gestionar el almacenamiento."]
 
@@ -75,7 +75,7 @@ image:screenshot-canvas.png["Una captura de pantalla del lienzo de BlueXP  que 
 
 === Servicios integrados para proteger, asegurar y optimizar los datos
 
-BlueXP  incluye una amplia suite de servicios de datos integrados que te ayudan a mantener la seguridad, la integridad y la disponibilidad de los datos en tus entornos de almacenamiento on-premises y en la nube.
+BlueXP incluye servicios de datos integrados para mantener la seguridad y disponibilidad de sus datos en el almacenamiento local y en la nube.
 
 Alertas BlueXP:: Vea problemas relacionados con la capacidad, la disponibilidad, el rendimiento, la protección y la seguridad de su entorno de ONTAP.
 Catálogo de automatización de BlueXP:: Use soluciones generadas por scripts para automatizar la implementación e integración de productos y servicios de NetApp.
@@ -109,7 +109,7 @@ BlueXP le permite gestionar el almacenamiento en cloud y utilizar servicios clou
 
 == Coste
 
-El precio de BlueXP depende de los servicios que usted planea utilizar. https://bluexp.netapp.com/pricing["Más información sobre los precios de BlueXP"^]
+El precio de BlueXP depende de los servicios que utilices. https://bluexp.netapp.com/pricing["Más información sobre los precios de BlueXP"^]
 
 
 
@@ -135,7 +135,7 @@ La gestión de acceso e identidad (IAM) de BlueXP  es un modelo de gestión de 
 * La gestión de acceso permite asignar un rol a miembros de distintos niveles de la jerarquía de la organización
 
 
-BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar. Si utiliza BlueXP  en modo restringido o privado, utilizará una _account_ de BlueXP  para gestionar espacios de trabajo, usuarios y recursos.
+BlueXP IAM es compatible al usar BlueXP en modo estándar o restringido. Si usa BlueXP en modo privado, utilice una cuenta de BlueXP para administrar espacios de trabajo, usuarios y recursos.
 
 * link:concept-identity-and-access-management.html["Obtenga más información sobre BlueXP  IAM"]
 * link:concept-netapp-accounts.html["Obtenga más información sobre las cuentas de BlueXP"]

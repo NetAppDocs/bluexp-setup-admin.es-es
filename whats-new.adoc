@@ -18,6 +18,36 @@ Descubra las novedades de las funciones de administración de BlueXP : Gestión
 
 
 
+== 9 de junio de 2025
+
+
+
+=== Conector 3.9.53
+
+Esta versión del conector BlueXP incluye mejoras de seguridad y correcciones de errores.
+
+En este momento, la versión 3.9.53 está disponible para el modo estándar y el modo restringido.
+
+
+
+=== Gestión de acceso e identidades (IAM) de BlueXP 
+
+
+
+==== Autenticación multifactor (MFA)
+
+Los usuarios no federados ahora pueden habilitar la autenticación multifactor (MFA) para sus cuentas de BlueXP, lo que mejora la seguridad. Los administradores de BlueXP pueden administrar la configuración de MFA para sus usuarios, restableciéndola o desactivándola según sea necesario.
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Obtenga información sobre cómo configurar la autenticación multifactor para usted."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Obtenga información sobre cómo administrar la autenticación multifactor para los usuarios."^]
+
+
+
+=== Cargas de trabajo
+
+Ahora puede ver y eliminar las credenciales de Amazon FSx para NetApp ONTAP desde la página Credenciales en BlueXP.
+
+
+
 == 29 de mayo de 2025
 
 
