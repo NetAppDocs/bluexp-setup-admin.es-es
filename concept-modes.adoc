@@ -74,6 +74,9 @@ La tabla siguiente ofrece una comparación de estos modos.
 | Autenticación | A través de SaaS mediante auth0, inicio de sesión de NSS o federación de identidades | A través de SaaS mediante auth0 o federación de identidades | Autenticación de usuario local 
 
 
+| Autenticación de múltiples factores | Disponible para usuarios locales | No disponible | No disponible 
+
+
 | Almacenamiento y servicios de datos | Todos son compatibles | Muchos son compatibles | Se admiten varios 
 
 
