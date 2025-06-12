@@ -41,6 +41,14 @@ link:reference-connector-default-config.html["Obtenga información sobre la conf
 
 
 
+== Monitorizar el espacio en disco
+
+BlueXP le notifica cuando el espacio en disco de la máquina virtual del conector es bajo. Supervise estas notificaciones en el Centro de notificaciones o configúrelo para que envíe alertas por correo electrónico. Resolver los problemas de espacio en disco es su responsabilidad. link:ttps://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["Revise el artículo de la base de conocimientos de NetApp"^].
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center["Leer más."^]
+
+
+
 == Parada e inicio de Connector VM
 
 Si necesita detener y, a continuación, iniciar Connector VM, debe hacerlo desde la consola de su proveedor de cloud o mediante los procedimientos estándar para la gestión en las instalaciones.
