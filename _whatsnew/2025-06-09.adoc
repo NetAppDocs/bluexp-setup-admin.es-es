@@ -18,6 +18,20 @@ El Centro de notificaciones ahora incluye alertas sobre el uso del espacio en di
 
 
 
+=== Mejoras en la auditoría
+
+La Cronología ahora incluye eventos de inicio de sesión de los usuarios. Esto permite ver cuándo iniciaron sesión en BlueXP, lo que facilita la auditoría y la supervisión de la seguridad. Los usuarios de la API con el rol de administrador de la organización pueden ver la dirección de correo electrónico del usuario que inició sesión incluyendo el...  `includeUserData=true`` parámetro como en el siguiente:  `/audit/<account_id>?includeUserData=true` .
+
+
+
+=== Gestión de suscripciones de Keystone disponible en BlueXP
+
+Puede administrar su suscripción a NetApp Keystone desde BlueXP.
+
+link:https://docs.netapp.com/us-en/keystone-staas/index.html["Obtenga información sobre la gestión de suscripciones de Keystone en BlueXP."^]
+
+
+
 === Gestión de acceso e identidades (IAM) de BlueXP 
 
 

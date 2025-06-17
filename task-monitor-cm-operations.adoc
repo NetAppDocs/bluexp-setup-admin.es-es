@@ -16,7 +16,7 @@ summary: Puede supervisar el estado de las operaciones que está realizando Blue
 [role="lead"]
 Puede supervisar el estado de las operaciones que está realizando BlueXP para ver si hay algún problema que necesite solucionar. Puede ver el estado en la línea de tiempo, el Centro de notificaciones o enviar notificaciones a su correo electrónico.
 
-La siguiente tabla proporciona una comparación de la línea de tiempo y el Centro de notificaciones para que pueda comprender lo que cada uno tiene para ofrecer.
+La tabla compara la Línea de tiempo y el Centro de notificaciones para resaltar sus características.
 
 [cols="47,47"]
 |===
@@ -26,7 +26,7 @@ La siguiente tabla proporciona una comparación de la línea de tiempo y el Cent
 | Muestra el estado de alto nivel de eventos y acciones | Proporciona detalles sobre cada evento o acción para una investigación posterior 
 
 
-| Muestra el estado de la sesión de inicio de sesión actual (la información no aparecerá en el Centro de notificaciones después de cerrar la sesión). | Conserva el estado del último mes 
+| Muestra el estado de la sesión de inicio de sesión actual (la información no aparece en el Centro de notificaciones después de cerrar la sesión) | Conserva el estado del último mes 
 
 
 | Muestra solo las acciones iniciadas en la interfaz de usuario | Muestra todas las acciones de la interfaz de usuario o las API 
@@ -46,7 +46,7 @@ La siguiente tabla proporciona una comparación de la línea de tiempo y el Cent
 
 La línea de tiempo muestra las acciones que los usuarios completaron para administrar su organización o cuenta. Esto incluye acciones de gestión, como asociar usuarios, crear entornos de trabajo, crear conectores, etc.
 
-La comprobación de la línea de tiempo puede ser útil si necesita identificar quién realizó una acción específica o si necesita identificar el estado de una acción.
+La línea de tiempo ayuda a identificar quién realizó una acción o su estado.
 
 .Pasos
 . En la parte superior derecha de la consola BlueXP , selecciona image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Línea de tiempo*.
@@ -56,14 +56,21 @@ Por ejemplo, puedes usar el filtro *Servicio* para mostrar acciones relacionadas
 
 
 
-.Resultado
-La línea de tiempo se actualiza para mostrar las acciones de gestión completadas.
+
+
+=== Descargar registros de auditoría desde la línea de tiempo
+
+Puede descargar los registros de auditoría de la Cronología a un archivo CSV. Esto le permite mantener un registro de las acciones realizadas por los usuarios en su organización. El archivo CSV descargado contiene todas las columnas disponibles de la Cronología, independientemente de las que esté filtrando o mostrando.
+
+.Pasos
+. En la línea de tiempo, seleccione el ícono de descarga en la esquina superior derecha de la tabla.
+
 
 
 
 == Supervise las actividades mediante el Centro de notificaciones
 
-Las notificaciones realizan un seguimiento del progreso de las operaciones que ha iniciado en BlueXP para que pueda comprobar si la operación se ha realizado correctamente o no. Le permiten ver el estado de muchas acciones de BlueXP que inició durante su sesión de inicio de sesión actual. No todos los servicios de BlueXP informan información en el Centro de notificaciones en este momento.
+Las notificaciones rastrean el progreso de sus operaciones de BlueXP para verificar el éxito. Le permiten ver el estado de muchas acciones de BlueXP que inició durante su sesión de inicio de sesión actual. No todos los servicios de BlueXP informan información en el Centro de notificaciones en este momento.
 
 Puede visualizar las notificaciones seleccionando la campana de notificación (image:icon_bell.png["timbre de notificación"]) en la barra de menús. El color de la pequeña burbuja en la campana indica la notificación de gravedad de nivel más alto que está activa. Así que si ves una burbuja roja, significa que hay una notificación importante que debes mirar.
 
@@ -83,7 +90,7 @@ https://docs.netapp.com/us-en/bluexp-alerts/index.html["Más información sobre 
 
 === Tipos de notificación
 
-Las notificaciones se clasifican en las siguientes categorías:
+BlueXP clasifica las notificaciones en las siguientes categorías:
 
 [cols="20,60"]
 |===
@@ -121,7 +128,7 @@ Por ejemplo, si desea ver sólo las notificaciones "error" y "Advertencia" para 
 
 === Descartar notificaciones
 
-Puede eliminar notificaciones de la página si ya no necesita verlos. Puede descartar todas las notificaciones al mismo tiempo o descartar notificaciones individuales.
+Puede eliminar notificaciones de la página si ya no necesita verlos. Puede descartar notificaciones individualmente o todas a la vez.
 
 Para descartar todas las notificaciones, en el Centro de notificaciones, seleccione image:button_3_vert_dots.png["un icono con tres puntos verticales"] Y selecciona *descartar todo*.
 image:screenshot_notification_menu.png["Captura de pantalla que muestra el menú Notificaciones para seleccionar los ajustes y descartar todas las opciones."]
@@ -137,7 +144,7 @@ Puede enviar tipos específicos de notificaciones por correo electrónico para q
 
 [NOTE]
 ====
-* Se envían notificaciones por correo electrónico para las siguientes funciones y servicios: el Conector, la billetera digital, la copia y sincronización, y la copia de seguridad y recuperación.
+* BlueXP envía notificaciones por correo electrónico para el conector, la billetera digital, la copia y sincronización, y la copia de seguridad y recuperación.
 * No se admite el envío de notificaciones por correo electrónico cuando el conector está instalado en un sitio sin acceso a Internet.
 
 
