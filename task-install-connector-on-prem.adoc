@@ -75,7 +75,7 @@ Ubuntu
  a| 
 3.9.45 o posterior con BlueXP  en modo estándar o restringido
  a| 
-Docker Engine 26.0.0
+Motor Docker 23.06 a 28.0.0.
  a| 
 No admitido
 
@@ -86,11 +86,7 @@ No admitido
  a| 
 3.9.29 o posterior
  a| 
-Docker Engine 23.0.6 a 26.0.0
-
-26.0.0 es compatible con _NEW_ Connector 3.9.44 o instalaciones posteriores
-
-27.0.0 y 28.0.0 son compatibles con _NEW_ Connector 3.9.52 o instalaciones posteriores
+Motor Docker 23.0.6 a 28.0.0.
  a| 
 No admitido
 

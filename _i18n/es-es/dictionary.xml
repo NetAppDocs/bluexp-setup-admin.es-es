@@ -3562,7 +3562,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="paragraph">Ubuntu</block>
   <block id="4cb2cce5e859bbc5a24d65a5385fba47" category="paragraph">24,04 LTS</block>
   <block id="8be08c10396c9c621de2a80e7ee83e4b" category="paragraph">3.9.45 o posterior con BlueXP  en modo estándar o restringido</block>
-  <block id="e8ad09ce82a676af682d64048bfaccdf" category="paragraph">Docker Engine 26.0.0</block>
   <block id="aa7f77e663b832d5b0e544c5511e680c" category="paragraph">No admitido</block>
   <block id="2464b5a925b66efe79da228156bcf8ec" category="paragraph">22,04 LTS</block>
   <block id="607262a04e5c4340fc8d641e874a5695" category="paragraph">3.9.29 o posterior</block>
@@ -4653,7 +4652,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 de febrero de 2025</block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">Actualizaciones de licencias en la cartera digital, lo que significa que no podrá aprovechar la capacidad recién adquirida.</block>
   <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">El mantenimiento del sistema operativo en el host del conector es responsabilidad de usted (cliente). Por ejemplo, usted (cliente) debe aplicar actualizaciones de seguridad al sistema operativo en el host de Connector siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo.</block>
-  <block id="1d91ba09123988594615f201a8f3eb35" category="paragraph">27.0.0 y 28.0.0 son compatibles con _NEW_ Connector 3.9.52 o instalaciones posteriores</block>
   <block id="acd994f3f908677c5d2ca549b13f2fdd" category="paragraph">Tenga en cuenta que usted (cliente) no necesita detener ningún servicio en el host de Connector al aplicar actualizaciones de seguridad menores.</block>
   <block id="cadb6c86b1cf837dd9677b37639d5d4d" category="paragraph">Si usted (cliente) necesita detener y luego iniciar la máquina virtual Connector, debe hacerlo desde la consola de su proveedor de cloud o mediante los procedimientos estándar para la gestión en las instalaciones.</block>
   <block id="f4136fdf902ca32b4530c7a614c0ed71" category="doc">Conector 3.9.52</block>
@@ -5227,4 +5225,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">Debe tener el rol de administrador de la organización para personalizar la configuración de notificaciones.</block>
   <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">La Cronología ahora incluye eventos de inicio y cierre de sesión de los usuarios. Puedes ver la actividad de inicio de sesión, lo que facilita la auditoría y la supervisión de la seguridad. Los usuarios de la API con el rol de administrador de la organización pueden ver la dirección de correo electrónico del usuario que inició sesión incluyendo el... <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block> parámetro como en el siguiente: <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> .</block>
   <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">El Centro de notificaciones ahora incluye alertas sobre el uso del espacio en disco en el Conector. <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
+  <block id="8d6b52099b0900a6f09e2d0ebba1cd5a" category="paragraph">Motor Docker 23.06 a 28.0.0.</block>
+  <block id="0930e6e62078c5446e99045f0a678607" category="paragraph">Motor Docker 23.0.6 a 28.0.0.</block>
 </blocks>
