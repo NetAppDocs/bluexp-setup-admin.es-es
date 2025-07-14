@@ -1,0 +1,8 @@
+= 
+:allow-uri-read: 
+
+
+.Antes de empezar
+* Se requiere una cuenta de IdP con privilegios administrativos. Coordínese con el administrador de su IdP para completar los pasos.
+* Identifique el dominio que desea usar para la federación. Puede usar su dominio de correo electrónico o uno diferente de su propiedad. Si desea usar un dominio distinto a su dominio de correo electrónico, primero debe verificarlo en BlueXP. Puede hacerlo siguiendo los pasos de la sección link:task-federation-verify-domain.html["Verifique su dominio en BlueXP"] tema.
+

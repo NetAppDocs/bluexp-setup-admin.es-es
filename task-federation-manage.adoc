@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: task-federation-manage.html 
+keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity 
+summary: Después de agregar una conexión federada, puede administrarla en BlueXP. Puede ver el estado de la conexión y habilitarla o deshabilitarla según sea necesario. 
+---
+= Administrar federaciones en BLueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puedes administrar tu federación en BlueXP. Puedes desactivarla, actualizar las credenciales caducadas y desactivarla si ya no la necesitas.
+
+También puede agregar un dominio verificado a una federación existente, lo que le permite utilizar múltiples dominios para su conexión federada.
+
+
+NOTE: Los eventos de gestión de la federación, como la habilitación, deshabilitación y actualización de las federaciones, se muestran en la línea de tiempo. link:task-monitor-cm-operations.html["Obtenga más información sobre las operaciones de monitoreo en BlueXP."]
+
+.Roles requeridos
+Se requiere un administrador de la organización o de la federación para crear y administrar federaciones. El visor de federaciones puede ver la página de la federación. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+
+
+== Habilitar una federación
+
+Si ha creado una federación, pero no está habilitada, puede habilitarla a través de la pestaña "Federación" en BlueXP. Al habilitar una federación, los usuarios asociados a ella podrán iniciar sesión en BlueXP con sus credenciales corporativas. Debe haber creado la federación y haberla probado correctamente antes de habilitarla.
+
+.Pasos
+. En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de acciones image:icon-action.png["un icono con tres puntos horizontales"] junto a la federación que desea habilitar y seleccione *Habilitar*.
+
+
+
+
+== Agregar un dominio verificado a una federación existente
+
+Puede agregar un dominio verificado a una federación existente en BlueXP para usar múltiples dominios con el mismo proveedor de identidad (IdP).
+
+Debe haber verificado el dominio en BlueXP antes de poder agregarlo a una federación. Si aún no lo ha hecho, puede hacerlo siguiendo los pasos de link:task-federation-verify-domain.html["Verifique su dominio en BlueXP"] .
+
+.Pasos
+. En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de acciones image:button_3_vert_dots.png["un icono con tres puntos verticales"] Junto a la federación a la que desea agregar un dominio verificado, seleccione *Actualizar dominios*. El cuadro de diálogo *Actualizar dominios* muestra el dominio ya asociado a esta federación.
+. Seleccione un dominio verificado de la lista de dominios disponibles.
+. Seleccione *Actualizar*. Puede tomar hasta 30 segundos para que los usuarios del nuevo dominio tengan acceso federado a BlueXP.
+
+
+
+
+== Actualización de una conexión federada que está a punto de expirar
+
+Puede actualizar los detalles de una federación en BlueXP. Por ejemplo, deberá actualizar la federación si las credenciales, como un certificado o un secreto de cliente, caducan. Cuando sea necesario, actualice la fecha de notificación para recordarle que debe actualizar la conexión antes de que caduque.
+
+
+IMPORTANT: Actualice BlueXP antes de actualizar su IdP para evitar problemas de inicio de sesión. Mantenga la sesión iniciada en BlueXP durante el proceso.
+
+.Pasos
+. En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de acciones (tres puntos verticales) junto a la federación que desea actualizar y seleccione *Actualizar federación*.
+. Actualice los detalles de la federación según sea necesario.
+. Seleccione *Actualizar*.
+
+
+
+
+== Probar una federación existente
+
+Si tiene problemas con una federación existente, puede probar la conexión para comprobar su correcto funcionamiento. Esto le ayudará a identificar y solucionar cualquier problema con la federación.
+
+.Pasos
+. En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de acciones image:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Probar conexión*.
+. Seleccione *Prueba*. Se le solicitará que inicie sesión con sus credenciales corporativas. Si la conexión es correcta, se le redirigirá a la consola de BlueXP . Si la conexión falla, verá un mensaje de error que indica el problema con la federación.
+. Seleccione *Listo* para regresar a la pestaña *Federación*.
+
+
+
+
+== Deshabilitar una federación
+
+Si ya no necesita una federación, puede desactivarla. Esto impide que los usuarios asociados a ella inicien sesión en BlueXP con sus credenciales corporativas. Puede reactivarla más adelante si es necesario.
+
+Debes desactivar una federación antes de eliminarla. Por ejemplo, si vas a dar de baja el IdP en favor de otro IdP o si ya no quieres usar la federación. Esto te permitirá volver a activarla más adelante si es necesario.
+
+.Pasos
+. En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de acciones image:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Deshabilitar*.
+
+
+
+
+== Eliminar una federación
+
+Si ya no necesita una federación, puede eliminarla. Esto elimina la federación de BlueXP e impide que los usuarios asociados a ella inicien sesión en BlueXP con sus credenciales corporativas. Por ejemplo, si el IdP se está desmantelando o si la federación ya no es necesaria. Tras eliminar una federación, no podrá recuperarla. Debe crear una nueva.
+
+
+IMPORTANT: Debes deshabilitar una federación antes de eliminarla. No es posible recuperarla después de eliminarla.
+
+.Pasos
+. En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de acciones image:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Eliminar*.
+

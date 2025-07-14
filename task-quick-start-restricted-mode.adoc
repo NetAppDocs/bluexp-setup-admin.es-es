@@ -16,7 +16,7 @@ summary: Empieza a usar BlueXP en modo restringido preparando tu entorno, ponien
 [role="lead"]
 Comience a utilizar BlueXP en modo restringido preparando su entorno e implementando el Conector.
 
-El modo restringido suele ser utilizado por los gobiernos estatales y locales y las empresas reguladas, incluidas las implementaciones en las regiones AWS GovCloud y Azure Government. Antes de empezar, debería comprender link:concept-netapp-accounts.html["Cuentas BlueXP"], link:concept-connectors.html["Conectores"], y. link:concept-modes.html["modos de despliegue"].
+El modo restringido suele ser utilizado por los gobiernos estatales y locales y las empresas reguladas, incluidas las implementaciones en las regiones AWS GovCloud y Azure Government. Antes de comenzar, asegúrese de comprender link:concept-connectors.html["Conectores"] y link:concept-modes.html["modos de despliegue"] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] link:task-prepare-restricted-mode.html["Prepárese para la puesta en marcha"]
 [role="quick-margin-list"]
@@ -32,6 +32,6 @@ El modo restringido suele ser utilizado por los gobiernos estatales y locales y 
 . Proporcione a BlueXP los permisos que configuró anteriormente.
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] link:task-subscribe-restricted-mode.html["Suscríbase a NetApp Intelligent Services (opcional)"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] link:task-subscribe-restricted-mode.html["Suscríbase a los servicios inteligentes de NetApp (opcional)"]
 [role="quick-margin-para"]
 Opcional: Suscríbase a los Servicios Inteligentes de NetApp desde el marketplace de su proveedor de nube para pagar los servicios de datos por hora (PAYGO) o mediante un contrato anual. Los Servicios Inteligentes de NetApp incluyen backup y recuperación, Cloud Volumes ONTAP, clasificación por niveles, protección contra ransomware y recuperación ante desastres. La clasificación está incluida en su suscripción sin coste adicional.

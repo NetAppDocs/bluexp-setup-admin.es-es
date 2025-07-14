@@ -383,7 +383,7 @@ Para obtener imágenes para actualizaciones de Connector.
 --
 
 
-Servidor proxy:: Si su empresa requiere la implementación de un servidor proxy para todo el tráfico de Internet saliente, obtenga la siguiente información sobre su proxy HTTP o HTTPS. Deberá proporcionar esta información durante la instalación. Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
+Servidor proxy:: NetApp admite configuraciones de proxy explícitas y transparentes. Si usa un proxy transparente, solo necesita proporcionar el certificado del servidor proxy. Si usa un proxy explícito, también necesitará la dirección IP y las credenciales.
 +
 --
 * Dirección IP
@@ -640,10 +640,12 @@ Debe tener lo siguiente:
 +
 Tiene la opción de configurar un servidor proxy después de la instalación, pero para hacerlo es necesario reiniciar el conector.
 
-+
-Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
-
 * Un certificado firmado por CA, si el servidor proxy utiliza HTTPS o si el proxy es un proxy de interceptación.
+
+
+
+NOTE: No se puede configurar un certificado para un servidor proxy transparente al instalar el Conector manualmente. Si necesita configurar un certificado para un servidor proxy transparente, debe usar la Consola de mantenimiento después de la instalación. Obtenga más información sobre el link:reference-connector-maint-console.html["Consola de mantenimiento del conector"].
+
 * Una identidad gestionada habilitada en la máquina virtual de Azure para poder proporcionar los permisos de Azure necesarios a través de un rol personalizado.
 +
 https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Documentación de Microsoft Azure: Configure las identidades gestionadas para los recursos de Azure en una máquina virtual mediante el portal de Azure"^]
@@ -684,10 +686,10 @@ Donde <version> es la versión del conector que ha descargado.
  ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
-Los parámetros --proxy y --cacert son opcionales. Si tiene un servidor proxy, deberá introducir los parámetros como se muestra. El instalador no le solicita que proporcione información sobre un proxy.
+Necesitará agregar la información del proxy si su red requiere uno para acceder a internet. Puede agregar un proxy transparente o explícito. Los parámetros --proxy y --cacert son opcionales y no se le solicitará que los agregue. Si tiene un servidor proxy, deberá introducir los parámetros como se muestra.
 
 +
-A continuación encontrará un ejemplo del comando utilizando los dos parámetros opcionales:
+A continuación se muestra un ejemplo de configuración de un servidor proxy explícito con un certificado firmado por una CA:
 
 +
 [source, cli]
@@ -718,13 +720,21 @@ Por ejemplo:
 +
 \http://bxpproxyuser:netapp1\!@address:3128
 
-
++
+--cacert especifica un certificado firmado por CA que se utilizará para el acceso HTTPS entre el conector y el servidor proxy. Este parámetro es necesario para servidores proxy HTTPS, servidores proxy de interceptación y servidores proxy transparentes.
 
 
 
 +
---cacert especifica un certificado firmado por CA que se utilizará para el acceso HTTPS entre el conector y el servidor proxy. Este parámetro sólo es obligatorio si se especifica un servidor proxy HTTPS o si el proxy es un proxy de interceptación.
+A continuación se muestra un ejemplo de configuración de un servidor proxy transparente. Al configurar un proxy transparente, no es necesario definir el servidor proxy. Solo se agrega un certificado firmado por una CA al host del conector:
 
+
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40 --cacert /tmp/cacert/certificate.cer
+----
 . Si usó Podman, necesitará ajustar el puerto aardvark-dns.
 +
 .. SSH a la máquina virtual del conector BlueXP.

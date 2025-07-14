@@ -492,7 +492,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-Servidor proxy:: Si su empresa requiere la implementación de un servidor proxy para todo el tráfico de Internet saliente, obtenga la siguiente información sobre su proxy HTTP o HTTPS. Deberá proporcionar esta información durante la instalación. Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
+Servidor proxy:: NetApp admite configuraciones de proxy explícitas y transparentes. Si usa un proxy transparente, solo necesita proporcionar el certificado del servidor proxy. Si usa un proxy explícito, también necesitará la dirección IP y las credenciales.
 +
 --
 * Dirección IP

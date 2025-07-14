@@ -16,9 +16,6 @@ summary: 'La gestión de identidades y accesos (IAM) de BlueXP  le permite cont
 [role="lead"]
 La gestión de identidades y accesos (IAM) de BlueXP  le permite organizar y controlar el acceso a sus recursos de NetApp. Puede organizar sus recursos de acuerdo con la jerarquía de su organización. Por ejemplo, puede organizar recursos por ubicación geográfica, sitio o unidad de negocio. A continuación, puede asignar roles de IAM a miembros de partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.
 
-BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar y modo restringido. Si utiliza BlueXP  en modo privado, utilice una _account_ de BlueXP  para gestionar usuarios y recursos.
-
-* link:concept-netapp-accounts.html["Obtenga más información sobre las cuentas de BlueXP"]
 * link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"]
 
 
@@ -26,7 +23,7 @@ BlueXP  IAM es compatible cuando se utiliza BlueXP  en modo estándar y modo r
 
 == Cómo funciona BlueXP  IAM
 
-BlueXP  IAM le permite otorgar acceso a los recursos de su organización mediante la definición de los miembros que tienen permisos para partes específicas de la jerarquía de la organización. Por ejemplo, un miembro puede tener permisos de administrador de proyecto para un proyecto que tiene cinco recursos asociados.
+BlueXP IAM permite otorgar acceso a recursos asignando roles de acceso a usuarios a partes específicas de la jerarquía. Por ejemplo, a un miembro se le puede asignar el rol de administrador de carpeta o de proyecto para un proyecto con cinco recursos.
 
 Al utilizar BlueXP  IAM, gestionará los siguientes componentes:
 
@@ -57,17 +54,13 @@ image:diagram-iam-resource-hierarchy.png["Diagrama conceptual que muestra la jer
 
 Una _ORGANIZATION_ es el nivel superior del sistema IAM de BlueXP  y, por lo general, representa a su empresa. La organización consta de carpetas, proyectos, miembros, roles y recursos. Los conectores están asociados a proyectos específicos de la organización.
 
-BlueXP le solicita que cree una nueva organización cuando se registra.
-
 
 
 === Carpetas
 
 A _FOLDER_ le permite agrupar proyectos relacionados y separarlos de otros proyectos de la organización. Por ejemplo, una carpeta puede representar una ubicación geográfica (UE o EE.UU. Este), un sitio (Londres o Toronto) o una unidad de negocio (ingeniería o marketing).
 
-Las carpetas pueden contener proyectos, otras carpetas o ambos.
-
-No es necesario crear carpetas. Son opcionales.
+Los archivos antiguos pueden contener proyectos, otras carpetas o ambos. La creación de carpetas es opcional.
 
 
 
@@ -96,7 +89,7 @@ TIP: También puede asociar un conector a otra carpeta o proyecto de su organiza
 
 También tiene la opción de asociar un recurso a una carpeta, pero esto es opcional y satisface las necesidades de un caso de uso específico.
 
-Un _Organization admin_ puede asociar un recurso a una carpeta para que _Folder o Project admin_ pueda asociar ese recurso a los proyectos adecuados que residen en la carpeta.
+Un _administrador de la organización_ puede asociar un recurso con una carpeta para permitir que un _administrador de carpeta o proyecto_ vincule ese recurso con los proyectos apropiados en la carpeta.
 
 Por ejemplo, supongamos que tiene una carpeta que contiene dos proyectos:
 
@@ -106,7 +99,7 @@ _Organization admin_ puede asociar un recurso a la carpeta:
 
 image:diagram-iam-resource-association-folder-2.png["Un diagrama que muestra una carpeta, un recurso que está asociado a la carpeta y dos proyectos que residen en la carpeta: Proyecto A y proyecto B."]
 
-Al asociar un recurso a una carpeta, este no se vuelve accesible automáticamente para todos los proyectos; solo el administrador de la carpeta o del proyecto puede verlo. El administrador de la carpeta o del proyecto decide qué proyectos pueden acceder a él y lo asocia con los proyectos correspondientes.
+Asociar un recurso a una carpeta no lo hace accesible a todos los proyectos; solo el administrador de la carpeta o del proyecto puede verlo. El administrador de la carpeta o del proyecto decide qué proyectos pueden acceder a él y lo asocia con los proyectos correspondientes.
 
 En este ejemplo, el administrador asocia el recurso con el Proyecto A:
 
@@ -128,7 +121,7 @@ Cada organización incluye al menos un usuario con el rol _Administrador de la o
 
 En BlueXP  IAM, no otorga permisos directamente a los miembros de la organización. En su lugar, debe otorgar a cada miembro un rol. Un rol contiene un juego de permisos que permite a un miembro realizar acciones específicas en un nivel específico de la jerarquía de recursos.
 
-Al proporcionar permisos en una parte específica de la jerarquía de recursos, puede restringir los derechos de acceso solo a los recursos que un miembro necesita para completar sus tareas.
+Otorgar permisos en un nivel de jerarquía específico restringe el acceso a los recursos que un miembro necesita y los servicios que puede usar con esos recursos.
 
 
 

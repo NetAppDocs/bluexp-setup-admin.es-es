@@ -109,7 +109,7 @@ Actualizaciones de conectores:: BlueXP proporciona actualizaciones automáticas 
 Acceso a la interfaz de usuario:: Puede accederse a la interfaz de usuario desde la consola basada en web que se proporciona mediante la capa SaaS.
 Extremo de API:: Las llamadas API se realizan en el siguiente punto final:
 \https://cloudmanager.cloud.netapp.com
-Autenticación:: La autenticación se proporciona a través del servicio cloud de BlueXP mediante auth0 o a través de inicios de sesión del sitio de soporte de NetApp (NSS). la federación de identidades está disponible.
+Autenticación:: BlueXP proporciona autenticación con inicios de sesión auth0 o del sitio de soporte de NetApp (NSS). la federación de identidades está disponible.
 Servicios compatibles con BlueXP:: Todos los servicios de BlueXP están disponibles para los usuarios.
 Opciones de licencias compatibles:: Las suscripciones a Marketplace y BYOL son compatibles con el modo estándar; sin embargo, las opciones de licencia admitidas dependen del servicio BlueXP que esté utilizando. Consulte la documentación de cada servicio para obtener más información sobre las opciones de licencia disponibles.
 Cómo comenzar con el modo estándar:: Vaya a la https://console.bluexp.netapp.com["Consola BlueXP basada en Web"^] y regístrese.
@@ -197,7 +197,7 @@ Para Cloud Volumes ONTAP, tanto las licencias basadas en capacidad como las basa
 Cómo comenzar con el modo restringido:: Debe habilitar el modo restringido al crear su cuenta de BlueXP.
 +
 --
-Si aún no tiene una organización, se le pedirá que cree su organización y habilite el modo restringido cuando inicie sesión en BlueXP  por primera vez desde un conector que instaló manualmente o que creó desde el mercado del proveedor de cloud.
+Si aún no tiene una organización, se le solicitará que cree su organización y habilite el modo restringido cuando inicie sesión en BlueXP por primera vez desde un Conector que instaló manualmente o que creó desde el mercado de su proveedor de nube.
 
 Tenga en cuenta que no puede cambiar la configuración del modo restringido después de que BlueXP  cree la organización. No se puede activar el modo restringido más adelante y no se puede desactivar más adelante.
 
@@ -292,7 +292,7 @@ https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-
 Opciones de licencias compatibles:: Solo BYOL es compatible con el modo privado.
 +
 --
-Para BYOL de Cloud Volumes ONTAP, solo las licencias basadas en nodos son compatibles. No se admite la gestión de licencias basadas en capacidad. Como no hay disponible una conexión a Internet de salida, deberá cargar manualmente el archivo de licencia de Cloud Volumes ONTAP en la cartera digital de BlueXP.
+Para BYOL de Cloud Volumes ONTAP, solo las licencias basadas en nodos son compatibles. No se admite la gestión de licencias basadas en capacidad. Debido a que no hay una conexión a Internet saliente disponible, debe cargar manualmente su archivo de licencia de Cloud Volumes ONTAP en la BlueXP digital wallet.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Descubre cómo añadir licencias a la cartera digital de BlueXP"^]
 
@@ -408,10 +408,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Fábrica de cargas de trabajo | No | No 
 
 
-.7+| * Características* | Gestión de identidades y acceso BlueXP  | Sí | No 
-
-
-| Cuentas BlueXP | Sí | Sí 
+.7+| * Características* | Gestión de identidades y acceso BlueXP  | Sí | Sí 
 
 
 | Credenciales | Sí | Sí 

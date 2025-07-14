@@ -25,7 +25,7 @@ Puedes crear un conector en Google Cloud desde BlueXP  o mediante Google Cloud.
 
 == Paso 1: Configurar redes
 
-Configure su red para que Connector pueda gestionar recursos y procesos en su entorno de cloud híbrido. Por ejemplo, debe asegurarse de que las conexiones estén disponibles para las redes de destino y de que el acceso a Internet de salida esté disponible.
+Configure la red para garantizar que el conector pueda administrar recursos, con conexiones a redes de destino y acceso a Internet saliente.
 
 VPC y subred:: Al crear el conector, es necesario especificar el VPC y la subred donde debería residir el conector.
 
@@ -110,7 +110,7 @@ link:reference-networking-saas-console.html["Consulte la lista de extremos con l
 --
 
 
-Servidor proxy:: Si su empresa requiere la implementación de un servidor proxy para todo el tráfico de Internet saliente, obtenga la siguiente información sobre su proxy HTTP o HTTPS. Deberá proporcionar esta información durante la instalación. Tenga en cuenta que BlueXP no es compatible con los servidores proxy transparentes.
+Servidor proxy:: NetApp admite configuraciones de proxy explícitas y transparentes. Si usa un proxy transparente, solo necesita proporcionar el certificado del servidor proxy. Si usa un proxy explícito, también necesitará la dirección IP y las credenciales.
 +
 --
 * Dirección IP
@@ -138,7 +138,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet de salida
 Habilite NTP:: Si tienes pensado utilizar la clasificación de BlueXP para analizar tus orígenes de datos corporativos, debes habilitar un servicio de protocolo de tiempo de redes (NTP) tanto en el sistema BlueXP Connector como en el sistema de clasificación de BlueXP para que el tiempo se sincronice entre los sistemas. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Más información sobre la clasificación de BlueXP"^]
 +
 --
-Deberá implementar este requisito de red después de crear el conector.
+Implemente este requisito de red después de crear el conector.
 
 --
 
@@ -236,9 +236,6 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud docs: Conceda un único rol"^]
 
 
-
-.Resultado
-Ahora el usuario de Google Cloud tiene los permisos necesarios para crear el conector.
 
 
 
@@ -360,7 +357,7 @@ Notas:
 
 == Paso 5: Habilita las API de Google Cloud
 
-Se deben habilitar varias API de Google Cloud antes de poder implementar Connector y Cloud Volumes ONTAP en Google Cloud.
+Debe habilitar varias API de Google Cloud antes de implementar Connector y Cloud Volumes ONTAP.
 
 .Paso
 . Habilite las siguientes API de Google Cloud en su proyecto:
@@ -387,7 +384,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentación
 Crea un conector directamente desde la consola web de BlueXP o mediante gcloud.
 
 .Acerca de esta tarea
-La creación de Connector implementa una instancia de máquina virtual en Google Cloud mediante una configuración predeterminada. Después de crear el conector, no debe cambiar a una instancia de VM más pequeña que tenga menos CPU o RAM. link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada para el conector"].
+La creación de Connector implementa una instancia de máquina virtual en Google Cloud mediante una configuración predeterminada. No cambie el conector a una instancia de VM más pequeña con menos CPU o RAM después de la creación. link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada para el conector"].
 
 [role="tabbed-block"]
 ====
@@ -422,6 +419,7 @@ El formulario es propiedad de Google y está alojado en él. Sus credenciales no
 ** *Detalles*: Introduzca un nombre para la instancia de la máquina virtual, especifique etiquetas, seleccione un proyecto y, a continuación, seleccione la cuenta de servicio que tenga los permisos necesarios (consulte la sección anterior para obtener más información).
 ** *ubicación*: Especifique una región, zona, VPC y subred para la instancia.
 ** *Red*: Elija si desea activar una dirección IP pública y, opcionalmente, especifique una configuración de proxy.
+** Etiquetas de red: Si usa un proxy transparente, agregue una etiqueta de red a la instancia del Conector. Las etiquetas de red deben comenzar con minúscula y pueden contener minúsculas, números y guiones. Deben terminar con minúscula o número. Por ejemplo, podría usar la etiqueta "connector-proxy".
 ** *Política de firewall*: Elija si desea crear una nueva política de firewall o si desea seleccionar una política de firewall existente que permita las reglas de entrada y salida requeridas.
 +
 link:reference-ports-gcp.html["Reglas de firewall en Google Cloud"]
@@ -431,12 +429,12 @@ link:reference-ports-gcp.html["Reglas de firewall en Google Cloud"]
 
 . Seleccione *Agregar*.
 +
-La instancia debe estar lista en unos 7 minutos. Debe permanecer en la página hasta que el proceso se complete.
+La instancia estará lista en aproximadamente 7 minutos; permanezca en la página hasta que se complete el proceso.
 
 
 
 .Resultado
-Una vez completado el proceso, el conector está disponible para su uso en BlueXP.
+Una vez completado el proceso, el conector estará disponible para su uso desde BlueXP.
 
 Si tienes buckets de Google Cloud Storage en la misma cuenta de Google Cloud en la que creaste el conector, verás que el entorno de trabajo de Google Cloud Storage aparece automáticamente en el lienzo de BlueXP. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["Descubre cómo gestionar Google Cloud Storage desde BlueXP"^]
 
@@ -461,7 +459,7 @@ El conector es compatible con Google Cloud en una instancia de VM con un SO que 
 
 
 .Pasos
-. Inicie sesión en el SDK de gcloud con su metodología preferida.
+. Inicie sesión en el SDK de gcloud utilizando su método preferido.
 +
 En nuestros ejemplos, utilizaremos un shell local con gcloud SDK instalado, pero puede utilizar Google Cloud Shell nativo en la consola de Google Cloud.
 

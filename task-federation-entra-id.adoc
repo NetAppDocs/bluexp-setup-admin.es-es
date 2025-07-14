@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-federation-entra-id.html 
+keywords: Microsoft Entra ID, BlueXP, federation, single sign-on, SSO, identity provider, IdP, service provider-initiated SSO, domain verification, client secret, redirect URL, organization admin 
+summary: Asocie una cuenta del sitio de soporte de NetApp con su organización o cuenta de BlueXP  para habilitar flujos de trabajo clave para Cloud Volumes ONTAP. Estas credenciales de NSS están asociadas a toda la organización o cuenta de BlueXP . 
+---
+= Federar BlueXP con Microsoft Entra ID
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Conéctese con su proveedor de IdP de Microsoft Entra ID para habilitar el inicio de sesión único (SSO) en BlueXP. Esto permite a los usuarios iniciar sesión con sus credenciales corporativas.
+
+.Roles requeridos
+Se requiere un administrador de la organización o de la federación para crear y administrar federaciones. El visor de federaciones puede ver la página de la federación. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+
+NOTE: Puede federarse con su proveedor de identidades corporativo o con el sitio de soporte de NetApp . NetApp recomienda elegir uno u otro, pero no ambos.
+
+NetApp solo admite el SSO iniciado por el proveedor de servicios (SP). Primero debe configurar el proveedor de identidad para que confíe en NetApp como proveedor de servicios. Después, puede crear una conexión en BlueXP que utilice la configuración del proveedor de identidad.
+
+Puede configurar una conexión federada con Microsoft Entra ID para habilitar el inicio de sesión único (SSO) en BlueXP. El proceso implica configurar su Microsoft Entra ID para que confíe en BlueXP como proveedor de servicios y, a continuación, crear la conexión en BlueXP.
+
+.Antes de empezar
+* Se requiere una cuenta de IdP con privilegios administrativos. Coordínese con el administrador de su IdP para completar los pasos.
+* Identifique el dominio que desea usar para la federación. Puede usar su dominio de correo electrónico o uno diferente de su propiedad. Si desea usar un dominio distinto a su dominio de correo electrónico, primero debe verificarlo en BlueXP. Puede hacerlo siguiendo los pasos de la sección link:task-federation-verify-domain.html["Verifique su dominio en BlueXP"] tema.
+
+
+.Pasos
+. En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione *Configurar nueva federación*.
+
+
+[discrete]
+====== Detalles del dominio
+
+. Introduzca los detalles de su dominio:
++
+.. Elige si quieres usar un dominio verificado o tu dominio de correo electrónico. El dominio de correo electrónico es el asociado a la cuenta con la que iniciaste sesión.
+.. Introduzca el nombre de la federación que está configurando.
+.. Si elige un dominio verificado, seleccione el dominio de la lista.
+
+
+. Seleccione *Siguiente*.
+
+
+[discrete]
+====== Método de conexión
+
+. Para su método de conexión, elija *Proveedor* y luego seleccione *Microsoft Entra ID*.
+. Seleccione *Siguiente*.
+
+
+[discrete]
+====== Instrucciones de configuración
+
+. Configure su ID de Microsoft Entra para que confíe en NetApp como proveedor de servicios. Debe realizar este paso en su servidor de ID de Microsoft Entra.
++
+.. Utilice los siguientes valores al registrar su aplicación Microsoft Entra ID para confiar en BlueXP:
++
+*** Para la *URL de redirección*, utilice  `https://services.cloud.netapp.com`
+*** Para la *URL de respuesta*, utilice  `https://netapp-cloud-account.auth0.com/login/callback`
+
+
+.. Cree un secreto de cliente para su aplicación Microsoft Entra ID. Deberá proporcionar el ID de cliente, el secreto de cliente y el nombre de dominio de Entra ID para completar la federación.
+
+
+. Regrese a BlueXP y seleccione *Siguiente* para crear la conexión.
+
+
+[discrete]
+====== Crear conexión
+
+. Crear la conexión con Microsoft Entra ID
++
+.. Ingrese el ID de cliente y el secreto de cliente que creó en el paso anterior.
+.. Introduzca el nombre de dominio de Microsoft Entra ID.
+
+
+. Seleccione *Crear conexión*. El sistema creará la conexión en unos segundos.
+
+
+[discrete]
+====== probar y habilitar la conexión
+
+. Seleccione *Siguiente*.
+. Seleccione *Probar conexión* para probar su conexión. Accederá a la página de inicio de sesión de su servidor IdP. Inicie sesión con sus credenciales de IdP para completar la prueba y vuelva a BlueXP para habilitar la conexión.
+. Seleccione *Siguiente*.
+. En la página *Habilitar federación*, revise los detalles de la federación y luego seleccione *Habilitar federación*.
+. Seleccione *Finalizar* para completar el proceso.
+
+
+Después de habilitar la federación, los usuarios pueden iniciar sesión en BlueXP usando sus credenciales corporativas.

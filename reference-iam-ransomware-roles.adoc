@@ -14,7 +14,7 @@ summary: La gestión de identidades y accesos de BlueXP  proporciona dos funcio
 
 
 [role="lead"]
-Los roles de ransomware brindan a los usuarios acceso al servicio de protección contra ransomware. Se les puede asignar un rol administrativo, que les permite tomar medidas en la protección contra ransomware, o un rol de observador si solo tienen responsabilidades de monitoreo. Los dos roles son el administrador de protección contra ransomware y el visor de protección contra ransomware. La principal diferencia entre los dos roles son las acciones que pueden tomar en la protección contra ransomware.
+Los roles de ransomware brindan a los usuarios acceso al servicio de protección contra ransomware. Los dos roles son el administrador de protección contra ransomware y el visor de protección contra ransomware. La principal diferencia entre los dos roles son las acciones que pueden tomar en la protección contra ransomware.
 
 La siguiente tabla muestra las acciones que cada rol de protección contra ransomware BlueXP puede realizar.
 

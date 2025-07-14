@@ -1,0 +1,285 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-backup-rec-roles.html 
+keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, roles, permissions, access control, role-based access control, rbac, role-based access 
+summary: La gestión de identidad y acceso de BlueXP proporciona varios roles que puede asignar a los miembros de su organización que utilizan el servicio de copia de seguridad y recuperación. 
+---
+= Funciones de BlueXP backup and recovery
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede asignar los siguientes roles a los usuarios para brindarles acceso al servicio de copia de seguridad y recuperación de BlueXP. Estos roles le ofrecen la flexibilidad de asignar a los usuarios un rol específico para las tareas que deben realizar en su organización. La forma de asignar roles depende de su negocio y de sus prácticas de gestión del almacenamiento.
+
+La copia de seguridad y la recuperación utilizan los siguientes roles:
+
+* *Superadministrador de copias de seguridad y recuperación*: realiza cualquier acción.
+* *Administrador de copias de seguridad y recuperación*: realiza copias de seguridad en instantáneas locales, replica en almacenamiento secundario y realiza copias de seguridad en almacenamiento de objetos.
+* *Administrador de restauración de copias de seguridad y recuperación*: Restaurar cargas de trabajo.
+* *Administrador de clones de copia de seguridad y recuperación*: Clonar aplicaciones y datos.
+* *Visor de copias de seguridad y recuperación*: vea información de copias de seguridad y recuperación.
+
+
+La siguiente tabla indica las acciones que puede realizar cada rol.
+
+[cols="20,20,15,15a,15a,15a"]
+|===
+| Característica y acción | Superadministrador de copias de seguridad y recuperación | Administrador de backups | Restaurar administrador | Administrador clon | Visionador 
+
+
+| Agregar, editar o eliminar hosts | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Instalar complementos | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Agregar credenciales (host, instancia, vCenter) | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Ver panel y todas las pestañas | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Inicie una prueba gratuita | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Inicie la detección de las cargas de trabajo | No | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Ver información de la licencia | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Activar licencia | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Ver anfitriones | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+6+| *Horarios*: 
+
+
+| Activar horarios | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Suspender horarios | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+6+| *Políticas y protección*: 
+
+
+| Ver planes de protección | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear, modificar o eliminar planes de protección | Sí | Sí  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Restaurar cargas de trabajo | Sí | No  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Crear, dividir o eliminar clones | Sí | No  a| 
+No
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Crear, modificar o eliminar una política | Sí | Sí  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Informes*: 
+
+
+| Ver informes | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear informes | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Eliminar informes | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Importar desde SnapCenter y administrar el host*: 
+
+
+| Ver datos importados de SnapCenter | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Importar datos desde SnapCenter | Sí | Sí  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Administrar (migrar) host | Sí | Sí  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Configurar ajustes*: 
+
+
+| Configure el directorio de registro | Sí | Sí  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Asociar o eliminar credenciales de instancia | Sí | Sí  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Cubos*: 
+
+
+| Ver depósitos de almacenamiento | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear, editar o eliminar depósitos de almacenamiento | Sí | Sí  a| 
+No
+ a| 
+No
+ a| 
+No
+
+|===

@@ -14,7 +14,7 @@ summary: La gestión de identidades y accesos de BlueXP  incluye varios roles p
 
 
 [role="lead"]
-La gestión de identidades y accesos (IAM) de BlueXP  incluye varios roles predefinidos que se pueden asignar a los miembros de la organización en diferentes niveles de la jerarquía de recursos. Antes de asignar estos roles, debe comprender los permisos que incluye cada rol. Las funciones se incluyen en las siguientes categorías: Plataforma, aplicación y servicio de datos.
+La gestión de identidad y acceso (IAM) de BlueXP incluye roles predefinidos que puede asignar a los miembros de su organización en diferentes niveles de su jerarquía de recursos. Antes de asignar estos roles, debe comprender los permisos que incluye cada rol. Las funciones se incluyen en las siguientes categorías: Plataforma, aplicación y servicio de datos.
 
 
 
@@ -31,6 +31,12 @@ Los roles de plataforma otorgan todos los permisos para la administración de Bl
 
 
 | link:reference-iam-platform-roles.html["Administrador de carpetas o proyectos"] | Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a carpetas o proyectos que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos o aplicación en recursos dentro de la carpeta o proyecto que se les asigna. El rol de administrador de carpeta o proyecto NO PUEDE crear conectores. 
+
+
+| link:reference-iam-platform-roles.html["Administración de la federación"] | Permite a un usuario crear y administrar federaciones con BlueXP, que habilitan el inicio de sesión único (SSO). 
+
+
+| link:reference-iam-platform-roles.html["Visor de la Federación"] | Permite al usuario ver las federaciones existentes con BlueXP. No se pueden crear ni administrar federaciones. 
 |===
 
 
@@ -66,6 +72,33 @@ A continuación se muestra una lista de roles en la categoría de servicio de da
 [cols="10,24"]
 |===
 | Rol del servicio de datos | Responsabilidades 
+
+
+| link:reference-iam-backup-rec-roles.html["Superadministrador de copias de seguridad y recuperación"] | Realizar cualquier acción en el servicio de copia de seguridad y recuperación. 
+
+
+| link:reference-iam-backup-rec-roles.html["Administrador de copias de seguridad y recuperación"] | Realice copias de seguridad en instantáneas locales, replique en almacenamiento secundario y realice copias de seguridad en almacenamiento de objetos. 
+
+
+| link:reference-iam-backup-rec-roles.html["Administrador de restauración de copias de seguridad y recuperación"] | Restaurar cargas de trabajo en el servicio de copia de seguridad y recuperación. 
+
+
+| link:reference-iam-backup-rec-roles.html["Administrador de clones de copia de seguridad y recuperación"] | Clonar aplicaciones y datos en el servicio de Backup y recuperación. 
+
+
+| link:reference-iam-backup-rec-roles.html["Visor de copias de seguridad y recuperación"] | Ver información de copia de seguridad y recuperación. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administración de recuperación ante desastres"] | Realizar cualquier acción en el servicio de recuperación ante desastres. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administrador de conmutación por error de recuperación ante desastres"] | Realizar conmutaciones por error y migraciones. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administrador de aplicaciones de recuperación ante desastres"] | Cree planes de replicación, modifique planes de replicación e inicie conmutaciones por error de prueba. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Visor de recuperación ante desastres"] | Ver sólo información. 
 
 
 | Administrador de clasificación | Proporciona la posibilidad de ver los resultados de la exploración de clasificación de BlueXP . La clasificación no tiene un rol de visor. Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos. 

@@ -16,32 +16,35 @@ summary: Si las directivas de la empresa requieren que utilice un servidor proxy
 [role="lead"]
 Si las directivas de la empresa requieren que utilice un servidor proxy para todas las comunicaciones a Internet, deberá configurar los conectores para que utilicen ese servidor proxy. Si no configuró un conector para que utilice un servidor proxy durante la instalación, puede configurar el conector para que utilice ese servidor proxy en cualquier momento.
 
-El uso de un servidor proxy con el conector habilita el acceso a Internet saliente cuando no hay ninguna IP pública o puerta de enlace NAT disponible. El servidor proxy proporciona conectividad saliente solo para el Conector, no para los sistemas Cloud Volumes ONTAP.
+El servidor proxy del conector permite el acceso saliente a Internet sin una IP pública o una puerta de enlace NAT. El servidor proxy proporciona conectividad saliente solo para el Conector, no para los sistemas Cloud Volumes ONTAP.
 
-Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet de salida para enviar mensajes AutoSupport, BlueXP configura automáticamente esos sistemas Cloud Volumes ONTAP para que utilicen un servidor proxy incluido con el conector. Debe asegurarse de que el grupo de seguridad del Conector permita conexiones entrantes a través del puerto 3128. Abra este puerto después de implementar el Conector.
+Si los sistemas Cloud Volumes ONTAP carecen de acceso a Internet saliente, BlueXP los configura para utilizar el servidor proxy del Conector. Debe asegurarse de que el grupo de seguridad del Conector permita conexiones entrantes a través del puerto 3128. Abra este puerto después de implementar el conector.
+
+Si el conector en sí no tiene una conexión a Internet saliente, los sistemas Cloud Volumes ONTAP no pueden usar el servidor proxy configurado.
 
 
 
 == Configuraciones admitidas
 
-* BlueXP admite HTTP y HTTPS.
-* El servidor proxy puede estar en la nube o en la red.
-* BlueXP no admite servidores proxy transparentes.
+* Los servidores proxy transparentes son compatibles con los conectores que sirven a sistemas Cloud Volumes ONTAP . Si utiliza servicios de BlueXP con Cloud Volumes ONTAP, cree un conector dedicado para Cloud Volumes ONTAP donde pueda usar un servidor proxy transparente.
+* Los servidores proxy explícitos son compatibles con todos los conectores, incluidos aquellos que administran sistemas Cloud Volumes ONTAP y aquellos que administran servicios BlueXP .
+* HTTP y HTTPS.
+* El servidor proxy puede residir en la nube o en su red.
 
 
 
+IMPORTANT: Una vez configurado un proxy, no se puede cambiar el tipo. Si necesita cambiarlo, elimine el conector y agregue uno nuevo con el nuevo tipo de proxy.
 
-== Activar un proxy en un conector
+
+
+== Habilitar un proxy explícito en un conector
 
 Cuando configura un conector para utilizar un servidor proxy, ese conector y los sistemas Cloud Volumes ONTAP que administra (incluidos los mediadores ha), todos utilizan el servidor proxy.
 
-Esta operación reinicia el Conector. Asegúrese de que el conector no está realizando ninguna operación antes de continuar.
+Esta operación reinicia el Conector. Verifique que el conector esté inactivo antes de continuar.
 
 .Pasos
 . Navega a la página *Edit BlueXP Connector*.
-+
-La navegación depende del modo de BlueXP. En el modo estándar, acceda a la interfaz desde el sitio web de SaaS. En el modo restringido o privado, acceda localmente desde el host del Conector.
-
 +
 [role="tabbed-block"]
 ====
@@ -71,27 +74,78 @@ image:screenshot-edit-connector.png["Una captura de pantalla que muestra la opci
 --
 ====
 . Seleccione *Configuración de proxy HTTP*.
-. Configure el proxy:
-+
-.. Seleccione *Activar proxy*.
-.. Especifique el servidor con la sintaxis http://_address:port_[] o. https://_address:port_[]
-.. Especifique un nombre de usuario y una contraseña si el servidor necesita autenticación básica.
+. Seleccione *Proxy explícito* en el campo Tipo de configuración.
+. Seleccione *Activar proxy*.
+. Especifique el servidor con la sintaxis http://_address:port_[] o. https://_address:port_[]
+. Especifique un nombre de usuario y una contraseña si el servidor necesita autenticación básica.
 +
 Tenga en cuenta lo siguiente:
 
 +
-*** El usuario puede ser un usuario local o un usuario de dominio.
-*** Para un usuario de dominio, debe introducir el código ASCII para \ de la siguiente manera: Domain-name%92user-name
+** El usuario puede ser un usuario local o un usuario de dominio.
+** Para un usuario de dominio, debe introducir el código ASCII para \ de la siguiente manera: Domain-name%92user-name
 +
 Por ejemplo: netapp%92proxy
 
-*** BlueXP no admite contraseñas que incluyan el carácter @.
+** BlueXP no admite contraseñas que incluyan el carácter @.
 
 
-.. Seleccione *Guardar*.
+. Seleccione *Guardar*.
 
 
 
+
+== Habilitar un proxy transparente en un conector
+
+Solo Cloud Volumes ONTAP admite el uso de un proxy transparente en el Conector. Si utiliza servicios de BlueXP además de Cloud Volumes ONTAP, debe crear un Conector independiente para los servicios de datos o para Cloud Volumes ONTAP.
+
+Antes de habilitar un proxy transparente, asegúrese de que se cumplan los siguientes requisitos:
+
+* El conector se instala en la misma red que el servidor proxy transparente.
+* La inspección TLS está habilitada en el servidor proxy.
+* Tienes un certificado en formato PEM que coincide con el utilizado en el servidor proxy transparente.
+* No utilice el Conector para ningún servicio de datos de NetApp que no sea Cloud Volumes ONTAP.
+
+
+Para configurar un conector existente para que utilice un servidor proxy transparente, utilice la herramienta de mantenimiento del conector que está disponible a través de la línea de comandos en el host del conector.
+
+Al configurar un servidor proxy, el Conector se reinicia. Verifique que el Conector esté inactivo antes de continuar.
+
+.Pasos
+Asegúrese de tener un archivo de certificado en formato PEM para el servidor proxy. Si no tiene un certificado, contacte con su administrador de red para obtener uno.
+
+. Abra una interfaz de línea de comandos en el host del conector.
+. Navegue hasta el directorio de la herramienta de mantenimiento del conector:  `/opt/application/netapp/service-manager-2/connector-maint-console`
+. Ejecute el siguiente comando para habilitar el proxy transparente, donde  `/home/ubuntu/<certificate-file>.pem` es el directorio y el nombre del archivo de certificado que tiene para el servidor proxy:
++
+[source, CLI]
+----
+./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem
+----
++
+Asegúrese de que el archivo del certificado esté en formato PEM y resida en el mismo directorio que el comando o especifique la ruta completa al archivo del certificado.
+
++
+[source, CLI]
+----
+./connector-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem
+----
+
+
+
+
+=== Modificar el proxy transparente para el conector
+
+Puede actualizar el servidor proxy transparente existente de un conector mediante el  `proxy update` comando o elimine el servidor proxy transparente mediante el uso del  `proxy remove` Comando. Para obtener más información, revise la documentación de link:reference-connector-maint-console.html["Consola de mantenimiento del conector"] .
+
+
+IMPORTANT: Una vez configurado un proxy, no se puede cambiar el tipo. Si necesita cambiarlo, elimine el conector y agregue uno nuevo con el nuevo tipo de proxy.
+
+
+
+== Actualice el proxy del conector si pierde el acceso a Internet
+
+Si cambia la configuración del proxy de su red, su Conector podría perder el acceso a internet. Por ejemplo, si alguien cambia la contraseña del servidor proxy o actualiza el certificado. En este caso, deberá acceder a la interfaz de usuario directamente desde el host del Conector y actualizar la configuración. Asegúrese de tener acceso de red al host del Conector y de poder iniciar sesión en la interfaz de usuario de BlueXP .
 
 
 

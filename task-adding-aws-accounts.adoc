@@ -279,12 +279,8 @@ Para todas las demás organizaciones o cuentas, deberá asociar manualmente la s
 
 Al suscribirse desde AWS Marketplace, el último paso del proceso es asociar la suscripción con su organización. Si no completó este paso, no podrá usar la suscripción con su organización ni cuenta.
 
-
-TIP: Si usa el modo estándar o restringido, tendrá una _organización BlueXP_, que administrará mediante la gestión de identidad y acceso (IAM) de BlueXP. Pero si estás usando BlueXP  en modo privado, entonces tendrás una cuenta _BlueXP _.
-
 * link:concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"]
 * link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidades y accesos de BlueXP "]
-* link:concept-netapp-accounts.html["Obtenga más información sobre las cuentas de BlueXP"]
 
 
 Siga los pasos a continuación si se suscribió a los servicios de datos inteligentes de NetApp desde AWS Marketplace, pero omitió el paso para asociar la suscripción con su cuenta.

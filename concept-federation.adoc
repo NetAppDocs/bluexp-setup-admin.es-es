@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-federation.html 
-keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
-summary: la federación de identidades habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Para empezar, aprenda cómo funciona Identity federation con BlueXP y, a continuación, revise una descripción general del proceso de configuración. 
+keywords: identity federation, BlueXP, single sign-on, SSO, identity provider, IdP, SAML, Microsoft Entra ID, AD FS, PingFederate, ACS URL, Entity ID, user access, security, productivity, compliance, authentication, business continuity, account management, user experience, access control, workflow automation, credential management, login process, organization admin 
+summary: la federación de identidades habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Para comenzar, revise el proceso de configuración. 
 ---
 = Active el inicio de sesión único mediante la federación de identidades con BlueXP 
 :hardbreaks:
@@ -14,182 +14,82 @@ summary: la federación de identidades habilita el inicio de sesión único con 
 
 
 [role="lead"]
-_Identity federation_ habilita el inicio de sesión único con BlueXP para que los usuarios puedan iniciar sesión utilizando credenciales de su identidad corporativa. Para comenzar, aprenda cómo funciona la federación de identidad y luego revise una descripción general del proceso de configuración.
+El inicio de sesión único (federación) simplifica el proceso de inicio de sesión y mejora la seguridad al permitir que los usuarios inicien sesión en BlueXP con sus credenciales corporativas. Puede habilitar el inicio de sesión único (SSO) con su proveedor de identidad (IdP) o a través del sitio web de soporte de NetApp .
+
+.Rol requerido
+Administrador de la organización, Administrador de la federación, Visor de la federación. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 
 
 
-== federación de identidades con credenciales de NSS
+== Federación de identidades con el sitio de soporte de NetApp
 
-Si utiliza sus credenciales del sitio de soporte de NetApp (NSS) para iniciar sesión en BlueXP, no debe seguir las instrucciones de esta página para configurar la federación de identidades. Debe hacer lo siguiente en su lugar:
-
-* Descargue y complete el https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["Formulario de solicitud de federación de NetApp"^]
-* Envíe el formulario a la dirección de correo electrónico especificada en el formulario
+Al federarse con el Sitio de Soporte de NetApp , los usuarios pueden iniciar sesión con las mismas credenciales para acceder a BlueXP que usted usa para el Sitio de Soporte de NetApp , Active IQ y otras aplicaciones asociadas a su cuenta del Sitio de Soporte de NetApp . Tras configurar la federación, cualquier nuevo usuario que cree una cuenta del Sitio de Soporte de NetApp también podrá acceder a BlueXP.
 
 
-El equipo de soporte de NetApp revisará y procesará su solicitud.
+NOTE: Si se federa con el sitio de soporte de NetApp , no podrá hacerlo también con su proveedor de gestión de identidades corporativas. Elija la opción que mejor se adapte a su organización.
 
-
-
-== Cómo funciona la federación de identidades
-
-La configuración de la federación de identidades crea una conexión de confianza entre el proveedor de servicios de autenticación (Auth0) de BlueXP y su propio proveedor de gestión de identidades.
-
-La siguiente imagen muestra cómo funciona la federación de identidades con BlueXP:
-
-image:diagram-identity-federation.png["Diagrama que muestra una autenticación de usuario con BlueXP y una conexión entre BlueXP y un proveedor de identidades que autentica al usuario."]
-
-. El usuario ingresa su dirección de correo electrónico en la página de inicio de sesión de BlueXP.
-. BlueXP identifica que el dominio de correo electrónico forma parte de una conexión federada y envía la solicitud de autenticación al proveedor de identidades mediante la conexión de confianza.
+.Pasos
+. Descargue y complete el  https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["Formulario de solicitud de federación de NetApp"^] .
+. Envíe el formulario a la dirección de correo electrónico especificada en el formulario.
 +
-Al configurar una conexión federada, BlueXP siempre utiliza esa conexión federada para la autenticación.
-
-. El usuario autentica mediante credenciales de su directorio corporativo.
-. El proveedor de identidades autentica la identidad del usuario y el usuario inicia sesión en BlueXP.
-
-
-La federación de identidades usa estándares abiertos, como el lenguaje de marcado de aserción de seguridad 2.0 (SAML) y OpenID Connect (OIDC).
+El equipo de soporte de NetApp revisa y procesa su solicitud.
 
 
 
-== Proveedores de identidades compatibles
 
-BlueXP admite los siguientes proveedores de identidades:
 
+== Configurar una conexión federada con su proveedor de identidad
+
+Puede configurar una conexión federada con su proveedor de identidad para habilitar el inicio de sesión único (SSO) en BlueXP. El proceso implica configurar su proveedor de identidad para que confíe en NetApp como proveedor de servicios y, a continuación, crear la conexión en BlueXP.
+
+
+
+=== Proveedores de identidades compatibles
+
+NetApp admite los siguientes proveedores de identidad y protocolos para la federación:
+
+.Protocolos
 * Proveedores de identidad del lenguaje de marcado de aserción de seguridad (SAML)
-* ID de Microsoft Entra
 * Servicios de federación de Active Directory (AD FS)
+
+
+.proveedores de identidad
+* ID de Microsoft Entra
 * PingFederate
 
 
-BlueXP solo admite SSO iniciado por el proveedor de servicios (SP).
 
 
+=== Federación con flujo de trabajo de BlueXP
 
-== Descripción general del proceso de configuración
+NetApp solo admite el SSO iniciado por el proveedor de servicios (SP). Primero debe configurar el proveedor de identidad para que confíe en NetApp como proveedor de servicios. Después, puede crear una conexión en BlueXP que utilice la configuración del proveedor de identidad.
 
-Antes de configurar una conexión entre BlueXP y su proveedor de administración de identidad, comprenda los pasos necesarios para prepararse.
+Puedes federar con tu dominio de correo electrónico o con un dominio diferente de tu propiedad. Para federar con un dominio diferente a tu dominio de correo electrónico, primero verifica que eres el propietario del dominio.
 
-Estos pasos son específicos para los usuarios que inician sesión en BlueXP mediante un inicio de sesión en la nube de NetApp. Si utilizas tus credenciales de NSS para iniciar sesión en BlueXP, <<federación de identidades con credenciales de NSS,Aprenda a configurar la federación de identidades con las credenciales de NSS>>.
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Verifique su dominio (si no utiliza su dominio de correo electrónico)
+[role="quick-margin-para"]
+Si desea federar su dominio con un dominio diferente a su dominio de correo electrónico, primero debe verificar que es el propietario del dominio. Puede federar su dominio de correo electrónico sin necesidad de realizar pasos adicionales.
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Configure su IdP para confiar en NetApp como proveedor de servicios
+[role="quick-margin-para"]
+Para configurar su proveedor de identidad para que confíe en NetApp como proveedor de servicios, cree una nueva aplicación y proporcione la información necesaria, como la URL de ACS, el ID de entidad u otra información de credenciales. La información del proveedor de servicios varía según el proveedor de identidad; consulte la documentación de su proveedor de identidad específico para obtener más información. Para completar este paso, deberá colaborar con el administrador de su IdP.
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Crear la conexión federada en BlueXP
+[role="quick-margin-para"]
+Para crear la conexión, deberá proporcionar la información necesaria de su proveedor de identidad, como la URL o el archivo de metadatos SAML. Esta información se utiliza para establecer la relación de confianza entre BlueXP y su proveedor de identidad. La información que proporcione dependerá del proveedor de identidad (IdP) que utilice. Por ejemplo, si utiliza Microsoft Entra ID, deberá proporcionar el ID de cliente, el secreto y el dominio.
 
-=== Proveedor de identidades SAML
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Tres"] Pon a prueba tu federación en BlueXP
+[role="quick-margin-para"]
+Pruebe su conexión federada para asegurarse de que funciona antes de habilitarla. La página de Federación en BlueXP ofrece una opción de prueba que le permite verificar que su usuario de prueba se autentique correctamente. Si la prueba es exitosa, puede habilitar la conexión.
 
-Configurar una conexión federada con un proveedor de identidad SAML implica estos pasos:
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Tres"] Habilite su conexión en BlueXP
+[role="quick-margin-para"]
+Después de habilitar la conexión, los usuarios pueden iniciar sesión en BlueXP utilizando sus credenciales corporativas.
 
-[cols="10,15,75"]
-|===
-| Paso | Completado por | Descripción 
+Revise el tema de su respectivo protocolo o IdP para comenzar:
 
+* link:task-federation-adfs.html["Configurar una conexión federada con AD FS"]
+* link:task-federation-entra-id.html["Configurar una conexión federada con Microsoft Entra ID"]
+* link:task-federation-ping.html["Configurar una conexión federada con PingFederate"]
+* link:task-federation-saml.html["Configurar una conexión federada con un proveedor de identidad SAML"]
 
-| 1 | Administrador de IdP | Configure su proveedor de identidades SAML para habilitar la federación de identidades con BlueXP. Ver instrucciones para su proveedor de identidad SAML: *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["De acuerdo"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["Inicio de sesión OneLogin"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFederate"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Salesforce"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["SiteMinder"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOCircle"^] Si su proveedor de identidad no aparece en la lista anterior,  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["siga estas instrucciones genéricas"^] SUGERENCIA: _No_ complete los pasos que describen cómo crear una conexión en auth0. Creará esa conexión en el siguiente paso. 
-
-
-| 2 | Administrador de BlueXP  a| 
-Vaya a la https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^] Y cree la conexión con BlueXP.
-
-Para completar este paso, debe obtener la siguiente información de su administrador de IdP sobre el proveedor de identidad:
-
-* URL de inicio de sesión
-* Un certificado de firma X509 (formato PEM o CER)
-* URL de cierre de sesión (opcional)
-
-
-Después de crear la conexión usando esta información, la página Configuración de la federación enumera los parámetros que puede enviar a su administrador de IdP para completar la configuración en el siguiente paso.
-
-
-NOTE: Tome nota de la fecha de vencimiento del certificado. Debe volver a la página de configuración de federación y actualizar el certificado _before_ que caduque. Esta es tu responsabilidad. BlueXP no rastrea la fecha de vencimiento, por lo que debe monitorear y actualizar el certificado antes de que expire. Es mejor trabajar con su equipo de IT para recibir alertas a tiempo.
-
-
-
-| 3 | Administrador de IdP | Complete la configuración en el proveedor de identidades utilizando los parámetros que se muestran en la página Federation Setup (Configuración de Federación) después de finalizar el paso 2. 
-
-
-| 4 | Administrador de BlueXP | Pruebe y habilite la conexión desde el  https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^] La página se actualiza entre la prueba de la conexión y la habilitación de la conexión. 
-|===
-
-
-=== ID de Microsoft Entra
-
-La configuración de una conexión federada entre BlueXP y Microsoft Entra ID incluye los siguientes pasos:
-
-[cols="10,15,75"]
-|===
-| Paso | Completado por | Descripción 
-
-
-| 1 | Administrador de IdP | Configura Microsoft Entra ID para habilitar la federación de identidades con BlueXP. https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Vea las instrucciones para registrar la aplicación con Microsoft Entra ID"^] SUGERENCIA: _No_ complete los pasos que describen cómo crear una conexión en auth0. Creará esa conexión en el siguiente paso. 
-
-
-| 2 | Administrador de BlueXP | Ir a la  https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^] y cree la conexión con BlueXP. Para completar este paso, necesita obtener la siguiente información de su administrador de IdP: * ID de cliente * Valor de la clave secreta de cliente * Dominio de la clave secreta de Microsoft Entra. Después de crear la conexión con esta información, la página Configuración de federación muestra los parámetros que puede enviar a su administrador de AD para completar la configuración en el siguiente paso. NOTA: Anote la fecha de vencimiento de la clave secreta. Debe volver a la página de configuración de federación y actualizar el certificado _before_ que caduque. Esta es tu responsabilidad. BlueXP no realiza un seguimiento de la fecha de caducidad. Es mejor trabajar con su equipo de AD para recibir alertas a tiempo. 
-
-
-| 3 | Administrador de IdP | Complete la configuración en Microsoft Entra ID utilizando los parámetros que se muestran en la página Configuración de federación después de finalizar el paso 2. 
-
-
-| 4 | Administrador de BlueXP | Compruebe y active la conexión desde https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^]
-
-Tenga en cuenta que la página se actualiza entre probar la conexión y habilitar la conexión. 
-|===
-
-
-=== AD FS
-
-La configuración de una conexión federada entre BlueXP y AD FS incluye los siguientes pasos:
-
-[cols="10,15,75"]
-|===
-| Paso | Completado por | Descripción 
-
-
-| 1 | Administrador de IdP | Configure el servidor AD FS para habilitar la federación de identidad con BlueXP. https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["Vea las instrucciones para configurar el servidor ADFS con auth0"^] 
-
-
-| 2 | Administrador de BlueXP  a| 
-Vaya a la https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^] Y cree la conexión con BlueXP.
-
-Para completar este paso, debe obtener lo siguiente de su administrador de IdP: la URL del servidor AD FS o el archivo de metadatos de federación.
-
-Después de crear la conexión usando esta información, la página Configuración de la federación enumera los parámetros que puede enviar a su administrador de IdP para completar la configuración en el siguiente paso.
-
-
-NOTE: Controle la fecha de vencimiento del certificado. Actualice el certificado en la página Configuración de la Federación antes de que caduque. Esta es tu responsabilidad. BlueXP no realiza un seguimiento de la fecha de caducidad. Es mejor trabajar con su equipo de AD para recibir alertas a tiempo.
-
-
-
-| 3 | Administrador de IdP | Complete la configuración en el servidor ADFS utilizando los parámetros que se muestran en la página Federation Setup después de finalizar el paso 2. 
-
-
-| 4 | Administrador de BlueXP | Pruebe y habilite la conexión desde el  https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^] La página se actualiza entre la prueba y la habilitación de la conexión. 
-|===
-
-
-=== PingFederate
-
-La configuración de una conexión federada entre BlueXP y un servidor PingFederate incluye los siguientes pasos:
-
-[cols="10,15,75"]
-|===
-| Paso | Completado por | Descripción 
-
-
-| 1 | Administrador de IdP | Configure su servidor PingFederate para habilitar la federación de identidades con BlueXP. https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["Vea las instrucciones para crear una conexión"^] SUGERENCIA: _No_ complete los pasos que describen cómo crear una conexión en auth0. Creará esa conexión en el siguiente paso. 
-
-
-| 2 | Administrador de BlueXP | Ir a la  https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^] y cree la conexión con BlueXP. Para completar este paso, necesita obtener la siguiente información de su administrador de AD: * La URL del servidor PingFederate * Un certificado de firma X509 (formato PEM o CER). Después de crear la conexión con esta información, la página Configuración de la Federación muestra los parámetros que puede enviar a su administrador de AD para completar la configuración en el siguiente paso. NOTA: Controle la fecha de vencimiento del certificado. Actualice el certificado en la página Configuración de la Federación _antes_ de que caduque. Esta es tu responsabilidad. BlueXP no realiza un seguimiento de la fecha de caducidad. Se recomienda colaborar con su equipo de IdP para recibir alertas a tiempo. 
-
-
-| 3 | Administrador de IdP | Complete la configuración en el servidor PingFederate utilizando los parámetros que se muestran en la página Federation Setup después de finalizar el paso 2. 
-
-
-| 4 | Administrador de BlueXP | Pruebe y habilite la conexión desde el  https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^] La página se actualiza entre la prueba de la conexión y la habilitación de la conexión. 
-|===
-
-
-== Actualización de una conexión federada
-
-Una vez que el administrador de BlueXP activa una conexión, el administrador puede actualizar la conexión en cualquier momento desde la https://services.cloud.netapp.com/federation-setup["Página NetApp Federation Setup"^]
-
-Por ejemplo, es posible que deba actualizar la conexión cargando un nuevo certificado.
-
-Solo el administrador de BlueXP que creó la conexión puede actualizarla. Si desea agregar administradores adicionales, comuníquese con el soporte de NetApp.
