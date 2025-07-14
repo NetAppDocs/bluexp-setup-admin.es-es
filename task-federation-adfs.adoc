@@ -63,9 +63,8 @@ AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.a
 .. Después de crear la confianza, copie la URL de metadatos de su servidor AD FS o descargue el archivo de metadatos de federación. Necesitará esta URL o archivo para completar la conexión en BlueXP.
 
 
-
-
-NetApp recomienda usar la URL de metadatos para que BlueXP recupere automáticamente la configuración más reciente de AD FS. Si descarga el archivo de metadatos de federación, deberá actualizarlo manualmente en BlueXP cada vez que se produzcan cambios en la configuración de AD FS.
++
+NetApp recomienda utilizar la URL de metadatos para permitir que BlueXP recupere automáticamente la última configuración de AD FS. Si descarga el archivo de metadatos de federación, deberá actualizarlo manualmente en BlueXP cada vez que se produzcan cambios en la configuración de AD FS.
 
 . Regrese a BlueXP y seleccione *Siguiente* para crear la conexión.
 . Cree la conexión con AD FS.

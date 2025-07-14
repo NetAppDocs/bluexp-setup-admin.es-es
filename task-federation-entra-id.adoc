@@ -87,7 +87,7 @@ Puede configurar una conexión federada con Microsoft Entra ID para habilitar el
 
 
 [discrete]
-====== probar y habilitar la conexión
+====== Probar y habilitar la conexión
 
 . Seleccione *Siguiente*.
 . Seleccione *Probar conexión* para probar su conexión. Accederá a la página de inicio de sesión de su servidor IdP. Inicie sesión con sus credenciales de IdP para completar la prueba y vuelva a BlueXP para habilitar la conexión.
