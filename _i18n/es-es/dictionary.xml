@@ -5255,7 +5255,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="0de6f673e972fb67cc36c32ad5fcb898" category="list-text">No utilice el Conector para ningún servicio de datos de NetApp que no sea Cloud Volumes ONTAP.</block>
   <block id="ee8603a5f78124f751bd9a36bb2f1053" category="paragraph">Para configurar un conector existente para que utilice un servidor proxy transparente, utilice la herramienta de mantenimiento del conector que está disponible a través de la línea de comandos en el host del conector.</block>
   <block id="66f1817e95be4137166f119a89852722" category="paragraph">Al configurar un servidor proxy, el Conector se reinicia. Verifique que el Conector esté inactivo antes de continuar.</block>
-  <block id="e1a3bbb95e9e5f5476f81f3831fe98de" category="paragraph">Asegúrese de tener un archivo de certificado en formato PEM para el servidor proxy. Si no tiene un certificado, contacte con su administrador de red para obtener uno.</block>
   <block id="040c90d5413009e841ba3cc3b521d699" category="list-text">Abra una interfaz de línea de comandos en el host del conector.</block>
   <block id="2bc1351fc63f28a1cf5ed4c899d4fc35" category="list-text">Navegue hasta el directorio de la herramienta de mantenimiento del conector: <block ref="ea59a49bc639b17bbbe69f3540f9f07c" prefix=" " category="inline-code"></block></block>
   <block id="05c44d09b879c8fb4432a79dc845c0f5" category="list-text">Ejecute el siguiente comando para habilitar el proxy transparente, donde <block ref="d2d60207eee35ee99f434fbad44a604c" prefix=" " category="inline-code"></block> es el directorio y el nombre del archivo de certificado que tiene para el servidor proxy:</block>
@@ -5453,4 +5452,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
   <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp recomienda utilizar la URL de metadatos para permitir que BlueXP recupere automáticamente la última configuración de AD FS. Si descarga el archivo de metadatos de federación, deberá actualizarlo manualmente en BlueXP cada vez que se produzcan cambios en la configuración de AD FS.</block>
   <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">Probar y habilitar la conexión</block>
+  <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">Asegúrese de tener un archivo de certificado en formato PEM para el servidor proxy. Si no tiene un certificado, contacte con su administrador de red para obtener uno.</block>
 </blocks>
