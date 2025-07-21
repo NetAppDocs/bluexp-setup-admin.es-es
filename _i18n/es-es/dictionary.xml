@@ -5449,7 +5449,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">Asegúrese de tener un archivo de certificado en formato PEM para el servidor proxy. Si no tiene un certificado, contacte con su administrador de red para obtener uno.</block>
   <block id="89d69ff3dca93dc4c1c160728186e722" category="doc">Compatibilidad con Google Cloud NetApp Volumes</block>
   <block id="c0f8420dd2331e8c703faf905ce556ba" category="inline-link-macro">Obtenga más información sobre Google Cloud NetApp Volumes.</block>
-  <block id="e1541d92f45c55d1c796b46df595a40b" category="paragraph">Ahora puedes ver Google Cloud NetApp Volumes en BlueXP. <block ref="2d9a0dbc9abdf3f5520c900e61ce6c78" category="inline-link-macro-rx"></block></block>
   <block id="7ef119d24b993215797de865841c626e" category="section-title">Nuevo rol de acceso para Google Cloud NetApp Volumes</block>
   <block id="558052264db83696c2bf10ecfe0eaedd" category="paragraph">BlueXP ahora admite el uso de un rol de acceso para el siguiente sistema de almacenamiento:</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="list-text">NetApp Volumes para Google Cloud</block>
@@ -5468,4 +5467,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="afa251e583f752e51e3383587060e30b" category="cell">Administrar las funciones de gobernanza y salud del almacenamiento, descubrir recursos de almacenamiento, así como cambiar y eliminar entornos de trabajo existentes.</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">Proporciona la capacidad de ver los resultados del escaneo de BlueXP classification . Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos. La clasificación no tiene un rol de visor.</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">21 de julio de 2025</block>
+  <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">Ahora puedes ver Google Cloud NetApp Volumes en BlueXP. <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
 </blocks>
