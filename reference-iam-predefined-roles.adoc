@@ -20,20 +20,20 @@ La gestión de identidad y acceso (IAM) de BlueXP incluye roles predefinidos que
 
 == Funciones de la plataforma
 
-Los roles de plataforma otorgan todos los permisos para la administración de BlueXP, incluida la asignación de roles y la adición de usuarios. Los usuarios con roles de plataforma tienen acceso a todos los servicios de datos y aplicaciones dentro de BlueXP . BlueXP IAM incluye dos roles de plataforma: administrador de la organización y administrador de carpeta o proyecto. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope.
+Los roles de plataforma otorgan todos los permisos de administración de BlueXP , incluyendo la asignación de roles y la adición de usuarios. Los roles de plataforma proporcionan acceso a todos los servicios y aplicaciones de datos de BlueXP . BlueXP IAM incluye dos roles de plataforma: administrador de la organización y administrador de carpeta o proyecto. La principal diferencia entre los dos roles de la plataforma IAM de BlueXP  es Scope.
 
 [cols="1,2"]
 |===
 | Función de la plataforma | Responsabilidades 
 
 
-| link:reference-iam-platform-roles.html["Administrador de la organización"] | Permite al usuario acceder sin restricciones a todos los proyectos y carpetas de una organización, agregar miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos. Los usuarios con este rol organizan y administran todo el entorno de BlueXP. Crean carpetas y proyectos, asignan roles, añaden usuarios y pueden administrar todos los entornos de trabajo si cuentan con las credenciales necesarias. Este es el único rol de acceso que puede crear conectores. 
+| link:reference-iam-platform-roles.html["Administrador de la organización"] | Permite al usuario acceder sin restricciones a todos los proyectos y carpetas de una organización, agregar miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos. Los usuarios con este rol organizan y administran su organización BlueXP . Crean carpetas y proyectos, asignan roles, añaden usuarios y pueden administrar todos los entornos de trabajo si cuentan con las credenciales necesarias. Este es el único rol de acceso que puede crear conectores. 
 
 
-| link:reference-iam-platform-roles.html["Administrador de carpetas o proyectos"] | Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a carpetas o proyectos que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos o aplicación en recursos dentro de la carpeta o proyecto que se les asigna. El rol de administrador de carpeta o proyecto NO PUEDE crear conectores. 
+| link:reference-iam-platform-roles.html["Administrador de carpetas o proyectos"] | Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a carpetas o proyectos que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos o aplicación en recursos dentro de la carpeta o proyecto que se les asigna. Los administradores de carpetas o proyectos no pueden crear conectores. 
 
 
-| link:reference-iam-platform-roles.html["Administración de la federación"] | Permite a un usuario crear y administrar federaciones con BlueXP, que habilitan el inicio de sesión único (SSO). 
+| link:reference-iam-platform-roles.html["Administración de la federación"] | Permite a un usuario crear y administrar federaciones con BlueXP, lo que habilita el inicio de sesión único (SSO). 
 
 
 | link:reference-iam-platform-roles.html["Visor de la Federación"] | Permite al usuario ver las federaciones existentes con BlueXP. No se pueden crear ni administrar federaciones. 
@@ -49,13 +49,16 @@ A continuación se muestra una lista de roles en la categoría de aplicación. C
 | Rol de la aplicación | Responsabilidades 
 
 
+| link:reference-iam-keystone-roles.html["Administrador de Google Cloud NetApp Volumes"] | Los usuarios con la función Google Cloud NetApp Volumes pueden descubrir y administrar Google Cloud NetApp Volumes. 
+
+
 | link:reference-iam-keystone-roles.html["Administrador de Keystone"] | Los usuarios con el rol de administrador de Keystone pueden crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. 
 
 
 | link:reference-iam-keystone-roles.html["Visor de Keystone"] | Los usuarios con el rol de visor de Keystone NO PUEDEN crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. 
 
 
-| link:reference-iam-storage-roles.html["Administrador de almacenamiento"] | Administre funciones de gobernanza y estado del almacenamiento, detecte recursos de almacenamiento, y modifique y elimine los entornos de trabajo existentes. 
+| link:reference-iam-storage-roles.html["Administrador de almacenamiento"] | Administrar las funciones de gobernanza y salud del almacenamiento, descubrir recursos de almacenamiento, así como cambiar y eliminar entornos de trabajo existentes. 
 
 
 | link:reference-iam-storage-roles.html["Visor de almacenamiento"] | Vea las funciones de estado y gobernanza del almacenamiento, y también vea los recursos de almacenamiento detectados previamente. No se pueden detectar, modificar ni eliminar los entornos de trabajo de almacenamiento existentes. 
@@ -101,7 +104,7 @@ A continuación se muestra una lista de roles en la categoría de servicio de da
 | link:reference-iam-disaster-rec-roles.html["Visor de recuperación ante desastres"] | Ver sólo información. 
 
 
-| Administrador de clasificación | Proporciona la posibilidad de ver los resultados de la exploración de clasificación de BlueXP . La clasificación no tiene un rol de visor. Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos. 
+| Administrador de clasificación | Proporciona la capacidad de ver los resultados del escaneo de BlueXP classification . Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos. La clasificación no tiene un rol de visor. 
 
 
 | link:reference-iam-ransomware-roles.html["Administrador de protección frente a ransomware"] | Gestiona acciones en las pestañas Proteger, Alerts, Recover, Settings e Reports del servicio de protección contra ransomware. 
