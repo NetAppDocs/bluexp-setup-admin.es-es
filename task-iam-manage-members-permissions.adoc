@@ -108,7 +108,7 @@ Tenga en cuenta lo siguiente:
 *** Si selecciona la organización o una carpeta, el miembro tendrá permisos para todo lo que reside en la organización o carpeta.
 
 
-** *Seleccione una categoría* y luego seleccione un *rol* que le proporcione al miembro permisos para los recursos asociados a la organización, carpeta o proyecto que seleccionó.
+** *Seleccione una categoría* y luego seleccione un *Rol* que proporcione al miembro permisos para los recursos asociados con la organización, carpeta o proyecto que usted seleccionó.
 +
 *** Si seleccionó una carpeta o un proyecto, puede elegir entre cualquier función que no sea *Administrador de la organización*.
 +
@@ -121,7 +121,7 @@ link:reference-iam-predefined-roles.html["Obtenga información sobre los roles p
 
 . Descargue o copie el ID de cliente y el secreto de cliente.
 +
-lueXP muestra el secreto del cliente solo una vez y no lo almacena. Copie o descargue el secreto y guárdelo de forma segura. Tenga en cuenta que puede volver a crear el ID de cliente y el secreto de cliente más tarde según sea necesario.
+BlueXP muestra el secreto del cliente solo una vez y no lo almacena. Copie o descargue el secreto y guárdelo de forma segura. Tenga en cuenta que puede volver a crear el ID de cliente y el secreto de cliente más tarde según sea necesario.
 
 . Seleccione *Cerrar*.
 
@@ -157,7 +157,7 @@ Es posible que necesites eliminar a un miembro de tu organización (por ejemplo,
 Al eliminar un miembro se revocan sus permisos, pero se conservan sus cuentas del sitio de soporte de BlueXP y NetApp.
 
 .Pasos
-. Desde la página *Miembros*, navega a un miembro de la tabla, selecciona image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] y luego selecciona *Eliminar usuario*.
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccione image:icon-action.png["Un icono que tiene tres puntos uno al lado del otro"] luego seleccione *Eliminar usuario*.
 . Confirme que desea eliminar el miembro de su organización.
 
 

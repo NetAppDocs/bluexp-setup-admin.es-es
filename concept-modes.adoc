@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-modes.html 
-keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
 summary: BlueXP ofrece múltiples modos de implementación que le permiten utilizar BlueXP de forma que se adapte a sus necesidades empresariales y de seguridad. El modo estándar aprovecha la capa SaaS BlueXP para ofrecer todas las funciones, mientras que el modo restringido y el modo privado están disponibles para las organizaciones que tienen restricciones de conectividad. 
 ---
 = Obtenga más información sobre los modos de implementación de BlueXP
@@ -338,7 +338,7 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
 | Cloud Volumes ONTAP | Sí | Sí 
 
 
-| Cloud Volumes Service para Google Cloud | No | No 
+| NetApp Volumes para Google Cloud | No | No 
 
 
 | Google Cloud Storage | No | No 

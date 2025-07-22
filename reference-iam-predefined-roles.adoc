@@ -55,7 +55,13 @@ A continuación se muestra una lista de roles en la categoría de aplicación. C
 | link:reference-iam-keystone-roles.html["Administrador de Keystone"] | Los usuarios con el rol de administrador de Keystone pueden crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. 
 
 
-| link:reference-iam-keystone-roles.html["Visor de Keystone"] | Los usuarios con el rol de visor de Keystone NO PUEDEN crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. 
+| link:reference-iam-keystone-roles.html["Visor de Keystone"] | Los usuarios con el rol de visor de Keystone NO PUEDEN crear solicitudes de servicio. Permite a los usuarios supervisar y ver el consumo, los activos y la información administrativa dentro del inquilino de Keystone al que tienen acceso. 
+
+
+| Rol de configuración del mediador de ONTAP | Las cuentas de servicio con el rol de configuración de Mediador de ONTAP pueden crear solicitudes de servicio. Este rol es necesario en una cuenta de servicio para configurar una instancia de link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["Mediador de la nube de ONTAP"^] . 
+
+
+| link:reference-iam-storage-roles.html["Administrador de almacenamiento"] | Administre funciones de gobernanza y estado del almacenamiento, detecte recursos de almacenamiento, y modifique y elimine los entornos de trabajo existentes. 
 
 
 | link:reference-iam-storage-roles.html["Administrador de almacenamiento"] | Administrar las funciones de gobernanza y salud del almacenamiento, descubrir recursos de almacenamiento, así como cambiar y eliminar entornos de trabajo existentes. 
