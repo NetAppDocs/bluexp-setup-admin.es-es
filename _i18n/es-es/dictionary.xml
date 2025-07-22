@@ -5473,4 +5473,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*Seleccione una categoría* y luego seleccione un *Rol* que proporcione al miembro permisos para los recursos asociados con la organización, carpeta o proyecto que usted seleccionó.</block>
   <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP muestra el secreto del cliente solo una vez y no lo almacena. Copie o descargue el secreto y guárdelo de forma segura. Tenga en cuenta que puede volver a crear el ID de cliente y el secreto de cliente más tarde según sea necesario.</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccione <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> luego seleccione *Eliminar usuario*.</block>
+  <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
 </blocks>
