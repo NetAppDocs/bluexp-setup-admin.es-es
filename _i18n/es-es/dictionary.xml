@@ -1754,8 +1754,6 @@ o.</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Cliente existente con una cuenta de NSS</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">Si es cliente de NetApp con una cuenta de NSS, solo tiene que registrarse para recibir soporte a través de BlueXP.</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Seleccione *Agregar credenciales NSS* y siga el aviso de autenticación del sitio de soporte de NetApp (NSS).</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">Una captura de pantalla que muestra un número de serie de cuenta y una casilla de verificación verde y el texto registrado para soporte.</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">Cliente existente pero no cuenta NSS</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">Si eres un cliente existente de NetApp con licencias y números de serie existentes, pero _no_ NSS, deberás crear una cuenta NSS y asociarla al inicio de sesión de BlueXP.</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">Formulario de registro de usuarios del sitio de soporte de NetApp</block>
@@ -4590,7 +4588,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="dfab73175d9a922a1fe643936c1f54e4" category="cell"><block ref="dfab73175d9a922a1fe643936c1f54e4" category="inline-link-macro-rx"></block></block>
   <block id="bf4e3f1e6e25cc18b8667c6b66e7fdec" category="admonition">Estos roles no están disponibles desde la API de asociación de BlueXP.</block>
   <block id="186343db38833a48df757e694e69337d" category="doc">Permite gestionar las credenciales de NSS asociadas con BlueXP</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp ofrece soporte para BlueXP y sus servicios cloud de diversas maneras. Hay disponibles amplias opciones de auto soporte gratuito las 24 horas del día, los 7 días de la semana, como artículos de la base de conocimiento (KB) y un foro de la comunidad. Su registro de soporte incluye soporte técnico remoto a través de tickets web.</block>
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Obtenga soporte para un servicio de archivos de proveedores de cloud</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Para obtener soporte técnico relacionado con un servicio de archivos del proveedor de cloud, su infraestructura o cualquier solución que utilice el servicio, consulte «Obtener ayuda» en la documentación de BlueXP para ese producto.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Para recibir soporte técnico específico sobre BlueXP y sus soluciones y servicios de almacenamiento, use las opciones de soporte descritas a continuación.</block>
@@ -5295,19 +5292,12 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="ed0a34e7c50c8b6a49b38156f4ad0507" category="inline-link-macro">Obtenga más información sobre la gestión de federaciones.</block>
   <block id="a28baf546d6789e9df4bf20f4b47ea7e" category="admonition">Después de importar su federación existente, puede administrarla desde la página Federaciones. <block ref="9d534edc1c56628e78a226390e0c6f0b" category="inline-link-macro-rx"></block></block>
   <block id="4538ec0a58b95f3c1aac1a5acb748667" category="paragraph">Administrador de la organización o administrador de la federación. <block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
-  <block id="6a83e05584ae3a368d76b79ed5fca4ac" category="section-title">Importar una federación</block>
   <block id="af5e5162616eb70fd66eb845ab93c3b3" category="list-text">Seleccione *Importar federación*.</block>
   <block id="ad0b8ffb10bbe432e9cf58b09772aa69" category="section-title">Agregar un dominio verificado a una federación existente</block>
-  <block id="a0ddba99351ac47d380e4259aadba269" category="paragraph">Puede agregar un dominio verificado a una federación existente en BlueXP BlueXP usar varios dominios con el mismo proveedor de identidad (IdP).</block>
-  <block id="be834cc1c8b7f8b6b0e9b3daed0042f5" category="paragraph">Debe haber verificado el dominio en BlueXP antes de agregarlo a una federación. Si aún no lo ha hecho, puede hacerlo siguiendo los pasos de la <block ref="1a287a79053335f45f3db75bc57fd747" category="inline-link-macro-rx"></block> .</block>
-  <block id="d62d240b9c34b152e7a4c1f1ba2faecc" category="paragraph">&lt;Necesito un caso de uso aquí de cuándo querría hacer esto&gt;--Tonia &lt;¿Cuánto tiempo tardan los usuarios de este nuevo dominio en poder iniciar sesión?--Tonia&gt; .Pasos</block>
   <block id="62d5f424f490cb35fe635af945e09e93" category="list-text">Seleccione el menú de acciones <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> Junto a la federación a la que desea agregar un dominio verificado, seleccione *Actualizar dominios*. El cuadro de diálogo *Actualizar dominios* muestra el dominio ya asociado a esta federación.</block>
   <block id="d84c85105e6a24d5f4e5213f4a62212a" category="list-text">Seleccione un dominio verificado de la lista de dominios disponibles.</block>
   <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">Seleccione *Actualizar*.</block>
   <block id="b9441c75b64b2bff3d5c0252b881eb80" category="section-title">Actualización de una conexión federada que está a punto de expirar</block>
-  <block id="50bc8d94201d22ead4d5ac5de70f8c4e" category="paragraph">Puede actualizar los detalles de una conexión federada en BlueXP. Por ejemplo, deberá actualizar la federación si las credenciales, como un certificado o un secreto de cliente, caducan. Cuando sea necesario, actualice la fecha de notificación para recordarle que debe actualizar la conexión antes de que caduque.</block>
-  <block id="6ec267b868ac52e9c551ecf053445e50" category="admonition">Actualice el IdP antes de actualizar la conexión en BlueXP para evitar problemas de inicio de sesión. Mantenga la sesión iniciada en BlueXP durante el proceso. ¿Cuál es el orden? Tonia</block>
-  <block id="e8d5347d0ad03b9156b4d8234c820a54" category="list-text">Seleccione el menú de acciones (tres puntos verticales) junto a la federación a la que desea agregar un dominio verificado y seleccione *Actualizar federación*. El cuadro de diálogo *Actualizar dominios* muestra el dominio ya asociado a esta federación.</block>
   <block id="e82e66adccb64cbe61e87f3c0617c3f8" category="list-text">Actualice los detalles de la federación según sea necesario.</block>
   <block id="f0c3a42a5f59fcf574664a16032f7f98" category="section-title">Probar una federación existente</block>
   <block id="579e693274492fb64ae09b19e40c366a" category="paragraph">Si tiene problemas con una federación existente, puede probar la conexión para comprobar su correcto funcionamiento. Esto le ayudará a identificar y solucionar cualquier problema con la federación.</block>
@@ -5316,7 +5306,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="f00c704f82067284063e6d08ee509d82" category="list-text">Seleccione *Listo* para regresar a la pestaña *Federación*.</block>
   <block id="3104ea2b12b1bb5b1bf9e44f8a04c551" category="section-title">Deshabilitar una federación</block>
   <block id="e29366acd257602b75067c91b960f62f" category="paragraph">Si ya no necesita una federación, puede desactivarla. Esto impide que los usuarios asociados a ella inicien sesión en BlueXP con sus credenciales corporativas. Puede reactivarla más adelante si es necesario.</block>
-  <block id="29fd568fb93920cf501488e171b7f20b" category="paragraph">¿Cuándo debería un usuario deshabilitar una federación? Por ejemplo, si se está actualizando el IdP o si la federación ya no es necesaria. --Tonia?</block>
   <block id="ba1cad8ed3a99d167191e2e7f53a0e1d" category="list-text">Seleccione el menú de acciones <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> junto a la federación a la que desea agregar un dominio verificado y seleccione *Deshabilitar*.</block>
   <block id="a679ca81df887999afdb29cc812dba1a" category="section-title">Eliminar una federación</block>
   <block id="2e39c9a75c534c723834aef16604225c" category="paragraph">Si ya no necesita una federación, puede eliminarla. Esto elimina la federación de BlueXP e impide que los usuarios asociados a ella inicien sesión en BlueXP con sus credenciales corporativas. Por ejemplo, si el IdP se está desmantelando o si la federación ya no es necesaria. Tras eliminar una federación, no podrá recuperarla. Debe crear una nueva.</block>
@@ -5474,4 +5463,11 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccione <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> luego seleccione *Eliminar usuario*.</block>
   <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Los usuarios con el rol de visor de Keystone NO PUEDEN crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden.</block>
+  <block id="43fcb7c92b7808baf72f1cd9eecef7a5" category="list-text">Específicamente para Amazon FSx for NetApp ONTAP , edite la política *Relaciones de confianza* para incluir "AWS": "arn:aws:iam::952013314444:root".</block>
+  <block id="f8aabc110ec9d0099e69b9276f73b751" category="paragraph">Por ejemplo, la política debería verse así:</block>
+  <block id="37747908c82600c4f83a3de02bd7dc1a" category="inline-link-macro">Documentación de AWS Identity and Access Management (IAM)</block>
+  <block id="e8cffeeec612132e8c2cb2355463f31f" category="paragraph">Referirse a <block ref="ac3530460cd18c242c3653db3709495c" category="inline-link-macro-rx"></block> para obtener más información sobre el acceso a recursos entre cuentas en IAM.</block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp ofrece soporte para BlueXP y sus servicios en la nube de diversas maneras. Disponemos de amplias opciones de autoasistencia gratuitas las 24 horas, los 7 días de la semana, como artículos de la base de conocimientos (KB) y un foro comunitario. Su registro de soporte incluye soporte técnico remoto mediante tickets web.</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">Una captura de pantalla que muestra un número de serie de cuenta, una casilla de verificación verde y el texto Registrado para recibir soporte.</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
