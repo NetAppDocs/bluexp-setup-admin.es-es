@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-iam-predefined-roles.html 
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac 
 summary: La gestión de identidades y accesos de BlueXP  incluye varios roles predefinidos que puede asignar a los miembros de la organización. 
 ---
 = Obtenga más información sobre los roles de acceso de BlueXP 
@@ -36,7 +36,7 @@ Los roles de plataforma otorgan todos los permisos de administración de BlueXP 
 | link:reference-iam-platform-roles.html["Administración de la federación"] | Permite a un usuario crear y administrar federaciones con BlueXP, lo que habilita el inicio de sesión único (SSO). 
 
 
-| link:reference-iam-platform-roles.html["Visor de la Federación"] | Permite al usuario ver las federaciones existentes con BlueXP. No se pueden crear ni administrar federaciones. 
+| link:reference-iam-platform-roles.html["Visor de la Federación"] | Permite a un usuario ver las federaciones existentes con BlueXP.  No se pueden crear ni administrar federaciones 
 |===
 
 
@@ -62,9 +62,6 @@ A continuación se muestra una lista de roles en la categoría de aplicación. C
 
 
 | link:reference-iam-storage-roles.html["Administrador de almacenamiento"] | Administre funciones de gobernanza y estado del almacenamiento, detecte recursos de almacenamiento, y modifique y elimine los entornos de trabajo existentes. 
-
-
-| link:reference-iam-storage-roles.html["Administrador de almacenamiento"] | Administrar las funciones de gobernanza y salud del almacenamiento, descubrir recursos de almacenamiento, así como cambiar y eliminar entornos de trabajo existentes. 
 
 
 | link:reference-iam-storage-roles.html["Visor de almacenamiento"] | Vea las funciones de estado y gobernanza del almacenamiento, y también vea los recursos de almacenamiento detectados previamente. No se pueden detectar, modificar ni eliminar los entornos de trabajo de almacenamiento existentes. 
@@ -110,7 +107,7 @@ A continuación se muestra una lista de roles en la categoría de servicio de da
 | link:reference-iam-disaster-rec-roles.html["Visor de recuperación ante desastres"] | Ver sólo información. 
 
 
-| Administrador de clasificación | Proporciona la capacidad de ver los resultados del escaneo de BlueXP classification . Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos. La clasificación no tiene un rol de visor. 
+| Visor de clasificación | Proporciona la capacidad de ver los resultados del escaneo de BlueXP classification . Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos. La clasificación no tiene un rol de visor. 
 
 
 | link:reference-iam-ransomware-roles.html["Administrador de protección frente a ransomware"] | Gestiona acciones en las pestañas Proteger, Alerts, Recover, Settings e Reports del servicio de protección contra ransomware. 
