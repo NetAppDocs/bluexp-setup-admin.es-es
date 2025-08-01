@@ -23,7 +23,7 @@ Administrador de la organización, Administrador de la federación, Visor de la 
 
 == Federación de identidades con el sitio de soporte de NetApp
 
-Al federarse con el Sitio de Soporte de NetApp , los usuarios pueden iniciar sesión con las mismas credenciales para acceder a BlueXP que usted usa para el Sitio de Soporte de NetApp , Active IQ y otras aplicaciones asociadas a su cuenta del Sitio de Soporte de NetApp . Tras configurar la federación, cualquier nuevo usuario que cree una cuenta del Sitio de Soporte de NetApp también podrá acceder a BlueXP.
+Cuando se federa con el Sitio de soporte de NetApp , los usuarios pueden iniciar sesión con las mismas credenciales para acceder a BlueXP que utiliza para el Sitio de soporte de NetApp , Active IQ Digital Advisor y otras aplicaciones asociadas con su cuenta del Sitio de soporte de NetApp .  Después de configurar la federación, cualquier usuario nuevo que cree una cuenta de sitio de soporte de NetApp también podrá acceder a BlueXP.
 
 
 NOTE: Si se federa con el sitio de soporte de NetApp , no podrá hacerlo también con su proveedor de gestión de identidades corporativas. Elija la opción que mejor se adapte a su organización.
@@ -46,7 +46,7 @@ Puede configurar una conexión federada con su proveedor de identidad para habil
 
 === Proveedores de identidades compatibles
 
-NetApp admite los siguientes proveedores de identidad y protocolos para la federación:
+NetApp admite los siguientes protocolos y proveedores de identidad para la federación:
 
 .Protocolos
 * Proveedores de identidad del lenguaje de marcado de aserción de seguridad (SAML)
