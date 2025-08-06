@@ -23,7 +23,7 @@ Administrador de la organización, Administrador de la federación, Visor de la 
 
 == Federación de identidades con el sitio de soporte de NetApp
 
-Cuando se federa con el Sitio de soporte de NetApp , los usuarios pueden iniciar sesión con las mismas credenciales para acceder a BlueXP que utiliza para el Sitio de soporte de NetApp , Active IQ Digital Advisor y otras aplicaciones asociadas con su cuenta del Sitio de soporte de NetApp .  Después de configurar la federación, cualquier usuario nuevo que cree una cuenta de sitio de soporte de NetApp también podrá acceder a BlueXP.
+Cuando se federa con el Sitio de soporte de NetApp , los usuarios pueden iniciar sesión con las mismas credenciales para acceder a BlueXP que utiliza para el Sitio de soporte de NetApp , Active IQ Digital Advisor y otras aplicaciones asociadas con su cuenta del Sitio de soporte de NetApp . Después de configurar la federación, cualquier usuario nuevo que cree una cuenta del sitio de soporte de NetApp también podrá acceder a BlueXP.
 
 
 NOTE: Si se federa con el sitio de soporte de NetApp , no podrá hacerlo también con su proveedor de gestión de identidades corporativas. Elija la opción que mejor se adapte a su organización.
@@ -41,6 +41,9 @@ El equipo de soporte de NetApp revisa y procesa su solicitud.
 == Configurar una conexión federada con su proveedor de identidad
 
 Puede configurar una conexión federada con su proveedor de identidad para habilitar el inicio de sesión único (SSO) en BlueXP. El proceso implica configurar su proveedor de identidad para que confíe en NetApp como proveedor de servicios y, a continuación, crear la conexión en BlueXP.
+
+
+NOTE: Si anteriormente configuró la federación usando NetApp Cloud Central (una aplicación externa a BlueXP), necesitará importar su federación usando la página de Federación de BlueXP para poder administrarla dentro de BlueXP.link:task-federation-import.html["Aprenda a importar su federación"]
 
 
 
@@ -68,19 +71,19 @@ Puedes federar con tu dominio de correo electrónico o con un dominio diferente 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Verifique su dominio (si no utiliza su dominio de correo electrónico)
 [role="quick-margin-para"]
-Si desea federar su dominio con un dominio diferente a su dominio de correo electrónico, primero debe verificar que es el propietario del dominio. Puede federar su dominio de correo electrónico sin necesidad de realizar pasos adicionales.
+Para federarse con un dominio diferente a su dominio de correo electrónico, verifique que sea su propietario.  Puede federar su dominio de correo electrónico sin realizar pasos adicionales.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Configure su IdP para confiar en NetApp como proveedor de servicios
 [role="quick-margin-para"]
-Para configurar su proveedor de identidad para que confíe en NetApp como proveedor de servicios, cree una nueva aplicación y proporcione la información necesaria, como la URL de ACS, el ID de entidad u otra información de credenciales. La información del proveedor de servicios varía según el proveedor de identidad; consulte la documentación de su proveedor de identidad específico para obtener más información. Para completar este paso, deberá colaborar con el administrador de su IdP.
+Configure su proveedor de identidad para que confíe en NetApp creando una nueva aplicación y proporcionando la información necesaria, como la URL de ACS, el ID de entidad u otra información de credenciales.  La información del proveedor de servicios varía según el proveedor de identidad, por lo que consulte la documentación de su proveedor de identidad específico para obtener más detalles.  Necesitará trabajar con el administrador de su IdP para completar este paso.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Crear la conexión federada en BlueXP
 [role="quick-margin-para"]
-Para crear la conexión, deberá proporcionar la información necesaria de su proveedor de identidad, como la URL o el archivo de metadatos SAML. Esta información se utiliza para establecer la relación de confianza entre BlueXP y su proveedor de identidad. La información que proporcione dependerá del proveedor de identidad (IdP) que utilice. Por ejemplo, si utiliza Microsoft Entra ID, deberá proporcionar el ID de cliente, el secreto y el dominio.
+Para crear la conexión, debe proporcionar la información necesaria de su proveedor de identidad, como la URL o el archivo de metadatos SAML.  Esta información se utiliza para establecer la relación de confianza entre BlueXP y su proveedor de identidad.  La información que proporciones dependerá del IdP que estés utilizando.  Por ejemplo, si utiliza Microsoft Entra ID, deberá proporcionar el ID de cliente, el secreto y el dominio.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Tres"] Pon a prueba tu federación en BlueXP
 [role="quick-margin-para"]
-Pruebe su conexión federada para asegurarse de que funciona antes de habilitarla. La página de Federación en BlueXP ofrece una opción de prueba que le permite verificar que su usuario de prueba se autentique correctamente. Si la prueba es exitosa, puede habilitar la conexión.
+Pruebe su conexión federada antes de habilitarla.  La página de Federación en BlueXP proporciona una opción de prueba que le permite verificar que su usuario de prueba pueda autenticarse correctamente.  Si la prueba es exitosa, puedes habilitar la conexión.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Tres"] Habilite su conexión en BlueXP
 [role="quick-margin-para"]

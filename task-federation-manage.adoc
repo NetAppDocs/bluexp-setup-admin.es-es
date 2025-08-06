@@ -16,6 +16,9 @@ summary: Después de agregar una conexión federada, puede administrarla en Blue
 [role="lead"]
 Puedes administrar tu federación en BlueXP. Puedes desactivarla, actualizar las credenciales caducadas y desactivarla si ya no la necesitas.
 
+
+NOTE: Si anteriormente configuró la federación usando NetApp Cloud Central (una aplicación externa a BlueXP), necesitará importar su federación usando la página de Federación de BlueXP para poder administrarla dentro de BlueXP.link:task-federation-import.html["Aprenda a importar su federación"]
+
 También puede agregar un dominio verificado a una federación existente, lo que le permite utilizar múltiples dominios para su conexión federada.
 
 
