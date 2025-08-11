@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-user-settings.html 
 keywords: user profile, mfa, change password, role, login, mulit-factor, authentication 
-summary: 'Puede modificar su perfil de BlueXP, incluso cambiar su contraseña, habilitar la autenticación multifactor (MFA) y ver quién es su administrador de BlueXP.' 
+summary:  
 ---
 = Administra tu configuración de usuario de BlueXP
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: 'Puede modificar su perfil de BlueXP, incluso cambiar su contraseña, h
 
 
 [role="lead"]
-Puede acceder a su perfil de BlueXP que le permite habilitar la autenticación multifactor (MFA) y comunicarse con su administrador de BlueXP.
+Puede modificar su perfil de BlueXP, incluso cambiar su contraseña, habilitar la autenticación multifactor (MFA) y ver quién es su administrador de BlueXP.
 
-En BlueXP, cada usuario tiene un perfil que contiene información sobre él y su configuración. Puede ver y editar la configuración de su perfil desde la consola de BlueXP.
+Dentro de BlueXP, cada usuario tiene un perfil que contiene información sobre el usuario y su configuración.  Puede ver y editar la configuración de su perfil.
 
 
 
 == Cambiar tu nombre para mostrar
 
-Puedes cambiar tu nombre para mostrar en la consola de BlueXP. Este nombre se usa para identificarte en la consola y es visible para otros usuarios. No es el mismo que tu nombre de usuario ni tu dirección de correo electrónico, por lo que no se pueden cambiar.
+Puedes cambiar tu nombre para mostrar.  El nombre para mostrar se utiliza para identificarlo en la consola BlueXP y es visible para otros usuarios.  Su nombre para mostrar no es el mismo que su nombre de usuario o dirección de correo electrónico, los cuales no se pueden cambiar.
 
 .Pasos
 . Seleccione el icono de perfil en la esquina superior derecha de la consola BlueXP para ver el panel de configuración de usuario.
@@ -100,4 +100,15 @@ NOTE: Debe tener una aplicación de correo electrónico predeterminada configura
 . Seleccione *Contactar a los administradores* para enviar un correo electrónico al administrador de su organización.
 . Seleccione la aplicación de correo electrónico que desea utilizar.
 . Termina el correo electrónico y selecciona *Enviar*.
+
+
+
+
+== Configurar el modo oscuro (tema oscuro)
+
+Puedes configurar BlueXP para que se muestre en modo oscuro.
+
+.Pasos
+. Seleccione el icono de perfil en la esquina superior derecha de la consola BlueXP para ver el panel de configuración de usuario.
+. Mueva el control deslizante *Tema oscuro* para habilitarlo.
 

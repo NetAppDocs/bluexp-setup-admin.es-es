@@ -43,7 +43,7 @@ El equipo de soporte de NetApp revisa y procesa su solicitud.
 Puede configurar una conexión federada con su proveedor de identidad para habilitar el inicio de sesión único (SSO) en BlueXP. El proceso implica configurar su proveedor de identidad para que confíe en NetApp como proveedor de servicios y, a continuación, crear la conexión en BlueXP.
 
 
-NOTE: Si anteriormente configuró la federación usando NetApp Cloud Central (una aplicación externa a BlueXP), necesitará importar su federación usando la página de Federación de BlueXP para poder administrarla dentro de BlueXP.link:task-federation-import.html["Aprenda a importar su federación"]
+NOTE: Si anteriormente configuró la federación usando NetApp Cloud Central (una aplicación externa a BlueXP), necesitará importar su federación usando la página de Federación de BlueXP para poder administrarla dentro de BlueXP.link:task-federation-import.html["Aprenda cómo importar su federación."]
 
 
 

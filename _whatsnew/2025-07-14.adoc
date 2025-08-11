@@ -64,4 +64,4 @@ BlueXP ahora admite el uso de roles de IAM para las siguientes funciones y servi
 * Federación
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["Obtenga más información sobre el uso de roles de acceso."]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre el uso de roles de acceso."]

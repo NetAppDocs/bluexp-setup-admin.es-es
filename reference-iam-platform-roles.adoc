@@ -17,13 +17,13 @@ summary: Asignar roles de plataforma a los usuarios para otorgar permisos para a
 Asignar roles de plataforma a los usuarios para otorgar permisos para administrar BlueXP, asignar roles, agregar usuarios, crear conectores y administrar federaciones.
 
 .Ejemplo de roles de organización en BlueXP  para una organización multinacional grande
-XYZ Corporation organiza el acceso al almacenamiento de datos por región (América del Norte, Europa y Asia-Pacífico), lo que otorga control a cada región y garantiza una supervisión centralizada.
+XYZ Corporation organiza el acceso al almacenamiento de datos por región (América del Norte, Europa y Asia-Pacífico), proporcionando control regional con supervisión centralizada.
 
-El *administrador de la organización* en BlueXP de XYZ Corporation crea una organización inicial y carpetas separadas para cada región. La carpeta de cada región contiene proyectos (con recursos asociados) relacionados con esa región. El *Administrador de la organización* asigna a un usuario de BlueXP  en cada región respectiva la función *Carpeta o administrador del proyecto*.
+El *administrador de la organización* en BlueXP de XYZ Corporation crea una organización inicial y carpetas separadas para cada región.  El administrador de carpeta o proyecto de cada región organiza los proyectos (con los recursos asociados) dentro de la carpeta de la región.
 
-Los administradores regionales con el rol de *Administrador de carpetas o proyectos* administran sus regiones (carpetas) añadiendo nuevos recursos y usuarios. Estos administradores regionales también pueden añadir, eliminar o renombrar las carpetas y los proyectos que gestionan. El *Administrador de la organización* hereda los permisos de cualquier recurso nuevo, lo que permite mantener la visibilidad del uso del almacenamiento en toda la organización.
+Los administradores regionales con el rol de *Administrador de carpeta o proyecto* administran activamente sus carpetas agregando recursos y usuarios.  Estos administradores regionales también pueden agregar, eliminar o cambiar el nombre de las carpetas y los proyectos que administran.  El *administrador de la organización* hereda los permisos para cualquier recurso nuevo, lo que mantiene la visibilidad del uso del almacenamiento en toda la organización.
 
-Dentro de la misma organización, a un usuario se le asigna el rol de *Administrador de federación* para gestionar la federación de la organización con su IdP corporativo. Este usuario puede agregar o eliminar organizaciones federadas, pero no puede administrar usuarios ni recursos dentro de la organización. La organización asigna a un usuario el rol de *Visor de federación* para comprobar el estado de la federación y ver las organizaciones federadas sin realizar cambios.
+Dentro de la misma organización, a un usuario se le asigna el rol de *administrador de federación* para administrar la federación de la organización con su IdP corporativo.  Este usuario puede agregar o eliminar organizaciones federadas, pero no puede administrar usuarios ni recursos dentro de la organización.  El *Administrador de la organización* asigna a un usuario el rol de *Visor de la federación* para verificar el estado de la federación y ver las organizaciones federadas.
 
 Las siguientes tablas indican las acciones que cada rol de la plataforma BlueXP puede realizar.
 
@@ -69,7 +69,7 @@ Las siguientes tablas indican las acciones que cada rol de la plataforma BlueXP 
 | Crear, administrar y visualizar federaciones | Sí | No 
 
 
-| Regístrese para recibir soporte y enviar casos | Sí | Sí 
+| Regístrese para recibir soporte y enviar casos a través de BlueXP | Sí | Sí 
 
 
 | Utilizar servicios de datos | Sí | Sí 

@@ -20,10 +20,10 @@ Cuando asocia un miembro a su organización, proporciona permisos a nivel de org
 
 == Ver los recursos de su organización
 
-Puede ver los recursos detectados y sin detectar asociados a su organización. Los recursos no descubiertos son recursos de almacenamiento identificados por el asesor digital pero que no se agregan como entornos de trabajo.
+Puede ver los recursos descubiertos y no descubiertos asociados con su organización.  Los recursos no descubiertos son recursos de almacenamiento identificados por el asesor digital pero que no se agregan como entornos de trabajo.
 
 
-NOTE: La página de recursos de IAM no muestra los recursos de Amazon FSx para NetApp ONTAP porque no puede asociarlos con una función de IAM. Puede ver estos recursos en su respectivo lienzo o desde cargas de trabajo.
+NOTE: La página de recursos de IAM excluye los recursos de Amazon FSx for NetApp ONTAP porque no se pueden asociar con una función de IAM.  Vea estos recursos en su lienzo respectivo o desde las cargas de trabajo.
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP , seleccione image:icon-settings-option.png["El icono de configuración que aparece en la parte superior derecha de la consola web de BlueXP ."]> *Gestión de identidades y acceso*.
@@ -44,7 +44,7 @@ NOTE: La página de recursos de IAM no muestra los recursos de Amazon FSx para N
 
 == Asociar un recurso a carpetas y proyectos
 
-Para que un recurso esté disponible para una carpeta o proyecto, asocie el recurso a la carpeta o proyecto.
+Asociar un recurso a una carpeta o proyecto para que esté disponible.
 
 .Antes de empezar
 Debe comprender cómo funciona la asociación de recursos. link:concept-identity-and-access-management.html#resources["Obtenga información sobre los recursos, incluido cuándo asociar un recurso a una carpeta"].
@@ -65,7 +65,7 @@ Tenga en cuenta que solo puede seleccionar entre las carpetas y proyectos para l
 
 
 .Después de terminar
-Si el recurso asociado se detecta mediante un conector BlueXP  y tiene otros miembros en la organización, también debe asociar el conector al proyecto al que está asociado el recurso. De lo contrario, los miembros que no tienen el rol _Organization admin_ no pueden acceder al conector y al recurso asociado desde el lienzo de BlueXP .
+Si descubre un recurso utilizando un conector BlueXP , asocie el conector con el proyecto para otorgarle acceso.  De lo contrario, los miembros que no tengan el rol de _administrador de la organización_ no podrán acceder al conector ni a su recurso asociado desde el lienzo de BlueXP .
 
 link:task-iam-associate-connectors.html["Aprenda a asociar un conector a una carpeta o proyecto"].
 
@@ -93,7 +93,7 @@ NOTE: Si necesita determinar qué miembros de la organización tienen acceso al 
 
 == Eliminar un recurso de una carpeta o proyecto
 
-Para eliminar un recurso de una carpeta o proyecto, debe eliminar la asociación entre la carpeta o el proyecto y el recurso. Eliminar la asociación impide que los miembros de la organización administren el recurso en la carpeta o el proyecto.
+Para eliminar un recurso de una carpeta o proyecto, debe eliminar la asociación entre la carpeta o proyecto y el recurso.  Eliminar la asociación impide que los miembros administren el recurso en la carpeta o el proyecto.
 
 
 NOTE: Si desea eliminar un recurso detectado de toda la organización, debe eliminar el entorno de trabajo del lienzo de BlueXP .

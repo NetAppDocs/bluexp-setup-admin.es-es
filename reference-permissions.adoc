@@ -259,5 +259,5 @@ BlueXP requiere permisos de StorageGRID para dos servicios.
 | Objetivo | Descripción | Enlace 
 
 
-| Organiza clústeres de ONTAP on-premises en StorageGRID | Cuando configuras la organización en niveles de BlueXP en StorageGRID, tienes que proporcionar la organización en niveles de BlueXP con una clave de acceso S3 y una clave secreta. La organización en niveles de BlueXP utiliza las claves para acceder a tus buckets. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Prepare la organización en niveles en StorageGRID"^] 
+| Organiza clústeres de ONTAP on-premises en StorageGRID | Cuando configuras la organización en niveles de BlueXP en StorageGRID, tienes que proporcionar la organización en niveles de BlueXP con una clave de acceso S3 y una clave secreta. La organización en niveles de BlueXP utiliza las claves para acceder a tus buckets. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html["Prepare la organización en niveles en StorageGRID"^] 
 |===
