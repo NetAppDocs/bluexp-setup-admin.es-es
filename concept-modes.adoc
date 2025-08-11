@@ -380,9 +380,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
 | Eficiencia económica | No | No 
 
 
-| Resiliencia operativa | No | No 
-
-
 | Protección contra ransomware | No | No 
 
 
@@ -404,20 +401,20 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
 | Fábrica de cargas de trabajo | No | No 
 
 
-.7+| * Características* | Gestión de identidades y acceso BlueXP  | Sí | Sí 
+.7+| * Características* | Gestión de identidades y acceso BlueXP  | Sí 
 
 
-| Credenciales | Sí | Sí 
+| Sí | Credenciales | Sí 
 
 
-| Cuentas de NSS | Sí | No 
+| Sí | Cuentas de NSS | Sí 
 
 
-| Notificaciones | Sí | No 
+| No | Notificaciones | Sí 
 
 
-| Búsqueda | Sí | No 
+| No | Búsqueda | Sí 
 
 
-| Línea de tiempo | Sí | Sí 
+| No | Línea de tiempo | Sí 
 |===

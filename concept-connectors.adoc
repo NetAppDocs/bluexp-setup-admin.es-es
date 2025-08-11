@@ -73,7 +73,6 @@ Al utilizar BlueXP en modo estándar, se necesita un conector para las siguiente
 * Eficiencia económica ^1^
 * Buckets de Google Cloud Storage
 * Integración de clústeres de ONTAP en las instalaciones con servicios de datos de BlueXP
-* Resistencia operativa ^1^
 * Protección contra ransomware
 * Sistemas StorageGRID
 * Organización en niveles

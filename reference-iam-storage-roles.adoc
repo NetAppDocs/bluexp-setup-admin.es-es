@@ -32,7 +32,6 @@ Servicios y características de BlueXP :
 
 * Asesor digital
 * Actualizaciones de software
-* Resiliencia operativa
 * Eficiencia económica
 * Sostenibilidad
 
@@ -163,36 +162,6 @@ Sí
 
 
 | Instale las actualizaciones de software  a| 
-Sí
- a| 
-Sí
- a| 
-No
-
-
-
-4+| *Resiliencia operacional* 
-
-
-| Revisar los problemas de riesgo de seguridad  a| 
-Sí
- a| 
-Sí
- a| 
-Sí
-
-
-
-| Descargue los libros de estrategia de Ansible  a| 
-Sí
- a| 
-Sí
- a| 
-No
-
-
-
-| Solucione los problemas automáticamente  a| 
 Sí
  a| 
 Sí

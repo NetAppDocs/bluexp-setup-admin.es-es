@@ -87,7 +87,6 @@ Asesor digital de BlueXP:: Use análisis predictivos y soporte proactivo para op
 Cartera digital de BlueXP:: Administre y supervise sus licencias y suscripciones.
 Recuperación ante desastres de BlueXP:: Protege las cargas de trabajo de VMware on-premises usando VMware Cloud on Amazon FSx para ONTAP como sitio de recuperación ante desastres.
 Eficiencia económica de BlueXP:: Identificar clusters con baja capacidad actual o prevista e implementar niveles de datos o recomendaciones adicionales de capacidad.
-Resiliencia operativa de BlueXP:: Implementar las soluciones de riesgo de configuración automatizadas del firmware y el software para mantener el estado de los clústeres ONTAP.
 Protección contra ransomware de BlueXP:: Detectar anomalías que puedan provocar ataques de ransomware. Proteja y recupere cargas de trabajo.
 Replicación de BlueXP:: Replicar datos entre sistemas de almacenamiento para dar soporte a backup y recuperación ante desastres
 Actualizaciones de software de BlueXP:: Automatice la evaluación, la planificación y la ejecución de las actualizaciones de ONTAP.

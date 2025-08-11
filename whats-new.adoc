@@ -36,6 +36,12 @@ La interfaz de usuario de BlueXP ahora está disponible en idioma japonés.  Si 
 
 
 
+=== Característica de resiliencia operativa
+
+La función de resiliencia operativa se ha eliminado de BlueXP.  Comuníquese con el soporte de NetApp si tiene problemas.
+
+
+
 === Gestión de acceso e identidades (IAM) de BlueXP 
 
 La gestión de identidad y acceso en BlueXP ahora ofrece la siguiente característica.
