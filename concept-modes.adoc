@@ -14,7 +14,7 @@ summary: BlueXP ofrece múltiples modos de implementación que le permiten utili
 
 
 [role="lead"]
-BlueXP ofrece múltiples modos de implementación que le permiten satisfacer sus necesidades empresariales y de seguridad. El modo estándar aprovecha una capa de software como servicio (SaaS) para proporcionar funcionalidad completa, mientras que los modos restringido y privado están disponibles para organizaciones con restricciones de conectividad.
+BlueXP ofrece _modos de implementación_ que le permiten satisfacer sus requisitos comerciales y de seguridad.  El _modo estándar_ aprovecha una capa de software como servicio (SaaS) para proporcionar funcionalidad completa, mientras que el _modo restringido_ y el _modo privado_ están disponibles para organizaciones que tienen restricciones de conectividad.
 
 Si bien BlueXP inhibe el flujo de tráfico, comunicación y datos cuando se usa el modo restringido o el modo privado, es su responsabilidad asegurarse de que su entorno (local y en la nube) cumpla con las regulaciones requeridas para su negocio.
 
