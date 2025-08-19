@@ -18,7 +18,7 @@ Al iniciar sesión y usar la consola web, BlueXP se conecta a varios endpoints p
 
 Estos extremos se contactan en dos situaciones:
 
-* Desde la computadora de un usuario al completar acciones desde el  https://console.bluexp.netapp.com["Consola BlueXP basada en Web"^] que está disponible como software como servicio (SaaS).
+* Desde la computadora de un usuario al completar secciones de la https://console.bluexp.netapp.com["Consola BlueXP basada en Web"^] que está disponible como software como servicio (SaaS).
 * Desde el equipo de un usuario al abrir un navegador web, introduzca la dirección IP del host del conector y, a continuación, inicie sesión y configure el conector. Estos pasos son necesarios si instala manualmente el conector.
 
 
