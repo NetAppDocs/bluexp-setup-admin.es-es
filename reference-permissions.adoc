@@ -49,7 +49,7 @@ También debe asegurarse de que la directiva esté actualizada a medida que se a
 | Objetivo | Descripción | Enlace 
 
 
-| Realice copias de seguridad de clústeres ONTAP locales en Amazon S3 con la BlueXP backup and recovery | Al activar backups en tus volúmenes de ONTAP, el backup y recuperación de BlueXP te solicita que introduzcas una clave de acceso y un secreto para un usuario de IAM que tenga permisos específicos. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html["Configure los permisos S3 para backups"^] 
+| Realice copias de seguridad de clústeres ONTAP locales en Amazon S3 con la BlueXP backup and recovery | Al activar backups en tus volúmenes de ONTAP, el backup y recuperación de BlueXP te solicita que introduzcas una clave de acceso y un secreto para un usuario de IAM que tenga permisos específicos. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html#set-up-s3-permissions["Configure los permisos S3 para backups"^] 
 |===
 
 
@@ -202,11 +202,12 @@ Al utilizar el backup y la recuperación de datos de BlueXP para realizar backup
 
  a| 
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["Realice una copia de seguridad de los datos de Cloud Volumes ONTAP en Google Cloud Storage con Backup and Recovery"^]
+* hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Permisos para CMEK^]
 
 
 
 
-| Realice un backup de los clústeres de ONTAP en las instalaciones en Google Cloud | Al usar la copia de seguridad y recuperación de BlueXP para realizar copias de seguridad de clústeres ONTAP locales, debe agregar permisos al Conector para poder usar la funcionalidad "Buscar y restaurar". | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["Realice una copia de seguridad de los datos locales de ONTAP en Google Cloud Storage con Backup and Recovery"^] 
+| Realice un backup de los clústeres de ONTAP en las instalaciones en Google Cloud | Al usar la copia de seguridad y recuperación de BlueXP para realizar copias de seguridad de clústeres ONTAP locales, debe agregar permisos al Conector para poder usar la funcionalidad "Buscar y restaurar". | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["Permisos para la funcionalidad de búsqueda y restauración"^] 
 |===
 
 

@@ -20,7 +20,7 @@ Puede asignar el siguiente rol a los usuarios para brindarles acceso a alertas y
 
 == Analista de soporte operativo
 
-[cols="1,1"]
+[cols="1,2"]
 |===
 | Tarea | Puede realizar 
 
@@ -34,8 +34,8 @@ Puede asignar el siguiente rol a los usuarios para brindarles acceso a alertas y
 | Regístrese para recibir soporte y enviar casos a través de BlueXP | Sí 
 
 
-| Sí | Ver la línea de tiempo y las notificaciones de BlueXP 
+| Ver la línea de tiempo y las notificaciones de BlueXP | Sí 
 
 
-| Sí | Ver, descargar y configurar alertas 
+| Ver, descargar y configurar alertas | Sí 
 |===
