@@ -398,7 +398,7 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
 | Fábrica de cargas de trabajo | No | No 
 
 
-.6+| * Características* | Gestión de identidades y acceso BlueXP  | Sí 
+.6+| * Características* | Gestión de identidades y accesos | Sí 
 
 
 | Sí | Credenciales | Sí 
