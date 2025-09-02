@@ -60,7 +60,7 @@ Una _ORGANIZATION_ es el nivel superior del sistema IAM de BlueXP  y, por lo ge
 
 A _FOLDER_ le permite agrupar proyectos relacionados y separarlos de otros proyectos de la organización. Por ejemplo, una carpeta puede representar una ubicación geográfica (UE o EE.UU. Este), un sitio (Londres o Toronto) o una unidad de negocio (ingeniería o marketing).
 
-Los archivos antiguos pueden contener proyectos, otras carpetas o ambos. La creación de carpetas es opcional.
+Las carpetas pueden contener proyectos, otras carpetas o ambos.  La creación de carpetas es opcional.
 
 
 
