@@ -4871,7 +4871,6 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="332cf7fa33c69ec5f4db12e0c5d4c230" category="cell">Permite al usuario acceder sin restricciones a proyectos y carpetas específicos a los que están asignados. Puede agregar miembros a carpetas o proyectos que administran, así como realizar cualquier tarea de BlueXP  y utilizar cualquier servicio de datos o aplicación en recursos dentro de la carpeta o proyecto que se les asigna. Los administradores de carpetas o proyectos no pueden crear conectores.</block>
   <block id="1e92f5c7fccb14971fe2537bec747773" category="cell">Permite a un usuario crear y administrar federaciones con BlueXP, lo que habilita el inicio de sesión único (SSO).</block>
   <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Administrador de Google Cloud NetApp Volumes</block>
-  <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
   <block id="ee848730515e9ec34272f93a110738f2" category="cell">Los usuarios con la función Google Cloud NetApp Volumes pueden descubrir y administrar Google Cloud NetApp Volumes.</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">Proporciona la capacidad de ver los resultados del escaneo de BlueXP classification . Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso para acceder. Estos usuarios no pueden activar o desactivar el análisis de volúmenes, bloques o esquemas de base de datos. La clasificación no tiene un rol de visor.</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">21 de julio de 2025</block>
@@ -5059,4 +5058,5 @@ Esta parte de la tabla enumera soporte para la gestión del entorno de trabajo d
   <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">Las carpetas pueden contener proyectos, otras carpetas o ambos.  La creación de carpetas es opcional.</block>
   <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">Administrar federaciones en BlueXP</block>
   <block id="12315f52b33926030701f1c76338e060" category="cell">\ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://cdn.auth0.com \ https://services.cloud.netapp.com</block>
+  <block id="a8884d9d4002eaccf5088086ae062b9e" category="cell"><block ref="a8884d9d4002eaccf5088086ae062b9e" category="inline-link-macro-rx"></block></block>
 </blocks>

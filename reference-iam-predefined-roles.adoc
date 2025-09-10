@@ -49,7 +49,7 @@ A continuación se muestra una lista de roles en la categoría de aplicación. C
 | Rol de la aplicación | Responsabilidades 
 
 
-| link:reference-iam-keystone-roles.html["Administrador de Google Cloud NetApp Volumes"] | Los usuarios con la función Google Cloud NetApp Volumes pueden descubrir y administrar Google Cloud NetApp Volumes. 
+| link:reference-iam-gncv-roles.html["Administrador de Google Cloud NetApp Volumes"] | Los usuarios con la función Google Cloud NetApp Volumes pueden descubrir y administrar Google Cloud NetApp Volumes. 
 
 
 | link:reference-iam-keystone-roles.html["Administrador de Keystone"] | Los usuarios con el rol de administrador de Keystone pueden crear solicitudes de servicio. Permite a los usuarios supervisar y ver información de consumo, activos e administrativa dentro del inquilino de Keystone al que acceden. 
