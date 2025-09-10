@@ -202,23 +202,12 @@ Al utilizar el backup y la recuperación de datos de BlueXP para realizar backup
 
  a| 
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["Realice una copia de seguridad de los datos de Cloud Volumes ONTAP en Google Cloud Storage con Backup and Recovery"^]
-* hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Permisos para CMEK^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["Permisos para CMEK"^]
 
 
 
 
 | Realice un backup de los clústeres de ONTAP en las instalaciones en Google Cloud | Al usar la copia de seguridad y recuperación de BlueXP para realizar copias de seguridad de clústeres ONTAP locales, debe agregar permisos al Conector para poder usar la funcionalidad "Buscar y restaurar". | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["Permisos para la funcionalidad de búsqueda y restauración"^] 
-|===
-
-
-=== Cloud Volumes Service para Google Cloud
-
-[cols="20,60,20"]
-|===
-| Objetivo | Descripción | Enlace 
-
-
-| Descubra Cloud Volumes Service para Google Cloud | BlueXP necesita acceso a la API de Cloud Volumes Service y los permisos adecuados a través de una cuenta de servicio de Google Cloud. | https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html["Configure una cuenta de servicio"^] 
 |===
 
 
